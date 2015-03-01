@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="dyrx" modelUID="r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic.structure)" version="-1" />
+    </dependencies>
+    <rename id="dyrx.3640435696255671307" type="CONCEPT" from="leftTurn" to="LeftTurn" />
+  </StructureModification>
+</history>
+
