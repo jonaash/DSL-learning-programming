@@ -16,15 +16,17 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 0:
         return new ConceptDescriptorBuilder("KarelBasic.structure.AbstractCommand").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 1:
-        return new ConceptDescriptorBuilder("KarelBasic.structure.LeftTurn").super_("KarelBasic.structure.AbstractCommand").parents("KarelBasic.structure.AbstractCommand").alias("turnLeft", "command to make robot to turn left on current place").create();
+        return new ConceptDescriptorBuilder("KarelBasic.structure.CodeBlock").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"commands"}, new boolean[]{true}).create();
       case 2:
-        return new ConceptDescriptorBuilder("KarelBasic.structure.Script").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+        return new ConceptDescriptorBuilder("KarelBasic.structure.LeftTurn").super_("KarelBasic.structure.AbstractCommand").parents("KarelBasic.structure.AbstractCommand").alias("turnLeft", "command to make robot to turn left on current place").create();
       case 3:
+        return new ConceptDescriptorBuilder("KarelBasic.structure.Script").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"body"}, new boolean[]{false}).create();
+      case 4:
         return new ConceptDescriptorBuilder("KarelBasic.structure.Step").super_("KarelBasic.structure.AbstractCommand").parents("KarelBasic.structure.AbstractCommand").alias("step", "command to make robot one step in current direction").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"KarelBasic.structure.AbstractCommand", "KarelBasic.structure.LeftTurn", "KarelBasic.structure.Script", "KarelBasic.structure.Step"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"KarelBasic.structure.AbstractCommand", "KarelBasic.structure.CodeBlock", "KarelBasic.structure.LeftTurn", "KarelBasic.structure.Script", "KarelBasic.structure.Step"};
 }
