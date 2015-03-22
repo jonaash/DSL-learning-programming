@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)">
-  <persistence version="8" />
-  <language namespace="5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)" />
-  <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="dyrx" modelUID="r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic.structure)" version="0" implicit="yes" />
-  <root type="dyrx.Script" typeId="dyrx.3640435696255673332" id="31172425217625183" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Test" />
-    <node role="body" roleId="dyrx.31172425217292863" type="dyrx.CodeBlock" typeId="dyrx.31172425217292983" id="31172425217625184" nodeInfo="ng">
-      <node role="commands" roleId="dyrx.31172425217293011" type="dyrx.Step" typeId="dyrx.3640435696255400508" id="31172425217644635" nodeInfo="ng" />
-      <node role="commands" roleId="dyrx.31172425217293011" type="dyrx.LeftTurn" typeId="dyrx.3640435696255671307" id="31172425217644640" nodeInfo="ng" />
-      <node role="commands" roleId="dyrx.31172425217293011" type="dyrx.LeftTurn" typeId="dyrx.3640435696255671307" id="31172425217644648" nodeInfo="ng" />
+<model ref="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)">
+  <persistence version="9" />
+  <languages>
+    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="31172425217292983" name="KarelBasic.structure.CodeBlock" flags="ng" index="3jGSmg">
+        <child id="31172425217293011" name="commands" index="3jGSnO" />
+      </concept>
+      <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
+      <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
+        <child id="31172425217292863" name="body" index="3jGSko" />
+      </concept>
+      <concept id="3640435696255671307" name="KarelBasic.structure.LeftTurn" flags="ng" index="1$vv3L" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1$vsWe" id="1IJMvjS$Lv">
+    <property role="TrG5h" value="Test" />
+    <node concept="3jGSmg" id="1IJMvjS$Lw" role="3jGSko">
+      <node concept="1$shr6" id="1IJMvjSDxr" role="3jGSnO" />
+      <node concept="1$vv3L" id="1IJMvjSDxw" role="3jGSnO" />
+      <node concept="1$vv3L" id="1IJMvjSDxC" role="3jGSnO" />
     </node>
-  </root>
+  </node>
 </model>
 
