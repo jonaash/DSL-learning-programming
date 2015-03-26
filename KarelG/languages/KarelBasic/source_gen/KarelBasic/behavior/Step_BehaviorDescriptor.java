@@ -6,7 +6,6 @@ package KarelBasic.behavior;
 public class Step_BehaviorDescriptor extends AbstractCommand_BehaviorDescriptor {
   public Step_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "KarelBasic.structure.Step";

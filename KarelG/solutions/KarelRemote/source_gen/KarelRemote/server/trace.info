@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote.server)/9203696677796747927">
+    <file name="RobotServiceImpl.java">
+      <node id="9203696677796777058" at="13,52,14,12" concept="10" />
+      <node id="9203696677796766558" at="16,30,17,18" concept="1" />
+      <node id="9203696677796767339" at="17,18,18,0" concept="8" />
+      <node id="9203696677796770707" at="18,0,19,61" concept="5" />
+      <node id="9203696677796772920" at="19,61,20,0" concept="8" />
+      <node id="9203696677796773368" at="20,0,21,20" concept="6" />
+      <node id="9203696677796774188" at="24,34,25,23" concept="1" />
+      <node id="9203696677796774191" at="25,23,26,0" concept="8" />
+      <node id="9203696677796774192" at="26,0,27,61" concept="5" />
+      <node id="9203696677796774198" at="27,61,28,0" concept="8" />
+      <node id="9203696677796774199" at="28,0,29,20" concept="6" />
+      <node id="9203696677796763062" at="32,34,33,41" concept="1" />
+      <node id="9203696677796776679" at="13,0,16,0" concept="0" trace="RobotServiceImpl#()V" />
+      <node id="9203696677796762337" at="32,0,35,0" concept="4" trace="print#(Ljava/lang/String;)V" />
+      <node id="9203696677796760838" at="16,0,23,0" concept="4" trace="step#()LKarelRemote/api/CallResponse;" />
+      <node id="9203696677796760942" at="24,0,31,0" concept="4" trace="turnLeft#()LKarelRemote/api/CallResponse;" />
+      <scope id="9203696677796776682" at="13,52,14,12" />
+      <scope id="9203696677796762340" at="32,34,33,41" />
+      <scope id="9203696677796776679" at="13,0,16,0" />
+      <scope id="9203696677796762337" at="32,0,35,0">
+        <var name="msg" id="9203696677796763590" />
+      </scope>
+      <scope id="9203696677796760843" at="16,30,21,20">
+        <var name="response" id="9203696677796770708" />
+      </scope>
+      <scope id="9203696677796760947" at="24,34,29,20">
+        <var name="response" id="9203696677796774193" />
+      </scope>
+      <scope id="9203696677796760838" at="16,0,23,0" />
+      <scope id="9203696677796760942" at="24,0,31,0" />
+      <unit id="9203696677796747927" at="11,0,36,0" name="KarelRemote.server.RobotServiceImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote.server)/9203696677796748017">
+    <file name="Server.java">
+      <node id="9203696677796839239" at="14,0,15,0" concept="9" trace="INSTANCE" />
+      <node id="9203696677796838086" at="16,0,17,0" concept="2" trace="robotService" />
+      <node id="9203696677796837651" at="18,91,19,60" concept="7" />
+      <node id="9203696677796837653" at="19,60,20,26" concept="7" />
+      <node id="9203696677796837660" at="21,46,22,58" concept="1" />
+      <node id="9203696677796837664" at="23,5,24,58" concept="7" />
+      <node id="9203696677796837666" at="24,58,25,42" concept="1" />
+      <node id="9203696677796837671" at="25,42,26,45" concept="7" />
+      <node id="9203696677796837673" at="26,45,27,46" concept="1" />
+      <node id="9203696677796837677" at="27,46,28,44" concept="1" />
+      <node id="9203696677796837682" at="28,44,29,0" concept="8" />
+      <node id="9203696677796837683" at="29,0,30,0" concept="8" />
+      <node id="9203696677796837455" at="34,41,35,24" concept="6" />
+      <node id="9203696677796837655" at="20,26,23,5" concept="3" />
+      <node id="9203696677796837452" at="34,0,37,0" concept="4" trace="getRobotService#()LKarelRemote/api/RobotService;" />
+      <node id="9203696677796837648" at="18,0,32,0" concept="4" trace="init#()V" />
+      <scope id="9203696677796837659" at="21,46,22,58" />
+      <scope id="9203696677796837454" at="34,41,35,24" />
+      <scope id="9203696677796837452" at="34,0,37,0" />
+      <scope id="9203696677796837650" at="18,91,30,0" />
+      <scope id="9203696677796837648" at="18,0,32,0" />
+      <unit id="9203696677796748017" at="12,0,38,0" name="KarelRemote.server.Server" />
+    </file>
+  </root>
+</debug-info>
+

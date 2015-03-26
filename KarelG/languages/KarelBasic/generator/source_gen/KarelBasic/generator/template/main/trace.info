@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <unitInfo fileName="QueriesGenerated.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="KarelBasic.generator.template.main.QueriesGenerated" />
-</debugInfo>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="13,0,23,0" name="KarelBasic.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic.generator.template.main@generator)/7120477472729796861">
+    <file name="QueriesGenerated.java">
+      <node id="7120477472729801277" at="16,112,17,175" concept="0" />
+      <node id="7120477472729975287" at="19,120,20,346" concept="0" />
+      <scope id="7120477472729797887" at="16,112,17,175" />
+      <scope id="7120477472729974140" at="19,120,20,346" />
+    </file>
+  </root>
+</debug-info>
 

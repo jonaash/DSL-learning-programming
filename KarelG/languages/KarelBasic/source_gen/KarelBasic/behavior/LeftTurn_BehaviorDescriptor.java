@@ -6,7 +6,6 @@ package KarelBasic.behavior;
 public class LeftTurn_BehaviorDescriptor extends AbstractCommand_BehaviorDescriptor {
   public LeftTurn_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "KarelBasic.structure.LeftTurn";

@@ -17,5 +17,4 @@ public class KarelStyles_StyleSheet {
     }
   }
 
-
 }

@@ -1,27 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="cjjomj8t3xyfdh3oglkuukh1maueotn">
-  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
-  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
-  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-4llts1zuwrcisvzhqdvdw49xt9gi1fv" dependsOnNodes="true">
-    <dep root="31172425217292983" />
-    <dep root="3640435696255400508" />
-    <dep root="3640435696255425616" />
-    <dep root="3640435696255671307" />
-    <dep root="3640435696255673332" />
-    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-    <file name="StructureAspectDescriptor.java" />
-  </common>
-  <source id="3640435696255400508" name="Step" hash="-4t43igg2xn07ld6nopn72sdm0su4whq" />
-  <source id="3640435696255425616" name="AbstractCommand" hash="d6ga7non3si01yw9uiazigedvur76xo" />
-  <source id="3640435696255671307" name="LeftTurn" hash="ekq0pg9mq84c64ljr3twnzxzqbjxzet" />
-  <source id="3640435696255673332" name="Script" hash="2k1f7j3prnoov5gehsnbn8rremumfvc" />
-  <source id="31172425217292983" name="CodeBlock" hash="-5env0obhyyj3xcqv8kxqfirjnlqwcuy" />
-</dependencies>
+<dependencies version="2" modelHash="devvmtvgpwz1o3eafnoluyrb6r6kyde" />
 

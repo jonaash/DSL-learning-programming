@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="JavaKarel.runtime.Cell" file="Cell.java">
+    <classNode dependClassName="JavaKarel.runtime.Robot" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+  </dependency>
+  <dependency className="JavaKarel.runtime.Direction" file="Direction.java" />
+  <dependency className="JavaKarel.runtime.IRobot" file="IRobot.java" />
+  <dependency className="JavaKarel.runtime.Robot" file="Robot.java">
+    <classNode dependClassName="JavaKarel.runtime.Cell" />
+    <classNode dependClassName="JavaKarel.runtime.Direction" />
+    <classNode dependClassName="JavaKarel.runtime.World" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
+  <dependency className="JavaKarel.runtime.Script" file="Script.java">
+    <classNode dependClassName="JavaKarel.runtime.IRobot" />
+    <classNode dependClassName="KarelRemote.api.CallResponse" />
+    <classNode dependClassName="KarelRemote.client.Client" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.net.MalformedURLException" />
+    <classNode dependClassName="java.rmi.NotBoundException" />
+    <classNode dependClassName="java.rmi.RemoteException" />
+  </dependency>
+  <dependency className="JavaKarel.runtime.World" file="World.java">
+    <classNode dependClassName="JavaKarel.runtime.Cell" />
+    <classNode dependClassName="JavaKarel.runtime.Direction" />
+    <classNode dependClassName="JavaKarel.runtime.Robot" />
+  </dependency>
+</dependenciesRoot>
+

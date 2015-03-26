@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="KarelRemote.server.RobotServiceImpl" file="RobotServiceImpl.java">
+    <classNode dependClassName="KarelRemote.api.CallResponse" />
+    <classNode dependClassName="KarelRemote.api.Status" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.rmi.RemoteException" />
+    <classNode extendsClassName="KarelRemote.api.RobotService" />
+    <classNode extendsClassName="java.rmi.server.UnicastRemoteObject" />
+  </dependency>
+  <dependency className="KarelRemote.server.Server" file="Server.java">
+    <classNode dependClassName="KarelRemote.api.RobotService" />
+    <classNode dependClassName="KarelRemote.server.RobotServiceImpl" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.net.MalformedURLException" />
+    <classNode dependClassName="java.rmi.AlreadyBoundException" />
+    <classNode dependClassName="java.rmi.Naming" />
+    <classNode dependClassName="java.rmi.RMISecurityManager" />
+    <classNode dependClassName="java.rmi.RemoteException" />
+  </dependency>
+</dependenciesRoot>
+

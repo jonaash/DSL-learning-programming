@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root nodeRef="r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build)/7903084958494346176">
+    <file name="KarelG.xml">
+      <unit id="7903084958494346176" at="1,0,146,10" name="KarelG.build.KarelG" />
+    </file>
+  </root>
+  <root nodeRef="r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build)/7903084958494346330">
+    <file name="KarelGDistribution.xml">
+      <unit id="7903084958494346330" at="1,0,76,10" name="KarelG.build.KarelGDistribution" />
+    </file>
+  </root>
+</debug-info>
+

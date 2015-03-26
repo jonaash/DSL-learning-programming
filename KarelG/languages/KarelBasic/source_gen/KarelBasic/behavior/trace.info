@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <unitInfo fileName="AbstractCommand_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="KarelBasic.behavior.AbstractCommand_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="30" endPosition="0" unitName="KarelBasic.behavior.BehaviorAspectDescriptor" />
-  <unitInfo fileName="CodeBlock_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="KarelBasic.behavior.CodeBlock_BehaviorDescriptor" />
-  <unitInfo fileName="LeftTurn_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="KarelBasic.behavior.LeftTurn_BehaviorDescriptor" />
-  <unitInfo fileName="Script_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="KarelBasic.behavior.Script_BehaviorDescriptor" />
-  <unitInfo fileName="Step_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="KarelBasic.behavior.Step_BehaviorDescriptor" />
-</debugInfo>
+<debug-info>
+  <root>
+    <file name="AbstractCommand_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="KarelBasic.behavior.AbstractCommand_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,28,0" name="KarelBasic.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="CodeBlock_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="KarelBasic.behavior.CodeBlock_BehaviorDescriptor" />
+    </file>
+    <file name="LeftTurn_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="KarelBasic.behavior.LeftTurn_BehaviorDescriptor" />
+    </file>
+    <file name="Script_BehaviorDescriptor.java">
+      <unit at="12,0,29,0" name="KarelBasic.behavior.Script_BehaviorDescriptor" />
+    </file>
+    <file name="Step_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="KarelBasic.behavior.Step_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
 
