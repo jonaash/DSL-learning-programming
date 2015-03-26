@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin.plugin)/7120477472730077042">
+    <file name="ViewPlugin_ProjectPlugin.java">
+      <node id="7120477472730077042" at="15,64,16,94" concept="3" />
+      <node id="7120477472730077042" at="16,94,17,73" concept="1" />
+      <node id="7120477472730077042" at="17,73,18,17" concept="4" />
+      <node id="7120477472730077042" at="13,0,15,0" concept="0" trace="ViewPlugin_ProjectPlugin#()V" />
+      <node id="7120477472730077042" at="15,0,20,0" concept="2" trace="initAllTools#(Lcom/intellij/openapi/project/Project;)Ljava/util/List;" />
+      <scope id="7120477472730077042" at="13,37,13,37" />
+      <scope id="7120477472730077042" at="13,0,15,0" />
+      <scope id="7120477472730077042" at="15,64,18,17">
+        <var name="tools" id="7120477472730077042" />
+      </scope>
+      <scope id="7120477472730077042" at="15,0,20,0">
+        <var name="project" id="7120477472730077042" />
+      </scope>
+      <unit id="7120477472730077042" at="12,0,21,0" name="ViewPlugin.plugin.ViewPlugin_ProjectPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin.plugin)/7120477472730079577">
+    <file name="KarelView_Tool.java">
+      <node id="7120477472730079577" at="13,0,14,0" concept="5" trace="ICON" />
+      <node id="7120477472730079577" at="14,42,15,73" concept="6" />
+      <node id="7120477472730079577" at="17,37,18,24" concept="1" />
+      <node id="7120477472730229403" at="18,24,19,40" concept="1" />
+      <node id="7120477472730107203" at="21,36,22,32" concept="3" />
+      <node id="7120477472730155628" at="22,32,23,17" concept="4" />
+      <node id="7120477472730079577" at="14,0,17,0" concept="0" trace="KarelView_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7120477472730079577" at="17,0,21,0" concept="2" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7120477472730079577" at="21,0,25,0" concept="2" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <scope id="7120477472730079577" at="14,42,15,73" />
+      <scope id="7120477472730079577" at="17,37,19,40" />
+      <scope id="7120477472730079579" at="21,36,23,17">
+        <var name="panel" id="7120477472730107204" />
+      </scope>
+      <scope id="7120477472730079577" at="14,0,17,0">
+        <var name="project" id="7120477472730079577" />
+      </scope>
+      <scope id="7120477472730079577" at="17,0,21,0">
+        <var name="project" id="7120477472730079577" />
+      </scope>
+      <scope id="7120477472730079577" at="21,0,25,0" />
+      <unit id="7120477472730079577" at="12,0,26,0" name="ViewPlugin.plugin.KarelView_Tool" />
+    </file>
+  </root>
+</debug-info>
+

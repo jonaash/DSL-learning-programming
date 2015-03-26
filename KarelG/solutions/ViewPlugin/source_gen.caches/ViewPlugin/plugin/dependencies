@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ViewPlugin.plugin.KarelView_Tool" file="KarelView_Tool.java">
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode extendsClassName="jetbrains.mps.plugins.tool.GeneratedTool" />
+  </dependency>
+  <dependency className="ViewPlugin.plugin.ViewPlugin_ProjectPlugin" file="ViewPlugin_ProjectPlugin.java">
+    <classNode dependClassName="ViewPlugin.plugin.KarelView_Tool" />
+    <classNode dependClassName="com.intellij.openapi.project.Project" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.plugins.tool.BaseGeneratedTool" />
+    <classNode extendsClassName="jetbrains.mps.plugins.projectplugins.BaseProjectPlugin" />
+  </dependency>
+</dependenciesRoot>
+
