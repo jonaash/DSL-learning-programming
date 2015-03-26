@@ -11,6 +11,12 @@
   </languages>
   <imports>
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
+    <import index="25kt" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.rmi(JDK/java.rmi@java_stub)" />
+    <import index="t1nw" ref="r:a3b9f9c2-995a-41e3-a8cb-1e27bd4780aa(KarelRemote.client)" />
+    <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)" />
+    <import index="ujvt" ref="r:2ba684d9-df92-4905-991a-54dda37ab628(KarelRemote.api)" />
+    <import index="l33q" ref="r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote.server)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -31,12 +37,23 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -53,6 +70,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -117,6 +135,63 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6bh18$pgwBL" role="3cqZAp" />
+        <node concept="SfApY" id="7YU6lPWxyPb" role="3cqZAp">
+          <node concept="3clFbS" id="7YU6lPWxyPc" role="SfCbr">
+            <node concept="3cpWs8" id="6bh18$pgzZ8" role="3cqZAp">
+              <node concept="3cpWsn" id="6bh18$pgzZ9" role="3cpWs9">
+                <property role="TrG5h" value="server" />
+                <node concept="3uibUv" id="6bh18$pgzZa" role="1tU5fm">
+                  <ref role="3uigEE" to="l33q:7YU6lPWx9FL" resolve="Server" />
+                </node>
+                <node concept="2ShNRf" id="6bh18$pg$03" role="33vP2m">
+                  <node concept="HV5vD" id="6bh18$pg$hE" role="2ShVmc">
+                    <ref role="HV5vE" to="l33q:7YU6lPWx9FL" resolve="Server" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6bh18$pg$lL" role="3cqZAp">
+              <node concept="2OqwBi" id="6bh18$pg$n0" role="3clFbG">
+                <node concept="37vLTw" id="6bh18$pg$lJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6bh18$pgzZ9" resolve="server" />
+                </node>
+                <node concept="liA8E" id="6bh18$pg$$S" role="2OqNvi">
+                  <ref role="37wK5l" to="l33q:7YU6lPWxv$g" resolve="init" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6bh18$pg$Jx" role="3cqZAp" />
+          </node>
+          <node concept="TDmWw" id="7YU6lPWxyOZ" role="TEbGg">
+            <node concept="3clFbS" id="7YU6lPWxyP0" role="TDEfX" />
+            <node concept="3cpWsn" id="7YU6lPWxyP1" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6bh18$pg$HW" role="1tU5fm">
+                <ref role="3uigEE" to="25kt:~AlreadyBoundException" resolve="AlreadyBoundException" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="7YU6lPWxyP3" role="TEbGg">
+            <node concept="3clFbS" id="7YU6lPWxyP4" role="TDEfX" />
+            <node concept="3cpWsn" id="7YU6lPWxyP5" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="7YU6lPWxyP6" role="1tU5fm">
+                <ref role="3uigEE" to="22fg:~MalformedURLException" resolve="MalformedURLException" />
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="7YU6lPWxyP7" role="TEbGg">
+            <node concept="3clFbS" id="7YU6lPWxyP8" role="TDEfX" />
+            <node concept="3cpWsn" id="7YU6lPWxyP9" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="7YU6lPWxyPa" role="1tU5fm">
+                <ref role="3uigEE" to="25kt:~RemoteException" resolve="RemoteException" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6bh18$pgwCq" role="3cqZAp" />
       </node>
     </node>
   </node>
