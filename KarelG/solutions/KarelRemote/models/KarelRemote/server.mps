@@ -21,9 +21,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -37,10 +34,6 @@
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -292,22 +285,6 @@
   <node concept="312cEu" id="7YU6lPWx9FL">
     <property role="TrG5h" value="Server" />
     <node concept="2tJIrI" id="7YU6lPWxvNU" role="jymVt" />
-    <node concept="Wx3nA" id="7YU6lPWxvX7" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="INSTANCE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="7YU6lPWxvTM" role="1B3o_S" />
-      <node concept="3uibUv" id="7YU6lPWxvWP" role="1tU5fm">
-        <ref role="3uigEE" node="7YU6lPWx9FL" resolve="Server" />
-      </node>
-      <node concept="2ShNRf" id="7YU6lPWxw0y" role="33vP2m">
-        <node concept="HV5vD" id="7YU6lPWxwaL" role="2ShVmc">
-          <ref role="HV5vE" node="7YU6lPWx9FL" resolve="Server" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="7YU6lPWxr_L" role="jymVt" />
     <node concept="312cEg" id="7YU6lPWxvF6" role="jymVt">
       <property role="TrG5h" value="robotService" />
       <property role="34CwA1" value="false" />
