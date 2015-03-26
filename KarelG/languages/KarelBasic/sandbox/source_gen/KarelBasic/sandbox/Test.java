@@ -14,5 +14,7 @@ public class Test extends Script {
   }
 
   public static void main(String[] args) {
+    Test script = new Test();
+    script.run();
   }
 }

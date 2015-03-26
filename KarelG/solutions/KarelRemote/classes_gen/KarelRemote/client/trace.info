@@ -4,25 +4,31 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <root nodeRef="r:a3b9f9c2-995a-41e3-a8cb-1e27bd4780aa(KarelRemote.client)/9203696677796797586">
     <file name="Client.java">
       <node id="9203696677796834699" at="15,0,16,0" concept="1" trace="robotService" />
-      <node id="9203696677796797858" at="17,87,18,31" concept="5" />
+      <node id="9203696677796797858" at="17,87,18,31" concept="6" />
       <node id="9203696677796797841" at="19,46,20,58" concept="0" />
-      <node id="9203696677796797860" at="21,5,22,38" concept="5" />
-      <node id="9203696677796835801" at="22,38,23,85" concept="0" />
-      <node id="9203696677796836989" at="26,41,27,24" concept="4" />
+      <node id="9203696677796797860" at="21,5,22,38" concept="6" />
+      <node id="6233428096112513378" at="22,38,23,68" concept="4" />
+      <node id="6233428096112513106" at="23,68,24,0" concept="7" />
+      <node id="9203696677796835801" at="24,0,25,38" concept="0" />
+      <node id="9203696677796836989" at="28,41,29,24" concept="5" />
       <node id="9203696677796797835" at="18,31,21,5" concept="2" />
-      <node id="9203696677796836799" at="26,0,29,0" concept="3" trace="getRobotService#()LKarelRemote/api/RobotService;" />
-      <node id="9203696677796797792" at="17,0,25,0" concept="3" trace="init#()V" />
+      <node id="9203696677796836799" at="28,0,31,0" concept="3" trace="getRobotService#()LKarelRemote/api/RobotService;" />
+      <node id="9203696677796797792" at="17,0,27,0" concept="3" trace="init#()V" />
       <scope id="9203696677796797840" at="19,46,20,58" />
-      <scope id="9203696677796836802" at="26,41,27,24" />
-      <scope id="9203696677796836799" at="26,0,29,0" />
-      <scope id="9203696677796797795" at="17,87,23,85" />
-      <scope id="9203696677796797792" at="17,0,25,0" />
-      <unit id="9203696677796797586" at="12,0,30,0" name="KarelRemote.client.Client" />
+      <scope id="9203696677796836802" at="28,41,29,24" />
+      <scope id="9203696677796836799" at="28,0,31,0" />
+      <scope id="9203696677796797795" at="17,87,25,38">
+        <var name="srv" id="6233428096112513379" />
+      </scope>
+      <scope id="9203696677796797792" at="17,0,27,0" />
+      <unit id="9203696677796797586" at="12,0,32,0" name="KarelRemote.client.Client" />
     </file>
   </root>
 </debug-info>

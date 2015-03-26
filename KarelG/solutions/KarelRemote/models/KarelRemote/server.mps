@@ -21,6 +21,9 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
+        <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -313,22 +316,24 @@
             <property role="3SKdUp" value="classes are loaded" />
           </node>
         </node>
-        <node concept="3clFbJ" id="7YU6lPWxv$n" role="3cqZAp">
-          <node concept="3clFbC" id="7YU6lPWxv$o" role="3clFbw">
-            <node concept="2YIFZM" id="7YU6lPWxv$p" role="3uHU7B">
-              <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-              <ref role="37wK5l" to="e2lb:~System.getSecurityManager():java.lang.SecurityManager" resolve="getSecurityManager" />
-            </node>
-            <node concept="10Nm6u" id="7YU6lPWxv$q" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="7YU6lPWxv$r" role="3clFbx">
-            <node concept="3clFbF" id="7YU6lPWxv$s" role="3cqZAp">
-              <node concept="2YIFZM" id="7YU6lPWxv$t" role="3clFbG">
+        <node concept="u8gfJ" id="5q1_tf9HFg_" role="3cqZAp">
+          <node concept="3clFbJ" id="7YU6lPWxv$n" role="u8lrQ">
+            <node concept="3clFbC" id="7YU6lPWxv$o" role="3clFbw">
+              <node concept="2YIFZM" id="7YU6lPWxv$p" role="3uHU7B">
                 <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
-                <ref role="37wK5l" to="e2lb:~System.setSecurityManager(java.lang.SecurityManager):void" resolve="setSecurityManager" />
-                <node concept="2ShNRf" id="7YU6lPWxv$u" role="37wK5m">
-                  <node concept="1pGfFk" id="7YU6lPWxv$v" role="2ShVmc">
-                    <ref role="37wK5l" to="25kt:~RMISecurityManager.&lt;init&gt;()" resolve="RMISecurityManager" />
+                <ref role="37wK5l" to="e2lb:~System.getSecurityManager():java.lang.SecurityManager" resolve="getSecurityManager" />
+              </node>
+              <node concept="10Nm6u" id="7YU6lPWxv$q" role="3uHU7w" />
+            </node>
+            <node concept="3clFbS" id="7YU6lPWxv$r" role="3clFbx">
+              <node concept="3clFbF" id="7YU6lPWxv$s" role="3cqZAp">
+                <node concept="2YIFZM" id="7YU6lPWxv$t" role="3clFbG">
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <ref role="37wK5l" to="e2lb:~System.setSecurityManager(java.lang.SecurityManager):void" resolve="setSecurityManager" />
+                  <node concept="2ShNRf" id="7YU6lPWxv$u" role="37wK5m">
+                    <node concept="1pGfFk" id="7YU6lPWxv$v" role="2ShVmc">
+                      <ref role="37wK5l" to="25kt:~RMISecurityManager.&lt;init&gt;()" resolve="RMISecurityManager" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -350,11 +355,6 @@
             <node concept="37vLTw" id="7YU6lPWxvJg" role="37vLTJ">
               <ref role="3cqZAo" node="7YU6lPWxvF6" resolve="robotService" />
             </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7YU6lPWxv$B" role="3cqZAp">
-          <node concept="3SKdUq" id="7YU6lPWxv$C" role="3SKWNk">
-            <property role="3SKdUp" value="... and bind it with the RMI Registry" />
           </node>
         </node>
         <node concept="3clFbF" id="7YU6lPWxv$D" role="3cqZAp">

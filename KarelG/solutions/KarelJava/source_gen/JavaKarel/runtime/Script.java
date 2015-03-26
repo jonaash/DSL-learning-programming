@@ -6,6 +6,7 @@ import KarelRemote.client.Client;
 import java.rmi.NotBoundException;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
+import KarelRemote.api.RobotService;
 import KarelRemote.api.CallResponse;
 
 public abstract class Script {
@@ -13,28 +14,33 @@ public abstract class Script {
   protected IRobot robot;
 
   public Script() {
-    /*
-      final Client client = new Client();
+    final Client client = new Client();
 
-      try {
-        client.init();
-      } catch (NotBoundException e) {
-      } catch (MalformedURLException e) {
-      } catch (RemoteException e) {
+    try {
+      client.init();
+    } catch (NotBoundException e) {
+      e.printStackTrace();
+    } catch (MalformedURLException e) {
+      e.printStackTrace();
+    } catch (RemoteException e) {
+      e.printStackTrace();
+    }
+
+    robot = new IRobot() {
+      public void step() {
+        RobotService service = client.getRobotService();
+
+        CallResponse response = service.step();
+
+
+        System.out.println("Step: " + response.getStatus());
       }
+      public void turnLeft() {
+        CallResponse response = client.getRobotService().turnLeft();
+        System.out.println("Turn left " + response.getStatus());
 
-      robot = new IRobot() {
-        public void step() {
-          CallResponse response = client.getRobotService().step();
-          System.out.println("Step: " + response.getStatus());
-        }
-        public void turnLeft() {
-          CallResponse response = client.getRobotService().turnLeft();
-          System.out.println("Turn left " + response.getStatus());
-
-        }
-      };
-    */
+      }
+    };
   }
   public abstract void run();
 

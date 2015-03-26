@@ -39,6 +39,7 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
+        <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -61,6 +62,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -71,6 +73,10 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -162,21 +168,33 @@
             <property role="3SKdUp" value="Call registry for PowerService" />
           </node>
         </node>
+        <node concept="3cpWs8" id="5q1_tf9It5y" role="3cqZAp">
+          <node concept="3cpWsn" id="5q1_tf9It5z" role="3cpWs9">
+            <property role="TrG5h" value="srv" />
+            <node concept="3uibUv" id="5q1_tf9It5$" role="1tU5fm">
+              <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            </node>
+            <node concept="2YIFZM" id="7YU6lPWxmb2" role="33vP2m">
+              <ref role="37wK5l" to="25kt:~Naming.lookup(java.lang.String):java.rmi.Remote" resolve="lookup" />
+              <ref role="1Pybhc" to="25kt:~Naming" resolve="Naming" />
+              <node concept="Xl_RD" id="7YU6lPWxlQr" role="37wK5m">
+                <property role="Xl_RC" value="rmi://localhost:9123/RobotService" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5q1_tf9It1i" role="3cqZAp" />
         <node concept="3clFbF" id="7YU6lPWxv7p" role="3cqZAp">
           <node concept="37vLTI" id="7YU6lPWxvjg" role="3clFbG">
             <node concept="37vLTw" id="7YU6lPWxv7n" role="37vLTJ">
               <ref role="3cqZAo" node="7YU6lPWxuQb" resolve="robotService" />
             </node>
             <node concept="10QFUN" id="7YU6lPWxlQn" role="37vLTx">
-              <node concept="2YIFZM" id="7YU6lPWxmb2" role="10QFUP">
-                <ref role="37wK5l" to="25kt:~Naming.lookup(java.lang.String):java.rmi.Remote" resolve="lookup" />
-                <ref role="1Pybhc" to="25kt:~Naming" resolve="Naming" />
-                <node concept="Xl_RD" id="7YU6lPWxlQr" role="37wK5m">
-                  <property role="Xl_RC" value="rmi://localhost:1099/RobotService" />
-                </node>
-              </node>
               <node concept="3uibUv" id="7YU6lPWxmKv" role="10QFUM">
                 <ref role="3uigEE" to="ujvt:7YU6lPWx8ia" resolve="RobotService" />
+              </node>
+              <node concept="37vLTw" id="5q1_tf9IvSB" role="10QFUP">
+                <ref role="3cqZAo" node="5q1_tf9It5z" resolve="srv" />
               </node>
             </node>
           </node>

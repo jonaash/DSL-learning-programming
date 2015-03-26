@@ -15,6 +15,7 @@
   <dependency className="JavaKarel.runtime.Script" file="Script.java">
     <classNode dependClassName="JavaKarel.runtime.IRobot" />
     <classNode dependClassName="KarelRemote.api.CallResponse" />
+    <classNode dependClassName="KarelRemote.api.RobotService" />
     <classNode dependClassName="KarelRemote.client.Client" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.net.MalformedURLException" />

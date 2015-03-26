@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="ViewPlugin.plugin.KarelView_Tool" file="KarelView_Tool.java">
+    <classNode dependClassName="KarelRemote.server.Server" />
     <classNode dependClassName="com.intellij.openapi.project.Project" />
     <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.net.MalformedURLException" />
+    <classNode dependClassName="java.rmi.AlreadyBoundException" />
+    <classNode dependClassName="java.rmi.RemoteException" />
     <classNode dependClassName="javax.swing.Icon" />
     <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="javax.swing.JLabel" />
     <classNode dependClassName="javax.swing.JPanel" />
     <classNode extendsClassName="jetbrains.mps.plugins.tool.GeneratedTool" />
   </dependency>

@@ -20,7 +20,9 @@ public class Client {
       System.setSecurityManager(new RMISecurityManager());
     }
     // Call registry for PowerService 
-    robotService = (RobotService) Naming.lookup("rmi://localhost:1099/RobotService");
+    Object srv = Naming.lookup("rmi://localhost:9123/RobotService");
+
+    robotService = (RobotService) srv;
   }
 
   public RobotService getRobotService() {

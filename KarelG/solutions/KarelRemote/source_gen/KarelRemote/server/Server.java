@@ -11,19 +11,18 @@ import KarelRemote.api.RobotService;
 
 public class Server {
 
-  public static final Server INSTANCE = new Server();
-
   private RobotServiceImpl robotService;
 
   public void init() throws AlreadyBoundException, RemoteException, MalformedURLException {
     // Assign a security manager, in the event that dynamic 
     // classes are loaded 
-    if (System.getSecurityManager() == null) {
-      System.setSecurityManager(new RMISecurityManager());
-    }
+    /*
+      if (System.getSecurityManager() == null) {
+        System.setSecurityManager(new RMISecurityManager());
+      }
+    */
     // Create an instance of our power service server ... 
     robotService = new RobotServiceImpl();
-    // ... and bind it with the RMI Registry 
     Naming.bind("RobotService", robotService);
     System.out.println("Service bound....");
 

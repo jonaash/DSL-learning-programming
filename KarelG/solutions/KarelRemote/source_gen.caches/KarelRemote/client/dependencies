@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="KarelRemote.client.Client" file="Client.java">
     <classNode dependClassName="KarelRemote.api.RobotService" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.net.MalformedURLException" />
     <classNode dependClassName="java.rmi.Naming" />
