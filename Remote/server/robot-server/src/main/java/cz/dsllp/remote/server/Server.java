@@ -9,13 +9,17 @@ import java.rmi.registry.Registry;
 import javax.naming.Context;
 
 import cz.dsllp.remote.api.skeleton.RobotService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Server {
+
+    public static final Logger logger = LoggerFactory.getLogger(Server.class);
 
     private RobotServiceImpl robotService;
 
     public void init() throws AlreadyBoundException, RemoteException, MalformedURLException {
-        // Set properties for RMI rigistry
+        // Set properties for RMI registry
         System.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.rmi.registry.RegistryContextFactory");
         System.setProperty(Context.PROVIDER_URL, "rmi://localhost:1099");
 
@@ -27,7 +31,7 @@ public class Server {
 
 
 
-        System.out.println("Service bound....");
+        logger.info("Service bound....");
 
     }
 

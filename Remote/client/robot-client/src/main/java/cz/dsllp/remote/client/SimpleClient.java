@@ -5,13 +5,17 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
 import cz.dsllp.remote.api.skeleton.RobotService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class ClientTesting {
+public class SimpleClient {
+
+    public static final Logger logger = LoggerFactory.getLogger(SimpleClient.class);
 
     public static void main(String[] args) {
         Client client = new Client();
         try {
-            System.out.println("Client init");
+           logger.info("Simple client initialization starting");
             client.init();
             RobotService robot = client.getRobotService();
             testRobot(robot);
