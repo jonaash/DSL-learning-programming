@@ -15,10 +15,7 @@ public class Client {
     private RobotService robotService;
 
     public void init() throws MalformedURLException, RemoteException, NotBoundException {
-        // Assign security manager
-        if (System.getSecurityManager() == null) {
-            System.setSecurityManager(new RMISecurityManager());
-        }
+
         // Call registry for PowerService
         Object srv = Naming.lookup("rmi://localhost:" + RMI_REGISTRY_PORT + "/RobotService");
 

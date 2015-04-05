@@ -2,18 +2,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>cz.dsllp.remote</groupId>
-	<artifactId>server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>cz.dsllp.gui</groupId>
+	<artifactId>remote-gui</artifactId>
+	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>remote-server</name>
 	<url>https://github.com/jonaash/DSL-learning-programming</url>
 
 	<modules>
 		<module>api</module>
-		<module>robot-server</module>
 		<module>gui</module>
+		<module>client</module>
+		<module>server</module>
 	</modules>
 
 	<properties>
