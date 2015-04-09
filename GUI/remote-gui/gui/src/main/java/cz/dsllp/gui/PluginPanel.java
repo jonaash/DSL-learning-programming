@@ -68,6 +68,10 @@ public class PluginPanel extends JPanel {
     }
 
     private void setWorldPanelInternal(WorldPanel worldPanel){
+        if(this.worldPanel != null){
+            scrollPanel.remove(this.worldPanel);
+        }
+
         this.worldPanel = worldPanel;
         scrollPanel.setMaximumSize(worldPanel.getPreferredSize());
         scrollPanel.setMinimumSize(worldPanel.getPreferredSize());
