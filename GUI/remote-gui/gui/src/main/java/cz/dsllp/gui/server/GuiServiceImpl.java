@@ -1,12 +1,14 @@
 package cz.dsllp.gui.server;
 
 import cz.dsllp.gui.api.exception.RemoteGuiException;
-import cz.dsllp.gui.api.service.GuiService;
 import cz.dsllp.gui.api.message.Result;
 import cz.dsllp.gui.api.message.Step;
+import cz.dsllp.gui.api.message.appearance.Appearance;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.api.message.command.ChangeCell;
+import cz.dsllp.gui.api.message.command.ChangeThing;
 import cz.dsllp.gui.api.message.command.Command;
+import cz.dsllp.gui.api.service.GuiService;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
@@ -32,7 +34,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
 
 
     @Override
-    public void createWorld(String name, int width, int height) throws RemoteException{
+    public void createWorld(String name, int width, int height) throws RemoteException {
         logger.debug("Creating world with name: '{}', width: {}, height {}", name, width, height);
 
         World world = new World(name, width, height);
@@ -44,10 +46,10 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     }
 
     @Override
-    public Result doStep(Step step) throws RemoteException{
+    public Result doStep(Step step) throws RemoteException {
         validate(step);
 
-        for(Command command: step.getCommands()){
+        for (Command command : step.getCommands()) {
             processCommand(command);
         }
 
@@ -61,9 +63,9 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
         validateName(name);
 
         Thing thing = getWorld().createThing(name);
-        if(name != null){
+        if (name != null) {
             return true;
-        }else {
+        } else {
             // thing with given name already exists
             return false;
         }
@@ -75,42 +77,62 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     }
 
     private void processCommand(Command command) {
-        if(command instanceof ChangeCell){
-            changeCell((ChangeCell)command);
+        if (command instanceof ChangeCell) {
+            changeCell((ChangeCell) command);
+        } else if (command instanceof ChangeThing) {
+            changeThing((ChangeThing) command);
         }
     }
 
-    private void changeCell(ChangeCell command){
+    private void changeCell(ChangeCell command) {
+        validateAppearance(command.getAppearance());
 
         World world = getWorldPanel().getWorld();
 
         Cell cell = world.getCell(command.getPosition().getRow(), command.getPosition().getCol());
+        
+        cell.setAppearance((TextAppearance) command.getAppearance());
 
-        if(command.getAppearance() instanceof TextAppearance){
-            cell.setAppearance((TextAppearance)command.getAppearance());
-        }else{
-            throw new RemoteGuiException("Unsupported appearance");
-        }
+    }
+
+    private void changeThing(ChangeThing command) {
+        validateAppearance(command.getNewAppearance());
+
+        World world = getWorldPanel().getWorld();
+
+        Thing thing = world.getThing(command.getThingName());
+
+        thing.setPosition(command.getNewPosition().getRow(), command.getNewPosition().getCol());
+        thing.setAppearance((TextAppearance) command.getNewAppearance());
+
+
     }
 
     private void validate(Step step) {
-        if(step == null && step.getSpeed() == null && step.getCommands() == null){
+        if (step == null && step.getSpeed() == null && step.getCommands() == null) {
             throw new IllegalArgumentException("Step and its content cannot be null");
         }
     }
 
-    private void validateName(String name){
-        if(StringUtils.isBlank(name)){
+    private void validateName(String name) {
+        if (StringUtils.isBlank(name)) {
             throw new IllegalArgumentException("Name must not be null or empty");
         }
     }
 
+    private void validateAppearance(Appearance a) {
+        if (!(a instanceof TextAppearance)) {
+            throw new RemoteGuiException("Unsupported appearance");
+        }
 
-    private WorldPanel getWorldPanel(){
+    }
+
+
+    private WorldPanel getWorldPanel() {
         return GuiServer.getInstance().getPanel().getWorldPanel();
     }
 
-    private World getWorld(){
+    private World getWorld() {
         return getWorldPanel().getWorld();
     }
 }

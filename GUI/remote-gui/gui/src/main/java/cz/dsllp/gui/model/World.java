@@ -63,6 +63,10 @@ public class World {
 
     }
 
+    public Thing getThing(String name){
+        return things.get(name);
+    }
+
     public Cell getCell(int row, int col) {
         return matrix[row][col];
     }
