@@ -18,6 +18,13 @@ public class Step implements Serializable{
     StepSpeed speed;
     List<Command> commands = new ArrayList<Command>();
 
+    public Step() {
+    }
+
+    public Step(StepSpeed speed) {
+        this.speed = speed;
+    }
+
     public void add(Command command){
         if(command != null){
             commands.add(command);

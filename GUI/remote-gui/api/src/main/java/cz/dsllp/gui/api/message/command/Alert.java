@@ -2,18 +2,16 @@ package cz.dsllp.gui.api.message.command;
 
 /**
  * @author jonasklimes
- * @since 05/04/15
+ * @since 09/04/15
  */
-public class PrintMessage extends Command {
-    private static final long serialVersionUID = 5572966573840940017L;
+public class Alert extends Command{
     private String message;
 
-    public PrintMessage(String message) {
+    public Alert(String message) {
         this.message = message;
     }
 
     public String getMessage() {
         return message;
     }
-
 }

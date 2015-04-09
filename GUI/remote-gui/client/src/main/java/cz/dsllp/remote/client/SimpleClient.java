@@ -1,5 +1,6 @@
 package cz.dsllp.remote.client;
 
+import cz.dsllp.gui.api.message.command.ChangeThing;
 import cz.dsllp.gui.api.message.command.Position;
 import cz.dsllp.gui.api.service.GuiService;
 import cz.dsllp.gui.api.message.Step;
@@ -23,8 +24,11 @@ public class SimpleClient {
             client.init();
             GuiService gui = client.getGuiService();
             createWorld(gui);
-
+            gui.createThing("robot");
             changeCells(gui);
+
+
+
 
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
@@ -49,8 +53,12 @@ public class SimpleClient {
 
         c.setPosition(new Position(2,3));
         c.setAppearance(new TextAppearance(Color.BLUE, Color.RED, "W"));
-
         step.add(c);
+
+        ChangeThing t = new ChangeThing("robot", new Position(2,2), new TextAppearance(Color.green, Color.magenta,
+                ">"));
+
+        step.add(t);
 
         gui.doStep(step);
 

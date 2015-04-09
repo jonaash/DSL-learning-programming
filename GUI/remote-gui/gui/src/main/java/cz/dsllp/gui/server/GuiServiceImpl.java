@@ -8,8 +8,10 @@ import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.api.message.command.ChangeCell;
 import cz.dsllp.gui.api.message.command.Command;
 import cz.dsllp.gui.model.Cell;
+import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
 import cz.dsllp.gui.view.swing.WorldPanel;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -51,7 +53,25 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
 
         getWorldPanel().update();
 
-        return Result.buildSuccess();
+        return Result.SUCCESS;
+    }
+
+    @Override
+    public boolean createThing(String name) throws RemoteException {
+        validateName(name);
+
+        Thing thing = getWorld().createThing(name);
+        if(name != null){
+            return true;
+        }else {
+            // thing with given name already exists
+            return false;
+        }
+    }
+
+    @Override
+    public boolean deleteThing(String name) throws RemoteException {
+        return getWorld().deleteThing(name);
     }
 
     private void processCommand(Command command) {
@@ -79,8 +99,18 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
         }
     }
 
+    private void validateName(String name){
+        if(StringUtils.isBlank(name)){
+            throw new IllegalArgumentException("Name must not be null or empty");
+        }
+    }
+
 
     private WorldPanel getWorldPanel(){
         return GuiServer.getInstance().getPanel().getWorldPanel();
+    }
+
+    private World getWorld(){
+        return getWorldPanel().getWorld();
     }
 }
