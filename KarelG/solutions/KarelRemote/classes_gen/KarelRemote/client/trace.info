@@ -8,7 +8,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
-  <root nodeRef="r:a3b9f9c2-995a-41e3-a8cb-1e27bd4780aa(KarelRemote.client)/9203696677796797586">
+  <root nodeRef="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:a3b9f9c2-995a-41e3-a8cb-1e27bd4780aa(KarelRemote/KarelRemote.client)/9203696677796797586">
     <file name="Client.java">
       <node id="9203696677796834699" at="15,0,16,0" concept="1" trace="robotService" />
       <node id="9203696677796797858" at="17,87,18,31" concept="6" />

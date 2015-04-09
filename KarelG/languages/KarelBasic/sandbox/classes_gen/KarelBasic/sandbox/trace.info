@@ -4,24 +4,24 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <root nodeRef="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/7120477472729563052">
+  <root nodeRef="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907">
     <file name="Test.java">
-      <node id="7120477472729563058" at="10,21,11,17" concept="0" />
-      <node id="7120477472729563064" at="11,17,12,17" concept="0" />
-      <node id="7120477472729563078" at="12,17,13,21" concept="0" />
-      <node id="7120477472729563052" at="16,42,17,29" concept="2" />
-      <node id="7120477472729563052" at="17,29,18,17" concept="0" />
-      <node id="7120477472729563052" at="16,0,20,0" concept="3" trace="main#([Ljava/lang/String;)V" />
-      <node id="7120477472729563052" at="10,0,15,0" concept="1" trace="run#()V" />
-      <scope id="7120477472729563052" at="16,42,18,17">
-        <var name="script" id="7120477472729563052" />
+      <node id="700771863880641938" at="10,21,11,17" concept="0" />
+      <node id="700771863880641944" at="11,17,12,17" concept="0" />
+      <node id="700771863880641952" at="12,17,13,21" concept="0" />
+      <node id="700771863880641907" at="16,42,17,29" concept="2" />
+      <node id="700771863880641907" at="17,29,18,17" concept="0" />
+      <node id="700771863880641907" at="16,0,20,0" concept="3" trace="main#([Ljava/lang/String;)V" />
+      <node id="700771863880641907" at="10,0,15,0" concept="1" trace="run#()V" />
+      <scope id="700771863880641907" at="16,42,18,17">
+        <var name="script" id="700771863880641907" />
       </scope>
-      <scope id="7120477472729563052" at="10,21,13,21" />
-      <scope id="7120477472729563052" at="16,0,20,0">
-        <var name="args" id="7120477472729563052" />
+      <scope id="700771863880641907" at="10,21,13,21" />
+      <scope id="700771863880641907" at="16,0,20,0">
+        <var name="args" id="700771863880641907" />
       </scope>
-      <scope id="7120477472729563052" at="10,0,15,0" />
-      <unit id="7120477472729563052" at="7,0,21,0" name="KarelBasic.sandbox.Test" />
+      <scope id="700771863880641907" at="10,0,15,0" />
+      <unit id="700771863880641907" at="7,0,21,0" name="KarelBasic.sandbox.Test" />
     </file>
   </root>
 </debug-info>

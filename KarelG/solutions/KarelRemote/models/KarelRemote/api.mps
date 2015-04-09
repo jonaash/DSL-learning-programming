@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2ba684d9-df92-4905-991a-54dda37ab628(KarelRemote.api)">
+<model ref="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:2ba684d9-df92-4905-991a-54dda37ab628(KarelRemote/KarelRemote.api)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
   </languages>
   <imports>
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="l6yi" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#6354ebe7-c22a-4a0f-ac54-50b52ab9b065(jetbrains.mps.lang.project.modules/module.JDK@project_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
   </imports>
   <registry>

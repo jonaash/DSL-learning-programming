@@ -14,7 +14,7 @@
       <unit at="13,0,36,0" name="KarelBasic.editor.EditorAspectDescriptorImpl" />
     </file>
   </root>
-  <root nodeRef="r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic.editor)/31172425217120293">
+  <root nodeRef="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217120293">
     <file name="LeftTurn_Editor.java">
       <node id="31172425217120293" at="14,79,15,62" concept="6" />
       <node id="31172425217198816" at="17,88,18,131" concept="5" />
@@ -45,7 +45,7 @@
       <unit id="31172425217120293" at="13,0,29,0" name="KarelBasic.editor.LeftTurn_Editor" />
     </file>
   </root>
-  <root nodeRef="r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic.editor)/31172425217198828">
+  <root nodeRef="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217198828">
     <file name="Step_Editor.java">
       <node id="31172425217198828" at="14,79,15,61" concept="6" />
       <node id="31172425217198860" at="17,87,18,131" concept="5" />
@@ -76,7 +76,7 @@
       <unit id="31172425217198828" at="13,0,29,0" name="KarelBasic.editor.Step_Editor" />
     </file>
   </root>
-  <root nodeRef="r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic.editor)/31172425217594795">
+  <root nodeRef="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217594795">
     <file name="Script_Editor.java">
       <node id="31172425217594795" at="20,79,21,63" concept="6" />
       <node id="31172425217594795" at="23,89,24,96" concept="5" />
@@ -185,7 +185,7 @@
       <unit id="31172425217594795" at="19,0,79,0" name="KarelBasic.editor.Script_Editor" />
     </file>
   </root>
-  <root nodeRef="r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic.editor)/31172425217633293">
+  <root nodeRef="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217633293">
     <file name="CodeBlock_Editor.java">
       <node id="31172425217633293" at="20,79,21,63" concept="6" />
       <node id="31172425217633293" at="23,89,24,97" concept="5" />
@@ -284,7 +284,7 @@
       <unit id="31172425217633293" at="19,0,70,0" name="KarelBasic.editor.CodeBlock_Editor" />
     </file>
   </root>
-  <root nodeRef="r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic.editor)/31172425217647581">
+  <root nodeRef="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217647581">
     <file name="KarelStyles_StyleSheet.java">
       <node id="31172425217647581" at="12,5,13,23" concept="5" />
       <node id="31172425217647581" at="13,23,14,35" concept="2" />

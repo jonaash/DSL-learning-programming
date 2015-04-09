@@ -4,42 +4,39 @@ package ViewPlugin.plugin;
 
 import jetbrains.mps.plugins.tool.GeneratedTool;
 import javax.swing.Icon;
+import cz.dsllp.gui.PluginPanel;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowAnchor;
-import KarelRemote.server.Server;
+import cz.dsllp.gui.server.GuiServer;
 import java.rmi.AlreadyBoundException;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
 
 public class KarelView_Tool extends GeneratedTool {
   private static final Icon ICON = null;
-  private String message = "init message";
+  private PluginPanel panel;
   public KarelView_Tool(Project project) {
     super(project, "KarelView", -1, ICON, ToolWindowAnchor.RIGHT, false);
   }
   public void init(Project project) {
     super.init(project);
+    KarelView_Tool.this.panel = new PluginPanel();
+
     KarelView_Tool.this.makeAvailable();
-    KarelView_Tool.this.message = "init...";
 
     try {
-      Server server = new Server();
-      server.init();
-      KarelView_Tool.this.message = server.toString();
+      GuiServer server = GuiServer.getInstance();
+      server.init(KarelView_Tool.this.panel, 1099);
+
 
     } catch (AlreadyBoundException e) {
       e.printStackTrace();
-      KarelView_Tool.this.message = e.toString();
     } catch (MalformedURLException e) {
       e.printStackTrace();
-      KarelView_Tool.this.message = e.toString();
 
     } catch (RemoteException e) {
       e.printStackTrace();
-      KarelView_Tool.this.message = e.toString();
 
     }
 
@@ -47,9 +44,6 @@ public class KarelView_Tool extends GeneratedTool {
   }
   public JComponent getComponent() {
 
-    JPanel panel = new JPanel();
-    JLabel label = new JLabel(KarelView_Tool.this.message);
-    panel.add(label);
-    return panel;
+    return KarelView_Tool.this.panel;
   }
 }
