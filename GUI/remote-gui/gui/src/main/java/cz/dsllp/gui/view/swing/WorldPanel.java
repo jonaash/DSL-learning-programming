@@ -53,20 +53,23 @@ public class WorldPanel extends JPanel {
 
 
                 try {
-                    SwingUtilities.invokeAndWait(new Runnable() {
-                        @Override
-                        public void run() {
-                            currentVisual.updateCell(currentCell);
+                    if (SwingUtilities.isEventDispatchThread()) {
+                        currentVisual.updateCell(currentCell);
+                    } else {
 
-                        }
-                    });
+                        SwingUtilities.invokeAndWait(new Runnable() {
+                            @Override
+                            public void run() {
+                                currentVisual.updateCell(currentCell);
+
+                            }
+                        });
+                    }
                 } catch (InterruptedException e) {
                     logger.warn("Update error", e);
                 } catch (InvocationTargetException e) {
                     logger.warn("Update error", e);
                 }
-
-
             }
         }
     }
