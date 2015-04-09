@@ -1,15 +1,32 @@
-package cz.dsllp.gui.model;
+package cz.dsllp.gui.api.to;
 
-import java.awt.Color;
+import java.awt.*;
 
 /**
  * @author jonasklimes
  * @since 03/04/15
  */
-public class TextCell extends AbstractCell{
+public class TextAppearance implements Appearance {
+
+    private static final long serialVersionUID = 7239327898300729563L;
+
     private Color background;
     private Color color;
     private String text;
+
+    public TextAppearance(){}
+
+    /**
+     *
+     * @param background
+     * @param color
+     * @param text
+     */
+    public TextAppearance(Color background, Color color, String text) {
+        this.background = background;
+        this.color = color;
+        this.text = text;
+    }
 
     public Color getBackground() {
         return background;
@@ -34,4 +51,6 @@ public class TextCell extends AbstractCell{
     public void setText(String text) {
         this.text = text;
     }
+
+
 }

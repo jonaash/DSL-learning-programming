@@ -51,6 +51,8 @@ public class PluginPanel extends JPanel {
         logger.debug("World preferred size: {}", worldPanel.getPreferredSize());
         logger.debug("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
         this.title.setText(worldPanel.getWorld().getName());
+
+        worldPanel.update();
     }
 
     @Override

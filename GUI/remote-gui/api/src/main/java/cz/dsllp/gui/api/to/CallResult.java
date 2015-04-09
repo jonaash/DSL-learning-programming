@@ -1,4 +1,4 @@
-package cz.dsllp.remote.api.to;
+package cz.dsllp.gui.api.to;
 
 import java.io.Serializable;
 
@@ -14,6 +14,10 @@ public class CallResult implements Serializable {
 
     public Status getStatus() {
         return status;
+    }
+
+    public static CallResult buildSuccess(){
+        return new CallResult(Status.SUCCESS);
     }
 
 }

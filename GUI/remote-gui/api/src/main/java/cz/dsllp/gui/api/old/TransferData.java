@@ -1,4 +1,7 @@
-package cz.dsllp.remote.api.to;
+package cz.dsllp.gui.api.old;
+
+import cz.dsllp.gui.api.to.CallResult;
+import cz.dsllp.gui.api.to.Status;
 
 public class TransferData<T> extends CallResult {
 

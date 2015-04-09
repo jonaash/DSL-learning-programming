@@ -1,16 +1,14 @@
 package cz.dsllp.remote.server;
 
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
-
+import cz.dsllp.gui.api.to.CallResult;
+import cz.dsllp.gui.api.to.Status;
 import cz.dsllp.remote.api.skeleton.Robot;
 import cz.dsllp.remote.api.skeleton.RobotService;
-import cz.dsllp.remote.api.to.CallResult;
-import cz.dsllp.remote.api.to.Status;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 
 public class RobotServiceImpl extends UnicastRemoteObject implements RobotService {
 

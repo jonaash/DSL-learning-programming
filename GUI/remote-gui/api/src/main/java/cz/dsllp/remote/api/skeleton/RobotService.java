@@ -1,9 +1,9 @@
 package cz.dsllp.remote.api.skeleton;
 
+import cz.dsllp.gui.api.to.CallResult;
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-
-import cz.dsllp.remote.api.to.CallResult;
 
 public interface RobotService extends Remote {
 	

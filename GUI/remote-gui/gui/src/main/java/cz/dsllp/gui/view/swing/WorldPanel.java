@@ -1,6 +1,6 @@
 package cz.dsllp.gui.view.swing;
 
-import cz.dsllp.gui.model.TextCell;
+import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class WorldPanel extends JPanel {
     private static Logger logger = LoggerFactory.getLogger(WorldPanel.class);
 
     private World world;
-    private VisualTextCell[][] visuals;
+    private VisualCell[][] visuals;
 
     public WorldPanel(World world) {
         super(new GridLayout(world.getHeight(), world.getWidth()), true);
@@ -34,11 +34,11 @@ public class WorldPanel extends JPanel {
     }
 
     private void initVisuals() {
-        visuals = new VisualTextCell[world.getHeight()][world.getWidth()];
+        visuals = new VisualCell[world.getHeight()][world.getWidth()];
 
         for (int row = 0; row < world.getHeight(); row++) {
             for (int col = 0; col < world.getWidth(); col++) {
-                VisualTextCell cell = new VisualTextCell();
+                VisualCell cell = new VisualCell();
                 visuals[row][col] = cell;
                 add(cell);
             }
@@ -48,8 +48,8 @@ public class WorldPanel extends JPanel {
     public void update() {
         for (int row = 0; row < world.getHeight(); row++) {
             for (int col = 0; col < world.getWidth(); col++) {
-                final TextCell currentCell = world.getCell(row, col);
-                final VisualTextCell currentVisual = visuals[row][col];
+                final Cell currentCell = world.getCell(row, col);
+                final VisualCell currentVisual = visuals[row][col];
 
 
                 try {
