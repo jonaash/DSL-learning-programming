@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-  <root nodeRef="r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote.server)/9203696677796747927">
+  <root nodeRef="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote/KarelRemote.server)/9203696677796747927">
     <file name="RobotServiceImpl.java">
       <node id="9203696677796777058" at="13,52,14,12" concept="10" />
       <node id="9203696677796766558" at="16,30,17,18" concept="2" />
@@ -46,7 +46,7 @@
       <unit id="9203696677796747927" at="11,0,36,0" name="KarelRemote.server.RobotServiceImpl" />
     </file>
   </root>
-  <root nodeRef="r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote.server)/9203696677796748017">
+  <root nodeRef="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote/KarelRemote.server)/9203696677796748017">
     <file name="Server.java">
       <node id="9203696677796838086" at="14,0,15,0" concept="3" trace="robotService" />
       <node id="9203696677796837651" at="16,91,17,60" concept="8" />

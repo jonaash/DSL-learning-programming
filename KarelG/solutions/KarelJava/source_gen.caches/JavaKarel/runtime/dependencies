@@ -4,6 +4,15 @@
     <classNode dependClassName="JavaKarel.runtime.Robot" />
     <classNode dependClassName="java.lang.RuntimeException" />
   </dependency>
+  <dependency className="JavaKarel.runtime.Client" file="Client.java">
+    <classNode dependClassName="cz.dsllp.gui.api.service.GuiService" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.net.MalformedURLException" />
+    <classNode dependClassName="java.rmi.Naming" />
+    <classNode dependClassName="java.rmi.NotBoundException" />
+    <classNode dependClassName="java.rmi.RemoteException" />
+  </dependency>
   <dependency className="JavaKarel.runtime.Direction" file="Direction.java" />
   <dependency className="JavaKarel.runtime.IRobot" file="IRobot.java" />
   <dependency className="JavaKarel.runtime.Robot" file="Robot.java">
@@ -13,11 +22,15 @@
     <classNode dependClassName="java.lang.System" />
   </dependency>
   <dependency className="JavaKarel.runtime.Script" file="Script.java">
+    <classNode dependClassName="JavaKarel.runtime.Client" />
     <classNode dependClassName="JavaKarel.runtime.IRobot" />
-    <classNode dependClassName="KarelRemote.api.CallResponse" />
-    <classNode dependClassName="KarelRemote.api.RobotService" />
-    <classNode dependClassName="KarelRemote.client.Client" />
-    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="cz.dsllp.gui.api.message.Step" />
+    <classNode dependClassName="cz.dsllp.gui.api.message.StepSpeed" />
+    <classNode dependClassName="cz.dsllp.gui.api.message.appearance.TextAppearance" />
+    <classNode dependClassName="cz.dsllp.gui.api.message.command.ChangeCell" />
+    <classNode dependClassName="cz.dsllp.gui.api.message.command.Position" />
+    <classNode dependClassName="cz.dsllp.gui.api.service.GuiService" />
+    <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.net.MalformedURLException" />
     <classNode dependClassName="java.rmi.NotBoundException" />
     <classNode dependClassName="java.rmi.RemoteException" />

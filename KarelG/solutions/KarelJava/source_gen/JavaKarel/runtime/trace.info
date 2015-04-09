@@ -11,6 +11,8 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SwitchStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
@@ -75,9 +77,9 @@
       <node id="100310457714478345" at="113,0,116,0" concept="6" trace="getCol#()I" />
       <node id="100310457714492616" at="117,0,120,0" concept="6" trace="getRow#()I" />
       <node id="100310457715169473" at="15,0,21,0" concept="6" trace="instertToWorld#(LJavaKarel/runtime/World;IILJavaKarel/runtime/Direction;)V" />
-      <node id="100310457711953564" at="24,36,38,5" concept="11" />
-      <node id="100310457712048647" at="44,34,58,5" concept="11" />
-      <node id="100310457713211642" at="95,22,109,5" concept="11" />
+      <node id="100310457711953564" at="24,36,38,5" concept="13" />
+      <node id="100310457712048647" at="44,34,58,5" concept="13" />
+      <node id="100310457713211642" at="95,22,109,5" concept="13" />
       <node id="100310457711932570" at="23,0,40,0" concept="6" trace="turnLeft#()V" />
       <node id="100310457713211634" at="93,0,112,0" concept="6" trace="getNextCell#()LJavaKarel/runtime/Cell;" />
       <node id="100310457712048635" at="41,0,61,0" concept="6" trace="moveKaja#()V" />
@@ -249,58 +251,75 @@
   </root>
   <root nodeRef="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/2208846558105691267">
     <file name="Script.java">
-      <node id="9203696677795371774" at="14,0,15,0" concept="3" trace="robot" />
-      <node id="9203696677796848080" at="16,19,17,39" concept="7" />
-      <node id="9203696677796859187" at="17,39,18,0" concept="10" />
-      <node id="9203696677796850581" at="19,9,20,20" concept="2" />
-      <node id="6233428096112543524" at="21,35,22,26" concept="2" />
-      <node id="6233428096112543919" at="23,39,24,26" concept="2" />
-      <node id="6233428096112544311" at="25,33,26,26" concept="2" />
-      <node id="9203696677796848195" at="27,5,28,0" concept="10" />
-      <node id="6233428096112482055" at="30,26,31,56" concept="7" />
-      <node id="6233428096112481357" at="31,56,32,0" concept="10" />
-      <node id="9203696677796864306" at="32,0,33,47" concept="7" />
-      <node id="6233428096112479261" at="33,47,34,0" concept="10" />
-      <node id="6233428096112480428" at="34,0,35,0" concept="10" />
-      <node id="9203696677796865437" at="35,0,36,60" concept="2" />
-      <node id="9203696677796864936" at="38,30,39,68" concept="7" />
-      <node id="9203696677796870244" at="39,68,40,64" concept="2" />
-      <node id="9203696677796870179" at="40,64,41,0" concept="10" />
-      <node id="2208846558105691381" at="45,0,46,0" concept="6" trace="run#()V" />
-      <node id="9203696677796847292" at="38,0,43,0" concept="6" trace="turnLeft#()V" />
-      <node id="9203696677796847286" at="30,0,38,0" concept="6" trace="step#()V" />
-      <node id="9203696677796851019" at="18,0,27,5" concept="13" />
-      <node id="9203696677796846752" at="28,0,43,6" concept="2" />
-      <node id="9203696677796846720" at="16,0,45,0" concept="1" trace="Script#()V" />
-      <scope id="9203696677796851020" at="19,9,20,20" />
-      <scope id="9203696677796851007" at="21,0,22,26">
+      <node id="9203696677795371774" at="18,0,19,0" concept="3" trace="robot" />
+      <node id="4488096267193306716" at="20,19,21,33" concept="7" />
+      <node id="2699783121704354666" at="21,33,22,0" concept="10" />
+      <node id="9203696677796859187" at="22,0,23,0" concept="10" />
+      <node id="4488096267193309767" at="24,9,25,20" concept="2" />
+      <node id="700771863880676006" at="25,20,26,0" concept="10" />
+      <node id="700771863880676133" at="26,0,27,53" concept="7" />
+      <node id="700771863880678801" at="27,53,28,0" concept="10" />
+      <node id="700771863880683300" at="28,0,29,30" concept="2" />
+      <node id="700771863880683613" at="29,30,30,0" concept="10" />
+      <node id="700771863880684002" at="30,0,31,30" concept="2" />
+      <node id="700771863880678844" at="31,30,32,0" concept="10" />
+      <node id="6233428096112543524" at="33,35,34,26" concept="2" />
+      <node id="6233428096112543919" at="35,39,36,26" concept="2" />
+      <node id="6233428096112544311" at="37,33,38,26" concept="2" />
+      <node id="9203696677796848195" at="39,5,40,0" concept="10" />
+      <node id="2208846558105691381" at="48,0,49,0" concept="6" trace="run#()V" />
+      <node id="4488096267193264576" at="50,74,51,27" concept="7" />
+      <node id="4488096267193264579" at="51,27,52,37" concept="2" />
+      <node id="4488096267193264583" at="52,37,53,36" concept="7" />
+      <node id="4488096267193264586" at="53,36,54,38" concept="2" />
+      <node id="4488096267193264591" at="54,38,55,68" concept="2" />
+      <node id="4488096267193264597" at="55,68,56,16" concept="2" />
+      <node id="4488096267193264600" at="56,16,57,21" concept="2" />
+      <node id="4488096267193264610" at="59,74,60,41" concept="2" />
+      <node id="700771863880696034" at="42,0,44,0" concept="6" trace="step#()V" />
+      <node id="700771863880696040" at="44,0,46,0" concept="6" trace="turnLeft#()V" />
+      <node id="4488096267193264605" at="59,0,62,0" concept="12" trace="createWorld#(Lcz/dsllp/gui/api/service/GuiService;)V" />
+      <node id="700771863880686291" at="40,0,46,6" concept="2" />
+      <node id="4488096267193264570" at="50,0,59,0" concept="12" trace="changeCells#(Lcz/dsllp/gui/api/service/GuiService;)V" />
+      <node id="9203696677796851019" at="23,0,39,5" concept="15" />
+      <node id="9203696677796846720" at="20,0,48,0" concept="1" trace="Script#()V" />
+      <scope id="700771863880696038" at="42,26,42,26" />
+      <scope id="700771863880696044" at="44,30,44,30" />
+      <scope id="9203696677796851007" at="33,0,34,26">
         <var name="e" id="9203696677796851009" />
       </scope>
-      <scope id="9203696677796851008" at="21,35,22,26" />
-      <scope id="9203696677796851011" at="23,0,24,26">
+      <scope id="9203696677796851008" at="33,35,34,26" />
+      <scope id="9203696677796851011" at="35,0,36,26">
         <var name="e" id="9203696677796851013" />
       </scope>
-      <scope id="9203696677796851012" at="23,39,24,26" />
-      <scope id="9203696677796851015" at="25,0,26,26">
+      <scope id="9203696677796851012" at="35,39,36,26" />
+      <scope id="9203696677796851015" at="37,0,38,26">
         <var name="e" id="9203696677796851017" />
       </scope>
-      <scope id="9203696677796851016" at="25,33,26,26" />
-      <scope id="2208846558105691381" at="45,0,46,0" />
-      <scope id="9203696677796847296" at="38,30,41,0">
-        <var name="response" id="9203696677796864937" />
+      <scope id="9203696677796851016" at="37,33,38,26" />
+      <scope id="2208846558105691381" at="48,0,49,0" />
+      <scope id="4488096267193264609" at="59,74,60,41" />
+      <scope id="700771863880696034" at="42,0,44,0" />
+      <scope id="700771863880696040" at="44,0,46,0" />
+      <scope id="4488096267193264605" at="59,0,62,0">
+        <var name="gui" id="4488096267193264606" />
       </scope>
-      <scope id="9203696677796847292" at="38,0,43,0" />
-      <scope id="9203696677796847290" at="30,26,36,60">
-        <var name="response" id="9203696677796864307" />
-        <var name="service" id="6233428096112482056" />
+      <scope id="4488096267193264574" at="50,74,57,21">
+        <var name="c" id="4488096267193264582" />
+        <var name="step" id="4488096267193264575" />
       </scope>
-      <scope id="9203696677796847286" at="30,0,38,0" />
-      <scope id="9203696677796846723" at="16,19,43,6">
-        <var name="client" id="9203696677796848078" />
+      <scope id="9203696677796851020" at="24,9,32,0">
+        <var name="guiService" id="700771863880676134" />
       </scope>
-      <scope id="9203696677796846720" at="16,0,45,0" />
-      <unit id="9203696677796847284" at="29,16,43,5" name="JavaKarel.runtime.Script$1" />
-      <unit id="2208846558105691267" at="12,0,48,0" name="JavaKarel.runtime.Script" />
+      <scope id="4488096267193264570" at="50,0,59,0">
+        <var name="gui" id="4488096267193264571" />
+      </scope>
+      <scope id="9203696677796846723" at="20,19,46,6">
+        <var name="client" id="4488096267193306717" />
+      </scope>
+      <scope id="9203696677796846720" at="20,0,48,0" />
+      <unit id="700771863880696032" at="41,16,46,5" name="JavaKarel.runtime.Script$1" />
+      <unit id="2208846558105691267" at="16,0,65,0" name="JavaKarel.runtime.Script" />
     </file>
   </root>
   <root nodeRef="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/3308300503039569134">
@@ -318,7 +337,7 @@
       <node id="3308300503039569174" at="9,0,10,0" concept="3" trace="wall" />
       <node id="3308300503039569180" at="10,0,11,0" concept="3" trace="robot" />
       <node id="3308300503039569443" at="11,29,12,21" concept="2" />
-      <node id="3308300503039569194" at="16,15,17,70" concept="12" />
+      <node id="3308300503039569194" at="16,15,17,70" concept="14" />
       <node id="100310457711931952" at="18,5,19,23" concept="2" />
       <node id="3308300503039569252" at="21,28,22,17" concept="2" />
       <node id="100310457711920984" at="24,28,25,25" concept="8" />
@@ -377,6 +396,25 @@
         <var name="robot" id="100310457711929388" />
       </scope>
       <unit id="3308300503039569160" at="6,0,59,0" name="JavaKarel.runtime.Cell" />
+    </file>
+  </root>
+  <root nodeRef="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/4488096267192856578">
+    <file name="Client.java">
+      <node id="4488096267193249807" at="12,0,13,0" concept="11" trace="RMI_REGISTRY_PORT" />
+      <node id="4488096267193249811" at="13,0,14,0" concept="3" trace="guiService" />
+      <node id="4488096267193249844" at="15,87,16,36" concept="9" />
+      <node id="4488096267193249821" at="16,36,17,94" concept="7" />
+      <node id="4488096267193249829" at="17,94,18,34" concept="2" />
+      <node id="4488096267193249839" at="21,37,22,22" concept="8" />
+      <node id="4488096267193249837" at="21,0,24,0" concept="6" trace="getGuiService#()Lcz/dsllp/gui/api/service/GuiService;" />
+      <node id="4488096267193249815" at="15,0,20,0" concept="6" trace="init#()V" />
+      <scope id="4488096267193249838" at="21,37,22,22" />
+      <scope id="4488096267193249819" at="15,87,18,34">
+        <var name="srv" id="4488096267193249820" />
+      </scope>
+      <scope id="4488096267193249837" at="21,0,24,0" />
+      <scope id="4488096267193249815" at="15,0,20,0" />
+      <unit id="4488096267192856578" at="11,0,26,0" name="JavaKarel.runtime.Client" />
     </file>
   </root>
 </debug-info>

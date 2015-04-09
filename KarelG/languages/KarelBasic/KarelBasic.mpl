@@ -16,7 +16,6 @@
       <external-templates />
       <dependencies>
         <dependency reexport="true">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
-        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>

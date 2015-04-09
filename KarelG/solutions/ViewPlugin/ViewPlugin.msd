@@ -7,10 +7,10 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiServerLib)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">02fdc97f-ba11-4701-b095-75f1e2eb7be5(KarelRemote)</dependency>
-    <dependency reexport="false">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>

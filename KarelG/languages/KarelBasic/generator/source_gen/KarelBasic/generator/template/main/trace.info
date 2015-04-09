@@ -6,7 +6,7 @@
       <unit at="13,0,23,0" name="KarelBasic.generator.template.main.QueriesGenerated" />
     </file>
   </root>
-  <root nodeRef="r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic.generator.template.main@generator)/7120477472729796861">
+  <root nodeRef="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729796861">
     <file name="QueriesGenerated.java">
       <node id="7120477472729801277" at="16,112,17,175" concept="0" />
       <node id="7120477472729975287" at="19,120,20,346" concept="0" />
