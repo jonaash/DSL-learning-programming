@@ -1,4 +1,4 @@
-package cz.dsllp.gui.api.to;
+package cz.dsllp.gui.api.message.appearance;
 
 import java.io.Serializable;
 

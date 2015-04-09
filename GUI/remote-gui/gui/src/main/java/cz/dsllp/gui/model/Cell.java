@@ -1,6 +1,6 @@
 package cz.dsllp.gui.model;
 
-import cz.dsllp.gui.api.to.TextAppearance;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  * @since 04/04/15
  */
 public class Cell {
-    protected List<Thing> things = new ArrayList<>();
+    protected List<Thing> things = new ArrayList<Thing>();
     protected TextAppearance appearance;
 
     void addThink(Thing thing) {

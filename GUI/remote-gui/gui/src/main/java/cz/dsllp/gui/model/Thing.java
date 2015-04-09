@@ -1,6 +1,6 @@
 package cz.dsllp.gui.model;
 
-import cz.dsllp.gui.api.to.TextAppearance;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
 
 /**
  * @author jonasklimes

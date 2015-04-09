@@ -1,12 +1,12 @@
 package cz.dsllp.gui.server;
 
 import cz.dsllp.gui.api.exception.RemoteGuiException;
-import cz.dsllp.gui.api.skeleton.GuiService;
-import cz.dsllp.gui.api.to.CallResult;
-import cz.dsllp.gui.api.to.Step;
-import cz.dsllp.gui.api.to.TextAppearance;
-import cz.dsllp.gui.api.to.command.ChangeCell;
-import cz.dsllp.gui.api.to.command.Command;
+import cz.dsllp.gui.api.service.GuiService;
+import cz.dsllp.gui.api.message.Result;
+import cz.dsllp.gui.api.message.Step;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
+import cz.dsllp.gui.api.message.command.ChangeCell;
+import cz.dsllp.gui.api.message.command.Command;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.World;
 import cz.dsllp.gui.view.swing.WorldPanel;
@@ -42,7 +42,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     }
 
     @Override
-    public CallResult doStep(Step step) throws RemoteException{
+    public Result doStep(Step step) throws RemoteException{
         validate(step);
 
         for(Command command: step.getCommands()){
@@ -51,7 +51,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
 
         getWorldPanel().update();
 
-        return CallResult.buildSuccess();
+        return Result.buildSuccess();
     }
 
     private void processCommand(Command command) {
@@ -61,11 +61,10 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     }
 
     private void changeCell(ChangeCell command){
-        int col = command.getPosition().x;
 
         World world = getWorldPanel().getWorld();
 
-        Cell cell = world.getCell(command.getPosition().x, command.getPosition().y);
+        Cell cell = world.getCell(command.getPosition().getRow(), command.getPosition().getCol());
 
         if(command.getAppearance() instanceof TextAppearance){
             cell.setAppearance((TextAppearance)command.getAppearance());

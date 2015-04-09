@@ -1,4 +1,4 @@
-package cz.dsllp.gui.api.to.command;
+package cz.dsllp.gui.api.message.command;
 
 /**
  * @author jonasklimes

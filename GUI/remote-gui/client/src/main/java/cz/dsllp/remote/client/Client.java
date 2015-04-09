@@ -1,6 +1,6 @@
 package cz.dsllp.remote.client;
 
-import cz.dsllp.gui.api.skeleton.GuiService;
+import cz.dsllp.gui.api.service.GuiService;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 
 public class Client {
 
-    private static final String RMI_REGISTRY_PORT = "1099";
+    private static final String RMI_REGISTRY_PORT = "1234";
 
     private GuiService guiService;
 

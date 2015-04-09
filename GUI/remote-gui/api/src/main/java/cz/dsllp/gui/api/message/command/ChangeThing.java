@@ -1,8 +1,6 @@
-package cz.dsllp.gui.api.to.command;
+package cz.dsllp.gui.api.message.command;
 
-import cz.dsllp.gui.api.to.Appearance;
-
-import java.awt.*;
+import cz.dsllp.gui.api.message.appearance.Appearance;
 
 /**
  * @author jonasklimes
@@ -12,7 +10,7 @@ public class ChangeThing extends Command {
     private static final long serialVersionUID = 8725841466839100802L;
     private String thingName;
 
-    private Point newPosition;
+    private Position newPosition;
     private Appearance newAppearance;
 
     public String getThingName() {
@@ -23,11 +21,11 @@ public class ChangeThing extends Command {
         this.thingName = thingName;
     }
 
-    public Point getNewPosition() {
+    public Position getNewPosition() {
         return newPosition;
     }
 
-    public void setNewPosition(Point newPosition) {
+    public void setNewPosition(Position newPosition) {
         this.newPosition = newPosition;
     }
 

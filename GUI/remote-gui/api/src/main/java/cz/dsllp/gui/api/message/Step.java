@@ -1,6 +1,6 @@
-package cz.dsllp.gui.api.to;
+package cz.dsllp.gui.api.message;
 
-import cz.dsllp.gui.api.to.command.Command;
+import cz.dsllp.gui.api.message.command.Command;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class Step implements Serializable{
     private static final long serialVersionUID = -7681209697420491527L;
 
     StepSpeed speed;
-    List<Command> commands = new ArrayList<>();
+    List<Command> commands = new ArrayList<Command>();
 
     public void add(Command command){
         if(command != null){

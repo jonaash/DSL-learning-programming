@@ -1,8 +1,6 @@
-package cz.dsllp.gui.api.to.command;
+package cz.dsllp.gui.api.message.command;
 
-import cz.dsllp.gui.api.to.Appearance;
-
-import java.awt.*;
+import cz.dsllp.gui.api.message.appearance.Appearance;
 
 /**
  * @author jonasklimes
@@ -12,14 +10,14 @@ public class ChangeCell extends Command {
 
 
     private static final long serialVersionUID = 3044768519952940539L;
-    private Point position;
+    private Position position;
     private Appearance appearance;
 
-    public Point getPosition() {
+    public Position getPosition() {
         return position;
     }
 
-    public void setPosition(Point position) {
+    public void setPosition(Position position) {
         this.position = position;
     }
 

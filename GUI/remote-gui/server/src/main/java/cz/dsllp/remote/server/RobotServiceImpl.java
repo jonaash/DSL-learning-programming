@@ -1,7 +1,7 @@
 package cz.dsllp.remote.server;
 
-import cz.dsllp.gui.api.to.CallResult;
-import cz.dsllp.gui.api.to.Status;
+import cz.dsllp.gui.api.message.Result;
+import cz.dsllp.gui.api.message.Status;
 import cz.dsllp.remote.api.skeleton.Robot;
 import cz.dsllp.remote.api.skeleton.RobotService;
 import org.slf4j.Logger;
@@ -22,18 +22,18 @@ public class RobotServiceImpl extends UnicastRemoteObject implements RobotServic
         super();
     }
 
-    public CallResult step() throws RemoteException {
+    public Result step() throws RemoteException {
         logger.debug("step");
 
-        CallResult response = new CallResult(Status.SUCCESS);
+        Result response = new Result(Status.SUCCESS);
 
         return response;
     }
 
-    public CallResult turnLeft() throws RemoteException {
+    public Result turnLeft() throws RemoteException {
         logger.debug("turn left");
 
-        CallResult response = new CallResult(Status.SUCCESS);
+        Result response = new Result(Status.SUCCESS);
 
         return response;
     }

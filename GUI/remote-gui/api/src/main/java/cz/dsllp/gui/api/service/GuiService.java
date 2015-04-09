@@ -1,7 +1,7 @@
-package cz.dsllp.gui.api.skeleton;
+package cz.dsllp.gui.api.service;
 
-import cz.dsllp.gui.api.to.CallResult;
-import cz.dsllp.gui.api.to.Step;
+import cz.dsllp.gui.api.message.Result;
+import cz.dsllp.gui.api.message.Step;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -14,6 +14,6 @@ public interface GuiService extends Remote {
 
     void createWorld(String name, int width, int height) throws RemoteException;
 
-    CallResult doStep(Step step) throws RemoteException;
+    Result doStep(Step step) throws RemoteException;
 
 }

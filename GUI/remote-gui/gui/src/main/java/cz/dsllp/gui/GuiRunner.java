@@ -1,6 +1,6 @@
 package cz.dsllp.gui;
 
-import cz.dsllp.gui.api.to.TextAppearance;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
@@ -43,7 +43,7 @@ public class GuiRunner {
         // create server
         try {
             GuiServer server = GuiServer.getInstance();
-            server.init(panel);
+            server.init(panel, 1234);
 
         } catch (AlreadyBoundException e) {
             e.printStackTrace();

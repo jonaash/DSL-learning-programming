@@ -1,14 +1,14 @@
-package cz.dsllp.gui.api.to;
+package cz.dsllp.gui.api.message;
 
 import java.io.Serializable;
 
-public class CallResult implements Serializable {
+public class Result implements Serializable {
 
     private static final long serialVersionUID = 2357372665561360380L;
 
     private Status status;
 
-    public CallResult(Status status) {
+    public Result(Status status) {
         this.status = status;
     }
 
@@ -16,8 +16,8 @@ public class CallResult implements Serializable {
         return status;
     }
 
-    public static CallResult buildSuccess(){
-        return new CallResult(Status.SUCCESS);
+    public static Result buildSuccess(){
+        return new Result(Status.SUCCESS);
     }
 
 }

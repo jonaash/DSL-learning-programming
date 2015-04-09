@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author jonasklimes
@@ -42,14 +43,38 @@ public class PluginPanel extends JPanel {
         return worldPanel;
     }
 
-    public void setWorldPanel(WorldPanel worldPanel) {
+    public void setWorldPanel(final WorldPanel wPanel) {
+
+        if(SwingUtilities.isEventDispatchThread()){
+            logger.debug("Setting WorldPanel from Event Dispatch Thread");
+            setWorldPanelInternal(wPanel);
+        }else {
+            logger.debug("Invoke and wait for setting WorldPanel");
+            try {
+                SwingUtilities.invokeAndWait(new Runnable() {
+                    @Override
+                    public void run() {
+                        PluginPanel.this.setWorldPanelInternal(wPanel);
+                    }
+                });
+            } catch (InterruptedException e) {
+               logger.error("Exception", e);
+            } catch (InvocationTargetException e) {
+                logger.error("Exception", e);
+            }
+        }
+
+
+    }
+
+    private void setWorldPanelInternal(WorldPanel worldPanel){
         this.worldPanel = worldPanel;
         scrollPanel.setMaximumSize(worldPanel.getPreferredSize());
         scrollPanel.setMinimumSize(worldPanel.getPreferredSize());
         scrollPanel.add(worldPanel);
 
-        logger.debug("World preferred size: {}", worldPanel.getPreferredSize());
-        logger.debug("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
+        logger.info("World preferred size: {}", worldPanel.getPreferredSize());
+        logger.info("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
         this.title.setText(worldPanel.getWorld().getName());
 
         worldPanel.update();

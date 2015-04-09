@@ -1,11 +1,11 @@
 package cz.dsllp.remote.client;
 
-import cz.dsllp.gui.api.skeleton.GuiService;
-import cz.dsllp.gui.api.to.Step;
-import cz.dsllp.gui.api.to.StepSpeed;
-import cz.dsllp.gui.api.to.TextAppearance;
-import cz.dsllp.gui.api.to.command.ChangeCell;
-import cz.dsllp.remote.api.skeleton.RobotService;
+import cz.dsllp.gui.api.message.command.Position;
+import cz.dsllp.gui.api.service.GuiService;
+import cz.dsllp.gui.api.message.Step;
+import cz.dsllp.gui.api.message.StepSpeed;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
+import cz.dsllp.gui.api.message.command.ChangeCell;
 
 import java.awt.*;
 import java.net.MalformedURLException;
@@ -47,7 +47,7 @@ public class SimpleClient {
 
         ChangeCell c = new ChangeCell();
 
-        c.setPosition(new Point(2,3));
+        c.setPosition(new Position(2,3));
         c.setAppearance(new TextAppearance(Color.BLUE, Color.RED, "W"));
 
         step.add(c);
@@ -60,11 +60,5 @@ public class SimpleClient {
         gui.createWorld("TestWorld", 10, 12);
     }
 
-    private static void testRobot(RobotService robot) throws RemoteException {
-        System.out.println("Testing robot");
-        robot.step();
-        robot.turnLeft();
-        robot.step();
-    }
 
 }
