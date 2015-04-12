@@ -57,20 +57,25 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
 
         getWorldPanel().update();
 
+        WaitUtil.pause(step.getSpeed());
+
         return Result.SUCCESS;
     }
 
+    /**
+     * Create thing in the {@link World} unless given name already exists.
+     *
+     * @param name unique name of thing
+     * @return true if Thing was created, false if thing with given name already exists
+     * @throws RemoteException
+     */
     @Override
     public boolean createThing(String name) throws RemoteException {
         validateName(name);
 
         Thing thing = getWorld().createThing(name);
-        if (thing != null) {
-            return true;
-        } else {
-            // thing with given name already exists
-            return false;
-        }
+
+        return thing != null;
     }
 
     @Override
@@ -122,8 +127,8 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
 
 
     private void validate(Step step) {
-        if (step == null && step.getSpeed() == null && step.getCommands() == null) {
-            throw new IllegalArgumentException("Step and its content cannot be null");
+        if (step == null || step.getSpeed() == null || step.getCommands() == null) {
+            throw new NullPointerException("Step and its content cannot be null");
         }
     }
 
