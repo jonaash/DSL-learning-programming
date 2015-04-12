@@ -21,8 +21,6 @@ public class PluginPanel extends JPanel {
     private WorldPanel worldPanel;
     private JLabel title;
 
-    // helper components
-    private JScrollPane worldScrollPane;
     private JPanel scrollPanel;
 
     public PluginPanel() {
@@ -32,7 +30,7 @@ public class PluginPanel extends JPanel {
         title = new JLabel();
         title.setHorizontalAlignment(0);
 
-        worldScrollPane = new JScrollPane(scrollPanel);
+        JScrollPane worldScrollPane = new JScrollPane(scrollPanel);
 
         this.add(title, BorderLayout.PAGE_START);
         this.add(worldScrollPane, BorderLayout.CENTER);
