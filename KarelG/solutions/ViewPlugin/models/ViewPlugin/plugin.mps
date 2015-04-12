@@ -13,10 +13,6 @@
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
     <import index="25kt" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.rmi(JDK/java.rmi@java_stub)" />
-    <import index="t1nw" ref="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:a3b9f9c2-995a-41e3-a8cb-1e27bd4780aa(KarelRemote/KarelRemote.client)" />
-    <import index="4ujd" ref="645c5093-3842-40e7-938b-f9d0f9cd529b/r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel/JavaKarel.runtime)" />
-    <import index="ujvt" ref="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:2ba684d9-df92-4905-991a-54dda37ab628(KarelRemote/KarelRemote.api)" />
-    <import index="l33q" ref="02fdc97f-ba11-4701-b095-75f1e2eb7be5/r:4eaff3b6-ffa3-48a3-8f48-a23179e7b4d2(KarelRemote/KarelRemote.server)" />
     <import index="f1am" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiServerLib/cz.dsllp.gui@java_stub)" />
     <import index="sabi" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#9e2adce0-3032-497b-bf7e-e4b747a76a49(jetbrains.mps.lang.project.modules/module.GuiServerLib@project_stub)" />
     <import index="zppf" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.server(GuiServerLib/cz.dsllp.gui.server@java_stub)" />
@@ -203,7 +199,7 @@
                     </node>
                   </node>
                   <node concept="3cmrfG" id="ATD4Kvdt7m" role="37wK5m">
-                    <property role="3cmrfH" value="1099" />
+                    <property role="3cmrfH" value="1999" />
                   </node>
                 </node>
               </node>

@@ -8,8 +8,7 @@ public class Cell {
   private int marks = 0;
   private boolean wall = false;
   private Robot robot;
-  public Cell(boolean wall) {
-    this.wall = wall;
+  public Cell() {
   }
 
   public void setRobot(Robot robot) {
@@ -38,8 +37,6 @@ public class Cell {
   public boolean isWall() {
     return wall;
   }
-
-
   public void addMark() {
     marks++;
   }
@@ -48,6 +45,10 @@ public class Cell {
   }
   public int getMarks() {
     return marks;
+  }
+
+  public void setMarks(int count) {
+    marks = count;
   }
   public boolean isFull() {
     return marks == CELL_CAPACITY;
