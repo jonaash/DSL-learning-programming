@@ -24,4 +24,9 @@ public class RemoteGuiException extends RuntimeException {
     public RemoteGuiException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
+
+    public static RemoteGuiException create(String message, String... args) {
+       return new RemoteGuiException(String.format(message, args));
+    }
+
 }

@@ -49,6 +49,8 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     public Result doStep(Step step) throws RemoteException {
         validate(step);
 
+        logger.debug("Doing step {}", step);
+
         for (Command command : step.getCommands()) {
             processCommand(command);
         }
@@ -63,7 +65,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
         validateName(name);
 
         Thing thing = getWorld().createThing(name);
-        if (name != null) {
+        if (thing != null) {
             return true;
         } else {
             // thing with given name already exists
@@ -96,17 +98,28 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     }
 
     private void changeThing(ChangeThing command) {
-        validateAppearance(command.getNewAppearance());
-
+        validateName(command.getThingName());
         World world = getWorldPanel().getWorld();
-
         Thing thing = world.getThing(command.getThingName());
 
-        thing.setPosition(command.getNewPosition().getRow(), command.getNewPosition().getCol());
-        thing.setAppearance((TextAppearance) command.getNewAppearance());
+        if(thing == null){
+            logger.info("Thing with name '{}' does not exist.", command.getThingName());
+            throw RemoteGuiException.create("Thing with name %s does not exist.", command.getThingName());
+        }
 
+        logger.debug("Changing thing with name '{}' to ",command.getThingName());
 
+        if(command.getNewAppearance() != null){
+            validateAppearance(command.getNewAppearance());
+            thing.setAppearance((TextAppearance) command.getNewAppearance());
+        }
+
+        if(command.getNewPosition() != null){
+            thing.setPosition(command.getNewPosition().getRow(), command.getNewPosition().getCol());
+        }
     }
+
+
 
     private void validate(Step step) {
         if (step == null && step.getSpeed() == null && step.getCommands() == null) {
@@ -126,6 +139,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
         }
 
     }
+
 
 
     private WorldPanel getWorldPanel() {
