@@ -13,6 +13,14 @@ public class ChangeCell extends Command {
     private Position position;
     private Appearance appearance;
 
+    public ChangeCell(Position position, Appearance appearance) {
+        this.position = position;
+        this.appearance = appearance;
+    }
+
+    public ChangeCell() {
+    }
+
     public Position getPosition() {
         return position;
     }

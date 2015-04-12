@@ -13,27 +13,32 @@ public class ChangeThing extends Command {
     private Position newPosition;
     private Appearance newAppearance;
 
-    public String getThingName() {
-        return thingName;
+    public ChangeThing(String thingName, Position newPosition, Appearance newAppearance) {
+        this.thingName = thingName;
+        this.newPosition = newPosition;
+        this.newAppearance = newAppearance;
     }
 
-    public void setThingName(String thingName) {
+    public ChangeThing(String thingName, Position newPosition) {
         this.thingName = thingName;
+        this.newPosition = newPosition;
+    }
+
+    public ChangeThing(String thingName, Appearance newAppearance) {
+        this.thingName = thingName;
+        this.newAppearance = newAppearance;
+    }
+
+    public String getThingName() {
+        return thingName;
     }
 
     public Position getNewPosition() {
         return newPosition;
     }
 
-    public void setNewPosition(Position newPosition) {
-        this.newPosition = newPosition;
-    }
-
     public Appearance getNewAppearance() {
         return newAppearance;
     }
 
-    public void setNewAppearance(Appearance newAppearance) {
-        this.newAppearance = newAppearance;
-    }
 }

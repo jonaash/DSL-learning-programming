@@ -53,4 +53,36 @@ public class TextAppearance implements Appearance {
     }
 
 
+    public static class Builder{
+
+        private TextAppearance instance;
+
+        public Builder(){
+            instance = new TextAppearance();
+        }
+
+        public Builder color(Color color){
+            instance.color=color;
+
+            return this;
+        }
+
+        public Builder background(Color background){
+            instance.background=background;
+
+            return this;
+        }
+
+        public Builder text(String text){
+            instance.text=text;
+
+            return this;
+        }
+
+        public TextAppearance build(){
+            return instance;
+        }
+
+
+    }
 }

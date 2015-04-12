@@ -16,4 +16,7 @@ public interface GuiService extends Remote {
 
     Result doStep(Step step) throws RemoteException;
 
+    boolean createThing(String name) throws RemoteException;
+
+    boolean deleteThing(String name) throws RemoteException;
 }

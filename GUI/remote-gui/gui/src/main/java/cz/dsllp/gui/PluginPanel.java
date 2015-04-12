@@ -73,8 +73,8 @@ public class PluginPanel extends JPanel {
         scrollPanel.setMinimumSize(worldPanel.getPreferredSize());
         scrollPanel.add(worldPanel);
 
-        logger.info("World preferred size: {}", worldPanel.getPreferredSize());
-        logger.info("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
+        logger.trace("World preferred size: {}", worldPanel.getPreferredSize());
+        logger.trace("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
         this.title.setText(worldPanel.getWorld().getName());
 
         worldPanel.update();
