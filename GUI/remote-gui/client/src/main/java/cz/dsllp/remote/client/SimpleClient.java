@@ -4,7 +4,7 @@ import cz.dsllp.gui.api.message.command.ChangeThing;
 import cz.dsllp.gui.api.message.command.Position;
 import cz.dsllp.gui.api.service.GuiService;
 import cz.dsllp.gui.api.message.Step;
-import cz.dsllp.gui.api.message.StepSpeed;
+import cz.dsllp.gui.api.message.Speed;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.api.message.command.ChangeCell;
 
@@ -47,7 +47,7 @@ public class SimpleClient {
 
     private static void changeCells(GuiService gui) throws RemoteException {
         Step step = new Step();
-        step.setSpeed(StepSpeed.INSTANT);
+        step.setSpeed(Speed.INSTANT);
 
         ChangeCell c = new ChangeCell();
 

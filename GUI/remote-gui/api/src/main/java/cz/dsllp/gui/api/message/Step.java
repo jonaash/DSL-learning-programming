@@ -15,13 +15,14 @@ public class Step implements Serializable{
 
     private static final long serialVersionUID = -7681209697420491527L;
 
-    StepSpeed speed;
+    Speed speed;
     List<Command> commands = new ArrayList<Command>();
 
     public Step() {
+        this.speed= Speed.MEDIUM;
     }
 
-    public Step(StepSpeed speed) {
+    public Step(Speed speed) {
         this.speed = speed;
     }
 
@@ -31,11 +32,11 @@ public class Step implements Serializable{
         }
     }
 
-    public StepSpeed getSpeed() {
+    public Speed getSpeed() {
         return speed;
     }
 
-    public void setSpeed(StepSpeed speed) {
+    public void setSpeed(Speed speed) {
         this.speed = speed;
     }
 
