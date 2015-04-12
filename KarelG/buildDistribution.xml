@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/KarelGDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/KarelGDistribution" />
-  <property name="mps_home" location="${basedir}/../../../../../../../Applications/MPS 3.2.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
   <property name="version" value="3.2" />
   <property name="artifacts.KarelG" location="${build.dir}/artifacts/KarelG" />
   <property file="${artifacts.KarelG}/build.properties" prefix="import.KarelG" />

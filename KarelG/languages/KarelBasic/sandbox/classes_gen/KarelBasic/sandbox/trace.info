@@ -1,3 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907">
+    <file name="Test.java">
+      <node id="700771863880641907" at="9,28,10,16" concept="5" />
+      <node id="700771863880641938" at="13,21,14,17" concept="1" />
+      <node id="700771863880641944" at="14,17,15,17" concept="1" />
+      <node id="2257940611433853121" at="15,17,16,17" concept="1" />
+      <node id="700771863880641952" at="16,17,17,21" concept="1" />
+      <node id="700771863880641907" at="20,42,21,35" concept="3" />
+      <node id="700771863880641907" at="21,35,22,17" concept="1" />
+      <node id="700771863880641907" at="9,0,12,0" concept="0" trace="Test#(Ljava/lang/String;)V" />
+      <node id="700771863880641907" at="20,0,24,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <node id="700771863880641907" at="13,0,19,0" concept="2" trace="run#()V" />
+      <scope id="700771863880641907" at="9,28,10,16" />
+      <scope id="700771863880641907" at="20,42,22,17">
+        <var name="script" id="700771863880641907" />
+      </scope>
+      <scope id="700771863880641907" at="9,0,12,0">
+        <var name="name" id="700771863880641907" />
+      </scope>
+      <scope id="700771863880641907" at="13,21,17,21" />
+      <scope id="700771863880641907" at="20,0,24,0">
+        <var name="args" id="700771863880641907" />
+      </scope>
+      <scope id="700771863880641907" at="13,0,19,0" />
+      <unit id="700771863880641907" at="7,0,25,0" name="KarelBasic.sandbox.Test" />
+    </file>
+  </root>
+</debug-info>
 
