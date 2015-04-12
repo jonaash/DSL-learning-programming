@@ -92,7 +92,7 @@
     <ref role="1XX52x" to="dyrx:3a5rfDmYafO" resolve="Script" />
     <node concept="3EZMnI" id="1IJMvjStn8" role="2wV5jI">
       <node concept="3F0ifn" id="1IJMvjStnf" role="3EZMnx">
-        <property role="3F0ifm" value="Scrip" />
+        <property role="3F0ifm" value="Script" />
         <node concept="pVoyu" id="1IJMvjS_ul" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

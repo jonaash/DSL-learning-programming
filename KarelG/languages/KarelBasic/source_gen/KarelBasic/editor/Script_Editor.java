@@ -30,7 +30,7 @@ public class Script_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_udqu28_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Scrip");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Script");
     editorCell.setCellId("Constant_udqu28_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);

@@ -15,20 +15,27 @@ import java.awt.Color;
 
 public abstract class Script {
 
+  private World world;
   protected IRobot robot;
 
   public Script() {
-    Client client = new Client();
+    world = new World(10, 10);
+    Robot karel = new Robot("Karel");
+    world.addRobot(karel, 3, 3, Direction.east);
 
+    Client client = new Client();
 
     try {
       client.init();
 
       GuiService guiService = client.getGuiService();
 
-      createWorld(guiService);
+      guiService.createWorld("TestWorld", world.getWidth(), world.getHeight());
+      guiService.createThing(karel.getName());
+      guiService.doStep(ViewFactory.createWorld(world));
 
-      changeCells(guiService);
+
+      // <node> 
 
     } catch (NotBoundException e) {
       e.printStackTrace();
@@ -44,6 +51,7 @@ public abstract class Script {
       public void turnLeft() {
       }
     };
+
   }
   public abstract void run();
 
@@ -52,12 +60,14 @@ public abstract class Script {
     step.setSpeed(StepSpeed.INSTANT);
     ChangeCell c = new ChangeCell();
     c.setPosition(new Position(2, 3));
-    c.setAppearance(new TextAppearance(Color.BLUE, Color.RED, "W"));
+    c.setAppearance(new TextAppearance(Color.RED, Color.BLUE, "W"));
     step.add(c);
     gui.doStep(step);
   }
-  private static void createWorld(GuiService gui) throws RemoteException {
-    gui.createWorld("TestWorld", 10, 12);
+
+
+  public void createWorld(GuiService gui) throws RemoteException {
+    gui.createWorld("TestWorld", world.getWidth(), world.getHeight());
   }
 
 
