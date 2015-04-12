@@ -27,7 +27,7 @@ public class KarelView_Tool extends GeneratedTool {
 
     try {
       GuiServer server = GuiServer.getInstance();
-      server.init(KarelView_Tool.this.panel, 1999);
+      server.init(KarelView_Tool.this.panel, 1234);
 
 
     } catch (AlreadyBoundException e) {
