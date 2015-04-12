@@ -9,7 +9,7 @@
   <dependencies>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
-    <dependency reexport="false">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiLib)</dependency>
+    <dependency reexport="true">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiLib)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>

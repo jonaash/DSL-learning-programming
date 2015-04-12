@@ -3,15 +3,17 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="13,0,23,0" name="KarelBasic.generator.template.main.QueriesGenerated" />
+      <unit at="13,0,26,0" name="KarelBasic.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729796861">
     <file name="QueriesGenerated.java">
-      <node id="7120477472729801277" at="16,112,17,175" concept="0" />
-      <node id="7120477472729975287" at="19,120,20,346" concept="0" />
-      <scope id="7120477472729797887" at="16,112,17,175" />
-      <scope id="7120477472729974140" at="19,120,20,346" />
+      <node id="1739240371755620637" at="16,112,17,175" concept="0" />
+      <node id="7120477472729801277" at="19,112,20,175" concept="0" />
+      <node id="7120477472729975287" at="22,120,23,346" concept="0" />
+      <scope id="1739240371755620631" at="16,112,17,175" />
+      <scope id="7120477472729797887" at="19,112,20,175" />
+      <scope id="7120477472729974140" at="22,120,23,346" />
     </file>
   </root>
 </debug-info>

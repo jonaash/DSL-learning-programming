@@ -4,23 +4,26 @@ package JavaKarel.runtime;
 
 
 public class World {
+  protected String name;
   protected int width;
   protected int height;
   protected Robot robot;
 
   private Cell[][] map;
 
-  public World(int width, int height) {
-    this.width = width;
-    this.height = height;
-    this.map = new Cell[width][height];
+  public World(String name, int height, int width) {
+    this.name = name;
+    this.width = height;
+    this.height = width;
+    this.map = new Cell[height][width];
 
-    for (int col = 0; col < width; col++) {
-      for (int row = 0; row < height; row++) {
-        boolean shouldBeWall = col == 0 || col == width - 1 || row == 0 || row == height - 1;
-        map[col][row] = new Cell(shouldBeWall);
+    for (int row = 0; row < height; row++) {
+      for (int col = 0; col < width; col++) {
+        boolean shouldBeWall = row == 0 || row == height - 1 || col == 0 || col == width - 1;
+        map[row][col] = new Cell();
       }
     }
+
     createWorld1();
 
   }
@@ -32,10 +35,10 @@ public class World {
   }
 
 
-  protected void addWall(int col, int row) {
+  protected void addWall(int row, int col) {
     map[row][col].setWall();
   }
-  protected void removeWall(int col, int row) {
+  protected void removeWall(int row, int col) {
     map[row][col].unsetWall();
   }
 
@@ -46,9 +49,23 @@ public class World {
     return col > 0 && col < width - 1;
   }
 
-  public Cell getCell(int col, int row) {
+  public Cell getCell(int row, int col) {
     // FIXME validate inputs 
-    return map[col][row];
+    return map[row][col];
+  }
+
+  public void addRobot(Robot robot, int row, int col, Direction direction) {
+    this.robot = robot;
+    robot.instertToWorld(this, row, col, direction);
+    map[row][col].setRobot(robot);
+  }
+
+  public Robot getRobot() {
+    return robot;
+  }
+
+  public String getName() {
+    return name;
   }
 
   public int getWidth() {
@@ -58,13 +75,4 @@ public class World {
     return height;
   }
 
-  public void addRobot(Robot robot, int col, int row, Direction direction) {
-    this.robot = robot;
-    robot.instertToWorld(this, col, row, direction);
-    map[col][row].setRobot(robot);
-  }
-
-  public Robot getRobot() {
-    return robot;
-  }
 }

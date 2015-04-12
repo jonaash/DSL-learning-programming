@@ -6,23 +6,17 @@ import cz.dsllp.gui.api.service.GuiService;
 import java.rmi.NotBoundException;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
-import cz.dsllp.gui.api.message.Step;
-import cz.dsllp.gui.api.message.StepSpeed;
-import cz.dsllp.gui.api.message.command.ChangeCell;
-import cz.dsllp.gui.api.message.command.Position;
-import cz.dsllp.gui.api.message.appearance.TextAppearance;
-import java.awt.Color;
 
 public abstract class Script {
 
   private World world;
   protected IRobot robot;
 
-  public Script() {
-    world = new World(10, 10);
-    Robot karel = new Robot("Karel");
-    world.addRobot(karel, 3, 3, Direction.east);
+  public Script(String name) {
+    // create world 
+    world = new WorldBuilder(name, 10, 10).setRobot("Karel", 3, 3, Direction.east).setMarks(5, 6, 7).setWallsAround().build();
 
+    // init client 
     Client client = new Client();
 
     try {
@@ -30,12 +24,9 @@ public abstract class Script {
 
       GuiService guiService = client.getGuiService();
 
-      guiService.createWorld("TestWorld", world.getWidth(), world.getHeight());
-      guiService.createThing(karel.getName());
-      guiService.doStep(ViewFactory.createWorld(world));
-
-
-      // <node> 
+      RobotGuiImpl robotGui = RobotGuiImpl.getInstance();
+      robotGui.setGuiService(guiService);
+      robotGui.createWorld(world);
 
     } catch (NotBoundException e) {
       e.printStackTrace();
@@ -45,30 +36,8 @@ public abstract class Script {
       e.printStackTrace();
     }
 
-    robot = new IRobot() {
-      public void step() {
-      }
-      public void turnLeft() {
-      }
-    };
-
+    robot = world.getRobot();
   }
   public abstract void run();
-
-  private static void changeCells(GuiService gui) throws RemoteException {
-    Step step = new Step();
-    step.setSpeed(StepSpeed.INSTANT);
-    ChangeCell c = new ChangeCell();
-    c.setPosition(new Position(2, 3));
-    c.setAppearance(new TextAppearance(Color.RED, Color.BLUE, "W"));
-    step.add(c);
-    gui.doStep(step);
-  }
-
-
-  public void createWorld(GuiService gui) throws RemoteException {
-    gui.createWorld("TestWorld", world.getWidth(), world.getHeight());
-  }
-
 
 }

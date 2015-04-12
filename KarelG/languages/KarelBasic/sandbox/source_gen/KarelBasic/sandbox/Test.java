@@ -6,15 +6,19 @@ import JavaKarel.runtime.Script;
 
 public class Test extends Script {
 
+  public Test(String name) {
+    super(name);
+  }
 
   public void run() {
+    robot.step();
     robot.step();
     robot.step();
     robot.turnLeft();
   }
 
   public static void main(String[] args) {
-    Test script = new Test();
+    Test script = new Test("Test");
     script.run();
   }
 }

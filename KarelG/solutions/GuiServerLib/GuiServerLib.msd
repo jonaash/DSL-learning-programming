@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" compileInMPS="true">
+<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/api-0.1-SNAPSHOT.jar" />
-      <sourceRoot location="lib/gui-0.1-SNAPSHOT.jar" />
       <sourceRoot location="lib/slf4j-api-1.7.5.jar" />
       <sourceRoot location="lib/commons-lang3-3.1.jar" />
+      <sourceRoot location="lib/gui-0.1-SNAPSHOT.jar" />
+      <sourceRoot location="lib/api-0.1-SNAPSHOT.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/api-0.1-SNAPSHOT.jar" />
-    <stubModelEntry path="${module}/lib/gui-0.1-SNAPSHOT.jar" />
     <stubModelEntry path="${module}/lib/slf4j-api-1.7.5.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3-3.1.jar" />
+    <stubModelEntry path="${module}/lib/api-0.1-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/lib/gui-0.1-SNAPSHOT.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

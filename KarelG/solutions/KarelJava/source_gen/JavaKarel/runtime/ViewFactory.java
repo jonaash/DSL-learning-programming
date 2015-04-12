@@ -8,7 +8,7 @@ import java.util.HashMap;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import java.awt.Color;
 import cz.dsllp.gui.api.message.Step;
-import cz.dsllp.gui.api.message.StepSpeed;
+import cz.dsllp.gui.api.message.Speed;
 import cz.dsllp.gui.api.message.command.Position;
 import cz.dsllp.gui.api.message.command.ChangeCell;
 import cz.dsllp.gui.api.message.command.ChangeThing;
@@ -32,7 +32,7 @@ public class ViewFactory {
 
 
   public static Step createWorld(World world) {
-    Step step = new Step(StepSpeed.INSTANT);
+    Step step = new Step(Speed.INSTANT);
 
     for (int row = 0; row < world.getWidth(); row++) {
       for (int col = 0; col < world.getHeight(); col++) {
@@ -61,37 +61,37 @@ public class ViewFactory {
 
   public static Step initRobot(String name, int row, int col, Direction direction) {
     ChangeThing cmd = new ChangeThing(name, new Position(row, col), ROBOT.get(direction));
-    return createStep(StepSpeed.INSTANT, cmd);
+    return createStep(Speed.INSTANT, cmd);
   }
 
   public static Step goToPosition(String name, int row, int col) {
     ChangeThing cmd = new ChangeThing(name, new Position(row, col));
-    return createStep(StepSpeed.MEDIUM, cmd);
+    return createStep(Speed.MEDIUM, cmd);
   }
   public static Step turnTo(String name, Direction direction) {
     ChangeThing cmd = new ChangeThing(name, ROBOT.get(direction));
-    return createStep(StepSpeed.FAST, cmd);
+    return createStep(Speed.FAST, cmd);
 
   }
 
-  public static Step setMarks(int count, int row, int col) {
+  public static Step setMarks(int row, int col, int count) {
     ChangeCell cmd = new ChangeCell(new Position(row, col), createMarksAppearance(count));
-    return createStep(StepSpeed.FAST, cmd);
+    return createStep(Speed.FAST, cmd);
 
   }
 
-  public static Step alert(String message) {
+  public static Step showAlert(String message) {
     Alert cmd = new Alert(message);
-    return createStep(StepSpeed.INSTANT, cmd);
+    return createStep(Speed.INSTANT, cmd);
   }
 
-  public static Step message(String message) {
+  public static Step printMessage(String message) {
     PrintMessage cmd = new PrintMessage(message);
-    return createStep(StepSpeed.INSTANT, cmd);
+    return createStep(Speed.INSTANT, cmd);
   }
 
 
-  private static Step createStep(StepSpeed speed, Command cmd) {
+  private static Step createStep(Speed speed, Command cmd) {
     Step step = new Step(speed);
     step.add(cmd);
     return step;
