@@ -27,8 +27,8 @@ public class World {
   private void createWorld1() {
     map[7][7].addMark();
     map[7][7].addMark();
-    map[7][9].addMark();
-    map[5][5].setWall();
+    // <node> 
+    map[5][4].addMark();
   }
 
 

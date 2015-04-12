@@ -4,12 +4,14 @@ package JavaKarel.runtime;
 
 
 public class Robot {
+  private String name;
   private Direction direction;
   private World world;
   private int col;
   private int row;
 
-  public Robot() {
+  public Robot(String name) {
+    this.name = name;
   }
 
   /*package*/ void instertToWorld(World world, int col, int row, Direction direction) {
@@ -118,5 +120,7 @@ public class Robot {
     return row;
   }
 
-
+  public String getName() {
+    return name;
+  }
 }
