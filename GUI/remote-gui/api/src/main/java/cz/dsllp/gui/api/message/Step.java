@@ -15,8 +15,8 @@ public class Step implements Serializable{
 
     private static final long serialVersionUID = -7681209697420491527L;
 
-    Speed speed;
-    List<Command> commands = new ArrayList<Command>();
+    private Speed speed;
+    private List<Command> commands = new ArrayList<Command>();
 
     public Step() {
         this.speed= Speed.MEDIUM;
