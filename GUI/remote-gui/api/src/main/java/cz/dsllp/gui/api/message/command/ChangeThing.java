@@ -1,6 +1,8 @@
 package cz.dsllp.gui.api.message.command;
 
 import cz.dsllp.gui.api.message.appearance.Appearance;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * @author jonasklimes
@@ -41,4 +43,13 @@ public class ChangeThing extends Command {
         return newAppearance;
     }
 
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("thingName", thingName)
+                .append("newPosition", newPosition)
+                .append("newAppearance", newAppearance)
+                .toString();
+    }
 }
