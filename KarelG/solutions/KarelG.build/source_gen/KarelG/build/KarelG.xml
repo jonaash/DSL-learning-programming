@@ -5,7 +5,7 @@
   <property name="build.layout" location="${build.dir}/artifacts/KarelG" />
   <property name="date" value="20150322" />
   <property name="build.number" value="KarelG-139.SNAPSHOT" />
-  <property name="mps_home" location="${basedir}/../../../../../../../Applications/MPS 3.2.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsExecutionPlugin" location="${mps_home}/plugins" />

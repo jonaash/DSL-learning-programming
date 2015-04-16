@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="StandaloneIDE.build.KarelG" file="KarelG.xml" />
+  <dependency className="StandaloneIDE.build.KarelGDistribution" file="KarelGDistribution.xml" />
+</dependenciesRoot>
+
