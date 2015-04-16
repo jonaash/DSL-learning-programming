@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310331">
+    <file name="Comunication.java">
+      <node id="2008017420329310381" at="7,0,8,0" concept="0" trace="PORT" />
+      <node id="2008017420329311749" at="8,0,9,0" concept="0" trace="SERVICE_NAME" />
+      <unit id="2008017420329310331" at="6,0,10,0" name="Common.constants.Comunication" />
+    </file>
+  </root>
+</debug-info>
+

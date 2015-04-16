@@ -30,57 +30,57 @@
   </root>
   <root nodeRef="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730079577">
     <file name="KarelView_Tool.java">
-      <node id="7120477472730079577" at="17,0,18,0" concept="7" trace="ICON" />
-      <node id="700771863880771335" at="18,0,19,0" concept="2" trace="panel" />
-      <node id="7120477472730079577" at="19,42,20,73" concept="8" />
-      <node id="7120477472730079577" at="22,37,23,24" concept="1" />
-      <node id="700771863880791190" at="23,24,24,50" concept="1" />
-      <node id="700771863880762050" at="24,50,25,0" concept="6" />
-      <node id="7120477472730229403" at="25,0,26,40" concept="1" />
-      <node id="6233428096112788067" at="26,40,27,0" concept="6" />
-      <node id="700771863880842994" at="28,9,29,49" concept="4" />
-      <node id="700771863880842997" at="29,49,30,51" concept="1" />
-      <node id="700771863880842687" at="30,51,31,0" concept="6" />
-      <node id="6233428096112743864" at="31,0,32,0" concept="6" />
-      <node id="6233428096112743867" at="33,39,34,26" concept="1" />
-      <node id="6233428096112743883" at="35,39,36,26" concept="1" />
-      <node id="6233428096112743895" at="36,26,37,0" concept="6" />
-      <node id="6233428096112743900" at="38,33,39,26" concept="1" />
-      <node id="6233428096112743912" at="39,26,40,0" concept="6" />
-      <node id="7120477472730253809" at="41,5,42,0" concept="6" />
-      <node id="7120477472730253850" at="42,0,43,0" concept="6" />
-      <node id="6233428096112743225" at="45,36,46,0" concept="6" />
-      <node id="7120477472730155628" at="46,0,47,37" concept="5" />
-      <node id="7120477472730079577" at="19,0,22,0" concept="0" trace="KarelView_Tool#(Lcom/intellij/openapi/project/Project;)V" />
-      <node id="7120477472730079577" at="45,0,49,0" concept="3" trace="getComponent#()Ljavax/swing/JComponent;" />
-      <node id="6233428096112743845" at="27,0,41,5" concept="9" />
-      <node id="7120477472730079577" at="22,0,45,0" concept="3" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
-      <scope id="7120477472730079577" at="19,42,20,73" />
-      <scope id="6233428096112743865" at="33,0,34,26">
+      <node id="7120477472730079577" at="18,0,19,0" concept="7" trace="ICON" />
+      <node id="700771863880771335" at="19,0,20,0" concept="2" trace="panel" />
+      <node id="7120477472730079577" at="20,42,21,73" concept="8" />
+      <node id="7120477472730079577" at="23,37,24,24" concept="1" />
+      <node id="700771863880791190" at="24,24,25,50" concept="1" />
+      <node id="700771863880762050" at="25,50,26,0" concept="6" />
+      <node id="7120477472730229403" at="26,0,27,40" concept="1" />
+      <node id="6233428096112788067" at="27,40,28,0" concept="6" />
+      <node id="700771863880842994" at="29,9,30,49" concept="4" />
+      <node id="700771863880842997" at="30,49,31,64" concept="1" />
+      <node id="700771863880842687" at="31,64,32,0" concept="6" />
+      <node id="6233428096112743864" at="32,0,33,0" concept="6" />
+      <node id="6233428096112743867" at="34,39,35,26" concept="1" />
+      <node id="6233428096112743883" at="36,39,37,26" concept="1" />
+      <node id="6233428096112743895" at="37,26,38,0" concept="6" />
+      <node id="6233428096112743900" at="39,33,40,26" concept="1" />
+      <node id="6233428096112743912" at="40,26,41,0" concept="6" />
+      <node id="7120477472730253809" at="42,5,43,0" concept="6" />
+      <node id="7120477472730253850" at="43,0,44,0" concept="6" />
+      <node id="6233428096112743225" at="46,36,47,0" concept="6" />
+      <node id="7120477472730155628" at="47,0,48,37" concept="5" />
+      <node id="7120477472730079577" at="20,0,23,0" concept="0" trace="KarelView_Tool#(Lcom/intellij/openapi/project/Project;)V" />
+      <node id="7120477472730079577" at="46,0,50,0" concept="3" trace="getComponent#()Ljavax/swing/JComponent;" />
+      <node id="6233428096112743845" at="28,0,42,5" concept="9" />
+      <node id="7120477472730079577" at="23,0,46,0" concept="3" trace="init#(Lcom/intellij/openapi/project/Project;)V" />
+      <scope id="7120477472730079577" at="20,42,21,73" />
+      <scope id="6233428096112743865" at="34,0,35,26">
         <var name="e" id="6233428096112743879" />
       </scope>
-      <scope id="6233428096112743866" at="33,39,34,26" />
-      <scope id="6233428096112743881" at="35,0,37,0">
+      <scope id="6233428096112743866" at="34,39,35,26" />
+      <scope id="6233428096112743881" at="36,0,38,0">
         <var name="e" id="6233428096112743896" />
       </scope>
-      <scope id="6233428096112743882" at="35,39,37,0" />
-      <scope id="6233428096112743898" at="38,0,40,0">
+      <scope id="6233428096112743882" at="36,39,38,0" />
+      <scope id="6233428096112743898" at="39,0,41,0">
         <var name="e" id="6233428096112743913" />
       </scope>
-      <scope id="6233428096112743899" at="38,33,40,0" />
-      <scope id="7120477472730079579" at="45,36,47,37" />
-      <scope id="7120477472730079577" at="19,0,22,0">
+      <scope id="6233428096112743899" at="39,33,41,0" />
+      <scope id="7120477472730079579" at="46,36,48,37" />
+      <scope id="7120477472730079577" at="20,0,23,0">
         <var name="project" id="7120477472730079577" />
       </scope>
-      <scope id="6233428096112743846" at="28,9,32,0">
+      <scope id="6233428096112743846" at="29,9,33,0">
         <var name="server" id="700771863880842993" />
       </scope>
-      <scope id="7120477472730079577" at="45,0,49,0" />
-      <scope id="7120477472730079577" at="22,37,43,0" />
-      <scope id="7120477472730079577" at="22,0,45,0">
+      <scope id="7120477472730079577" at="46,0,50,0" />
+      <scope id="7120477472730079577" at="23,37,44,0" />
+      <scope id="7120477472730079577" at="23,0,46,0">
         <var name="project" id="7120477472730079577" />
       </scope>
-      <unit id="7120477472730079577" at="16,0,50,0" name="ViewPlugin.plugin.KarelView_Tool" />
+      <unit id="7120477472730079577" at="17,0,51,0" name="ViewPlugin.plugin.KarelView_Tool" />
     </file>
   </root>
 </debug-info>

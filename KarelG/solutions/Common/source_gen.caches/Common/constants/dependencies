@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="Common.constants.Comunication" file="Comunication.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+</dependenciesRoot>
+

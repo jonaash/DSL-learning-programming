@@ -16,6 +16,7 @@
     <import index="f1am" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiServerLib/cz.dsllp.gui@java_stub)" />
     <import index="sabi" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#9e2adce0-3032-497b-bf7e-e4b747a76a49(jetbrains.mps.lang.project.modules/module.GuiServerLib@project_stub)" />
     <import index="zppf" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.server(GuiServerLib/cz.dsllp.gui.server@java_stub)" />
+    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -63,6 +64,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -80,9 +84,6 @@
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -198,8 +199,9 @@
                       <ref role="2WH_rO" node="ATD4KvcUs7" resolve="panel" />
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="ATD4Kvdt7m" role="37wK5m">
-                    <property role="3cmrfH" value="1234" />
+                  <node concept="10M0yZ" id="1JtUjhLxDEg" role="37wK5m">
+                    <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                    <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
                   </node>
                 </node>
               </node>

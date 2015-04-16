@@ -8,6 +8,7 @@ import cz.dsllp.gui.PluginPanel;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowAnchor;
 import cz.dsllp.gui.server.GuiServer;
+import Common.constants.Comunication;
 import java.rmi.AlreadyBoundException;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
@@ -27,7 +28,7 @@ public class KarelView_Tool extends GeneratedTool {
 
     try {
       GuiServer server = GuiServer.getInstance();
-      server.init(KarelView_Tool.this.panel, 1234);
+      server.init(KarelView_Tool.this.panel, Comunication.PORT);
 
 
     } catch (AlreadyBoundException e) {

@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="true">03b98ce1-fecc-4ed5-a49d-43457de64e17(Common)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="true">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiLib)</dependency>

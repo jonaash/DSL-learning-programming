@@ -5,6 +5,7 @@
     <classNode dependClassName="java.lang.RuntimeException" />
   </dependency>
   <dependency className="JavaKarel.runtime.Client" file="Client.java">
+    <classNode dependClassName="Common.constants.Comunication" />
     <classNode dependClassName="cz.dsllp.gui.api.service.GuiService" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />

@@ -11,6 +11,7 @@
     <dependency reexport="true">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiLib)</dependency>
     <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
     <dependency reexport="true">a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)</dependency>
+    <dependency reexport="false">03b98ce1-fecc-4ed5-a49d-43457de64e17(Common)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>

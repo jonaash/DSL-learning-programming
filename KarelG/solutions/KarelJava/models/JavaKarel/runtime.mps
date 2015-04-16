@@ -19,6 +19,7 @@
     <import index="d577" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message(GuiServerLib/cz.dsllp.gui.api.message@java_stub)" />
     <import index="52rl" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.service(GuiServerLib/cz.dsllp.gui.api.service@java_stub)" />
     <import index="to5d" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.logging(MPS.Core/jetbrains.mps.logging@java_stub)" />
+    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -2495,15 +2496,6 @@
   <node concept="312cEu" id="3T8UWqFMn02">
     <property role="TrG5h" value="Client" />
     <property role="3GE5qa" value="client" />
-    <node concept="Wx3nA" id="3T8UWqFNR0f" role="jymVt">
-      <property role="TrG5h" value="RMI_REGISTRY_PORT" />
-      <property role="3TUv4t" value="true" />
-      <node concept="10Oyi0" id="1XlOgn$rw51" role="1tU5fm" />
-      <node concept="3Tm6S6" id="3T8UWqFNR0i" role="1B3o_S" />
-      <node concept="3cmrfG" id="1XlOgn$rwpL" role="33vP2m">
-        <property role="3cmrfH" value="1234" />
-      </node>
-    </node>
     <node concept="312cEg" id="3T8UWqFNR0j" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -2534,6 +2526,17 @@
             <property role="3SKdUp" value="Call registry for GuiService" />
           </node>
         </node>
+        <node concept="3cpWs8" id="1JtUjhLyhYR" role="3cqZAp">
+          <node concept="3cpWsn" id="1JtUjhLyhYU" role="3cpWs9">
+            <property role="TrG5h" value="port" />
+            <node concept="10Oyi0" id="1JtUjhLyhYP" role="1tU5fm" />
+            <node concept="10M0yZ" id="1JtUjhLyi63" role="33vP2m">
+              <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+              <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1JtUjhLyiwQ" role="3cqZAp" />
         <node concept="3cpWs8" id="3T8UWqFNR0t" role="3cqZAp">
           <node concept="3cpWsn" id="3T8UWqFNR0s" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -2552,8 +2555,8 @@
                   <node concept="2YIFZM" id="1XlOgn$rwGz" role="3uHU7w">
                     <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
                     <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                    <node concept="37vLTw" id="1XlOgn$ryie" role="37wK5m">
-                      <ref role="3cqZAo" node="3T8UWqFNR0f" resolve="RMI_REGISTRY_PORT" />
+                    <node concept="37vLTw" id="1JtUjhLyikJ" role="37wK5m">
+                      <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
                     </node>
                   </node>
                 </node>

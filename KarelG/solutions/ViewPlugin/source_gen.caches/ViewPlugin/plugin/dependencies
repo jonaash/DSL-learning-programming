@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="ViewPlugin.plugin.KarelView_Tool" file="KarelView_Tool.java">
+    <classNode dependClassName="Common.constants.Comunication" />
     <classNode dependClassName="com.intellij.openapi.project.Project" />
     <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
     <classNode dependClassName="cz.dsllp.gui.PluginPanel" />
