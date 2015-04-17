@@ -219,17 +219,17 @@
       </node>
       <node concept="3_J27D" id="1JtUjhLyCyQ" role="2EtHGA">
         <node concept="3Mxwew" id="1JtUjhLyCyR" role="3MwsjC">
-          <property role="3MwjfP" value="KarelG" />
+          <property role="3MwjfP" value="Karel" />
         </node>
       </node>
       <node concept="3_J27D" id="1JtUjhLyCyS" role="2EtHGT">
         <node concept="3Mxwew" id="1JtUjhLyCyT" role="3MwsjC">
-          <property role="3MwjfP" value="KarelG" />
+          <property role="3MwjfP" value="Karel-IDE" />
         </node>
       </node>
       <node concept="NbPM2" id="1JtUjhLyCyU" role="2OjNyQ">
         <node concept="3Mxwew" id="1JtUjhLyCyV" role="3MwsjC">
-          <property role="3MwjfP" value="KarelG" />
+          <property role="3MwjfP" value="Karel" />
         </node>
       </node>
       <node concept="3_J27D" id="1JtUjhLyCyW" role="HFo83">
@@ -445,7 +445,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="1JtUjhLyC$s" role="39821P">
-            <ref role="1zDrgn" node="1JtUjhLyCyH" resolve="KarelG" />
+            <ref role="1zDrgn" node="1JtUjhLyCyH" resolve="Karel" />
           </node>
         </node>
       </node>
@@ -553,32 +553,6 @@
     </node>
     <node concept="2G$12M" id="1JtUjhLyCzO" role="3989C9">
       <property role="TrG5h" value="KarelG" />
-      <node concept="1E1JtA" id="1JtUjhLyCzr" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="KarelBasic.sandbox" />
-        <property role="3LESm3" value="1fd31101-7454-4514-87d8-05f00cb3a342" />
-        <property role="2GAjPV" value="false" />
-        <node concept="55IIr" id="1JtUjhLyCzl" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1JtUjhLyCzm" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="1JtUjhLyCzn" role="2Ry0An">
-              <property role="2Ry0Am" value="KarelBasic" />
-              <node concept="2Ry0Ak" id="1JtUjhLyCzo" role="2Ry0An">
-                <property role="2Ry0Am" value="sandbox" />
-                <node concept="2Ry0Ak" id="1JtUjhLyCzp" role="2Ry0An">
-                  <property role="2Ry0Am" value="KarelBasic.sandbox.msd" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1JtUjhLyCI6" role="3bR37C">
-          <node concept="3bR9La" id="1JtUjhLyCI7" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="JavaKarel" />
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtA" id="1JtUjhLyCzx" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="JavaKarel" />
@@ -787,6 +761,32 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="1I19Jzi_jzL" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="KarelBasic.sandbox" />
+        <property role="3LESm3" value="1fd31101-7454-4514-87d8-05f00cb3a342" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="1I19Jzi_jzO" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1I19Jzi_jZP" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1I19Jzi_kd8" role="2Ry0An">
+              <property role="2Ry0Am" value="KarelBasic" />
+              <node concept="2Ry0Ak" id="1I19Jzi_kjD" role="2Ry0An">
+                <property role="2Ry0Am" value="sandbox" />
+                <node concept="2Ry0Ak" id="1I19Jzi_koW" role="2Ry0An">
+                  <property role="2Ry0Am" value="KarelBasic.sandbox.msd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1I19Jzi_kqh" role="3bR37C">
+          <node concept="3bR9La" id="1I19Jzi_kqi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="JavaKarel" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="1JtUjhLyC_y">
@@ -815,6 +815,17 @@
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="1JtUjhLyCAA" role="2Ry0An">
                     <property role="2Ry0Am" value="mps.vmoptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="1I19JzixQqu" role="39821P">
+              <node concept="398BVA" id="1I19JzixQqv" role="28jJRO">
+                <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
+                <node concept="2Ry0Ak" id="1I19JzixQqw" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="1I19JzixQqx" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps64.vmoptions" />
                   </node>
                 </node>
               </node>
@@ -1080,6 +1091,21 @@
                   <property role="2Ry0Am" value="bin" />
                   <node concept="2Ry0Ak" id="1JtUjhLyCFh" role="2Ry0An">
                     <property role="2Ry0Am" value="mps.vmoptions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="28jJK3" id="1I19JzixQCV" role="39821P">
+              <node concept="3co7Ac" id="1I19JzixQDu" role="28jJR8">
+                <property role="3co7Am" value="lf" />
+                <property role="3cpA_W" value="true" />
+              </node>
+              <node concept="398BVA" id="1I19JzixQCW" role="28jJRO">
+                <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
+                <node concept="2Ry0Ak" id="1I19JzixQCX" role="iGT6I">
+                  <property role="2Ry0Am" value="bin" />
+                  <node concept="2Ry0Ak" id="1I19JzixQCY" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps64.vmoptions" />
                   </node>
                 </node>
               </node>

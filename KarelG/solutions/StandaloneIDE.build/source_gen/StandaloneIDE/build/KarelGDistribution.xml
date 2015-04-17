@@ -17,6 +17,7 @@
     <zip destfile="${build.layout}/${KarelG.build.number}.zip">
       <zipfileset dir="${artifacts.KarelG}" prefix="KarelG ${version}" />
       <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="KarelG ${version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="KarelG ${version}/bin" />
       <zipfileset file="${mps_home}/bin/libbreakgen.jnilib" prefix="KarelG ${version}/bin/mac" />
       <zipfileset file="${mps_home}/bin/libbreakgen64.jnilib" prefix="KarelG ${version}/bin/mac" />
       <zipfileset file="${mps_home}/bin/restarter" prefix="KarelG ${version}/bin/mac" filemode="755" />
@@ -31,6 +32,12 @@
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin">
       <fileset file="${mps_home}/bin/mps.vmoptions" />
+      <filterchain>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin">
+      <fileset file="${mps_home}/bin/mps64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>

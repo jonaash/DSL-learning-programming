@@ -56,14 +56,14 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version codename="KarelG" major="1" minor="0" eap="false" />
+        <version codename="Karel" major="1" minor="0" eap="false" />
         <build date="${date}" number="${build.number}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
-        <names product="KarelG" fullname="KarelG" />
+        <names product="Karel" fullname="Karel-IDE" />
         <welcome-screen caption-url="/caption.png" slogan-url="/slogan.png" logo-url="/logo.png" />
       </component>
     </echoxml>
@@ -111,29 +111,6 @@
     </echoxml>
     <mkdir dir="${build.layout}/plugins/KarelG/languages" />
     <mkdir dir="${build.layout}/plugins/KarelG/languages/KarelG" />
-    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
-    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF/module.xml">
-      <module namespace="KarelBasic.sandbox" type="solution" uuid="1fd31101-7454-4514-87d8-05f00cb3a342">
-        <dependencies />
-        <sources jar="KarelBasic.sandbox-src.jar" descriptor="KarelBasic.sandbox.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox.jar">
-      <fileset dir="${build.tmp}/java/out/KarelBasic.sandbox" />
-      <fileset dir="${basedir}/languages/KarelBasic/sandbox" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models">
-      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox-src.jar">
-      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/source_gen">
-        <exclude name="**/trace.info" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models" prefix="module/../../../../KarelG/languages/KarelBasic/sandbox/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/JavaKarel.jar" />
     <mkdir dir="${build.tmp}/default/JavaKarel.jar/META-INF" />
     <echoxml file="${build.tmp}/default/JavaKarel.jar/META-INF/module.xml">
@@ -259,6 +236,29 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-generator-template" prefix="module/../../../KarelG/languages/KarelBasic/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-languageModels" prefix="module/../../../KarelG/languages/KarelBasic/languageModels" />
     </jar>
+    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
+    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF/module.xml">
+      <module namespace="KarelBasic.sandbox" type="solution" uuid="1fd31101-7454-4514-87d8-05f00cb3a342">
+        <dependencies />
+        <sources jar="KarelBasic.sandbox-src.jar" descriptor="KarelBasic.sandbox.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox.jar">
+      <fileset dir="${build.tmp}/java/out/KarelBasic.sandbox" />
+      <fileset dir="${basedir}/languages/KarelBasic/sandbox" includes="icons/**, resources/**" />
+      <fileset dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models">
+      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox-src.jar">
+      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/source_gen">
+        <exclude name="**/trace.info" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models" prefix="module/../../../../KarelG/languages/KarelBasic/sandbox/models" />
+    </jar>
     <mkdir dir="${build.layout}/plugins/KarelG/runtime-libraries" />
     <copy todir="${build.layout}/plugins/KarelG/runtime-libraries">
       <fileset dir="${karel_home}/solutions/GuiServerLib/lib" />
@@ -278,7 +278,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.KarelBasic.sandbox, java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963" />
+  <target name="compileJava" depends="java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963, java.compile.KarelBasic.sandbox" />
   
   <target name="processResources" />
   
@@ -370,38 +370,6 @@
   </target>
   
   <target name="makeDependents" />
-  
-  <target name="java.compile.KarelBasic.sandbox" depends="java.compile.GuiLib, java.compile.JavaKarel, fetchDependencies">
-    <mkdir dir="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/KarelBasic.sandbox" />
-    <javac destdir="${build.tmp}/java/out/KarelBasic.sandbox" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/GuiLib" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/JavaKarel" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
-      </classpath>
-    </javac>
-  </target>
   
   <target name="java.compile.JavaKarel" depends="java.compile.Common, java.compile.GuiLib, fetchDependencies">
     <mkdir dir="${karel_home}/solutions/KarelJava/source_gen" />
@@ -562,6 +530,38 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.KarelBasic.sandbox" depends="java.compile.GuiLib, java.compile.JavaKarel, fetchDependencies">
+    <mkdir dir="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/KarelBasic.sandbox" />
+    <javac destdir="${build.tmp}/java/out/KarelBasic.sandbox" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/GuiLib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <pathelement path="${build.tmp}/java/out/JavaKarel" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
       </classpath>
     </javac>
   </target>
