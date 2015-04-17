@@ -22,7 +22,7 @@ public class SimpleClient {
     public static void main(String[] args) {
         Client client = new Client();
         try {
-           //logger.info("Simple client initialization starting");
+            logger.info("Simple client initialization starting");
             client.init();
             GuiService gui = client.getGuiService();
             createWorld(gui);
@@ -30,19 +30,13 @@ public class SimpleClient {
             changeCells(gui);
 
 
-
-
         } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            logger.error("Client initialization failed", e);
         } catch (RemoteException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            logger.error("Client initialization failed", e);
         } catch (NotBoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            logger.error("Client initialization failed", e);
         }
-
 
 
     }
@@ -53,11 +47,11 @@ public class SimpleClient {
 
         ChangeCell c = new ChangeCell();
 
-        c.setPosition(new Position(2,3));
+        c.setPosition(new Position(2, 3));
         c.setAppearance(new TextAppearance(Color.BLUE, Color.RED, "W"));
         step.add(c);
 
-        ChangeThing t = new ChangeThing("robot", new Position(2,2), new TextAppearance(Color.green, Color.magenta,
+        ChangeThing t = new ChangeThing("robot", new Position(2, 2), new TextAppearance(Color.green, Color.magenta,
                 ">"));
 
         step.add(t);
@@ -66,7 +60,7 @@ public class SimpleClient {
 
     }
 
-    private static void createWorld(GuiService gui) throws RemoteException{
+    private static void createWorld(GuiService gui) throws RemoteException {
         gui.createWorld("TestWorld", 10, 12);
     }
 
