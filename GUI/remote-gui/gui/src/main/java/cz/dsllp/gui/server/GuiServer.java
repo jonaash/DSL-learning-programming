@@ -27,18 +27,20 @@ public class GuiServer {
         return instance;
     }
 
-    public void init(PluginPanel panel, int port) throws AlreadyBoundException, RemoteException, MalformedURLException {
+    public void init(PluginPanel panel, String rmiAddress, int port, String serviceName) throws AlreadyBoundException,
+            RemoteException,
+            MalformedURLException {
         this.panel = panel;
 
         // Set properties for RMI registry
         System.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.rmi.registry.RegistryContextFactory");
-        System.setProperty(Context.PROVIDER_URL, "rmi://localhost:1099");
+        System.setProperty(Context.PROVIDER_URL, rmiAddress + ":" + port);
 
         Registry registry = LocateRegistry.createRegistry(port);
 
         guiService = new GuiServiceImpl();
 
-        registry.bind("GuiService", guiService);
+        registry.bind(serviceName, guiService);
 
 
         logger.info("Service bound....");

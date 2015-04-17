@@ -43,7 +43,7 @@ public class GuiRunner {
         // create server
         try {
             GuiServer server = GuiServer.getInstance();
-            server.init(panel, 1234);
+            server.init(panel, "rmi://localhost",1238, "GuiService");
 
         } catch (AlreadyBoundException e) {
             e.printStackTrace();
