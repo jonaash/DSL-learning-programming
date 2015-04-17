@@ -1,6 +1,8 @@
 package cz.dsllp.remote.client;
 
 import cz.dsllp.gui.api.service.GuiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -9,14 +11,18 @@ import java.rmi.RemoteException;
 
 public class Client {
 
-    private static final String RMI_REGISTRY_PORT = "1234";
+    private static final Logger logger = LoggerFactory.getLogger(Client.class);
+
+    private static final String RMI_REGISTRY_PORT = "1238";
 
     private GuiService guiService;
 
     public void init() throws MalformedURLException, RemoteException, NotBoundException {
 
         // Call registry for PowerService
-        Object srv = Naming.lookup("rmi://localhost:" + RMI_REGISTRY_PORT + "/GuiService");
+        String lookupAddress="rmi://localhost:" + RMI_REGISTRY_PORT + "/GuiService";
+        logger.info("Looking for server on: {}", lookupAddress);
+        Object srv = Naming.lookup(lookupAddress);
 
         guiService = (GuiService) srv;
     }

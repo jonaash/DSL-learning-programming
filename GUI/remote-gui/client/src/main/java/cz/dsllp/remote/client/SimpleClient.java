@@ -1,12 +1,14 @@
 package cz.dsllp.remote.client;
 
+import cz.dsllp.gui.api.message.Speed;
+import cz.dsllp.gui.api.message.Step;
+import cz.dsllp.gui.api.message.appearance.TextAppearance;
+import cz.dsllp.gui.api.message.command.ChangeCell;
 import cz.dsllp.gui.api.message.command.ChangeThing;
 import cz.dsllp.gui.api.message.command.Position;
 import cz.dsllp.gui.api.service.GuiService;
-import cz.dsllp.gui.api.message.Step;
-import cz.dsllp.gui.api.message.Speed;
-import cz.dsllp.gui.api.message.appearance.TextAppearance;
-import cz.dsllp.gui.api.message.command.ChangeCell;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.net.MalformedURLException;
@@ -15,7 +17,7 @@ import java.rmi.RemoteException;
 
 public class SimpleClient {
 
-    //public static final Logger logger = LoggerFactory.getLogger(SimpleClient.class);
+    public static final Logger logger = LoggerFactory.getLogger(SimpleClient.class);
 
     public static void main(String[] args) {
         Client client = new Client();
