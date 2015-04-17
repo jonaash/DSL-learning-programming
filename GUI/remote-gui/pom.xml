@@ -17,8 +17,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<skip.distribution>true</skip.distribution>
+		<project.distribution.directory>../../../KarelG/solutions/GuiServerLib/lib</project.distribution.directory>
+		<!-- versions-->
 		<junit.version>4.11</junit.version>
-		<slf4j.version>1.7.6</slf4j.version>
+		<slf4j.version>1.7.12</slf4j.version>
 		<logback.version>1.0.13</logback.version>
 		<commons.lang.version>3.1</commons.lang.version>
 	</properties>
@@ -37,9 +40,9 @@
 				<version>${slf4j.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>ch.qos.logback</groupId>
-				<artifactId>logback-classic</artifactId>
-				<version>${logback.version}</version>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${slf4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
