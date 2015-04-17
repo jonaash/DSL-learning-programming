@@ -6,6 +6,8 @@ package cz.dsllp.gui.api.exception;
  */
 public class RemoteGuiException extends RuntimeException {
 
+    private static final long serialVersionUID = -7687697610793910865L;
+
     public RemoteGuiException() {
     }
 
@@ -26,7 +28,9 @@ public class RemoteGuiException extends RuntimeException {
     }
 
     public static RemoteGuiException create(String message, String... args) {
-       return new RemoteGuiException(String.format(message, args));
+        // args are passed as varargs
+
+        return new RemoteGuiException(String.format(message, (Object[])args));
     }
 
 }
