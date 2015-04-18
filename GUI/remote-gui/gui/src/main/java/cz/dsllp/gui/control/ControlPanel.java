@@ -1,7 +1,24 @@
 package cz.dsllp.gui.control;
 
-import javax.swing.*;
-import java.awt.*;
+import cz.dsllp.gui.icons.Icons;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.swing.BoxLayout;
+import javax.swing.Icon;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSlider;
+import javax.swing.JTextPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 
 /**
  * @author jonasklimes
@@ -9,12 +26,19 @@ import java.awt.*;
  */
 public class ControlPanel extends JPanel {
 
+    private static final long serialVersionUID = -8751016031258019018L;
+
+    private static final Logger logger = LoggerFactory.getLogger(ControlPanel.class);
+
     private static final String MESSAGES_LABEL = "Messages";
     private static final String SPEED_LABEL = "Speed: ";
 
+    private static final int BUTTON_SIZE = 30;
+
+
     private JButton start;
+    private JButton pause;
     private JButton stop;
-    private JButton reset;
     private JButton step;
 
     private JSlider speed;
@@ -30,15 +54,15 @@ public class ControlPanel extends JPanel {
 
     }
 
-    private void initComponents(){
+    private void initComponents() {
         // TODO: add actions
-        start = new JButton("Start");
-        stop = new JButton("Stop");
-        step = new JButton("Step");
-        reset = new JButton("Reset");
+        start = createButton(Icons.START, "Start");
+        pause = createButton(Icons.PAUSE, "Pause");
+        step = createButton(Icons.STEP, "One step");
+        stop = createButton(Icons.STOP, "Stop");
 
         // TODO: set proper values according to generation
-        speed = new JSlider(1,5,3);
+        speed = new JSlider(1, 5, 3);
         //Turn on labels at major tick marks.
         speed.setMajorTickSpacing(1);
         speed.setPaintTicks(true);
@@ -48,7 +72,7 @@ public class ControlPanel extends JPanel {
 
     }
 
-    private void createLayout(){
+    private void createLayout() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         // buttons
@@ -62,27 +86,27 @@ public class ControlPanel extends JPanel {
     }
 
 
-    private JComponent createButtonsComponent(){
+    private JComponent createButtonsComponent() {
 
         JPanel p = new JPanel(new GridBagLayout());
         GridBagConstraints c = new GridBagConstraints();
 
         // start button
-        c.gridx=0;
-        c.gridy=0;
+        c.gridx = 0;
+        c.gridy = 0;
         p.add(start, c);
 
-        // stop button
-        c.gridx=1;
-        p.add(stop, c);
+        // pause button
+        c.gridx = 1;
+        p.add(pause, c);
 
         // step button
-        c.gridx=2;
+        c.gridx = 2;
         p.add(step, c);
 
-        // reset button
+        // stop button
         c.gridx = 3;
-        p.add(reset, 3);
+        p.add(stop, 3);
 
         // speed label
         c.gridx = 4;
@@ -98,12 +122,12 @@ public class ControlPanel extends JPanel {
         return p;
     }
 
-    private JComponent createMessagesComponent(){
+    private JComponent createMessagesComponent() {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setPreferredSize(new Dimension(200, 200));
 
         JLabel label = new JLabel(MESSAGES_LABEL);
-        label.setHorizontalAlignment(0);
+        label.setHorizontalAlignment(SwingConstants.CENTER);
         panel.add(label, BorderLayout.PAGE_START);
 
         JScrollPane scrollPane = new JScrollPane(messages, ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -112,6 +136,15 @@ public class ControlPanel extends JPanel {
         panel.add(scrollPane, BorderLayout.CENTER);
 
         return panel;
+    }
+
+    private JButton createButton(Icon icon, String tooltip) {
+        JButton button = new JButton(icon);
+        button.setPreferredSize(new Dimension(BUTTON_SIZE, BUTTON_SIZE));
+        button.setToolTipText(tooltip);
+        button.setHorizontalAlignment(SwingConstants.CENTER);
+        button.setVerticalAlignment(SwingConstants.CENTER);
+        return button;
     }
 
 }
