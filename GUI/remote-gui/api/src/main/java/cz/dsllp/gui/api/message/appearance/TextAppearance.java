@@ -14,13 +14,15 @@ public class TextAppearance implements Appearance {
     private Color color;
     private String text;
 
-    public TextAppearance(){}
+    public TextAppearance() {
+    }
 
     /**
+     * Creates a new TextAppearance.
      *
-     * @param background
-     * @param color
-     * @param text
+     * @param background cell background color
+     * @param color text color
+     * @param text text
      */
     public TextAppearance(Color background, Color color, String text) {
         this.background = background;
@@ -53,33 +55,33 @@ public class TextAppearance implements Appearance {
     }
 
 
-    public static class Builder{
+    public static class Builder {
 
         private TextAppearance instance;
 
-        public Builder(){
+        public Builder() {
             instance = new TextAppearance();
         }
 
-        public Builder color(Color color){
-            instance.color=color;
+        public Builder color(Color color) {
+            instance.color = color;
 
             return this;
         }
 
-        public Builder background(Color background){
-            instance.background=background;
+        public Builder background(Color background) {
+            instance.background = background;
 
             return this;
         }
 
-        public Builder text(String text){
-            instance.text=text;
+        public Builder text(String text) {
+            instance.text = text;
 
             return this;
         }
 
-        public TextAppearance build(){
+        public TextAppearance build() {
             return instance;
         }
 
