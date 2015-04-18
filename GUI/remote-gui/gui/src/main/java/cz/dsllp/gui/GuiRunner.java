@@ -9,9 +9,6 @@ import cz.dsllp.gui.server.GuiServer;
 import javax.swing.*;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 import java.awt.*;
-import java.net.MalformedURLException;
-import java.rmi.AlreadyBoundException;
-import java.rmi.RemoteException;
 
 /**
  * Created by jonasklimes on 28/03/15.
@@ -41,23 +38,9 @@ public class GuiRunner {
         frame.pack();
 
         // create server
-        try {
-            GuiServer server = GuiServer.getInstance();
-            server.init(panel, "rmi://localhost",1238, "GuiService");
-
-        } catch (AlreadyBoundException e) {
-            e.printStackTrace();
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-
-        } catch (RemoteException e) {
-            e.printStackTrace();
-
-        }
-
-
-
+        GuiServer server = GuiServer.getInstance();
+        server.init(panel, "rmi://localhost", 1238, "GuiService");
+        server.init(panel, "rmi://localhost", 1238, "GuiService");
     }
 
     public static World createWorldSample() {
@@ -79,7 +62,6 @@ public class GuiRunner {
 
         return world;
     }
-
 
 
     private static void addMarks(World world, int row, int col, int count) {
