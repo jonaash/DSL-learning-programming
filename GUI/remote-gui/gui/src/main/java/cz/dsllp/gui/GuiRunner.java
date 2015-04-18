@@ -6,12 +6,18 @@ import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
 import cz.dsllp.gui.server.GuiServer;
 
-import javax.swing.*;
-import javax.swing.plaf.metal.MetalLookAndFeel;
-import java.awt.*;
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.WindowConstants;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
 
 /**
- * Created by jonasklimes on 28/03/15.
+ *
+ *
+ * @author jonasklimes
+ * @since 28/03/15
  */
 public class GuiRunner {
 
@@ -21,12 +27,12 @@ public class GuiRunner {
         // create gui
         JFrame frame = new JFrame();
         try {
-            UIManager.setLookAndFeel(new MetalLookAndFeel());
-        } catch (UnsupportedLookAndFeelException e) {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         PluginPanel panel = new PluginPanel();
 
         frame.setPreferredSize(new Dimension(600, 800));

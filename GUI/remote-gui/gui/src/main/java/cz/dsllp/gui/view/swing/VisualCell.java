@@ -4,9 +4,12 @@ import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.Thing;
 
-import javax.swing.*;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Font;
 import java.util.List;
 
 /**
@@ -14,6 +17,8 @@ import java.util.List;
  * @since 04/04/15
  */
 class VisualCell extends JPanel {
+
+    private static final long serialVersionUID = 4284114890877956865L;
 
     private static final Font FONT = new Font("Arial", Font.BOLD, (int) Math.round(WorldPanel.CELL_SIZE * 0.7));
 

@@ -7,4 +7,5 @@ import java.io.Serializable;
  * @since 05/04/15
  */
 public abstract class Command implements Serializable{
+    private static final long serialVersionUID = -4110562609978560032L;
 }

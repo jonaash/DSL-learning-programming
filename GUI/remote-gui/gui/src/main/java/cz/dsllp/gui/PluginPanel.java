@@ -6,7 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -15,6 +16,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class PluginPanel extends JPanel {
 
+    private static final long serialVersionUID = 523844209009765503L;
     private static final Logger logger = LoggerFactory.getLogger(PluginPanel.class);
 
     private ControlPanel controlPanel;
@@ -28,7 +30,7 @@ public class PluginPanel extends JPanel {
         controlPanel = new ControlPanel();
         scrollPanel = new JPanel();
         title = new JLabel();
-        title.setHorizontalAlignment(0);
+        title.setHorizontalAlignment(SwingConstants.CENTER);
 
         JScrollPane worldScrollPane = new JScrollPane(scrollPanel);
 

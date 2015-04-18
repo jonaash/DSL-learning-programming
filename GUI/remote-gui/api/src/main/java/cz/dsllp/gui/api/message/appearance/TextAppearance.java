@@ -1,6 +1,6 @@
 package cz.dsllp.gui.api.message.appearance;
 
-import java.awt.*;
+import java.awt.Color;
 
 /**
  * @author jonasklimes

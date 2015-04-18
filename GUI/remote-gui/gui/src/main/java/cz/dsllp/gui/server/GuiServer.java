@@ -31,7 +31,7 @@ public class GuiServer {
 
         logger.info("Starting service - address: {}, port: {}, service name: {} ", rmiAddress, port, serviceName);
 
-        // Debuging security manager
+        // Debugging security manager
         // FIXME remove it
         SecurityManager sm = System.getSecurityManager();
         logger.debug("Security manager: {}", sm);
@@ -42,7 +42,7 @@ public class GuiServer {
         System.setProperty(Context.PROVIDER_URL, rmiAddress + ":" + port);
 
         // Obtain registry
-        Registry registry = null;
+        Registry registry;
         try {
             logger.debug("Creating registry on port {}", port);
             registry = LocateRegistry.createRegistry(port);
@@ -68,7 +68,7 @@ public class GuiServer {
         try {
             guiService = new GuiServiceImpl();
         } catch (RemoteException e) {
-            String msg = String.format("Could not create remote GuiServiceImpl");
+            String msg = "Could not create remote GuiServiceImpl";
             logger.error(msg, e);
             throw new RemoteGuiException(msg, e);
         }

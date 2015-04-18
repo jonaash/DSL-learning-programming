@@ -5,8 +5,10 @@ import cz.dsllp.gui.model.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import java.awt.Dimension;
+import java.awt.GridLayout;
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -14,12 +16,13 @@ import java.lang.reflect.InvocationTargetException;
  * @since 04/04/15
  */
 public class WorldPanel extends JPanel {
+    private static final long serialVersionUID = -3111896967024406471L;
 
     public static final int CELL_SIZE = 50;
 
     private static Logger logger = LoggerFactory.getLogger(WorldPanel.class);
 
-    private World world;
+    private transient World world;
     private VisualCell[][] visuals;
 
     public WorldPanel(World world) {
