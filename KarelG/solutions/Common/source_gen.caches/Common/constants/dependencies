@@ -3,5 +3,8 @@
   <dependency className="Common.constants.Comunication" file="Comunication.java">
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="Common.constants.Logging" file="Logging.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
 </dependenciesRoot>
 

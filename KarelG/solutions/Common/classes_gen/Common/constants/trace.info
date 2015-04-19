@@ -5,7 +5,14 @@
     <file name="Comunication.java">
       <node id="2008017420329310381" at="7,0,8,0" concept="0" trace="PORT" />
       <node id="2008017420329311749" at="8,0,9,0" concept="0" trace="SERVICE_NAME" />
-      <unit id="2008017420329310331" at="6,0,10,0" name="Common.constants.Comunication" />
+      <node id="1981908161145676097" at="9,0,10,0" concept="0" trace="RMI_ADDRESS" />
+      <unit id="2008017420329310331" at="6,0,11,0" name="Common.constants.Comunication" />
+    </file>
+  </root>
+  <root nodeRef="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183">
+    <file name="Logging.java">
+      <node id="9160706307550283069" at="7,0,8,0" concept="0" trace="GUI_LOG4J_CONFIGURATION_FILE" />
+      <unit id="9160706307550238183" at="6,0,9,0" name="Common.constants.Logging" />
     </file>
   </root>
 </debug-info>

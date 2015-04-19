@@ -6,11 +6,11 @@
     <classNode dependClassName="com.intellij.openapi.wm.ToolWindowAnchor" />
     <classNode dependClassName="cz.dsllp.gui.PluginPanel" />
     <classNode dependClassName="cz.dsllp.gui.server.GuiServer" />
-    <classNode dependClassName="java.net.MalformedURLException" />
-    <classNode dependClassName="java.rmi.AlreadyBoundException" />
-    <classNode dependClassName="java.rmi.RemoteException" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="javax.swing.Icon" />
     <classNode dependClassName="javax.swing.JComponent" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode extendsClassName="jetbrains.mps.plugins.tool.GeneratedTool" />
   </dependency>
   <dependency className="ViewPlugin.plugin.ViewPlugin_ProjectPlugin" file="ViewPlugin_ProjectPlugin.java">

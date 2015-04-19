@@ -4,6 +4,7 @@ package Common.constants;
 
 
 public interface Comunication {
-  public static final int PORT = 12345;
-  public static final String SERVICE_NAME = "";
+  public static final int PORT = 12346;
+  public static final String SERVICE_NAME = "GuiService";
+  public static final String RMI_ADDRESS = "rmi://localhost";
 }

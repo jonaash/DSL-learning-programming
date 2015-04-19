@@ -7,12 +7,11 @@ import javax.swing.Icon;
 import cz.dsllp.gui.PluginPanel;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindowAnchor;
-import cz.dsllp.gui.server.GuiServer;
 import Common.constants.Comunication;
-import java.rmi.AlreadyBoundException;
-import java.net.MalformedURLException;
-import java.rmi.RemoteException;
+import cz.dsllp.gui.server.GuiServer;
 import javax.swing.JComponent;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class KarelView_Tool extends GeneratedTool {
   private static final Icon ICON = null;
@@ -26,25 +25,23 @@ public class KarelView_Tool extends GeneratedTool {
 
     KarelView_Tool.this.makeAvailable();
 
-    try {
-      GuiServer server = GuiServer.getInstance();
-      server.init(KarelView_Tool.this.panel, Comunication.PORT);
-
-
-    } catch (AlreadyBoundException e) {
-      e.printStackTrace();
-    } catch (MalformedURLException e) {
-      e.printStackTrace();
-
-    } catch (RemoteException e) {
-      e.printStackTrace();
-
+    String serviceName = KarelView_Tool.this.createServiceName();
+    if (LOG.isInfoEnabled()) {
+      LOG.info(String.format("Initializing GUI panel server on address %s:%s/%s", Comunication.RMI_ADDRESS, Comunication.PORT, serviceName));
     }
 
+    GuiServer server = GuiServer.getInstance();
+    server.init(KarelView_Tool.this.panel, Comunication.RMI_ADDRESS, Comunication.PORT, serviceName);
+
+  }
+  /*package*/ String createServiceName() {
+
+    return Comunication.SERVICE_NAME;
 
   }
   public JComponent getComponent() {
 
     return KarelView_Tool.this.panel;
   }
+  protected static Logger LOG = LogManager.getLogger(KarelView_Tool.class);
 }
