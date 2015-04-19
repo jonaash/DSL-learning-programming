@@ -6,38 +6,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="add Common solution with constants">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelG.buildIDE/KarelG.buildIDE.msd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelG.buildIDE/models/KarelG/buildIDE.mps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/KarelRemote.msd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/api.mps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/client.mps" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/server.mps" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/Client.class" afterPath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/Language.class" afterPath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/Language.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/Client.java" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" afterPath="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/KarelBasic.mpl" afterPath="$PROJECT_DIR$/languages/KarelBasic/KarelBasic.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelG.xml" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelG.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/Language.java" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/models/StandaloneIDE/build.mps" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/models/StandaloneIDE/build.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/dependencies" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/generated" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/structure/generated" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/generated" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/generated" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" afterPath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/trace.info" afterPath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/trace.info" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/classes_gen/StandaloneIDE/build/trace.info" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/classes_gen/StandaloneIDE/build/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/trace.info" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/trace.info" />
+    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="KarelG.iws" />
@@ -673,7 +642,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24178404" sideWeight="0.5007153" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2382629" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -682,7 +651,7 @@
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22246066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24178404" sideWeight="0.49928468" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24178404" sideWeight="0.4989429" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -692,8 +661,8 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2382629" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3111588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2382629" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3111588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -772,7 +741,9 @@
     <MESSAGE value="add StandaloneIDE build" />
     <MESSAGE value="edit build" />
     <MESSAGE value="add constants, chacnge exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="add constants, chacnge exception handling" />
+    <MESSAGE value="MPS regeneration" />
+    <MESSAGE value="delete MPS generated files" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete MPS generated files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
