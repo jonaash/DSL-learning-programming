@@ -64,7 +64,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -92,7 +92,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -120,7 +120,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -137,18 +137,18 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="312" />
-                    <property name="caretX" value="816" />
+                    <property name="caretXRelative" value="12" />
+                    <property name="caretX" value="223" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" />
+                    <cellInfo cellId="Constant_4hcgjd_a8a" cellNumber="0" isInList="false">
+                      <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -166,7 +166,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -195,7 +195,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -223,7 +223,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -251,7 +251,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -279,7 +279,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -297,7 +297,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -416,104 +416,6 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ViewPlugin.plugin">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelG.build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelG">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelG.build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="GuiLib">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="stubs">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Common">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Common">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Common.constants">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="configuration">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -731,6 +633,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -743,7 +646,8 @@
     <MESSAGE value="add constants, chacnge exception handling" />
     <MESSAGE value="MPS regeneration" />
     <MESSAGE value="delete MPS generated files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete MPS generated files" />
+    <MESSAGE value="update workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
@@ -1782,7 +1686,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1799,7 +1703,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1826,7 +1730,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1852,7 +1756,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1878,7 +1782,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1904,7 +1808,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1930,7 +1834,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1956,7 +1860,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1982,7 +1886,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1997,18 +1901,18 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="312" />
-                <property name="caretX" value="816" />
+                <property name="caretXRelative" value="12" />
+                <property name="caretX" value="223" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" />
+                <cellInfo cellId="Constant_4hcgjd_a8a" cellNumber="0" isInList="false">
+                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550238183" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
