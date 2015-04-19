@@ -16,19 +16,10 @@
 package cz.dsllp.gui.icons;
 
 import javax.swing.Icon;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Font;
-import java.awt.FontFormatException;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
-import java.awt.RenderingHints;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-
-import static java.util.Objects.requireNonNull;
 
 /**
  * Based on original code by Mario Torre<br/>
@@ -37,12 +28,15 @@ import static java.util.Objects.requireNonNull;
  * @author Andres Almiray
  *
  * Edited:
+ * Change comliance to Java 1.6
  * Removed @NotNull annotation
  * Removed multichatch block
  * Removed dependency to griffon libraries
+ *
  */
 public class FontAwesomeIcon implements Icon {
     private static final String AWESOME_SET = "fonts/fontawesome-webfont.ttf";
+    private static final int DEFAULT_SIZE = 16;
 
     private static final Font awesome;
     private static final Object LOCK = new Object[0];
@@ -68,8 +62,10 @@ public class FontAwesomeIcon implements Icon {
     }
 
     public FontAwesomeIcon(FontAwesome fontAwesome) {
-        this.fontAwesome = requireNonNull(fontAwesome, "Argument 'fontAwesome' must not be null.");
-        setSize(16);
+        // FIXME change to Java 8 or check null differently
+        // requireNonNull(fontAwesome, "Argument 'fontAwesome' must not be null.");
+        this.fontAwesome = fontAwesome;
+        setSize(DEFAULT_SIZE);
     }
 
     public FontAwesomeIcon(String description) {
@@ -122,7 +118,8 @@ public class FontAwesomeIcon implements Icon {
     }
 
     public void setColor(Color color) {
-        requireNonNull(color, "Argument 'color' must not be null.");
+        // FIXME change to Java 8 or check null differently
+        //requireNonNull(color, "Argument 'color' must not be null.");
         this.color = color;
         synchronized (LOCK) {
             buffer = null;
