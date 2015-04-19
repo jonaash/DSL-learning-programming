@@ -1,11 +1,9 @@
 package cz.dsllp.gui.control;
 
-import cz.dsllp.gui.icons.Icons;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.BoxLayout;
-import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
@@ -16,7 +14,9 @@ import javax.swing.JTextPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
@@ -34,6 +34,8 @@ public class ControlPanel extends JPanel {
     private static final String SPEED_LABEL = "Speed: ";
 
     private static final int BUTTON_SIZE = 30;
+    private static final int BUTTON_FONT_SIZE = 18;
+
 
 
     private JButton start;
@@ -56,10 +58,10 @@ public class ControlPanel extends JPanel {
 
     private void initComponents() {
         // TODO: add actions
-        start = createButton(Icons.START, "Start");
-        pause = createButton(Icons.PAUSE, "Pause");
-        step = createButton(Icons.STEP, "One step");
-        stop = createButton(Icons.STOP, "Stop");
+        start = createButton("\u25B6", "Start", Color.GREEN);
+        pause = createButton("\u275A\u275A", "Pause", Color.ORANGE);
+        step = createButton("\u27A0", "One step", Color.BLACK);
+        stop = createButton("X", "Stop", Color.RED);
 
         // TODO: set proper values according to generation
         speed = new JSlider(1, 5, 3);
@@ -138,9 +140,11 @@ public class ControlPanel extends JPanel {
         return panel;
     }
 
-    private JButton createButton(Icon icon, String tooltip) {
-        JButton button = new JButton(icon);
+    private JButton createButton(String label, String tooltip, Color color) {
+        JButton button = new JButton(label);
         button.setPreferredSize(new Dimension(BUTTON_SIZE, BUTTON_SIZE));
+        button.setFont(new Font(Font.SANS_SERIF, Font.BOLD, BUTTON_FONT_SIZE));
+        button.setForeground(color);
         button.setToolTipText(tooltip);
         button.setHorizontalAlignment(SwingConstants.CENTER);
         button.setVerticalAlignment(SwingConstants.CENTER);
