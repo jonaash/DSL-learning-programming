@@ -13,6 +13,8 @@
     <classNode dependClassName="java.rmi.Naming" />
     <classNode dependClassName="java.rmi.NotBoundException" />
     <classNode dependClassName="java.rmi.RemoteException" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
   </dependency>
   <dependency className="JavaKarel.runtime.Direction" file="Direction.java" />
   <dependency className="JavaKarel.runtime.IRobot" file="IRobot.java" />

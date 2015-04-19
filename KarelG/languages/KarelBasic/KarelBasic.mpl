@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="KarelBasic" uuid="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" version="0">
+<language namespace="KarelBasic" uuid="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" version="1">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />

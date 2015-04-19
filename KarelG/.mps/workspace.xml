@@ -7,26 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="add Common solution with constants">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelG.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelGDistribution.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/StandaloneIDE.build.msd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/models/StandaloneIDE/build.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/classes_gen/StandaloneIDE/build/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/trace.info" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelG.buildIDE/KarelG.buildIDE.msd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelG.buildIDE/models/KarelG/buildIDE.mps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/KarelRemote.msd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/api.mps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/client.mps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/KarelRemote/models/KarelRemote/server.mps" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/Client.class" afterPath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/Language.class" afterPath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/Language.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/KarelBasic/classes_gen/KarelBasic/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/GuiRunner.java" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/GuiRunner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/server/GuiServer.java" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/server/GuiServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelG.build/classes_gen/KarelG/build/KarelG.xml" afterPath="$PROJECT_DIR$/solutions/KarelG.build/classes_gen/KarelG/build/KarelG.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelG.build/source_gen/KarelG/build/KarelG.xml" afterPath="$PROJECT_DIR$/solutions/KarelG.build/source_gen/KarelG/build/KarelG.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/Client.java" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" afterPath="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/KarelBasic.mpl" afterPath="$PROJECT_DIR$/languages/KarelBasic/KarelBasic.mpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelG.xml" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/KarelG.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/Language.java" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/Language.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen/KarelBasic/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelG.build/models/KarelG/build.mps" afterPath="$PROJECT_DIR$/solutions/KarelG.build/models/KarelG/build.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/models/StandaloneIDE/build.mps" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/models/StandaloneIDE/build.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/dependencies" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/generated" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/structure/generated" afterPath="$PROJECT_DIR$/languages/KarelBasic/source_gen.caches/KarelBasic/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelG.build/source_gen.caches/KarelG/build/generated" afterPath="$PROJECT_DIR$/solutions/KarelG.build/source_gen.caches/KarelG/build/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/modules.xml" afterPath="$PROJECT_DIR$/.mps/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/generated" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen.caches/JavaKarel/runtime/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/generated" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen.caches/StandaloneIDE/build/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" afterPath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/trace.info" afterPath="$PROJECT_DIR$/solutions/KarelJava/classes_gen/JavaKarel/runtime/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/trace.info" afterPath="$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/classes_gen/StandaloneIDE/build/trace.info" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/classes_gen/StandaloneIDE/build/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/trace.info" afterPath="$PROJECT_DIR$/solutions/StandaloneIDE.build/source_gen/StandaloneIDE/build/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="KarelG.iws" />
@@ -44,7 +55,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="kaurqQAABAAHKAoyUaDai0Hfulsn58Q6hkUAAB1UZW1wTW9kZWxfMTQyOTE3ODIxMjgyNjY0MTAwMBdIr31tbjNxSHWd+bqR6aaB1AAALlRlbXBNb2R1bGVhZjdkNmQ2ZS0zMzcxLTQ4NzUtOWRmOS1iYTkxZTlhNjgxZDT/////q6urq1paWloAAs6rUZUl6k8im5IQO5XKjAwAABdqZXRicmFpbnMubXBzLmxhbmcuY29yZQABAAABEDluqqQAAA1JTmFtZWRDb25jZXB0ABIAAQAAARA5bsBBAAAEbmFtZQAAAADeGthtblBKArMG1NF/ZMN1AAAaamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2UAAxX7NAUfclosAAALQ29uc29sZVJvb3QAEgAAAAAAAhX7NAUfcluvAAAHaGlzdG9yeQAV+zQFH3JbsQAADWNvbW1hbmRIb2xkZXIABOJxYKy0SEsAAA1Db21tYW5kSG9sZGVyABIAAAAAAAAKg18owaoCvgAAB0hpc3RvcnkAEgAAAAAAAKWlpaUABd4a2G1uUEoCswbU0X9kw3UBAAAABf/////yZpHSDe9MBq7GLLkMSvCkAAAdamV0YnJhaW5zLm1wcy5jb25zb2xlLnNjcmlwdHP/////GoVUxOuEQ7qMNG8NkMbnWgAAH2pldGJyYWlucy5tcHMuY29uc29sZS5ibENvbW1hbmT/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAUHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARgbgSb40n7fLP//ewAAAAAAAAAAAAIAAxgbgSb40n7fYgAAewAAAAAAAAAAAAB9AAIYG4Em+NJ+32MAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
+          <option name="history" value="kaurqQAABAAHKCDT+8TUGUzon3EGR3Ggbj0AAB1UZW1wTW9kZWxfMTQyOTQzNzM0ODkwNDEyMzAwMBdI80TwEeAAR+K8vtpRHbyrqQAALlRlbXBNb2R1bGVmMzQ0ZjAxMS1lMDAwLTQ3ZTItYmNiZS1kYTUxMWRiY2FiYTn/////q6urq1paWloAAs6rUZUl6k8im5IQO5XKjAwAABdqZXRicmFpbnMubXBzLmxhbmcuY29yZQABAAABEDluqqQAAA1JTmFtZWRDb25jZXB0ABIAAQAAARA5bsBBAAAEbmFtZQAAAADeGthtblBKArMG1NF/ZMN1AAAaamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2UAAxX7NAUfclosAAALQ29uc29sZVJvb3QAEgAAAAAAAhX7NAUfcluvAAAHaGlzdG9yeQAV+zQFH3JbsQAADWNvbW1hbmRIb2xkZXIABOJxYKy0SEsAAA1Db21tYW5kSG9sZGVyABIAAAAAAAAKg18owaoCvgAAB0hpc3RvcnkAEgAAAAAAAKWlpaUABd4a2G1uUEoCswbU0X9kw3UBAAAABf/////yZpHSDe9MBq7GLLkMSvCkAAAdamV0YnJhaW5zLm1wcy5jb25zb2xlLnNjcmlwdHP/////GoVUxOuEQ7qMNG8NkMbnWgAAH2pldGJyYWlucy5tcHMuY29uc29sZS5ibENvbW1hbmT/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAUHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARgYWEaOUCVa6f//ewAAAAAAAAAAAAIAAxgYWEaOUCVbHwAAewAAAAAAAAAAAAB9AAIYGFhGjlAlWyAAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
         </TabState>
       </list>
     </option>
@@ -69,267 +80,22 @@
         <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="39">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="31" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_methodDeclaration" cellNumber="0" isInList="false">
-                      <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730079577" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
-        <entry file="mps://node://jetbrains.mps.build.mps#3189788309732033979/jetbrains.mps.build.mps.generator.template.main@generator/main">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="1101">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-426" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_y5igai_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)/4743026300739052425" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KarelG" pinned="false" current-in-tab="false">
-        <entry file="mps://node://StandaloneIDE.build/StandaloneIDE.build/KarelG">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="32" />
-                    <property name="caretX" value="447" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionEnd" value="11" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretXRelative" value="32" />
-                    <property name="selectionStart" value="4" />
-                    <property name="caretX" value="447" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionEnd" value="11" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretXRelative" value="32" />
-                    <property name="selectionStart" value="0" />
-                    <property name="caretX" value="447" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-415" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-407" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122018" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-311" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122018" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-303" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145121829" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-287" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145121829" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-279" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145035127" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-263" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145035127" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-255" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347044" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-239" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347044" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-231" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347022" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-215" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347022" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-207" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346977" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-191" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346977" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-171" />
-                    <property name="caretX" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_698n2d_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346895" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test" pinned="false" current-in-tab="true">
-        <entry file="mps://node://KarelBasic.sandbox/KarelBasic.sandbox/Test">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="36" />
-                    <property name="caretX" value="103" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KarelGDistribution" pinned="false" current-in-tab="false">
-        <entry file="mps://node://StandaloneIDE.build/StandaloneIDE.build/KarelGDistribution">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="95" />
+                    <property name="caretX" value="47" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                      <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329585238" />
+                    <cellInfo cellId="Constant_kpqhey_a0" cellNumber="0" isInList="false">
+                      <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880791188" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -338,39 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractCommand" pinned="false" current-in-tab="false">
-        <entry file="mps://node://KarelBasic/KarelBasic.structure/AbstractCommand">
+      <file leaf-file-name="StandalonePluginDescriptor" pinned="false" current-in-tab="false">
+        <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/StandalonePluginDescriptor">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="4" />
-                    <property name="caretX" value="151" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
-                      <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-              <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeBlock" pinned="false" current-in-tab="false">
-        <entry file="mps://node://KarelBasic/KarelBasic.structure/CodeBlock">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -378,49 +115,75 @@
                     <property name="caretXRelative" value="0" />
                     <property name="caretX" value="15" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/31172425217292983" />
+                    <cellInfo cellId="Constant_lfvdu_a" cellNumber="0" isInList="false">
+                      <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730077042" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/31172425217292983" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeftTurn" pinned="false" current-in-tab="false">
-        <entry file="mps://node://KarelBasic/KarelBasic.structure/LeftTurn">
+      <file leaf-file-name="Comunication" pinned="false" current-in-tab="false">
+        <entry file="mps://node://Common/Common.constants/Comunication">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="15" />
+                    <property name="caretXRelative" value="44" />
+                    <property name="caretX" value="320" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255671307" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310408" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255671307" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logging" pinned="false" current-in-tab="true">
+        <entry file="mps://node://Common/Common.constants/Logging">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="312" />
+                    <property name="caretX" value="816" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
             </state>
           </provider>
         </entry>
@@ -430,55 +193,147 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="caretX" value="15" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255400508" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255400508" />
+              <node node_ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729599628" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Script" pinned="false" current-in-tab="false">
-        <entry file="mps://node://KarelBasic/KarelBasic.structure/Script">
+      <file leaf-file-name="Test" pinned="false" current-in-tab="false">
+        <entry file="mps://node://KarelBasic.sandbox/KarelBasic.sandbox/Test">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="52" />
-                    <property name="caretX" value="135" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="71" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
-                      <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255673332" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255673332" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandHelper" pinned="false" current-in-tab="false">
+        <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/CommandHelper">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="70" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="empty_applicableConcept" cellNumber="0" isInList="false">
+                      <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729806964" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Placeholder" pinned="false" current-in-tab="false">
+        <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/Placeholder">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="70" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="empty_applicableConcept" cellNumber="0" isInList="false">
+                      <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729601583" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main" pinned="false" current-in-tab="false">
+        <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/main">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="152">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="191" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/3640435696255147964" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeftTurn" pinned="false" current-in-tab="false">
+        <entry file="mps://node://KarelBasic/KarelBasic.structure/LeftTurn">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729809118" />
             </state>
           </provider>
         </entry>
@@ -588,8 +443,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -607,7 +460,25 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin.plugin">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -621,29 +492,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
+            <PATH_ELEMENT USER_OBJECT="KarelG.build">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.editor">
+            <PATH_ELEMENT USER_OBJECT="KarelG">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.structure">
+            <PATH_ELEMENT USER_OBJECT="KarelG.build">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -657,15 +514,11 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
+            <PATH_ELEMENT USER_OBJECT="GuiLib">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="command">
+            <PATH_ELEMENT USER_OBJECT="stubs">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -679,53 +532,27 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
+            <PATH_ELEMENT USER_OBJECT="Common">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
+            <PATH_ELEMENT USER_OBJECT="Common">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="StandaloneIDE.build">
+            <PATH_ELEMENT USER_OBJECT="Common.constants">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="StandaloneIDE">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="StandaloneIDE.build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.sandbox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.sandbox">
+            <PATH_ELEMENT USER_OBJECT="configuration">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -737,8 +564,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FullScreen" value="true" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$USER_HOME$/MPSProjects/MPS-MPS3.2" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="preferences.updates" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Build Script.KarelGDistribution">
+  <component name="RunManager" selected="Java Application.Node Test">
     <configuration default="false" name="Node Test" type="Java Application" factoryName="Java" temporary="true">
       <MyState />
       <myNode>
@@ -764,44 +596,6 @@
       <ConfigurationWrapper RunnerId="Default Runner" />
       <method />
     </configuration>
-    <configuration default="false" name="KarelG" type="Build Script" factoryName="Build Script" temporary="true">
-      <MyState />
-      <myNode>
-        <MyState>
-          <option name="myNodeId" value="2008017420329584799" />
-          <option name="myModelId" value="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)" />
-        </MyState>
-      </myNode>
-      <mySettings>
-        <MyState>
-          <option name="myUseOtherAntLocation" value="false" />
-          <option name="myOtherAntLocation" />
-          <option name="myAntOptions" />
-        </MyState>
-      </mySettings>
-      <RunnerSettings RunnerId="Default Runner" />
-      <ConfigurationWrapper RunnerId="Default Runner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="KarelGDistribution" type="Build Script" factoryName="Build Script" temporary="true">
-      <MyState />
-      <myNode>
-        <MyState>
-          <option name="myNodeId" value="2008017420329584994" />
-          <option name="myModelId" value="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)" />
-        </MyState>
-      </myNode>
-      <mySettings>
-        <MyState>
-          <option name="myUseOtherAntLocation" value="false" />
-          <option name="myOtherAntLocation" />
-          <option name="myAntOptions" />
-        </MyState>
-      </mySettings>
-      <RunnerSettings RunnerId="Default Runner" />
-      <ConfigurationWrapper RunnerId="Default Runner" />
-      <method />
-    </configuration>
     <configuration default="true" type="Java Application" factoryName="Java">
       <MyState />
       <myNode>
@@ -823,37 +617,6 @@
           </option>
         </MyState>
       </myRunParameters>
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <MyState>
-        <option name="mySettings">
-          <RemoteConnectionSettings>
-            <option name="hostName" value="localhost" />
-            <option name="port" value="5005" />
-            <option name="sharedMemoryAddress" value="" />
-            <option name="suspend" value="false" />
-            <option name="useSockets" value="true" />
-          </RemoteConnectionSettings>
-        </option>
-      </MyState>
-      <method />
-    </configuration>
-    <configuration default="true" type="Build Script" factoryName="Build Script">
-      <MyState />
-      <myNode>
-        <MyState>
-          <option name="myNodeId" />
-          <option name="myModelId" />
-        </MyState>
-      </myNode>
-      <mySettings>
-        <MyState>
-          <option name="myUseOtherAntLocation" value="false" />
-          <option name="myOtherAntLocation" />
-          <option name="myAntOptions" />
-        </MyState>
-      </mySettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit Tests" factoryName="JUnit Tests">
@@ -890,51 +653,18 @@
       </myJavaRunParameters>
       <method />
     </configuration>
-    <list size="3">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Java Application.Node Test" />
-      <item index="1" class="java.lang.String" itemvalue="Build Script.KarelG" />
-      <item index="2" class="java.lang.String" itemvalue="Build Script.KarelGDistribution" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Build Script.KarelGDistribution" />
-        <item index="1" class="java.lang.String" itemvalue="Build Script.KarelG" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Java Application.Node Test" />
       </list>
     </recent_temporary>
-    <configuration name="&lt;template&gt;" type="Application" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -943,27 +673,27 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24178404" sideWeight="0.5007153" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28521127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22246066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24178404" sideWeight="0.49928468" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24765258" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24765258" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22317597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2382629" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3111588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -981,20 +711,20 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28521127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24765258" sideWeight="0.5" order="18" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1002,7 +732,8 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298122" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24765258" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
+      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3090129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
@@ -1038,95 +769,260 @@
     <MESSAGE value="update relative path to MPS_HOME" />
     <MESSAGE value="MPS generated files" />
     <MESSAGE value="add Common solution with constants" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Common solution with constants" />
+    <MESSAGE value="add StandaloneIDE build" />
+    <MESSAGE value="edit build" />
+    <MESSAGE value="add constants, chacnge exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="add constants, chacnge exception handling" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://KarelBasic/KarelBasic.editor/KarelStyles">
+    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="103" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="39" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217647581" />
+                <cellInfo cellId="Constant_trik0f_c1a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730157102" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346500" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorLabels />
             <folded />
           </inspectorMemento>
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://KarelBasic/KarelBasic.structure/Script">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346500" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217594795" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/RobotGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://JavaKarel/JavaKarel.runtime/RobotGuiImpl">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346500" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://JavaKarel/JavaKarel.runtime/Client">
+    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/StandalonePluginDescriptor">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="36" />
-                <property name="caretX" value="424" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_lfvdu_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730077042" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://JavaKarel/JavaKarel.runtime/Script">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
+                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/2208846558105691268" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels>
+              <errorLabel errorText="GuiService" cellNumber="0" isInList="false">
+                <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/5212004914362546495" />
+                <parent cellId="Collection_91bvrs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/5212004914362546495" />
+                </parent>
+              </errorLabel>
+            </errorLabels>
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Common/Common.constants/Comunication">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="44" />
+                <property name="caretX" value="320" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/2257940611433629297" />
+                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310408" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346500" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Common/Common.constants/Logging">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="312" />
+                <property name="caretX" value="816" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="39" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_trik0f_c1a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730157102" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels>
+              <errorLabel errorText="PluginPanel" cellNumber="1" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880820649" />
+                <parent cellId="Collection_53xyyk_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880820649" />
+                </parent>
+              </errorLabel>
+              <errorLabel errorText="GuiServer" cellNumber="0" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880842995" />
+                <parent cellId="Collection_91bvrs_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880842995" />
+                </parent>
+              </errorLabel>
+              <errorLabel errorText="GuiServer" cellNumber="0" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880846863" />
+                <parent cellId="Collection_a4wjjz_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880846863" />
+                </parent>
+              </errorLabel>
+              <errorLabel errorText="getInstance" cellNumber="0" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880846863" />
+                <parent cellId="Collection_a4wjjz_d0" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880846863" />
+                </parent>
+              </errorLabel>
+              <errorLabel errorText="init" cellNumber="1" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880843002" />
+                <parent cellId="Collection_jyer24_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880843002" />
+                </parent>
+              </errorLabel>
+              <errorLabel errorText="PluginPanel" cellNumber="0" isInList="false">
+                <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880773238" />
+                <parent cellId="Collection_91bvrs_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880773238" />
+                </parent>
+              </errorLabel>
+            </errorLabels>
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretXRelative" value="-15" />
+                <property name="caretX" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_ju7sd7_a_0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584871" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorLabels />
             <folded />
           </inspectorMemento>
@@ -1288,39 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://KarelBasic.sandbox/KarelBasic.sandbox/Test">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="71" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/1625621667095474725" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/RobotGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="750">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://JavaKarel/JavaKarel.runtime/RobotGuiImpl">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1441,39 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://KarelBasic.sandbox/KarelBasic.sandbox/Test">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="71" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/1625621667095474725" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/RobotGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="750">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://JavaKarel/JavaKarel.runtime/RobotGuiImpl">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1591,13 +1421,6 @@
             <folded />
           </inspectorMemento>
           <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)/31172425217594795" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/ViewPlugin/source_gen/ViewPlugin/plugin/KarelView_Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5279126" vertical-offset="0" max-vertical-offset="825">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1627,13 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/KarelJava/source_gen/JavaKarel/runtime/RobotGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://JavaKarel/JavaKarel.runtime/RobotGuiImpl">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1643,32 +1459,6 @@
             <folded />
           </memento>
           <inspectorMemento currentlyEditedNode="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/5212004914362497800" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/StandalonePluginDescriptor">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_lfvdu_a" cellNumber="0" isInList="false">
-                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730077042" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/2008017420329338699" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1695,224 +1485,6 @@
             <folded />
           </memento>
           <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Common/Common.constants/Comunication">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="44" />
-                <property name="caretX" value="320" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310408" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://GuiLib/cz.dsllp.gui.server@java_stub/GuiServer">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-31" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
-                  <node node_reference="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.server(GuiLib/cz.dsllp.gui.server@java_stub)/~GuiServer.init%28cz.dsllp.gui.PluginPanel,int%29:void" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584883" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="79" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_uuid_1" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584883" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://KarelG.build/KarelG.build/KarelG">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="141" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="24" />
-                <property name="caretX" value="535" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625910" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="8" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretXRelative" value="24" />
-                <property name="selectionStart" value="0" />
-                <property name="caretX" value="535" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625910" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-503" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625905" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-415" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625905" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-407" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625900" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-311" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625900" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-303" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625895" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-287" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/2008017420329625895" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-279" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347047" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-263" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347047" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-255" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347044" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-239" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347044" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-231" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347022" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-215" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494347022" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-207" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346977" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-191" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346977" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-171" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_698n2d_a" cellNumber="0" isInList="false">
-                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346895" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329585238" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1998,57 +1570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://JavaKarel/JavaKarel.runtime/Client">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-47" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_y9czm0_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/4488096267193249821" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255673332" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="39">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_methodDeclaration" cellNumber="0" isInList="false">
-                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730079577" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://jetbrains.mps.build.mps#3189788309732033979/jetbrains.mps.build.mps.generator.template.main@generator/main">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -2066,7 +1587,118 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584811" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://StandaloneIDE.build/StandaloneIDE.build/KarelGDistribution">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="479">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="95" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_hdw7mg_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329585379" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/1981908161145676099" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://KarelG.build/KarelG.build/KarelG">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="194">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="92" />
+                <property name="caretX" value="191" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReferencePresentation_4dmy40_a0b0" cellNumber="0" isInList="false">
+                  <node node_reference="26ad0a2b-a6d3-49b0-8a80-42db5e495eb3/r:795c4990-0ba5-4e76-b94f-296d7d77a222(KarelG.build/KarelG.build)/7903084958494346298" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiLib/cz.dsllp.gui@java_stub)/5200375438467466431" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://JavaKarel/JavaKarel.runtime/Client">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="96" />
+                <property name="caretX" value="929" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name_1" cellNumber="0" isInList="false">
+                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/4532232596361353450" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329311749" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/MPSProjects/MPS-MPS3.2/mps.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://JavaKarel/JavaKarel.runtime/Script">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
+                  <node node_reference="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)/2208846558105691268" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729806964" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2081,152 +1713,18 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="32" />
-                <property name="caretX" value="447" />
+                <property name="caretXRelative" value="52" />
+                <property name="caretX" value="175" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="11" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretXRelative" value="32" />
-                <property name="selectionStart" value="4" />
-                <property name="caretX" value="447" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="11" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretXRelative" value="32" />
-                <property name="selectionStart" value="0" />
-                <property name="caretX" value="447" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-415" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122391" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-407" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122018" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-311" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145122018" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-303" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145121829" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-287" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145121829" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-279" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145035127" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-263" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/1981908161145035127" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-255" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347044" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-239" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347044" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-231" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347022" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-215" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494347022" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-207" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346977" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-191" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_n78otj_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346977" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-171" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_698n2d_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/7903084958494346895" />
+                <cellInfo cellId="property_id" cellNumber="0" isInList="false">
+                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329584885" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730157102" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2234,56 +1732,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://StandaloneIDE.build/StandaloneIDE.build/KarelGDistribution">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="95" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="r:1a054c87-83d2-4988-8389-8885b43b2150(StandaloneIDE.build)/2008017420329585238" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://KarelBasic/KarelBasic.structure/AbstractCommand">
+    <entry file="mps://node://KarelBasic/KarelBasic.structure/Script">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="151" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
-                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730079577" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
           </inspectorMemento>
-          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
+          <node node_ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729796861" />
         </state>
       </provider>
     </entry>
@@ -2305,7 +1767,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2314,30 +1776,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://KarelBasic/KarelBasic.structure/LeftTurn">
+    <entry file="mps://node://KarelBasic/KarelBasic.structure/AbstractCommand">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="0" />
-                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="151" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255671307" />
+                <cellInfo cellId="TransactionalProperty_ueqr71_d0a" cellNumber="0" isInList="false">
+                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310408" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
           </inspectorMemento>
-          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255671307" />
+          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255425616" />
         </state>
       </provider>
     </entry>
@@ -2345,53 +1807,189 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729599628" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://KarelBasic/KarelBasic.structure/LeftTurn">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729809118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/CommandHelper">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_applicableConcept" cellNumber="0" isInList="false">
+                  <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729806964" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/Placeholder">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="70" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_applicableConcept" cellNumber="0" isInList="false">
+                  <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/7120477472729601583" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator/main">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="152">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="191" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)/3640435696255147964" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/KarelView">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="47" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_kpqhey_a0" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/700771863880791188" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Common/Common.constants/Comunication">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="44" />
+                <property name="caretX" value="320" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/2008017420329310408" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ViewPlugin/ViewPlugin.plugin/StandalonePluginDescriptor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
                 <property name="caretXRelative" value="0" />
                 <property name="caretX" value="15" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255400508" />
+                <cellInfo cellId="Constant_lfvdu_a" cellNumber="0" isInList="false">
+                  <node node_reference="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/ViewPlugin.plugin)/7120477472730077042" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
           </inspectorMemento>
-          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255400508" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://KarelBasic/KarelBasic.structure/Script">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="52" />
-                <property name="caretX" value="135" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
-                  <node node_reference="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255673332" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)/3640435696255673332" />
         </state>
       </provider>
     </entry>
@@ -2402,8 +2000,8 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="36" />
-                <property name="caretX" value="103" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="71" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                   <node node_reference="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" />
@@ -2413,7 +2011,33 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)/700771863880641907" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Common/Common.constants/Logging">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="312" />
+                <property name="caretX" value="816" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)/9160706307550283160" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />

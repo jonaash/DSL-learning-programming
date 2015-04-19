@@ -8,15 +8,21 @@ import java.rmi.RemoteException;
 import java.rmi.NotBoundException;
 import Common.constants.Comunication;
 import java.rmi.Naming;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class Client {
+
   private GuiService guiService;
 
   public void init() throws MalformedURLException, RemoteException, NotBoundException {
     // Call registry for GuiService 
     int port = Comunication.PORT;
-
-    Object srv = Naming.lookup("rmi://localhost:" + String.valueOf(port) + "/GuiService");
+    String lookupAddress = Comunication.RMI_ADDRESS + ":" + String.valueOf(port) + "/" + Comunication.SERVICE_NAME;
+    if (LOG.isInfoEnabled()) {
+      LOG.info("Connecting to:" + lookupAddress);
+    }
+    Object srv = Naming.lookup(lookupAddress);
     guiService = (GuiService) srv;
   }
 
@@ -24,4 +30,5 @@ public class Client {
     return guiService;
   }
 
+  protected static Logger LOG = LogManager.getLogger(Client.class);
 }

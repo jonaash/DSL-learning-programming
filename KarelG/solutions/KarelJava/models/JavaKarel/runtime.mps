@@ -2496,6 +2496,7 @@
   <node concept="312cEu" id="3T8UWqFMn02">
     <property role="TrG5h" value="Client" />
     <property role="3GE5qa" value="client" />
+    <node concept="2tJIrI" id="1I19Jzi$qi0" role="jymVt" />
     <node concept="312cEg" id="3T8UWqFNR0j" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -2536,7 +2537,52 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1JtUjhLyiwQ" role="3cqZAp" />
+        <node concept="3cpWs8" id="1I19JziyNx_" role="3cqZAp">
+          <node concept="3cpWsn" id="1I19JziyNxC" role="3cpWs9">
+            <property role="TrG5h" value="lookupAddress" />
+            <node concept="17QB3L" id="1I19JziyNxz" role="1tU5fm" />
+            <node concept="3cpWs3" id="1I19JziylHB" role="33vP2m">
+              <node concept="3cpWs3" id="3T8UWqFNR0w" role="3uHU7B">
+                <node concept="3cpWs3" id="3T8UWqFNR0x" role="3uHU7B">
+                  <node concept="2YIFZM" id="1XlOgn$rwGz" role="3uHU7w">
+                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <node concept="37vLTw" id="1JtUjhLyikJ" role="37wK5m">
+                      <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="1I19JziykOP" role="3uHU7B">
+                    <node concept="10M0yZ" id="1I19JziykB2" role="3uHU7B">
+                      <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
+                      <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                    </node>
+                    <node concept="Xl_RD" id="1I19JziykWu" role="3uHU7w">
+                      <property role="Xl_RC" value=":" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3T8UWqFNR0$" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
+                </node>
+              </node>
+              <node concept="10M0yZ" id="3V_Ioyp$9zE" role="3uHU7w">
+                <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME_PREFIX" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="1I19Jzi$rMj" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="1I19Jzi$sdz" role="34bqiv">
+            <node concept="37vLTw" id="1I19Jzi$si_" role="3uHU7w">
+              <ref role="3cqZAo" node="1I19JziyNxC" resolve="lookupAddress" />
+            </node>
+            <node concept="Xl_RD" id="1I19Jzi$s4b" role="3uHU7B">
+              <property role="Xl_RC" value="Connecting to:" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3T8UWqFNR0t" role="3cqZAp">
           <node concept="3cpWsn" id="3T8UWqFNR0s" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -2547,22 +2593,8 @@
             <node concept="2YIFZM" id="3T8UWqFNT2S" role="33vP2m">
               <ref role="37wK5l" to="25kt:~Naming.lookup(java.lang.String):java.rmi.Remote" resolve="lookup" />
               <ref role="1Pybhc" to="25kt:~Naming" resolve="Naming" />
-              <node concept="3cpWs3" id="3T8UWqFNR0w" role="37wK5m">
-                <node concept="3cpWs3" id="3T8UWqFNR0x" role="3uHU7B">
-                  <node concept="Xl_RD" id="3T8UWqFNR0y" role="3uHU7B">
-                    <property role="Xl_RC" value="rmi://localhost:" />
-                  </node>
-                  <node concept="2YIFZM" id="1XlOgn$rwGz" role="3uHU7w">
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                    <node concept="37vLTw" id="1JtUjhLyikJ" role="37wK5m">
-                      <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3T8UWqFNR0$" role="3uHU7w">
-                  <property role="Xl_RC" value="/GuiService" />
-                </node>
+              <node concept="37vLTw" id="1I19JziyNZN" role="37wK5m">
+                <ref role="3cqZAo" node="1I19JziyNxC" resolve="lookupAddress" />
               </node>
             </node>
           </node>

@@ -5,17 +5,19 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="lib/slf4j-api-1.7.5.jar" />
-      <sourceRoot location="lib/commons-lang3-3.1.jar" />
-      <sourceRoot location="lib/gui-0.1-SNAPSHOT.jar" />
-      <sourceRoot location="lib/api-0.1-SNAPSHOT.jar" />
+      <sourceRoot location="lib/api.jar" />
+      <sourceRoot location="lib/commons-lang3.jar" />
+      <sourceRoot location="lib/gui.jar" />
+      <sourceRoot location="lib/slf4j-api.jar" />
+      <sourceRoot location="lib/slf4j-log4j12.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/lib/slf4j-api-1.7.5.jar" />
-    <stubModelEntry path="${module}/lib/commons-lang3-3.1.jar" />
-    <stubModelEntry path="${module}/lib/api-0.1-SNAPSHOT.jar" />
-    <stubModelEntry path="${module}/lib/gui-0.1-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-api.jar" />
+    <stubModelEntry path="${module}/lib/api.jar" />
+    <stubModelEntry path="${module}/lib/slf4j-log4j12.jar" />
+    <stubModelEntry path="${module}/lib/commons-lang3.jar" />
+    <stubModelEntry path="${module}/lib/gui.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
