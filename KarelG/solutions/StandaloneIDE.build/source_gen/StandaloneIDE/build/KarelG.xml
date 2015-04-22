@@ -11,7 +11,11 @@
   <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
   <property name="karel_home" location="${basedir}/../KarelG" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
-  <property name="artifacts.mpsMakePlugin" location="${mps_home}" />
+  <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsExecutionPlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsBuild" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsTesting" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
   
@@ -95,6 +99,34 @@
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mpsStandalone}/plugins/mps-core" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-java" />
+    <copy todir="${build.layout}/plugins/mps-debugger-java">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-debugger-api" />
+    <copy todir="${build.layout}/plugins/mps-debugger-api">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-configurations" />
+    <copy todir="${build.layout}/plugins/mps-execution-configurations">
+      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-languages" />
+    <copy todir="${build.layout}/plugins/mps-execution-languages">
+      <fileset dir="${artifacts.mpsExecutionPlugin}/mps-execution-languages" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-execution-api" />
+    <copy todir="${build.layout}/plugins/mps-execution-api">
+      <fileset dir="${artifacts.mpsDebuggerPlugin}/mps-execution-api" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-testing" />
+    <copy todir="${build.layout}/plugins/mps-testing">
+      <fileset dir="${artifacts.mpsTesting}/mps-testing" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-build" />
+    <copy todir="${build.layout}/plugins/mps-build">
+      <fileset dir="${artifacts.mpsBuild}/mps-build" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/KarelG" />
     <mkdir dir="${build.layout}/plugins/KarelG/META-INF" />
     <echoxml file="${build.layout}/plugins/KarelG/META-INF/plugin.xml">
@@ -103,6 +135,11 @@
         <name>KarelG</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.debugger.api</depends>
+        <depends>jetbrains.mps.debugger.java</depends>
+        <depends>jetbrains.mps.execution.api</depends>
+        <depends>jetbrains.mps.execution.configurations</depends>
+        <depends>jetbrains.mps.execution.languages</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -236,32 +273,13 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-generator-template" prefix="module/../../../KarelG/languages/KarelBasic/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-languageModels" prefix="module/../../../KarelG/languages/KarelBasic/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
-    <mkdir dir="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/KarelBasic.sandbox.jar/META-INF/module.xml">
-      <module namespace="KarelBasic.sandbox" type="solution" uuid="1fd31101-7454-4514-87d8-05f00cb3a342">
-        <dependencies />
-        <sources jar="KarelBasic.sandbox-src.jar" descriptor="KarelBasic.sandbox.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox.jar">
-      <fileset dir="${build.tmp}/java/out/KarelBasic.sandbox" />
-      <fileset dir="${basedir}/languages/KarelBasic/sandbox" includes="icons/**, resources/**" />
-      <fileset dir="${build.tmp}/default/KarelBasic.sandbox.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models">
-      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.sandbox-src.jar">
-      <fileset dir="${karel_home}/languages/KarelBasic/sandbox/source_gen">
-        <exclude name="**/trace.info" />
-      </fileset>
-      <zipfileset file="${basedir}/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-sandbox-models" prefix="module/../../../../KarelG/languages/KarelBasic/sandbox/models" />
-    </jar>
     <mkdir dir="${build.layout}/plugins/KarelG/runtime-libraries" />
     <copy todir="${build.layout}/plugins/KarelG/runtime-libraries">
       <fileset dir="${karel_home}/solutions/GuiServerLib/lib" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/mps-make" />
+    <copy todir="${build.layout}/plugins/mps-make">
+      <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">KarelG.date=${date}${line.separator}KarelG.build.number=${build.number}${line.separator}KarelG.build.version=${build.version}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
@@ -278,7 +296,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963, java.compile.KarelBasic.sandbox" />
+  <target name="compileJava" depends="java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963" />
   
   <target name="processResources" />
   
@@ -291,7 +309,14 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
+      <plugin path="${artifacts.mpsBuild}/mps-build" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-debugger-api" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-debugger-java" />
+      <plugin path="${artifacts.mpsDebuggerPlugin}/mps-execution-api" />
+      <plugin path="${artifacts.mpsExecutionPlugin}/mps-execution-configurations" />
+      <plugin path="${artifacts.mpsExecutionPlugin}/mps-execution-languages" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mpsTesting}/mps-testing" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -354,9 +379,7 @@
         <module file="${basedir}/solutions/KarelJava/KarelJava.msd" />
         <module file="${basedir}/languages/KarelBasic/KarelBasic.mpl" />
       </chunk>
-      <chunk>
-        <module file="${basedir}/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" />
-      </chunk>
+      <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -401,8 +424,6 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -476,8 +497,6 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -523,45 +542,11 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.KarelBasic.sandbox" depends="java.compile.GuiLib, java.compile.JavaKarel, fetchDependencies">
-    <mkdir dir="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/KarelBasic.sandbox" />
-    <javac destdir="${build.tmp}/java/out/KarelBasic.sandbox" fork="true" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
-      </src>
-      <classpath>
-        <pathelement path="${build.tmp}/java/out/GuiLib" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <pathelement path="${build.tmp}/java/out/JavaKarel" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
       </classpath>
     </javac>
   </target>
@@ -572,6 +557,5 @@
     <delete dir="${karel_home}/solutions/KarelJava/source_gen" />
     <delete dir="${karel_home}/languages/KarelBasic/source_gen" />
     <delete dir="${karel_home}/languages/KarelBasic/generator/source_gen" />
-    <delete dir="${karel_home}/languages/KarelBasic/sandbox/source_gen" />
   </target>
 </project>

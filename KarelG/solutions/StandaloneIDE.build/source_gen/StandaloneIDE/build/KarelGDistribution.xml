@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/KarelGDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/KarelGDistribution" />
-  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../MPS 3.2" />
   <property name="version" value="3.2" />
   <property name="artifacts.KarelG" location="${build.dir}/artifacts/KarelG" />
   <property file="${artifacts.KarelG}/build.properties" prefix="import.KarelG" />
@@ -14,31 +14,87 @@
   
   <target name="assemble" depends="fetchDependencies">
     <mkdir dir="${build.layout}" />
-    <zip destfile="${build.layout}/${KarelG.build.number}.zip">
-      <zipfileset dir="${artifacts.KarelG}" prefix="KarelG ${version}" />
-      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="KarelG ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="KarelG ${version}/bin" />
-      <zipfileset file="${mps_home}/bin/libbreakgen.jnilib" prefix="KarelG ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/libbreakgen64.jnilib" prefix="KarelG ${version}/bin/mac" />
-      <zipfileset file="${mps_home}/bin/restarter" prefix="KarelG ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/bin/fsnotifier" prefix="KarelG ${version}/bin/mac" filemode="755" />
-      <zipfileset file="${mps_home}/Info.plist" prefix="KarelG ${version}/bin/mac/Contents" />
-      <zipfileset file="${mps_home}/Resources/mps.icns" prefix="KarelG ${version}/bin/mac/Contents/Resources" />
-      <zipfileset file="${mps_home}/MacOS/mps" prefix="KarelG ${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/mps.sh" prefix="KarelG ${version}" filemode="755" />
-    </zip>
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app" />
-    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin" />
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin">
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/KarelG ${mpsBootstrapCore.version}" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/KarelG ${mpsBootstrapCore.version}/bin" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/KarelG ${mpsBootstrapCore.version}/bin">
       <fileset file="${mps_home}/bin/mps.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
-    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/bin">
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz/KarelG ${mpsBootstrapCore.version}/bin">
       <fileset file="${mps_home}/bin/mps64.vmoptions" />
       <filterchain>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+    </copy>
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
+      <fileset file="${mps_home}/mps.sh" />
+      <filterchain>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+    </copy>
+    <tar destfile="${build.layout}/${KarelG.build.number}-linux.tar.gz" compression="gzip" longfile="gnu">
+      <tarfileset dir="${artifacts.KarelG}" prefix="KarelG ${mpsBootstrapCore.version}" />
+      <tarfileset dir="${mps_home}/bin/linux" prefix="KarelG ${mpsBootstrapCore.version}/bin">
+        <exclude name="**/fsnotifier" />
+        <exclude name="**/fsnotifier64" />
+      </tarfileset>
+      <tarfileset file="${mps_home}/bin/linux/fsnotifier" prefix="KarelG ${mpsBootstrapCore.version}/bin" filemode="755" />
+      <tarfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="KarelG ${mpsBootstrapCore.version}/bin" filemode="755" />
+      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" filemode="755" prefix="KarelG ${mpsBootstrapCore.version}" />
+      <tarfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz" />
+    </tar>
+    <zip destfile="${build.layout}/${KarelG.build.number}.zip">
+      <zipfileset dir="${artifacts.KarelG}" prefix="KarelG ${mpsBootstrapCore.version}" />
+      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="KarelG ${mpsBootstrapCore.version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="KarelG ${mpsBootstrapCore.version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="KarelG ${mpsBootstrapCore.version}/bin" />
+      <zipfileset file="${mps_home}/bin/mps64.exe.vmoptions" prefix="KarelG ${mpsBootstrapCore.version}/bin" />
+      <zipfileset dir="${mps_home}/bin/win" prefix="KarelG ${mpsBootstrapCore.version}/bin/win">
+        <exclude name="**/*.exe" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/bin/win" prefix="KarelG ${mpsBootstrapCore.version}/bin/win" filemode="755">
+        <include name="**/*.exe" />
+      </zipfileset>
+      <zipfileset dir="${mps_home}/bin/linux" prefix="KarelG ${mpsBootstrapCore.version}/bin/linux">
+        <exclude name="**/fsnotifier" />
+        <exclude name="**/fsnotifier64" />
+      </zipfileset>
+      <zipfileset file="${mps_home}/bin/linux/fsnotifier" prefix="KarelG ${mpsBootstrapCore.version}/bin/linux" filemode="755" />
+      <zipfileset file="${mps_home}/bin/linux/fsnotifier64" prefix="KarelG ${mpsBootstrapCore.version}/bin/linux" filemode="755" />
+      <zipfileset dir="${mps_home}/bin/nix" prefix="KarelG ${mpsBootstrapCore.version}/bin/nix" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac" />
+      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac/Contents/Resources" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="KarelG ${mpsBootstrapCore.version}/bin/mac/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps_home}/mps.sh" prefix="KarelG ${mpsBootstrapCore.version}" filemode="755" />
+      <zipfileset file="${mps_home}/mps.bat" prefix="KarelG ${mpsBootstrapCore.version}" filemode="755" />
+    </zip>
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/Contents" />
+    <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/Contents/bin" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/Contents/bin">
+      <fileset file="${mps_home}/bin/mps.vmoptions" />
+      <filterchain>
+        <fixcrlf eol="lf" eof="remove" />
+        <tokenfilter>
+          <replaceregex pattern="-Didea.paths.selector=MPS32" replace="" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG ${version}.app/Contents/bin">
+      <fileset file="${mps_home}/bin/mps64.vmoptions" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="-Didea.paths.selector=MPS32" replace="" flags="" />
+        </tokenfilter>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
@@ -50,15 +106,15 @@
       </filterchain>
     </copy>
     <zip destfile="${build.layout}/${KarelG.build.number}-macos.zip">
-      <zipfileset dir="${artifacts.KarelG}" prefix="KarelG ${version}.app" />
-      <zipfileset file="${mps_home}/Info.plist" prefix="KarelG ${version}.app/Contents" />
-      <zipfileset file="${mps_home}/Resources/mps.icns" prefix="KarelG ${version}.app/Contents/Resources" />
-      <zipfileset file="${mps_home}/MacOS/mps" prefix="KarelG ${version}.app/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/bin/libbreakgen.jnilib" prefix="KarelG ${version}.app/bin" />
-      <zipfileset file="${mps_home}/bin/libbreakgen64.jnilib" prefix="KarelG ${version}.app/bin" />
-      <zipfileset file="${mps_home}/bin/restarter" prefix="KarelG ${version}.app/bin" filemode="755" />
-      <zipfileset file="${mps_home}/bin/fsnotifier" prefix="KarelG ${version}.app/bin" filemode="755" />
-      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="KarelG ${version}.app" />
+      <zipfileset dir="${artifacts.KarelG}" prefix="KarelG ${version}.app/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="KarelG ${version}.app/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="KarelG ${version}.app/Contents/Resources" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="KarelG ${version}.app/Contents/MacOS" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="KarelG ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libbreakgen64.jnilib" prefix="KarelG ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/restarter" prefix="KarelG ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="KarelG ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" filemode="755" prefix="KarelG ${version}.app/Contents" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">KarelGDistribution.version=${version}${line.separator}KarelG.date=${KarelG.date}${line.separator}KarelG.build.number=${KarelG.build.number}${line.separator}KarelG.build.version=${KarelG.build.version}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
