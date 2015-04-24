@@ -3,10 +3,11 @@ package cz.dsllp.gui.api.message.command;
 import java.io.Serializable;
 
 /**
+ * Definition of position in a two dimensional grid.
+ *
  * @author jonasklimes
- * @since 09/04/15
  */
-public class Position implements Serializable{
+public class Position implements Serializable {
 
     private static final long serialVersionUID = 34276955753510308L;
 

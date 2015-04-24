@@ -3,8 +3,9 @@ package cz.dsllp.gui.api.message.appearance;
 import java.awt.Color;
 
 /**
+ * Class that defines object visual appearance with background color and some color text.
+ *
  * @author jonasklimes
- * @since 03/04/15
  */
 public class TextAppearance implements Appearance {
 

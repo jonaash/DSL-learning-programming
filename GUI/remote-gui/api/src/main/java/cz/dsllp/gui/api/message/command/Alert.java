@@ -1,8 +1,9 @@
 package cz.dsllp.gui.api.message.command;
 
 /**
+ * Command to show popup message in remote GUI.
+ *
  * @author jonasklimes
- * @since 09/04/15
  */
 public class Alert extends Command {
 

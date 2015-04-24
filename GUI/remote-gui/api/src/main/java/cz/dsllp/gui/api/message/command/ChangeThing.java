@@ -5,14 +5,25 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
+ * Command to change Thing in remote GUI. It can change position and appearance of a Thing identified by its name.
+ *
  * @author jonasklimes
- * @since 05/04/15
  */
 public class ChangeThing extends Command {
     private static final long serialVersionUID = 8725841466839100802L;
+    /**
+     * Unique name of Thing that should be changed.
+     */
     private String thingName;
 
+    /**
+     * Position to where Thing should be moved. If it is null, Thing won't be moved.
+     */
     private Position newPosition;
+
+    /**
+     * New appearance that should be used. If it is null, appearance won't be changed.
+     */
     private Appearance newAppearance;
 
     public ChangeThing(String thingName, Position newPosition, Appearance newAppearance) {
@@ -20,6 +31,7 @@ public class ChangeThing extends Command {
         this.newPosition = newPosition;
         this.newAppearance = newAppearance;
     }
+
 
     public ChangeThing(String thingName, Position newPosition) {
         this.thingName = thingName;
@@ -31,9 +43,11 @@ public class ChangeThing extends Command {
         this.newAppearance = newAppearance;
     }
 
+
     public String getThingName() {
         return thingName;
     }
+
 
     public Position getNewPosition() {
         return newPosition;

@@ -3,8 +3,9 @@ package cz.dsllp.gui.api.message.appearance;
 import java.io.Serializable;
 
 /**
+ * Common super type that defines visual appearance of object in the World.
+ *
  * @author jonasklimes
- * @since 05/04/15
  */
 public interface Appearance extends Serializable {
 

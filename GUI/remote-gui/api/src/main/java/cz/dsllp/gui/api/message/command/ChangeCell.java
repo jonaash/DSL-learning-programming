@@ -3,14 +3,22 @@ package cz.dsllp.gui.api.message.command;
 import cz.dsllp.gui.api.message.appearance.Appearance;
 
 /**
+ * Command to change Cell in remote GUI. It changes an appearance of Cell identified by its position.
+ *
  * @author jonasklimes
- * @since 05/04/15
  */
 public class ChangeCell extends Command {
 
-
     private static final long serialVersionUID = 3044768519952940539L;
+
+    /**
+     * Identificaion of a possition in the grid.
+     */
     private Position position;
+
+    /**
+     * New appearance of Cell. Cannot be null.
+     */
     private Appearance appearance;
 
     public ChangeCell(Position position, Appearance appearance) {
