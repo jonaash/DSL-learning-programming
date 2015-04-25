@@ -4,7 +4,7 @@ import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.server.GuiServer;
+import cz.dsllp.gui.view.swing.PluginPanel;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;
@@ -22,31 +22,23 @@ import java.awt.Dimension;
 public class GuiRunner {
 
 
-    public static void main(String[] args) {
-
-        // create gui
-        JFrame frame = new JFrame();
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    public static void main(String[] args) throws Exception {
         PluginPanel panel = new PluginPanel();
+
+        // create gui window
+        JFrame frame = new JFrame();
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         frame.setPreferredSize(new Dimension(600, 800));
         frame.setResizable(false);
         frame.setVisible(true);
 
         frame.add(panel, BorderLayout.CENTER);
-
         frame.pack();
 
-        // create server
-        GuiServer server = GuiServer.getInstance();
-        server.init(panel, "rmi://localhost", 1238, "GuiService");
-        server.init(panel, "rmi://localhost", 1238, "GuiService");
+        // initialize RMI server and service
+        GuiInitializer.init(panel, "rmi://localhost", 12346, "GuiService");
     }
 
     public static World createWorldSample() {
@@ -58,7 +50,6 @@ public class GuiRunner {
         // set marks
         addMarks(world, 3, 4, 5);
         addMarks(world, 2, 3, 3);
-
 
         // set robot
         Thing robot = world.createThing("Karel");

@@ -1,9 +1,12 @@
 package cz.dsllp.gui.server;
 
 import cz.dsllp.gui.api.message.Speed;
+import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Named;
+import javax.inject.Singleton;
 import java.util.EnumMap;
 import java.util.Map;
 
@@ -11,9 +14,11 @@ import java.util.Map;
  * @author jonasklimes
  * @since 12/04/15
  */
-public class WaitUtil {
+@Named
+@Singleton
+public class WaitingUtil {
 
-    private static final Logger logger = LoggerFactory.getLogger(WaitUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(WaitingUtil.class);
 
 
 
@@ -27,20 +32,20 @@ public class WaitUtil {
 
     }
 
-    public static void pause(Speed speed){
-        if(speed == null){
-            throw new NullPointerException("Speed cannot be null");
-        }
+    public static void pause(Speed speed, double guiSpeed){
+        Validate.notNull(speed, "Speed cannot be null");
+        Validate.exclusiveBetween(0.0, Double.POSITIVE_INFINITY, guiSpeed,
+                "Gui speed must be greater than 0. Value: %d", guiSpeed);
         if(Speed.INSTANT.equals(speed)){
             // we will not wait
             return;
         }
 
-        long waitingTime = WAITING_TIMES.get(speed);
+        long waitingTime = Math.round(WAITING_TIMES.get(speed) * guiSpeed);
         try {
             Thread.sleep(waitingTime);
         } catch (InterruptedException e) {
-           logger.warn("Pause interrupted");
+           logger.error("Pause interrupted");
         }
     }
 

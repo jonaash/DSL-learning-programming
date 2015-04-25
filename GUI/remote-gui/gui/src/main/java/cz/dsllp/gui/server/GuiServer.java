@@ -1,33 +1,29 @@
 package cz.dsllp.gui.server;
 
-import cz.dsllp.gui.PluginPanel;
-import cz.dsllp.gui.api.exception.RemoteGuiException;
-import cz.dsllp.gui.api.service.GuiService;
+import com.googlecode.tinydi.Injector;
+import cz.dsllp.gui.api.exception.GuiInternalException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 import javax.naming.Context;
+import java.lang.reflect.InvocationTargetException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+@Named
+@Singleton
 public class GuiServer {
 
     public static final Logger logger = LoggerFactory.getLogger(GuiServer.class);
 
-    private static GuiServer instance = new GuiServer();
+    @Inject
     private GuiServiceImpl guiService;
-    private PluginPanel panel;
 
-    private GuiServer() {
-    }
-
-    public static GuiServer getInstance() {
-        return instance;
-    }
-
-    public void init(PluginPanel panel, String rmiAddress, int port, String serviceName) {
-        this.panel = panel;
+    public void init(String rmiAddress, int port, String serviceName) throws IllegalAccessException, InstantiationException, InvocationTargetException {
 
         logger.info("Starting service - address: {}, port: {}, service name: {} ", rmiAddress, port, serviceName);
 
@@ -51,7 +47,7 @@ public class GuiServer {
             logger.info("Could not create RMI registry on port: {}, exception: {}", port, eCreating);
             if (eCreating.getCause() != null) {
                 logger.error("Could not create RMI registry because: ", eCreating);
-                throw new RemoteGuiException("Could not create RMI registry", eCreating);
+                throw new GuiInternalException("Could not create RMI registry", eCreating);
             } else {
                 // unspecified error, registry might be already created, try to get it
                 logger.debug("Trying to get existing registry");
@@ -59,7 +55,7 @@ public class GuiServer {
                     registry = LocateRegistry.getRegistry(port);
                 } catch (RemoteException eGetting) {
                     logger.error("Could not get registry, registry might not exist", eGetting);
-                    throw new RemoteGuiException("Could not get registry, registry might not exist", eGetting);
+                    throw new GuiInternalException("Could not get registry, registry might not exist", eGetting);
                 }
             }
         }
@@ -67,10 +63,11 @@ public class GuiServer {
         // Create remote object
         try {
             guiService = new GuiServiceImpl();
+            Injector.inject(guiService);
         } catch (RemoteException e) {
             String msg = "Could not create remote GuiServiceImpl";
             logger.error(msg, e);
-            throw new RemoteGuiException(msg, e);
+            throw new GuiInternalException(msg, e);
         }
 
         // Bind remote object
@@ -79,18 +76,14 @@ public class GuiServer {
         } catch (RemoteException e) {
             String msg = String.format("Could not bind service with name: %s", serviceName);
             logger.error(msg, e);
-            throw new RemoteGuiException(msg, e);
+            throw new GuiInternalException(msg, e);
         }
 
         logger.info("Service bound. Service name: {}", serviceName);
 
     }
 
-    public GuiService getGuiService() {
-        return guiService;
-    }
-
-    public PluginPanel getPanel() {
-        return panel;
+    public void setGuiService(GuiServiceImpl guiService) {
+        this.guiService = guiService;
     }
 }

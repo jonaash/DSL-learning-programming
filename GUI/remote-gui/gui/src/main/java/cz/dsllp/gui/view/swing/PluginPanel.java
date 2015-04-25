@@ -1,7 +1,7 @@
-package cz.dsllp.gui;
+package cz.dsllp.gui.view.swing;
 
-import cz.dsllp.gui.control.ControlPanel;
-import cz.dsllp.gui.view.swing.WorldPanel;
+import cz.dsllp.gui.api.exception.GuiInternalException;
+import cz.dsllp.gui.model.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +18,7 @@ import java.lang.reflect.InvocationTargetException;
  * @author jonasklimes
  * @since 03/04/15
  */
+
 public class PluginPanel extends JPanel {
 
     private static final long serialVersionUID = 523844209009765503L;
@@ -47,7 +48,8 @@ public class PluginPanel extends JPanel {
         return worldPanel;
     }
 
-    public void setWorldPanel(final WorldPanel wPanel) {
+    public void createWorldPanel(final World world) {
+        final WorldPanel wPanel = new WorldPanel(world);
 
         if(SwingUtilities.isEventDispatchThread()){
             logger.debug("Setting WorldPanel from Event Dispatch Thread");
@@ -62,13 +64,11 @@ public class PluginPanel extends JPanel {
                     }
                 });
             } catch (InterruptedException e) {
-               logger.error("Exception", e);
+               throw new GuiInternalException("World panel creation failded", e);
             } catch (InvocationTargetException e) {
-                logger.error("Exception", e);
+                throw new GuiInternalException("World panel creation failded", e);
             }
         }
-
-
     }
 
     private void setWorldPanelInternal(WorldPanel worldPanel){
@@ -83,9 +83,7 @@ public class PluginPanel extends JPanel {
 
         logger.trace("World preferred size: {}", worldPanel.getPreferredSize());
         logger.trace("Scroll panel preferred size: {}", worldPanel.getPreferredSize());
-        this.title.setText(worldPanel.getWorld().getName());
-
-        worldPanel.update();
+        this.title.setText(worldPanel.getWorldName());
     }
 
     @Override
@@ -100,5 +98,13 @@ public class PluginPanel extends JPanel {
             prefSize.setSize(ctrlDim.getWidth() + worldDim.getWidth(), ctrlDim.getHeight() + worldDim.getHeight());
             return prefSize;
         }
+    }
+
+    public ControlPanel getControlPanel() {
+        return controlPanel;
+    }
+
+    public JPanel getScrollPanel() {
+        return scrollPanel;
     }
 }

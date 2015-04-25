@@ -1,8 +1,10 @@
-package cz.dsllp.gui.control;
+package cz.dsllp.gui.view.swing;
 
+import cz.dsllp.gui.control.GuiController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.swing.AbstractAction;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -19,6 +21,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 
 /**
  * @author jonasklimes
@@ -36,7 +39,7 @@ public class ControlPanel extends JPanel {
     private static final int BUTTON_SIZE = 30;
     private static final int BUTTON_FONT_SIZE = 18;
 
-
+    private GuiController userControl;
 
     private JButton start;
     private JButton pause;
@@ -59,9 +62,34 @@ public class ControlPanel extends JPanel {
     private void initComponents() {
         // TODO: add actions
         start = createButton("\u25B6", "Start", Color.GREEN);
+        start.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                userControl.start();
+            }
+        });
+
         pause = createButton("\u275A\u275A", "Pause", Color.ORANGE);
+        pause.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                userControl.pause();
+            }
+        });
         step = createButton("\u27A0", "One step", Color.BLACK);
+        step.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                userControl.step();
+            }
+        });
         stop = createButton("X", "Stop", Color.RED);
+        stop.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                userControl.stop();
+            }
+        });
 
         // TODO: set proper values according to generation
         speed = new JSlider(1, 5, 3);
@@ -151,4 +179,7 @@ public class ControlPanel extends JPanel {
         return button;
     }
 
+    public void setUserControl(GuiController userControl) {
+        this.userControl = userControl;
+    }
 }
