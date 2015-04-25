@@ -13,17 +13,14 @@
 
 
     <dependencies>
+        <!-- project modules -->
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>api</artifactId>
             <version>${project.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!-- logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -32,16 +29,37 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
+
+        <!-- commons -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- dependency injection -->
+        <dependency>
+            <groupId>com.googlecode.tinydi</groupId>
+            <artifactId>tinydi</artifactId>
+        </dependency>
+
+        <!-- testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
         </dependency>
     </dependencies>
 
 
     <build>
         <plugins>
+
             <!-- distribution -->
+            <!-- copy created gui.jar and its dependencies to MPS solution with external libraries -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -54,8 +72,10 @@
                             <goal>copy</goal>
                         </goals>
                         <configuration>
+
                             <!-- configuration whether to distribute -->
                             <skip>${skip.distribution}</skip>
+
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>${project.groupId}</groupId>
@@ -88,7 +108,6 @@
                             <stripVersion>true</stripVersion>
                         </configuration>
                     </execution>
-
                 </executions>
             </plugin>
         </plugins>
