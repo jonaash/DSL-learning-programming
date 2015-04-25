@@ -1,5 +1,8 @@
 package cz.dsllp.gui.api.message.command;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 import java.io.Serializable;
 
 /**
@@ -27,4 +30,12 @@ public class Position implements Serializable {
         return col;
     }
 
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("row", row)
+                .append("col", col)
+                .toString();
+    }
 }

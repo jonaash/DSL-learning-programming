@@ -1,5 +1,8 @@
 package cz.dsllp.gui.api.message.appearance;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 import java.awt.Color;
 
 /**
@@ -56,6 +59,7 @@ public class TextAppearance implements Appearance {
     }
 
 
+
     public static class Builder {
 
         private TextAppearance instance;
@@ -87,5 +91,14 @@ public class TextAppearance implements Appearance {
         }
 
 
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("background", background)
+                .append("color", color)
+                .append("text", text)
+                .toString();
     }
 }

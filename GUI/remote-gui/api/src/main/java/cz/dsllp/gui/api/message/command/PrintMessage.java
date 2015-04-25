@@ -1,5 +1,8 @@
 package cz.dsllp.gui.api.message.command;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Command to print text in remote console.
  *
@@ -17,4 +20,11 @@ public class PrintMessage extends Command {
         return message;
     }
 
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("message", message)
+                .toString();
+    }
 }

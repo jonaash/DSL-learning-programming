@@ -1,6 +1,8 @@
 package cz.dsllp.gui.api.message.command;
 
 import cz.dsllp.gui.api.message.appearance.Appearance;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Command to change Cell in remote GUI. It changes an appearance of Cell identified by its position.
@@ -43,5 +45,14 @@ public class ChangeCell extends Command {
 
     public void setAppearance(Appearance appearance) {
         this.appearance = appearance;
+    }
+
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("position", position)
+                .append("appearance", appearance)
+                .toString();
     }
 }

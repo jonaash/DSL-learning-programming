@@ -37,8 +37,8 @@ public interface GuiService extends Remote {
      * </i>
      *
      * @param name name of the world
-     * @param width number of cells in one row
-     * @param height number of cells in one collumn
+     * @param width number of cells in one row, must be > 0
+     * @param height number of cells in one collumn, must be > 0
      * @throws RemoteException
      * @throws GuiException
      */
