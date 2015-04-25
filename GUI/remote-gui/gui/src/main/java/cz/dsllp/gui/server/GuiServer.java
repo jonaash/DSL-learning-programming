@@ -2,6 +2,7 @@ package cz.dsllp.gui.server;
 
 import com.googlecode.tinydi.Injector;
 import cz.dsllp.gui.api.exception.GuiInternalException;
+import cz.dsllp.gui.service.GuiServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

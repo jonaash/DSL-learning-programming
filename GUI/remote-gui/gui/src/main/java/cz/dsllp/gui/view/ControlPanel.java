@@ -1,6 +1,6 @@
-package cz.dsllp.gui.view.swing;
+package cz.dsllp.gui.view;
 
-import cz.dsllp.gui.control.GuiController;
+import cz.dsllp.gui.controller.GuiController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package cz.dsllp.gui.icons;
+package cz.dsllp.gui.view.icons;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

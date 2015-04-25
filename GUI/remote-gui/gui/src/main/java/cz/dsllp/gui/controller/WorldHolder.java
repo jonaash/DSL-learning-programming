@@ -1,4 +1,4 @@
-package cz.dsllp.gui.server;
+package cz.dsllp.gui.controller;
 
 import cz.dsllp.gui.model.World;
 

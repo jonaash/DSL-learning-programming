@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cz.dsllp.gui.icons;
+package cz.dsllp.gui.view.icons;
 
 import javax.swing.Icon;
 import java.awt.Color;

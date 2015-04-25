@@ -2,10 +2,10 @@ package cz.dsllp.gui;
 
 import com.googlecode.tinydi.ClassfileDependencyScanner;
 import com.googlecode.tinydi.DependencyRepository;
-import cz.dsllp.gui.control.GuiController;
+import cz.dsllp.gui.controller.GuiController;
+import cz.dsllp.gui.controller.GuiControllerImpl;
 import cz.dsllp.gui.server.GuiServer;
-import cz.dsllp.gui.service.GuiControllerImpl;
-import cz.dsllp.gui.view.swing.PluginPanel;
+import cz.dsllp.gui.view.PluginPanel;
 
 import java.lang.reflect.InvocationTargetException;
 

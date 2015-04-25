@@ -1,4 +1,4 @@
-package cz.dsllp.gui.control;
+package cz.dsllp.gui.controller;
 
 import javax.inject.Named;
 import javax.inject.Singleton;

@@ -1,4 +1,4 @@
-package cz.dsllp.gui.view.swing;
+package cz.dsllp.gui.view;
 
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.Cell;

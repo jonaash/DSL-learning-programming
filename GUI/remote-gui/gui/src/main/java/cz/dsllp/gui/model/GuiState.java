@@ -1,4 +1,4 @@
-package cz.dsllp.gui.server;
+package cz.dsllp.gui.model;
 
 /**
  * @author jonasklimes

@@ -1,4 +1,4 @@
-package cz.dsllp.gui.view.swing;
+package cz.dsllp.gui.view;
 
 import cz.dsllp.gui.api.exception.GuiInternalException;
 import cz.dsllp.gui.model.World;

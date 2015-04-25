@@ -4,7 +4,7 @@ import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.Cell;
 import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.view.swing.PluginPanel;
+import cz.dsllp.gui.view.PluginPanel;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;

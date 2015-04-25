@@ -1,9 +1,7 @@
-package cz.dsllp.gui.service;
+package cz.dsllp.gui.controller;
 
-import cz.dsllp.gui.control.GuiController;
 import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.server.WorldHolder;
-import cz.dsllp.gui.view.swing.PluginPanel;
+import cz.dsllp.gui.view.PluginPanel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

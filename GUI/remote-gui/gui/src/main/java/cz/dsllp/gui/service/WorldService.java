@@ -7,13 +7,12 @@ import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.api.message.command.ChangeCell;
 import cz.dsllp.gui.api.message.command.ChangeThing;
 import cz.dsllp.gui.api.message.command.Command;
-import cz.dsllp.gui.control.GuiController;
+import cz.dsllp.gui.controller.GuiController;
+import cz.dsllp.gui.controller.WorldHolder;
 import cz.dsllp.gui.model.Cell;
+import cz.dsllp.gui.model.GuiState;
 import cz.dsllp.gui.model.Thing;
 import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.server.GuiState;
-import cz.dsllp.gui.server.WaitingUtil;
-import cz.dsllp.gui.server.WorldHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

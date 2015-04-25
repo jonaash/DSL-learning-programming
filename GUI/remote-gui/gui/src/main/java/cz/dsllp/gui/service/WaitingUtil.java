@@ -1,4 +1,4 @@
-package cz.dsllp.gui.server;
+package cz.dsllp.gui.service;
 
 import cz.dsllp.gui.api.message.Speed;
 import org.apache.commons.lang3.Validate;

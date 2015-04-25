@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package cz.dsllp.gui.icons;
+package cz.dsllp.gui.view.icons;
 
 /**
  * Original
