@@ -17,6 +17,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -128,6 +129,32 @@
         <node concept="1wgc9g" id="1IJMvjSHdW" role="3XvnJa">
           <ref role="1wgcnl" to="tpen:hgVS8CF" resolve="KeyWord" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3eme_YBWIkD">
+    <property role="3GE5qa" value="command" />
+    <ref role="1XX52x" to="dyrx:3eme_YBWFXh" resolve="Trace" />
+    <node concept="3EZMnI" id="3eme_YBWKFQ" role="2wV5jI">
+      <node concept="2iRfu4" id="3eme_YBWKFR" role="2iSdaV" />
+      <node concept="PMmxH" id="3eme_YBWKF6" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="3eme_YBWKFZ" role="3EZMnx">
+        <ref role="1NtTu8" to="dyrx:3eme_YBWIjr" resolve="message" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3eme_YBWO4E">
+    <property role="3GE5qa" value="command" />
+    <ref role="1XX52x" to="dyrx:3eme_YBWLZJ" resolve="Alert" />
+    <node concept="3EZMnI" id="3eme_YBWO4S" role="2wV5jI">
+      <node concept="2iRfu4" id="3eme_YBWO4T" role="2iSdaV" />
+      <node concept="PMmxH" id="3eme_YBWO4U" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="3eme_YBWO4V" role="3EZMnx">
+        <ref role="1NtTu8" to="dyrx:3eme_YBWLZK" resolve="message" />
       </node>
     </node>
   </node>
