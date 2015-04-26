@@ -1,10 +1,14 @@
 package cz.dsllp.gui.view;
 
 import cz.dsllp.gui.controller.GuiController;
+import cz.dsllp.gui.model.controls.ControlsModel;
+import cz.dsllp.gui.util.Labels;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.swing.AbstractAction;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -21,23 +25,26 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.event.ActionEvent;
 
 /**
  * @author jonasklimes
  * @since 03/04/15
  */
-public class ControlPanel extends JPanel {
+@Named
+@Singleton
+public class ControlsView {
 
     private static final long serialVersionUID = -8751016031258019018L;
 
-    private static final Logger logger = LoggerFactory.getLogger(ControlPanel.class);
-
-    private static final String MESSAGES_LABEL = "Messages";
-    private static final String SPEED_LABEL = "Speed: ";
+    private static final Logger logger = LoggerFactory.getLogger(ControlsView.class);
 
     private static final int BUTTON_SIZE = 30;
     private static final int BUTTON_FONT_SIZE = 18;
+
+    private JPanel panel = new JPanel();
+
+    @Inject
+    private ControlsModel model;
 
     private GuiController userControl;
 
@@ -51,48 +58,28 @@ public class ControlPanel extends JPanel {
 
     // helper components
 
-    public ControlPanel() {
-        super();
-
+    public void init() {
         initComponents();
         createLayout();
-
     }
 
     private void initComponents() {
         // TODO: add actions
         start = createButton("\u25B6", "Start", Color.GREEN);
-        start.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                userControl.start();
-            }
-        });
+        start.setModel(model.getStart());
 
         pause = createButton("\u275A\u275A", "Pause", Color.ORANGE);
-        pause.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                userControl.pause();
-            }
-        });
-        step = createButton("\u27A0", "One step", Color.BLACK);
-        step.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                userControl.step();
-            }
-        });
-        stop = createButton("X", "Stop", Color.RED);
-        stop.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                userControl.stop();
-            }
-        });
+        pause.setModel(model.getPause());
 
-        // TODO: set proper values according to generation
-        speed = new JSlider(1, 5, 3);
+        step = createButton("\u27A0", "One step", Color.BLACK);
+        step.setModel(model.getStep());
+
+        stop = createButton("X", "Stop", Color.RED);
+        stop.setModel(model.getStop());
+
+        speed = new JSlider();
+        speed.setModel(model.getSpeed());
+
         //Turn on labels at major tick marks.
         speed.setMajorTickSpacing(1);
         speed.setPaintTicks(true);
@@ -103,16 +90,16 @@ public class ControlPanel extends JPanel {
     }
 
     private void createLayout() {
-        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
         // buttons
         JComponent buttonsPanel = createButtonsComponent();
-        this.add(buttonsPanel);
+        panel.add(buttonsPanel);
 
 
         // messages
         JComponent messageComponent = createMessagesComponent();
-        this.add(messageComponent);
+        panel.add(messageComponent);
     }
 
 
@@ -138,15 +125,20 @@ public class ControlPanel extends JPanel {
         c.gridx = 3;
         p.add(stop, 3);
 
-        // speed label
+        // speed label slow
         c.gridx = 4;
-        JLabel speedLabel = new JLabel(SPEED_LABEL);
-        p.add(speedLabel, c);
+        JLabel speedLabelSlow = new JLabel(Labels.getLabel("controls.speed.slow"));
+        p.add(speedLabelSlow, c);
 
         // speed slider
         c.gridx = 5;
         c.gridwidth = 2;
         p.add(speed, c);
+
+        // speed label fast
+        c.gridx = 7;
+        JLabel speedLabelFast = new JLabel(Labels.getLabel("controls.speed.fast"));
+        p.add(speedLabelFast, c);
 
 
         return p;
@@ -156,7 +148,7 @@ public class ControlPanel extends JPanel {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setPreferredSize(new Dimension(200, 200));
 
-        JLabel label = new JLabel(MESSAGES_LABEL);
+        JLabel label = new JLabel(Labels.getLabel("controls.messages.label"));
         label.setHorizontalAlignment(SwingConstants.CENTER);
         panel.add(label, BorderLayout.PAGE_START);
 
@@ -181,5 +173,13 @@ public class ControlPanel extends JPanel {
 
     public void setUserControl(GuiController userControl) {
         this.userControl = userControl;
+    }
+
+    public JPanel getPanel() {
+        return panel;
+    }
+
+    public void setModel(ControlsModel model) {
+        this.model = model;
     }
 }

@@ -1,56 +1,61 @@
 package cz.dsllp.gui.controller;
 
-import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.view.PluginPanel;
+import cz.dsllp.gui.model.WorldHolder;
+import cz.dsllp.gui.model.controls.ControlsModel;
+import cz.dsllp.gui.model.world.World;
+import cz.dsllp.gui.service.WorldService;
+import cz.dsllp.gui.view.ControlsView;
+import cz.dsllp.gui.view.MainView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * @author Jonas Klimes
  */
 @Named
 @Singleton
-public class GuiControllerImpl implements GuiController{
+public class GuiControllerImpl implements GuiController {
 
     private static final Logger logger = LoggerFactory.getLogger(GuiControllerImpl.class);
+
+    // injected in setter
+    private WorldService worldService;
 
     @Inject
     private WorldHolder worldHolder;
 
-    private PluginPanel pluginPanel;
+    @Inject
+    private MainView mainView;
+
+    @Inject
+    private ControlsView controlsView;
+
+    @Inject
+    private ControlsModel controlsModel;
+
+    private StartActionListener startListener;
+    private PauseActionListener pauseListener;
+    private StepActionListener stepListener;
+    private StopActionListener stopListener;
 
     @Override
-    public void start() {
+    public void init(){
 
+        controlsModel.getStart().addActionListener(new StartActionListener());
+        controlsModel.getPause().addActionListener(new PauseActionListener());
+        controlsModel.getStep().addActionListener(new StepActionListener());
+        controlsModel.getStop().addActionListener(new StopActionListener());
     }
 
     @Override
-    public void pause() {
-
-    }
-
-    @Override
-    public void step() {
-
-    }
-
-    @Override
-    public void stop() {
-
-    }
-
-    @Override
-    public void setUserSpeed(float speedCoeficient) {
-
-    }
-
-    @Override
-    public float getUserSpeed() {
-        return 1;
+    public double getSpeedCoeficient() {
+        return controlsModel.getSpeedCoeficient();
     }
 
     @Override
@@ -66,21 +71,99 @@ public class GuiControllerImpl implements GuiController{
     @Override
     public void updateWorld() {
         World world = worldHolder.getWorld();
-        pluginPanel.getWorldPanel().update(world);
+        mainView.getWorldView().update(world);
     }
 
     @Override
     public void createVisualWorld() {
         World world = worldHolder.getWorld();
-        pluginPanel.createWorldPanel(world);
+        mainView.createWorldPanel(world);
+        controlsModel.getStart().setEnabled(true);
+        controlsModel.getStep().setEnabled(true);
+    }
+
+    @Override
+    public ActionListener getStartListener() {
+        if (startListener == null) {
+            startListener = new StartActionListener();
+        }
+        return startListener;
+    }
+
+    @Override
+    public ActionListener getPauseListener() {
+        if (pauseListener == null) {
+            pauseListener = new PauseActionListener();
+        }
+        return pauseListener;
+    }
+
+    @Override
+    public ActionListener getStepListener() {
+        if (stepListener == null) {
+            stepListener = new StepActionListener();
+        }
+        return stepListener;
+    }
+
+    @Override
+    public ActionListener getStopListener() {
+        if (stopListener == null) {
+            stopListener = new StopActionListener();
+        }
+        return stopListener;
     }
 
     public void setWorldHolder(WorldHolder worldHolder) {
         this.worldHolder = worldHolder;
     }
 
-    public void setPluginPanel(PluginPanel pluginPanel) {
-        this.pluginPanel = pluginPanel;
-        pluginPanel.getControlPanel().setUserControl(this);
+    public void setMainView(MainView mainView) {
+        this.mainView = mainView;
+    }
+
+    public void setControlsView(ControlsView controlsView) {
+        this.controlsView = controlsView;
+    }
+
+    public void setControlsModel(ControlsModel controlsModel) {
+        this.controlsModel = controlsModel;
+    }
+
+    public void setWorldService(WorldService worldService) {
+        this.worldService = worldService;
+    }
+
+    private class StartActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            worldService.resume();
+            controlsModel.getPause().setEnabled(true);
+            controlsModel.getStep().setEnabled(false);
+        }
+    }
+
+    private class PauseActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            worldService.pause();
+            controlsModel.getPause().setEnabled(false);
+            controlsModel.getStart().setEnabled(true);
+            controlsModel.getStep().setEnabled(true);
+        }
+    }
+
+    private class StepActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            worldService.resumeForOneStep();
+        }
+    }
+
+    private class StopActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+        }
     }
 }

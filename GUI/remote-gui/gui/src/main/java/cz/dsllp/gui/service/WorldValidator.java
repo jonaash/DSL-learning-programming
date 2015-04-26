@@ -5,7 +5,7 @@ import cz.dsllp.gui.api.message.Step;
 import cz.dsllp.gui.api.message.appearance.Appearance;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.api.message.command.Command;
-import cz.dsllp.gui.controller.WorldHolder;
+import cz.dsllp.gui.model.WorldHolder;
 import org.apache.commons.lang3.Validate;
 
 import javax.inject.Inject;

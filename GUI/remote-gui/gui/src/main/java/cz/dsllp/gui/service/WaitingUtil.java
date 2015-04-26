@@ -1,10 +1,12 @@
 package cz.dsllp.gui.service;
 
 import cz.dsllp.gui.api.message.Speed;
+import cz.dsllp.gui.controller.GuiController;
 import org.apache.commons.lang3.Validate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import java.util.EnumMap;
@@ -20,9 +22,10 @@ public class WaitingUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(WaitingUtil.class);
 
+    @Inject
+    private GuiController controller;
 
-
-    private static Map<Speed, Integer> WAITING_TIMES = new EnumMap<Speed, Integer>(Speed.class);
+    private static final Map<Speed, Integer> WAITING_TIMES = new EnumMap<Speed, Integer>(Speed.class);
 
     static {
         WAITING_TIMES.put(Speed.INSTANT, 0);
@@ -32,16 +35,18 @@ public class WaitingUtil {
 
     }
 
-    public static void pause(Speed speed, double guiSpeed){
+    public void pause(Speed speed){
         Validate.notNull(speed, "Speed cannot be null");
-        Validate.exclusiveBetween(0.0, Double.POSITIVE_INFINITY, guiSpeed,
-                "Gui speed must be greater than 0. Value: %d", guiSpeed);
+
+        double speedCoeficient = controller.getSpeedCoeficient();
         if(Speed.INSTANT.equals(speed)){
             // we will not wait
             return;
         }
 
-        long waitingTime = Math.round(WAITING_TIMES.get(speed) * guiSpeed);
+        long waitingTime = Math.round(WAITING_TIMES.get(speed) / speedCoeficient);
+
+        logger.debug("Pause - speed: {}, speedCoeficient: {}, waiting for: {} milis", speed, speedCoeficient, waitingTime);
         try {
             Thread.sleep(waitingTime);
         } catch (InterruptedException e) {
@@ -49,4 +54,7 @@ public class WaitingUtil {
         }
     }
 
+    public void setController(GuiController controller) {
+        this.controller = controller;
+    }
 }

@@ -1,4 +1,4 @@
-package cz.dsllp.gui.model;
+package cz.dsllp.gui.model.world;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

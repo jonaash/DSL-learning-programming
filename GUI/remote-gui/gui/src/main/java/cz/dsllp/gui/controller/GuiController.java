@@ -2,6 +2,7 @@ package cz.dsllp.gui.controller;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
+import java.awt.event.ActionListener;
 
 /**
  * @author Jonas Klimes
@@ -10,14 +11,9 @@ import javax.inject.Singleton;
 @Singleton
 public interface GuiController {
 
-    void start();
-    void pause();
-    void step();
-    void stop();
+    void init();
 
-    void setUserSpeed(float speedCoeficient);
-
-    float getUserSpeed();
+    double getSpeedCoeficient();
 
     void showAlert(String message);
     void addMessage(String message);
@@ -25,4 +21,11 @@ public interface GuiController {
     void updateWorld();
 
     void createVisualWorld();
+
+    ActionListener getStartListener();
+    ActionListener getPauseListener();
+    ActionListener getStepListener();
+    ActionListener getStopListener();
+
+
 }

@@ -3,7 +3,7 @@ package cz.dsllp.gui.service;
 import cz.dsllp.gui.api.message.Result;
 import cz.dsllp.gui.api.message.Step;
 import cz.dsllp.gui.api.service.GuiService;
-import cz.dsllp.gui.model.Thing;
+import cz.dsllp.gui.model.world.Thing;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

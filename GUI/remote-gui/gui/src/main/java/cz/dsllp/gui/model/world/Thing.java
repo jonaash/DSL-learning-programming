@@ -1,4 +1,4 @@
-package cz.dsllp.gui.model;
+package cz.dsllp.gui.model.world;
 
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 

@@ -1,7 +1,7 @@
 package cz.dsllp.gui.view;
 
-import cz.dsllp.gui.model.Cell;
-import cz.dsllp.gui.model.World;
+import cz.dsllp.gui.model.world.Cell;
+import cz.dsllp.gui.model.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
  * @author jonasklimes
  * @since 04/04/15
  */
-public class WorldPanel extends JPanel {
+public class WorldView {
     private static final long serialVersionUID = -3111896967024406471L;
 
     public static final int CELL_SIZE = 50;
@@ -24,21 +24,23 @@ public class WorldPanel extends JPanel {
     private final int width;
     private final int height;
 
-    private static Logger logger = LoggerFactory.getLogger(WorldPanel.class);
+    private JPanel panel;
+
+    private static Logger logger = LoggerFactory.getLogger(WorldView.class);
 
     private VisualCell[][] visuals;
 
-    public WorldPanel(World world) {
-        super(new GridLayout(world.getHeight(), world.getWidth()), true);
+    public WorldView(World world) {
+        panel = new JPanel(new GridLayout(world.getHeight(), world.getWidth()), true);
         this.worldName = world.getName();
         this.width = world.getWidth();
         this.height = world.getHeight();
-        this.setSize(getPixelWidth(), getPixelHeight());
-        this.setMinimumSize(getPreferredSize());
-        this.setMaximumSize(getPreferredSize());
+        panel.setSize(getPixelWidth(), getPixelHeight());
+        panel.setPreferredSize(new Dimension(getPixelWidth(), getPixelHeight()));
+        panel.setMinimumSize(panel.getPreferredSize());
+        panel.setMaximumSize(panel.getPreferredSize());
         initVisuals(world);
         update(world);
-
     }
 
     private void initVisuals(World world) {
@@ -48,7 +50,7 @@ public class WorldPanel extends JPanel {
             for (int col = 0; col < world.getWidth(); col++) {
                 VisualCell cell = new VisualCell();
                 visuals[row][col] = cell;
-                add(cell);
+                panel.add(cell);
             }
         }
     }
@@ -94,8 +96,7 @@ public class WorldPanel extends JPanel {
         return worldName;
     }
 
-    @Override
-    public Dimension getPreferredSize() {
-        return new Dimension(getPixelWidth(), getPixelHeight());
+    public JPanel getPanel() {
+        return panel;
     }
 }

@@ -1,6 +1,6 @@
-package cz.dsllp.gui.controller;
+package cz.dsllp.gui.model;
 
-import cz.dsllp.gui.model.World;
+import cz.dsllp.gui.model.world.World;
 
 import javax.inject.Named;
 import javax.inject.Singleton;

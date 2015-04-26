@@ -1,8 +1,8 @@
 package cz.dsllp.gui.view;
 
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
-import cz.dsllp.gui.model.Cell;
-import cz.dsllp.gui.model.Thing;
+import cz.dsllp.gui.model.world.Cell;
+import cz.dsllp.gui.model.world.Thing;
 
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
@@ -20,7 +20,7 @@ class VisualCell extends JPanel {
 
     private static final long serialVersionUID = 4284114890877956865L;
 
-    private static final Font FONT = new Font("Arial", Font.BOLD, (int) Math.round(WorldPanel.CELL_SIZE * 0.7));
+    private static final Font FONT = new Font("Arial", Font.BOLD, (int) Math.round(WorldView.CELL_SIZE * 0.7));
 
     private JLayeredPane layeredPane;
     private JLabel base = new JLabel();
@@ -46,7 +46,7 @@ class VisualCell extends JPanel {
         label.setVerticalTextPosition(JLabel.BOTTOM);
         label.setHorizontalAlignment(JLabel.CENTER);
         label.setFont(FONT);
-        label.setBounds(0, 0, WorldPanel.CELL_SIZE, WorldPanel.CELL_SIZE);
+        label.setBounds(0, 0, WorldView.CELL_SIZE, WorldView.CELL_SIZE);
     }
 
     void updateCell(Cell cell) {

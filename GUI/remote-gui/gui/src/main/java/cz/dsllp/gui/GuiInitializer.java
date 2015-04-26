@@ -3,9 +3,8 @@ package cz.dsllp.gui;
 import com.googlecode.tinydi.ClassfileDependencyScanner;
 import com.googlecode.tinydi.DependencyRepository;
 import cz.dsllp.gui.controller.GuiController;
-import cz.dsllp.gui.controller.GuiControllerImpl;
 import cz.dsllp.gui.server.GuiServer;
-import cz.dsllp.gui.view.PluginPanel;
+import cz.dsllp.gui.view.MainView;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -14,15 +13,17 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class GuiInitializer {
 
-    public static void init(PluginPanel panel, String rmiAddress, int port, String serviceName) throws IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static void init(String rmiAddress, int port, String serviceName) throws IllegalAccessException, InvocationTargetException, InstantiationException {
         // init dependency injection container
         ClassfileDependencyScanner scanner = new ClassfileDependencyScanner();
         scanner.scan("cz.dsllp.gui");
 
         // inject non managed Plugin Panel
         GuiController controller = DependencyRepository.getInstance().getBean(GuiController.class);
-        //FIXME Thing if this is ok
-        ((GuiControllerImpl) controller).setPluginPanel(panel);
+        controller.init();
+
+        MainView panel = DependencyRepository.getInstance().getBean(MainView.class);
+        panel.init();
 
         // init server
         GuiServer server = DependencyRepository.getInstance().getBean(GuiServer.class);

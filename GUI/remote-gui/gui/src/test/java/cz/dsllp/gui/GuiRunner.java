@@ -1,10 +1,11 @@
 package cz.dsllp.gui;
 
+import com.googlecode.tinydi.DependencyRepository;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
-import cz.dsllp.gui.model.Cell;
-import cz.dsllp.gui.model.Thing;
-import cz.dsllp.gui.model.World;
-import cz.dsllp.gui.view.PluginPanel;
+import cz.dsllp.gui.model.world.Cell;
+import cz.dsllp.gui.model.world.Thing;
+import cz.dsllp.gui.model.world.World;
+import cz.dsllp.gui.view.MainView;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;
@@ -23,7 +24,9 @@ public class GuiRunner {
 
 
     public static void main(String[] args) throws Exception {
-        PluginPanel panel = new PluginPanel();
+        GuiInitializer.init("rmi://localhost", 12346, "GuiService");
+
+        MainView panel = DependencyRepository.getInstance().getBean(MainView.class);
 
         // create gui window
         JFrame frame = new JFrame();
@@ -34,11 +37,11 @@ public class GuiRunner {
         frame.setResizable(false);
         frame.setVisible(true);
 
-        frame.add(panel, BorderLayout.CENTER);
+        frame.add(panel.getPanel(), BorderLayout.CENTER);
         frame.pack();
 
         // initialize RMI server and service
-        GuiInitializer.init(panel, "rmi://localhost", 12346, "GuiService");
+
     }
 
     public static World createWorldSample() {
