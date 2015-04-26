@@ -181,10 +181,17 @@
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
         </dependencies>
-        <library jar="../../runtime-libraries/slf4j-api-1.7.5.jar" />
-        <library jar="../../runtime-libraries/commons-lang3-3.1.jar" />
-        <library jar="../../runtime-libraries/api-0.1-SNAPSHOT.jar" />
-        <library jar="../../runtime-libraries/gui-0.1-SNAPSHOT.jar" />
+        <library jar="../../runtime-libraries/slf4j-api.jar" />
+        <library jar="../../runtime-libraries/api.jar" />
+        <library jar="../../runtime-libraries/slf4j-log4j12.jar" />
+        <library jar="../../runtime-libraries/commons-lang3.jar" />
+        <library jar="../../runtime-libraries/gui.jar" />
+        <library jar="../../runtime-libraries/font-awesome.jar" />
+        <library jar="../../runtime-libraries/griffon-core.jar" />
+        <library jar="../../runtime-libraries/griffon-fontawesome-core.jar" />
+        <library jar="../../runtime-libraries/griffon-fontawesome-swing.jar" />
+        <library jar="../../runtime-libraries/javax.inject.jar" />
+        <library jar="../../runtime-libraries/jsr305.jar" />
         <sources jar="GuiLib-src.jar" descriptor="GuiServerLib.msd" />
       </module>
     </echoxml>
@@ -410,10 +417,17 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -424,6 +438,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -442,10 +458,17 @@
         <path location="${karel_home}/solutions/GuiServerLib/source_gen" />
       </src>
       <classpath>
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
       </classpath>
     </javac>
   </target>
@@ -482,10 +505,17 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -497,6 +527,8 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -527,10 +559,17 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/KarelBasic" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api-1.7.5.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3-3.1.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api-0.1-SNAPSHOT.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui-0.1-SNAPSHOT.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -542,6 +581,8 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
