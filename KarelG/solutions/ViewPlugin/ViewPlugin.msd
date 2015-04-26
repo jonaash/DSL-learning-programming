@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="ViewPlugin" uuid="1a535062-6f15-43ba-ab54-1c6e88a58a51" pluginKind="PLUGIN_OTHER" compileInMPS="false">
+<solution name="ViewPlugin" uuid="1a535062-6f15-43ba-ab54-1c6e88a58a51" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,8 +7,8 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="true">03b98ce1-fecc-4ed5-a49d-43457de64e17(Common)</dependency>
+    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="true">9e2adce0-3032-497b-bf7e-e4b747a76a49(GuiLib)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
