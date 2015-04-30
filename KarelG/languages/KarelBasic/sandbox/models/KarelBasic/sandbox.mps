@@ -33,7 +33,13 @@
     <property role="TrG5h" value="Test" />
     <node concept="3jGSmg" id="ATD4KvcqPO" role="3jGSko">
       <node concept="2kp8ke" id="3eme_YBXrdt" role="3jGSnO">
-        <property role="2kpdU4" value="&quot;Ahoj&quot;" />
+        <property role="2kpdU4" value="Ahoj" />
+      </node>
+      <node concept="2kp8ke" id="2d45Bdtrv7v" role="3jGSnO">
+        <property role="2kpdU4" value="World" />
+      </node>
+      <node concept="2kp8ke" id="2d45Bdtrv80" role="3jGSnO">
+        <property role="2kpdU4" value="Jsem Karel" />
       </node>
       <node concept="1$shr6" id="ATD4KvcqQi" role="3jGSnO" />
       <node concept="1$shr6" id="ATD4KvcqQo" role="3jGSnO" />
@@ -42,7 +48,7 @@
       <node concept="1$vv3L" id="ATD4KvcqQw" role="3jGSnO" />
       <node concept="1$shr6" id="3eme_YBWz7t" role="3jGSnO" />
       <node concept="2kpimK" id="3eme_YBXrdR" role="3jGSnO">
-        <property role="2kpimJ" value="&quot;Konec&quot;" />
+        <property role="2kpimJ" value="Konec" />
       </node>
     </node>
   </node>

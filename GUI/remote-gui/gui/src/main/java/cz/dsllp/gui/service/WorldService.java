@@ -37,12 +37,9 @@ public class WorldService {
     private static final Logger logger = LoggerFactory.getLogger(WorldService.class);
     private static final String TIMER_NAME = "WorldServiceProcess";
     private static final int TIMER_DELAY = 40;
-    private final Object WAIT_OBJECT = new Object();
     private volatile GuiState state = GuiState.DISCONECTED;
 
     private Queue<Step> stepsToDo = new ConcurrentLinkedQueue<Step>();
-
-    private double guiSpeed = 1.0;
 
     // accessed both from EDT and service thread
     private volatile boolean onlyOneStep;
@@ -60,10 +57,6 @@ public class WorldService {
 
     @Inject
     private WaitingUtil waitingUtil;
-
-    public synchronized boolean shouldWait() {
-        return getState().equals(GuiState.RUNNING);
-    }
 
     public boolean canDoStep() {
         return getState().canDoStep();
@@ -161,46 +154,10 @@ public class WorldService {
         this.state = state;
     }
 
-    public void runOrWait() {
-        try {
-            logger.debug("runOrWait State:{}, Thread: {}", getState(), Thread.currentThread());
-            while (shouldWait()) {
-                logger.debug("Start waiting for GUI. Gui state: {}, Thread: {}", getState());
-                WAIT_OBJECT.wait();
-                logger.debug("Resumed from waiting for GUI. Gui state: {}, Thread: {}", getState());
-            }
-            if (onlyOneStep) {
-                setState(GuiState.PAUSED);
-            }
-
-        } catch (InterruptedException e) {
-            logger.error("Waiting interrupted", e);
-        }
-    }
-
     public synchronized Result getResult() {
         return Result.SUCCESS;
     }
 
-    public double getGuiSpeed() {
-        return guiSpeed;
-    }
-
-    public void setGuiSpeed(double guiSpeed) {
-        this.guiSpeed = guiSpeed;
-    }
-
-    // TODO: create methods to tell which buttons are enabled
-
-    public void start() {
-        if (getState().equals(GuiState.READY_FOR_RUN) || getState().equals(GuiState.PAUSED)) {
-            setState(GuiState.RUNNING);
-            while (getState().equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
-                Step step = stepsToDo.remove();
-                doStepNow(step);
-            }
-        }
-    }
 
     public void enqueueStep(Step step) {
         stepsToDo.add(step);
