@@ -156,7 +156,12 @@ public class GuiControllerImpl implements GuiController {
     private class StepActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            logger.trace("Step button pressed. Thread: {}", Thread.currentThread());
+            controlsModel.getPause().setEnabled(false);
+            controlsModel.getStart().setEnabled(false);
             worldService.resumeForOneStep();
+            controlsModel.getPause().setEnabled(true);
+            controlsModel.getStart().setEnabled(true);
         }
     }
 

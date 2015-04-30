@@ -149,10 +149,12 @@ public class WorldService {
 
 
     public synchronized GuiState getState() {
+        logger.trace("Getting state: {} Thread: {}", state, Thread.currentThread());
         return state;
     }
 
     public synchronized void setState(GuiState state) {
+        logger.trace("Setting state: {} Thread: {}", state, Thread.currentThread());
         if (state == null) {
             throw new NullPointerException("State cannot be null");
         }
@@ -205,6 +207,7 @@ public class WorldService {
     }
 
     private synchronized void doStepNow(Step step) {
+        logger.trace("Starting doStepNow with step: {}, Thread: {}", step, Thread.currentThread());
         for (Command command : step.getCommands()) {
             processCommand(command);
         }
@@ -212,6 +215,7 @@ public class WorldService {
         controller.updateWorld();
 
         waitingUtil.pause(step.getSpeed());
+        logger.trace("Finishing doStepNow with step: {}, Thread: {}", step, Thread.currentThread());
     }
 
 
