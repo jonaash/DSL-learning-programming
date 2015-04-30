@@ -1,6 +1,8 @@
 package cz.dsllp.gui.api.message;
 
 import cz.dsllp.gui.api.message.command.Command;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -47,4 +49,12 @@ public class Step implements Serializable {
         return commands;
     }
 
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("speed", speed)
+                .append("commands", commands)
+                .toString();
+    }
 }
