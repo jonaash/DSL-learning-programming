@@ -102,6 +102,7 @@ public class WorldService {
     public Result doStep(Step step) {
         // TODO: check proper state
         validator.validateStep(step);
+        // TODO: do validation
 
         if (!getState().canDoStep()) {
             throw new GuiOperationException("Method step cannot be called in this situation. " +
@@ -261,11 +262,12 @@ public class WorldService {
     }
 
     private void showAlert(Alert command) {
-        // TODO: implement
+        controller.showAlert(command.getMessage());
     }
 
     private void printMessage(PrintMessage command) {
-        // TODO: implement
+        logger.debug("Printing message: {}", command.getMessage());
+        controller.addMessage(command.getMessage());
     }
 
 

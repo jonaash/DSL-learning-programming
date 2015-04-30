@@ -54,7 +54,9 @@ public class ControlsView {
     private JButton step;
 
     private JSlider speed;
+
     private JTextPane messages;
+    private JButton clearMessages;
 
     // helper components
 
@@ -84,9 +86,11 @@ public class ControlsView {
         speed.setMajorTickSpacing(1);
         speed.setPaintTicks(true);
 
-        messages = new JTextPane();
+        messages = new JTextPane(model.getMessages());
         messages.setEditable(false);
 
+        clearMessages = createButton("x", "Delete messages", Color.RED);
+        clearMessages.setModel(model.getClearMessages());
     }
 
     private void createLayout() {
@@ -156,6 +160,8 @@ public class ControlsView {
         messages.setMinimumSize(new Dimension(200, 200));
         scrollPane.setMinimumSize(new Dimension(200, 200));
         panel.add(scrollPane, BorderLayout.CENTER);
+
+        panel.add(clearMessages, BorderLayout.LINE_END);
 
         return panel;
     }

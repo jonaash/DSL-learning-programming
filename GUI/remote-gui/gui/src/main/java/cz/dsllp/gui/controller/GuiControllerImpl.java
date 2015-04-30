@@ -65,7 +65,7 @@ public class GuiControllerImpl implements GuiController {
 
     @Override
     public void addMessage(String message) {
-
+        controlsModel.addMessage(message);
     }
 
     @Override
