@@ -2,14 +2,13 @@ package cz.dsllp.gui.view;
 
 import cz.dsllp.gui.model.world.Cell;
 import cz.dsllp.gui.model.world.World;
+import cz.dsllp.gui.util.SwingInvoker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 import java.awt.Dimension;
 import java.awt.GridLayout;
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author jonasklimes
@@ -61,25 +60,12 @@ public class WorldView {
                 final Cell currentCell = world.getCell(row, col);
                 final VisualCell currentVisual = visuals[row][col];
 
-                // TODO: extract to own AbstractClass
-                try {
-                    if (SwingUtilities.isEventDispatchThread()) {
+                new SwingInvoker() {
+                    @Override
+                    protected void operation() {
                         currentVisual.updateCell(currentCell);
-                    } else {
-
-                        SwingUtilities.invokeAndWait(new Runnable() {
-                            @Override
-                            public void run() {
-                                currentVisual.updateCell(currentCell);
-
-                            }
-                        });
                     }
-                } catch (InterruptedException e) {
-                    logger.warn("World panel update failed.", e);
-                } catch (InvocationTargetException e) {
-                    logger.warn("World panel update failed", e);
-                }
+                }.invokeAndWait();
             }
         }
     }
