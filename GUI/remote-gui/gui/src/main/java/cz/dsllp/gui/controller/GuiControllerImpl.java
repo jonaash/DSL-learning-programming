@@ -60,7 +60,7 @@ public class GuiControllerImpl implements GuiController {
 
     @Override
     public void showAlert(String message) {
-
+        mainView.showMessageDialog(message);
     }
 
     @Override

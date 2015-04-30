@@ -1,7 +1,8 @@
 package cz.dsllp.gui.view;
 
-import cz.dsllp.gui.api.exception.GuiInternalException;
 import cz.dsllp.gui.model.world.World;
+import cz.dsllp.gui.util.Labels;
+import cz.dsllp.gui.util.SwingInvoker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,13 +10,12 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
-import javax.swing.SwingUtilities;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author jonasklimes
@@ -59,24 +59,14 @@ public class MainView {
     public void createWorldPanel(final World world) {
         final WorldView wPanel = new WorldView(world);
 
-        if (SwingUtilities.isEventDispatchThread()) {
-            logger.debug("Setting WorldView from Event Dispatch Thread");
-            setWorldPanelInternal(wPanel);
-        } else {
-            logger.debug("Invoke and wait for setting WorldView");
-            try {
-                SwingUtilities.invokeAndWait(new Runnable() {
-                    @Override
-                    public void run() {
-                        MainView.this.setWorldPanelInternal(wPanel);
-                    }
-                });
-            } catch (InterruptedException e) {
-                throw new GuiInternalException("World panel creation failded", e);
-            } catch (InvocationTargetException e) {
-                throw new GuiInternalException("World panel creation failded", e);
+        new SwingInvoker(){
+
+            @Override
+            protected void operation() {
+                MainView.this.setWorldPanelInternal(wPanel);
             }
-        }
+        }.invokeAndWait();
+
     }
 
     private void setWorldPanelInternal(WorldView worldView) {
@@ -105,6 +95,15 @@ public class MainView {
         prefSize.setSize(ctrlDim.getWidth() + worldDim.getWidth(), ctrlDim.getHeight() + worldDim.getHeight());
 
         panel.setPreferredSize(prefSize);
+    }
+
+    public void showMessageDialog(final String message){
+        new SwingInvoker() {
+            @Override
+            protected void operation() {
+                JOptionPane.showMessageDialog(getPanel(), message, Labels.getLabel("dialog.message.title"), JOptionPane.PLAIN_MESSAGE);
+            }
+        }.invokeAndWait();
     }
 
     public ControlsView getControlsView() {
