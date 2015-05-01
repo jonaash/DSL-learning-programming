@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/KarelBasic/KarelBasic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/KarelConditions/KarelConditions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Common/Common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KarelG.build/KarelG.build.msd" folder="" />

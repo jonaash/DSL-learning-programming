@@ -163,34 +163,5 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2PnTnxEXEQm">
-    <property role="3GE5qa" value="command.control" />
-    <property role="TrG5h" value="If" />
-    <property role="34LRSv" value="if" />
-    <property role="R4oN_" value="if statement" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
-    <node concept="1TJgyj" id="2PnTnxEXESv" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="condition" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
-    </node>
-    <node concept="1TJgyj" id="2PnTnxEXESy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="trueBranch" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1IJMvjRjER" resolve="CodeBlock" />
-    </node>
-    <node concept="1TJgyj" id="2PnTnxEXESB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="falseBranch" />
-      <ref role="20lvS9" node="1IJMvjRjER" resolve="CodeBlock" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2PnTnxEXERC">
-    <property role="TrG5h" value="LogicalExpression" />
-    <property role="3GE5qa" value="logical" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
 </model>
 
