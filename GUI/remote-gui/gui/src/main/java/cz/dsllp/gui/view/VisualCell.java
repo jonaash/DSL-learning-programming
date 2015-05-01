@@ -63,7 +63,8 @@ class VisualCell extends JPanel {
             layeredPane.add(top, JLayeredPane.DRAG_LAYER);
 
         }else{
-            layeredPane.remove(top);
+            // clear thing label appearance
+            setAppearance(top, null);
         }
 
     }
@@ -74,7 +75,6 @@ class VisualCell extends JPanel {
             label.setForeground(appearance.getColor());
             label.setText(appearance.getText());
         } else {
-            this.setBackground(null);
             label.setForeground(null);
             label.setText(null);
         }
