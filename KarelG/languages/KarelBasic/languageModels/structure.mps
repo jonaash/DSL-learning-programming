@@ -50,7 +50,7 @@
     <property role="TrG5h" value="Step" />
     <property role="34LRSv" value="step" />
     <property role="R4oN_" value="command to make robot one step in current direction" />
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmXdLg">
@@ -61,9 +61,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmY9Kb">
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="LeftTurn" />
-    <property role="34LRSv" value="turnLeft" />
+    <property role="34LRSv" value="turn left" />
     <property role="R4oN_" value="command to make robot to turn left on current place" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
@@ -96,9 +96,9 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3eme_YBWFXh">
-    <property role="3GE5qa" value="command" />
-    <property role="TrG5h" value="Trace" />
-    <property role="34LRSv" value="trace" />
+    <property role="3GE5qa" value="command.action" />
+    <property role="TrG5h" value="Print" />
+    <property role="34LRSv" value="print" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyi" id="3eme_YBWIjr" role="1TKVEl">
       <property role="TrG5h" value="message" />
@@ -106,14 +106,29 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3eme_YBWLZJ">
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="Alert" />
     <property role="34LRSv" value="alert" />
+    <property role="R4oN_" value="command to show message dialog with the message" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyi" id="3eme_YBWLZK" role="1TKVEl">
       <property role="TrG5h" value="message" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2PnTnxETuQj">
+    <property role="3GE5qa" value="command.action" />
+    <property role="TrG5h" value="PutMark" />
+    <property role="34LRSv" value="put mark" />
+    <property role="R4oN_" value="command to put one mark on the ground" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+  </node>
+  <node concept="1TIwiD" id="2PnTnxETuQk">
+    <property role="3GE5qa" value="command.action" />
+    <property role="TrG5h" value="PickMark" />
+    <property role="34LRSv" value="pick mark" />
+    <property role="R4oN_" value="command pick one mark from the grounf if there is any" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
 </model>
 

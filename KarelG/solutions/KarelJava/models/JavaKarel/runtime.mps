@@ -303,6 +303,22 @@
         <node concept="17QB3L" id="3eme_YBWTLe" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3clFb_" id="2PnTnxETJk1" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="putMark" />
+      <node concept="3clFbS" id="2PnTnxETJk4" role="3clF47" />
+      <node concept="3Tm1VV" id="2PnTnxETJk5" role="1B3o_S" />
+      <node concept="3cqZAl" id="2PnTnxETJjd" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="2PnTnxETJna" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="pickMark" />
+      <node concept="3clFbS" id="2PnTnxETJnd" role="3clF47" />
+      <node concept="3Tm1VV" id="2PnTnxETJne" role="1B3o_S" />
+      <node concept="3cqZAl" id="2PnTnxETJme" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="1UBpzRreY5s" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="1UBpzRreYi3">
@@ -1858,6 +1874,164 @@
               <ref role="37wK5l" node="1wz1usTw0pN" resolve="showAlert" />
               <node concept="37vLTw" id="3eme_YBWVyk" role="37wK5m">
                 <ref role="3cqZAo" node="3eme_YBWUFK" resolve="message" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2PnTnxETPTM" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="pickMark" />
+      <node concept="3Tm1VV" id="2PnTnxETPTO" role="1B3o_S" />
+      <node concept="3cqZAl" id="2PnTnxETPTP" role="3clF45" />
+      <node concept="3clFbS" id="2PnTnxETPTQ" role="3clF47">
+        <node concept="3clFbJ" id="2PnTnxETUjp" role="3cqZAp">
+          <node concept="3clFbS" id="2PnTnxETUjq" role="3clFbx">
+            <node concept="3clFbF" id="2PnTnxETUjr" role="3cqZAp">
+              <node concept="2OqwBi" id="2PnTnxETUjs" role="3clFbG">
+                <node concept="1rXfSq" id="2PnTnxETUjt" role="2Oq$k0">
+                  <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+                </node>
+                <node concept="liA8E" id="2PnTnxETUju" role="2OqNvi">
+                  <ref role="37wK5l" node="2RDssu5UQPY" resolve="removeMark" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2PnTnxETUjv" role="3cqZAp">
+              <node concept="2OqwBi" id="2PnTnxETUjw" role="3clFbG">
+                <node concept="37vLTw" id="2PnTnxETUjx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wz1usTxT5z" resolve="gui" />
+                </node>
+                <node concept="liA8E" id="2PnTnxETUjy" role="2OqNvi">
+                  <ref role="37wK5l" node="1wz1usTw0gv" resolve="setMarks" />
+                  <node concept="37vLTw" id="2PnTnxETUjz" role="37wK5m">
+                    <ref role="3cqZAo" node="5$nXhJdw42" resolve="row" />
+                  </node>
+                  <node concept="37vLTw" id="2PnTnxETUj$" role="37wK5m">
+                    <ref role="3cqZAo" node="5$nXhJdvFg" resolve="col" />
+                  </node>
+                  <node concept="2OqwBi" id="2PnTnxETUj_" role="37wK5m">
+                    <node concept="1rXfSq" id="2PnTnxETUjA" role="2Oq$k0">
+                      <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+                    </node>
+                    <node concept="liA8E" id="2PnTnxETUjB" role="2OqNvi">
+                      <ref role="37wK5l" node="2RDssu5UQQc" resolve="getMarks" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="2PnTnxETUjC" role="3clFbw">
+            <node concept="2OqwBi" id="2PnTnxETUjD" role="3fr31v">
+              <node concept="1rXfSq" id="2PnTnxETUjE" role="2Oq$k0">
+                <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+              </node>
+              <node concept="liA8E" id="2PnTnxETUjF" role="2OqNvi">
+                <ref role="37wK5l" node="5$nXhJfXOj" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2PnTnxETUjG" role="9aQIa">
+            <node concept="3clFbS" id="2PnTnxETUjH" role="9aQI4">
+              <node concept="3SKdUt" id="2PnTnxETUjI" role="3cqZAp">
+                <node concept="3SKdUq" id="2PnTnxETUjJ" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO react to disallowed operation" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2PnTnxETUjK" role="3cqZAp">
+                <node concept="2OqwBi" id="2PnTnxETUjL" role="3clFbG">
+                  <node concept="37vLTw" id="2PnTnxETUjM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1wz1usTxT5z" resolve="gui" />
+                  </node>
+                  <node concept="liA8E" id="2PnTnxETUjN" role="2OqNvi">
+                    <ref role="37wK5l" node="1wz1usTw0pN" resolve="showAlert" />
+                    <node concept="Xl_RD" id="2PnTnxETUjO" role="37wK5m">
+                      <property role="Xl_RC" value="Cannot pick mark! There is no mark to pick!" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2PnTnxETPTR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="putMark" />
+      <node concept="3Tm1VV" id="2PnTnxETPTT" role="1B3o_S" />
+      <node concept="3cqZAl" id="2PnTnxETPTU" role="3clF45" />
+      <node concept="3clFbS" id="2PnTnxETPTV" role="3clF47">
+        <node concept="3clFbJ" id="2PnTnxETR6t" role="3cqZAp">
+          <node concept="3clFbS" id="2PnTnxETR6v" role="3clFbx">
+            <node concept="3clFbF" id="2PnTnxETSYb" role="3cqZAp">
+              <node concept="2OqwBi" id="2PnTnxETT2q" role="3clFbG">
+                <node concept="1rXfSq" id="2PnTnxETSY9" role="2Oq$k0">
+                  <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+                </node>
+                <node concept="liA8E" id="2PnTnxETT6U" role="2OqNvi">
+                  <ref role="37wK5l" node="2RDssu5UQPK" resolve="addMark" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2PnTnxETRgR" role="3cqZAp">
+              <node concept="2OqwBi" id="2PnTnxETRhH" role="3clFbG">
+                <node concept="37vLTw" id="2PnTnxETRgP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1wz1usTxT5z" resolve="gui" />
+                </node>
+                <node concept="liA8E" id="2PnTnxETRlJ" role="2OqNvi">
+                  <ref role="37wK5l" node="1wz1usTw0gv" resolve="setMarks" />
+                  <node concept="37vLTw" id="2PnTnxETRJB" role="37wK5m">
+                    <ref role="3cqZAo" node="5$nXhJdw42" resolve="row" />
+                  </node>
+                  <node concept="37vLTw" id="2PnTnxETROH" role="37wK5m">
+                    <ref role="3cqZAo" node="5$nXhJdvFg" resolve="col" />
+                  </node>
+                  <node concept="2OqwBi" id="2PnTnxETRY$" role="37wK5m">
+                    <node concept="1rXfSq" id="2PnTnxETRUC" role="2Oq$k0">
+                      <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+                    </node>
+                    <node concept="liA8E" id="2PnTnxETS6y" role="2OqNvi">
+                      <ref role="37wK5l" node="2RDssu5UQQc" resolve="getMarks" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="2PnTnxETRdA" role="3clFbw">
+            <node concept="2OqwBi" id="2PnTnxETRdC" role="3fr31v">
+              <node concept="1rXfSq" id="2PnTnxETRdD" role="2Oq$k0">
+                <ref role="37wK5l" node="5$nXhJeRMC" resolve="getCurrentCell" />
+              </node>
+              <node concept="liA8E" id="2PnTnxETRdE" role="2OqNvi">
+                <ref role="37wK5l" node="5$nXhJf1XK" resolve="isFull" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2PnTnxETThX" role="9aQIa">
+            <node concept="3clFbS" id="2PnTnxETThY" role="9aQI4">
+              <node concept="3SKdUt" id="2PnTnxETTkL" role="3cqZAp">
+                <node concept="3SKdUq" id="2PnTnxETTkN" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO react to disallowed operation" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2PnTnxETTlk" role="3cqZAp">
+                <node concept="2OqwBi" id="2PnTnxETTvL" role="3clFbG">
+                  <node concept="37vLTw" id="2PnTnxETTli" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1wz1usTxT5z" resolve="gui" />
+                  </node>
+                  <node concept="liA8E" id="2PnTnxETTzN" role="2OqNvi">
+                    <ref role="37wK5l" node="1wz1usTw0pN" resolve="showAlert" />
+                    <node concept="Xl_RD" id="2PnTnxETT$Z" role="37wK5m">
+                      <property role="Xl_RC" value="Cannot put mark! Cell is full!" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

@@ -74,7 +74,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="1IJMvjQDw_">
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="1XX52x" to="dyrx:3a5rfDmY9Kb" resolve="LeftTurn" />
     <node concept="PMmxH" id="1IJMvjQWFw" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -82,7 +82,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1IJMvjQWFG">
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="1XX52x" to="dyrx:3a5rfDmX7CW" resolve="Step" />
     <node concept="PMmxH" id="1IJMvjQWGc" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -131,31 +131,59 @@
         </node>
       </node>
     </node>
+    <node concept="14StLt" id="2PnTnxETv6J" role="V601i">
+      <property role="TrG5h" value="String" />
+      <node concept="3Xmtl4" id="2PnTnxETyey" role="3F10Kt">
+        <node concept="1wgc9g" id="2PnTnxETyeC" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:aeM1BF$Ukw" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="3eme_YBWIkD">
-    <property role="3GE5qa" value="command" />
-    <ref role="1XX52x" to="dyrx:3eme_YBWFXh" resolve="Trace" />
+    <property role="3GE5qa" value="command.action" />
+    <ref role="1XX52x" to="dyrx:3eme_YBWFXh" resolve="Print" />
     <node concept="3EZMnI" id="3eme_YBWKFQ" role="2wV5jI">
       <node concept="2iRfu4" id="3eme_YBWKFR" role="2iSdaV" />
       <node concept="PMmxH" id="3eme_YBWKF6" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Command" />
       </node>
       <node concept="3F0A7n" id="3eme_YBWKFZ" role="3EZMnx">
         <ref role="1NtTu8" to="dyrx:3eme_YBWIjr" resolve="message" />
+        <ref role="1k5W1q" node="2PnTnxETv6J" resolve="String" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="3eme_YBWO4E">
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="1XX52x" to="dyrx:3eme_YBWLZJ" resolve="Alert" />
     <node concept="3EZMnI" id="3eme_YBWO4S" role="2wV5jI">
       <node concept="2iRfu4" id="3eme_YBWO4T" role="2iSdaV" />
       <node concept="PMmxH" id="3eme_YBWO4U" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Command" />
       </node>
       <node concept="3F0A7n" id="3eme_YBWO4V" role="3EZMnx">
         <ref role="1NtTu8" to="dyrx:3eme_YBWLZK" resolve="message" />
+        <ref role="1k5W1q" node="2PnTnxETv6J" resolve="String" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PnTnxETyg3">
+    <property role="3GE5qa" value="command.action" />
+    <ref role="1XX52x" to="dyrx:2PnTnxETuQj" resolve="PutMark" />
+    <node concept="PMmxH" id="2PnTnxETyCv" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Command" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PnTnxETyCA">
+    <property role="3GE5qa" value="command.action" />
+    <ref role="1XX52x" to="dyrx:2PnTnxETuQk" resolve="PickMark" />
+    <node concept="PMmxH" id="2PnTnxETyCF" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Command" />
     </node>
   </node>
 </model>

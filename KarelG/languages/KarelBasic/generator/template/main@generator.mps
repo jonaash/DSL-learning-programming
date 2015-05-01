@@ -164,6 +164,7 @@
   </registry>
   <node concept="bUwia" id="3a5rfDmW9YW">
     <property role="TrG5h" value="main" />
+    <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="6bh18$peMTo" role="3acgRq">
       <ref role="30HIoZ" to="dyrx:3a5rfDmX7CW" resolve="Step" />
       <node concept="j$656" id="6bh18$peO3j" role="1lVwrX">
@@ -177,7 +178,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="3eme_YBWQ7D" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:3eme_YBWFXh" resolve="Trace" />
+      <ref role="30HIoZ" to="dyrx:3eme_YBWFXh" resolve="Print" />
       <node concept="j$656" id="3eme_YBWQ$I" role="1lVwrX">
         <ref role="v9R2y" node="3eme_YBWQ$G" resolve="reduce_Trace" />
       </node>
@@ -188,6 +189,18 @@
         <ref role="v9R2y" node="3eme_YBWQ$L" resolve="reduce_Alert" />
       </node>
     </node>
+    <node concept="3aamgX" id="2PnTnxETCk8" role="3acgRq">
+      <ref role="30HIoZ" to="dyrx:2PnTnxETuQj" resolve="PutMark" />
+      <node concept="j$656" id="2PnTnxETCSn" role="1lVwrX">
+        <ref role="v9R2y" node="2PnTnxETCSl" resolve="reduce_PutMark" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="2PnTnxETCu1" role="3acgRq">
+      <ref role="30HIoZ" to="dyrx:2PnTnxETuQk" resolve="PickMark" />
+      <node concept="j$656" id="2PnTnxETCTi" role="1lVwrX">
+        <ref role="v9R2y" node="2PnTnxETCTg" resolve="reduce_PickMark" />
+      </node>
+    </node>
     <node concept="3lhOvk" id="6bh18$peL3V" role="3lj3bC">
       <ref role="30HIoZ" to="dyrx:3a5rfDmYafO" resolve="Script" />
       <ref role="3lhOvi" node="6bh18$peL3X" resolve="map_Script" />
@@ -195,7 +208,7 @@
   </node>
   <node concept="13MO4I" id="6bh18$pe0Uc">
     <property role="TrG5h" value="reduce_Step" />
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="3gUMe" to="dyrx:3a5rfDmX7CW" resolve="Step" />
     <node concept="312cEu" id="6bh18$peN_8" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -401,7 +414,7 @@
   </node>
   <node concept="13MO4I" id="6bh18$peO3u">
     <property role="TrG5h" value="reduce_LeftTurn" />
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="3gUMe" to="dyrx:3a5rfDmY9Kb" resolve="LeftTurn" />
     <node concept="312cEu" id="6bh18$peQMi" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -437,8 +450,8 @@
   </node>
   <node concept="13MO4I" id="3eme_YBWQ$G">
     <property role="TrG5h" value="reduce_Trace" />
-    <property role="3GE5qa" value="command" />
-    <ref role="3gUMe" to="dyrx:3eme_YBWFXh" resolve="Trace" />
+    <property role="3GE5qa" value="command.action" />
+    <ref role="3gUMe" to="dyrx:3eme_YBWFXh" resolve="Print" />
     <node concept="312cEu" id="3eme_YBWQBR" role="13RCb5">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Foo" />
@@ -492,7 +505,7 @@
   </node>
   <node concept="13MO4I" id="3eme_YBWQ$L">
     <property role="TrG5h" value="reduce_Alert" />
-    <property role="3GE5qa" value="command" />
+    <property role="3GE5qa" value="command.action" />
     <ref role="3gUMe" to="dyrx:3eme_YBWLZJ" resolve="Alert" />
     <node concept="312cEu" id="3eme_YBWQAf" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -541,6 +554,78 @@
       </node>
       <node concept="3Tm1VV" id="3eme_YBWQAq" role="1B3o_S" />
       <node concept="3uibUv" id="3eme_YBWQAr" role="1zkMxy">
+        <ref role="3uigEE" node="6bh18$peNxM" resolve="CommandHelper" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="2PnTnxETCSl">
+    <property role="TrG5h" value="reduce_PutMark" />
+    <property role="3GE5qa" value="command.action" />
+    <ref role="3gUMe" to="dyrx:2PnTnxETuQj" resolve="PutMark" />
+    <node concept="312cEu" id="2PnTnxETIAQ" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="Foo" />
+      <node concept="2tJIrI" id="2PnTnxETIAR" role="jymVt" />
+      <node concept="3clFb_" id="2PnTnxETIAS" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="foo" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="2PnTnxETIAT" role="3clF47">
+          <node concept="3clFbF" id="2PnTnxETIAU" role="3cqZAp">
+            <node concept="2OqwBi" id="2PnTnxETIAV" role="3clFbG">
+              <node concept="37vLTw" id="2PnTnxETIAW" role="2Oq$k0">
+                <ref role="3cqZAo" node="6bh18$peNyU" resolve="robot" />
+              </node>
+              <node concept="liA8E" id="2PnTnxETIAX" role="2OqNvi">
+                <ref role="37wK5l" to="4ujd:2PnTnxETJk1" resolve="putMark" />
+              </node>
+            </node>
+            <node concept="raruj" id="2PnTnxETIAY" role="lGtFl" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="2PnTnxETIAZ" role="1B3o_S" />
+        <node concept="3cqZAl" id="2PnTnxETIB0" role="3clF45" />
+      </node>
+      <node concept="3Tm1VV" id="2PnTnxETIB1" role="1B3o_S" />
+      <node concept="3uibUv" id="2PnTnxETIB2" role="1zkMxy">
+        <ref role="3uigEE" node="6bh18$peNxM" resolve="CommandHelper" />
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="2PnTnxETCTg">
+    <property role="TrG5h" value="reduce_PickMark" />
+    <property role="3GE5qa" value="command.action" />
+    <ref role="3gUMe" to="dyrx:2PnTnxETuQk" resolve="PickMark" />
+    <node concept="312cEu" id="2PnTnxETI_c" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="Foo" />
+      <node concept="2tJIrI" id="2PnTnxETI_d" role="jymVt" />
+      <node concept="3clFb_" id="2PnTnxETI_e" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="foo" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="2PnTnxETI_f" role="3clF47">
+          <node concept="3clFbF" id="2PnTnxETI_g" role="3cqZAp">
+            <node concept="2OqwBi" id="2PnTnxETI_h" role="3clFbG">
+              <node concept="37vLTw" id="2PnTnxETI_i" role="2Oq$k0">
+                <ref role="3cqZAo" node="6bh18$peNyU" resolve="robot" />
+              </node>
+              <node concept="liA8E" id="2PnTnxETI_j" role="2OqNvi">
+                <ref role="37wK5l" to="4ujd:2PnTnxETJna" resolve="pickMark" />
+              </node>
+            </node>
+            <node concept="raruj" id="2PnTnxETI_k" role="lGtFl" />
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="2PnTnxETI_l" role="1B3o_S" />
+        <node concept="3cqZAl" id="2PnTnxETI_m" role="3clF45" />
+      </node>
+      <node concept="3Tm1VV" id="2PnTnxETI_n" role="1B3o_S" />
+      <node concept="3uibUv" id="2PnTnxETI_o" role="1zkMxy">
         <ref role="3uigEE" node="6bh18$peNxM" resolve="CommandHelper" />
       </node>
     </node>
