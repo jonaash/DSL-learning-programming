@@ -1,5 +1,8 @@
 package cz.dsllp.gui.model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.inject.Named;
 import javax.inject.Singleton;
 
@@ -10,15 +13,18 @@ import javax.inject.Singleton;
 @Singleton
 public class StateHolder {
 
-    private volatile GuiState state;
+    private static final Logger logger = LoggerFactory.getLogger(StateHolder.class);
+
+    private volatile GuiState state = GuiState.DISCONECTED;
     private volatile boolean onlyOneStep;
-    private volatile boolean stepProcessing;
 
     public synchronized GuiState getState() {
+        logger.trace("Getting state: {} Thread: {}", state, Thread.currentThread());
         return state;
     }
 
     public synchronized void setState(GuiState state) {
+        logger.trace("Setting state: {} Thread: {}", state, Thread.currentThread());
         this.state = state;
     }
 
@@ -30,11 +36,4 @@ public class StateHolder {
         this.onlyOneStep = onlyOneStep;
     }
 
-    public synchronized boolean isStepProcessing() {
-        return stepProcessing;
-    }
-
-    public synchronized void setStepProcessing(boolean stepProcessing) {
-        this.stepProcessing = stepProcessing;
-    }
 }

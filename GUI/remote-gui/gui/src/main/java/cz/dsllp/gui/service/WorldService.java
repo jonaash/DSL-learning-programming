@@ -12,6 +12,7 @@ import cz.dsllp.gui.api.message.command.PrintMessage;
 import cz.dsllp.gui.controller.GuiController;
 import cz.dsllp.gui.controller.GuiControllerImpl;
 import cz.dsllp.gui.model.GuiState;
+import cz.dsllp.gui.model.StateHolder;
 import cz.dsllp.gui.model.WorldHolder;
 import cz.dsllp.gui.model.world.Cell;
 import cz.dsllp.gui.model.world.Thing;
@@ -37,12 +38,8 @@ public class WorldService {
     private static final Logger logger = LoggerFactory.getLogger(WorldService.class);
     private static final String TIMER_NAME = "WorldServiceProcess";
     private static final int TIMER_DELAY = 40;
-    private volatile GuiState state = GuiState.DISCONECTED;
 
     private Queue<Step> stepsToDo = new ConcurrentLinkedQueue<Step>();
-
-    // accessed both from EDT and service thread
-    private volatile boolean onlyOneStep;
 
     private Timer timer;
 
@@ -58,9 +55,8 @@ public class WorldService {
     @Inject
     private WaitingUtil waitingUtil;
 
-    public boolean canDoStep() {
-        return getState().canDoStep();
-    }
+    @Inject
+    private StateHolder stateHolder;
 
     public void createWorld(String name, int width, int height) {
         validator.validateNewWorld(name, width, height);
@@ -77,13 +73,13 @@ public class WorldService {
 
     public void resume() {
         logger.debug("Resume script.");
-        onlyOneStep = false;
+        stateHolder.setOnlyOneStep(false);
         setState(GuiState.RUNNING);
     }
 
     public void resumeForOneStep() {
         logger.debug("Resume script for one step.");
-        onlyOneStep = true;
+        stateHolder.setOnlyOneStep(true);
         setState(GuiState.RUNNING);
     }
 
@@ -140,18 +136,12 @@ public class WorldService {
         setState(GuiState.READY_FOR_RUN);
     }
 
-
-    public synchronized GuiState getState() {
-        logger.trace("Getting state: {} Thread: {}", state, Thread.currentThread());
-        return state;
+    private GuiState getState() {
+        return stateHolder.getState();
     }
 
-    public synchronized void setState(GuiState state) {
-        logger.trace("Setting state: {} Thread: {}", state, Thread.currentThread());
-        if (state == null) {
-            throw new NullPointerException("State cannot be null");
-        }
-        this.state = state;
+    private void setState(GuiState state) {
+        stateHolder.setState(state);
     }
 
     public synchronized Result getResult() {
@@ -181,13 +171,12 @@ public class WorldService {
             changeCell((ChangeCell) command);
         } else if (command instanceof ChangeThing) {
             changeThing((ChangeThing) command);
-        }else if (command instanceof PrintMessage){
+        } else if (command instanceof PrintMessage) {
             printMessage((PrintMessage) command);
-        }else if (command instanceof Alert){
+        } else if (command instanceof Alert) {
             showAlert((Alert) command);
         }
     }
-
 
 
     private void changeCell(ChangeCell command) {
@@ -249,14 +238,21 @@ public class WorldService {
         this.waitingUtil = waitingUtil;
     }
 
+    public void setStateHolder(StateHolder stateHolder) {
+        this.stateHolder = stateHolder;
+    }
+
     private class ExecutionTask extends TimerTask {
         @Override
         public void run() {
+            //fixme remove - logger cannot call synchronized methods
             if (logger.isTraceEnabled()) {
-                logger.trace("timer execution - State: {}, Steps in queue: {}, Only one step: {}", getState(), stepsToDo.size(), onlyOneStep);
+                logger.trace("timer execution - State: {}, Steps in queue: {}, Only one step: {}", getState(),
+                        stepsToDo.size(), stateHolder.isOnlyOneStep());
             }
 
             while (getState().equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
+                boolean onlyOneStep = stateHolder.isOnlyOneStep();
                 logger.debug("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", getState(),
                         stepsToDo.size(), onlyOneStep);
                 if (onlyOneStep) {
