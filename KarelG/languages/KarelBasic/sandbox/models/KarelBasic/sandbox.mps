@@ -16,6 +16,13 @@
       </concept>
       <concept id="3267332360032873875" name="KarelBasic.structure.PutMark" flags="ng" index="17GwzF" />
       <concept id="3267332360032873876" name="KarelBasic.structure.PickMark" flags="ng" index="17GwzG" />
+      <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
+      <concept id="3267332360033093774" name="KarelBasic.structure.Repeat" flags="ng" index="17JERQ">
+        <property id="3267332360033094824" name="iterations" index="17JEBg" />
+        <child id="3267332360033094822" name="body" index="17JEBu" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CodeBlock" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -40,6 +47,9 @@
       <node concept="17GwzF" id="2PnTnxEU3i1" role="3jGSnO" />
       <node concept="1$shr6" id="ATD4KvcqQi" role="3jGSnO" />
       <node concept="1$shr6" id="ATD4KvcqQo" role="3jGSnO" />
+      <node concept="17J3Kp" id="2PnTnxEYeUE" role="3jGSnO">
+        <property role="17J3Nn" value="comment" />
+      </node>
       <node concept="17GwzF" id="2PnTnxEU3i$" role="3jGSnO" />
       <node concept="1$vv3L" id="3eme_YBWz7f" role="3jGSnO" />
       <node concept="1$shr6" id="1XlOgn$sn31" role="3jGSnO" />
@@ -74,6 +84,17 @@
     <node concept="3jGSmg" id="2PnTnxEU4GY" role="3jGSko">
       <node concept="17GwzF" id="2PnTnxEU4GZ" role="3jGSnO" />
       <node concept="1$shr6" id="2PnTnxEU4H4" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="1$vsWe" id="2PnTnxEUoqq">
+    <property role="TrG5h" value="Repeat" />
+    <node concept="3jGSmg" id="2PnTnxEUoqr" role="3jGSko">
+      <node concept="17JERQ" id="2PnTnxEViau" role="3jGSnO">
+        <property role="17JEBg" value="4" />
+        <node concept="3jGSmg" id="2PnTnxEViav" role="17JEBu">
+          <node concept="1$shr6" id="2PnTnxEViaI" role="3jGSnO" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
