@@ -29,7 +29,7 @@ public class WaitingUtil {
 
     static {
         WAITING_TIMES.put(Speed.INSTANT, 0);
-        WAITING_TIMES.put(Speed.FAST, 50);
+        WAITING_TIMES.put(Speed.FAST, 125);
         WAITING_TIMES.put(Speed.MEDIUM, 500);
         WAITING_TIMES.put(Speed.SLOW, 2000);
 
