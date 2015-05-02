@@ -16,6 +16,7 @@
       </concept>
       <concept id="3267332360032873875" name="KarelBasic.structure.PutMark" flags="ng" index="17GwzF" />
       <concept id="3267332360032873876" name="KarelBasic.structure.PickMark" flags="ng" index="17GwzG" />
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
@@ -50,7 +51,6 @@
       <node concept="17J3Kp" id="2PnTnxEYeUE" role="3jGSnO">
         <property role="17J3Nn" value="comment" />
       </node>
-      <node concept="17GwzF" id="2PnTnxEU3i$" role="3jGSnO" />
       <node concept="1$vv3L" id="3eme_YBWz7f" role="3jGSnO" />
       <node concept="1$shr6" id="1XlOgn$sn31" role="3jGSnO" />
       <node concept="1$vv3L" id="ATD4KvcqQw" role="3jGSnO" />
@@ -93,6 +93,7 @@
         <property role="17JEBg" value="4" />
         <node concept="3jGSmg" id="2PnTnxEViav" role="17JEBu">
           <node concept="1$shr6" id="2PnTnxEViaI" role="3jGSnO" />
+          <node concept="17J3f2" id="2PnTnxEZ5fj" role="3jGSnO" />
         </node>
       </node>
     </node>
