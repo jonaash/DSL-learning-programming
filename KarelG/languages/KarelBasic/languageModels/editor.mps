@@ -53,7 +53,11 @@
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -335,6 +339,8 @@
         <ref role="1k5W1q" node="2PnTnxEUXFT" resolve="Comment" />
       </node>
       <node concept="3F0A7n" id="2PnTnxEUXEu" role="3EZMnx">
+        <property role="1$x2rV" value="Enter comment" />
+        <property role="1cu_pB" value="1" />
         <ref role="1NtTu8" to="dyrx:2PnTnxEUXAJ" resolve="text" />
         <ref role="1k5W1q" node="2PnTnxEUXFT" resolve="Comment" />
       </node>
