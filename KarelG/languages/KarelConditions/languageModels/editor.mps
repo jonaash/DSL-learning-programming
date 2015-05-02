@@ -23,12 +23,24 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -36,6 +48,10 @@
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
@@ -73,6 +89,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="2PnTnxEXESN">
@@ -85,7 +104,9 @@
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
         </node>
-        <node concept="3F1sOY" id="2PnTnxEXEU1" role="3EZMnx">
+        <node concept="3F1sOY" id="2PnTnxEZaip" role="3EZMnx">
+          <property role="1cu_pB" value="1" />
+          <property role="1$x2rV" value="Enter condition" />
           <ref role="1NtTu8" to="9xx6:2PnTnxEXESv" />
         </node>
         <node concept="3F0ifn" id="2PnTnxEXEUe" role="3EZMnx">
@@ -125,6 +146,44 @@
           </node>
         </node>
         <node concept="35HoNQ" id="2PnTnxEXGsf" role="1QoVPY" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PnTnxEYPma">
+    <property role="3GE5qa" value="logical" />
+    <ref role="1XX52x" to="9xx6:2PnTnxEYLin" resolve="IsFull" />
+    <node concept="PMmxH" id="2PnTnxEYPmf" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PnTnxEYPmm">
+    <property role="3GE5qa" value="logical" />
+    <ref role="1XX52x" to="9xx6:2PnTnxEYLhr" resolve="IsMark" />
+    <node concept="PMmxH" id="2PnTnxEYPmo" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2PnTnxEYPov">
+    <property role="3GE5qa" value="logical" />
+    <ref role="1XX52x" to="9xx6:2PnTnxEYg7A" resolve="Looking" />
+    <node concept="3EZMnI" id="2PnTnxEYPox" role="2wV5jI">
+      <node concept="PMmxH" id="2PnTnxEYPoC" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="2PnTnxEYPoH" role="3EZMnx">
+        <ref role="1NtTu8" to="9xx6:2PnTnxEYjbx" resolve="direction" />
+      </node>
+      <node concept="l2Vlx" id="2PnTnxEYPo$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="2PnTnxEYS0_">
+    <property role="TrG5h" value="ConditionsStyles" />
+    <node concept="14StLt" id="2PnTnxEYS0C" role="V601i">
+      <property role="TrG5h" value="LogicalExpresion" />
+      <node concept="Veino" id="2PnTnxEYTrt" role="3F10Kt">
+        <property role="Vb096" value="yellow" />
       </node>
     </node>
   </node>

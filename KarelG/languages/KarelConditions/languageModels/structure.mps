@@ -89,7 +89,7 @@
     <property role="3GE5qa" value="logical" />
     <property role="TrG5h" value="Looking" />
     <property role="34LRSv" value="looking" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
     <node concept="1TJgyi" id="2PnTnxEYjbx" role="1TKVEl">
       <property role="TrG5h" value="direction" />
       <ref role="AX2Wp" node="2PnTnxEYgha" resolve="Direction" />
@@ -97,7 +97,7 @@
   </node>
   <node concept="1TIwiD" id="2PnTnxEXEQm">
     <property role="3GE5qa" value="command.control" />
-    <property role="TrG5h" value="If" />
+    <property role="TrG5h" value="IfStatement" />
     <property role="34LRSv" value="if" />
     <property role="R4oN_" value="if statement" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
@@ -118,6 +118,18 @@
       <property role="20kJfa" value="falseBranch" />
       <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CodeBlock" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2PnTnxEYLhr">
+    <property role="3GE5qa" value="logical" />
+    <property role="TrG5h" value="IsMark" />
+    <property role="34LRSv" value="mark" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+  </node>
+  <node concept="1TIwiD" id="2PnTnxEYLin">
+    <property role="3GE5qa" value="logical" />
+    <property role="TrG5h" value="IsFull" />
+    <property role="34LRSv" value="full" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
   </node>
 </model>
 
