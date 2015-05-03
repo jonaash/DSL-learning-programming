@@ -52,7 +52,7 @@
     </language>
   </registry>
   <node concept="AxPO7" id="2PnTnxEYgha">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="Direction" />
     <property role="PDuV0" value="true" />
     <property role="3lZH7k" value="derive_from_internal_value" />
@@ -75,7 +75,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEYg6J">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsWallAhead" />
     <property role="34LRSv" value="wall ahead" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
@@ -88,7 +88,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEYg7A">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="Looking" />
     <property role="34LRSv" value="looking" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
@@ -123,19 +123,19 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEYLhr">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsMark" />
     <property role="34LRSv" value="mark" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEYLin">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsFull" />
     <property role="34LRSv" value="full" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
   </node>
   <node concept="1TIwiD" id="6OirKjsF4ES">
-    <property role="3GE5qa" value="logical" />
+    <property role="3GE5qa" value="logical.operator" />
     <property role="TrG5h" value="Not" />
     <property role="34LRSv" value="not" />
     <property role="R4oN_" value="negation of logical expression" />
@@ -143,7 +143,38 @@
     <node concept="1TJgyj" id="6OirKjsF4V6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="original" />
+      <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6OirKjsFlOH">
+    <property role="3GE5qa" value="logical.operator" />
+    <property role="TrG5h" value="And" />
+    <property role="34LRSv" value="and" />
+    <ref role="1TJDcQ" node="6OirKjsGMn3" resolve="BinaryLogicalOperator" />
+  </node>
+  <node concept="1TIwiD" id="6OirKjsFlUw">
+    <property role="3GE5qa" value="logical.operator" />
+    <property role="TrG5h" value="Or" />
+    <property role="34LRSv" value="or" />
+    <ref role="1TJDcQ" node="6OirKjsGMn3" resolve="BinaryLogicalOperator" />
+  </node>
+  <node concept="1TIwiD" id="6OirKjsGMn3">
+    <property role="3GE5qa" value="logical.operator" />
+    <property role="TrG5h" value="BinaryLogicalOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    <node concept="1TJgyj" id="6OirKjsGMok" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    </node>
+    <node concept="1TJgyj" id="6OirKjsGMon" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
     </node>
   </node>

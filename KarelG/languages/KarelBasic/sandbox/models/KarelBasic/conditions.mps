@@ -13,6 +13,9 @@
       </concept>
       <concept id="3267332360032873876" name="KarelBasic.structure.PickMark" flags="ng" index="17GwzG" />
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CodeBlock" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -28,16 +31,26 @@
       </concept>
     </language>
     <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="KarelConditions">
+      <concept id="7859466366388217283" name="KarelConditions.structure.BinaryLogicalOperator" flags="ng" index="2LCkF7">
+        <child id="7859466366388217364" name="left" index="2LCk$g" />
+        <child id="7859466366388217367" name="right" index="2LCk$j" />
+      </concept>
+      <concept id="7859466366387767992" name="KarelConditions.structure.Not" flags="ng" index="2LJymW">
+        <child id="7859466366387769030" name="original" index="2LJy72" />
+      </concept>
+      <concept id="7859466366387838624" name="KarelConditions.structure.Or" flags="ng" index="2LJN6$" />
+      <concept id="7859466366387838253" name="KarelConditions.structure.And" flags="ng" index="2LJN8D" />
       <concept id="3267332360033971606" name="KarelConditions.structure.IfStatement" flags="ng" index="17CkzI">
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
         <child id="3267332360033971751" name="falseBranch" index="17CkHv" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
+      <concept id="3267332360034260059" name="KarelConditions.structure.IsMark" flags="ng" index="17Ff4z" />
       <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
     </language>
   </registry>
   <node concept="1$vsWe" id="2PnTnxEYM42">
-    <property role="TrG5h" value="Conditions" />
+    <property role="TrG5h" value="IfStatement" />
     <node concept="3jGSmg" id="2PnTnxEYM43" role="3jGSko">
       <node concept="17CkzI" id="2PnTnxF1UN1" role="3jGSnO">
         <node concept="17Ff7J" id="2PnTnxF1UNk" role="17CkHB" />
@@ -70,6 +83,38 @@
         </node>
       </node>
       <node concept="17J3f2" id="6OirKjsAISP" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6OirKjsFTzM">
+    <property role="TrG5h" value="Operators" />
+    <node concept="3jGSmg" id="6OirKjsFTzN" role="3jGSko">
+      <node concept="17CkzI" id="6OirKjsHb$f" role="3jGSnO">
+        <node concept="2LJN8D" id="6OirKjsHb$r" role="17CkHB">
+          <node concept="17Ff7J" id="6OirKjsHb$B" role="2LCk$g" />
+          <node concept="2LJN6$" id="6OirKjsHb_B" role="2LCk$j">
+            <node concept="17Ff7J" id="6OirKjsHb_N" role="2LCk$g" />
+            <node concept="17Ff4z" id="6OirKjsHb_R" role="2LCk$j" />
+          </node>
+        </node>
+        <node concept="3jGSmg" id="6OirKjsHb$h" role="17CkHq">
+          <node concept="17J3Kp" id="6OirKjsHb_V" role="3jGSnO">
+            <property role="17J3Nn" value="(full &amp;&amp; (full || mark))" />
+          </node>
+        </node>
+        <node concept="3jGSmg" id="6OirKjsHb$i" role="17CkHv" />
+      </node>
+      <node concept="17J3f2" id="6OirKjsHb_Y" role="3jGSnO" />
+      <node concept="17CkzI" id="6OirKjsHbAE" role="3jGSnO">
+        <node concept="2LJymW" id="6OirKjsHbBe" role="17CkHB">
+          <node concept="17Ff4z" id="6OirKjsHbBm" role="2LJy72" />
+        </node>
+        <node concept="3jGSmg" id="6OirKjsHbAI" role="17CkHq">
+          <node concept="17J3Kp" id="6OirKjsHbC2" role="3jGSnO">
+            <property role="17J3Nn" value="!mark" />
+          </node>
+        </node>
+        <node concept="3jGSmg" id="6OirKjsHbAK" role="17CkHv" />
+      </node>
     </node>
   </node>
 </model>
