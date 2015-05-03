@@ -47,6 +47,10 @@
       </concept>
       <concept id="3267332360034260059" name="KarelConditions.structure.IsMark" flags="ng" index="17Ff4z" />
       <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
+      <concept id="3267332360034124262" name="KarelConditions.structure.IsLooking" flags="ng" index="17FIiu">
+        <property id="3267332360034136801" name="direction" index="17FHup" />
+      </concept>
+      <concept id="3267332360034124207" name="KarelConditions.structure.IsWallAhead" flags="ng" index="17FIjn" />
     </language>
   </registry>
   <node concept="1$vsWe" id="2PnTnxEYM42">
@@ -73,7 +77,9 @@
       </node>
       <node concept="17J3f2" id="6OirKjsB1Bt" role="3jGSnO" />
       <node concept="17CkzI" id="2PnTnxF5MKd" role="3jGSnO">
-        <node concept="17Ff7J" id="2PnTnxF5MK_" role="17CkHB" />
+        <node concept="17FIiu" id="6OirKjsJqqw" role="17CkHB">
+          <property role="17FHup" value="south" />
+        </node>
         <node concept="3jGSmg" id="2PnTnxF5MKh" role="17CkHq">
           <node concept="1$shr6" id="6OirKjsAZRq" role="3jGSnO" />
           <node concept="17GwzG" id="6OirKjsBaWg" role="3jGSnO" />
@@ -92,8 +98,10 @@
         <node concept="2LJN8D" id="6OirKjsHb$r" role="17CkHB">
           <node concept="17Ff7J" id="6OirKjsHb$B" role="2LCk$g" />
           <node concept="2LJN6$" id="6OirKjsHb_B" role="2LCk$j">
-            <node concept="17Ff7J" id="6OirKjsHb_N" role="2LCk$g" />
-            <node concept="17Ff4z" id="6OirKjsHb_R" role="2LCk$j" />
+            <node concept="17FIiu" id="6OirKjsJqRp" role="2LCk$g">
+              <property role="17FHup" value="north" />
+            </node>
+            <node concept="17FIjn" id="6OirKjsJqRt" role="2LCk$j" />
           </node>
         </node>
         <node concept="3jGSmg" id="6OirKjsHb$h" role="17CkHq">

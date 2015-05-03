@@ -89,7 +89,7 @@
   </node>
   <node concept="1TIwiD" id="2PnTnxEYg7A">
     <property role="3GE5qa" value="logical.query" />
-    <property role="TrG5h" value="Looking" />
+    <property role="TrG5h" value="IsLooking" />
     <property role="34LRSv" value="looking" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
     <node concept="1TJgyi" id="2PnTnxEYjbx" role="1TKVEl">

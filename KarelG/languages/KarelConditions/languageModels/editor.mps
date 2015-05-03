@@ -232,5 +232,12 @@
       <node concept="l2Vlx" id="6OirKjsFnNf" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6OirKjsHfPJ">
+    <property role="3GE5qa" value="logical.query" />
+    <ref role="1XX52x" to="9xx6:2PnTnxEYg6J" resolve="IsWallAhead" />
+    <node concept="PMmxH" id="6OirKjsHfQx" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
