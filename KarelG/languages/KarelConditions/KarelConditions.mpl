@@ -7,17 +7,23 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="KarelConditions#3267332360034136804" uuid="ec1be73f-7728-4839-9879-6004dfbdc210">
+    <generator name="" generatorUID="KarelConditions#3267332360034136804" uuid="ec1be73f-7728-4839-9879-6004dfbdc210">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)</dependency>
+        <dependency reexport="false">4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(KarelConditions)</dependency>
+        <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(KarelConditions)</usedLanguage>
+        <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -45,12 +51,13 @@
   </generators>
   <sourcePath />
   <dependencies>
+    <dependency reexport="true">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+    <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
   </usedDevKits>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
