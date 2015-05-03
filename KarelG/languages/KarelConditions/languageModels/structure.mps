@@ -178,5 +178,23 @@
       <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6OirKjsJsjE">
+    <property role="3GE5qa" value="command.control" />
+    <property role="TrG5h" value="While" />
+    <property role="34LRSv" value="while" />
+    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="1TJgyj" id="6OirKjsJsk1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    </node>
+    <node concept="1TJgyj" id="6OirKjsJsk4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CodeBlock" />
+    </node>
+  </node>
 </model>
 

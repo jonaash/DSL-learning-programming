@@ -22,6 +22,12 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
+        <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -192,6 +198,12 @@
       <ref role="30HIoZ" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
       <node concept="j$656" id="2PnTnxF2d0K" role="1lVwrX">
         <ref role="v9R2y" node="2PnTnxF2d0I" resolve="reduce_IfElseStatement" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="6OirKjsJDZ_" role="3acgRq">
+      <ref role="30HIoZ" to="9xx6:6OirKjsJsjE" resolve="While" />
+      <node concept="j$656" id="6OirKjsJEg7" role="1lVwrX">
+        <ref role="v9R2y" node="6OirKjsJEg5" resolve="reduce_While" />
       </node>
     </node>
     <node concept="3aamgX" id="2PnTnxEZS5Q" role="3acgRq">
@@ -765,6 +777,57 @@
         <node concept="Rm8GO" id="6OirKjsIzc8" role="gfFT$">
           <ref role="Rm8GQ" to="4ujd:2RDssu5UQNS" resolve="west" />
           <ref role="1Px2BO" to="4ujd:2RDssu5UQNI" resolve="Direction" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="6OirKjsJEg5">
+    <property role="TrG5h" value="reduce_While" />
+    <property role="3GE5qa" value="command.control" />
+    <ref role="3gUMe" to="9xx6:6OirKjsJsjE" resolve="While" />
+    <node concept="9aQIb" id="6OirKjsJEga" role="13RCb5">
+      <node concept="3clFbS" id="6OirKjsJEgc" role="9aQI4">
+        <node concept="2$JKZl" id="6OirKjsJEgg" role="3cqZAp">
+          <node concept="3clFbS" id="6OirKjsJEgh" role="2LFqv$">
+            <node concept="3clFbF" id="6OirKjsJEun" role="3cqZAp">
+              <node concept="2YIFZM" id="6OirKjsJEuA" role="3clFbG">
+                <ref role="37wK5l" to="rflv:2PnTnxEVkWa" resolve="someCode" />
+                <ref role="1Pybhc" to="rflv:6bh18$pe1oH" resolve="Placeholder" />
+              </node>
+              <node concept="29HgVG" id="6OirKjsJEuV" role="lGtFl">
+                <node concept="3NFfHV" id="6OirKjsJEuW" role="3NFExx">
+                  <node concept="3clFbS" id="6OirKjsJEuX" role="2VODD2">
+                    <node concept="3clFbF" id="6OirKjsJEv3" role="3cqZAp">
+                      <node concept="2OqwBi" id="6OirKjsJEuY" role="3clFbG">
+                        <node concept="3TrEf2" id="6OirKjsJEv1" role="2OqNvi">
+                          <ref role="3Tt5mk" to="9xx6:6OirKjsJsk4" />
+                        </node>
+                        <node concept="30H73N" id="6OirKjsJEv2" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbT" id="6OirKjsJEgs" role="2$JKZa">
+            <property role="3clFbU" value="true" />
+            <node concept="29HgVG" id="6OirKjsJEsp" role="lGtFl">
+              <node concept="3NFfHV" id="6OirKjsJEsq" role="3NFExx">
+                <node concept="3clFbS" id="6OirKjsJEsr" role="2VODD2">
+                  <node concept="3clFbF" id="6OirKjsJEsx" role="3cqZAp">
+                    <node concept="2OqwBi" id="6OirKjsJEss" role="3clFbG">
+                      <node concept="3TrEf2" id="6OirKjsJEsv" role="2OqNvi">
+                        <ref role="3Tt5mk" to="9xx6:6OirKjsJsk1" />
+                      </node>
+                      <node concept="30H73N" id="6OirKjsJEsw" role="2Oq$k0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="raruj" id="6OirKjsJEg$" role="lGtFl" />
         </node>
       </node>
     </node>

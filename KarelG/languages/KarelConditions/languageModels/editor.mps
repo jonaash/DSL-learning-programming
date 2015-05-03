@@ -178,7 +178,7 @@
   </node>
   <node concept="24kQdi" id="2PnTnxEYPov">
     <property role="3GE5qa" value="logical.query" />
-    <ref role="1XX52x" to="9xx6:2PnTnxEYg7A" resolve="Looking" />
+    <ref role="1XX52x" to="9xx6:2PnTnxEYg7A" resolve="IsLooking" />
     <node concept="3EZMnI" id="2PnTnxEYPox" role="2wV5jI">
       <node concept="PMmxH" id="2PnTnxEYPoC" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -237,6 +237,28 @@
     <ref role="1XX52x" to="9xx6:2PnTnxEYg6J" resolve="IsWallAhead" />
     <node concept="PMmxH" id="6OirKjsHfQx" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6OirKjsJslm">
+    <property role="3GE5qa" value="command.control" />
+    <ref role="1XX52x" to="9xx6:6OirKjsJsjE" resolve="While" />
+    <node concept="3EZMnI" id="6OirKjsJsma" role="2wV5jI">
+      <node concept="PMmxH" id="6OirKjsJsmo" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
+      </node>
+      <node concept="l2Vlx" id="6OirKjsJsmd" role="2iSdaV" />
+      <node concept="3F1sOY" id="6OirKjsJsmw" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
+        <ref role="1NtTu8" to="9xx6:6OirKjsJsk1" />
+      </node>
+      <node concept="3F0ifn" id="6OirKjsJsmH" role="3EZMnx">
+        <property role="3F0ifm" value="do" />
+      </node>
+      <node concept="3F1sOY" id="6OirKjsJsmY" role="3EZMnx">
+        <property role="1cu_pB" value="1" />
+        <ref role="1NtTu8" to="9xx6:6OirKjsJsk4" />
+      </node>
     </node>
   </node>
 </model>

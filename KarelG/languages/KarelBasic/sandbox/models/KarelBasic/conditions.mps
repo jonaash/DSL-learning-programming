@@ -35,6 +35,10 @@
         <child id="7859466366388217364" name="left" index="2LCk$g" />
         <child id="7859466366388217367" name="right" index="2LCk$j" />
       </concept>
+      <concept id="7859466366388913386" name="KarelConditions.structure.While" flags="ng" index="2LFUJI">
+        <child id="7859466366388913412" name="body" index="2LFUC0" />
+        <child id="7859466366388913409" name="condition" index="2LFUC5" />
+      </concept>
       <concept id="7859466366387767992" name="KarelConditions.structure.Not" flags="ng" index="2LJymW">
         <child id="7859466366387769030" name="original" index="2LJy72" />
       </concept>
@@ -122,6 +126,19 @@
           </node>
         </node>
         <node concept="3jGSmg" id="6OirKjsHbAK" role="17CkHv" />
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6OirKjsJDQc">
+    <property role="TrG5h" value="While" />
+    <node concept="3jGSmg" id="6OirKjsJDQd" role="3jGSko">
+      <node concept="2LFUJI" id="6OirKjsJDSb" role="3jGSnO">
+        <node concept="3jGSmg" id="6OirKjsJDSc" role="2LFUC0">
+          <node concept="1$shr6" id="6OirKjsJDSw" role="3jGSnO" />
+        </node>
+        <node concept="2LJymW" id="6OirKjsJDSk" role="2LFUC5">
+          <node concept="17FIjn" id="6OirKjsJDSs" role="2LJy72" />
+        </node>
       </node>
     </node>
   </node>
