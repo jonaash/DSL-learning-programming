@@ -134,5 +134,18 @@
     <property role="34LRSv" value="full" />
     <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
   </node>
+  <node concept="1TIwiD" id="6OirKjsF4ES">
+    <property role="3GE5qa" value="logical" />
+    <property role="TrG5h" value="Not" />
+    <property role="34LRSv" value="not" />
+    <property role="R4oN_" value="negation of logical expression" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    <node concept="1TJgyj" id="6OirKjsF4V6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    </node>
+  </node>
 </model>
 

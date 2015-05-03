@@ -117,7 +117,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -156,21 +155,6 @@
     </node>
     <node concept="3aamgX" id="2PnTnxF28xd" role="3acgRq">
       <ref role="30HIoZ" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
-      <node concept="30G5F_" id="2PnTnxF28HJ" role="30HLyM">
-        <node concept="3clFbS" id="2PnTnxF28HK" role="2VODD2">
-          <node concept="3cpWs6" id="6OirKjsB2q2" role="3cqZAp">
-            <node concept="2OqwBi" id="6OirKjsB2q4" role="3cqZAk">
-              <node concept="2OqwBi" id="6OirKjsB2q5" role="2Oq$k0">
-                <node concept="30H73N" id="6OirKjsB2q6" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6OirKjsB2q7" role="2OqNvi">
-                  <ref role="3Tt5mk" to="9xx6:2PnTnxEXESB" />
-                </node>
-              </node>
-              <node concept="3x8VRR" id="6OirKjsB9dM" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="j$656" id="2PnTnxF2d0K" role="1lVwrX">
         <ref role="v9R2y" node="2PnTnxF2d0I" resolve="reduce_IfElseStatement" />
       </node>
@@ -253,8 +237,8 @@
         <node concept="3clFbS" id="2PnTnxEZS97" role="3clF47">
           <node concept="3clFbF" id="2PnTnxEZS9D" role="3cqZAp">
             <node concept="2OqwBi" id="2PnTnxEZSan" role="3clFbG">
-              <node concept="37vLTw" id="2PnTnxEZS9C" role="2Oq$k0">
-                <ref role="3cqZAo" to="rflv:6bh18$peNyU" resolve="robot" />
+              <node concept="37vLTw" id="6OirKjsBOpr" role="2Oq$k0">
+                <ref role="3cqZAo" to="4ujd:7YU6lPWrTFY" resolve="robot" />
               </node>
               <node concept="liA8E" id="2PnTnxF0tX6" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:2PnTnxEZTyK" resolve="isFull" />
