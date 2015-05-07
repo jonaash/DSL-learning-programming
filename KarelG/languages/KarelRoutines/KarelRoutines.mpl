@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="KarelBasic" uuid="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" version="1">
+<language namespace="KarelRoutines" uuid="08d5407d-ddf2-4c39-a447-cf6cdd05e98b" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,26 +7,25 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="KarelBasic#3640435696255147963" uuid="aef79034-b65a-4990-a1ad-bac27333a76b">
+    <generator generatorUID="KarelRoutines#4942585347623814232" uuid="759dce26-2282-4fcd-af95-651d55e87e76">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
-      <dependencies>
-        <dependency reexport="true">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
-      </dependencies>
       <usedLanguages>
-        <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
+        <usedLanguage>08d5407d-ddf2-4c39-a447-cf6cdd05e98b(KarelRoutines)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="KarelBasic" version="0" />
+        <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="KarelBasic" version="1" />
+        <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" fqName="KarelConditions" version="0" />
+        <language id="08d5407d-ddf2-4c39-a447-cf6cdd05e98b" fqName="KarelRoutines" version="-1" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -46,14 +45,17 @@
     </generator>
   </generators>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</dependency>
-    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-  </dependencies>
+  <usedLanguages>
+    <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>
+    <usedLanguage>08d5407d-ddf2-4c39-a447-cf6cdd05e98b(KarelRoutines)</usedLanguage>
+  </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="KarelBasic" version="1" />
+    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" fqName="KarelConditions" version="0" />
+    <language id="08d5407d-ddf2-4c39-a447-cf6cdd05e98b" fqName="KarelRoutines" version="-1" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -63,6 +65,7 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" fqName="jetbrains.mps.baseLanguage.logging" version="0" />
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" fqName="jetbrains.mps.baseLanguage.tuples" version="0" />
     <language id="df345b11-b8c7-4213-ac66-48d2a9b75d88" fqName="jetbrains.mps.baseLanguageInternal" version="0" />
+    <language id="4caf0310-491e-41f5-8a9b-2006b3a94898" fqName="jetbrains.mps.execution.util" version="0" />
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" fqName="jetbrains.mps.lang.actions" version="0" />
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" fqName="jetbrains.mps.lang.behavior" version="0" />
     <language id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" fqName="jetbrains.mps.lang.checkedName" version="0" />
@@ -86,7 +89,8 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
   </languageVersions>
   <extendedLanguages>
-    <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>
+    <extendedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(KarelConditions)</extendedLanguage>
+    <extendedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</extendedLanguage>
   </extendedLanguages>
 </language>
 
