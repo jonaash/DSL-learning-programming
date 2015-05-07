@@ -811,7 +811,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Add printMessage and show alert commands to KarelBasic language" />
     <MESSAGE value="nova verze api" />
     <MESSAGE value="change trace and turnLeft command name and alias, add put and pick mark commands" />
     <MESSAGE value="check for null before calling gui" />
@@ -836,7 +835,8 @@
     <MESSAGE value="rename CodeBlock to CommandList, move braces from CodeBlock to each single control concept" />
     <MESSAGE value="remove workspace.xml from repository" />
     <MESSAGE value="new build script output" />
-    <option name="LAST_COMMIT_MESSAGE" value="new build script output" />
+    <MESSAGE value="remove workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove workspace.xml" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://KarelConditions#3267332360034136804/KarelConditions.generator.template.main@generator/ReduceDirectionEnum">
