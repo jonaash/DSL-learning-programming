@@ -78,7 +78,7 @@
     <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsWallAhead" />
     <property role="34LRSv" value="wall ahead" />
-    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEXERC">
     <property role="TrG5h" value="LogicalExpression" />
@@ -113,26 +113,26 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="trueBranch" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CodeBlock" />
+      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     </node>
     <node concept="1TJgyj" id="2PnTnxEXESB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="falseBranch" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CodeBlock" />
+      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEYLhr">
     <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsMark" />
     <property role="34LRSv" value="mark" />
-    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEYLin">
     <property role="3GE5qa" value="logical.query" />
     <property role="TrG5h" value="IsFull" />
     <property role="34LRSv" value="full" />
-    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
+    <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="6OirKjsF4ES">
     <property role="3GE5qa" value="logical.operator" />
@@ -193,8 +193,15 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CodeBlock" />
+      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5eWJqD2l4JP">
+    <property role="3GE5qa" value="logical.query" />
+    <property role="TrG5h" value="NullaryLogicalQuery" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2PnTnxEXERC" resolve="LogicalExpression" />
   </node>
 </model>
 

@@ -176,22 +176,6 @@
       <node concept="l2Vlx" id="2PnTnxF1QBo" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="2PnTnxEYPma">
-    <property role="3GE5qa" value="logical.query" />
-    <ref role="1XX52x" to="9xx6:2PnTnxEYLin" resolve="IsFull" />
-    <node concept="PMmxH" id="2PnTnxEYPmf" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2PnTnxEYPmm">
-    <property role="3GE5qa" value="logical.query" />
-    <ref role="1XX52x" to="9xx6:2PnTnxEYLhr" resolve="IsMark" />
-    <node concept="PMmxH" id="2PnTnxEYPmo" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2PnTnxEYPov">
     <property role="3GE5qa" value="logical.query" />
     <ref role="1XX52x" to="9xx6:2PnTnxEYg7A" resolve="IsLooking" />
@@ -248,13 +232,6 @@
       <node concept="l2Vlx" id="6OirKjsFnNf" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="6OirKjsHfPJ">
-    <property role="3GE5qa" value="logical.query" />
-    <ref role="1XX52x" to="9xx6:2PnTnxEYg6J" resolve="IsWallAhead" />
-    <node concept="PMmxH" id="6OirKjsHfQx" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6OirKjsJslm">
     <property role="3GE5qa" value="command.control" />
     <ref role="1XX52x" to="9xx6:6OirKjsJsjE" resolve="While" />
@@ -275,6 +252,13 @@
         <property role="1cu_pB" value="1" />
         <ref role="1NtTu8" to="9xx6:6OirKjsJsk4" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5eWJqD2l4Lw">
+    <property role="3GE5qa" value="logical.query" />
+    <ref role="1XX52x" to="9xx6:5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
+    <node concept="PMmxH" id="5eWJqD2lcus" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
