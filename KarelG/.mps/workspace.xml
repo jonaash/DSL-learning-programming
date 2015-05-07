@@ -6,14 +6,8 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="generator fix - generating both language at same time, remove template fragment from StatementList">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/sandbox/models/KarelBasic/conditions.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/sandbox/models/KarelBasic/conditions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelConditions/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/KarelConditions/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelConditions/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/KarelConditions/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" afterPath="$PROJECT_DIR$/solutions/KarelJava/models/JavaKarel/runtime.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
+    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="rename CodeBlock to CommandList, move braces from CodeBlock to each single control concept">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="" />
     </list>
     <ignored path="KarelG.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -30,7 +24,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="kaurqQAABAAHKBE+5bXE90WFqZYpeaR/9ZEAAB1UZW1wTW9kZWxfMTQzMDk4OTMyMTUzODQyNzAwMBdI62hjw4RQSeGbpPsUxgyx4QAALlRlbXBNb2R1bGVlYjY4NjNjMy04NDUwLTQ5ZTEtOWJhNC1mYjE0YzYwY2IxZTH/////q6urq1paWloAB/MGGlOSJkzFpEP5Us6vWBYAABpqZXRicmFpbnMubXBzLmJhc2VMYW5ndWFnZQAGQx1SpdCaTqkAAA1VbmRlZmluZWRUeXBlEhIAAAAAAAAAAAEWtGoIxAAADURvdEV4cHJlc3Npb24CEgAAAAAAAgAAARa0akQWAAAHb3BlcmFuZAAAAAEWtGs2xAAACW9wZXJhdGlvbgAAAAD4x38emAAAEVZhcmlhYmxlUmVmZXJlbmNlAhIAAAABAAAA+Mxr+WAAABN2YXJpYWJsZURlY2xhcmF0aW9uAABFA2jZDOFbwwAAF0Jhc2VWYXJpYWJsZURlY2xhcmF0aW9uABIAAAAAAAFO1NMYEzyAzgAABHR5cGUAAAAA+MxWshMAABNFeHByZXNzaW9uU3RhdGVtZW50AhIAAAAAAAEAAAD4zFayFAAACmV4cHJlc3Npb24AAAAA+MxWsgAAAA1TdGF0ZW1lbnRMaXN0MhNJddwr3PoMSQAAAAAAAQAAAPjMa/lhAAAJc3RhdGVtZW50AP05IDR4SUGdkHESVj0VI3UAACNqZXRicmFpbnMubXBzLmJhc2VMYW5ndWFnZS5jbG9zdXJlcwABAAABF0vtMSUAAA5DbG9zdXJlTGl0ZXJhbAISAAAAAAACAAABF0vwLDQAAAlwYXJhbWV0ZXIAAAABF0vwUi8AAARib2R5AHhml46g8EzHgbxNIT2TdeEAABlqZXRicmFpbnMubXBzLmxhbmcuc21vZGVsAAIAAAESDEWQLAAAFFJlZkNvbmNlcHRfUmVmZXJlbmNlAhIAAAABAAABEgxF0CQAABJjb25jZXB0RGVjbGFyYXRpb24AAAAAAQj5cMEZAAAPU0xpbmtMaXN0QWNjZXNzAhIAAAABAAABCPl0yWIAAARsaW5rAADOq1GVJepPIpuSEDuVyowMAAAXamV0YnJhaW5zLm1wcy5sYW5nLmNvcmUAAQAAARA5bqqkAAANSU5hbWVkQ29uY2VwdAASAAEAAAEQOW7AQQAABG5hbWUAAAAAGoVUxOuEQ7qMNG8NkMbnWgAAH2pldGJyYWlucy5tcHMuY29uc29sZS5ibENvbW1hbmQABGpAo1llYKnZAAAMQkxFeHByZXNzaW9uABIAAAAAAAFqQKNZZWCqQgEAAAAMAGtkPzNxiqENAAATSW5zdGFuY2VzRXhwcmVzc2lvbgASAAAAAAABa2Q/M3GKoQ4AAApjb25jZXB0QXJnADvGRCF2C6z9AAAPUXVlcnlFeHByZXNzaW9uABIAAAAAAAE7xkQhdhblSAEAAAARADvGRCF2Ft35AAASUXVlcnlQYXJhbWV0ZXJMaXN0ABIAAAAAAACDiIZGcc5PHJxTxUAW9q1PAAAmamV0YnJhaW5zLm1wcy5iYXNlTGFuZ3VhZ2UuY29sbGVjdGlvbnMABAAAARiDcolaAAAZSW50ZXJuYWxTZXF1ZW5jZU9wZXJhdGlvbgISAAAAAAABAAABGIN0hFIAAAdjbG9zdXJlAAAAARg3RGTkAAAgU21hcnRDbG9zdXJlUGFyYW1ldGVyRGVjbGFyYXRpb24QEgAAAAAAAAAAARfj/UXEAAAOV2hlcmVPcGVyYXRpb24CEgAAAAAAAAAAARHs9CO3AAATSXNOb3RFbXB0eU9wZXJhdGlvbgISAAAAAAAA3hrYbW5QSgKzBtTRf2TDdQAAGmpldGJyYWlucy5tcHMuY29uc29sZS5iYXNlAAcPbU2VjsLyxgAAD05vZGVXaXRoQ2xvc3VyZQASAAAAAAAAFfs0BR9yWiwAAAtDb25zb2xlUm9vdAASAAAAAAACFfs0BR9yW68AAAdoaXN0b3J5ABX7NAUfcluxAAANY29tbWFuZEhvbGRlcgAglezlO7n1sAAACklDbGlja2FibGUAEgABNgsTT8BHzioAAAR0ZXh0AAAAAATicWCstEhLAAANQ29tbWFuZEhvbGRlcgASAAAAAAABBOJxYKy0SSQAAAdjb21tYW5kAE47A1Fxs1wUAAAQTm9kZVJlc3BvbnNlSXRlbQASAAAAAAABTjsDUXGzXBUAAARub2RlAE47A1FxpboCAAAIUmVzcG9uc2UAEgAAAAAAAU47A1Fxs1btAAAEaXRlbQAKg18owaoCvgAAB0hpc3RvcnkAEgAAAAAAAWPaM3krXfSaAQAAADMApaWlpQAF3hrYbW5QSgKzBtTRf2TDdQEAAAAn//////JmkdIN70wGrsYsuQxK8KQAAB1qZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0c/////8ahVTE64RDuow0bw2QxudaAQAAABv/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAcHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////BygAAAAAAABAAAAAARyJWQKIAAAhamV0YnJhaW5zLm1wcy5sYW5nLmNvcmUuc3RydWN0dXJlcP////8HKAAAAAAAAEAAAAABHIlZAsoAACRqZXRicmFpbnMubXBzLmJhc2VMYW5ndWFnZS5zdHJ1Y3R1cmVw/////7q6uroAAAABABMYRQ+AHlFZz3D//3sAAAAAAAAAAAACABgYRQ+AHlFZz3EAC3sAAAAAAAAAAAAEABUYRQ+AHlF/UMQAEHsAAQAAAQAAAC4AAAAAAAAAAQAKGEUPgB5Rf1DFAA17AAAAAAAAAAAAAQABGEUPgB5Rf1DGAAd7AAAAAAAAAAAAAgALGEUPgB5Rf1DHAAB7AAAAAAAAAAAAAgAHGEUPgB5Rf1DIAAh7AAAAAAABAAEBGAAAAPjMVrIAEgkAAAAHAQAAAA0AAAAAfQANGEUPgB5Rf1DJAAl7AAAAAAAAAAAAAH19ABAYRQ+AHlF/UMoAAXsAAAAAAAAAAAABAAYYRQ+AHlF/UMsACnsAAAAAAAAAAAACAAUYRQ+AHlF/UMwABnsAAAAAAAAAAAABAAQYRQ+AHlF/UM0ABHsAAAAAAAAAAAABAAEYRQ+AHlF/UM4AA3sAAAAAAAAAAAACAAEYRQ+AHlF/UM8AAHsAAAAAAAAAAAACAAIYRQ+AHlF/UNAAAHsAAAAAAAEAAAEYRQ+AHlF/UNMRAAACaXQAAAAAfQAIGEUPgB5Rf1DRAAF7AAAAAAABAAIBGEe/g5dSDllCEgkAAAAGcAAAAAB9fQARGEUPgB5Rf1DSAAF7AAAAAAAAAAAAAH19fX0ADxhFD4AeUX9Q0wAFewABAAABAAAAQAAAAAAAAAABAAAYRQ+AHlF/UNQAAnsAAAAAAAAAAAAAfX19fX19fQAXGEUPgB5Rf1DnABB7AAAAAAAAAAAAAQAWGEUPgB5Rf1DoAA97AAAAAAAAAAAAAQASGEUPgB5Rf1DmAA57AAEAAQAABzMgbm9kZXMAAAAAAAAAAH19fQAVGEUPgB5RhU7uABB7AAEAAAEAAAAuAAAAAAAAAAEAChhFD4AeUYVO7wANewAAAAAAAAAAAAEAARhFD4AeUYVO8AAHewAAAAAAAAAAAAIACxhFD4AeUYVO8QAAewAAAAAAAAAAAAIABxhFD4AeUYVO8gAIewAAAAAAAQABARgAAAD4zFayABIJAAAABwEAAAANAAAAAH0ADRhFD4AeUYVO8wAJewAAAAAAAAAAAAB9fQAQGEUPgB5RhU70AAF7AAAAAAAAAAAAAQAGGEUPgB5RhU71AAp7AAAAAAAAAAAAAgAFGEUPgB5RhU72AAZ7AAAAAAAAAAAAAQAEGEUPgB5RhU73AAR7AAAAAAAAAAAAAQABGEUPgB5RhU74AAN7AAAAAAAAAAAAAgABGEUPgB5RhU75AAB7AAAAAAAAAAAAAgACGEUPgB5RhU76AAB7AAAAAAABAAABGEUPgB5RhU79EQEAAABAAAAAAH0ACBhFD4AeUYVO+wABewAAAAAAAQACARhHv4OXUg5ZQhIJAAAABnAAAAAAfX0AERhFD4AeUYVO/AABewAAAAAAAAAAAAB9fX19AA8YRQ+AHlGFTv0ABXsAAQAAAQAAAEAAAAAAAAAAAQAAGEUPgB5RhU7+AAJ7AAAAAAAAAAAAAH19fX19fX0AFxhFD4AeUYVPJQAQewAAAAAAAAAAAAEAFhhFD4AeUYVPJgAPewAAAAAAAAAAAAEAEhhFD4AeUYVPJAAOewABAAEAAAcyIG5vZGVzAAAAAAAAAAB9fX19ABUYRQ+AHlFZz3IADHsAAQAAAQAAAC4AAAAAAAAAAH19" />
+          <option name="history" value="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BtTRf2TDdQEAAAAn//////JmkdIN70wGrsYsuQxK8KQAAB1qZXRicmFpbnMubXBzLmNvbnNvbGUuc2NyaXB0c/////8ahVTE64RDuow0bw2QxudaAQAAABv/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAcHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////BygAAAAAAABAAAAAARyJWQKIAAAhamV0YnJhaW5zLm1wcy5sYW5nLmNvcmUuc3RydWN0dXJlcP////8HKAAAAAAAAEAAAAABHIlZAsoAACRqZXRicmFpbnMubXBzLmJhc2VMYW5ndWFnZS5zdHJ1Y3R1cmVw/////7q6uroAAAABABMYOkoKiYSl5u///3sAAAAAAAAAAAACABgYOkoKiYSl5yUAC3sAAAAAAAAAAAAEABUYOkoKiYSl5yYAEHsAAQAAAQAAAC4AAAAAAAAAAQAKGDpKComEpecnAA17AAAAAAAAAAAAAQABGDpKComEpecoAAd7AAAAAAAAAAAAAgALGDpKComEpecpAAB7AAAAAAAAAAAAAgAHGDpKComEpecqAAh7AAAAAAABAAEBGAAAAPjMVrIAEgkAAAAHAQAAAA0AAAAAfQANGDpKComEpecrAAl7AAAAAAAAAAAAAH19ABAYOkoKiYSl5ywAAXsAAAAAAAAAAAABAAYYOkoKiYSl5y0ACnsAAAAAAAAAAAACAAUYOkoKiYSl5y4ABnsAAAAAAAAAAAABAAQYOkoKiYSl5y8ABHsAAAAAAAAAAAABAAEYOkoKiYSl5zAAA3sAAAAAAAAAAAACAAEYOkoKiYSl5zEAAHsAAAAAAAAAAAACAAIYOkoKiYSl5zIAAHsAAAAAAAEAAAEYOkoKiYSl5zURAAACaXQAAAAAfQAIGDpKComEpeczAAF7AAAAAAABAAIBGEe/g5dSDllCEgkAAAAGcAAAAAB9fQARGDpKComEpec0AAF7AAAAAAAAAAAAAH19fX0ADxg6SgqJhKXnNQAFewABAAABAAAAQAAAAAAAAAABAAAYOkoKiYSl5zYAAnsAAAAAAAAAAAAAfX19fX19fQAXGDpKComEpec3ABB7AAAAAAAAAAAAAQAWGDpKComEpec4AA97AAAAAAAAAAAAAQASGDpKComEpec5AA57AAEAAQAABzMgbm9kZXMAAAAAAAAAAH19fQAVGDpKComEpec6ABB7AAEAAAEAAAAuAAAAAAAAAAEAChg6SgqJhKXnOwANewAAAAAAAAAAAAEAARg6SgqJhKXnPAAHewAAAAAAAAAAAAIACxg6SgqJhKXnPQAAewAAAAAAAAAAAAIABxg6SgqJhKXnPgAIewAAAAAAAQABARgAAAD4zFayABIJAAAABwEAAAANAAAAAH0ADRg6SgqJhKXnPwAJewAAAAAAAAAAAAB9fQAQGDpKComEpedAAAF7AAAAAAAAAAAAAQAGGDpKComEpedBAAp7AAAAAAAAAAAAAgAFGDpKComEpedCAAZ7AAAAAAAAAAAAAQAEGDpKComEpedDAAR7AAAAAAAAAAAAAQABGDpKComEpedEAAN7AAAAAAAAAAAAAgABGDpKComEpedFAAB7AAAAAAAAAAAAAgACGDpKComEpedGAAB7AAAAAAABAAABGDpKComEpedJEQEAAABAAAAAAH0ACBg6SgqJhKXnRwABewAAAAAAAQACARhHv4OXUg5ZQhIJAAAABnAAAAAAfX0AERg6SgqJhKXnSAABewAAAAAAAAAAAAB9fX19AA8YOkoKiYSl50kABXsAAQAAAQAAAEAAAAAAAAAAAQAAGDpKComEpedKAAJ7AAAAAAAAAAAAAH19fX19fX0AFxg6SgqJhKXnSwAQewAAAAAAAAAAAAEAFhg6SgqJhKXnTAAPewAAAAAAAAAAAAEAEhg6SgqJhKXnTQAOewABAAEAAAcyIG5vZGVzAAAAAAAAAAB9fX19ABUYOkoKiYSl504ADHsAAQAAAQAAAC4AAAAAAAAAAH19" />
         </TabState>
       </list>
     </option>
@@ -439,7 +433,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="FileSystem" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,124 +461,18 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
+            <PATH_ELEMENT USER_OBJECT="GuiLib">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.editor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.editor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="command">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.editor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="command">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="control">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.sandbox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.sandbox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.sandbox">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelBasic.conditions">
+            <PATH_ELEMENT USER_OBJECT="stubs">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -734,7 +622,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298122" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.4989429" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25821596" sideWeight="0.5017618" order="7" side_tool="true" content_ui="tabs" />
@@ -745,26 +633,26 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24061033" sideWeight="0.4982382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21916842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.49964765" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25821596" sideWeight="0.5017618" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25821596" sideWeight="0.5017618" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.4982382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39906102" sideWeight="0.49964765" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25821596" sideWeight="0.4982382" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25764707" sideWeight="0.4982382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24061033" sideWeight="0.4982382" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39906102" sideWeight="0.49964765" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3111588" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -775,8 +663,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -797,8 +685,8 @@
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24765258" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
-      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3090129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="KarelView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3090129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -830,7 +718,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="update workspace" />
     <MESSAGE value="check Compile in MPS option to fix build errors, temporaly change plugin type to NONE in order to not use Plugin" />
     <MESSAGE value="Update buildDistribution home variable" />
     <MESSAGE value="Add printMessage and show alert commands to KarelBasic language" />
@@ -855,7 +742,8 @@
     <MESSAGE value="add language for KarelRoutines, fix style dependency" />
     <MESSAGE value="delete generated files" />
     <MESSAGE value="generator fix - generating both language at same time, remove template fragment from StatementList" />
-    <option name="LAST_COMMIT_MESSAGE" value="generator fix - generating both language at same time, remove template fragment from StatementList" />
+    <MESSAGE value="rename CodeBlock to CommandList, move braces from CodeBlock to each single control concept" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename CodeBlock to CommandList, move braces from CodeBlock to each single control concept" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://KarelRoutines/KarelRoutines.structure/RoutineDefinition">
