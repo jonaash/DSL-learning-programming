@@ -6,10 +6,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="new build script output">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/KarelBasic/languageModels/structure.mps" />
-    </list>
+    <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="new build script output" />
     <ignored path="KarelG.iws" />
     <ignored path=".mps/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
