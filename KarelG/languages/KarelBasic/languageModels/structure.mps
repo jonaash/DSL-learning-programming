@@ -81,12 +81,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1IJMvjRjER" resolve="CodeBlock" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
     </node>
   </node>
   <node concept="1TIwiD" id="1IJMvjRjER">
     <property role="3GE5qa" value="command" />
-    <property role="TrG5h" value="CodeBlock" />
+    <property role="TrG5h" value="CommandList" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="1IJMvjRjFj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -143,7 +143,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1IJMvjRjER" resolve="CodeBlock" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
     </node>
     <node concept="1TJgyi" id="2PnTnxEUkMC" role="1TKVEl">
       <property role="TrG5h" value="iterations" />

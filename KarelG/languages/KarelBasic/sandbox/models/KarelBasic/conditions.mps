@@ -16,7 +16,7 @@
       <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
-      <concept id="31172425217292983" name="KarelBasic.structure.CodeBlock" flags="ng" index="3jGSmg">
+      <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
       <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
@@ -88,11 +88,9 @@
           <node concept="1$shr6" id="6OirKjsAZRq" role="3jGSnO" />
           <node concept="17GwzG" id="6OirKjsBaWg" role="3jGSnO" />
         </node>
-        <node concept="3jGSmg" id="2PnTnxF5MKj" role="17CkHv">
-          <node concept="17J3f2" id="2PnTnxF5MKE" role="3jGSnO" />
-        </node>
+        <node concept="3jGSmg" id="2PnTnxF5MKj" role="17CkHv" />
       </node>
-      <node concept="17J3f2" id="6OirKjsAISP" role="3jGSnO" />
+      <node concept="17J3f2" id="4kfw1ThAKWM" role="3jGSnO" />
     </node>
   </node>
   <node concept="1$vsWe" id="6OirKjsFTzM">
@@ -156,6 +154,18 @@
           </node>
         </node>
       </node>
+      <node concept="17CkzI" id="4kfw1ThAV6d" role="3jGSnO">
+        <node concept="17Ff7J" id="4kfw1ThAV6w" role="17CkHB" />
+        <node concept="3jGSmg" id="4kfw1ThAV6h" role="17CkHq" />
+        <node concept="3jGSmg" id="4kfw1ThAV6j" role="17CkHv" />
+      </node>
+      <node concept="17CkzI" id="4kfw1ThB6QS" role="3jGSnO">
+        <node concept="17Ff7J" id="4kfw1ThB6Rf" role="17CkHB" />
+        <node concept="3jGSmg" id="4kfw1ThB6QW" role="17CkHq" />
+        <node concept="3jGSmg" id="4kfw1ThB6QY" role="17CkHv" />
+      </node>
+      <node concept="17J3f2" id="4kfw1ThF8A7" role="3jGSnO" />
+      <node concept="17J3f2" id="4kfw1ThA4HI" role="3jGSnO" />
     </node>
   </node>
 </model>

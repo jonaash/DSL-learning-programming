@@ -9,9 +9,9 @@
   <imports>
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" implicit="true" />
     <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -40,7 +40,6 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -105,22 +104,29 @@
       <node concept="PMmxH" id="2PnTnxEXETT" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
+        <node concept="VPxyj" id="4kfw1ThEAJN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="2PnTnxEZaip" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
-        <property role="1$x2rV" value="Enter condition" />
+        <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="9xx6:2PnTnxEXESv" />
       </node>
       <node concept="3F0ifn" id="2PnTnxEXEUe" role="3EZMnx">
         <property role="3F0ifm" value="then" />
         <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
       </node>
+      <node concept="3F0ifn" id="4kfw1ThEpKx" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="y2uj:4kfw1ThDqQE" resolve="OpenBrace" />
+      </node>
       <node concept="3F1sOY" id="2PnTnxEXEVg" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="9xx6:2PnTnxEXESy" />
       </node>
       <node concept="3F0ifn" id="2PnTnxF5AX4" role="3EZMnx">
-        <property role="3F0ifm" value="e" />
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="y2uj:4kfw1ThDqVq" resolve="CloseBrace" />
         <node concept="2V7CMv" id="2PnTnxF5B5k" role="3F10Kt">
           <property role="2V7CMs" value="ext_1_RTransform" />
         </node>
@@ -133,9 +139,17 @@
           <property role="3F0ifm" value="else" />
           <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
         </node>
+        <node concept="3F0ifn" id="4kfw1ThEqaa" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+          <ref role="1k5W1q" to="y2uj:4kfw1ThDqQE" resolve="OpenBrace" />
+        </node>
         <node concept="3F1sOY" id="2PnTnxEXFWX" role="3EZMnx">
-          <property role="1cu_pB" value="1" />
+          <property role="1cu_pB" value="0" />
           <ref role="1NtTu8" to="9xx6:2PnTnxEXESB" />
+        </node>
+        <node concept="3F0ifn" id="4kfw1ThEqsW" role="3EZMnx">
+          <property role="3F0ifm" value="}" />
+          <ref role="1k5W1q" to="y2uj:4kfw1ThDqVq" resolve="CloseBrace" />
         </node>
         <node concept="l2Vlx" id="2PnTnxF1QTX" role="2iSdaV" />
         <node concept="pkWqt" id="2PnTnxF5Exy" role="pqm2j">
