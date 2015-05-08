@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4fqr" ref="4caf0310-491e-41f5-8a9b-2006b3a94898/r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util/jetbrains.mps.execution.util.structure)" implicit="true" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="4caf0310-491e-41f5-8a9b-2006b3a94898/r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util/jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -82,6 +82,12 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    </node>
+    <node concept="1TJgyj" id="5eWJqD2oDD2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="routines" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4in_MZdaKkC" resolve="RoutineDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="1IJMvjRjER">
@@ -164,6 +170,32 @@
     <node concept="1TJgyi" id="2PnTnxEUXAJ" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4in_MZdaLTz">
+    <property role="TrG5h" value="RoutineCall" />
+    <property role="3GE5qa" value="routine" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="1TJgyj" id="5eWJqD2o_UE" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4in_MZdaKkC" resolve="RoutineDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4in_MZdaKkC">
+    <property role="TrG5h" value="RoutineDefinition" />
+    <property role="3GE5qa" value="routine" />
+    <property role="34LRSv" value="routine" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5eWJqD2oA9T" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5eWJqD2oA9V" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
     </node>
   </node>
 </model>

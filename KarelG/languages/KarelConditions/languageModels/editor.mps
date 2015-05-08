@@ -259,6 +259,7 @@
     <ref role="1XX52x" to="9xx6:5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
     <node concept="PMmxH" id="5eWJqD2lcus" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
     </node>
   </node>
 </model>

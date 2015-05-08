@@ -971,6 +971,18 @@
               <ref role="3bR37D" node="1JtUjhLyCzx" resolve="JavaKarel" />
             </node>
           </node>
+          <node concept="1SiIV0" id="5eWJqD2pqBj" role="3bR37C">
+            <node concept="3bR9La" id="5eWJqD2pqBk" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5eWJqD2pqBl" role="3bR37C">
+            <node concept="3bR9La" id="5eWJqD2pqBm" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4ccDGGISn_I" role="3bR37C">
           <node concept="3bR9La" id="4ccDGGISn_J" role="1SiIV1">
