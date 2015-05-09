@@ -6,9 +6,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -34,6 +34,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
@@ -181,6 +182,28 @@
       <node concept="3Tm1VV" id="2WqFKNDRDv7" role="1B3o_S" />
       <node concept="3clFbS" id="2WqFKNDRDv9" role="3clF47" />
       <node concept="3bZ5Sz" id="2WqFKNDROm8" role="3clF45">
+        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2WqFKNDSG2P">
+    <property role="3GE5qa" value="expression" />
+    <ref role="13h7C2" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="13hLZK" id="2WqFKNDSG2Q" role="13h7CW">
+      <node concept="3clFbS" id="2WqFKNDSG2R" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2WqFKNDSG3A" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" node="2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="2WqFKNDSG3B" role="1B3o_S" />
+      <node concept="3clFbS" id="2WqFKNDSG3E" role="3clF47">
+        <node concept="3cpWs6" id="2WqFKNDSGer" role="3cqZAp">
+          <node concept="10Nm6u" id="2WqFKNDSGeE" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="2WqFKNDSG3F" role="3clF45">
         <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
