@@ -213,7 +213,7 @@
   </node>
   <node concept="1TIwiD" id="2WqFKNDQKEn">
     <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="IntegerConstant" />
+    <property role="TrG5h" value="IntegerLiteral" />
     <ref role="1TJDcQ" node="2WqFKNDO2Bn" resolve="IntegerExpression" />
     <node concept="1TJgyi" id="2WqFKNDQKFn" role="1TKVEl">
       <property role="TrG5h" value="value" />
