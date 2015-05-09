@@ -59,6 +59,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -119,6 +125,23 @@
       <node concept="10Oyi0" id="2WqFKNDQKFW" role="3clF45" />
       <node concept="3clFbS" id="2WqFKNDQKFN" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="2WqFKNDROh9" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" node="2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="2WqFKNDROha" role="1B3o_S" />
+      <node concept="3clFbS" id="2WqFKNDROhd" role="3clF47">
+        <node concept="3cpWs6" id="2WqFKNDROkh" role="3cqZAp">
+          <node concept="35c_gC" id="2WqFKNDROn2" role="3cqZAk">
+            <ref role="35c_gD" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+          </node>
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="2WqFKNDROly" role="3clF45">
+        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="2WqFKNDQKG7">
     <property role="3GE5qa" value="expression.number" />
@@ -143,6 +166,23 @@
         </node>
       </node>
       <node concept="10Oyi0" id="2WqFKNDQKGf" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2WqFKNDRDv3">
+    <property role="3GE5qa" value="type" />
+    <ref role="13h7C2" to="dyrx:2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    <node concept="13hLZK" id="2WqFKNDRDv4" role="13h7CW">
+      <node concept="3clFbS" id="2WqFKNDRDv5" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2WqFKNDRDv6" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="2WqFKNDRDv7" role="1B3o_S" />
+      <node concept="3clFbS" id="2WqFKNDRDv9" role="3clF47" />
+      <node concept="3bZ5Sz" id="2WqFKNDROm8" role="3clF45">
+        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
     </node>
   </node>
 </model>

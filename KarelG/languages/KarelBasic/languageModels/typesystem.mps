@@ -9,6 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -84,6 +85,9 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
         <child id="1227096836496" name="messageTarget" index="2OEWyd" />
@@ -109,8 +113,12 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1144101597970" name="jetbrains.mps.lang.smodel.structure.OperationParm_Root" flags="ng" index="1xLf8o" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -120,6 +128,9 @@
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -322,6 +333,63 @@
     <node concept="1YaCAy" id="5eWJqD2tnQ0" role="1YuTPh">
       <property role="TrG5h" value="routineDefinition" />
       <ref role="1YaFvo" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2WqFKNDRwy3">
+    <property role="TrG5h" value="check_RepeatIterationIsNumberExpression" />
+    <node concept="3clFbS" id="2WqFKNDRwy4" role="18ibNy">
+      <node concept="3clFbJ" id="2WqFKNDRwyp" role="3cqZAp">
+        <node concept="3clFbS" id="2WqFKNDRwyq" role="3clFbx">
+          <node concept="2MkqsV" id="2WqFKNDRxJY" role="3cqZAp">
+            <node concept="1YBJjd" id="2WqFKNDRxLo" role="2OEOjV">
+              <ref role="1YBMHb" node="2WqFKNDRwy6" resolve="repeat" />
+            </node>
+            <node concept="Xl_RD" id="2WqFKNDRxKd" role="2MkJ7o">
+              <property role="Xl_RC" value="Iteration count must be a number." />
+            </node>
+            <node concept="2OE7Q9" id="2WqFKNDRxOK" role="2OEWyd">
+              <ref role="2OEe5H" to="dyrx:2WqFKNDQRsu" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="2WqFKNDSbUI" role="3clFbw">
+          <node concept="2OqwBi" id="2WqFKNDScPp" role="3uHU7w">
+            <node concept="2OqwBi" id="2WqFKNDScur" role="2Oq$k0">
+              <node concept="2OqwBi" id="2WqFKNDSbZ2" role="2Oq$k0">
+                <node concept="1YBJjd" id="2WqFKNDSbWu" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2WqFKNDRwy6" resolve="repeat" />
+                </node>
+                <node concept="3TrEf2" id="2WqFKNDScio" role="2OqNvi">
+                  <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2WqFKNDScLD" role="2OqNvi">
+                <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+              </node>
+            </node>
+            <node concept="2Zo12i" id="2WqFKNDSdeV" role="2OqNvi">
+              <node concept="chp4Y" id="2WqFKNDSdhD" role="2Zo12j">
+                <ref role="cht4Q" to="dyrx:2WqFKNDO2Bn" resolve="IntegerExpression" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2WqFKNDRx28" role="3uHU7B">
+            <node concept="2OqwBi" id="2WqFKNDRw$t" role="3uHU7B">
+              <node concept="1YBJjd" id="2WqFKNDRwyC" role="2Oq$k0">
+                <ref role="1YBMHb" node="2WqFKNDRwy6" resolve="repeat" />
+              </node>
+              <node concept="3TrEf2" id="2WqFKNDRwQP" role="2OqNvi">
+                <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="2WqFKNDRx3i" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2WqFKNDRwy6" role="1YuTPh">
+      <property role="TrG5h" value="repeat" />
+      <ref role="1YaFvo" to="dyrx:2PnTnxEUkye" resolve="Repeat" />
     </node>
   </node>
 </model>

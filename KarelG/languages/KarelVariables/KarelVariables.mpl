@@ -47,6 +47,8 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(KarelConditions)</dependency>
+    <dependency reexport="false">53b38693-ceee-4191-9779-c7bca6c13739(KarelVariables)</dependency>
+    <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(KarelConditions)</usedLanguage>

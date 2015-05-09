@@ -10,10 +10,7 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
-      <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
-        <child id="31172425217293011" name="commands" index="3jGSnO" />
-      </concept>
+      <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
@@ -26,9 +23,7 @@
   </registry>
   <node concept="1$vsWe" id="2WqFKNDOciS">
     <property role="TrG5h" value="Vars" />
-    <node concept="3jGSmg" id="2WqFKNDOciT" role="3jGSko">
-      <node concept="17J3f2" id="2WqFKNDQQK2" role="3jGSnO" />
-    </node>
+    <node concept="3jGSmg" id="2WqFKNDOciT" role="3jGSko" />
   </node>
 </model>
 
