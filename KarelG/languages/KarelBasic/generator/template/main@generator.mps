@@ -284,7 +284,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNDSUzL" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:2WqFKNDQKEn" resolve="IntegerConstant" />
+      <ref role="30HIoZ" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
       <node concept="j$656" id="2WqFKNDSU$D" role="1lVwrX">
         <ref role="v9R2y" node="2WqFKNDSU$B" resolve="reduce_IntegerConstant" />
       </node>
@@ -796,7 +796,7 @@
       <node concept="3clFbS" id="2PnTnxEVjhc" role="9aQI4">
         <node concept="1Dw8fO" id="4kfw1ThzVzT" role="3cqZAp">
           <node concept="3cpWsn" id="4kfw1ThzVzU" role="1Duv9x">
-            <property role="TrG5h" value="i" />
+            <property role="TrG5h" value="$_i" />
             <node concept="10Oyi0" id="4kfw1ThzV$2" role="1tU5fm" />
             <node concept="3cmrfG" id="4kfw1ThzV$k" role="33vP2m">
               <property role="3cmrfH" value="0" />
@@ -843,12 +843,12 @@
               </node>
             </node>
             <node concept="37vLTw" id="4kfw1ThzV$t" role="3uHU7B">
-              <ref role="3cqZAo" node="4kfw1ThzVzU" resolve="i" />
+              <ref role="3cqZAo" node="4kfw1ThzVzU" resolve="$_i" />
             </node>
           </node>
           <node concept="2$rviw" id="4kfw1ThzVVN" role="1Dwrff">
             <node concept="37vLTw" id="4kfw1ThzVXJ" role="2$L3a6">
-              <ref role="3cqZAo" node="4kfw1ThzVzU" resolve="i" />
+              <ref role="3cqZAo" node="4kfw1ThzVzU" resolve="$_i" />
             </node>
           </node>
           <node concept="raruj" id="4kfw1ThzW1D" role="lGtFl" />
@@ -1031,7 +1031,7 @@
   <node concept="13MO4I" id="2WqFKNDSU$B">
     <property role="TrG5h" value="reduce_IntegerConstant" />
     <property role="3GE5qa" value="" />
-    <ref role="3gUMe" to="dyrx:2WqFKNDQKEn" resolve="IntegerConstant" />
+    <ref role="3gUMe" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
     <node concept="9aQIb" id="2WqFKNDSU$H" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDSU$J" role="9aQI4">
         <node concept="3clFbJ" id="2WqFKNDSU_O" role="3cqZAp">
