@@ -115,8 +115,14 @@
         <child id="1177498207384" name="handler" index="Cncma" />
       </concept>
       <concept id="1177498227294" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_Handler" flags="in" index="Cnhdc" />
+      <concept id="1177526535706" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_result" flags="nn" index="E3gs8" />
+      <concept id="1177526592562" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_ConceptHandler" flags="in" index="E3ukw" />
       <concept id="5480835971642155304" name="jetbrains.mps.lang.actions.structure.NF_Model_CreateNewNodeOperation" flags="nn" index="15TzpJ" />
       <concept id="1154622616118" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstitutePreconditionFunction" flags="in" index="3kRJcU" />
+      <concept id="1182819125053" name="jetbrains.mps.lang.actions.structure.ConceptRightTransformPart" flags="ng" index="1_wSoI">
+        <reference id="1182819234902" name="concept" index="1_xjl5" />
+        <child id="1182819210322" name="handler" index="1_xdl1" />
+      </concept>
       <concept id="1112056943463" name="jetbrains.mps.lang.actions.structure.NodeSubstituteActions" flags="ng" index="3FK_9_">
         <child id="1112058057696" name="actionsBuilder" index="3FOPby" />
       </concept>
@@ -149,6 +155,9 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -605,6 +614,45 @@
                   <ref role="3cqZAo" node="2WqFKNEaGAc" resolve="declarationCommand" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3UOs0u" id="2WqFKNEcJjW">
+    <property role="TrG5h" value="binaryOperator" />
+    <node concept="3UNGvq" id="2WqFKNEcJjX" role="3UOs0v">
+      <property role="3mWRNi" value="create binary operator when typing its alias on the right side of expression" />
+      <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      <node concept="1_wSoI" id="2WqFKNEcM02" role="_1QTJ">
+        <ref role="1_xjl5" to="3y9h:2WqFKNE4FE7" resolve="BinaryOperator" />
+        <node concept="E3ukw" id="2WqFKNEcM03" role="1_xdl1">
+          <node concept="3clFbS" id="2WqFKNEcM04" role="2VODD2">
+            <node concept="3clFbF" id="2WqFKNEcM1M" role="3cqZAp">
+              <node concept="2OqwBi" id="2WqFKNEcM4S" role="3clFbG">
+                <node concept="Cj7Ep" id="2WqFKNEcM1L" role="2Oq$k0" />
+                <node concept="1P9Npp" id="2WqFKNEcMfb" role="2OqNvi">
+                  <node concept="E3gs8" id="2WqFKNEcMgY" role="1P9ThW" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2WqFKNEcMko" role="3cqZAp">
+              <node concept="2OqwBi" id="2WqFKNEcMMu" role="3clFbG">
+                <node concept="2OqwBi" id="2WqFKNEcMnn" role="2Oq$k0">
+                  <node concept="E3gs8" id="2WqFKNEcMkm" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2WqFKNEcMzL" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3y9h:2WqFKNE4H3M" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="2WqFKNEcN6y" role="2OqNvi">
+                  <node concept="Cj7Ep" id="2WqFKNEcN9B" role="2oxUTC" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2WqFKNEcNcD" role="3cqZAp" />
+            <node concept="3cpWs6" id="2WqFKNEcNjp" role="3cqZAp">
+              <node concept="E3gs8" id="2WqFKNEcNp0" role="3cqZAk" />
             </node>
           </node>
         </node>
