@@ -34,6 +34,7 @@
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
       </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
+      <concept id="3394217739178660512" name="KarelVariables.structure.MinusOperator" flags="ng" index="3527QG" />
       <concept id="3394217739178660220" name="KarelVariables.structure.AsignmentOperator" flags="ng" index="3527TK" />
       <concept id="3394217739178678388" name="KarelVariables.structure.ExpressionCommand" flags="ng" index="352rtS">
         <child id="3394217739178678429" name="expression" index="352ruh" />
@@ -110,8 +111,13 @@
             <node concept="36Kqmr" id="2WqFKNE7UOq" role="3527ZY">
               <property role="36Kqnr" value="4" />
             </node>
-            <node concept="36Kqmr" id="2WqFKNE7UOu" role="3527S9">
-              <property role="36Kqnr" value="5" />
+            <node concept="3527QG" id="2WqFKNE9iwv" role="3527S9">
+              <node concept="36Kqmr" id="2WqFKNE9ixf" role="3527ZY">
+                <property role="36Kqnr" value="3" />
+              </node>
+              <node concept="36Kqmr" id="2WqFKNE9ixj" role="3527S9">
+                <property role="36Kqnr" value="2" />
+              </node>
             </node>
           </node>
           <node concept="36MIYZ" id="2WqFKNE5024" role="3527ZY">
