@@ -15,7 +15,6 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="vuk8" ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(KarelBasic.generator.util)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -200,7 +199,6 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -1080,8 +1078,8 @@
                     <node concept="3clFbF" id="2WqFKNDSV6T" role="3cqZAp">
                       <node concept="2OqwBi" id="2WqFKNDSVeI" role="3clFbG">
                         <node concept="30H73N" id="2WqFKNDSV6S" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="2WqFKNDSV_E" role="2OqNvi">
-                          <ref role="37wK5l" to="ljn0:2WqFKNDQKFK" resolve="eval" />
+                        <node concept="3TrcHB" id="2WqFKNE4NWa" role="2OqNvi">
+                          <ref role="3TsBF5" to="dyrx:2WqFKNDQKFn" resolve="value" />
                         </node>
                       </node>
                     </node>
