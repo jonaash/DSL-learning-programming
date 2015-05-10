@@ -18,6 +18,7 @@
         <dependency reexport="true">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
+        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>
