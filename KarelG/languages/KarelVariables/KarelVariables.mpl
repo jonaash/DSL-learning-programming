@@ -7,17 +7,23 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="KarelVariables#3394217739153893707" uuid="d223546c-3e13-4afc-be4a-36273604a4c6">
+    <generator name="" generatorUID="KarelVariables#3394217739153893707" uuid="d223546c-3e13-4afc-be4a-36273604a4c6">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)</dependency>
+        <dependency reexport="false">53b38693-ceee-4191-9779-c7bca6c13739(KarelVariables)</dependency>
+      </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
         <usedLanguage>53b38693-ceee-4191-9779-c7bca6c13739(KarelVariables)</usedLanguage>
+        <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</usedLanguage>
+        <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -41,7 +47,22 @@
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="d223546c-3e13-4afc-be4a-36273604a4c6(KarelVariables#3394217739153893707)" />
+            <external-mapping>
+              <mapping-node modelUID="r:0be7748d-86d2-4400-b919-9ab5a29df1ce(KarelVariables.generator.template.main@generator)" nodeID="*" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)" />
+            <external-mapping>
+              <mapping-node modelUID="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)" nodeID="*" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
