@@ -247,7 +247,7 @@
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="StringType" />
     <property role="34LRSv" value="text" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mJ">
     <property role="TrG5h" value="Type" />
