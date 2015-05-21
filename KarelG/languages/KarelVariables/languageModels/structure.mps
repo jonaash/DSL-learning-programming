@@ -159,5 +159,17 @@
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2WqFKNEeySp">
+    <property role="3GE5qa" value="expression.operator" />
+    <property role="TrG5h" value="MultOperator" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="2WqFKNEeyTn">
+    <property role="3GE5qa" value="expression.operator" />
+    <property role="TrG5h" value="DivideOperator" />
+    <property role="34LRSv" value="/" />
+    <ref role="1TJDcQ" node="2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
 </model>
 
