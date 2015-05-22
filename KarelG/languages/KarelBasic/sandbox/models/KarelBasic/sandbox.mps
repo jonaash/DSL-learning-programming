@@ -14,7 +14,7 @@
       <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK">
         <property id="3717222724954955760" name="message" index="2kpimJ" />
       </concept>
-      <concept id="3394217739175004823" name="KarelBasic.structure.IntegerConstant" flags="ng" index="36Kqmr">
+      <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
       <concept id="3267332360032873875" name="KarelBasic.structure.PutMark" flags="ng" index="17GwzF" />
@@ -25,7 +25,9 @@
       </concept>
       <concept id="3267332360033093774" name="KarelBasic.structure.Repeat" flags="ng" index="17JERQ">
         <child id="3394217739175032606" name="iteration" index="36Ktwi" />
-        <child id="3267332360033094822" name="body" index="17JEBu" />
+      </concept>
+      <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
+        <child id="7730986614922692049" name="body" index="3azrUc" />
       </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -93,16 +95,15 @@
     <property role="TrG5h" value="Repeat" />
     <node concept="3jGSmg" id="2PnTnxEUoqr" role="3jGSko">
       <node concept="17J3f2" id="2PnTnxF1Qe5" role="3jGSnO" />
-      <node concept="17JERQ" id="2WqFKNDSD5o" role="3jGSnO">
-        <node concept="3jGSmg" id="2WqFKNDSD5q" role="17JEBu">
-          <node concept="1$shr6" id="2WqFKNDSDsQ" role="3jGSnO" />
-          <node concept="1$vv3L" id="2WqFKNDSDsZ" role="3jGSnO" />
+      <node concept="17JERQ" id="6H9YPQxM4bB" role="3jGSnO">
+        <node concept="3jGSmg" id="6H9YPQxM4bD" role="3azrUc">
+          <node concept="1$shr6" id="6H9YPQxM4bZ" role="3jGSnO" />
+          <node concept="1$vv3L" id="6H9YPQxM4c8" role="3jGSnO" />
         </node>
-        <node concept="36Kqmr" id="2WqFKNDSD5A" role="36Ktwi">
+        <node concept="36Kqmr" id="6H9YPQxM4bP" role="36Ktwi">
           <property role="36Kqnr" value="7" />
         </node>
       </node>
-      <node concept="17J3f2" id="2WqFKNDSD6g" role="3jGSnO" />
     </node>
   </node>
 </model>

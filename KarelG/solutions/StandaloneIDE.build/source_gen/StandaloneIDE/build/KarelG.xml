@@ -186,12 +186,6 @@
         <library jar="../../runtime-libraries/slf4j-log4j12.jar" />
         <library jar="../../runtime-libraries/commons-lang3.jar" />
         <library jar="../../runtime-libraries/gui.jar" />
-        <library jar="../../runtime-libraries/font-awesome.jar" />
-        <library jar="../../runtime-libraries/griffon-core.jar" />
-        <library jar="../../runtime-libraries/griffon-fontawesome-core.jar" />
-        <library jar="../../runtime-libraries/griffon-fontawesome-swing.jar" />
-        <library jar="../../runtime-libraries/javax.inject.jar" />
-        <library jar="../../runtime-libraries/jsr305.jar" />
         <sources jar="GuiLib-src.jar" descriptor="GuiServerLib.msd" />
       </module>
     </echoxml>
@@ -235,6 +229,17 @@
       <zipfileset file="${basedir}/solutions/Common/Common.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Common-models" prefix="module/../../../KarelG/solutions/Common/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLangua.jar" />
+    <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLangua.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/jetbrains.mps.baseLangua.jar/META-INF/module.xml">
+      <module namespace="jetbrains.mps.baseLangua" type="language" uuid="">
+        <dependencies />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/jetbrains.mps.baseLangua.jar">
+      <fileset dir="${build.tmp}/java/out/jetbrains.mps.baseLangua" />
+      <fileset dir="${build.tmp}/default/jetbrains.mps.baseLangua.jar" />
+    </jar>
     <mkdir dir="${build.tmp}/default/KarelBasic.jar" />
     <mkdir dir="${build.tmp}/default/KarelBasic.jar/META-INF" />
     <echoxml file="${build.tmp}/default/KarelBasic.jar/META-INF/module.xml">
@@ -249,6 +254,7 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -303,7 +309,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963" />
+  <target name="compileJava" depends="java.compile.JavaKarel, java.compile.GuiLib, java.compile.Common, java.compile.jetbrains.mps.baseLangua, java.compile.KarelBasic, java.compile.KarelBasic#3640435696255147963" />
   
   <target name="processResources" />
   
@@ -385,6 +391,7 @@
         <module file="${basedir}/solutions/GuiServerLib/GuiServerLib.msd" />
         <module file="${basedir}/solutions/KarelJava/KarelJava.msd" />
         <module file="${basedir}/languages/KarelBasic/KarelBasic.mpl" />
+        <module file="" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -422,12 +429,6 @@
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -461,12 +462,6 @@
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
       </classpath>
     </javac>
   </target>
@@ -479,6 +474,15 @@
       <src>
         <path location="${karel_home}/solutions/Common/source_gen" />
       </src>
+      <classpath />
+    </javac>
+  </target>
+  
+  <target name="java.compile.jetbrains.mps.baseLangua">
+    <mkdir dir="${build.tmp}/java/out/jetbrains.mps.baseLangua" />
+    <javac destdir="${build.tmp}/java/out/jetbrains.mps.baseLangua" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src />
       <classpath />
     </javac>
   </target>
@@ -508,12 +512,6 @@
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -528,6 +526,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -560,12 +559,6 @@
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/commons-lang3.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/gui.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/font-awesome.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-core.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/griffon-fontawesome-swing.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/javax.inject.jar" />
-        <fileset file="${karel_home}/solutions/GuiServerLib/lib/jsr305.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -575,9 +568,13 @@
         <fileset file="${artifacts.mpsStandalone}/lib/asm-all.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
   </target>

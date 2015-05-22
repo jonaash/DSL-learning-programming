@@ -6,7 +6,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="4fqr" ref="4caf0310-491e-41f5-8a9b-2006b3a94898/r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util/jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +37,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -104,6 +107,12 @@
     <node concept="PrWs8" id="6OirKjsAOVP" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="6H9YPQxMlB$" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
+    </node>
+    <node concept="PrWs8" id="6H9YPQxMlBL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3eme_YBWFXh">
     <property role="3GE5qa" value="command.action" />
@@ -145,18 +154,15 @@
     <property role="TrG5h" value="Repeat" />
     <property role="34LRSv" value="repeat" />
     <property role="R4oN_" value="repeat code in command body n times" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" node="6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="1TJgyj" id="2WqFKNDQRsu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="iteration" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
     </node>
-    <node concept="1TJgyj" id="2PnTnxEUkMA" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    <node concept="PrWs8" id="6H9YPQxKMWR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEUXqU">
@@ -255,6 +261,85 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6H9YPQxL47v">
+    <property role="3GE5qa" value="command.control" />
+    <property role="TrG5h" value="AbstractLoopCommand" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="PrWs8" id="6H9YPQxL47w" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="6H9YPQxL4nh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6FJbaIqgGvS">
+    <property role="TrG5h" value="ILocalVariableDeclarationCommand" />
+    <property role="3GE5qa" value="variable" />
+  </node>
+  <node concept="1TIwiD" id="2WqFKNDO2n1">
+    <property role="TrG5h" value="LocalVariableDeclaration" />
+    <property role="3GE5qa" value="variable" />
+    <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="2WqFKNDO42N">
+    <property role="TrG5h" value="LocalVariableReference" />
+    <property role="3GE5qa" value="variable" />
+    <ref role="1TJDcQ" node="2WqFKNDO42l" resolve="VariableReference" />
+    <node concept="1TJgyj" id="2WqFKNDO42O" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <ref role="20ksaX" node="2WqFKNDO42m" />
+      <ref role="20lvS9" node="2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2WqFKNCAeGz">
+    <property role="TrG5h" value="VariableDeclaration" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="variable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2WqFKNCAeG_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2WqFKNDRTcZ" role="PzmwI">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
+    <node concept="PrWs8" id="6H9YPQxLnfk" role="PzmwI">
+      <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2WqFKNDO2mK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2mJ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="2WqFKNDO42z" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initializer" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2WqFKNDO42l">
+    <property role="TrG5h" value="VariableReference" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="variable" />
+    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="2WqFKNDO42m" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
+    </node>
+    <node concept="PrWs8" id="2WqFKNDRTcI" role="PzmwI">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
   </node>
 </model>
 

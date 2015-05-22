@@ -7,8 +7,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
@@ -208,7 +208,7 @@
     <property role="TrG5h" value="VariableDeclarationInitializer" />
     <node concept="3UNGvq" id="2WqFKNDQhHz" role="3UOs0v">
       <property role="3mWRNi" value="assign variable" />
-      <ref role="3UNGvu" to="3y9h:2WqFKNCAeGz" resolve="VariableDeclaration" />
+      <ref role="3UNGvu" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
       <node concept="3kRJcU" id="2WqFKNDQi02" role="3kShCk">
         <node concept="3clFbS" id="2WqFKNDQi03" role="2VODD2">
           <node concept="3clFbF" id="2WqFKNDQi4X" role="3cqZAp">
@@ -216,8 +216,8 @@
               <node concept="10Nm6u" id="2WqFKNDQiW8" role="3uHU7w" />
               <node concept="2OqwBi" id="2WqFKNDQi9L" role="3uHU7B">
                 <node concept="Cj7Ep" id="2WqFKNDQi4W" role="2Oq$k0" />
-                <node concept="3TrEf2" id="2WqFKNDQi$7" role="2OqNvi">
-                  <ref role="3Tt5mk" to="3y9h:2WqFKNDO42z" />
+                <node concept="3TrEf2" id="6FJbaIql0oL" role="2OqNvi">
+                  <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
                 </node>
               </node>
             </node>
@@ -225,7 +225,7 @@
         </node>
       </node>
       <node concept="tYCnQ" id="2WqFKNDQj_$" role="_1QTJ">
-        <ref role="uz4UX" to="3y9h:2WqFKNCAeGz" resolve="VariableDeclaration" />
+        <ref role="uz4UX" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
         <node concept="Cmt7Y" id="2WqFKNDQkx2" role="uz6Si">
           <node concept="Cnhdc" id="2WqFKNDQkx3" role="Cncma">
             <node concept="3clFbS" id="2WqFKNDQkx4" role="2VODD2">
@@ -248,8 +248,8 @@
                 <node concept="2OqwBi" id="2WqFKNDQlRd" role="3clFbG">
                   <node concept="2OqwBi" id="2WqFKNDQkOe" role="2Oq$k0">
                     <node concept="Cj7Ep" id="2WqFKNDQkLq" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2WqFKNDQlak" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3y9h:2WqFKNDO42z" />
+                    <node concept="3TrEf2" id="6FJbaIql0Gu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
                     </node>
                   </node>
                   <node concept="2oxUTD" id="2WqFKNDQm75" role="2OqNvi">
@@ -486,7 +486,7 @@
       <node concept="tYCnQ" id="2WqFKNE9S0e" role="tZc4B">
         <ref role="uz4UX" to="3y9h:2WqFKNDOaYc" resolve="LocalVariableDeclarationCommand" />
         <node concept="yEb5T" id="2WqFKNE9S0h" role="uz6Si">
-          <ref role="yEYPM" to="3y9h:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+          <ref role="yEYPM" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
           <node concept="yEnE0" id="2WqFKNE9S0i" role="yEVE$">
             <node concept="3clFbS" id="2WqFKNE9S0j" role="2VODD2">
               <node concept="3cpWs8" id="2WqFKNE9S2b" role="3cqZAp">
@@ -564,7 +564,7 @@
                 <node concept="3cpWsn" id="2WqFKNEaHee" role="3cpWs9">
                   <property role="TrG5h" value="declaration" />
                   <node concept="3Tqbb2" id="2WqFKNEaHe9" role="1tU5fm">
-                    <ref role="ehGHo" to="3y9h:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+                    <ref role="ehGHo" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
                   </node>
                   <node concept="2OqwBi" id="2WqFKNEaI1E" role="33vP2m">
                     <node concept="2OqwBi" id="2WqFKNEaHHu" role="2Oq$k0">
@@ -572,7 +572,7 @@
                       <node concept="I4A8Y" id="2WqFKNEaHS2" role="2OqNvi" />
                     </node>
                     <node concept="15TzpJ" id="2WqFKNEaIcC" role="2OqNvi">
-                      <ref role="I8UWU" to="3y9h:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+                      <ref role="I8UWU" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -583,8 +583,8 @@
                     <node concept="37vLTw" id="2WqFKNEaIoj" role="2Oq$k0">
                       <ref role="3cqZAo" node="2WqFKNEaHee" resolve="declaration" />
                     </node>
-                    <node concept="3TrEf2" id="2WqFKNEaIIq" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3y9h:2WqFKNDO2mK" />
+                    <node concept="3TrEf2" id="6FJbaIql2n2" role="2OqNvi">
+                      <ref role="3Tt5mk" to="dyrx:2WqFKNDO2mK" />
                     </node>
                   </node>
                   <node concept="2oxUTD" id="2WqFKNEaJih" role="2OqNvi">

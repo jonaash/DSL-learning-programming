@@ -802,120 +802,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3CAKq_6z5CL" role="3bR37C">
-          <node concept="1BurEX" id="3CAKq_6z5CM" role="1SiIV1">
-            <node concept="398BVA" id="3CAKq_6z5CB" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3CAKq_6z5CC" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3CAKq_6z5CD" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3CAKq_6z5CE" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3CAKq_6z5CF" role="2Ry0An">
-                      <property role="2Ry0Am" value="font-awesome.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3CAKq_6z5CX" role="3bR37C">
-          <node concept="1BurEX" id="3CAKq_6z5CY" role="1SiIV1">
-            <node concept="398BVA" id="3CAKq_6z5CN" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3CAKq_6z5CO" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3CAKq_6z5CP" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3CAKq_6z5CQ" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3CAKq_6z5CR" role="2Ry0An">
-                      <property role="2Ry0Am" value="griffon-core.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3CAKq_6z5D9" role="3bR37C">
-          <node concept="1BurEX" id="3CAKq_6z5Da" role="1SiIV1">
-            <node concept="398BVA" id="3CAKq_6z5CZ" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3CAKq_6z5D0" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3CAKq_6z5D1" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3CAKq_6z5D2" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3CAKq_6z5D3" role="2Ry0An">
-                      <property role="2Ry0Am" value="griffon-fontawesome-core.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3CAKq_6z5Dl" role="3bR37C">
-          <node concept="1BurEX" id="3CAKq_6z5Dm" role="1SiIV1">
-            <node concept="398BVA" id="3CAKq_6z5Db" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3CAKq_6z5Dc" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3CAKq_6z5Dd" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3CAKq_6z5De" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3CAKq_6z5Df" role="2Ry0An">
-                      <property role="2Ry0Am" value="griffon-fontawesome-swing.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2Yk3kOYkWUZ" role="3bR37C">
-          <node concept="1BurEX" id="2Yk3kOYkWV0" role="1SiIV1">
-            <node concept="398BVA" id="2Yk3kOYkWUP" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="2Yk3kOYkWUQ" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="2Yk3kOYkWUR" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="2Yk3kOYkWUS" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="2Yk3kOYkWUT" role="2Ry0An">
-                      <property role="2Ry0Am" value="javax.inject.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2Yk3kOYkWVb" role="3bR37C">
-          <node concept="1BurEX" id="2Yk3kOYkWVc" role="1SiIV1">
-            <node concept="398BVA" id="2Yk3kOYkWV1" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="2Yk3kOYkWV2" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="2Yk3kOYkWV3" role="2Ry0An">
-                  <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="2Yk3kOYkWV4" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="2Yk3kOYkWV5" role="2Ry0An">
-                      <property role="2Ry0Am" value="jsr305.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="1JtUjhLyCzH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -939,6 +825,10 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
+      </node>
+      <node concept="1E1JtD" id="1GufzGW8wR7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="jetbrains.mps.baseLangua" />
       </node>
       <node concept="1E1JtD" id="1JtUjhLyCzN" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -983,6 +873,12 @@
               <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
             </node>
           </node>
+          <node concept="1SiIV0" id="2WqFKNE4U8h" role="3bR37C">
+            <node concept="3bR9La" id="2WqFKNE4U8i" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
         </node>
         <node concept="1SiIV0" id="4ccDGGISn_I" role="3bR37C">
           <node concept="3bR9La" id="4ccDGGISn_J" role="1SiIV1">
@@ -992,7 +888,7 @@
         </node>
         <node concept="1SiIV0" id="7xeYhJQVbnk" role="3bR37C">
           <node concept="3bR9La" id="7xeYhJQVbnl" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
@@ -1006,6 +902,34 @@
           <node concept="3bR9La" id="2WqFKNDSj4B" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2WqFKNDSLjt" role="3bR37C">
+          <node concept="3bR9La" id="2WqFKNDSLju" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6H9YPQxMBS7" role="3bR37C">
+          <node concept="3bR9La" id="6H9YPQxMBS8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6H9YPQxMBS9" role="3bR37C">
+          <node concept="3bR9La" id="6H9YPQxMBSa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1d41uYMTRXo" resolve="jetbrains.mps.baseLanguage.scopes" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6H9YPQxMBSb" role="3bR37C">
+          <node concept="1Busua" id="6H9YPQxMBSc" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6LbO" resolve="jetbrains.mps.lang.traceable" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1GufzGWai3s" role="3bR37C">
+          <node concept="1Busua" id="1GufzGWai3t" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
