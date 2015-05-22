@@ -44,7 +44,7 @@
       </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739178660512" name="KarelVariables.structure.MinusOperator" flags="ng" index="3527QG" />
-      <concept id="3394217739178660220" name="KarelVariables.structure.AsignmentOperator" flags="ng" index="3527TK" />
+      <concept id="3394217739178660220" name="KarelVariables.structure.AssignmentOperator" flags="ng" index="3527TK" />
       <concept id="3394217739178678388" name="KarelVariables.structure.ExpressionCommand" flags="ng" index="352rtS">
         <child id="3394217739178678429" name="expression" index="352ruh" />
       </concept>
@@ -67,41 +67,36 @@
           <node concept="36MCER" id="1GufzGWfgyR" role="36MCEW" />
         </node>
       </node>
-      <node concept="17J3f2" id="1GufzGWfgz4" role="3jGSnO" />
-      <node concept="17JERQ" id="1GufzGWfgzo" role="3jGSnO">
-        <node concept="3jGSmg" id="1GufzGWfgzq" role="3azrUc">
-          <node concept="36Mw20" id="1GufzGWfgAa" role="3jGSnO">
-            <node concept="36MCFd" id="1GufzGWfgAd" role="36Mw2n">
-              <property role="TrG5h" value="b" />
-              <node concept="36MCER" id="1GufzGWfgA8" role="36MCEW" />
-              <node concept="36MIYZ" id="1GufzGWfgAp" role="36MIYJ">
+      <node concept="352rtS" id="1GufzGWgwJS" role="3jGSnO">
+        <node concept="3527TK" id="1GufzGWgwJU" role="352ruh">
+          <node concept="36MIYZ" id="1GufzGWgwJQ" role="3527ZY">
+            <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
+          </node>
+          <node concept="3527Q3" id="1GufzGWgwL4" role="3527S9">
+            <node concept="36Kqmr" id="1GufzGWgwLf" role="3527S9">
+              <property role="36Kqnr" value="3" />
+            </node>
+            <node concept="36MIYZ" id="1GufzGWgwKZ" role="3527ZY">
+              <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17JERQ" id="1GufzGWgk5H" role="3jGSnO">
+        <node concept="3jGSmg" id="1GufzGWgk5J" role="3azrUc">
+          <node concept="352rtS" id="1GufzGWgk6o" role="3jGSnO">
+            <node concept="3527TK" id="1GufzGWgk6v" role="352ruh">
+              <node concept="36MIYZ" id="1GufzGWgk6F" role="3527ZY">
                 <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
+              </node>
+              <node concept="36Kqmr" id="1GufzGWgk6J" role="3527S9">
+                <property role="36Kqnr" value="5" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3527Q3" id="1GufzGWfg_N" role="36Ktwi">
-          <node concept="36MIYZ" id="1GufzGWfg_I" role="3527ZY">
-            <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
-          </node>
-          <node concept="36Kqmr" id="1GufzGWfgA5" role="3527S9">
-            <property role="36Kqnr" value="1" />
-          </node>
-        </node>
-      </node>
-      <node concept="352rtS" id="1GufzGWfgAW" role="3jGSnO">
-        <node concept="3527TK" id="1GufzGWfgBt" role="352ruh">
-          <node concept="3527Q3" id="1GufzGWfgBG" role="3527S9">
-            <node concept="36Kqmr" id="1GufzGWfgBR" role="3527S9">
-              <property role="36Kqnr" value="5" />
-            </node>
-            <node concept="36Kqmr" id="1GufzGWfgBC" role="3527ZY">
-              <property role="36Kqnr" value="4" />
-            </node>
-          </node>
-          <node concept="36MIYZ" id="1GufzGWfgAU" role="3527ZY">
-            <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
-          </node>
+        <node concept="36MIYZ" id="1GufzGWgk64" role="36Ktwi">
+          <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
         </node>
       </node>
     </node>
@@ -137,6 +132,7 @@
           </node>
         </node>
       </node>
+      <node concept="17J3f2" id="1GufzGWf$gX" role="3jGSnO" />
     </node>
   </node>
 </model>

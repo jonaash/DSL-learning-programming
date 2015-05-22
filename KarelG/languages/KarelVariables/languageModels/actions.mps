@@ -423,7 +423,7 @@
     </node>
   </node>
   <node concept="3FK_9_" id="2WqFKNE9KHY">
-    <property role="TrG5h" value="expressionCommand" />
+    <property role="TrG5h" value="assignmentCommand" />
     <property role="3GE5qa" value="wrapper" />
     <node concept="3FOIzC" id="2WqFKNE9KHZ" role="3FOPby">
       <property role="3mWAmy" value="allows to type expression in place of command" />
@@ -431,7 +431,7 @@
       <node concept="tYCnQ" id="2WqFKNE9KJH" role="tZc4B">
         <ref role="uz4UX" to="3y9h:2WqFKNE4LxO" resolve="ExpressionCommand" />
         <node concept="yEb5T" id="2WqFKNE9KJN" role="uz6Si">
-          <ref role="yEYPM" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+          <ref role="yEYPM" to="3y9h:1GufzGWfA50" resolve="IStandaloneExpression" />
           <node concept="yEnE0" id="2WqFKNE9KJO" role="yEVE$">
             <node concept="3clFbS" id="2WqFKNE9KJP" role="2VODD2">
               <node concept="3cpWs8" id="2WqFKNE9KNl" role="3cqZAp">
@@ -457,7 +457,7 @@
                     <node concept="37vLTw" id="2WqFKNE9LBq" role="2Oq$k0">
                       <ref role="3cqZAo" node="2WqFKNE9KNo" resolve="wrapper" />
                     </node>
-                    <node concept="3TrEf2" id="2WqFKNE9LXc" role="2OqNvi">
+                    <node concept="3TrEf2" id="1GufzGWfBpo" role="2OqNvi">
                       <ref role="3Tt5mk" to="3y9h:2WqFKNE4Lyt" />
                     </node>
                   </node>
@@ -653,6 +653,97 @@
             <node concept="3clFbH" id="2WqFKNEcNcD" role="3cqZAp" />
             <node concept="3cpWs6" id="2WqFKNEcNjp" role="3cqZAp">
               <node concept="E3gs8" id="2WqFKNEcNp0" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3FK_9_" id="1GufzGWgkIk">
+    <property role="3GE5qa" value="wrapper" />
+    <property role="TrG5h" value="variableReferenceAssignment" />
+    <node concept="3FOIzC" id="1GufzGWgkLw" role="3FOPby">
+      <property role="3mWAmy" value="allows to insert variable assignment by writing variable name" />
+      <ref role="3FOWKa" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+      <node concept="tYCnQ" id="1GufzGWgl4e" role="tZc4B">
+        <ref role="uz4UX" to="3y9h:2WqFKNE4LxO" resolve="ExpressionCommand" />
+        <node concept="yEb5T" id="1GufzGWgl4k" role="uz6Si">
+          <ref role="yEYPM" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+          <node concept="yEnE0" id="1GufzGWgl4l" role="yEVE$">
+            <node concept="3clFbS" id="1GufzGWgl4m" role="2VODD2">
+              <node concept="3cpWs8" id="1GufzGWglh0" role="3cqZAp">
+                <node concept="3cpWsn" id="1GufzGWglh3" role="3cpWs9">
+                  <property role="TrG5h" value="expressionCmd" />
+                  <node concept="3Tqbb2" id="1GufzGWglgZ" role="1tU5fm">
+                    <ref role="ehGHo" to="3y9h:2WqFKNE4LxO" resolve="ExpressionCommand" />
+                  </node>
+                  <node concept="2OqwBi" id="1GufzGWgnRm" role="33vP2m">
+                    <node concept="2OqwBi" id="1GufzGWgniR" role="2Oq$k0">
+                      <node concept="yECNy" id="1GufzGWgnfw" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="1GufzGWgnEc" role="2OqNvi" />
+                    </node>
+                    <node concept="15TzpJ" id="1GufzGWgo0H" role="2OqNvi">
+                      <ref role="I8UWU" to="3y9h:2WqFKNE4LxO" resolve="ExpressionCommand" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="1GufzGWgovb" role="3cqZAp">
+                <node concept="3cpWsn" id="1GufzGWgove" role="3cpWs9">
+                  <property role="TrG5h" value="assignmentOp" />
+                  <node concept="3Tqbb2" id="1GufzGWgov9" role="1tU5fm">
+                    <ref role="ehGHo" to="3y9h:2WqFKNE4H5W" resolve="AssignmentOperator" />
+                  </node>
+                  <node concept="2OqwBi" id="1GufzGWgp_p" role="33vP2m">
+                    <node concept="2OqwBi" id="1GufzGWgoZn" role="2Oq$k0">
+                      <node concept="yECNy" id="1GufzGWgoUY" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="1GufzGWgpnI" role="2OqNvi" />
+                    </node>
+                    <node concept="15TzpJ" id="1GufzGWgpJh" role="2OqNvi">
+                      <ref role="I8UWU" to="3y9h:2WqFKNE4H5W" resolve="AssignmentOperator" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1GufzGWgrsW" role="3cqZAp">
+                <node concept="2OqwBi" id="1GufzGWgs2k" role="3clFbG">
+                  <node concept="2OqwBi" id="1GufzGWgrxp" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GufzGWgrsU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GufzGWglh3" resolve="expressionCmd" />
+                    </node>
+                    <node concept="3TrEf2" id="1GufzGWgrQ_" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3y9h:2WqFKNE4Lyt" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="1GufzGWgsk8" role="2OqNvi">
+                    <node concept="37vLTw" id="1GufzGWgspb" role="2oxUTC">
+                      <ref role="3cqZAo" node="1GufzGWgove" resolve="assignmentOp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1GufzGWgrof" role="3cqZAp" />
+              <node concept="3clFbF" id="1GufzGWgpWB" role="3cqZAp">
+                <node concept="2OqwBi" id="1GufzGWgqMo" role="3clFbG">
+                  <node concept="2OqwBi" id="1GufzGWgq22" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GufzGWgpW_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GufzGWgove" resolve="assignmentOp" />
+                    </node>
+                    <node concept="3TrEf2" id="1GufzGWgqw8" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3y9h:2WqFKNE4H3M" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="1GufzGWgr7i" role="2OqNvi">
+                    <node concept="yECNy" id="1GufzGWgrbb" role="2oxUTC" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1GufzGWgpTG" role="3cqZAp" />
+              <node concept="3cpWs6" id="1GufzGWgo8x" role="3cqZAp">
+                <node concept="37vLTw" id="1GufzGWgoc$" role="3cqZAk">
+                  <ref role="3cqZAo" node="1GufzGWglh3" resolve="expressionCmd" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
