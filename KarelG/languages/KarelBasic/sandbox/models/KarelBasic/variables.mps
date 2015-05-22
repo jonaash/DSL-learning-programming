@@ -24,12 +24,6 @@
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
-      <concept id="3267332360033093774" name="KarelBasic.structure.Repeat" flags="ng" index="17JERQ">
-        <child id="3394217739175032606" name="iteration" index="36Ktwi" />
-      </concept>
-      <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
-        <child id="7730986614922692049" name="body" index="3azrUc" />
-      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -38,16 +32,16 @@
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentCommand" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739178654343" name="KarelVariables.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
       </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739178660512" name="KarelVariables.structure.MinusOperator" flags="ng" index="3527QG" />
-      <concept id="3394217739178660220" name="KarelVariables.structure.AssignmentOperator" flags="ng" index="3527TK" />
-      <concept id="3394217739178678388" name="KarelVariables.structure.ExpressionCommand" flags="ng" index="352rtS">
-        <child id="3394217739178678429" name="expression" index="352ruh" />
-      </concept>
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -67,38 +61,15 @@
           <node concept="36MCER" id="1GufzGWfgyR" role="36MCEW" />
         </node>
       </node>
-      <node concept="352rtS" id="1GufzGWgwJS" role="3jGSnO">
-        <node concept="3527TK" id="1GufzGWgwJU" role="352ruh">
-          <node concept="36MIYZ" id="1GufzGWgwJQ" role="3527ZY">
-            <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
-          </node>
-          <node concept="3527Q3" id="1GufzGWgwL4" role="3527S9">
-            <node concept="36Kqmr" id="1GufzGWgwLf" role="3527S9">
-              <property role="36Kqnr" value="3" />
-            </node>
-            <node concept="36MIYZ" id="1GufzGWgwKZ" role="3527ZY">
-              <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
-            </node>
-          </node>
+      <node concept="B81uQ" id="1GufzGWgDRM" role="3jGSnO">
+        <node concept="36Kqmr" id="1GufzGWgDS1" role="B81dI">
+          <property role="36Kqnr" value="5" />
         </node>
-      </node>
-      <node concept="17JERQ" id="1GufzGWgk5H" role="3jGSnO">
-        <node concept="3jGSmg" id="1GufzGWgk5J" role="3azrUc">
-          <node concept="352rtS" id="1GufzGWgk6o" role="3jGSnO">
-            <node concept="3527TK" id="1GufzGWgk6v" role="352ruh">
-              <node concept="36MIYZ" id="1GufzGWgk6F" role="3527ZY">
-                <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
-              </node>
-              <node concept="36Kqmr" id="1GufzGWgk6J" role="3527S9">
-                <property role="36Kqnr" value="5" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="36MIYZ" id="1GufzGWgk64" role="36Ktwi">
+        <node concept="36MIYZ" id="1GufzGWgDRK" role="B81dD">
           <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
         </node>
       </node>
+      <node concept="17J3f2" id="1GufzGWgDS4" role="3jGSnO" />
     </node>
   </node>
   <node concept="1$vsWe" id="2WqFKNE4LuH">
