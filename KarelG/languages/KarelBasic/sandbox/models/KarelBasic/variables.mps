@@ -24,9 +24,16 @@
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033093774" name="KarelBasic.structure.Repeat" flags="ng" index="17JERQ">
+        <child id="3394217739175032606" name="iteration" index="36Ktwi" />
+      </concept>
+      <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
+        <child id="7730986614922692049" name="body" index="3azrUc" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
+      <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
@@ -42,6 +49,7 @@
       </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739178660512" name="KarelVariables.structure.MinusOperator" flags="ng" index="3527QG" />
+      <concept id="3394217739181239833" name="KarelVariables.structure.MultOperator" flags="ng" index="35884l" />
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -81,10 +89,10 @@
           <node concept="36MCER" id="1GufzGWfg5g" role="36MCEW" />
           <node concept="3527Q3" id="1GufzGWfgwC" role="36MIYJ">
             <node concept="36Kqmr" id="1GufzGWfgwO" role="3527ZY">
-              <property role="36Kqnr" value="4" />
+              <property role="36Kqnr" value="3" />
             </node>
             <node concept="36Kqmr" id="1GufzGWfgwR" role="3527S9">
-              <property role="36Kqnr" value="5" />
+              <property role="36Kqnr" value="1" />
             </node>
           </node>
         </node>
@@ -103,7 +111,52 @@
           </node>
         </node>
       </node>
-      <node concept="17J3f2" id="1GufzGWf$gX" role="3jGSnO" />
+      <node concept="B81uQ" id="1GufzGWgFzW" role="3jGSnO">
+        <node concept="3527Q3" id="1GufzGWgF$T" role="B81dI">
+          <node concept="36MIYZ" id="1GufzGWgF_4" role="3527S9">
+            <ref role="36MIYq" node="1GufzGWfgxe" resolve="u" />
+          </node>
+          <node concept="36Kqmr" id="1GufzGWgF$P" role="3527ZY">
+            <property role="36Kqnr" value="1" />
+          </node>
+        </node>
+        <node concept="36MIYZ" id="1GufzGWgFzU" role="B81dD">
+          <ref role="36MIYq" node="1GufzGWfg5l" resolve="t" />
+        </node>
+      </node>
+      <node concept="36Mw20" id="1GufzGWhqow" role="3jGSnO">
+        <node concept="36MCFd" id="1GufzGWhqoz" role="36Mw2n">
+          <property role="TrG5h" value="a" />
+          <node concept="36MCER" id="1GufzGWhqou" role="36MCEW" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="1GufzGWhqpl" role="3jGSnO" />
+      <node concept="B81uQ" id="1GufzGWhqqZ" role="3jGSnO">
+        <node concept="36MIYZ" id="1GufzGWhqqX" role="B81dD">
+          <ref role="36MIYq" node="1GufzGWhqoz" resolve="a" />
+        </node>
+        <node concept="35884l" id="1GufzGWhqsj" role="B81dI">
+          <node concept="3527Q3" id="1GufzGWhqsy" role="3527S9">
+            <node concept="36Kqmr" id="1GufzGWhqsH" role="3527S9">
+              <property role="36Kqnr" value="2" />
+            </node>
+            <node concept="36Kqmr" id="1GufzGWhqsu" role="3527ZY">
+              <property role="36Kqnr" value="3" />
+            </node>
+          </node>
+          <node concept="36Kqmr" id="1GufzGWhqsf" role="3527ZY">
+            <property role="36Kqnr" value="2" />
+          </node>
+        </node>
+      </node>
+      <node concept="17JERQ" id="1GufzGWgFP3" role="3jGSnO">
+        <node concept="3jGSmg" id="1GufzGWgFP5" role="3azrUc">
+          <node concept="1$shr6" id="1GufzGWgFPU" role="3jGSnO" />
+        </node>
+        <node concept="36MIYZ" id="1GufzGWhqsN" role="36Ktwi">
+          <ref role="36MIYq" node="1GufzGWhqoz" resolve="a" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
