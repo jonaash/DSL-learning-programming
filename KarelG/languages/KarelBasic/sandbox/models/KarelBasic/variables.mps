@@ -10,6 +10,7 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
@@ -112,16 +113,11 @@
         </node>
       </node>
       <node concept="B81uQ" id="1GufzGWgFzW" role="3jGSnO">
-        <node concept="3527Q3" id="1GufzGWgF$T" role="B81dI">
-          <node concept="36MIYZ" id="1GufzGWgF_4" role="3527S9">
-            <ref role="36MIYq" node="1GufzGWfgxe" resolve="u" />
-          </node>
-          <node concept="36Kqmr" id="1GufzGWgF$P" role="3527ZY">
-            <property role="36Kqnr" value="1" />
-          </node>
-        </node>
         <node concept="36MIYZ" id="1GufzGWgFzU" role="B81dD">
           <ref role="36MIYq" node="1GufzGWfg5l" resolve="t" />
+        </node>
+        <node concept="36Kqmr" id="3hBhvFSqkfF" role="B81dI">
+          <property role="36Kqnr" value="0" />
         </node>
       </node>
       <node concept="36Mw20" id="1GufzGWhqow" role="3jGSnO">
@@ -136,11 +132,11 @@
         </node>
         <node concept="35884l" id="1GufzGWhqsj" role="B81dI">
           <node concept="3527Q3" id="1GufzGWhqsy" role="3527S9">
-            <node concept="36Kqmr" id="1GufzGWhqsH" role="3527S9">
-              <property role="36Kqnr" value="2" />
-            </node>
             <node concept="36Kqmr" id="1GufzGWhqsu" role="3527ZY">
               <property role="36Kqnr" value="3" />
+            </node>
+            <node concept="36Kqmr" id="3hBhvFSixXO" role="3527S9">
+              <property role="36Kqnr" value="7" />
             </node>
           </node>
           <node concept="36Kqmr" id="1GufzGWhqsf" role="3527ZY">
@@ -148,11 +144,18 @@
           </node>
         </node>
       </node>
+      <node concept="36Mw20" id="3hBhvFSqlu_" role="3jGSnO">
+        <node concept="36MCFd" id="3hBhvFSqluC" role="36Mw2n">
+          <property role="TrG5h" value="s" />
+          <node concept="36Kql8" id="3hBhvFSqluz" role="36MCEW" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="3hBhvFSuCoZ" role="3jGSnO" />
       <node concept="17JERQ" id="1GufzGWgFP3" role="3jGSnO">
         <node concept="3jGSmg" id="1GufzGWgFP5" role="3azrUc">
           <node concept="1$shr6" id="1GufzGWgFPU" role="3jGSnO" />
         </node>
-        <node concept="36MIYZ" id="1GufzGWhqsN" role="36Ktwi">
+        <node concept="36MIYZ" id="3hBhvFSiiO3" role="36Ktwi">
           <ref role="36MIYq" node="1GufzGWhqoz" resolve="a" />
         </node>
       </node>

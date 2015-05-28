@@ -347,6 +347,7 @@
   </node>
   <node concept="3UOs0u" id="2WqFKNEcJjW">
     <property role="TrG5h" value="binaryOperator" />
+    <property role="3GE5qa" value="expression.operator" />
     <node concept="3UNGvq" id="2WqFKNEcJjX" role="3UOs0v">
       <property role="3mWRNi" value="create binary operator when typing its alias on the right side of expression" />
       <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
