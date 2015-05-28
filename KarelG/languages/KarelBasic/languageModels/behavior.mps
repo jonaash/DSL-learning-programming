@@ -395,7 +395,7 @@
   </node>
   <node concept="13h7C7" id="2WqFKNE1Hht">
     <property role="3GE5qa" value="type" />
-    <ref role="13h7C2" to="dyrx:2WqFKNDOdsR" resolve="Boolean" />
+    <ref role="13h7C2" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
     <node concept="13hLZK" id="2WqFKNE1Hhu" role="13h7CW">
       <node concept="3clFbS" id="2WqFKNE1Hhv" role="2VODD2" />
     </node>

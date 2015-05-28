@@ -221,7 +221,7 @@
   </node>
   <node concept="1TIwiD" id="2WqFKNDOdsR">
     <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="Boolean" />
+    <property role="TrG5h" value="BooleanType" />
     <property role="34LRSv" value="flag" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>

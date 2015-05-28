@@ -100,7 +100,6 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1212056081426" name="jetbrains.mps.lang.typesystem.structure.AbstractInequationStatement" flags="ng" index="Ob1k8">
-        <property id="4778346850551686273" name="label" index="2iVnQ_" />
         <property id="1212056105818" name="inequationPriority" index="Ob790" />
       </concept>
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
@@ -528,13 +527,12 @@
     </node>
   </node>
   <node concept="1YbPZF" id="6kvBWKzEUex">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="command" />
     <property role="TrG5h" value="typeof_Repeat" />
     <node concept="3clFbS" id="6kvBWKzEUey" role="18ibNy">
       <node concept="1ZobV4" id="3hBhvFSecXu" role="3cqZAp">
         <property role="3wDh2S" value="true" />
         <property role="Ob790" value="0" />
-        <property role="2iVnQ_" value="number" />
         <node concept="mw_s8" id="3hBhvFSdrhA" role="1ZfhKB">
           <node concept="2pJPEk" id="3hBhvFSdrhy" role="mwGJk">
             <node concept="2pJPED" id="3hBhvFSdrhL" role="2pJPEn">
@@ -583,8 +581,8 @@
       <node concept="1Z5TYs" id="3hBhvFSgvvB" role="3cqZAp">
         <node concept="mw_s8" id="3hBhvFSgvvW" role="1ZfhKB">
           <node concept="2pJPEk" id="3hBhvFSgvvS" role="mwGJk">
-            <node concept="2pJPED" id="3hBhvFSgvw7" role="2pJPEn">
-              <ref role="2pJxaS" to="dyrx:6kvBWKz_W$y" resolve="StringLiteral" />
+            <node concept="2pJPED" id="3hBhvFSjW7U" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
             </node>
           </node>
         </node>
