@@ -826,12 +826,8 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtD" id="1GufzGW8wR7" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="jetbrains.mps.baseLangua" />
-      </node>
       <node concept="1E1JtD" id="1JtUjhLyCzN" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="KarelBasic" />
         <property role="3LESm3" value="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" />
         <property role="2GAjPV" value="false" />
@@ -867,12 +863,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="5eWJqD2pqBl" role="3bR37C">
-            <node concept="3bR9La" id="5eWJqD2pqBm" role="1SiIV1">
-              <property role="3bR36h" value="false" />
-              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="2WqFKNE4U8h" role="3bR37C">
             <node concept="3bR9La" id="2WqFKNE4U8i" role="1SiIV1">
               <property role="3bR36h" value="false" />
@@ -902,12 +892,6 @@
           <node concept="3bR9La" id="2WqFKNDSj4B" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="2WqFKNDSLjt" role="3bR37C">
-          <node concept="3bR9La" id="2WqFKNDSLju" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
           </node>
         </node>
         <node concept="1SiIV0" id="6H9YPQxMBS7" role="3bR37C">
@@ -942,6 +926,12 @@
           <node concept="3bR9La" id="7_uVVPcFNsr" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="1JtUjhLyCzH" resolve="Common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3hBhvFShHJb" role="3bR37C">
+          <node concept="3bR9La" id="3hBhvFShHJc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
           </node>
         </node>
       </node>

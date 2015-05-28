@@ -209,18 +209,11 @@
   <node concept="1TIwiD" id="2WqFKNDQKEn">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="IntegerLiteral" />
-    <ref role="1TJDcQ" node="2WqFKNDO2Bn" resolve="IntegerExpression" />
+    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="2WqFKNDQKFn" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2WqFKNDO2Bn">
-    <property role="TrG5h" value="IntegerExpression" />
-    <property role="3GE5qa" value="expression" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
   </node>
   <node concept="PlHQZ" id="2WqFKNDRDv2">
     <property role="3GE5qa" value="type" />

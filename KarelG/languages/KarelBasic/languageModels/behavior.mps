@@ -14,7 +14,6 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
-    <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   </imports>
@@ -264,30 +263,6 @@
     <ref role="13h7C2" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="13hLZK" id="5eWJqD2rEru" role="13h7CW">
       <node concept="3clFbS" id="5eWJqD2rErv" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="2WqFKNDQKFH">
-    <property role="3GE5qa" value="expression.number" />
-    <ref role="13h7C2" to="dyrx:2WqFKNDO2Bn" resolve="IntegerExpression" />
-    <node concept="13hLZK" id="2WqFKNDQKFI" role="13h7CW">
-      <node concept="3clFbS" id="2WqFKNDQKFJ" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2WqFKNDROh9" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getTypeAnnotation" />
-      <ref role="13i0hy" node="2WqFKNDRDv6" resolve="getTypeAnnotation" />
-      <node concept="3Tm1VV" id="2WqFKNDROha" role="1B3o_S" />
-      <node concept="3clFbS" id="2WqFKNDROhd" role="3clF47">
-        <node concept="3cpWs6" id="2WqFKNDROkh" role="3cqZAp">
-          <node concept="35c_gC" id="2WqFKNDROn2" role="3cqZAk">
-            <ref role="35c_gD" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
-          </node>
-        </node>
-      </node>
-      <node concept="3bZ5Sz" id="2WqFKNDROly" role="3clF45">
-        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="2WqFKNDQKG7">
