@@ -118,22 +118,14 @@
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="Print" />
     <property role="34LRSv" value="print" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
-    <node concept="1TJgyi" id="3eme_YBWIjr" role="1TKVEl">
-      <property role="TrG5h" value="message" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="6kvBWKzB1_W" resolve="MessageCommand" />
   </node>
   <node concept="1TIwiD" id="3eme_YBWLZJ">
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="Alert" />
     <property role="34LRSv" value="alert" />
     <property role="R4oN_" value="command to show message dialog with the message" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
-    <node concept="1TJgyi" id="3eme_YBWLZK" role="1TKVEl">
-      <property role="TrG5h" value="message" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="6kvBWKzB1_W" resolve="MessageCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxETuQj">
     <property role="3GE5qa" value="command.action" />
@@ -336,6 +328,34 @@
     </node>
     <node concept="PrWs8" id="2WqFKNDRTcI" role="PzmwI">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6kvBWKz_Wyo">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="StringExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6kvBWKz_W$y">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="StringLiteral" />
+    <property role="34LRSv" value="&quot;" />
+    <ref role="1TJDcQ" node="6kvBWKz_Wyo" resolve="StringExpression" />
+    <node concept="1TJgyi" id="6kvBWKzA8dk" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6kvBWKzB1_W">
+    <property role="3GE5qa" value="command.action" />
+    <property role="TrG5h" value="MessageCommand" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="1TJgyj" id="6kvBWKzB1_X" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="message" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6kvBWKz_Wyo" resolve="StringExpression" />
     </node>
   </node>
 </model>

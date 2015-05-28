@@ -8,11 +8,12 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke">
-        <property id="3717222724954940635" name="message" index="2kpdU4" />
+      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke" />
+      <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
       </concept>
-      <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK">
-        <property id="3717222724954955760" name="message" index="2kpimJ" />
+      <concept id="7286718421228046626" name="KarelBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
@@ -47,8 +48,10 @@
   <node concept="1$vsWe" id="ATD4KvcqPN">
     <property role="TrG5h" value="Test" />
     <node concept="3jGSmg" id="ATD4KvcqPO" role="3jGSko">
-      <node concept="2kp8ke" id="2PnTnxEU3ed" role="3jGSnO">
-        <property role="2kpdU4" value="Ahoj" />
+      <node concept="2kp8ke" id="6kvBWKzCeBc" role="3jGSnO">
+        <node concept="16y5rI" id="6kvBWKzCeBd" role="16wSqL">
+          <property role="16xLMo" value="Test" />
+        </node>
       </node>
       <node concept="17GwzF" id="2PnTnxEU3i1" role="3jGSnO" />
       <node concept="1$shr6" id="ATD4KvcqQi" role="3jGSnO" />
@@ -60,9 +63,6 @@
       <node concept="1$shr6" id="1XlOgn$sn31" role="3jGSnO" />
       <node concept="1$vv3L" id="ATD4KvcqQw" role="3jGSnO" />
       <node concept="1$shr6" id="3eme_YBWz7t" role="3jGSnO" />
-      <node concept="2kpimK" id="3eme_YBXrdR" role="3jGSnO">
-        <property role="2kpimJ" value="Konec" />
-      </node>
       <node concept="17GwzG" id="2PnTnxET$UG" role="3jGSnO" />
     </node>
   </node>

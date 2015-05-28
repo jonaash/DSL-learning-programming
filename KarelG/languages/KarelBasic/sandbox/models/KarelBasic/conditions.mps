@@ -8,8 +8,13 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke">
-        <property id="3717222724954940635" name="message" index="2kpdU4" />
+      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke" />
+      <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK" />
+      <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
+      </concept>
+      <concept id="7286718421228046626" name="KarelBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
       <concept id="3267332360032873876" name="KarelBasic.structure.PickMark" flags="ng" index="17GwzG" />
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
@@ -64,15 +69,9 @@
         <node concept="17Ff7J" id="2PnTnxF1UNk" role="17CkHB" />
         <node concept="3jGSmg" id="2PnTnxF1UN5" role="17CkHq">
           <node concept="1$shr6" id="2PnTnxF21JP" role="3jGSnO" />
-          <node concept="2kp8ke" id="2PnTnxF2BMa" role="3jGSnO">
-            <property role="2kpdU4" value="true" />
-          </node>
           <node concept="1$shr6" id="2PnTnxF2CWm" role="3jGSnO" />
         </node>
         <node concept="3jGSmg" id="2PnTnxF1UN7" role="17CkHv">
-          <node concept="2kp8ke" id="2PnTnxF2BMi" role="3jGSnO">
-            <property role="2kpdU4" value="false" />
-          </node>
           <node concept="1$shr6" id="2PnTnxF21Jz" role="3jGSnO" />
           <node concept="1$vv3L" id="2PnTnxF2gv3" role="3jGSnO" />
           <node concept="1$shr6" id="2PnTnxF2C$P" role="3jGSnO" />
@@ -166,6 +165,26 @@
         <node concept="17FIjn" id="5eWJqD2nyzu" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="4kfw1ThA4HI" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6kvBWKzBdGa">
+    <property role="TrG5h" value="Messages" />
+    <node concept="3jGSmg" id="6kvBWKzBdGb" role="3jGSko">
+      <node concept="2kp8ke" id="6kvBWKzBier" role="3jGSnO">
+        <node concept="16y5rI" id="6kvBWKzBiex" role="16wSqL">
+          <property role="16xLMo" value="Ahoj" />
+        </node>
+      </node>
+      <node concept="2kp8ke" id="6kvBWKzBFwA" role="3jGSnO">
+        <node concept="16y5rI" id="6kvBWKzBFwB" role="16wSqL">
+          <property role="16xLMo" value="" />
+        </node>
+      </node>
+      <node concept="2kpimK" id="6kvBWKzDg3_" role="3jGSnO">
+        <node concept="16y5rI" id="6kvBWKzDg3A" role="16wSqL">
+          <property role="16xLMo" value="Konec" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
