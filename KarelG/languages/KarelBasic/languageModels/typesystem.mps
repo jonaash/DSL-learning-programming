@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
@@ -25,6 +26,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -159,8 +163,13 @@
         </node>
         <node concept="3clFbC" id="5eWJqD2tbgH" role="3clFbw">
           <node concept="10Nm6u" id="5eWJqD2tbhr" role="3uHU7w" />
-          <node concept="1YBJjd" id="5eWJqD2tbeQ" role="3uHU7B">
-            <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+          <node concept="2OqwBi" id="7_uVVPcJ5Yq" role="3uHU7B">
+            <node concept="1YBJjd" id="5eWJqD2tbeQ" role="2Oq$k0">
+              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+            </node>
+            <node concept="3TrcHB" id="7_uVVPcJ6kw" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
           </node>
         </node>
       </node>
@@ -215,22 +224,22 @@
               <node concept="1bVj0M" id="5eWJqD2thQQ" role="23t8la">
                 <node concept="3clFbS" id="5eWJqD2thQR" role="1bW5cS">
                   <node concept="3clFbF" id="5eWJqD2thTS" role="3cqZAp">
-                    <node concept="2OqwBi" id="5eWJqD2tj5Q" role="3clFbG">
-                      <node concept="2OqwBi" id="5eWJqD2thXF" role="2Oq$k0">
-                        <node concept="37vLTw" id="5eWJqD2thTR" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5eWJqD2thQS" resolve="it" />
+                    <node concept="2OqwBi" id="7_uVVPcJkIl" role="3clFbG">
+                      <node concept="2OqwBi" id="5eWJqD2tjVR" role="2Oq$k0">
+                        <node concept="1YBJjd" id="5eWJqD2tjRN" role="2Oq$k0">
+                          <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
                         </node>
-                        <node concept="3TrcHB" id="5eWJqD2tilA" role="2OqNvi">
+                        <node concept="3TrcHB" id="5eWJqD2tkic" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="5eWJqD2tjOG" role="2OqNvi">
+                      <node concept="liA8E" id="7_uVVPcJluI" role="2OqNvi">
                         <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                        <node concept="2OqwBi" id="5eWJqD2tjVR" role="37wK5m">
-                          <node concept="1YBJjd" id="5eWJqD2tjRN" role="2Oq$k0">
-                            <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+                        <node concept="2OqwBi" id="7_uVVPcJlQV" role="37wK5m">
+                          <node concept="37vLTw" id="7_uVVPcJlM_" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5eWJqD2thQS" resolve="it" />
                           </node>
-                          <node concept="3TrcHB" id="5eWJqD2tkic" role="2OqNvi">
+                          <node concept="3TrcHB" id="7_uVVPcJm7Y" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
@@ -257,20 +266,32 @@
             <node concept="1YBJjd" id="5eWJqD2tdFz" role="2OEOjV">
               <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
             </node>
-            <node concept="Xl_RD" id="5eWJqD2tdBk" role="2MkJ7o">
-              <property role="Xl_RC" value="Routine name must be unique within Script" />
+            <node concept="2YIFZM" id="7_uVVPcI5bI" role="2MkJ7o">
+              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+              <node concept="Xl_RD" id="7_uVVPcI5fO" role="37wK5m">
+                <property role="Xl_RC" value="error.routine.not.unique" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3eOSWO" id="5eWJqD2td_i" role="3clFbw">
-          <node concept="3cmrfG" id="5eWJqD2td_l" role="3uHU7w">
-            <property role="3cmrfH" value="1" />
-          </node>
-          <node concept="2OqwBi" id="5eWJqD2tcnP" role="3uHU7B">
-            <node concept="37vLTw" id="5eWJqD2tcdt" role="2Oq$k0">
+        <node concept="1Wc70l" id="7_uVVPcHxOp" role="3clFbw">
+          <node concept="3y3z36" id="7_uVVPcHy3r" role="3uHU7B">
+            <node concept="10Nm6u" id="7_uVVPcHy5A" role="3uHU7w" />
+            <node concept="37vLTw" id="7_uVVPcHxRe" role="3uHU7B">
               <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="defs" />
             </node>
-            <node concept="34oBXx" id="5eWJqD2tcY3" role="2OqNvi" />
+          </node>
+          <node concept="3eOSWO" id="5eWJqD2td_i" role="3uHU7w">
+            <node concept="3cmrfG" id="5eWJqD2td_l" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="5eWJqD2tcnP" role="3uHU7B">
+              <node concept="37vLTw" id="5eWJqD2tcdt" role="2Oq$k0">
+                <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="defs" />
+              </node>
+              <node concept="34oBXx" id="5eWJqD2tcY3" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
@@ -286,14 +307,18 @@
       <node concept="3clFbJ" id="5eWJqD2tnQg" role="3cqZAp">
         <node concept="3clFbS" id="5eWJqD2tnQh" role="3clFbx">
           <node concept="2MkqsV" id="5eWJqD2tpFR" role="3cqZAp">
-            <node concept="Xl_RD" id="5eWJqD2trdm" role="2MkJ7o">
-              <property role="Xl_RC" value="Name can contain only alphanumeric characters, spaces and underscore" />
-            </node>
             <node concept="1YBJjd" id="5eWJqD2tDMf" role="2OEOjV">
               <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="routineDefinition" />
             </node>
             <node concept="2ODE4t" id="5eWJqD2tEpI" role="2OEWyd">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+            </node>
+            <node concept="2YIFZM" id="7_uVVPcJRRx" role="2MkJ7o">
+              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+              <node concept="Xl_RD" id="7_uVVPcJSqF" role="37wK5m">
+                <property role="Xl_RC" value="error.variable.name.wrong.format" />
+              </node>
             </node>
           </node>
         </node>
@@ -344,11 +369,15 @@
             <node concept="1YBJjd" id="2WqFKNDRxLo" role="2OEOjV">
               <ref role="1YBMHb" node="2WqFKNDRwy6" resolve="repeat" />
             </node>
-            <node concept="Xl_RD" id="2WqFKNDRxKd" role="2MkJ7o">
-              <property role="Xl_RC" value="Iteration count must be a number." />
-            </node>
             <node concept="2OE7Q9" id="2WqFKNDRxOK" role="2OEWyd">
               <ref role="2OEe5H" to="dyrx:2WqFKNDQRsu" />
+            </node>
+            <node concept="2YIFZM" id="7_uVVPcJT7K" role="2MkJ7o">
+              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+              <node concept="Xl_RD" id="7_uVVPcJTb3" role="37wK5m">
+                <property role="Xl_RC" value="error.repeat.iteration.not.number" />
+              </node>
             </node>
           </node>
         </node>

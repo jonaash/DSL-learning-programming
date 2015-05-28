@@ -210,6 +210,8 @@
       <module namespace="Common" type="solution" uuid="03b98ce1-fecc-4ed5-a49d-43457de64e17">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
         </dependencies>
         <sources jar="Common-src.jar" descriptor="Common.msd" />
       </module>
@@ -222,12 +224,16 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Common-models">
       <fileset dir="${karel_home}/solutions/Common/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Common-resources-labels.properties">
+      <fileset dir="${karel_home}/solutions/Common/resources/labels.properties" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
     <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/Common-src.jar">
       <fileset dir="${karel_home}/solutions/Common/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
       <zipfileset file="${basedir}/solutions/Common/Common.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Common-models" prefix="module/../../../KarelG/solutions/Common/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Common-resources-labels.properties" prefix="module/../../../KarelG/solutions/Common/resources/labels.properties" />
     </jar>
     <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLangua.jar" />
     <mkdir dir="${build.tmp}/default/jetbrains.mps.baseLangua.jar/META-INF" />
@@ -417,11 +423,11 @@
         <path location="${karel_home}/solutions/KarelJava/source_gen" />
       </src>
       <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/Common" />
         <pathelement path="${build.tmp}/java/out/GuiLib" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <fileset file="${karel_home}/solutions/GuiServerLib/lib/slf4j-api.jar" />
@@ -466,7 +472,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.Common">
+  <target name="java.compile.Common" depends="fetchDependencies">
     <mkdir dir="${karel_home}/solutions/Common/source_gen" />
     <mkdir dir="${build.tmp}/java/out/Common" />
     <javac destdir="${build.tmp}/java/out/Common" fork="true" includeantruntime="false">
@@ -474,7 +480,10 @@
       <src>
         <path location="${karel_home}/solutions/Common/source_gen" />
       </src>
-      <classpath />
+      <classpath>
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+      </classpath>
     </javac>
   </target>
   
@@ -487,7 +496,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.KarelBasic" depends="java.compile.GuiLib, java.compile.JavaKarel, fetchDependencies">
+  <target name="java.compile.KarelBasic" depends="java.compile.Common, java.compile.GuiLib, java.compile.JavaKarel, fetchDependencies">
     <mkdir dir="${karel_home}/languages/KarelBasic/source_gen" />
     <mkdir dir="${build.tmp}/java/out/KarelBasic" />
     <javac destdir="${build.tmp}/java/out/KarelBasic" fork="true" includeantruntime="false">
@@ -496,10 +505,11 @@
         <path location="${karel_home}/languages/KarelBasic/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/GuiLib" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <pathelement path="${build.tmp}/java/out/Common" />
+        <pathelement path="${build.tmp}/java/out/GuiLib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <pathelement path="${build.tmp}/java/out/JavaKarel" />
