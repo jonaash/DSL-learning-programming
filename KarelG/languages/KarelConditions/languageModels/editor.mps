@@ -168,7 +168,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2PnTnxEYPov">
-    <property role="3GE5qa" value="logical.query" />
+    <property role="3GE5qa" value="expression.logical.query" />
     <ref role="1XX52x" to="9xx6:2PnTnxEYg7A" resolve="IsLooking" />
     <node concept="3EZMnI" id="2PnTnxEYPox" role="2wV5jI">
       <node concept="PMmxH" id="2PnTnxEYPoC" role="3EZMnx">
@@ -184,43 +184,6 @@
     <property role="TrG5h" value="ConditionsStyles" />
     <node concept="14StLt" id="2PnTnxEYS0C" role="V601i">
       <property role="TrG5h" value="LogicalExpresion" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6OirKjsFlWM">
-    <property role="3GE5qa" value="logical.operator" />
-    <ref role="1XX52x" to="9xx6:6OirKjsF4ES" resolve="Not" />
-    <node concept="3EZMnI" id="6OirKjsFnLP" role="2wV5jI">
-      <node concept="PMmxH" id="6OirKjsFnLZ" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
-      </node>
-      <node concept="3F1sOY" id="6OirKjsFnM7" role="3EZMnx">
-        <ref role="1NtTu8" to="9xx6:6OirKjsF4V6" />
-      </node>
-      <node concept="l2Vlx" id="6OirKjsFnLS" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6OirKjsGMs5">
-    <property role="3GE5qa" value="logical.operator" />
-    <ref role="1XX52x" to="9xx6:6OirKjsGMn3" resolve="BinaryLogicalOperator" />
-    <node concept="3EZMnI" id="6OirKjsFnNc" role="2wV5jI">
-      <node concept="3F0ifn" id="6OirKjsGMtc" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
-      </node>
-      <node concept="3F1sOY" id="6OirKjsFnNq" role="3EZMnx">
-        <ref role="1NtTu8" to="9xx6:6OirKjsGMok" />
-      </node>
-      <node concept="PMmxH" id="6OirKjsFnNL" role="3EZMnx">
-        <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F1sOY" id="6OirKjsFnOg" role="3EZMnx">
-        <ref role="1NtTu8" to="9xx6:6OirKjsGMon" />
-      </node>
-      <node concept="3F0ifn" id="6OirKjsGMuA" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-      </node>
-      <node concept="l2Vlx" id="6OirKjsFnNf" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="6OirKjsJslm">
@@ -255,7 +218,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5eWJqD2l4Lw">
-    <property role="3GE5qa" value="logical.query" />
+    <property role="3GE5qa" value="expression.logical.query" />
     <ref role="1XX52x" to="9xx6:5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
     <node concept="PMmxH" id="5eWJqD2lcus" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
