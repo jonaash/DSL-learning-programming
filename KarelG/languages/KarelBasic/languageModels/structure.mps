@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -349,6 +350,38 @@
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6kvBWKz_Wyo" resolve="StringExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2WqFKNE4FE7">
+    <property role="TrG5h" value="BinaryOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="expression.operator" />
+    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="2WqFKNE4H3M" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="leftExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2WqFKNE4H45" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rightExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3hBhvFS$B8N">
+    <property role="3GE5qa" value="expression.operator" />
+    <property role="TrG5h" value="UnaryOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="3hBhvFS$BnS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
     </node>
   </node>
 </model>
