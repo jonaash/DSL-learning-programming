@@ -14,6 +14,7 @@
       <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987">
         <child id="6033906139725455995" name="body" index="hRHZh" />
       </concept>
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756790928180" name="KarelBasic.structure.Library" flags="ng" index="3cDPre">
         <child id="3776063756790928398" name="routines" index="3cDP7O" />
       </concept>
@@ -47,9 +48,10 @@
       </node>
     </node>
     <node concept="3jGSmg" id="5eWJqD2oIpG" role="3jGSko">
-      <node concept="3cDPMK" id="3hBhvFSOs$Y" role="3jGSnO">
+      <node concept="3cDPMK" id="3hBhvFT10QF" role="3jGSnO">
         <ref role="3cDPMs" node="3hBhvFSK8cm" resolve="Common" />
       </node>
+      <node concept="17J3f2" id="3hBhvFT2ojU" role="3jGSnO" />
       <node concept="1$shr6" id="5eWJqD2oIqe" role="3jGSnO" />
       <node concept="1$shr6" id="2WqFKNC_fw3" role="3jGSnO" />
       <node concept="29J8_c" id="5eWJqD2r3pY" role="3jGSnO">
