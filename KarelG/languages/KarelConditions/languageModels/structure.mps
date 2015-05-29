@@ -129,20 +129,20 @@
   </node>
   <node concept="1TIwiD" id="6OirKjsF4ES">
     <property role="3GE5qa" value="expression.logical.operator" />
-    <property role="TrG5h" value="Not" />
+    <property role="TrG5h" value="NotOperator" />
     <property role="34LRSv" value="not" />
     <property role="R4oN_" value="negation of logical expression" />
     <ref role="1TJDcQ" node="3hBhvFSJniE" resolve="UnaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsFlOH">
     <property role="3GE5qa" value="expression.logical.operator" />
-    <property role="TrG5h" value="And" />
+    <property role="TrG5h" value="AndOperator" />
     <property role="34LRSv" value="and" />
     <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsFlUw">
     <property role="3GE5qa" value="expression.logical.operator" />
-    <property role="TrG5h" value="Or" />
+    <property role="TrG5h" value="OrOperator" />
     <property role="34LRSv" value="or" />
     <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
