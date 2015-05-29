@@ -132,7 +132,7 @@
     <property role="TrG5h" value="Not" />
     <property role="34LRSv" value="not" />
     <property role="R4oN_" value="negation of logical expression" />
-    <ref role="1TJDcQ" to="dyrx:3hBhvFS$B8N" resolve="UnaryOperator" />
+    <ref role="1TJDcQ" node="3hBhvFSJniE" resolve="UnaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsFlOH">
     <property role="3GE5qa" value="expression.logical.operator" />
@@ -184,6 +184,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3hBhvFSJniE">
+    <property role="3GE5qa" value="expression.logical.operator" />
+    <property role="TrG5h" value="UnaryLogicalOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="dyrx:3hBhvFS$B8N" resolve="UnaryOperator" />
   </node>
 </model>
 

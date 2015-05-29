@@ -269,12 +269,85 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3hBhvFSEAzu">
-    <property role="TrG5h" value="typeof_Not" />
+    <property role="TrG5h" value="typeof_UnaryLogicalOperator" />
     <property role="3GE5qa" value="expression.logical.operator" />
-    <node concept="3clFbS" id="3hBhvFSEAzv" role="18ibNy" />
+    <node concept="3clFbS" id="3hBhvFSEAzv" role="18ibNy">
+      <node concept="3cpWs8" id="3hBhvFSJn3r" role="3cqZAp">
+        <node concept="3cpWsn" id="3hBhvFSJn3s" role="3cpWs9">
+          <property role="TrG5h" value="BOOLEAN_TYPE" />
+          <property role="3TUv4t" value="true" />
+          <node concept="3Tqbb2" id="3hBhvFSJn3t" role="1tU5fm">
+            <ref role="ehGHo" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+          </node>
+          <node concept="2pJPEk" id="3hBhvFSJn3u" role="33vP2m">
+            <node concept="2pJPED" id="3hBhvFSJn3v" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="nvevp" id="3hBhvFSJkSp" role="3cqZAp">
+        <node concept="2X1qdy" id="3hBhvFSJkSq" role="2X0Ygz">
+          <property role="TrG5h" value="exprType" />
+          <node concept="2jxLKc" id="3hBhvFSJkSr" role="1tU5fm" />
+        </node>
+        <node concept="3clFbS" id="3hBhvFSJkSs" role="nvhr_">
+          <node concept="1ZobV4" id="3hBhvFSJkSA" role="3cqZAp">
+            <property role="3wDh2S" value="true" />
+            <node concept="mw_s8" id="3hBhvFSJkSB" role="1ZfhKB">
+              <node concept="37vLTw" id="3hBhvFSJn9S" role="mwGJk">
+                <ref role="3cqZAo" node="3hBhvFSJn3s" resolve="BOOLEAN_TYPE" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="3hBhvFSJkSD" role="1ZfhK$">
+              <node concept="2X3wrD" id="3hBhvFSJkSE" role="mwGJk">
+                <ref role="2X3Bk0" node="3hBhvFSJkSq" resolve="exprType" />
+              </node>
+            </node>
+            <node concept="2YIFZM" id="3hBhvFSJmSp" role="3o8Qv2">
+              <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+              <node concept="Xl_RD" id="3hBhvFSJmTa" role="37wK5m">
+                <property role="Xl_RC" value="error.logical.unary.operator.wrong.type" />
+              </node>
+              <node concept="1YBJjd" id="3hBhvFSJmUt" role="37wK5m">
+                <ref role="1YBMHb" node="3hBhvFSEAzx" resolve="unaryLogicalOperator" />
+              </node>
+              <node concept="37vLTw" id="3hBhvFSJnaH" role="37wK5m">
+                <ref role="3cqZAo" node="3hBhvFSJn3s" resolve="BOOLEAN_TYPE" />
+              </node>
+            </node>
+          </node>
+          <node concept="1ZobV4" id="3hBhvFSJkSF" role="3cqZAp">
+            <node concept="mw_s8" id="3hBhvFSJkSG" role="1ZfhKB">
+              <node concept="37vLTw" id="3hBhvFSJnan" role="mwGJk">
+                <ref role="3cqZAo" node="3hBhvFSJn3s" resolve="BOOLEAN_TYPE" />
+              </node>
+            </node>
+            <node concept="mw_s8" id="3hBhvFSJkSI" role="1ZfhK$">
+              <node concept="1Z2H0r" id="3hBhvFSJkSJ" role="mwGJk">
+                <node concept="1YBJjd" id="3hBhvFSJm53" role="1Z2MuG">
+                  <ref role="1YBMHb" node="3hBhvFSEAzx" resolve="unaryLogicalOperator" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Z2H0r" id="3hBhvFSJkSL" role="nvjzm">
+          <node concept="2OqwBi" id="3hBhvFSJkSM" role="1Z2MuG">
+            <node concept="1YBJjd" id="3hBhvFSJlCk" role="2Oq$k0">
+              <ref role="1YBMHb" node="3hBhvFSEAzx" resolve="unaryLogicalOperator" />
+            </node>
+            <node concept="3TrEf2" id="3hBhvFSJm3k" role="2OqNvi">
+              <ref role="3Tt5mk" to="dyrx:3hBhvFS$BnS" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1YaCAy" id="3hBhvFSEAzx" role="1YuTPh">
-      <property role="TrG5h" value="not" />
-      <ref role="1YaFvo" to="9xx6:6OirKjsF4ES" resolve="Not" />
+      <property role="TrG5h" value="unaryLogicalOperator" />
+      <ref role="1YaFvo" to="9xx6:3hBhvFSJniE" resolve="UnaryLogicalOperator" />
     </node>
   </node>
   <node concept="3hdX5o" id="3hBhvFSFzMH">
