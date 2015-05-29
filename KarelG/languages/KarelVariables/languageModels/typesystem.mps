@@ -9,7 +9,6 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -133,12 +132,6 @@
         <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
         <reference id="1154546997487" name="concept" index="3gnhBz" />
@@ -174,25 +167,6 @@
               <node concept="2jxLKc" id="3hBhvFSilo2" role="1tU5fm" />
             </node>
             <node concept="3clFbS" id="3hBhvFSilo4" role="nvhr_">
-              <node concept="34ab3g" id="3hBhvFSjT_T" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="2YIFZM" id="3hBhvFSjUlD" role="34bqiv">
-                  <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                  <node concept="Xl_RD" id="3hBhvFSjUm8" role="37wK5m">
-                    <property role="Xl_RC" value="Binary operator: %s, left: %s, right: %s" />
-                  </node>
-                  <node concept="1YBJjd" id="3hBhvFSjUEu" role="37wK5m">
-                    <ref role="1YBMHb" node="3hBhvFSijfO" resolve="binaryOperator" />
-                  </node>
-                  <node concept="2X3wrD" id="3hBhvFSjULZ" role="37wK5m">
-                    <ref role="2X3Bk0" node="3hBhvFSikWB" resolve="leftType" />
-                  </node>
-                  <node concept="2X3wrD" id="3hBhvFSjUWH" role="37wK5m">
-                    <ref role="2X3Bk0" node="3hBhvFSilo1" resolve="rightType" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="3hBhvFSjTXs" role="3cqZAp" />
               <node concept="3cpWs8" id="3hBhvFSilPH" role="3cqZAp">
                 <node concept="3cpWsn" id="3hBhvFSilPK" role="3cpWs9">
