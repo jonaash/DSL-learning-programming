@@ -74,7 +74,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1GufzGWfyPW">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="variable" />
     <ref role="1XX52x" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
     <node concept="3EZMnI" id="1GufzGWfyQ$" role="2wV5jI">
       <node concept="3F1sOY" id="1GufzGWfyQI" role="3EZMnx">

@@ -18,7 +18,6 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -101,7 +100,7 @@
     <ref role="1TJDcQ" node="2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="1GufzGWfyAd">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="variable" />
     <property role="TrG5h" value="AssignmentCommand" />
     <property role="34LRSv" value="=" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
@@ -117,10 +116,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="1GufzGWfA50">
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="IStandaloneExpression" />
   </node>
 </model>
 

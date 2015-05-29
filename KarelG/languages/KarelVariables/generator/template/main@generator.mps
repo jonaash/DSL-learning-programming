@@ -497,7 +497,7 @@
   </node>
   <node concept="13MO4I" id="2WqFKNE4HxS">
     <property role="TrG5h" value="reduce_AssignmentCommand" />
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="variable" />
     <ref role="3gUMe" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
     <node concept="9aQIb" id="2WqFKNE4HxX" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNE4HxZ" role="9aQI4">

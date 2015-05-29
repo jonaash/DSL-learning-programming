@@ -279,7 +279,7 @@
     <node concept="3aamgX" id="2PnTnxEV_3u" role="3acgRq">
       <ref role="30HIoZ" to="dyrx:1IJMvjRjER" resolve="CommandList" />
       <node concept="j$656" id="2PnTnxEXi_z" role="1lVwrX">
-        <ref role="v9R2y" node="2PnTnxEXi_x" resolve="reduce_CodeBlock" />
+        <ref role="v9R2y" node="2PnTnxEXi_x" resolve="reduce_CommandList" />
       </node>
     </node>
     <node concept="3aamgX" id="2PnTnxEVis7" role="3acgRq">
@@ -917,8 +917,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="2PnTnxEXi_x">
-    <property role="TrG5h" value="reduce_CodeBlock" />
-    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="reduce_CommandList" />
+    <property role="3GE5qa" value="command" />
     <ref role="3gUMe" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     <node concept="9aQIb" id="4kfw1ThvSRh" role="13RCb5">
       <node concept="3clFbS" id="4kfw1ThvSRi" role="9aQI4">
@@ -950,6 +950,7 @@
   </node>
   <node concept="13MO4I" id="5eWJqD2phKw">
     <property role="TrG5h" value="reduce_RoutineCall" />
+    <property role="3GE5qa" value="routine" />
     <ref role="3gUMe" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="312cEu" id="5eWJqD2pjub" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -1002,6 +1003,7 @@
   </node>
   <node concept="13MO4I" id="5eWJqD2pi4e">
     <property role="TrG5h" value="reduce_RoutineDefinition" />
+    <property role="3GE5qa" value="routine" />
     <ref role="3gUMe" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="312cEu" id="5eWJqD2pi5a" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -1067,7 +1069,7 @@
   </node>
   <node concept="13MO4I" id="2WqFKNDSU$B">
     <property role="TrG5h" value="reduce_IntegerLiteral" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="expression" />
     <ref role="3gUMe" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
     <node concept="9aQIb" id="2WqFKNDSU$H" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDSU$J" role="9aQI4">
@@ -1104,7 +1106,7 @@
   </node>
   <node concept="13MO4I" id="6kvBWKzAbou">
     <property role="TrG5h" value="reduce_StringLiteral" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="expression" />
     <ref role="3gUMe" to="dyrx:6kvBWKz_W$y" resolve="StringLiteral" />
     <node concept="9aQIb" id="6kvBWKzAcgV" role="13RCb5">
       <node concept="3clFbS" id="6kvBWKzAcgX" role="9aQI4">

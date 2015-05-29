@@ -326,7 +326,7 @@
   </node>
   <node concept="1YbPZF" id="3hBhvFSpekl">
     <property role="TrG5h" value="typeof_AssignmentCommand" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="variable" />
     <node concept="3clFbS" id="3hBhvFSpekm" role="18ibNy">
       <node concept="nvevp" id="3hBhvFSpemf" role="3cqZAp">
         <node concept="2X1qdy" id="3hBhvFSpemg" role="2X0Ygz">
@@ -401,7 +401,7 @@
   </node>
   <node concept="1YbPZF" id="3hBhvFSxTCg">
     <property role="TrG5h" value="typeof_VariableDeclaration" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="variable" />
     <node concept="3clFbS" id="3hBhvFSxTCh" role="18ibNy">
       <node concept="3clFbJ" id="3hBhvFSxUZB" role="3cqZAp">
         <node concept="3clFbS" id="3hBhvFSxUZD" role="3clFbx">
