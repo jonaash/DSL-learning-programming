@@ -141,14 +141,8 @@
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
-        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
-      </concept>
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
-      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
-        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
@@ -248,31 +242,7 @@
     </node>
     <node concept="3aamgX" id="3hBhvFS_s6F" role="3acgRq">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-      <node concept="30G5F_" id="3hBhvFSAztQ" role="30HLyM">
-        <node concept="3clFbS" id="3hBhvFSAztR" role="2VODD2">
-          <node concept="3clFbF" id="3hBhvFSAzyL" role="3cqZAp">
-            <node concept="22lmx$" id="3hBhvFSA$aV" role="3clFbG">
-              <node concept="2OqwBi" id="3hBhvFSA$nM" role="3uHU7w">
-                <node concept="30H73N" id="3hBhvFSA$hU" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3hBhvFSA$NZ" role="2OqNvi">
-                  <node concept="chp4Y" id="3hBhvFSA$V4" role="cj9EA">
-                    <ref role="cht4Q" to="9xx6:6OirKjsFlUw" resolve="Or" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="3hBhvFSAzBz" role="3uHU7B">
-                <node concept="30H73N" id="3hBhvFSAzyK" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3hBhvFSAzRn" role="2OqNvi">
-                  <node concept="chp4Y" id="3hBhvFSAzXj" role="cj9EA">
-                    <ref role="cht4Q" to="9xx6:6OirKjsFlOH" resolve="And" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <ref role="30HIoZ" to="9xx6:3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
       <node concept="1Koe21" id="3hBhvFSBD1t" role="1lVwrX">
         <node concept="3clFbT" id="3hBhvFSBDfo" role="1Koe22">
           <node concept="raruj" id="3hBhvFSBDfu" role="lGtFl" />

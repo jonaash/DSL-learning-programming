@@ -84,7 +84,7 @@
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="IsLooking" />
     <property role="34LRSv" value="looking" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <ref role="1TJDcQ" node="3hBhvFSEy0h" resolve="LogicalQuery" />
     <node concept="1TJgyi" id="2PnTnxEYjbx" role="1TKVEl">
       <property role="TrG5h" value="direction" />
       <ref role="AX2Wp" node="2PnTnxEYgha" resolve="Direction" />
@@ -111,7 +111,7 @@
     <node concept="1TJgyj" id="2PnTnxEXESB" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="falseBranch" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     </node>
   </node>
@@ -138,13 +138,13 @@
     <property role="3GE5qa" value="expression.logical.operator" />
     <property role="TrG5h" value="And" />
     <property role="34LRSv" value="and" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsFlUw">
     <property role="3GE5qa" value="expression.logical.operator" />
     <property role="TrG5h" value="Or" />
     <property role="34LRSv" value="or" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsJsjE">
     <property role="3GE5qa" value="command.control" />
@@ -167,6 +167,20 @@
   <node concept="1TIwiD" id="5eWJqD2l4JP">
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="NullaryLogicalQuery" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="3hBhvFSEy0h" resolve="LogicalQuery" />
+  </node>
+  <node concept="1TIwiD" id="3hBhvFSDZzq">
+    <property role="3GE5qa" value="expression.logical.operator" />
+    <property role="TrG5h" value="BinaryLogicalOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="3hBhvFSEy0h">
+    <property role="3GE5qa" value="expression.logical.query" />
+    <property role="TrG5h" value="LogicalQuery" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />

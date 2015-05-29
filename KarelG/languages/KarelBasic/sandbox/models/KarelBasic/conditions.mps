@@ -25,9 +25,6 @@
       <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
-      <concept id="3776063756787937843" name="KarelBasic.structure.UnaryOperator" flags="ng" index="3cXjv9">
-        <child id="3776063756787938808" name="expression" index="3cXj02" />
-      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -47,7 +44,6 @@
         <child id="7859466366388913412" name="body" index="2LFUC0" />
         <child id="7859466366388913409" name="condition" index="2LFUC5" />
       </concept>
-      <concept id="7859466366387767992" name="KarelConditions.structure.Not" flags="ng" index="2LJymW" />
       <concept id="7859466366387838253" name="KarelConditions.structure.And" flags="ng" index="2LJN8D" />
       <concept id="3267332360033971606" name="KarelConditions.structure.IfStatement" flags="ng" index="17CkzI">
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
@@ -103,23 +99,17 @@
         <node concept="3jGSmg" id="6OirKjsHb$i" role="17CkHv" />
         <node concept="2LJN8D" id="3hBhvFS$Q8o" role="17CkHB">
           <node concept="17Ff7J" id="3hBhvFS$Q8D" role="3527ZY" />
-          <node concept="17FIiu" id="3hBhvFS$Q8I" role="3527S9">
-            <property role="17FHup" value="west" />
-          </node>
+          <node concept="17Ff7J" id="3hBhvFSGZXj" role="3527S9" />
         </node>
       </node>
-      <node concept="17J3f2" id="3hBhvFSDkJL" role="3jGSnO" />
-      <node concept="17CkzI" id="3hBhvFSDkFS" role="3jGSnO">
-        <node concept="2LJymW" id="3hBhvFSDkIs" role="17CkHB">
-          <node concept="17Ff7J" id="3hBhvFSDkIA" role="3cXj02" />
-        </node>
-        <node concept="3jGSmg" id="3hBhvFSDkFW" role="17CkHq">
-          <node concept="17J3f2" id="3hBhvFSDkFX" role="3jGSnO" />
-        </node>
-        <node concept="3jGSmg" id="3hBhvFSDkFZ" role="17CkHv">
-          <node concept="17J3f2" id="3hBhvFSDkG0" role="3jGSnO" />
+      <node concept="17J3f2" id="3hBhvFSHxaM" role="3jGSnO" />
+      <node concept="17CkzI" id="3hBhvFSHxb5" role="3jGSnO">
+        <node concept="17Ff7J" id="3hBhvFSHxbo" role="17CkHB" />
+        <node concept="3jGSmg" id="3hBhvFSHxb9" role="17CkHq">
+          <node concept="17J3f2" id="3hBhvFSHxba" role="3jGSnO" />
         </node>
       </node>
+      <node concept="17J3f2" id="3hBhvFSHxbu" role="3jGSnO" />
     </node>
   </node>
   <node concept="1$vsWe" id="6OirKjsJDQc">
@@ -153,12 +143,16 @@
         <node concept="17Ff7J" id="5eWJqD2o3B4" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="4kfw1ThF8A7" role="3jGSnO" />
-      <node concept="17CkzI" id="5eWJqD2nyxs" role="3jGSnO">
-        <node concept="3jGSmg" id="5eWJqD2nyxw" role="17CkHq" />
-        <node concept="3jGSmg" id="5eWJqD2nyxy" role="17CkHv" />
-        <node concept="17FIjn" id="5eWJqD2nyzu" role="17CkHB" />
+      <node concept="17CkzI" id="3hBhvFSH$fK" role="3jGSnO">
+        <node concept="17Ff7J" id="3hBhvFSH$g6" role="17CkHB" />
+        <node concept="3jGSmg" id="3hBhvFSH$fO" role="17CkHq">
+          <node concept="1$shr6" id="3hBhvFSHCnX" role="3jGSnO" />
+          <node concept="1$shr6" id="3hBhvFSHCo3" role="3jGSnO" />
+        </node>
       </node>
-      <node concept="17J3f2" id="4kfw1ThA4HI" role="3jGSnO" />
+      <node concept="17J3f2" id="3hBhvFSHCn7" role="3jGSnO" />
+      <node concept="17J3f2" id="3hBhvFSHCno" role="3jGSnO" />
+      <node concept="17J3f2" id="3hBhvFSHCnE" role="3jGSnO" />
     </node>
   </node>
   <node concept="1$vsWe" id="6kvBWKzBdGa">
