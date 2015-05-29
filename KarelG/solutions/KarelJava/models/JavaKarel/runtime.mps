@@ -119,6 +119,7 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -380,16 +381,6 @@
         <ref role="3uigEE" node="5$nXhJbJx5" resolve="World" />
       </node>
     </node>
-    <node concept="312cEg" id="7YU6lPWrTFY" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="robot" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="7YU6lPWrTFx" role="1tU5fm">
-        <ref role="3uigEE" node="1UBpzRreY5r" resolve="IRobot" />
-      </node>
-      <node concept="3Tmbuc" id="7YU6lPWrVwZ" role="1B3o_S" />
-    </node>
     <node concept="2tJIrI" id="7YU6lPWrTHg" role="jymVt" />
     <node concept="3clFbW" id="7YU6lPWxxM0" role="jymVt">
       <node concept="3cqZAl" id="7YU6lPWxxM1" role="3clF45" />
@@ -623,8 +614,8 @@
                 <ref role="37wK5l" node="728gBe0H7d9" resolve="getRobot" />
               </node>
             </node>
-            <node concept="37vLTw" id="1wz1usTxOnD" role="37vLTJ">
-              <ref role="3cqZAo" node="7YU6lPWrTFY" resolve="robot" />
+            <node concept="37vLTw" id="3hBhvFSNzQQ" role="37vLTJ">
+              <ref role="3cqZAo" node="3hBhvFSNyQW" resolve="robot" />
             </node>
           </node>
         </node>
@@ -646,6 +637,9 @@
       <node concept="3cqZAl" id="1UBpzRreYjJ" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="1UBpzRreYi4" role="1B3o_S" />
+    <node concept="3uibUv" id="3hBhvFSNz$i" role="1zkMxy">
+      <ref role="3uigEE" node="3hBhvFSNyKL" resolve="RobotControl" />
+    </node>
   </node>
   <node concept="312cEu" id="2RDssu5UQO8">
     <property role="TrG5h" value="Cell" />
@@ -5076,6 +5070,56 @@
     </node>
     <node concept="2tJIrI" id="1wz1usTxd$d" role="jymVt" />
     <node concept="3Tm1VV" id="1wz1usTwYbn" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="3hBhvFSKOtX">
+    <property role="TrG5h" value="Library" />
+    <node concept="2tJIrI" id="3hBhvFSKP1O" role="jymVt" />
+    <node concept="3clFbW" id="3hBhvFSKUUV" role="jymVt">
+      <node concept="3cqZAl" id="3hBhvFSKUUW" role="3clF45" />
+      <node concept="3clFbS" id="3hBhvFSKUUY" role="3clF47">
+        <node concept="3clFbF" id="3hBhvFSN$Ar" role="3cqZAp">
+          <node concept="37vLTI" id="3hBhvFSN$GJ" role="3clFbG">
+            <node concept="2OqwBi" id="3hBhvFSN$AH" role="37vLTJ">
+              <node concept="Xjq3P" id="3hBhvFSN$Aq" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3hBhvFSN$E8" role="2OqNvi">
+                <ref role="2Oxat5" node="3hBhvFSNyQW" resolve="robot" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3hBhvFSN$IM" role="37vLTx">
+              <ref role="3cqZAo" node="3hBhvFSKUVa" resolve="robot" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3hBhvFSN$Ez" role="3cqZAp" />
+      </node>
+      <node concept="3Tmbuc" id="3hBhvFSKUUI" role="1B3o_S" />
+      <node concept="37vLTG" id="3hBhvFSKUVa" role="3clF46">
+        <property role="TrG5h" value="robot" />
+        <node concept="3uibUv" id="3hBhvFSKUV9" role="1tU5fm">
+          <ref role="3uigEE" node="1UBpzRreY5r" resolve="IRobot" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3hBhvFSKOtY" role="1B3o_S" />
+    <node concept="3uibUv" id="3hBhvFSN$_W" role="1zkMxy">
+      <ref role="3uigEE" node="3hBhvFSNyKL" resolve="RobotControl" />
+    </node>
+  </node>
+  <node concept="312cEu" id="3hBhvFSNyKL">
+    <property role="TrG5h" value="RobotControl" />
+    <property role="1sVAO0" value="true" />
+    <node concept="312cEg" id="3hBhvFSNyQW" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="robot" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3hBhvFSNyQX" role="1tU5fm">
+        <ref role="3uigEE" node="1UBpzRreY5r" resolve="IRobot" />
+      </node>
+      <node concept="3Tmbuc" id="3hBhvFSNyQY" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3hBhvFSNyKZ" role="jymVt" />
+    <node concept="3Tm1VV" id="3hBhvFSNyKM" role="1B3o_S" />
   </node>
 </model>
 

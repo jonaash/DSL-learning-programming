@@ -44,7 +44,7 @@
         <child id="7859466366388913412" name="body" index="2LFUC0" />
         <child id="7859466366388913409" name="condition" index="2LFUC5" />
       </concept>
-      <concept id="7859466366387838253" name="KarelConditions.structure.And" flags="ng" index="2LJN8D" />
+      <concept id="7859466366387838253" name="KarelConditions.structure.AndOperator" flags="ng" index="2LJN8D" />
       <concept id="3267332360033971606" name="KarelConditions.structure.IfStatement" flags="ng" index="17CkzI">
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
         <child id="3267332360033971751" name="falseBranch" index="17CkHv" />

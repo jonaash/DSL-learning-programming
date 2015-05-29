@@ -235,7 +235,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="6OirKjsFxSz" role="3acgRq">
-      <ref role="30HIoZ" to="9xx6:6OirKjsF4ES" resolve="Not" />
+      <ref role="30HIoZ" to="9xx6:6OirKjsF4ES" resolve="NotOperator" />
       <node concept="j$656" id="6OirKjsFy5f" role="1lVwrX">
         <ref role="v9R2y" node="6OirKjsFy5d" resolve="reduce_Not" />
       </node>
@@ -321,8 +321,8 @@
         <node concept="3clFbS" id="2PnTnxEZS97" role="3clF47">
           <node concept="3clFbF" id="2PnTnxEZS9D" role="3cqZAp">
             <node concept="2OqwBi" id="2PnTnxEZSan" role="3clFbG">
-              <node concept="37vLTw" id="6OirKjsBOpr" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:7YU6lPWrTFY" resolve="robot" />
+              <node concept="37vLTw" id="3hBhvFSOF7I" role="2Oq$k0">
+                <ref role="3cqZAo" to="4ujd:3hBhvFSNyQW" resolve="robot" />
               </node>
               <node concept="liA8E" id="2PnTnxF0tX6" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:2PnTnxEZTyK" resolve="isFull" />
@@ -432,8 +432,8 @@
         <node concept="3clFbS" id="6OirKjsFxNM" role="3clF47">
           <node concept="3clFbF" id="6OirKjsFxNN" role="3cqZAp">
             <node concept="2OqwBi" id="6OirKjsFxNO" role="3clFbG">
-              <node concept="37vLTw" id="6OirKjsFxNP" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:7YU6lPWrTFY" resolve="robot" />
+              <node concept="37vLTw" id="3hBhvFSOFfR" role="2Oq$k0">
+                <ref role="3cqZAo" to="4ujd:3hBhvFSNyQW" resolve="robot" />
               </node>
               <node concept="liA8E" id="6OirKjsFxNQ" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:2PnTnxEZTDV" resolve="isMark" />
@@ -454,7 +454,7 @@
   <node concept="13MO4I" id="6OirKjsFy5d">
     <property role="TrG5h" value="reduce_Not" />
     <property role="3GE5qa" value="logical.operator" />
-    <ref role="3gUMe" to="9xx6:6OirKjsF4ES" resolve="Not" />
+    <ref role="3gUMe" to="9xx6:6OirKjsF4ES" resolve="NotOperator" />
     <node concept="3clFbJ" id="6OirKjsF_1h" role="13RCb5">
       <node concept="3clFbS" id="6OirKjsF_1j" role="3clFbx" />
       <node concept="3fqX7Q" id="6OirKjsF_1z" role="3clFbw">
@@ -496,8 +496,8 @@
         <node concept="3clFbS" id="6OirKjsHgYD" role="3clF47">
           <node concept="3clFbF" id="6OirKjsHgYE" role="3cqZAp">
             <node concept="2OqwBi" id="6OirKjsHgYF" role="3clFbG">
-              <node concept="37vLTw" id="6OirKjsHgYG" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:7YU6lPWrTFY" resolve="robot" />
+              <node concept="37vLTw" id="3hBhvFSOFhy" role="2Oq$k0">
+                <ref role="3cqZAo" to="4ujd:3hBhvFSNyQW" resolve="robot" />
               </node>
               <node concept="liA8E" id="6OirKjsHgYH" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:2PnTnxEZTsd" resolve="isWallAhead" />
@@ -532,8 +532,8 @@
         <node concept="3clFbS" id="6OirKjsHlNy" role="3clF47">
           <node concept="3clFbF" id="6OirKjsHlNz" role="3cqZAp">
             <node concept="2OqwBi" id="6OirKjsHlN$" role="3clFbG">
-              <node concept="37vLTw" id="6OirKjsHlN_" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:7YU6lPWrTFY" resolve="robot" />
+              <node concept="37vLTw" id="3hBhvFSOFdL" role="2Oq$k0">
+                <ref role="3cqZAo" to="4ujd:3hBhvFSNyQW" resolve="robot" />
               </node>
               <node concept="liA8E" id="6OirKjsHlNA" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:2PnTnxEZTkP" resolve="isHeading" />
@@ -733,7 +733,7 @@
     <property role="3GE5qa" value="logical.operator" />
     <property role="TrG5h" value="switch_LogicalBinaryOperators" />
     <node concept="3aamgX" id="3hBhvFS_wee" role="3aUrZf">
-      <ref role="30HIoZ" to="9xx6:6OirKjsFlOH" resolve="And" />
+      <ref role="30HIoZ" to="9xx6:6OirKjsFlOH" resolve="AndOperator" />
       <node concept="1Koe21" id="3hBhvFS_weq" role="1lVwrX">
         <node concept="1Wc70l" id="3hBhvFS_wlE" role="1Koe22">
           <node concept="3clFbT" id="3hBhvFS_wm0" role="3uHU7w">
@@ -775,7 +775,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="3hBhvFS_xcU" role="3aUrZf">
-      <ref role="30HIoZ" to="9xx6:6OirKjsFlUw" resolve="Or" />
+      <ref role="30HIoZ" to="9xx6:6OirKjsFlUw" resolve="OrOperator" />
       <node concept="1Koe21" id="3hBhvFS_xdE" role="1lVwrX">
         <node concept="22lmx$" id="3hBhvFS_xkq" role="1Koe22">
           <node concept="3clFbT" id="3hBhvFS_xeV" role="3uHU7B">

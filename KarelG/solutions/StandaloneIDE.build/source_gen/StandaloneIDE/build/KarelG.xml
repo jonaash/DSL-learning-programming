@@ -526,7 +526,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.KarelBasic#3640435696255147963" depends="java.compile.GuiLib, java.compile.JavaKarel, java.compile.KarelBasic, fetchDependencies">
+  <target name="java.compile.KarelBasic#3640435696255147963" depends="java.compile.Common, java.compile.GuiLib, java.compile.JavaKarel, java.compile.KarelBasic, fetchDependencies">
     <mkdir dir="${karel_home}/languages/KarelBasic/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/KarelBasic#3640435696255147963" />
     <javac destdir="${build.tmp}/java/out/KarelBasic#3640435696255147963" fork="true" includeantruntime="false">
@@ -535,10 +535,11 @@
         <path location="${karel_home}/languages/KarelBasic/generator/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/GuiLib" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <pathelement path="${build.tmp}/java/out/Common" />
+        <pathelement path="${build.tmp}/java/out/GuiLib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
         <pathelement path="${build.tmp}/java/out/JavaKarel" />
