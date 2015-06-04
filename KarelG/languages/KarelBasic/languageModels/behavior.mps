@@ -276,13 +276,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="13h7C7" id="5eWJqD2rErt">
-    <property role="3GE5qa" value="routine" />
-    <ref role="13h7C2" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
-    <node concept="13hLZK" id="5eWJqD2rEru" role="13h7CW">
-      <node concept="3clFbS" id="5eWJqD2rErv" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="2WqFKNDQKG7">
     <property role="3GE5qa" value="expression.number" />
     <ref role="13h7C2" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />

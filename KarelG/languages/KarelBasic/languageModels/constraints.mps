@@ -17,6 +17,7 @@
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -296,6 +297,30 @@
     <ref role="1M2myG" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="1N5Pfh" id="3hBhvFT0iIq" role="1Mr941">
       <ref role="1N5Vy1" to="dyrx:5eWJqD2o_UE" />
+    </node>
+    <node concept="nKS2y" id="14XUkkdDK92" role="1MLUbF">
+      <node concept="3clFbS" id="14XUkkdDK93" role="2VODD2">
+        <node concept="3clFbF" id="14XUkkdDKns" role="3cqZAp">
+          <node concept="22lmx$" id="14XUkkdGzHr" role="3clFbG">
+            <node concept="2OqwBi" id="14XUkkdGzSb" role="3uHU7w">
+              <node concept="nLn13" id="14XUkkdGzNL" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="14XUkkdG$9m" role="2OqNvi">
+                <node concept="chp4Y" id="14XUkkdG$fM" role="cj9EA">
+                  <ref role="cht4Q" to="dyrx:1IJMvjRjER" resolve="CommandList" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="14XUkkdDKqZ" role="3uHU7B">
+              <node concept="nLn13" id="14XUkkdDKnr" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="14XUkkdDKEU" role="2OqNvi">
+                <node concept="chp4Y" id="14XUkkdDKKr" role="cj9EA">
+                  <ref role="cht4Q" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

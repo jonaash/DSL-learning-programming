@@ -8,8 +8,13 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987">
+      <concept id="4942585347623820899" name="KarelBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
+      <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
+      <concept id="1242405555015381639" name="KarelBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
+      </concept>
+      <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756790928180" name="KarelBasic.structure.Library" flags="ng" index="3cDPre">
@@ -17,6 +22,9 @@
       </concept>
       <concept id="3776063756790929738" name="KarelBasic.structure.Require" flags="ng" index="3cDPMK">
         <reference id="3776063756790929766" name="library" index="3cDPMs" />
+      </concept>
+      <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -36,12 +44,14 @@
   </registry>
   <node concept="1$vsWe" id="5eWJqD2oIpF">
     <property role="TrG5h" value="Routines" />
-    <node concept="29J987" id="5eWJqD2oIqo" role="hRyvC">
+    <node concept="29J987" id="14XUkkdFlp4" role="hRyvC">
       <property role="TrG5h" value="turn right" />
-      <node concept="3jGSmg" id="5eWJqD2oIqp" role="hRHZh">
-        <node concept="1$vv3L" id="5eWJqD2oM2m" role="3jGSnO" />
-        <node concept="1$vv3L" id="5eWJqD2oM2s" role="3jGSnO" />
-        <node concept="1$vv3L" id="5eWJqD2oM2$" role="3jGSnO" />
+      <node concept="3jGSmg" id="14XUkkdFlp5" role="hRHZh">
+        <node concept="3jGSmg" id="5eWJqD2oIqp" role="3jGSnO">
+          <node concept="1$vv3L" id="5eWJqD2oM2m" role="3jGSnO" />
+          <node concept="1$vv3L" id="5eWJqD2oM2s" role="3jGSnO" />
+          <node concept="1$vv3L" id="5eWJqD2oM2$" role="3jGSnO" />
+        </node>
       </node>
     </node>
     <node concept="3jGSmg" id="5eWJqD2oIpG" role="3jGSko">
@@ -51,6 +61,17 @@
       <node concept="17J3f2" id="3hBhvFT2ojU" role="3jGSnO" />
       <node concept="1$shr6" id="5eWJqD2oIqe" role="3jGSnO" />
       <node concept="1$shr6" id="2WqFKNC_fw3" role="3jGSnO" />
+      <node concept="17J3f2" id="14XUkkdDHZ0" role="3jGSnO" />
+      <node concept="3dudH9" id="14XUkkdEuKa" role="3jGSnO">
+        <node concept="29J8_c" id="14XUkkdFlpQ" role="3dudC3">
+          <ref role="hRIc0" node="14XUkkdFlom" resolve="turn around" />
+        </node>
+      </node>
+      <node concept="3dudH9" id="14XUkkdFlrg" role="3jGSnO">
+        <node concept="29J8_c" id="14XUkkdFlrs" role="3dudC3">
+          <ref role="hRIc0" node="14XUkkdFlp4" resolve="turn right" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1$vsWe" id="3hBhvFSK1wq">
@@ -59,11 +80,12 @@
   </node>
   <node concept="3cDPre" id="3hBhvFSK8cm">
     <property role="TrG5h" value="Common" />
-    <node concept="29J987" id="5eWJqD2tnOA" role="3cDP7O">
+    <node concept="29J987" id="14XUkkdFlom" role="3cDP7O">
       <property role="TrG5h" value="turn around" />
-      <node concept="3jGSmg" id="5eWJqD2tnOB" role="hRHZh">
-        <node concept="1$vv3L" id="2WqFKNC_fwo" role="3jGSnO" />
-        <node concept="1$vv3L" id="2WqFKNC_fwu" role="3jGSnO" />
+      <node concept="3jGSmg" id="14XUkkdFlon" role="hRHZh">
+        <node concept="1$vv3L" id="14XUkkdFlos" role="3jGSnO" />
+        <node concept="1$vv3L" id="14XUkkdFloy" role="3jGSnO" />
+        <node concept="17J3f2" id="14XUkkdFZTd" role="3jGSnO" />
       </node>
     </node>
   </node>

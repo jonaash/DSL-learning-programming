@@ -174,7 +174,7 @@
     </language>
   </registry>
   <node concept="18kY7G" id="5eWJqD2t9Ah">
-    <property role="TrG5h" value="RoutineNameUniqueness" />
+    <property role="TrG5h" value="MethodNameUniqueness" />
     <property role="3GE5qa" value="routine" />
     <node concept="3clFbS" id="5eWJqD2t9Ai" role="18ibNy">
       <node concept="3clFbJ" id="5eWJqD2tbdJ" role="3cqZAp">
@@ -185,7 +185,7 @@
           <node concept="10Nm6u" id="5eWJqD2tbhr" role="3uHU7w" />
           <node concept="2OqwBi" id="7_uVVPcJ5Yq" role="3uHU7B">
             <node concept="1YBJjd" id="5eWJqD2tbeQ" role="2Oq$k0">
-              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
             </node>
             <node concept="3TrcHB" id="7_uVVPcJ6kw" role="2OqNvi">
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -199,7 +199,7 @@
           <property role="TrG5h" value="defs" />
           <node concept="A3Dl8" id="5eWJqD2tbkP" role="1tU5fm">
             <node concept="3Tqbb2" id="5eWJqD2tbmu" role="A3Ik2">
-              <ref role="ehGHo" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+              <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
             </node>
           </node>
         </node>
@@ -209,7 +209,7 @@
           <property role="TrG5h" value="script" />
           <node concept="2OqwBi" id="5eWJqD2t9QR" role="33vP2m">
             <node concept="1YBJjd" id="5eWJqD2t9Pn" role="2Oq$k0">
-              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
             </node>
             <node concept="2Xjw5R" id="5eWJqD2ta0e" role="2OqNvi">
               <node concept="1xMEDy" id="5eWJqD2ta0g" role="1xVPHs">
@@ -234,8 +234,8 @@
               </node>
               <node concept="2Rf3mk" id="5eWJqD2tc4p" role="2OqNvi">
                 <node concept="1xMEDy" id="5eWJqD2tc4r" role="1xVPHs">
-                  <node concept="chp4Y" id="5eWJqD2tc5G" role="ri$Ld">
-                    <ref role="cht4Q" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+                  <node concept="chp4Y" id="14XUkkdEPmr" role="ri$Ld">
+                    <ref role="cht4Q" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
                   </node>
                 </node>
               </node>
@@ -247,7 +247,7 @@
                     <node concept="2OqwBi" id="7_uVVPcJkIl" role="3clFbG">
                       <node concept="2OqwBi" id="5eWJqD2tjVR" role="2Oq$k0">
                         <node concept="1YBJjd" id="5eWJqD2tjRN" role="2Oq$k0">
-                          <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+                          <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
                         </node>
                         <node concept="3TrcHB" id="5eWJqD2tkic" role="2OqNvi">
                           <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -284,7 +284,7 @@
         <node concept="3clFbS" id="5eWJqD2tcad" role="3clFbx">
           <node concept="2MkqsV" id="5eWJqD2tdB2" role="3cqZAp">
             <node concept="1YBJjd" id="5eWJqD2tdFz" role="2OEOjV">
-              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="routineDefinition" />
+              <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
             </node>
             <node concept="2YIFZM" id="7_uVVPcI5bI" role="2MkJ7o">
               <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
@@ -317,19 +317,19 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5eWJqD2t9Gm" role="1YuTPh">
-      <property role="TrG5h" value="routineDefinition" />
-      <ref role="1YaFvo" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+      <property role="TrG5h" value="abstractMethodDefinition" />
+      <ref role="1YaFvo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     </node>
   </node>
   <node concept="18kY7G" id="5eWJqD2tnPy">
-    <property role="TrG5h" value="AllowedCharactesCheck" />
+    <property role="TrG5h" value="methodAllowedCharactesCheck" />
     <property role="3GE5qa" value="routine" />
     <node concept="3clFbS" id="5eWJqD2tnPz" role="18ibNy">
       <node concept="3clFbJ" id="5eWJqD2tnQg" role="3cqZAp">
         <node concept="3clFbS" id="5eWJqD2tnQh" role="3clFbx">
           <node concept="2MkqsV" id="5eWJqD2tpFR" role="3cqZAp">
             <node concept="1YBJjd" id="5eWJqD2tDMf" role="2OEOjV">
-              <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="routineDefinition" />
+              <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="abstractMethodDefinition" />
             </node>
             <node concept="2ODE4t" id="5eWJqD2tEpI" role="2OEWyd">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
@@ -348,7 +348,7 @@
             <node concept="10Nm6u" id="5eWJqD2tvpw" role="3uHU7w" />
             <node concept="2OqwBi" id="5eWJqD2tuB9" role="3uHU7B">
               <node concept="1YBJjd" id="5eWJqD2tuzV" role="2Oq$k0">
-                <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="routineDefinition" />
+                <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="abstractMethodDefinition" />
               </node>
               <node concept="3TrcHB" id="5eWJqD2tuY9" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -359,7 +359,7 @@
             <node concept="2OqwBi" id="5eWJqD2tpDQ" role="3fr31v">
               <node concept="2OqwBi" id="5eWJqD2tpDR" role="2Oq$k0">
                 <node concept="1YBJjd" id="5eWJqD2tpDS" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="routineDefinition" />
+                  <ref role="1YBMHb" node="5eWJqD2tnQ0" resolve="abstractMethodDefinition" />
                 </node>
                 <node concept="3TrcHB" id="5eWJqD2tpDT" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -377,8 +377,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="5eWJqD2tnQ0" role="1YuTPh">
-      <property role="TrG5h" value="routineDefinition" />
-      <ref role="1YaFvo" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+      <property role="TrG5h" value="abstractMethodDefinition" />
+      <ref role="1YaFvo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     </node>
   </node>
   <node concept="1YbPZF" id="6kvBWKzDO9y">

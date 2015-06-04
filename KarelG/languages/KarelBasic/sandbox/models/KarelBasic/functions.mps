@@ -14,10 +14,6 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987">
-        <child id="6033906139725455995" name="body" index="hRHZh" />
-      </concept>
-      <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739174290881" name="KarelBasic.structure.LocalVariableDeclaration" flags="ng" index="36MCFd" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
@@ -29,7 +25,6 @@
       </concept>
       <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
-        <child id="6033906139725470274" name="routines" index="hRyvC" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -37,14 +32,6 @@
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
-    </language>
-    <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
-      <concept id="3776063756796240591" name="KarelFunctions.structure.VoidType" flags="ng" index="3dtAsP" />
-      <concept id="3776063756796240557" name="KarelFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn">
-        <child id="3776063756796240563" name="parameters" index="3dtAt9" />
-        <child id="3776063756796240561" name="returnType" index="3dtAtb" />
-      </concept>
-      <concept id="3776063756796240487" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="3dtAut" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -65,17 +52,6 @@
       </node>
       <node concept="17J3f2" id="3hBhvFTe3iM" role="3jGSnO" />
       <node concept="17J3f2" id="14XUkkdiesU" role="3jGSnO" />
-    </node>
-    <node concept="3dtAtn" id="3hBhvFT9Ykj" role="hRyvC">
-      <property role="TrG5h" value="test T" />
-      <node concept="3dtAut" id="3hBhvFTe3i_" role="3dtAt9">
-        <property role="TrG5h" value="t" />
-        <node concept="36Kql8" id="3hBhvFTe3iF" role="36MCEW" />
-      </node>
-      <node concept="3dtAsP" id="3hBhvFT9Ykk" role="3dtAtb" />
-      <node concept="3jGSmg" id="3hBhvFT9Ykl" role="hRHZh">
-        <node concept="1$shr6" id="14XUkkdgGbM" role="3jGSnO" />
-      </node>
     </node>
   </node>
 </model>
