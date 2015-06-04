@@ -419,5 +419,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3hBhvFT7TUN">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="StandaloneExpressionCommand" />
+    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="1TJgyj" id="3hBhvFT7TZT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3hBhvFT7TZS" resolve="IStandaloneExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3hBhvFT7TZS">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="IStandaloneExpression" />
+  </node>
 </model>
 

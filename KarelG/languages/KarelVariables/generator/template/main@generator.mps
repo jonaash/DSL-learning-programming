@@ -167,9 +167,9 @@
   <node concept="bUwia" id="2WqFKNCAe_c">
     <property role="TrG5h" value="main" />
     <node concept="2rT7sh" id="2WqFKNE42gp" role="2rTMjI">
-      <property role="TrG5h" value="localVariable" />
-      <ref role="2rZz_L" to="tpee:fzcpWvJ" resolve="LocalVariableDeclaration" />
+      <property role="TrG5h" value="variable" />
       <ref role="2rTdP9" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+      <ref role="2rZz_L" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     </node>
     <node concept="3aamgX" id="2WqFKNDVWY1" role="3acgRq">
       <ref role="30HIoZ" to="3y9h:2WqFKNDOaYc" resolve="LocalVariableDeclarationCommand" />
@@ -220,9 +220,10 @@
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNDVWYN" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:2WqFKNDO42N" resolve="LocalVariableReference" />
-      <node concept="j$656" id="2WqFKNDVWZ$" role="1lVwrX">
-        <ref role="v9R2y" node="2WqFKNDVWZy" resolve="reduce_LocalVariableReference" />
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+      <node concept="j$656" id="3hBhvFT9vkT" role="1lVwrX">
+        <ref role="v9R2y" node="2WqFKNDVWZy" resolve="reduce_VariableReference" />
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNDY_Mq" role="3acgRq">
@@ -354,7 +355,7 @@
               </node>
             </node>
             <node concept="2ZBi8u" id="2WqFKNE45ao" role="lGtFl">
-              <ref role="2rW$FS" node="2WqFKNE42gp" resolve="localVariable" />
+              <ref role="2rW$FS" node="2WqFKNE42gp" resolve="variable" />
             </node>
           </node>
         </node>
@@ -362,9 +363,9 @@
     </node>
   </node>
   <node concept="13MO4I" id="2WqFKNDVWZy">
-    <property role="TrG5h" value="reduce_LocalVariableReference" />
+    <property role="TrG5h" value="reduce_VariableReference" />
     <property role="3GE5qa" value="variable" />
-    <ref role="3gUMe" to="dyrx:2WqFKNDO42N" resolve="LocalVariableReference" />
+    <ref role="3gUMe" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
     <node concept="9aQIb" id="2WqFKNDW1D4" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDW1D6" role="9aQI4">
         <node concept="3cpWs8" id="2WqFKNDW1Db" role="3cqZAp">
@@ -389,11 +390,11 @@
                       <node concept="2OqwBi" id="2WqFKNE45Ep" role="3clFbG">
                         <node concept="1iwH7S" id="2WqFKNE45Cz" role="2Oq$k0" />
                         <node concept="1iwH70" id="2WqFKNE45Me" role="2OqNvi">
-                          <ref role="1iwH77" node="2WqFKNE42gp" resolve="localVariable" />
-                          <node concept="2OqwBi" id="2WqFKNDW21o" role="1iwH7V">
+                          <ref role="1iwH77" node="2WqFKNE42gp" resolve="variable" />
+                          <node concept="2OqwBi" id="3hBhvFT9uQr" role="1iwH7V">
                             <node concept="30H73N" id="2WqFKNDW1XR" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="6FJbaIqkNqh" role="2OqNvi">
-                              <ref role="3Tt5mk" to="dyrx:2WqFKNDO42O" />
+                            <node concept="3TrEf2" id="3hBhvFT9vdO" role="2OqNvi">
+                              <ref role="3Tt5mk" to="dyrx:2WqFKNDO42m" />
                             </node>
                           </node>
                         </node>
@@ -491,7 +492,7 @@
         </node>
       </node>
       <node concept="2ZBi8u" id="2WqFKNE44vD" role="lGtFl">
-        <ref role="2rW$FS" node="2WqFKNE42gp" resolve="localVariable" />
+        <ref role="2rW$FS" node="2WqFKNE42gp" resolve="variable" />
       </node>
     </node>
   </node>

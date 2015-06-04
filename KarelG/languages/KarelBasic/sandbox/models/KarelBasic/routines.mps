@@ -8,9 +8,6 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="4942585347623820899" name="KarelBasic.structure.RoutineCall" flags="ng" index="29J8_c">
-        <reference id="6033906139725455018" name="definition" index="hRIc0" />
-      </concept>
       <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987">
         <child id="6033906139725455995" name="body" index="hRHZh" />
       </concept>
@@ -54,12 +51,6 @@
       <node concept="17J3f2" id="3hBhvFT2ojU" role="3jGSnO" />
       <node concept="1$shr6" id="5eWJqD2oIqe" role="3jGSnO" />
       <node concept="1$shr6" id="2WqFKNC_fw3" role="3jGSnO" />
-      <node concept="29J8_c" id="5eWJqD2r3pY" role="3jGSnO">
-        <ref role="hRIc0" node="5eWJqD2oIqo" resolve="turn right" />
-      </node>
-      <node concept="29J8_c" id="3hBhvFSOs$v" role="3jGSnO">
-        <ref role="hRIc0" node="5eWJqD2tnOA" resolve="turn around" />
-      </node>
     </node>
   </node>
   <node concept="1$vsWe" id="3hBhvFSK1wq">

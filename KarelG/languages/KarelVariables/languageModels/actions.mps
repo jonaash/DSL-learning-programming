@@ -252,6 +252,7 @@
     <property role="3GE5qa" value="wrapper" />
     <property role="TrG5h" value="localVariableDeclarationWithType" />
     <node concept="3FOIzC" id="2WqFKNEaGu2" role="3FOPby">
+      <property role="3mWAmy" value="allows to create local variable declaration by writing type" />
       <ref role="3FOWKa" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
       <node concept="tYCnQ" id="2WqFKNEaGx5" role="tZc4B">
         <ref role="uz4UX" to="3y9h:2WqFKNDOaYc" resolve="LocalVariableDeclarationCommand" />
