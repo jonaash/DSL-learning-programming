@@ -376,11 +376,42 @@
         </node>
       </node>
       <node concept="3gn64h" id="3hBhvFSFyt3" role="32tDTA">
-        <ref role="3gnhBz" to="9xx6:6OirKjsFlOH" resolve="And" />
+        <ref role="3gnhBz" to="9xx6:6OirKjsFlOH" resolve="AndOperator" />
       </node>
       <node concept="3gn64h" id="3hBhvFSFyu1" role="32tDTA">
-        <ref role="3gnhBz" to="9xx6:6OirKjsFlUw" resolve="Or" />
+        <ref role="3gnhBz" to="9xx6:6OirKjsFlUw" resolve="OrOperator" />
       </node>
+    </node>
+  </node>
+  <node concept="1YbPZF" id="14XUkkdCy_v">
+    <property role="TrG5h" value="typeof_IfStatement" />
+    <property role="3GE5qa" value="command.control" />
+    <node concept="3clFbS" id="14XUkkdCy_w" role="18ibNy">
+      <node concept="1Z5TYs" id="14XUkkdCyPM" role="3cqZAp">
+        <node concept="mw_s8" id="14XUkkdCyQj" role="1ZfhKB">
+          <node concept="2pJPEk" id="14XUkkdCyQf" role="mwGJk">
+            <node concept="2pJPED" id="14XUkkdCyQu" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="14XUkkdCyPP" role="1ZfhK$">
+          <node concept="1Z2H0r" id="14XUkkdCyB8" role="mwGJk">
+            <node concept="2OqwBi" id="14XUkkdCyDf" role="1Z2MuG">
+              <node concept="1YBJjd" id="14XUkkdCyB$" role="2Oq$k0">
+                <ref role="1YBMHb" node="14XUkkdCy_y" resolve="ifStatement" />
+              </node>
+              <node concept="3TrEf2" id="14XUkkdCyMO" role="2OqNvi">
+                <ref role="3Tt5mk" to="9xx6:2PnTnxEXESv" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="14XUkkdCy_y" role="1YuTPh">
+      <property role="TrG5h" value="ifStatement" />
+      <ref role="1YaFvo" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
     </node>
   </node>
 </model>

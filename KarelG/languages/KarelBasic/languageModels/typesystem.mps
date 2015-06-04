@@ -96,9 +96,6 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
-      <concept id="1212056081426" name="jetbrains.mps.lang.typesystem.structure.AbstractInequationStatement" flags="ng" index="Ob1k8">
-        <property id="1212056105818" name="inequationPriority" index="Ob790" />
-      </concept>
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
@@ -131,7 +128,6 @@
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
         <child id="1174662598553" name="nodeToCheck" index="1ZmcU8" />
       </concept>
-      <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -478,41 +474,40 @@
     <property role="3GE5qa" value="command" />
     <property role="TrG5h" value="typeof_Repeat" />
     <node concept="3clFbS" id="6kvBWKzEUey" role="18ibNy">
-      <node concept="1ZobV4" id="3hBhvFSecXu" role="3cqZAp">
-        <property role="3wDh2S" value="true" />
-        <property role="Ob790" value="0" />
-        <node concept="mw_s8" id="3hBhvFSdrhA" role="1ZfhKB">
-          <node concept="2pJPEk" id="3hBhvFSdrhy" role="mwGJk">
-            <node concept="2pJPED" id="3hBhvFSdrhL" role="2pJPEn">
-              <ref role="2pJxaS" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="3hBhvFSdqXP" role="1ZfhK$">
-          <node concept="1Z2H0r" id="3hBhvFSdqXL" role="mwGJk">
-            <node concept="2OqwBi" id="3hBhvFSdr0_" role="1Z2MuG">
-              <node concept="1YBJjd" id="3hBhvFSdqY6" role="2Oq$k0">
+      <node concept="1Z5TYs" id="14XUkkd_kfz" role="3cqZAp">
+        <property role="3wDh2S" value="false" />
+        <node concept="mw_s8" id="14XUkkd_kfC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="14XUkkd_kfD" role="mwGJk">
+            <node concept="2OqwBi" id="14XUkkd_kfE" role="1Z2MuG">
+              <node concept="1YBJjd" id="14XUkkd_kfF" role="2Oq$k0">
                 <ref role="1YBMHb" node="6kvBWKzEUe$" resolve="repeat" />
               </node>
-              <node concept="3TrEf2" id="3hBhvFSdrdv" role="2OqNvi">
+              <node concept="3TrEf2" id="14XUkkd_kfG" role="2OqNvi">
                 <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2YIFZM" id="3hBhvFShje1" role="3o8Qv2">
-          <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
-          <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-          <node concept="Xl_RD" id="3hBhvFShje2" role="37wK5m">
-            <property role="Xl_RC" value="error.repeat.iteration.not.number" />
+        <node concept="mw_s8" id="14XUkkd_kf_" role="1ZfhKB">
+          <node concept="2pJPEk" id="14XUkkd_kfA" role="mwGJk">
+            <node concept="2pJPED" id="14XUkkd_kfB" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+            </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="3hBhvFShreC" role="1ZmcU8">
-          <node concept="1YBJjd" id="3hBhvFShrcl" role="2Oq$k0">
+        <node concept="2OqwBi" id="14XUkkd_kfJ" role="1ZmcU8">
+          <node concept="1YBJjd" id="14XUkkd_kfK" role="2Oq$k0">
             <ref role="1YBMHb" node="6kvBWKzEUe$" resolve="repeat" />
           </node>
-          <node concept="3TrEf2" id="3hBhvFShrD9" role="2OqNvi">
+          <node concept="3TrEf2" id="14XUkkd_kfL" role="2OqNvi">
             <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" />
+          </node>
+        </node>
+        <node concept="2YIFZM" id="14XUkkd_kfH" role="3o8Qv2">
+          <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+          <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+          <node concept="Xl_RD" id="14XUkkd_kfI" role="37wK5m">
+            <property role="Xl_RC" value="error.repeat.iteration.not.number" />
           </node>
         </node>
       </node>
