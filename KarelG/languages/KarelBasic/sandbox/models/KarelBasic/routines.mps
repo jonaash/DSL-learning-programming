@@ -10,16 +10,26 @@
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
       <concept id="4942585347623820899" name="KarelBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
       <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
+      <concept id="1242405555016616841" name="KarelBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
+        <child id="1242405555016843190" name="routines" index="sZtrN" />
+      </concept>
       <concept id="1242405555015381639" name="KarelBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
       </concept>
       <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
       </concept>
-      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
-      <concept id="3776063756790928180" name="KarelBasic.structure.Library" flags="ng" index="3cDPre">
-        <child id="3776063756790928398" name="routines" index="3cDP7O" />
+      <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
+        <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033093774" name="KarelBasic.structure.Repeat" flags="ng" index="17JERQ">
+        <child id="3394217739175032606" name="iteration" index="36Ktwi" />
+      </concept>
+      <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
+        <child id="7730986614922692049" name="body" index="3azrUc" />
+      </concept>
+      <concept id="3776063756790928180" name="KarelBasic.structure.Library" flags="ng" index="3cDPre" />
       <concept id="3776063756790929738" name="KarelBasic.structure.Require" flags="ng" index="3cDPMK">
         <reference id="3776063756790929766" name="library" index="3cDPMs" />
       </concept>
@@ -31,7 +41,6 @@
       </concept>
       <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
-        <child id="6033906139725470274" name="routines" index="hRyvC" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
       <concept id="3640435696255671307" name="KarelBasic.structure.LeftTurn" flags="ng" index="1$vv3L" />
@@ -44,7 +53,7 @@
   </registry>
   <node concept="1$vsWe" id="5eWJqD2oIpF">
     <property role="TrG5h" value="Routines" />
-    <node concept="29J987" id="14XUkkdFlp4" role="hRyvC">
+    <node concept="29J987" id="14XUkkdFlp4" role="sZtrN">
       <property role="TrG5h" value="turn right" />
       <node concept="3jGSmg" id="14XUkkdFlp5" role="hRHZh">
         <node concept="3jGSmg" id="5eWJqD2oIqp" role="3jGSnO">
@@ -58,10 +67,9 @@
       <node concept="3cDPMK" id="3hBhvFT10QF" role="3jGSnO">
         <ref role="3cDPMs" node="3hBhvFSK8cm" resolve="Common" />
       </node>
-      <node concept="17J3f2" id="3hBhvFT2ojU" role="3jGSnO" />
       <node concept="1$shr6" id="5eWJqD2oIqe" role="3jGSnO" />
       <node concept="1$shr6" id="2WqFKNC_fw3" role="3jGSnO" />
-      <node concept="17J3f2" id="14XUkkdDHZ0" role="3jGSnO" />
+      <node concept="17J3f2" id="14XUkkdIMtn" role="3jGSnO" />
       <node concept="3dudH9" id="14XUkkdEuKa" role="3jGSnO">
         <node concept="29J8_c" id="14XUkkdFlpQ" role="3dudC3">
           <ref role="hRIc0" node="14XUkkdFlom" resolve="turn around" />
@@ -72,6 +80,12 @@
           <ref role="hRIc0" node="14XUkkdFlp4" resolve="turn right" />
         </node>
       </node>
+      <node concept="17JERQ" id="14XUkkdIMva" role="3jGSnO">
+        <node concept="3jGSmg" id="14XUkkdIMvc" role="3azrUc" />
+        <node concept="36Kqmr" id="14XUkkdIMvB" role="36Ktwi">
+          <property role="36Kqnr" value="0" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1$vsWe" id="3hBhvFSK1wq">
@@ -80,12 +94,12 @@
   </node>
   <node concept="3cDPre" id="3hBhvFSK8cm">
     <property role="TrG5h" value="Common" />
-    <node concept="29J987" id="14XUkkdFlom" role="3cDP7O">
+    <node concept="29J987" id="14XUkkdFlom" role="sZtrN">
       <property role="TrG5h" value="turn around" />
       <node concept="3jGSmg" id="14XUkkdFlon" role="hRHZh">
         <node concept="1$vv3L" id="14XUkkdFlos" role="3jGSnO" />
         <node concept="1$vv3L" id="14XUkkdFloy" role="3jGSnO" />
-        <node concept="17J3f2" id="14XUkkdFZTd" role="3jGSnO" />
+        <node concept="17J3f2" id="14XUkkdIMs1" role="3jGSnO" />
       </node>
     </node>
   </node>

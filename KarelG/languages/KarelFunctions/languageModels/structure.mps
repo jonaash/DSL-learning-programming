@@ -76,15 +76,18 @@
   <node concept="1TIwiD" id="3hBhvFT4iaK">
     <property role="TrG5h" value="FunctionCall" />
     <property role="3GE5qa" value="function" />
-    <ref role="1TJDcQ" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
+    <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="3hBhvFTa07b" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="3hBhvFTabkl" role="PzmwI">
-      <ref role="PrY4T" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
+    <node concept="1TJgyj" id="14XUkkdIUuJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="3hBhvFT4iaH" resolve="FunctionDefinition" />
+      <ref role="20ksaX" to="dyrx:5eWJqD2o_UE" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT4ibf">

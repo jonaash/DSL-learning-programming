@@ -68,6 +68,7 @@
   <dependencies>
     <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
     <dependency reexport="true">53b38693-ceee-4191-9779-c7bca6c13739(KarelVariables)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>

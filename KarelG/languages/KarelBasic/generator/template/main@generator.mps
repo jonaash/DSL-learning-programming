@@ -261,7 +261,7 @@
     <node concept="2rT7sh" id="2WqFKNE4zm3" role="2rTMjI">
       <property role="TrG5h" value="routine" />
       <ref role="2rZz_L" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
-      <ref role="2rTdP9" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
+      <ref role="2rTdP9" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     </node>
     <node concept="2rT7sh" id="3hBhvFSL3wM" role="2rTMjI">
       <property role="TrG5h" value="requiredLibrary" />
@@ -350,12 +350,10 @@
       <node concept="30G5F_" id="3hBhvFSN_T_" role="30HLyM">
         <node concept="3clFbS" id="3hBhvFSN_TA" role="2VODD2">
           <node concept="3clFbF" id="3hBhvFSN_Yw" role="3cqZAp">
-            <node concept="3fqX7Q" id="3hBhvFSNAwr" role="3clFbG">
-              <node concept="2OqwBi" id="3hBhvFSNAwt" role="3fr31v">
-                <node concept="30H73N" id="3hBhvFSNAwu" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3hBhvFSNAwv" role="2OqNvi">
-                  <ref role="37wK5l" to="ljn0:3hBhvFSNnVo" resolve="isLibraryCall" />
-                </node>
+            <node concept="2OqwBi" id="3hBhvFSNAwt" role="3clFbG">
+              <node concept="30H73N" id="3hBhvFSNAwu" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3hBhvFSNAwv" role="2OqNvi">
+                <ref role="37wK5l" to="ljn0:3hBhvFSNnVo" resolve="isLocalCall" />
               </node>
             </node>
           </node>
@@ -367,17 +365,19 @@
       <node concept="30G5F_" id="3hBhvFSO22_" role="30HLyM">
         <node concept="3clFbS" id="3hBhvFSO22A" role="2VODD2">
           <node concept="3clFbF" id="3hBhvFSO27w" role="3cqZAp">
-            <node concept="2OqwBi" id="3hBhvFSO2bR" role="3clFbG">
-              <node concept="30H73N" id="3hBhvFSO27v" role="2Oq$k0" />
-              <node concept="2qgKlT" id="3hBhvFSO2yM" role="2OqNvi">
-                <ref role="37wK5l" to="ljn0:3hBhvFSNnVo" resolve="isLibraryCall" />
+            <node concept="3fqX7Q" id="14XUkkdL$kb" role="3clFbG">
+              <node concept="2OqwBi" id="14XUkkdL$kd" role="3fr31v">
+                <node concept="30H73N" id="14XUkkdL$ke" role="2Oq$k0" />
+                <node concept="2qgKlT" id="14XUkkdL$kf" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:3hBhvFSNnVo" resolve="isLocalCall" />
+                </node>
               </node>
             </node>
           </node>
         </node>
       </node>
       <node concept="j$656" id="3hBhvFSO2Db" role="1lVwrX">
-        <ref role="v9R2y" node="3hBhvFSO2D9" resolve="reduce_LibraryRoutineCall" />
+        <ref role="v9R2y" node="3hBhvFSO2D9" resolve="reduce_ExternalRoutineCall" />
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNDSUzL" role="3acgRq">
@@ -606,10 +606,10 @@
           <node concept="3clFbS" id="5eWJqD2pI5G" role="2VODD2">
             <node concept="3clFbF" id="5eWJqD2pI5M" role="3cqZAp">
               <node concept="2OqwBi" id="5eWJqD2pI5H" role="3clFbG">
-                <node concept="3Tsc0h" id="5eWJqD2pI5K" role="2OqNvi">
-                  <ref role="3TtcxE" to="dyrx:5eWJqD2oDD2" />
-                </node>
                 <node concept="30H73N" id="5eWJqD2pI5L" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="14XUkkdKfKB" role="2OqNvi">
+                  <ref role="3TtcxE" to="dyrx:14XUkkdK3YQ" />
+                </node>
               </node>
             </node>
           </node>
@@ -1121,8 +1121,8 @@
                           <ref role="1iwH77" node="2WqFKNE4zm3" resolve="routine" />
                           <node concept="2OqwBi" id="2WqFKNE4_Tl" role="1iwH7V">
                             <node concept="30H73N" id="2WqFKNE4_Qr" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="2WqFKNE4A3M" role="2OqNvi">
-                              <ref role="3Tt5mk" to="dyrx:5eWJqD2o_UE" />
+                            <node concept="3TrEf2" id="14XUkkdJjzu" role="2OqNvi">
+                              <ref role="3Tt5mk" to="dyrx:14XUkkdIUvj" />
                             </node>
                           </node>
                         </node>
@@ -1323,12 +1323,12 @@
       <node concept="1WS0z7" id="3hBhvFSKlYp" role="lGtFl">
         <node concept="3JmXsc" id="3hBhvFSKlYs" role="3Jn$fo">
           <node concept="3clFbS" id="3hBhvFSKlYt" role="2VODD2">
-            <node concept="3clFbF" id="3hBhvFSKlYz" role="3cqZAp">
-              <node concept="2OqwBi" id="3hBhvFSKlYu" role="3clFbG">
-                <node concept="3Tsc0h" id="3hBhvFSKlYx" role="2OqNvi">
-                  <ref role="3TtcxE" to="dyrx:3hBhvFSK1ge" />
+            <node concept="3clFbF" id="14XUkkdJMkW" role="3cqZAp">
+              <node concept="2OqwBi" id="14XUkkdJMpZ" role="3clFbG">
+                <node concept="30H73N" id="14XUkkdJMkV" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="14XUkkdKe_H" role="2OqNvi">
+                  <ref role="3TtcxE" to="dyrx:14XUkkdK3YQ" />
                 </node>
-                <node concept="30H73N" id="3hBhvFSKlYy" role="2Oq$k0" />
               </node>
             </node>
           </node>
@@ -1410,7 +1410,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="3hBhvFSO2D9">
-    <property role="TrG5h" value="reduce_LibraryRoutineCall" />
+    <property role="TrG5h" value="reduce_ExternalRoutineCall" />
     <property role="3GE5qa" value="routine" />
     <ref role="3gUMe" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="312cEu" id="3hBhvFSOaib" role="13RCb5">
@@ -1476,8 +1476,8 @@
                             <ref role="1iwH77" node="2WqFKNE4zm3" resolve="routine" />
                             <node concept="2OqwBi" id="3hBhvFSOd7Y" role="1iwH7V">
                               <node concept="30H73N" id="3hBhvFSOd7Z" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="3hBhvFSOd80" role="2OqNvi">
-                                <ref role="3Tt5mk" to="dyrx:5eWJqD2o_UE" />
+                              <node concept="3TrEf2" id="14XUkkdJjft" role="2OqNvi">
+                                <ref role="3Tt5mk" to="dyrx:14XUkkdIUvj" />
                               </node>
                             </node>
                           </node>

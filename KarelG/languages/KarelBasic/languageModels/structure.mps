@@ -82,17 +82,14 @@
     <node concept="PrWs8" id="6bh18$pfnSY" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
+    <node concept="PrWs8" id="14XUkkdJRH7" role="PzmwI">
+      <ref role="PrY4T" node="14XUkkdJcI9" resolve="IMethodsDefinition" />
+    </node>
     <node concept="1TJgyj" id="1IJMvjRjCZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
-    </node>
-    <node concept="1TJgyj" id="5eWJqD2oDD2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="routines" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="1IJMvjRjER">
@@ -175,6 +172,12 @@
     <property role="TrG5h" value="RoutineCall" />
     <property role="3GE5qa" value="routine" />
     <ref role="1TJDcQ" node="14XUkkdDnzd" resolve="AbstractCall" />
+    <node concept="1TJgyj" id="14XUkkdIUvj" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="4in_MZdaKkC" resolve="RoutineDefinition" />
+      <ref role="20ksaX" node="5eWJqD2o_UE" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4in_MZdaKkC">
     <property role="TrG5h" value="RoutineDefinition" />
@@ -383,11 +386,8 @@
     <node concept="PrWs8" id="3hBhvFSK1ee" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3hBhvFSK1ge" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="routines" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
+    <node concept="PrWs8" id="14XUkkdJcLb" role="PzmwI">
+      <ref role="PrY4T" node="14XUkkdJcI9" resolve="IMethodsDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFSK1_a">
@@ -448,6 +448,8 @@
   <node concept="1TIwiD" id="14XUkkdEva7">
     <property role="3GE5qa" value="routine" />
     <property role="TrG5h" value="AbstractMethodDefinition" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5eWJqD2oA9V" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -457,6 +459,15 @@
     </node>
     <node concept="PrWs8" id="14XUkkdEvqv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="14XUkkdJcI9">
+    <property role="TrG5h" value="IMethodsDefinition" />
+    <node concept="1TJgyj" id="14XUkkdK3YQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="routines" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
     </node>
   </node>
 </model>
