@@ -22,6 +22,7 @@
     <import index="hme7" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message.appearance(GuiLib/cz.dsllp.gui.api.message.appearance@java_stub)" />
     <import index="be9c" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message.command(GuiLib/cz.dsllp.gui.api.message.command@java_stub)" />
     <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
+    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -36,17 +37,12 @@
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
-        <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -68,13 +64,11 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -102,17 +96,8 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
-        <child id="1178549979242" name="visibility" index="1B3o_S" />
-      </concept>
-      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
-      <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
-      <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
@@ -151,21 +136,12 @@
         <node concept="3clFbH" id="3Gf07gf_dAL" role="3cqZAp" />
       </node>
     </node>
-    <node concept="2BZ0e9" id="ATD4KvcUs7" role="2XNbBz">
-      <property role="TrG5h" value="panel" />
-      <node concept="3Tm6S6" id="ATD4KvcUs8" role="1B3o_S" />
-      <node concept="3uibUv" id="ATD4KvcUTQ" role="1tU5fm">
-        <ref role="3uigEE" to="f1am:~PluginPanel" resolve="PluginPanel" />
-      </node>
-    </node>
     <node concept="2UmK3q" id="6bh18$pfQ5q" role="2Um5zG">
       <node concept="3clFbS" id="6bh18$pfQ5r" role="2VODD2">
-        <node concept="3clFbH" id="5q1_tf9JlcT" role="3cqZAp" />
-        <node concept="3cpWs6" id="6bh18$pg8DG" role="3cqZAp">
-          <node concept="2OqwBi" id="ATD4KvcZ5K" role="3cqZAk">
-            <node concept="2WthIp" id="ATD4KvcZ5N" role="2Oq$k0" />
-            <node concept="2BZ7hE" id="ATD4KvcZ5P" role="2OqNvi">
-              <ref role="2WH_rO" node="ATD4KvcUs7" resolve="panel" />
+        <node concept="3cpWs6" id="2QqBgBhRJrd" role="3cqZAp">
+          <node concept="2ShNRf" id="2QqBgBhRJHd" role="3cqZAk">
+            <node concept="1pGfFk" id="2QqBgBhRX7D" role="2ShVmc">
+              <ref role="37wK5l" to="dbrf:~JPanel.&lt;init&gt;()" resolve="JPanel" />
             </node>
           </node>
         </node>
@@ -173,21 +149,6 @@
     </node>
     <node concept="2xpIHi" id="6bh18$pg90I" role="uR5cp">
       <node concept="3clFbS" id="6bh18$pg90J" role="2VODD2">
-        <node concept="3clFbF" id="ATD4KvcZim" role="3cqZAp">
-          <node concept="37vLTI" id="ATD4Kvd0kl" role="3clFbG">
-            <node concept="2ShNRf" id="ATD4Kvd0sj" role="37vLTx">
-              <node concept="1pGfFk" id="ATD4Kvd6uD" role="2ShVmc">
-                <ref role="37wK5l" to="f1am:~PluginPanel.&lt;init&gt;()" resolve="PluginPanel" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="ATD4KvcZFU" role="37vLTJ">
-              <node concept="2WthIp" id="ATD4KvcZik" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="ATD4KvcZSV" role="2OqNvi">
-                <ref role="2WH_rO" node="ATD4KvcUs7" resolve="panel" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="ATD4KvcSb2" role="3cqZAp" />
         <node concept="3clFbF" id="6bh18$pgqEr" role="3cqZAp">
           <node concept="2OqwBi" id="6bh18$pgqF7" role="3clFbG">
@@ -232,47 +193,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="4NU9lKD8cd0" role="3cqZAp" />
-        <node concept="3cpWs8" id="ATD4KvdbVM" role="3cqZAp">
-          <node concept="3cpWsn" id="ATD4KvdbVL" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="server" />
-            <node concept="3uibUv" id="ATD4KvdbVN" role="1tU5fm">
-              <ref role="3uigEE" to="zppf:~GuiServer" resolve="GuiServer" />
-            </node>
-            <node concept="2YIFZM" id="ATD4KvdcSf" role="33vP2m">
-              <ref role="1Pybhc" to="zppf:~GuiServer" resolve="GuiServer" />
-              <ref role="37wK5l" to="zppf:~GuiServer.getInstance():cz.dsllp.gui.server.GuiServer" resolve="getInstance" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="ATD4KvdbVP" role="3cqZAp">
-          <node concept="2OqwBi" id="ATD4KvdbVT" role="3clFbG">
-            <node concept="37vLTw" id="ATD4KvdbVS" role="2Oq$k0">
-              <ref role="3cqZAo" node="ATD4KvdbVL" resolve="server" />
-            </node>
-            <node concept="liA8E" id="ATD4KvdbVU" role="2OqNvi">
-              <ref role="37wK5l" to="zppf:~GuiServer.init(cz.dsllp.gui.PluginPanel,java.lang.String,int,java.lang.String):void" resolve="init" />
-              <node concept="2OqwBi" id="ATD4KvdcYn" role="37wK5m">
-                <node concept="2WthIp" id="ATD4KvdcXa" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="ATD4Kvddai" role="2OqNvi">
-                  <ref role="2WH_rO" node="ATD4KvcUs7" resolve="panel" />
-                </node>
-              </node>
-              <node concept="10M0yZ" id="1I19JziyoU3" role="37wK5m">
-                <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
-              </node>
-              <node concept="10M0yZ" id="1JtUjhLxDEg" role="37wK5m">
-                <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
-              </node>
-              <node concept="37vLTw" id="3Gf07gf_lAb" role="37wK5m">
-                <ref role="3cqZAo" node="3Gf07gf_iwM" resolve="serviceName" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="ATD4KvdbQZ" role="3cqZAp" />
       </node>
     </node>
   </node>
