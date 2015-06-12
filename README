@@ -1,17 +1,21 @@
-HOW TO BUILD APPLICATION
+HOW TO BUILD AND RUN THE APPLICATION
 
-1) Building remote-gui with Maven and copying libraries to MPS project
+There is an external GUI and a MPS project with languages
+
+
+1) Building remote-gui with Maven
 
 In a directory GUI/remote-gui run maven command:
 
-    mvn clean install -Dskip.distribution=false
+    mvn clean package
 
-This will build GUI and copy builded jar libraries to MPS project KarelG.
+It creates runnable JAR archive karel-gui.jar in directory GUI/remote-gui/gui/target/
+
+Run karel-gui.jar.
 
 2) Running project in MPS
 Open project KarelG in MPS and rebuild the whole project.
 
-Panel KarelView should be shown on the right side of MPS IDE.
-
 In solution KarelBasic.sandbox you can run scripts or create a new one.
-The script execution should be visible in panel.
+If karel-gui.jar is running, the script will be shown there. It is possible to run whole script or do it step by step.
+If a new script from is started from MPS, previous script is discarded in karel-gui.jar and replaced with the new one.
