@@ -335,6 +335,8 @@
   <node concept="1TIwiD" id="6kvBWKzB1_W">
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="MessageCommand" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="6kvBWKzB1_X" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
