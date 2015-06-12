@@ -2,7 +2,6 @@ HOW TO BUILD AND RUN THE APPLICATION
 
 There is an external GUI and a MPS project with languages
 
-
 1) Building remote-gui with Maven
 
 In a directory GUI/remote-gui run maven command:
@@ -15,6 +14,12 @@ Run karel-gui.jar.
 
 2) Running project in MPS
 Open project KarelG in MPS and rebuild the whole project.
+
+In case there are problems with build try tu rebuild solutions and languages separately in this order:
+1. Common, JavaKarel
+2. KarelBasic, KarelConditions, KarelVariables, KarelFunctions
+3. KarelBasic.sandbox and the rest
+
 
 In solution KarelBasic.sandbox you can run scripts or create a new one.
 If karel-gui.jar is running, the script will be shown there. It is possible to run whole script or do it step by step.
