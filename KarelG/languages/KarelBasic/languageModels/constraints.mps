@@ -36,7 +36,6 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -487,10 +486,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="312cEu" id="14XUkkdQWpA">
-    <property role="TrG5h" value="ScopeUti" />
-    <node concept="3Tm1VV" id="14XUkkdQWpB" role="1B3o_S" />
   </node>
 </model>
 
