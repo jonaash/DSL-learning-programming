@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
+    <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -94,7 +95,7 @@
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="IfStatement" />
     <property role="34LRSv" value="if" />
-    <property role="R4oN_" value="if statement" />
+    <property role="R4oN_" value="conditional statement" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="2PnTnxEXESv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -150,18 +151,13 @@
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="While" />
     <property role="34LRSv" value="while" />
-    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <property role="R4oN_" value="cycle with condition" />
+    <ref role="1TJDcQ" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="1TJgyj" id="6OirKjsJsk1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="condition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="6OirKjsJsk4" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     </node>
   </node>
   <node concept="1TIwiD" id="5eWJqD2l4JP">

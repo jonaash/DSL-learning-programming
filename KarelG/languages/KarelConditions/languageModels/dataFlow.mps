@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -129,8 +130,8 @@
         <node concept="3AgYrR" id="5beVc_rbtdE" role="3cqZAp">
           <node concept="2OqwBi" id="5beVc_rbtgg" role="3Ah4Yx">
             <node concept="3__QtB" id="5beVc_rbteE" role="2Oq$k0" />
-            <node concept="3TrEf2" id="5beVc_rbtpT" role="2OqNvi">
-              <ref role="3Tt5mk" to="9xx6:6OirKjsJsk4" />
+            <node concept="3TrEf2" id="jBG8nbHLGl" role="2OqNvi">
+              <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
             </node>
           </node>
         </node>
