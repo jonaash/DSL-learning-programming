@@ -330,6 +330,85 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="jBG8nbHNyL" role="3cqZAp">
+          <node concept="37vLTI" id="jBG8nbHNyM" role="3clFbG">
+            <node concept="Xl_RD" id="jBG8nbHNyN" role="37vLTx">
+              <property role="Xl_RC" value="Change to Repeat Statement" />
+            </node>
+            <node concept="3EllGN" id="jBG8nbHNyO" role="37vLTJ">
+              <node concept="37vLTw" id="jBG8nbHNyU" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="jBG8nbHNyP" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.change.to.repeat" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jBG8nbHO5c" role="3cqZAp">
+          <node concept="37vLTI" id="jBG8nbHO5d" role="3clFbG">
+            <node concept="Xl_RD" id="jBG8nbHO5e" role="37vLTx">
+              <property role="Xl_RC" value="Change to While Statement" />
+            </node>
+            <node concept="3EllGN" id="jBG8nbHO5f" role="37vLTJ">
+              <node concept="37vLTw" id="jBG8nbHO5l" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="jBG8nbHO5g" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.change.to.while" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jBG8nbI0Ca" role="3cqZAp">
+          <node concept="37vLTI" id="jBG8nbI0Cb" role="3clFbG">
+            <node concept="Xl_RD" id="jBG8nbI0Cc" role="37vLTx">
+              <property role="Xl_RC" value="Change to If Statement" />
+            </node>
+            <node concept="3EllGN" id="jBG8nbI0Cd" role="37vLTJ">
+              <node concept="37vLTw" id="jBG8nbI0Cj" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="jBG8nbI0Ce" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.while.to.if" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jBG8nbI0Q_" role="3cqZAp">
+          <node concept="37vLTI" id="jBG8nbI0QA" role="3clFbG">
+            <node concept="Xl_RD" id="jBG8nbI0QB" role="37vLTx">
+              <property role="Xl_RC" value="Change to While Statement" />
+            </node>
+            <node concept="3EllGN" id="jBG8nbI0QC" role="37vLTJ">
+              <node concept="37vLTw" id="jBG8nbI0QI" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="jBG8nbI0QD" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.if.to.while" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="jBG8nbJTa3" role="3cqZAp">
+          <node concept="37vLTI" id="jBG8nbJTa4" role="3clFbG">
+            <node concept="Xl_RD" id="jBG8nbJTa5" role="37vLTx">
+              <property role="Xl_RC" value="Create Routine from Selected" />
+            </node>
+            <node concept="3EllGN" id="jBG8nbJTa6" role="37vLTJ">
+              <node concept="37vLTw" id="jBG8nbJTac" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="jBG8nbJTa7" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.extract.routine" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="jBG8nbI0OT" role="3cqZAp" />
+        <node concept="3clFbH" id="jBG8nbHO3I" role="3cqZAp" />
+        <node concept="3clFbH" id="jBG8nbI0Am" role="3cqZAp" />
+        <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
         <node concept="3clFbH" id="3hBhvFSIIlC" role="3cqZAp" />
       </node>
     </node>

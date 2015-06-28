@@ -96,6 +96,7 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
@@ -757,6 +758,37 @@
     <node concept="1YaCAy" id="3hBhvFT4j0b" role="1YuTPh">
       <property role="TrG5h" value="booleanLiteral" />
       <ref role="1YaFvo" to="dyrx:3hBhvFT4iX8" resolve="BooleanLiteral" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="jBG8nbJ2Zd">
+    <property role="TrG5h" value="typeof_MessageCommand" />
+    <property role="3GE5qa" value="command.action" />
+    <node concept="3clFbS" id="jBG8nbJ2Ze" role="18ibNy">
+      <node concept="2NvLDW" id="jBG8nbJ449" role="3cqZAp">
+        <node concept="mw_s8" id="jBG8nbJ44E" role="1ZfhKB">
+          <node concept="2pJPEk" id="jBG8nbJ44A" role="mwGJk">
+            <node concept="2pJPED" id="jBG8nbJ44P" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="jBG8nbJ44c" role="1ZfhK$">
+          <node concept="1Z2H0r" id="jBG8nbJ3Py" role="mwGJk">
+            <node concept="2OqwBi" id="jBG8nbJ3RG" role="1Z2MuG">
+              <node concept="1YBJjd" id="jBG8nbJ3PY" role="2Oq$k0">
+                <ref role="1YBMHb" node="jBG8nbJ2Zg" resolve="messageCommand" />
+              </node>
+              <node concept="3TrEf2" id="jBG8nbJ41h" role="2OqNvi">
+                <ref role="3Tt5mk" to="dyrx:6kvBWKzB1_X" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="jBG8nbJ2Zg" role="1YuTPh">
+      <property role="TrG5h" value="messageCommand" />
+      <ref role="1YaFvo" to="dyrx:6kvBWKzB1_W" resolve="MessageCommand" />
     </node>
   </node>
 </model>

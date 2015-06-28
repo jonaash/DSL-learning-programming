@@ -143,7 +143,7 @@
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="Repeat" />
     <property role="34LRSv" value="repeat" />
-    <property role="R4oN_" value="repeat code in command body n times" />
+    <property role="R4oN_" value="cycle with given iteration count" />
     <ref role="1TJDcQ" node="6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="1TJgyj" id="2WqFKNDQRsu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -342,7 +342,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6kvBWKz_Wyo" resolve="StringExpression" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2WqFKNE4FE7">

@@ -946,6 +946,12 @@
             <ref role="3bR37D" to="ffeo:1YAozCvot2i" resolve="jetbrains.mps.baseLanguage.regexp" />
           </node>
         </node>
+        <node concept="1SiIV0" id="jBG8nbL5Pd" role="3bR37C">
+          <node concept="3bR9La" id="jBG8nbL5Pe" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

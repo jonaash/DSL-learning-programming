@@ -25,6 +25,9 @@
       <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
+      <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
+        <child id="7730986614922692049" name="body" index="3azrUc" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -41,7 +44,6 @@
     </language>
     <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="KarelConditions">
       <concept id="7859466366388913386" name="KarelConditions.structure.While" flags="ng" index="2LFUJI">
-        <child id="7859466366388913412" name="body" index="2LFUC0" />
         <child id="7859466366388913409" name="condition" index="2LFUC5" />
       </concept>
       <concept id="7859466366387838253" name="KarelConditions.structure.AndOperator" flags="ng" index="2LJN8D" />
@@ -54,7 +56,6 @@
       <concept id="3267332360034124262" name="KarelConditions.structure.IsLooking" flags="ng" index="17FIiu">
         <property id="3267332360034136801" name="direction" index="17FHup" />
       </concept>
-      <concept id="3267332360034124207" name="KarelConditions.structure.IsWallAhead" flags="ng" index="17FIjn" />
     </language>
   </registry>
   <node concept="1$vsWe" id="2PnTnxEYM42">
@@ -79,10 +80,14 @@
           <property role="17FHup" value="south" />
         </node>
         <node concept="3jGSmg" id="2PnTnxF5MKh" role="17CkHq">
-          <node concept="1$shr6" id="6OirKjsAZRq" role="3jGSnO" />
           <node concept="17GwzG" id="6OirKjsBaWg" role="3jGSnO" />
+          <node concept="17J3f2" id="jBG8nbS5xV" role="3jGSnO" />
+          <node concept="17J3f2" id="jBG8nbSe6U" role="3jGSnO" />
         </node>
-        <node concept="3jGSmg" id="2PnTnxF5MKj" role="17CkHv" />
+        <node concept="3jGSmg" id="jBG8nbSoRX" role="17CkHv">
+          <node concept="1$shr6" id="jBG8nbSoSN" role="3jGSnO" />
+          <node concept="1$shr6" id="jBG8nbSoTE" role="3jGSnO" />
+        </node>
       </node>
       <node concept="17J3f2" id="4kfw1ThAKWM" role="3jGSnO" />
     </node>
@@ -115,11 +120,25 @@
   <node concept="1$vsWe" id="6OirKjsJDQc">
     <property role="TrG5h" value="While" />
     <node concept="3jGSmg" id="6OirKjsJDQd" role="3jGSko">
-      <node concept="2LFUJI" id="6OirKjsJDSb" role="3jGSnO">
-        <node concept="3jGSmg" id="6OirKjsJDSc" role="2LFUC0">
-          <node concept="1$shr6" id="6OirKjsJDSw" role="3jGSnO" />
+      <node concept="2LFUJI" id="jBG8nbJOW$" role="3jGSnO">
+        <node concept="3jGSmg" id="jBG8nbJOWD" role="3azrUc">
+          <node concept="1$shr6" id="jBG8nbKsZ7" role="3jGSnO" />
         </node>
-        <node concept="17FIjn" id="3hBhvFS$QdT" role="2LFUC5" />
+        <node concept="17Ff7J" id="jBG8nbKppZ" role="2LFUC5" />
+      </node>
+      <node concept="1$shr6" id="jBG8nbKsZa" role="3jGSnO" />
+      <node concept="1$vv3L" id="jBG8nbKsZi" role="3jGSnO" />
+      <node concept="17J3f2" id="jBG8nbSq12" role="3jGSnO" />
+      <node concept="17CkzI" id="2fiU1DVANXB" role="3jGSnO">
+        <node concept="17FIiu" id="2fiU1DVANXm" role="17CkHB">
+          <property role="17FHup" value="east" />
+        </node>
+        <node concept="3jGSmg" id="2fiU1DVANXn" role="17CkHq">
+          <node concept="17J3f2" id="2fiU1DVANXo" role="3jGSnO" />
+        </node>
+        <node concept="3jGSmg" id="2fiU1DVANY8" role="17CkHv">
+          <node concept="17J3f2" id="2fiU1DVANY9" role="3jGSnO" />
+        </node>
       </node>
     </node>
   </node>
@@ -143,11 +162,13 @@
         <node concept="17Ff7J" id="5eWJqD2o3B4" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="4kfw1ThF8A7" role="3jGSnO" />
-      <node concept="17CkzI" id="3hBhvFSH$fK" role="3jGSnO">
-        <node concept="17Ff7J" id="3hBhvFSH$g6" role="17CkHB" />
+      <node concept="17CkzI" id="jBG8nbJivC" role="3jGSnO">
+        <node concept="17Ff7J" id="jBG8nbJiw2" role="17CkHB" />
         <node concept="3jGSmg" id="3hBhvFSH$fO" role="17CkHq">
-          <node concept="1$shr6" id="3hBhvFSHCnX" role="3jGSnO" />
           <node concept="1$shr6" id="3hBhvFSHCo3" role="3jGSnO" />
+        </node>
+        <node concept="3jGSmg" id="jBG8nbMQxR" role="17CkHv">
+          <node concept="1$vv3L" id="jBG8nbMQxZ" role="3jGSnO" />
         </node>
       </node>
       <node concept="17J3f2" id="3hBhvFSHCn7" role="3jGSnO" />
