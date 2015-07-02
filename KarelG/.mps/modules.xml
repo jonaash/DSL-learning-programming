@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/KarelVariables/KarelVariables.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Common/Common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/KarelExcercises/KarelExcercises.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KarelJava/KarelJava.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/StandaloneIDE.build/StandaloneIDE.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ViewPlugin/ViewPlugin.msd" folder="" />
