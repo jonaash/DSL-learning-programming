@@ -1912,5 +1912,26 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7FfY7DNvkl5">
+    <property role="3GE5qa" value="expression.operator" />
+    <ref role="13h7C2" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+    <node concept="13i0hz" id="7FfY7DNvkvA" role="13h7CS">
+      <property role="TrG5h" value="displayParenthesis" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="false" />
+      <node concept="3Tm1VV" id="7FfY7DNvkvB" role="1B3o_S" />
+      <node concept="10P_77" id="7FfY7DNvkw3" role="3clF45" />
+      <node concept="3clFbS" id="7FfY7DNvkvD" role="3clF47">
+        <node concept="3cpWs6" id="7FfY7DNvKnp" role="3cqZAp">
+          <node concept="3clFbT" id="7FfY7DNvKnA" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7FfY7DNvkl6" role="13h7CW">
+      <node concept="3clFbS" id="7FfY7DNvkl7" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

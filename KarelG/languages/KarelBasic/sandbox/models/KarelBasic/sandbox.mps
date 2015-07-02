@@ -8,7 +8,7 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke" />
+      <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK" />
       <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
         <child id="7286718421228329341" name="message" index="16wSqL" />
       </concept>
@@ -48,8 +48,8 @@
   <node concept="1$vsWe" id="ATD4KvcqPN">
     <property role="TrG5h" value="Test" />
     <node concept="3jGSmg" id="ATD4KvcqPO" role="3jGSko">
-      <node concept="2kp8ke" id="jBG8nbJDnH" role="3jGSnO">
-        <node concept="16y5rI" id="jBG8nbJDnK" role="16wSqL">
+      <node concept="2kpimK" id="7FfY7DNqSu1" role="3jGSnO">
+        <node concept="16y5rI" id="7FfY7DNqSu4" role="16wSqL">
           <property role="16xLMo" value="test" />
         </node>
       </node>
@@ -59,7 +59,6 @@
       <node concept="17J3Kp" id="jBG8nbFEMW" role="3jGSnO">
         <property role="17J3Nn" value="coomm" />
       </node>
-      <node concept="1$vv3L" id="3eme_YBWz7f" role="3jGSnO" />
       <node concept="1$shr6" id="1XlOgn$sn31" role="3jGSnO" />
       <node concept="1$vv3L" id="ATD4KvcqQw" role="3jGSnO" />
       <node concept="1$shr6" id="3eme_YBWz7t" role="3jGSnO" />
@@ -95,18 +94,21 @@
     <property role="TrG5h" value="Repeat" />
     <node concept="3jGSmg" id="2PnTnxEUoqr" role="3jGSko">
       <node concept="17J3f2" id="14XUkkdDgZ_" role="3jGSnO" />
-      <node concept="17JERQ" id="jBG8nbJL1g" role="3jGSnO">
-        <node concept="3jGSmg" id="jBG8nbJL1i" role="3azrUc">
-          <node concept="17J3f2" id="jBG8nbJL1j" role="3jGSnO" />
+      <node concept="17JERQ" id="7FfY7DNqX2a" role="3jGSnO">
+        <node concept="3jGSmg" id="7FfY7DNqX2c" role="3azrUc">
+          <node concept="17J3f2" id="7FfY7DNqX2d" role="3jGSnO" />
         </node>
-        <node concept="36Kqmr" id="jBG8nbJL1_" role="36Ktwi">
-          <property role="36Kqnr" value="8" />
+        <node concept="36Kqmr" id="7FfY7DNqX2u" role="36Ktwi">
+          <property role="36Kqnr" value="6" />
         </node>
       </node>
+      <node concept="17J3f2" id="7FfY7DNqX2$" role="3jGSnO" />
+      <node concept="17J3f2" id="7FfY7DNqX38" role="3jGSnO" />
       <node concept="17J3f2" id="6xChywq$7Yx" role="3jGSnO" />
       <node concept="17JERQ" id="jBG8nbEqJ_" role="3jGSnO">
         <node concept="3jGSmg" id="jBG8nbEqJB" role="3azrUc">
           <node concept="1$vv3L" id="jBG8nbEqK5" role="3jGSnO" />
+          <node concept="1$shr6" id="7FfY7DNsLTK" role="3jGSnO" />
         </node>
         <node concept="36Kqmr" id="jBG8nbGG$q" role="36Ktwi">
           <property role="36Kqnr" value="6" />

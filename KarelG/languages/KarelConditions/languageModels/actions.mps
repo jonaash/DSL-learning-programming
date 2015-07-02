@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -250,6 +251,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="jBG8nbJsaq" role="37WGs$">
+      <property role="3mWdv0" value="change while to if" />
       <ref role="37XkoT" to="9xx6:6OirKjsJsjE" resolve="While" />
       <node concept="37Y9Zx" id="jBG8nbJsar" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJsas" role="2VODD2">
@@ -304,6 +306,13 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="7FfY7DNt7ES" role="37WGs$">
+      <property role="3mWdv0" value="change complex queries to nullary" />
+      <ref role="37XkoT" to="9xx6:5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
+      <node concept="37Y9Zx" id="7FfY7DNt7ET" role="37ZfLb">
+        <node concept="3clFbS" id="7FfY7DNt7EU" role="2VODD2" />
       </node>
     </node>
   </node>

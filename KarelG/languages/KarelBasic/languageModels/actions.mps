@@ -667,7 +667,7 @@
   <node concept="37WguZ" id="jBG8nbJlqC">
     <property role="TrG5h" value="BasicNodeFactories" />
     <node concept="37WvkG" id="jBG8nbJltp" role="37WGs$">
-      <property role="3mWdv0" value="create repeat form other loop" />
+      <property role="3mWdv0" value="create repeat form another loop" />
       <ref role="37XkoT" to="dyrx:2PnTnxEUkye" resolve="Repeat" />
       <node concept="37Y9Zx" id="jBG8nbJltq" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJltr" role="2VODD2">
@@ -708,7 +708,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="jBG8nbJnKK" role="37WGs$">
-      <property role="3mWdv0" value="create alert from other MessageCommand" />
+      <property role="3mWdv0" value="create alert from another MessageCommand" />
       <ref role="37XkoT" to="dyrx:3eme_YBWLZJ" resolve="Alert" />
       <node concept="37Y9Zx" id="jBG8nbJnKL" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJnKM" role="2VODD2">
@@ -749,6 +749,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="jBG8nbJosh" role="37WGs$">
+      <property role="3mWdv0" value="create alert from another MessageCommand" />
       <ref role="37XkoT" to="dyrx:3eme_YBWFXh" resolve="Print" />
       <node concept="37Y9Zx" id="jBG8nbJosi" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJosj" role="2VODD2">
@@ -789,6 +790,7 @@
       </node>
     </node>
     <node concept="37WvkG" id="jBG8nbJRcg" role="37WGs$">
+      <property role="3mWdv0" value="create routine definition from any method-like definition" />
       <ref role="37XkoT" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
       <node concept="37Y9Zx" id="jBG8nbJRch" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJRci" role="2VODD2">
@@ -820,6 +822,65 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="37WvkG" id="7FfY7DNu31L" role="37WGs$">
+      <property role="3mWdv0" value="replace binnary operator with another" />
+      <ref role="37XkoT" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+      <node concept="37Y9Zx" id="7FfY7DNu31M" role="37ZfLb">
+        <node concept="3clFbS" id="7FfY7DNu31N" role="2VODD2">
+          <node concept="Jncv_" id="7FfY7DNu4ln" role="3cqZAp">
+            <ref role="JncvD" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+            <node concept="1r4N5L" id="7FfY7DNu4nk" role="JncvB" />
+            <node concept="JncvC" id="7FfY7DNu4lr" role="JncvA">
+              <property role="TrG5h" value="oldOperator" />
+              <node concept="2jxLKc" id="7FfY7DNu4ls" role="1tU5fm" />
+            </node>
+            <node concept="3clFbS" id="7FfY7DNu4lu" role="Jncv$">
+              <node concept="3clFbF" id="7FfY7DNu4r1" role="3cqZAp">
+                <node concept="2OqwBi" id="7FfY7DNu4Z7" role="3clFbG">
+                  <node concept="2OqwBi" id="7FfY7DNu4sQ" role="2Oq$k0">
+                    <node concept="1r4Lsj" id="7FfY7DNu4r0" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7FfY7DNu4Mj" role="2OqNvi">
+                      <ref role="3Tt5mk" to="dyrx:2WqFKNE4H3M" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="7FfY7DNu5hD" role="2OqNvi">
+                    <node concept="2OqwBi" id="7FfY7DNu5lH" role="2oxUTC">
+                      <node concept="Jnkvi" id="7FfY7DNu5j8" role="2Oq$k0">
+                        <ref role="1M0zk5" node="7FfY7DNu4lr" resolve="oldOperator" />
+                      </node>
+                      <node concept="3TrEf2" id="7FfY7DNu5yy" role="2OqNvi">
+                        <ref role="3Tt5mk" to="dyrx:2WqFKNE4H3M" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7FfY7DNu5Ar" role="3cqZAp">
+                <node concept="2OqwBi" id="7FfY7DNu5As" role="3clFbG">
+                  <node concept="2OqwBi" id="7FfY7DNu5At" role="2Oq$k0">
+                    <node concept="1r4Lsj" id="7FfY7DNu5Au" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7FfY7DNu5YI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="dyrx:2WqFKNE4H45" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="7FfY7DNu5Aw" role="2OqNvi">
+                    <node concept="2OqwBi" id="7FfY7DNu5Ax" role="2oxUTC">
+                      <node concept="Jnkvi" id="7FfY7DNu5Ay" role="2Oq$k0">
+                        <ref role="1M0zk5" node="7FfY7DNu4lr" resolve="oldOperator" />
+                      </node>
+                      <node concept="3TrEf2" id="7FfY7DNu6me" role="2OqNvi">
+                        <ref role="3Tt5mk" to="dyrx:2WqFKNE4H45" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="7FfY7DNu5$5" role="3cqZAp" />
             </node>
           </node>
         </node>

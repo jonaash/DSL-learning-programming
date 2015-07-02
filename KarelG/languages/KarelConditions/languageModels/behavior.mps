@@ -28,12 +28,16 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -82,6 +86,28 @@
       <node concept="3bZ5Sz" id="6xChywqsMIy" role="3clF45">
         <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7FfY7DNvvk_">
+    <property role="3GE5qa" value="expression.logical.operator" />
+    <ref role="13h7C2" to="9xx6:3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
+    <node concept="13hLZK" id="7FfY7DNvvkA" role="13h7CW">
+      <node concept="3clFbS" id="7FfY7DNvvkB" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7FfY7DNvKjI" role="13h7CS">
+      <property role="TrG5h" value="displayParenthesis" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ljn0:7FfY7DNvkvA" resolve="displayParenthesis" />
+      <node concept="3Tm1VV" id="7FfY7DNvKjJ" role="1B3o_S" />
+      <node concept="3clFbS" id="7FfY7DNvKjM" role="3clF47">
+        <node concept="3cpWs6" id="7FfY7DNvKmU" role="3cqZAp">
+          <node concept="3clFbT" id="7FfY7DNvKms" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="7FfY7DNvKjN" role="3clF45" />
     </node>
   </node>
 </model>

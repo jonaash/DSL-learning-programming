@@ -257,6 +257,11 @@
       <node concept="PMmxH" id="2PnTnxEYPoC" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1ERwB7" node="jBG8nbSq2Y" resolve="DeleteLogicalQuery" />
+        <node concept="OXEIz" id="7FfY7DNwPYO" role="P5bDN">
+          <node concept="UkePV" id="7FfY7DNwPYS" role="OY2wv">
+            <ref role="Ul1FP" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
+          </node>
+        </node>
       </node>
       <node concept="3F0A7n" id="2PnTnxEYPoH" role="3EZMnx">
         <ref role="1NtTu8" to="9xx6:2PnTnxEYjbx" resolve="direction" />
@@ -321,6 +326,11 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" node="2PnTnxEYS0C" resolve="LogicalExpresion" />
       <ref role="1ERwB7" node="jBG8nbSq2Y" resolve="DeleteLogicalQuery" />
+      <node concept="OXEIz" id="7FfY7DNwPWD" role="P5bDN">
+        <node concept="UkePV" id="7FfY7DNwPWF" role="OY2wv">
+          <ref role="Ul1FP" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1h_SRR" id="jBG8nbM3OK">
@@ -351,12 +361,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="jBG8nbSHko" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
-      <node concept="1hAIg9" id="jBG8nbSHkp" role="1hA7z_">
-        <node concept="3clFbS" id="jBG8nbSHkq" role="2VODD2" />
       </node>
     </node>
   </node>
@@ -509,15 +513,16 @@
   <node concept="1h_SRR" id="jBG8nbSq2Y">
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="DeleteLogicalQuery" />
+    <ref role="1h_SK9" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
     <node concept="1hA7zw" id="jBG8nbSq2Z" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hAc7j" value="delete_action_id" />
       <property role="1hHO97" value="delete only query when press backspace" />
       <node concept="1hAIg9" id="jBG8nbSq30" role="1hA7z_">
         <node concept="3clFbS" id="jBG8nbSq31" role="2VODD2">
-          <node concept="3clFbF" id="jBG8nbSq3a" role="3cqZAp">
-            <node concept="2OqwBi" id="jBG8nbSq3T" role="3clFbG">
-              <node concept="0IXxy" id="jBG8nbSq39" role="2Oq$k0" />
-              <node concept="1PgB_6" id="jBG8nbSqag" role="2OqNvi" />
+          <node concept="3clFbF" id="7FfY7DNwLJ$" role="3cqZAp">
+            <node concept="2OqwBi" id="7FfY7DNwLKj" role="3clFbG">
+              <node concept="0IXxy" id="7FfY7DNwLJz" role="2Oq$k0" />
+              <node concept="1PgB_6" id="7FfY7DNwLQE" role="2OqNvi" />
             </node>
           </node>
         </node>
