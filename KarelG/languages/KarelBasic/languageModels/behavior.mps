@@ -154,6 +154,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -718,16 +721,20 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1GufzGWdHPK" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="2YIFZM" id="1GufzGWdKs9" role="34bqiv">
-            <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-            <node concept="Xl_RD" id="1GufzGWdKA6" role="37wK5m">
-              <property role="Xl_RC" value="Getting local variable declaration. child: %s" />
-            </node>
-            <node concept="37vLTw" id="1GufzGWdKQG" role="37wK5m">
-              <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
+        <node concept="3SKdUt" id="aB0Z16MSVA" role="3cqZAp">
+          <node concept="3SKWN0" id="aB0Z16MSVF" role="3SKWNk">
+            <node concept="34ab3g" id="1GufzGWdHPK" role="3SKWNf">
+              <property role="35gtTG" value="debug" />
+              <node concept="2YIFZM" id="1GufzGWdKs9" role="34bqiv">
+                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <node concept="Xl_RD" id="1GufzGWdKA6" role="37wK5m">
+                  <property role="Xl_RC" value="Getting local variable declaration. child: %s" />
+                </node>
+                <node concept="37vLTw" id="1GufzGWdKQG" role="37wK5m">
+                  <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -797,28 +804,32 @@
             </node>
             <node concept="3clFbJ" id="6FJbaIqgOWg" role="3cqZAp">
               <node concept="3clFbS" id="6FJbaIqgOWh" role="3clFbx">
-                <node concept="34ab3g" id="1GufzGWdGjH" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="2YIFZM" id="1GufzGWdGD5" role="34bqiv">
-                    <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <node concept="Xl_RD" id="1GufzGWdGDx" role="37wK5m">
-                      <property role="Xl_RC" value="Getting Local variables with child Adding: %s" />
-                    </node>
-                    <node concept="2OqwBi" id="1GufzGWdHv9" role="37wK5m">
-                      <node concept="2OqwBi" id="1GufzGWdH9w" role="2Oq$k0">
-                        <node concept="1PxgMI" id="1GufzGWdH4n" role="2Oq$k0">
-                          <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
-                          <node concept="37vLTw" id="1GufzGWdGXi" role="1PxMeX">
-                            <ref role="3cqZAo" node="6H9YPQxNr4M" resolve="command" />
+                <node concept="3SKdUt" id="aB0Z16MSK9" role="3cqZAp">
+                  <node concept="3SKWN0" id="aB0Z16MSKj" role="3SKWNk">
+                    <node concept="34ab3g" id="1GufzGWdGjH" role="3SKWNf">
+                      <property role="35gtTG" value="debug" />
+                      <node concept="2YIFZM" id="1GufzGWdGD5" role="34bqiv">
+                        <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                        <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                        <node concept="Xl_RD" id="1GufzGWdGDx" role="37wK5m">
+                          <property role="Xl_RC" value="Getting Local variables with child Adding: %s" />
+                        </node>
+                        <node concept="2OqwBi" id="1GufzGWdHv9" role="37wK5m">
+                          <node concept="2OqwBi" id="1GufzGWdH9w" role="2Oq$k0">
+                            <node concept="1PxgMI" id="1GufzGWdH4n" role="2Oq$k0">
+                              <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
+                              <node concept="37vLTw" id="1GufzGWdGXi" role="1PxMeX">
+                                <ref role="3cqZAo" node="6H9YPQxNr4M" resolve="command" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="1GufzGWdHr_" role="2OqNvi">
+                              <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="1GufzGWdHEY" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="1GufzGWdHr_" role="2OqNvi">
-                          <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="1GufzGWdHEY" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>
@@ -1007,19 +1018,23 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1GufzGWeFot" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="2YIFZM" id="1GufzGWeFou" role="34bqiv">
-            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-            <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <node concept="Xl_RD" id="1GufzGWeFov" role="37wK5m">
-              <property role="Xl_RC" value="Getting local variable declaration - role: %s, index: %s" />
-            </node>
-            <node concept="37vLTw" id="1GufzGWeFow" role="37wK5m">
-              <ref role="3cqZAo" node="1GufzGWeFpx" resolve="role" />
-            </node>
-            <node concept="37vLTw" id="1GufzGWeK8P" role="37wK5m">
-              <ref role="3cqZAo" node="1GufzGWeI0C" resolve="index" />
+        <node concept="3SKdUt" id="aB0Z16MSkX" role="3cqZAp">
+          <node concept="3SKWN0" id="aB0Z16MSl3" role="3SKWNk">
+            <node concept="34ab3g" id="1GufzGWeFot" role="3SKWNf">
+              <property role="35gtTG" value="debug" />
+              <node concept="2YIFZM" id="1GufzGWeFou" role="34bqiv">
+                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <node concept="Xl_RD" id="1GufzGWeFov" role="37wK5m">
+                  <property role="Xl_RC" value="Getting local variable declaration - role: %s, index: %s" />
+                </node>
+                <node concept="37vLTw" id="1GufzGWeFow" role="37wK5m">
+                  <ref role="3cqZAo" node="1GufzGWeFpx" resolve="role" />
+                </node>
+                <node concept="37vLTw" id="1GufzGWeK8P" role="37wK5m">
+                  <ref role="3cqZAo" node="1GufzGWeI0C" resolve="index" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1047,28 +1062,32 @@
             </node>
             <node concept="3clFbJ" id="1GufzGWeFp3" role="3cqZAp">
               <node concept="3clFbS" id="1GufzGWeFp4" role="3clFbx">
-                <node concept="34ab3g" id="1GufzGWeFp5" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="2YIFZM" id="1GufzGWeFp6" role="34bqiv">
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <node concept="Xl_RD" id="1GufzGWeFp7" role="37wK5m">
-                      <property role="Xl_RC" value="Getting Local variables with index. Adding: %s" />
-                    </node>
-                    <node concept="2OqwBi" id="1GufzGWeFp8" role="37wK5m">
-                      <node concept="2OqwBi" id="1GufzGWeFp9" role="2Oq$k0">
-                        <node concept="1PxgMI" id="1GufzGWeFpa" role="2Oq$k0">
-                          <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
-                          <node concept="37vLTw" id="1GufzGWeTtn" role="1PxMeX">
-                            <ref role="3cqZAo" node="1GufzGWeS8g" resolve="command" />
+                <node concept="3SKdUt" id="aB0Z16MS$I" role="3cqZAp">
+                  <node concept="3SKWN0" id="aB0Z16MS$S" role="3SKWNk">
+                    <node concept="34ab3g" id="1GufzGWeFp5" role="3SKWNf">
+                      <property role="35gtTG" value="debug" />
+                      <node concept="2YIFZM" id="1GufzGWeFp6" role="34bqiv">
+                        <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                        <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                        <node concept="Xl_RD" id="1GufzGWeFp7" role="37wK5m">
+                          <property role="Xl_RC" value="Getting Local variables with index. Adding: %s" />
+                        </node>
+                        <node concept="2OqwBi" id="1GufzGWeFp8" role="37wK5m">
+                          <node concept="2OqwBi" id="1GufzGWeFp9" role="2Oq$k0">
+                            <node concept="1PxgMI" id="1GufzGWeFpa" role="2Oq$k0">
+                              <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
+                              <node concept="37vLTw" id="1GufzGWeTtn" role="1PxMeX">
+                                <ref role="3cqZAo" node="1GufzGWeS8g" resolve="command" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="1GufzGWeFpc" role="2OqNvi">
+                              <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="1GufzGWeFpd" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="1GufzGWeFpc" role="2OqNvi">
-                          <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="1GufzGWeFpd" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>
