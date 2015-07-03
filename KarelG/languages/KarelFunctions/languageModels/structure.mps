@@ -12,6 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -42,11 +43,14 @@
   <node concept="1TIwiD" id="3hBhvFT4i9B">
     <property role="TrG5h" value="ParameterDeclaration" />
     <property role="3GE5qa" value="function" />
+    <property role="R4oN_" value="declares a function parameter" />
+    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="3hBhvFT4ia6">
     <property role="TrG5h" value="ParameterReference" />
     <property role="3GE5qa" value="function" />
+    <property role="R4oN_" value="referres to parameter value" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
     <node concept="1TJgyj" id="3hBhvFT4ia$" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -59,6 +63,7 @@
     <property role="TrG5h" value="FunctionDefinition" />
     <property role="3GE5qa" value="function" />
     <property role="34LRSv" value="function" />
+    <property role="R4oN_" value="defines command sequence as a function" />
     <ref role="1TJDcQ" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="1TJgyj" id="3hBhvFT4iaL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -76,6 +81,7 @@
   <node concept="1TIwiD" id="3hBhvFT4iaK">
     <property role="TrG5h" value="FunctionCall" />
     <property role="3GE5qa" value="function" />
+    <property role="R4oN_" value="executes function (and use its result)" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="3hBhvFTa07b" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -94,6 +100,7 @@
     <property role="TrG5h" value="VoidType" />
     <property role="3GE5qa" value="type" />
     <property role="34LRSv" value="none" />
+    <property role="R4oN_" value="type of function that returns nothing" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
     <node concept="PrWs8" id="3hBhvFT70p4" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -103,6 +110,7 @@
     <property role="3GE5qa" value="function" />
     <property role="TrG5h" value="ReturnCommand" />
     <property role="34LRSv" value="return" />
+    <property role="R4oN_" value="defines a result of the function and ends function execution" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3hBhvFT7nZx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

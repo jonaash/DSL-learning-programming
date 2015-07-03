@@ -54,7 +54,7 @@
   <node concept="1TIwiD" id="3a5rfDmX7CW">
     <property role="TrG5h" value="Step" />
     <property role="34LRSv" value="step" />
-    <property role="R4oN_" value="command to make robot one step in current direction" />
+    <property role="R4oN_" value="makes the robot to do one step in current direction" />
     <property role="3GE5qa" value="command.action" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
@@ -69,7 +69,7 @@
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="LeftTurn" />
     <property role="34LRSv" value="turn left" />
-    <property role="R4oN_" value="command to make robot to turn left on current place" />
+    <property role="R4oN_" value="makes the robot to turn left" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmYafO">
@@ -116,34 +116,35 @@
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="Print" />
     <property role="34LRSv" value="print" />
+    <property role="R4oN_" value="prints a message" />
     <ref role="1TJDcQ" node="6kvBWKzB1_W" resolve="MessageCommand" />
   </node>
   <node concept="1TIwiD" id="3eme_YBWLZJ">
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="Alert" />
     <property role="34LRSv" value="alert" />
-    <property role="R4oN_" value="command to show message dialog with the message" />
+    <property role="R4oN_" value="displays dialog with a message" />
     <ref role="1TJDcQ" node="6kvBWKzB1_W" resolve="MessageCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxETuQj">
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="PutMark" />
     <property role="34LRSv" value="put mark" />
-    <property role="R4oN_" value="command to put one mark on the ground" />
+    <property role="R4oN_" value="put one mark on the ground (unless it's full)" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxETuQk">
     <property role="3GE5qa" value="command.action" />
     <property role="TrG5h" value="PickMark" />
     <property role="34LRSv" value="pick mark" />
-    <property role="R4oN_" value="command pick one mark from the grounf if there is any" />
+    <property role="R4oN_" value="pick one mark from the ground (if there is any)" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEUkye">
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="Repeat" />
     <property role="34LRSv" value="repeat" />
-    <property role="R4oN_" value="cycle with given iteration count" />
+    <property role="R4oN_" value="repeats given commands n times" />
     <ref role="1TJDcQ" node="6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="1TJgyj" id="2WqFKNDQRsu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -156,12 +157,14 @@
     <property role="3GE5qa" value="command.documentation" />
     <property role="TrG5h" value="EmptyLine" />
     <property role="34LRSv" value="&lt;empty&gt;" />
+    <property role="R4oN_" value="empty line" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEUX_x">
     <property role="3GE5qa" value="command.documentation" />
     <property role="TrG5h" value="CommentLine" />
     <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="enters a comment that is just for user" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyi" id="2PnTnxEUXAJ" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -171,6 +174,7 @@
   <node concept="1TIwiD" id="4in_MZdaLTz">
     <property role="TrG5h" value="RoutineCall" />
     <property role="3GE5qa" value="routine" />
+    <property role="R4oN_" value="executes procedure" />
     <ref role="1TJDcQ" node="14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="14XUkkdIUvj" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -182,7 +186,8 @@
   <node concept="1TIwiD" id="4in_MZdaKkC">
     <property role="TrG5h" value="RoutineDefinition" />
     <property role="3GE5qa" value="routine" />
-    <property role="34LRSv" value="routine" />
+    <property role="34LRSv" value="procedure" />
+    <property role="R4oN_" value="defines sequence of commands as a procedure" />
     <ref role="1TJDcQ" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2n2">
@@ -198,6 +203,7 @@
   <node concept="1TIwiD" id="2WqFKNDQKEn">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="IntegerLiteral" />
+    <property role="R4oN_" value="some integral number" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="2WqFKNDQKFn" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -214,7 +220,7 @@
   <node concept="1TIwiD" id="2WqFKNDOdsR">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="BooleanType" />
-    <property role="34LRSv" value="flag" />
+    <property role="34LRSv" value="logical" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mV">
@@ -259,11 +265,14 @@
   <node concept="1TIwiD" id="2WqFKNDO2n1">
     <property role="TrG5h" value="LocalVariableDeclaration" />
     <property role="3GE5qa" value="variable" />
+    <property role="R4oN_" value="declares a local variable" />
+    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO42N">
     <property role="TrG5h" value="LocalVariableReference" />
     <property role="3GE5qa" value="variable" />
+    <property role="R4oN_" value="reference to a local variable" />
     <ref role="1TJDcQ" node="2WqFKNDO42l" resolve="VariableReference" />
     <node concept="1TJgyj" id="2WqFKNDO42O" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -323,6 +332,7 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
+    <property role="R4oN_" value="some text" />
     <ref role="1TJDcQ" node="6kvBWKz_Wyo" resolve="StringExpression" />
     <node concept="1TJgyi" id="6kvBWKzA8dk" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -392,6 +402,7 @@
     <property role="3GE5qa" value="routine" />
     <property role="TrG5h" value="Require" />
     <property role="34LRSv" value="require" />
+    <property role="R4oN_" value="imports procedures from external Library" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3hBhvFSK1_A" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -403,6 +414,7 @@
   <node concept="1TIwiD" id="3hBhvFT4iX8">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="BooleanLiteral" />
+    <property role="R4oN_" value="logical value - true or false" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="3hBhvFT4iX9" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -421,6 +433,9 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3hBhvFT7TZS" resolve="IStandaloneExpression" />
+    </node>
+    <node concept="PrWs8" id="aB0Z16L7Ji" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="3hBhvFT7TZS">

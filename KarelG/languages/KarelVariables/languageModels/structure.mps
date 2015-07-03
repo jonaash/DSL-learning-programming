@@ -8,11 +8,13 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -41,7 +43,6 @@
   </registry>
   <node concept="1TIwiD" id="2WqFKNDOaYc">
     <property role="TrG5h" value="LocalVariableDeclarationCommand" />
-    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <property role="3GE5qa" value="variable" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="2WqFKNDOaYr" role="1TKVEi">
@@ -53,35 +54,43 @@
     <node concept="PrWs8" id="1GufzGWfeve" role="PzmwI">
       <ref role="PrY4T" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
     </node>
+    <node concept="PrWs8" id="aB0Z16L59D" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2WqFKNE4Haf">
     <property role="3GE5qa" value="expression.operator" />
     <property role="TrG5h" value="PlusOperator" />
     <property role="34LRSv" value="+" />
+    <property role="R4oN_" value="adds two variables" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNE4Haw">
     <property role="3GE5qa" value="expression.operator" />
     <property role="TrG5h" value="MinusOperator" />
     <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="subtracts two numbers" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeySp">
     <property role="3GE5qa" value="expression.operator" />
     <property role="TrG5h" value="MultOperator" />
     <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="multiplies two numbers" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeyTn">
     <property role="3GE5qa" value="expression.operator" />
     <property role="TrG5h" value="DivideOperator" />
     <property role="34LRSv" value="/" />
+    <property role="R4oN_" value="divide two numbers" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="1GufzGWfyAd">
     <property role="3GE5qa" value="variable" />
     <property role="TrG5h" value="AssignmentCommand" />
     <property role="34LRSv" value="=" />
+    <property role="R4oN_" value="saves some value into variable" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="1GufzGWfyPi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

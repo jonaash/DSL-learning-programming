@@ -79,12 +79,14 @@
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="IsWallAhead" />
     <property role="34LRSv" value="wall ahead" />
+    <property role="R4oN_" value="checks if there is a wall in front of robot" />
     <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEYg7A">
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="IsLooking" />
     <property role="34LRSv" value="looking" />
+    <property role="R4oN_" value="checks if robot is looking in given direction" />
     <ref role="1TJDcQ" node="3hBhvFSEy0h" resolve="LogicalQuery" />
     <node concept="1TJgyi" id="2PnTnxEYjbx" role="1TKVEl">
       <property role="TrG5h" value="direction" />
@@ -95,7 +97,7 @@
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="IfStatement" />
     <property role="34LRSv" value="if" />
-    <property role="R4oN_" value="conditional statement" />
+    <property role="R4oN_" value="decides what to do based on logical condition" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="2PnTnxEXESv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -120,12 +122,14 @@
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="IsMark" />
     <property role="34LRSv" value="mark" />
+    <property role="R4oN_" value="checks if there is any mark" />
     <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEYLin">
     <property role="3GE5qa" value="expression.logical.query" />
     <property role="TrG5h" value="IsFull" />
     <property role="34LRSv" value="full" />
+    <property role="R4oN_" value="checks if current place is full of marks" />
     <ref role="1TJDcQ" node="5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
   </node>
   <node concept="1TIwiD" id="6OirKjsF4ES">
@@ -139,19 +143,21 @@
     <property role="3GE5qa" value="expression.logical.operator" />
     <property role="TrG5h" value="AndOperator" />
     <property role="34LRSv" value="and" />
+    <property role="R4oN_" value="evaluates as true if both left and right operands are true" />
     <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsFlUw">
     <property role="3GE5qa" value="expression.logical.operator" />
     <property role="TrG5h" value="OrOperator" />
     <property role="34LRSv" value="or" />
+    <property role="R4oN_" value="evaluates as true if either left or right operands is true" />
     <ref role="1TJDcQ" node="3hBhvFSDZzq" resolve="BinaryLogicalOperator" />
   </node>
   <node concept="1TIwiD" id="6OirKjsJsjE">
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="While" />
     <property role="34LRSv" value="while" />
-    <property role="R4oN_" value="cycle with condition" />
+    <property role="R4oN_" value="repeats commands while logical condition is true" />
     <ref role="1TJDcQ" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="1TJgyj" id="6OirKjsJsk1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
