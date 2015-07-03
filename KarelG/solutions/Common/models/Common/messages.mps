@@ -219,6 +219,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="146X79f00Wc" role="3cqZAp">
+          <node concept="37vLTI" id="146X79f00Wd" role="3clFbG">
+            <node concept="Xl_RD" id="146X79f00We" role="37vLTx">
+              <property role="Xl_RC" value="Variable with name ''{0}'' already exists. Name must be unique." />
+            </node>
+            <node concept="3EllGN" id="146X79f00Wf" role="37vLTJ">
+              <node concept="Xl_RD" id="146X79f00Wg" role="3ElVtu">
+                <property role="Xl_RC" value="error.variable.name.duplicite" />
+              </node>
+              <node concept="37vLTw" id="146X79f00Wl" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="146X79f00Ui" role="3cqZAp" />
         <node concept="3clFbF" id="7_uVVPcJTw2" role="3cqZAp">
           <node concept="37vLTI" id="7_uVVPcJTUt" role="3clFbG">
             <node concept="3EllGN" id="7_uVVPcJU_n" role="37vLTJ">
@@ -294,6 +310,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="146X79f00AZ" role="3cqZAp" />
         <node concept="3clFbH" id="3hBhvFSIIqR" role="3cqZAp" />
         <node concept="3SKdUt" id="3hBhvFSIIsT" role="3cqZAp">
           <node concept="3SKdUq" id="3hBhvFSIItT" role="3SKWNk">

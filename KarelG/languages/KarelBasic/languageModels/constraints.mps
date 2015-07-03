@@ -197,7 +197,7 @@
               <node concept="liA8E" id="2WqFKNDQuWU" role="2OqNvi">
                 <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="5eWJqD2tpDV" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z0-9_]+" />
+                  <property role="Xl_RC" value="[a-zA-Z_][a-zA-Z0-9_]*" />
                 </node>
               </node>
             </node>
