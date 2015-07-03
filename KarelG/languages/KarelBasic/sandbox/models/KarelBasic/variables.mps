@@ -10,9 +10,16 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3394217739178654343" name="KarelBasic.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
+      </concept>
+      <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
+      </concept>
+      <concept id="7286718421228046626" name="KarelBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
       <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
@@ -48,6 +55,9 @@
         <child id="1954067712460074322" name="variable" index="B81dD" />
         <child id="1954067712460074325" name="value" index="B81dI" />
       </concept>
+      <concept id="191125839700880024" name="KarelVariables.structure.ConverterToString" flags="ng" index="14oY_C">
+        <child id="191125839700906527" name="expression" index="14o_7J" />
+      </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739181239833" name="KarelVariables.structure.MultOperator" flags="ng" index="35884l" />
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
@@ -65,7 +75,7 @@
     <node concept="3jGSmg" id="2WqFKNDOciT" role="3jGSko">
       <node concept="36Mw20" id="1GufzGWfgyT" role="3jGSnO">
         <node concept="36MCFd" id="1GufzGWfgyW" role="36Mw2n">
-          <property role="TrG5h" value="a" />
+          <property role="TrG5h" value="as" />
           <node concept="36MCER" id="1GufzGWfgyR" role="36MCEW" />
         </node>
       </node>
@@ -84,7 +94,7 @@
           </node>
         </node>
         <node concept="36MIYZ" id="1GufzGWgDRK" role="B81dD">
-          <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
+          <ref role="36MIYq" node="1GufzGWfgyW" resolve="as" />
         </node>
       </node>
       <node concept="17J3f2" id="1GufzGWgDS4" role="3jGSnO" />
@@ -93,11 +103,10 @@
           <property role="TrG5h" value="b" />
           <node concept="36MCER" id="3hBhvFT9Mc6" role="36MCEW" />
           <node concept="36MIYZ" id="3hBhvFT9McA" role="36MIYJ">
-            <ref role="36MIYq" node="1GufzGWfgyW" resolve="a" />
+            <ref role="36MIYq" node="1GufzGWfgyW" resolve="as" />
           </node>
         </node>
       </node>
-      <node concept="17J3f2" id="6xChywqv$wA" role="3jGSnO" />
       <node concept="36Mw20" id="146X79eZbUp" role="3jGSnO">
         <node concept="36MCFd" id="146X79eZbUs" role="36Mw2n">
           <property role="TrG5h" value="u" />
@@ -117,16 +126,35 @@
           </node>
         </node>
       </node>
-      <node concept="17J3f2" id="146X79eZbXq" role="3jGSnO" />
-      <node concept="17JERQ" id="146X79eZc3f" role="3jGSnO">
-        <node concept="3jGSmg" id="146X79eZc3h" role="3azrUc">
-          <node concept="17J3f2" id="146X79eZc3i" role="3jGSnO" />
+      <node concept="1$shr6" id="aB0Z16FBhS" role="3jGSnO" />
+      <node concept="17J3f2" id="aB0Z16FzbT" role="3jGSnO" />
+      <node concept="17JERQ" id="aB0Z16O64s" role="3jGSnO">
+        <node concept="3jGSmg" id="aB0Z16O64u" role="3azrUc">
+          <node concept="36Mw20" id="aB0Z16FBmQ" role="3jGSnO">
+            <node concept="36MCFd" id="aB0Z16FBmT" role="36Mw2n">
+              <property role="TrG5h" value="sadsdasd" />
+              <node concept="36MCER" id="aB0Z16FBmP" role="36MCEW" />
+            </node>
+          </node>
         </node>
-        <node concept="36Kqmr" id="146X79eZc3R" role="36Ktwi">
-          <property role="36Kqnr" value="5" />
+        <node concept="36MIYZ" id="aB0Z16O7xe" role="36Ktwi">
+          <ref role="36MIYq" node="1GufzGWfgyW" resolve="as" />
         </node>
       </node>
       <node concept="17J3f2" id="146X79eZbX1" role="3jGSnO" />
+      <node concept="17JERQ" id="aB0Z16FBoc" role="3jGSnO">
+        <node concept="3jGSmg" id="aB0Z16FBoe" role="3azrUc">
+          <node concept="36Mw20" id="aB0Z16FBp3" role="3jGSnO">
+            <node concept="36MCFd" id="aB0Z16FBp6" role="36Mw2n">
+              <property role="TrG5h" value="q" />
+              <node concept="36MCER" id="aB0Z16FBp1" role="36MCEW" />
+            </node>
+          </node>
+        </node>
+        <node concept="36Kqmr" id="aB0Z16FBoV" role="36Ktwi">
+          <property role="36Kqnr" value="6" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1$vsWe" id="2WqFKNE4LuH">
@@ -168,6 +196,28 @@
         </node>
       </node>
       <node concept="17J3f2" id="jBG8nbJ9_6" role="3jGSnO" />
+      <node concept="36Mw20" id="aB0Z16LdhZ" role="3jGSnO">
+        <node concept="36MCFd" id="aB0Z16Ldi2" role="36Mw2n">
+          <property role="TrG5h" value="t" />
+          <node concept="36Kql8" id="aB0Z16LdhX" role="36MCEW" />
+          <node concept="3527Q3" id="aB0Z16LdjA" role="36MIYJ">
+            <node concept="36Kqmr" id="aB0Z16LdjQ" role="3527ZY">
+              <property role="36Kqnr" value="6" />
+            </node>
+            <node concept="16y5rI" id="aB0Z16Ldi$" role="3527S9">
+              <property role="16xLMo" value="dsadfd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="aB0Z16NDr7" role="3jGSnO" />
+      <node concept="2kp8ke" id="aB0Z16NDpY" role="3jGSnO">
+        <node concept="14oY_C" id="aB0Z16NDqV" role="16wSqL">
+          <node concept="36MIYZ" id="aB0Z16NDqT" role="14o_7J">
+            <ref role="36MIYq" node="1GufzGWhqoz" resolve="a" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

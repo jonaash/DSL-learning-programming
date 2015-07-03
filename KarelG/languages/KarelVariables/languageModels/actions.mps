@@ -46,6 +46,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -66,6 +69,9 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -585,9 +591,29 @@
               <property role="3SKdUp" value="preventing wrapping more one expression more times with convertor" />
             </node>
           </node>
-          <node concept="3clFbF" id="aB0Z16NrqI" role="3cqZAp">
-            <node concept="3fqX7Q" id="aB0Z16NtNq" role="3clFbG">
-              <node concept="3p$olP" id="aB0Z16NtNs" role="3fr31v" />
+          <node concept="3SKdUt" id="aB0Z16O2gc" role="3cqZAp">
+            <node concept="3SKdUq" id="aB0Z16O2pI" role="3SKWNk">
+              <property role="3SKdUp" value="this does not work" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="aB0Z16O2w6" role="3cqZAp">
+            <node concept="3SKWN0" id="aB0Z16O2wa" role="3SKWNk">
+              <node concept="3clFbF" id="aB0Z16NrqI" role="3SKWNf">
+                <node concept="3fqX7Q" id="aB0Z16NtNq" role="3clFbG">
+                  <node concept="3p$olP" id="aB0Z16NtNs" role="3fr31v" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="aB0Z16O2DH" role="3cqZAp" />
+          <node concept="3SKdUt" id="aB0Z16O3d0" role="3cqZAp">
+            <node concept="3SKdUq" id="aB0Z16O3mH" role="3SKWNk">
+              <property role="3SKdUp" value="turn it of" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="aB0Z16O2WB" role="3cqZAp">
+            <node concept="3clFbT" id="aB0Z16O2WA" role="3clFbG">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
