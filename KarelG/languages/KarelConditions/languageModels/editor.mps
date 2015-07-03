@@ -515,7 +515,7 @@
     <property role="TrG5h" value="DeleteLogicalQuery" />
     <ref role="1h_SK9" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
     <node concept="1hA7zw" id="jBG8nbSq2Z" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hAc7j" value="backspace_action_id" />
       <property role="1hHO97" value="delete only query when press backspace" />
       <node concept="1hAIg9" id="jBG8nbSq30" role="1hA7z_">
         <node concept="3clFbS" id="jBG8nbSq31" role="2VODD2">

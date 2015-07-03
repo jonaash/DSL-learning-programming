@@ -1381,6 +1381,30 @@
               <node concept="0IXxy" id="7FfY7DNxeyK" role="37wK5m" />
             </node>
           </node>
+          <node concept="34ab3g" id="6QlrOEznTo6" role="3cqZAp">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="6QlrOEznTo7" role="34bqiv">
+              <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <node concept="Xl_RD" id="6QlrOEznTo8" role="37wK5m">
+                <property role="Xl_RC" value="debug DELETE action on node: %s" />
+              </node>
+              <node concept="0IXxy" id="6QlrOEznTo9" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="34ab3g" id="6QlrOEznTHU" role="3cqZAp">
+            <property role="35gtTG" value="trace" />
+            <node concept="2YIFZM" id="6QlrOEznTHV" role="34bqiv">
+              <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <node concept="Xl_RD" id="6QlrOEznTHW" role="37wK5m">
+                <property role="Xl_RC" value="trace DELETE action on node: %s" />
+              </node>
+              <node concept="0IXxy" id="6QlrOEznTHX" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="6QlrOEznTDY" role="3cqZAp" />
+          <node concept="3clFbH" id="6QlrOEznTcN" role="3cqZAp" />
           <node concept="3clFbJ" id="7FfY7DNuiFN" role="3cqZAp">
             <node concept="3clFbS" id="7FfY7DNuiFP" role="3clFbx">
               <node concept="3clFbF" id="7FfY7DNujrY" role="3cqZAp">

@@ -151,6 +151,7 @@
         <child id="1177324142645" name="part" index="tZc4B" />
       </concept>
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
+        <property id="1215605257730" name="side" index="7I3sp" />
         <property id="1158952484319" name="description" index="3mWRNi" />
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
         <child id="1177442283389" name="part" index="_1QTJ" />
@@ -576,7 +577,7 @@
     <property role="TrG5h" value="binaryOperator" />
     <property role="3GE5qa" value="expression.operator" />
     <node concept="3UNGvq" id="2WqFKNEcJjX" role="3UOs0v">
-      <property role="3mWRNi" value="create binary operator when typing its alias on the right side of expression" />
+      <property role="3mWRNi" value=" create binary operator when typing its alias on the right side of expression" />
       <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
       <node concept="1_wSoI" id="2WqFKNEcM02" role="_1QTJ">
         <ref role="1_xjl5" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
@@ -606,6 +607,43 @@
             <node concept="3clFbH" id="2WqFKNEcNcD" role="3cqZAp" />
             <node concept="3cpWs6" id="2WqFKNEcNjp" role="3cqZAp">
               <node concept="E3gs8" id="2WqFKNEcNp0" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="146X79eXm7w" role="3UOs0v">
+      <property role="7I3sp" value="left" />
+      <property role="3mWRNi" value=" create binary operator when typing its alias on the left side of expression" />
+      <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      <node concept="1_wSoI" id="146X79eXr6p" role="_1QTJ">
+        <ref role="1_xjl5" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+        <node concept="E3ukw" id="146X79eXr6r" role="1_xdl1">
+          <node concept="3clFbS" id="146X79eXr6t" role="2VODD2">
+            <node concept="3clFbF" id="146X79eXtiw" role="3cqZAp">
+              <node concept="2OqwBi" id="146X79eXtix" role="3clFbG">
+                <node concept="Cj7Ep" id="146X79eXtiy" role="2Oq$k0" />
+                <node concept="1P9Npp" id="146X79eXtiz" role="2OqNvi">
+                  <node concept="E3gs8" id="146X79eXti$" role="1P9ThW" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="146X79eXti_" role="3cqZAp">
+              <node concept="2OqwBi" id="146X79eXtiA" role="3clFbG">
+                <node concept="2OqwBi" id="146X79eXtiB" role="2Oq$k0">
+                  <node concept="E3gs8" id="146X79eXtiC" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="146X79eXCOa" role="2OqNvi">
+                    <ref role="3Tt5mk" to="dyrx:2WqFKNE4H45" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="146X79eXtiE" role="2OqNvi">
+                  <node concept="Cj7Ep" id="146X79eXtiF" role="2oxUTC" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="146X79eXtiG" role="3cqZAp" />
+            <node concept="3cpWs6" id="146X79eXtiH" role="3cqZAp">
+              <node concept="E3gs8" id="146X79eXtiI" role="3cqZAk" />
             </node>
           </node>
         </node>
@@ -881,6 +919,47 @@
                 </node>
               </node>
               <node concept="3clFbH" id="7FfY7DNu5$5" role="3cqZAp" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3UOs0u" id="146X79eYEDv">
+    <property role="TrG5h" value="unaryOperator" />
+    <property role="3GE5qa" value="expression.operator" />
+    <node concept="3UNGvq" id="146X79eYEDw" role="3UOs0v">
+      <property role="3mWRNi" value=" create unary operator when typing its alias before expression" />
+      <property role="7I3sp" value="left" />
+      <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      <node concept="1_wSoI" id="146X79eYEDx" role="_1QTJ">
+        <ref role="1_xjl5" to="dyrx:3hBhvFS$B8N" resolve="UnaryOperator" />
+        <node concept="E3ukw" id="146X79eYEDy" role="1_xdl1">
+          <node concept="3clFbS" id="146X79eYEDz" role="2VODD2">
+            <node concept="3clFbF" id="146X79eYED$" role="3cqZAp">
+              <node concept="2OqwBi" id="146X79eYED_" role="3clFbG">
+                <node concept="Cj7Ep" id="146X79eYEDA" role="2Oq$k0" />
+                <node concept="1P9Npp" id="146X79eYEDB" role="2OqNvi">
+                  <node concept="E3gs8" id="146X79eYEDC" role="1P9ThW" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="146X79eYEDD" role="3cqZAp">
+              <node concept="2OqwBi" id="146X79eYEDE" role="3clFbG">
+                <node concept="2OqwBi" id="146X79eYEDF" role="2Oq$k0">
+                  <node concept="E3gs8" id="146X79eYEDG" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="146X79eYEXI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="dyrx:3hBhvFS$BnS" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="146X79eYEDI" role="2OqNvi">
+                  <node concept="Cj7Ep" id="146X79eYEDJ" role="2oxUTC" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="146X79eYEDK" role="3cqZAp" />
+            <node concept="3cpWs6" id="146X79eYEDL" role="3cqZAp">
+              <node concept="E3gs8" id="146X79eYEDM" role="3cqZAk" />
             </node>
           </node>
         </node>
