@@ -276,7 +276,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -796,14 +795,11 @@
         <node concept="pkWqt" id="2WqFKNDO5HD" role="pqm2j">
           <node concept="3clFbS" id="2WqFKNDO5HE" role="2VODD2">
             <node concept="3clFbF" id="2WqFKNDO5MB" role="3cqZAp">
-              <node concept="2OqwBi" id="2WqFKNDO6AZ" role="3clFbG">
-                <node concept="2OqwBi" id="2WqFKNDO5Rt" role="2Oq$k0">
-                  <node concept="pncrf" id="2WqFKNDO5MA" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="1GufzGWcqXs" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
-                  </node>
+              <node concept="2OqwBi" id="2WqFKNDO5Rt" role="3clFbG">
+                <node concept="pncrf" id="2WqFKNDO5MA" role="2Oq$k0" />
+                <node concept="2qgKlT" id="aB0Z16OPoh" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:aB0Z16OA3n" resolve="displayInitializer" />
                 </node>
-                <node concept="3x8VRR" id="2WqFKNDO6WC" role="2OqNvi" />
               </node>
             </node>
           </node>

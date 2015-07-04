@@ -17,6 +17,7 @@
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -24,6 +25,9 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -115,6 +119,36 @@
       <property role="20kJfa" value="expression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="aB0Z16Oiyf">
+    <property role="TrG5h" value="ForCycle" />
+    <property role="3GE5qa" value="command.control" />
+    <property role="34LRSv" value="for" />
+    <property role="R4oN_" value="for sequence of numbers repeats set of commands" />
+    <ref role="1TJDcQ" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
+    <node concept="PrWs8" id="aB0Z16Oiyz" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="aB0Z16Ok4W" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="aB0Z16Ok4Y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="limit" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyi" id="aB0Z16Ok5x" role="1TKVEl">
+      <property role="TrG5h" value="downTo" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="aB0Z16Orvt" role="1TKVEl">
+      <property role="TrG5h" value="varName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

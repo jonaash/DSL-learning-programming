@@ -15,11 +15,12 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)</dependency>
+        <dependency reexport="false" scope="extend">aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)</dependency>
         <dependency reexport="false">53b38693-ceee-4191-9779-c7bca6c13739(KarelVariables)</dependency>
         <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

@@ -49,6 +49,7 @@
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
+      <concept id="3640435696255671307" name="KarelBasic.structure.LeftTurn" flags="ng" index="1$vv3L" />
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
       <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentCommand" flags="ng" index="B81uQ">
@@ -57,6 +58,11 @@
       </concept>
       <concept id="191125839700880024" name="KarelVariables.structure.ConverterToString" flags="ng" index="14oY_C">
         <child id="191125839700906527" name="expression" index="14o_7J" />
+      </concept>
+      <concept id="191125839701682319" name="KarelVariables.structure.ForCycle" flags="ng" index="14tyHZ">
+        <property id="191125839701688673" name="downTo" index="14t$ah" />
+        <child id="191125839701688636" name="var" index="14t$bc" />
+        <child id="191125839701688638" name="limit" index="14t$be" />
       </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739181239833" name="KarelVariables.structure.MultOperator" flags="ng" index="35884l" />
@@ -216,6 +222,45 @@
           <node concept="36MIYZ" id="aB0Z16NDqT" role="14o_7J">
             <ref role="36MIYq" node="1GufzGWhqoz" resolve="a" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="aB0Z16OpB5">
+    <property role="TrG5h" value="For" />
+    <node concept="3jGSmg" id="aB0Z16OpB6" role="3jGSko">
+      <node concept="14tyHZ" id="aB0Z16PBXk" role="3jGSnO">
+        <node concept="36MCFd" id="aB0Z16PBXl" role="14t$bc">
+          <property role="TrG5h" value="i" />
+          <node concept="36MCER" id="aB0Z16PBXm" role="36MCEW" />
+          <node concept="36Kqmr" id="aB0Z16PBXn" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
+        </node>
+        <node concept="3jGSmg" id="aB0Z16PBXp" role="3azrUc">
+          <node concept="1$shr6" id="aB0Z16PQBe" role="3jGSnO" />
+          <node concept="1$shr6" id="aB0Z16QbX7" role="3jGSnO" />
+        </node>
+        <node concept="36Kqmr" id="aB0Z16PBXR" role="14t$be">
+          <property role="36Kqnr" value="7" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="aB0Z16Q2Rk" role="3jGSnO" />
+      <node concept="14tyHZ" id="aB0Z16Q2RB" role="3jGSnO">
+        <property role="14t$ah" value="true" />
+        <node concept="36MCFd" id="aB0Z16Q2RC" role="14t$bc">
+          <property role="TrG5h" value="j" />
+          <node concept="36MCER" id="aB0Z16Q2RD" role="36MCEW" />
+          <node concept="36Kqmr" id="aB0Z16Q2RE" role="36MIYJ">
+            <property role="36Kqnr" value="5" />
+          </node>
+        </node>
+        <node concept="3jGSmg" id="aB0Z16Q2RG" role="3azrUc">
+          <node concept="1$shr6" id="aB0Z16Q2TR" role="3jGSnO" />
+          <node concept="1$vv3L" id="aB0Z16Q2TX" role="3jGSnO" />
+        </node>
+        <node concept="36Kqmr" id="aB0Z16Q2Sr" role="14t$be">
+          <property role="36Kqnr" value="1" />
         </node>
       </node>
     </node>
