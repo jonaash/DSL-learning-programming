@@ -361,17 +361,6 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="1JtUjhLyMBR" role="1l3spd">
-      <property role="TrG5h" value="karel_home" />
-      <node concept="55IIr" id="1JtUjhLyMF2" role="398pKh">
-        <node concept="2Ry0Ak" id="1JtUjhLyMFf" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="1JtUjhLyMFk" role="2Ry0An">
-            <property role="2Ry0Am" value="KarelG" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="1JtUjhLyCyD" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="1JtUjhLyCyE" role="2JcizS">
@@ -532,14 +521,13 @@
         <node concept="m$_wl" id="1JtUjhLyC$y" role="39821P">
           <ref role="m_rDy" node="1JtUjhLyCzP" resolve="KarelG" />
           <node concept="398223" id="1JtUjhLyMQA" role="39821P">
-            <node concept="2HvfSZ" id="1JtUjhLyMWy" role="39821P">
-              <node concept="398BVA" id="1JtUjhLyMY4" role="2HvfZ0">
-                <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-                <node concept="2Ry0Ak" id="1JtUjhLyMZA" role="iGT6I">
+            <node concept="2HvfSZ" id="3gLKlJd0VZ" role="39821P">
+              <node concept="55IIr" id="3gLKlJd0W1" role="2HvfZ0">
+                <node concept="2Ry0Ak" id="3gLKlJd1fN" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="1JtUjhLyMZF" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJd1fS" role="2Ry0An">
                     <property role="2Ry0Am" value="GuiServerLib" />
-                    <node concept="2Ry0Ak" id="1JtUjhLyMZK" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJd1fV" role="2Ry0An">
                       <property role="2Ry0Am" value="lib" />
                     </node>
                   </node>
@@ -707,17 +695,16 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3V_IoypzRi8" role="3bR37C">
-          <node concept="1BurEX" id="3V_IoypzRi9" role="1SiIV1">
-            <node concept="398BVA" id="3V_IoypzRhY" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3V_IoypzRhZ" role="iGT6I">
+        <node concept="1SiIV0" id="3gLKlJcRQA" role="3bR37C">
+          <node concept="1BurEX" id="3gLKlJcRQB" role="1SiIV1">
+            <node concept="55IIr" id="3gLKlJcRQx" role="1BurEY">
+              <node concept="2Ry0Ak" id="3gLKlJcRQy" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3V_IoypzRi0" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3gLKlJcRQz" role="2Ry0An">
                   <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3V_IoypzRi1" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJcRQ$" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3V_IoypzRi2" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJcRQ_" role="2Ry0An">
                       <property role="2Ry0Am" value="slf4j-api.jar" />
                     </node>
                   </node>
@@ -726,17 +713,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3V_IoypzRik" role="3bR37C">
-          <node concept="1BurEX" id="3V_IoypzRil" role="1SiIV1">
-            <node concept="398BVA" id="3V_IoypzRia" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3V_IoypzRib" role="iGT6I">
+        <node concept="1SiIV0" id="3gLKlJcRQH" role="3bR37C">
+          <node concept="1BurEX" id="3gLKlJcRQI" role="1SiIV1">
+            <node concept="55IIr" id="3gLKlJcRQC" role="1BurEY">
+              <node concept="2Ry0Ak" id="3gLKlJcRQD" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3V_IoypzRic" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3gLKlJcRQE" role="2Ry0An">
                   <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3V_IoypzRid" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJcRQF" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3V_IoypzRie" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJcRQG" role="2Ry0An">
                       <property role="2Ry0Am" value="api.jar" />
                     </node>
                   </node>
@@ -745,17 +731,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3V_IoypzRiG" role="3bR37C">
-          <node concept="1BurEX" id="3V_IoypzRiH" role="1SiIV1">
-            <node concept="398BVA" id="3V_IoypzRiy" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3V_IoypzRiz" role="iGT6I">
+        <node concept="1SiIV0" id="3gLKlJcRQO" role="3bR37C">
+          <node concept="1BurEX" id="3gLKlJcRQP" role="1SiIV1">
+            <node concept="55IIr" id="3gLKlJcRQJ" role="1BurEY">
+              <node concept="2Ry0Ak" id="3gLKlJcRQK" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3V_IoypzRi$" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3gLKlJcRQL" role="2Ry0An">
                   <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3V_IoypzRi_" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJcRQM" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3V_IoypzRiA" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJcRQN" role="2Ry0An">
                       <property role="2Ry0Am" value="slf4j-log4j12.jar" />
                     </node>
                   </node>
@@ -764,17 +749,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3V_IoypzRiS" role="3bR37C">
-          <node concept="1BurEX" id="3V_IoypzRiT" role="1SiIV1">
-            <node concept="398BVA" id="3V_IoypzRiI" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3V_IoypzRiJ" role="iGT6I">
+        <node concept="1SiIV0" id="3gLKlJcRQV" role="3bR37C">
+          <node concept="1BurEX" id="3gLKlJcRQW" role="1SiIV1">
+            <node concept="55IIr" id="3gLKlJcRQQ" role="1BurEY">
+              <node concept="2Ry0Ak" id="3gLKlJcRQR" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3V_IoypzRiK" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3gLKlJcRQS" role="2Ry0An">
                   <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3V_IoypzRiL" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJcRQT" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3V_IoypzRiM" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJcRQU" role="2Ry0An">
                       <property role="2Ry0Am" value="commons-lang3.jar" />
                     </node>
                   </node>
@@ -783,17 +767,16 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="3V_IoypzRj4" role="3bR37C">
-          <node concept="1BurEX" id="3V_IoypzRj5" role="1SiIV1">
-            <node concept="398BVA" id="3V_IoypzRiU" role="1BurEY">
-              <ref role="398BVh" node="1JtUjhLyMBR" resolve="karel_home" />
-              <node concept="2Ry0Ak" id="3V_IoypzRiV" role="iGT6I">
+        <node concept="1SiIV0" id="3gLKlJcRR2" role="3bR37C">
+          <node concept="1BurEX" id="3gLKlJcRR3" role="1SiIV1">
+            <node concept="55IIr" id="3gLKlJcRQX" role="1BurEY">
+              <node concept="2Ry0Ak" id="3gLKlJcRQY" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3V_IoypzRiW" role="2Ry0An">
+                <node concept="2Ry0Ak" id="3gLKlJcRQZ" role="2Ry0An">
                   <property role="2Ry0Am" value="GuiServerLib" />
-                  <node concept="2Ry0Ak" id="3V_IoypzRiX" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="3gLKlJcRR0" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3V_IoypzRiY" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="3gLKlJcRR1" role="2Ry0An">
                       <property role="2Ry0Am" value="gui.jar" />
                     </node>
                   </node>
