@@ -51,12 +51,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
-        <child id="1076505808688" name="condition" index="2$JKZa" />
-      </concept>
-      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
-        <child id="1154032183016" name="body" index="2LFqv$" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -85,13 +79,9 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <child id="1068431790190" name="initializer" index="33vP2m" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -99,7 +89,6 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
@@ -120,9 +109,6 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
-        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
-      </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
@@ -132,7 +118,6 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -161,9 +146,7 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
-      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
-        <child id="1205770614681" name="actualArgument" index="2XxRq1" />
-      </concept>
+      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -188,39 +171,6 @@
       <property role="TrG5h" value="initRemoteGui" />
       <node concept="3cqZAl" id="3H_tUICS7Qw" role="3clF45" />
       <node concept="3clFbS" id="3H_tUICS7wC" role="3clF47">
-        <node concept="3cpWs8" id="3H_tUICS7Td" role="3cqZAp">
-          <node concept="3cpWsn" id="3H_tUICS7Te" role="3cpWs9">
-            <property role="TrG5h" value="serviceName" />
-            <node concept="17QB3L" id="3H_tUICS7Tf" role="1tU5fm" />
-            <node concept="2OqwBi" id="3H_tUICS7Tg" role="33vP2m">
-              <node concept="2WthIp" id="3H_tUICS7Th" role="2Oq$k0" />
-              <node concept="2XshWL" id="3H_tUICS7Ti" role="2OqNvi">
-                <ref role="2WH_rO" node="3Gf07gf_9Vh" resolve="createServiceName" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="3H_tUICS7Tj" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="2YIFZM" id="3H_tUICS7Tk" role="34bqiv">
-            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-            <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <node concept="Xl_RD" id="3H_tUICS7Tl" role="37wK5m">
-              <property role="Xl_RC" value="Initializing GUI panel server on address %s:%s/%s" />
-            </node>
-            <node concept="10M0yZ" id="3H_tUICS7Tm" role="37wK5m">
-              <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
-              <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-            </node>
-            <node concept="10M0yZ" id="3H_tUICS7Tn" role="37wK5m">
-              <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-              <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
-            </node>
-            <node concept="37vLTw" id="3H_tUICS7To" role="37wK5m">
-              <ref role="3cqZAo" node="3H_tUICS7Te" resolve="serviceName" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="3H_tUICS85A" role="3cqZAp" />
         <node concept="SfApY" id="3H_tUICS7Tq" role="3cqZAp">
           <node concept="3clFbS" id="3H_tUICS7Tr" role="SfCbr">
@@ -259,7 +209,13 @@
                     <property role="Xl_RC" value="MainView already exists. It will be used." />
                   </node>
                 </node>
+                <node concept="3SKdUt" id="3H_tUICV4HZ" role="3cqZAp">
+                  <node concept="3SKdUq" id="3H_tUICV4KM" role="3SKWNk">
+                    <property role="3SKdUp" value="GUI is initialized, we are finished here" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="3H_tUICS95x" role="3cqZAp" />
+                <node concept="3clFbH" id="3H_tUICV4M9" role="3cqZAp" />
               </node>
               <node concept="TDmWw" id="3H_tUICS8g5" role="TEbGg">
                 <node concept="3clFbS" id="3H_tUICS8g7" role="TDEfX">
@@ -279,6 +235,28 @@
                 </node>
               </node>
             </node>
+            <node concept="34ab3g" id="3H_tUICS7Tj" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="2YIFZM" id="3H_tUICV3vS" role="34bqiv">
+                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                <node concept="Xl_RD" id="3H_tUICV3vT" role="37wK5m">
+                  <property role="Xl_RC" value="Initializing GUI panel server on address {0}:{1}/{2}" />
+                </node>
+                <node concept="10M0yZ" id="3H_tUICV3vU" role="37wK5m">
+                  <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
+                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                </node>
+                <node concept="10M0yZ" id="3H_tUICV3vV" role="37wK5m">
+                  <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
+                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                </node>
+                <node concept="10M0yZ" id="3H_tUICV3vW" role="37wK5m">
+                  <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
+                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="3H_tUICS9tz" role="3cqZAp" />
             <node concept="3clFbF" id="3H_tUICS7Tx" role="3cqZAp">
               <node concept="2YIFZM" id="3H_tUICS7Ty" role="3clFbG">
@@ -292,8 +270,9 @@
                   <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
                   <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
                 </node>
-                <node concept="37vLTw" id="3H_tUICS7T_" role="37wK5m">
-                  <ref role="3cqZAo" node="3H_tUICS7Te" resolve="serviceName" />
+                <node concept="10M0yZ" id="3H_tUICV2wW" role="37wK5m">
+                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                  <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
                 </node>
               </node>
             </node>
@@ -319,7 +298,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3H_tUICS7TJ" role="3cqZAp" />
+            <node concept="3clFbH" id="3H_tUICV4wb" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="3H_tUICS7TK" role="TEbGg">
             <node concept="3clFbS" id="3H_tUICS7TL" role="TDEfX">
@@ -366,108 +345,6 @@
         <node concept="3clFbH" id="3Gf07gf_dAL" role="3cqZAp" />
       </node>
     </node>
-    <node concept="2XrIbr" id="2Zyj1SHhjSj" role="2XNbBy">
-      <property role="TrG5h" value="printClassPath" />
-      <node concept="3cqZAl" id="2Zyj1SHhktd" role="3clF45" />
-      <node concept="3clFbS" id="2Zyj1SHhjSl" role="3clF47">
-        <node concept="SfApY" id="2Zyj1SHhoSt" role="3cqZAp">
-          <node concept="3clFbS" id="2Zyj1SHhoSv" role="SfCbr">
-            <node concept="3cpWs8" id="2Zyj1SHhr$G" role="3cqZAp">
-              <node concept="3cpWsn" id="2Zyj1SHhr$H" role="3cpWs9">
-                <property role="TrG5h" value="urls" />
-                <node concept="3uibUv" id="2Zyj1SHhr$E" role="1tU5fm">
-                  <ref role="3uigEE" to="k7g3:~Enumeration" resolve="Enumeration" />
-                  <node concept="3uibUv" id="2Zyj1SHhrJw" role="11_B2D">
-                    <ref role="3uigEE" to="22fg:~URL" resolve="URL" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="2Zyj1SHhogR" role="33vP2m">
-                  <node concept="37vLTw" id="2Zyj1SHhodh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2Zyj1SHhkz9" resolve="cl" />
-                  </node>
-                  <node concept="liA8E" id="2Zyj1SHhovd" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~ClassLoader.getResources(java.lang.String):java.util.Enumeration" resolve="getResources" />
-                    <node concept="Xl_RD" id="2Zyj1SHiAGj" role="37wK5m">
-                      <property role="Xl_RC" value="cz" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2$JKZl" id="2Zyj1SHhw3j" role="3cqZAp">
-              <node concept="3clFbS" id="2Zyj1SHhw3k" role="2LFqv$">
-                <node concept="3cpWs8" id="2Zyj1SHhwhv" role="3cqZAp">
-                  <node concept="3cpWsn" id="2Zyj1SHhwhw" role="3cpWs9">
-                    <property role="TrG5h" value="url" />
-                    <node concept="3uibUv" id="2Zyj1SHhwhx" role="1tU5fm">
-                      <ref role="3uigEE" to="22fg:~URL" resolve="URL" />
-                    </node>
-                    <node concept="2OqwBi" id="2Zyj1SHhwlo" role="33vP2m">
-                      <node concept="37vLTw" id="2Zyj1SHhwkw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2Zyj1SHhr$H" resolve="urls" />
-                      </node>
-                      <node concept="liA8E" id="2Zyj1SHhwLK" role="2OqNvi">
-                        <ref role="37wK5l" to="k7g3:~Enumeration.nextElement():java.lang.Object" resolve="nextElement" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="34ab3g" id="7idJGRwqCvV" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="2YIFZM" id="7idJGRwqCBm" role="34bqiv">
-                    <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <node concept="Xl_RD" id="7idJGRwqCH6" role="37wK5m">
-                      <property role="Xl_RC" value="CP: %s" />
-                    </node>
-                    <node concept="37vLTw" id="2Zyj1SHhx8U" role="37wK5m">
-                      <ref role="3cqZAo" node="2Zyj1SHhwhw" resolve="url" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="2Zyj1SHhsPn" role="3cqZAp" />
-              </node>
-              <node concept="2OqwBi" id="2Zyj1SHhwQm" role="2$JKZa">
-                <node concept="37vLTw" id="2Zyj1SHhwNQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2Zyj1SHhr$H" resolve="urls" />
-                </node>
-                <node concept="liA8E" id="2Zyj1SHhx6H" role="2OqNvi">
-                  <ref role="37wK5l" to="k7g3:~Enumeration.hasMoreElements():boolean" resolve="hasMoreElements" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="2Zyj1SHhoSu" role="3cqZAp" />
-          </node>
-          <node concept="TDmWw" id="2Zyj1SHhoSw" role="TEbGg">
-            <node concept="3clFbS" id="2Zyj1SHhoSy" role="TDEfX">
-              <node concept="34ab3g" id="2Zyj1SHhqPH" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="2Zyj1SHhqPJ" role="34bqiv">
-                  <property role="Xl_RC" value="Exception during classpath printing" />
-                </node>
-                <node concept="37vLTw" id="2Zyj1SHhqPL" role="34bMjA">
-                  <ref role="3cqZAo" node="2Zyj1SHhoS$" resolve="e" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="2Zyj1SHhoS$" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="2Zyj1SHhvZ4" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm6S6" id="2Zyj1SHhkcn" role="1B3o_S" />
-      <node concept="37vLTG" id="2Zyj1SHhkz9" role="3clF46">
-        <property role="TrG5h" value="cl" />
-        <node concept="3uibUv" id="2Zyj1SHhkz8" role="1tU5fm">
-          <ref role="3uigEE" to="e2lb:~ClassLoader" resolve="ClassLoader" />
-        </node>
-      </node>
-    </node>
     <node concept="2UmK3q" id="6bh18$pfQ5q" role="2Um5zG">
       <node concept="3clFbS" id="6bh18$pfQ5r" role="2VODD2">
         <node concept="3clFbJ" id="7iSQ$Ce1vyS" role="3cqZAp">
@@ -477,7 +354,7 @@
             <node concept="34ab3g" id="1CHCs7qJfSP" role="3cqZAp">
               <property role="35gtTG" value="info" />
               <node concept="Xl_RD" id="1CHCs7qKAoq" role="34bqiv">
-                <property role="Xl_RC" value="Getting panel from MainView" />
+                <property role="Xl_RC" value="Getting JComponent to display from initialized MainView." />
               </node>
             </node>
             <node concept="3cpWs6" id="7iSQ$Ce1QSE" role="3cqZAp">
@@ -508,7 +385,7 @@
               <node concept="34ab3g" id="1CHCs7qJTIb" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="Xl_RD" id="1CHCs7qJXg0" role="34bqiv">
-                  <property role="Xl_RC" value="Gatting panel, but panel is not initialized." />
+                  <property role="Xl_RC" value="Gatting JComponent to display, but panel has not been initialized." />
                 </node>
               </node>
               <node concept="3cpWs6" id="7iSQ$Ce1RR_" role="3cqZAp">
@@ -532,54 +409,10 @@
         <node concept="34ab3g" id="4XNuOCslB$A" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="Xl_RD" id="4XNuOCslB$C" role="34bqiv">
-            <property role="Xl_RC" value="Init method starting..." />
+            <property role="Xl_RC" value="KarelView Tool initialization starting..." />
           </node>
         </node>
         <node concept="3clFbH" id="7idJGRwqx3n" role="3cqZAp" />
-        <node concept="34ab3g" id="2Zyj1SHhe4X" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="2Zyj1SHhe4Z" role="34bqiv">
-            <property role="Xl_RC" value="System classloader classpath:" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Zyj1SHhlDX" role="3cqZAp">
-          <node concept="2OqwBi" id="2Zyj1SHhlDR" role="3clFbG">
-            <node concept="2WthIp" id="2Zyj1SHhlDU" role="2Oq$k0" />
-            <node concept="2XshWL" id="2Zyj1SHhlDW" role="2OqNvi">
-              <ref role="2WH_rO" node="2Zyj1SHhjSj" resolve="printClassPath" />
-              <node concept="2YIFZM" id="7idJGRwqxey" role="2XxRq1">
-                <ref role="1Pybhc" to="e2lb:~ClassLoader" resolve="ClassLoader" />
-                <ref role="37wK5l" to="e2lb:~ClassLoader.getSystemClassLoader():java.lang.ClassLoader" resolve="getSystemClassLoader" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2Zyj1SHhlUj" role="3cqZAp" />
-        <node concept="34ab3g" id="2Zyj1SHhm9u" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="2Zyj1SHhm9v" role="34bqiv">
-            <property role="Xl_RC" value="Thread classloader classpath:" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Zyj1SHhmm0" role="3cqZAp">
-          <node concept="2OqwBi" id="2Zyj1SHhmm1" role="3clFbG">
-            <node concept="2WthIp" id="2Zyj1SHhmm2" role="2Oq$k0" />
-            <node concept="2XshWL" id="2Zyj1SHhmm3" role="2OqNvi">
-              <ref role="2WH_rO" node="2Zyj1SHhjSj" resolve="printClassPath" />
-              <node concept="2OqwBi" id="2Zyj1SHheAM" role="2XxRq1">
-                <node concept="2YIFZM" id="2Zyj1SHheAP" role="2Oq$k0">
-                  <ref role="37wK5l" to="e2lb:~Thread.currentThread():java.lang.Thread" resolve="currentThread" />
-                  <ref role="1Pybhc" to="e2lb:~Thread" resolve="Thread" />
-                </node>
-                <node concept="liA8E" id="2Zyj1SHheAO" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~Thread.getContextClassLoader():java.lang.ClassLoader" resolve="getContextClassLoader" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2Zyj1SHhm1P" role="3cqZAp" />
-        <node concept="3clFbH" id="6q44gEQYkm6" role="3cqZAp" />
         <node concept="3clFbF" id="3H_tUICSbdP" role="3cqZAp">
           <node concept="2OqwBi" id="3H_tUICSbdJ" role="3clFbG">
             <node concept="2WthIp" id="3H_tUICSbdM" role="2Oq$k0" />
@@ -608,17 +441,18 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1CHCs7qKpSU" role="3cqZAp">
+        <node concept="3clFbH" id="3H_tUICUU2k" role="3cqZAp" />
+        <node concept="34ab3g" id="3H_tUICUU3y" role="3cqZAp">
           <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="1CHCs7qKpSW" role="34bqiv">
-            <property role="Xl_RC" value="Init method finished" />
+          <node concept="Xl_RD" id="3H_tUICUU3z" role="34bqiv">
+            <property role="Xl_RC" value="KarelView Tool initialization finished." />
           </node>
         </node>
         <node concept="3clFbH" id="1CHCs7qKs7y" role="3cqZAp" />
         <node concept="34ab3g" id="1CHCs7qKsPS" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="Xl_RD" id="1CHCs7qKsPU" role="34bqiv">
-            <property role="Xl_RC" value="Making tool available" />
+            <property role="Xl_RC" value="Setting Tool available." />
           </node>
         </node>
         <node concept="3clFbF" id="6bh18$pgqEr" role="3cqZAp">
