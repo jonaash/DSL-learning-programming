@@ -22,6 +22,11 @@
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="3v9x" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.service(GuiLib/cz.dsllp.gui.service@java_stub)" />
+    <import index="zppf" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.server(GuiLib/cz.dsllp.gui.server@java_stub)" />
+    <import index="2vhp" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.world(GuiLib/cz.dsllp.gui.model.world@java_stub)" />
+    <import index="onej" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.controls(GuiLib/cz.dsllp.gui.model.controls@java_stub)" />
+    <import index="f70c" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.controller(GuiLib/cz.dsllp.gui.controller@java_stub)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -51,6 +56,9 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
+        <child id="1177326540772" name="statement" index="u8lrQ" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -171,7 +179,6 @@
       <property role="TrG5h" value="initRemoteGui" />
       <node concept="3cqZAl" id="3H_tUICS7Qw" role="3clF45" />
       <node concept="3clFbS" id="3H_tUICS7wC" role="3clF47">
-        <node concept="3clFbH" id="3H_tUICS85A" role="3cqZAp" />
         <node concept="SfApY" id="3H_tUICS7Tq" role="3cqZAp">
           <node concept="3clFbS" id="3H_tUICS7Tr" role="SfCbr">
             <node concept="3SKdUt" id="3H_tUICS9O9" role="3cqZAp">
@@ -179,58 +186,60 @@
                 <property role="3SKdUp" value="check wheather GUI is not already initialized" />
               </node>
             </node>
-            <node concept="SfApY" id="3H_tUICS8g2" role="3cqZAp">
-              <node concept="3clFbS" id="3H_tUICS8g4" role="SfCbr">
-                <node concept="3clFbF" id="3H_tUICS8ou" role="3cqZAp">
-                  <node concept="37vLTI" id="3H_tUICS8ov" role="3clFbG">
-                    <node concept="2OqwBi" id="3H_tUICS8ow" role="37vLTJ">
-                      <node concept="2WthIp" id="3H_tUICS8ox" role="2Oq$k0" />
-                      <node concept="2BZ7hE" id="3H_tUICS8oy" role="2OqNvi">
-                        <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
+            <node concept="u8gfJ" id="6BEcVWAL5sx" role="3cqZAp">
+              <node concept="SfApY" id="3H_tUICS8g2" role="u8lrQ">
+                <node concept="3clFbS" id="3H_tUICS8g4" role="SfCbr">
+                  <node concept="3clFbF" id="3H_tUICS8ou" role="3cqZAp">
+                    <node concept="37vLTI" id="3H_tUICS8ov" role="3clFbG">
+                      <node concept="2OqwBi" id="3H_tUICS8ow" role="37vLTJ">
+                        <node concept="2WthIp" id="3H_tUICS8ox" role="2Oq$k0" />
+                        <node concept="2BZ7hE" id="3H_tUICS8oy" role="2OqNvi">
+                          <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="2OqwBi" id="3H_tUICS8oz" role="37vLTx">
-                      <node concept="2YIFZM" id="3H_tUICS8o$" role="2Oq$k0">
-                        <ref role="1Pybhc" to="gj7t:~DependencyRepository" resolve="DependencyRepository" />
-                        <ref role="37wK5l" to="gj7t:~DependencyRepository.getInstance():com.googlecode.tinydi.DependencyRepository" resolve="getInstance" />
-                      </node>
-                      <node concept="liA8E" id="3H_tUICS8o_" role="2OqNvi">
-                        <ref role="37wK5l" to="gj7t:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
-                        <node concept="3VsKOn" id="3H_tUICS8oA" role="37wK5m">
-                          <ref role="3VsUkX" to="z9dx:~MainView" resolve="MainView" />
+                      <node concept="2OqwBi" id="3H_tUICS8oz" role="37vLTx">
+                        <node concept="2YIFZM" id="3H_tUICS8o$" role="2Oq$k0">
+                          <ref role="1Pybhc" to="gj7t:~DependencyRepository" resolve="DependencyRepository" />
+                          <ref role="37wK5l" to="gj7t:~DependencyRepository.getInstance():com.googlecode.tinydi.DependencyRepository" resolve="getInstance" />
+                        </node>
+                        <node concept="liA8E" id="3H_tUICS8o_" role="2OqNvi">
+                          <ref role="37wK5l" to="gj7t:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
+                          <node concept="3VsKOn" id="3H_tUICS8oA" role="37wK5m">
+                            <ref role="3VsUkX" to="z9dx:~MainView" resolve="MainView" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="34ab3g" id="3H_tUICSaiQ" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="Xl_RD" id="3H_tUICSaiS" role="34bqiv">
-                    <property role="Xl_RC" value="MainView already exists. It will be used." />
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="3H_tUICV4HZ" role="3cqZAp">
-                  <node concept="3SKdUq" id="3H_tUICV4KM" role="3SKWNk">
-                    <property role="3SKdUp" value="GUI is initialized, we are finished here" />
-                  </node>
-                </node>
-                <node concept="3cpWs6" id="3H_tUICS95x" role="3cqZAp" />
-                <node concept="3clFbH" id="3H_tUICV4M9" role="3cqZAp" />
-              </node>
-              <node concept="TDmWw" id="3H_tUICS8g5" role="TEbGg">
-                <node concept="3clFbS" id="3H_tUICS8g7" role="TDEfX">
-                  <node concept="34ab3g" id="3H_tUICS8YG" role="3cqZAp">
+                  <node concept="34ab3g" id="3H_tUICSaiQ" role="3cqZAp">
                     <property role="35gtTG" value="info" />
-                    <property role="34fQS0" value="true" />
-                    <node concept="Xl_RD" id="3H_tUICS928" role="34bqiv">
-                      <property role="Xl_RC" value="MainView class not exists yet. Gui will be initialized." />
+                    <node concept="Xl_RD" id="3H_tUICSaiS" role="34bqiv">
+                      <property role="Xl_RC" value="MainView already exists. It will be used." />
                     </node>
                   </node>
+                  <node concept="3SKdUt" id="3H_tUICV4HZ" role="3cqZAp">
+                    <node concept="3SKdUq" id="3H_tUICV4KM" role="3SKWNk">
+                      <property role="3SKdUp" value="GUI is initialized, we are finished here" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="3H_tUICS95x" role="3cqZAp" />
+                  <node concept="3clFbH" id="3H_tUICV4M9" role="3cqZAp" />
                 </node>
-                <node concept="3cpWsn" id="3H_tUICS8g9" role="TDEfY">
-                  <property role="TrG5h" value="e" />
-                  <node concept="3uibUv" id="3H_tUICS8OT" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~InstantiationException" resolve="InstantiationException" />
+                <node concept="TDmWw" id="3H_tUICS8g5" role="TEbGg">
+                  <node concept="3clFbS" id="3H_tUICS8g7" role="TDEfX">
+                    <node concept="34ab3g" id="3H_tUICS8YG" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <property role="34fQS0" value="true" />
+                      <node concept="Xl_RD" id="3H_tUICS928" role="34bqiv">
+                        <property role="Xl_RC" value="MainView class not exists yet. Gui will be initialized." />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWsn" id="3H_tUICS8g9" role="TDEfY">
+                    <property role="TrG5h" value="e" />
+                    <node concept="3uibUv" id="3H_tUICS8OT" role="1tU5fm">
+                      <ref role="3uigEE" to="e2lb:~InstantiationException" resolve="InstantiationException" />
+                    </node>
                   </node>
                 </node>
               </node>

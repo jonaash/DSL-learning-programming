@@ -180,7 +180,9 @@
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
-      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
+        <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
+      </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -684,7 +686,7 @@
         </node>
       </node>
       <node concept="1E1JtA" id="1JtUjhLyCzB" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="GuiLib" />
         <property role="3LESm3" value="9e2adce0-3032-497b-bf7e-e4b747a76a49" />
         <property role="2GAjPV" value="false" />
@@ -795,6 +797,42 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7idJGRwrV7F" role="3bR37C">
+          <node concept="1BurEX" id="7idJGRwrV7G" role="1SiIV1">
+            <node concept="55IIr" id="7idJGRwrV7A" role="1BurEY">
+              <node concept="2Ry0Ak" id="7idJGRwrV7B" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7idJGRwrV7C" role="2Ry0An">
+                  <property role="2Ry0Am" value="GuiServerLib" />
+                  <node concept="2Ry0Ak" id="7idJGRwrV7D" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7idJGRwrV7E" role="2Ry0An">
+                      <property role="2Ry0Am" value="javax.inject.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7idJGRwrV7M" role="3bR37C">
+          <node concept="1BurEX" id="7idJGRwrV7N" role="1SiIV1">
+            <node concept="55IIr" id="7idJGRwrV7H" role="1BurEY">
+              <node concept="2Ry0Ak" id="7idJGRwrV7I" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7idJGRwrV7J" role="2Ry0An">
+                  <property role="2Ry0Am" value="GuiServerLib" />
+                  <node concept="2Ry0Ak" id="7idJGRwrV7K" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7idJGRwrV7L" role="2Ry0An">
+                      <property role="2Ry0Am" value="tinydi.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1JtUjhLyCzH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -816,6 +854,43 @@
           <node concept="3bR9La" id="1JtUjhLyC_o" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6q44gEQU5Pm" role="2G$12L">
+        <property role="BnDLt" value="false" />
+        <property role="TrG5h" value="ViewPlugin" />
+        <property role="3LESm3" value="1a535062-6f15-43ba-ab54-1c6e88a58a51" />
+        <property role="aoJFB" value="sources" />
+        <node concept="55IIr" id="6q44gEQU5Pp" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6q44gEQU60a" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6q44gEQU62C" role="2Ry0An">
+              <property role="2Ry0Am" value="ViewPlugin" />
+              <node concept="2Ry0Ak" id="6q44gEQU65T" role="2Ry0An">
+                <property role="2Ry0Am" value="ViewPlugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6q44gEQU6yk" role="3bR37C">
+          <node concept="3bR9La" id="6q44gEQU6zk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6q44gEQU6$e" role="3bR37C">
+          <node concept="3bR9La" id="6q44gEQU6_f" role="1SiIV1">
+            <ref role="3bR37D" node="1JtUjhLyCzH" resolve="Common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6q44gEQU6C8" role="3bR37C">
+          <node concept="3bR9La" id="6q44gEQU6Db" role="1SiIV1">
+            <ref role="3bR37D" node="1JtUjhLyCzB" resolve="GuiLib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6q44gEQU6H8" role="3bR37C">
+          <node concept="3bR9La" id="6q44gEQU6Id" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
       </node>
