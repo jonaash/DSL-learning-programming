@@ -28,12 +28,6 @@ public class GuiServer {
 
         logger.info("Starting service - address: {}, port: {}, service name: {} ", rmiAddress, port, serviceName);
 
-        // Debugging security manager
-        // FIXME remove it
-        SecurityManager sm = System.getSecurityManager();
-        logger.debug("Security manager: {}", sm);
-
-
         // Set properties for RMI registry
         System.setProperty(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.rmi.registry.RegistryContextFactory");
         System.setProperty(Context.PROVIDER_URL, rmiAddress + ":" + port);
