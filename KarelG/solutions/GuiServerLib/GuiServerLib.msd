@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" pluginKind="PLUGIN_CORE" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,6 +10,8 @@
       <sourceRoot location="lib/gui.jar" />
       <sourceRoot location="lib/slf4j-api.jar" />
       <sourceRoot location="lib/slf4j-log4j12.jar" />
+      <sourceRoot location="lib/javax.inject.jar" />
+      <sourceRoot location="lib/tinydi.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
@@ -18,6 +20,8 @@
     <stubModelEntry path="${module}/lib/slf4j-log4j12.jar" />
     <stubModelEntry path="${module}/lib/commons-lang3.jar" />
     <stubModelEntry path="${module}/lib/gui.jar" />
+    <stubModelEntry path="${module}/lib/javax.inject.jar" />
+    <stubModelEntry path="${module}/lib/tinydi.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
