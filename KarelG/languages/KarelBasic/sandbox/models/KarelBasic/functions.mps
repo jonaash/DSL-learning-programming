@@ -34,6 +34,7 @@
       <concept id="3394217739174297779" name="KarelBasic.structure.LocalVariableReference" flags="ng" index="36MIYZ" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <child id="3394217739174290864" name="type" index="36MCEW" />
+        <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
@@ -93,10 +94,15 @@
     <node concept="3jGSmg" id="3hBhvFT6RhR" role="3jGSko">
       <node concept="1$shr6" id="3hBhvFTabia" role="3jGSnO" />
       <node concept="17J3f2" id="3hBhvFTb0Cu" role="3jGSnO" />
+      <node concept="17J3f2" id="5Ihd_Cfn8HN" role="3jGSnO" />
+      <node concept="17J3f2" id="5Ihd_Cfn8Hm" role="3jGSnO" />
       <node concept="36Mw20" id="3hBhvFTdG51" role="3jGSnO">
         <node concept="36MCFd" id="3hBhvFTdG54" role="36Mw2n">
           <property role="TrG5h" value="a" />
           <node concept="36MCER" id="3hBhvFTdG4Z" role="36MCEW" />
+          <node concept="36Kqmr" id="5Ihd_CfnfCe" role="36MIYJ">
+            <property role="36Kqnr" value="5" />
+          </node>
         </node>
       </node>
       <node concept="3dudH9" id="14XUkkdJbER" role="3jGSnO">
@@ -104,6 +110,19 @@
           <ref role="hRIc0" node="14XUkkdIUtb" resolve="countMarks" />
           <node concept="36MIYZ" id="14XUkkdJbF1" role="3djOgL">
             <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="5Ihd_CfnfCr" role="3jGSnO" />
+      <node concept="36Mw20" id="5Ihd_CfnfCS" role="3jGSnO">
+        <node concept="36MCFd" id="5Ihd_CfnfCV" role="36Mw2n">
+          <property role="TrG5h" value="result" />
+          <node concept="36MCER" id="5Ihd_CfnfCQ" role="36MCEW" />
+          <node concept="3dtAta" id="5Ihd_CfnfDt" role="36MIYJ">
+            <ref role="hRIc0" node="14XUkkdIUtb" resolve="countMarks" />
+            <node concept="36MIYZ" id="5Ihd_CfnfD$" role="3djOgL">
+              <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+            </node>
           </node>
         </node>
       </node>
