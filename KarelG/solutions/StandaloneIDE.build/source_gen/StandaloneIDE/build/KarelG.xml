@@ -8,6 +8,7 @@
   </tstamp>
   <property name="build.number" value="KarelG-139.SNAPSHOT" />
   <property name="build.version" value="0.1" />
+  <property name="karel.path.selector" value="Karel" />
   <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -70,7 +71,7 @@
         <welcome-screen caption-url="/caption.png" slogan-url="/slogan.png" logo-url="/logo.png" />
       </component>
     </echoxml>
-    <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/lib/branding.jar">
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
       <fileset file="${basedir}/icons/caption.png" />
@@ -158,19 +159,17 @@
         <sources jar="JavaKarel-src.jar" descriptor="KarelJava.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/JavaKarel.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/JavaKarel.jar">
       <fileset dir="${build.tmp}/java/out/JavaKarel" />
       <fileset dir="${basedir}/solutions/KarelJava" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/KarelJava/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/JavaKarel.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-KarelJava-models">
       <fileset dir="${basedir}/solutions/KarelJava/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/JavaKarel-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/JavaKarel-src.jar">
       <fileset dir="${basedir}/solutions/KarelJava/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/KarelJava/KarelJava.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-KarelJava-models" prefix="module/models" />
@@ -190,19 +189,17 @@
         <sources jar="GuiLib-src.jar" descriptor="GuiServerLib.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/GuiLib.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/GuiLib.jar">
       <fileset dir="${build.tmp}/java/out/GuiLib" />
       <fileset dir="${basedir}/solutions/GuiServerLib" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/GuiServerLib/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/GuiLib.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-GuiServerLib-models">
       <fileset dir="${basedir}/solutions/GuiServerLib/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/GuiLib-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/GuiLib-src.jar">
       <fileset dir="${basedir}/solutions/GuiServerLib/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/GuiServerLib/GuiServerLib.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-GuiServerLib-models" prefix="module/models" />
@@ -219,10 +216,9 @@
         <sources jar="Common-src.jar" descriptor="Common.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/Common.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/Common.jar">
       <fileset dir="${build.tmp}/java/out/Common" />
       <fileset dir="${basedir}/solutions/Common" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/solutions/Common/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/Common.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Common-models">
@@ -231,10 +227,9 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-Common-resources-labels.properties">
       <fileset dir="${basedir}/solutions/Common/resources/labels.properties" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/Common-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/Common-src.jar">
       <fileset dir="${basedir}/solutions/Common/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/Common/Common.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-Common-models" prefix="module/models" />
@@ -262,13 +257,12 @@
         <sources jar="KarelBasic-src.jar" descriptor="KarelBasic.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic.jar">
       <fileset dir="${build.tmp}/java/out/KarelBasic" />
       <fileset dir="${basedir}/languages/KarelBasic" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/KarelBasic/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/KarelBasic.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic-generator.jar">
       <fileset dir="${build.tmp}/java/out/KarelBasic#3640435696255147963" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-generator-template">
@@ -277,14 +271,12 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-languageModels">
       <fileset dir="${basedir}/languages/KarelBasic/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/KarelG/languages/KarelG/KarelBasic-src.jar">
       <fileset dir="${basedir}/languages/KarelBasic/generator/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/KarelBasic/source_gen">
         <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/KarelBasic/KarelBasic.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-KarelBasic-generator-template" prefix="module/generator/template" />
@@ -299,7 +291,7 @@
       <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
-    <echo file="${build.layout}/build.properties">KarelG.date=${date}${line.separator}KarelG.build.number=${build.number}${line.separator}KarelG.build.version=${build.version}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">KarelG.date=${date}${line.separator}KarelG.build.number=${build.number}${line.separator}KarelG.build.version=${build.version}${line.separator}KarelG.karel.path.selector=${karel.path.selector}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -358,7 +350,6 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.classLike.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />

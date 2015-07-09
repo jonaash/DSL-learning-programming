@@ -332,6 +332,16 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="6q44gEQSZKO" role="1l3spd">
+      <property role="TrG5h" value="karel.path.selector" />
+      <node concept="aVJcg" id="6q44gEQSZPc" role="aVJcv">
+        <node concept="NbPM2" id="6q44gEQSZPb" role="aVJcq">
+          <node concept="3Mxwew" id="6q44gEQSZPa" role="3MwsjC">
+            <property role="3MwjfP" value="Karel" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="1JtUjhLyCyC" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
       <node concept="55IIr" id="6QHpumWMsUf" role="398pKh">
@@ -1356,6 +1366,15 @@
                   </node>
                 </node>
                 <node concept="28jJK3" id="pHVhH$M47c" role="39821P">
+                  <node concept="1688n2" id="6q44gEQTbbz" role="28jJR8">
+                    <property role="1688n3" value="MPS32" />
+                    <property role="1688n6" value="g" />
+                    <node concept="NbPM2" id="6q44gEQTbb$" role="1688n0">
+                      <node concept="3Mxwey" id="6q44gEQTbb_" role="3MwsjC">
+                        <ref role="3Mxwex" node="6q44gEQSZKO" resolve="karel.path.selector" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="398BVA" id="pHVhH$M46f" role="28jJRO">
                     <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
                     <node concept="2Ry0Ak" id="pHVhH$M46g" role="iGT6I">
@@ -1491,6 +1510,15 @@
               </node>
             </node>
             <node concept="28jJK3" id="pHVhH$M49c" role="39821P">
+              <node concept="1688n2" id="6q44gEQT05Z" role="28jJR8">
+                <property role="1688n3" value="MPS32" />
+                <property role="1688n6" value="g" />
+                <node concept="NbPM2" id="6q44gEQT061" role="1688n0">
+                  <node concept="3Mxwey" id="6q44gEQT0fg" role="3MwsjC">
+                    <ref role="3Mxwex" node="6q44gEQSZKO" resolve="karel.path.selector" />
+                  </node>
+                </node>
+              </node>
               <node concept="398BVA" id="pHVhH$M47O" role="28jJRO">
                 <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
                 <node concept="2Ry0Ak" id="pHVhH$M47P" role="iGT6I">
@@ -1577,8 +1605,12 @@
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="1688n2" id="4hrQwlimkDU" role="28jJR8">
-                  <property role="1688n3" value="-Didea.paths.selector=MPS32" />
-                  <node concept="NbPM2" id="4hrQwlimkDV" role="1688n0" />
+                  <property role="1688n3" value="MPS32" />
+                  <node concept="NbPM2" id="4hrQwlimkDV" role="1688n0">
+                    <node concept="3Mxwey" id="6q44gEQT0nD" role="3MwsjC">
+                      <ref role="3Mxwex" node="6q44gEQSZKO" resolve="karel.path.selector" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="398BVA" id="4hrQwlimkDW" role="28jJRO">
                   <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
@@ -1592,8 +1624,12 @@
               </node>
               <node concept="28jJK3" id="4hrQwlimkDZ" role="39821P">
                 <node concept="1688n2" id="4hrQwlimkE0" role="28jJR8">
-                  <property role="1688n3" value="-Didea.paths.selector=MPS32" />
-                  <node concept="NbPM2" id="4hrQwlimkE1" role="1688n0" />
+                  <property role="1688n3" value="MPS32" />
+                  <node concept="NbPM2" id="4hrQwlimkE1" role="1688n0">
+                    <node concept="3Mxwey" id="6q44gEQT05O" role="3MwsjC">
+                      <ref role="3Mxwex" node="6q44gEQSZKO" resolve="karel.path.selector" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="3co7Ac" id="4hrQwlimkE2" role="28jJR8">
                   <property role="3co7Am" value="lf" />
