@@ -6,7 +6,7 @@ There is an external GUI and a MPS project with languages
 
 In a directory GUI/remote-gui run maven command:
 
-    mvn clean package
+    mvn -Pstandalone clean package
 
 It creates runnable JAR archive karel-gui.jar in directory GUI/remote-gui/gui/target/
 
