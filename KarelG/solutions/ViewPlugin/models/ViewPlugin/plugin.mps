@@ -39,6 +39,7 @@
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
+        <property id="6547237850567462701" name="number" index="2XNb$f" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
@@ -175,6 +176,7 @@
     <property role="TrG5h" value="KarelView" />
     <property role="2XNbzY" value="KarelView" />
     <property role="2bmUCM" value="RIGHT" />
+    <property role="2XNb$f" value="4" />
     <node concept="2XrIbr" id="3H_tUICS7wA" role="2XNbBy">
       <property role="TrG5h" value="initRemoteGui" />
       <node concept="3cqZAl" id="3H_tUICS7Qw" role="3clF45" />
