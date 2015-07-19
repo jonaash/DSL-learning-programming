@@ -16,7 +16,7 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="vuk8" ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(KarelBasic.generator.util)" />
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
@@ -637,6 +637,19 @@
       <node concept="3cqZAl" id="6bh18$pfjaG" role="3clF45" />
       <node concept="3Tm1VV" id="6bh18$pfjaH" role="1B3o_S" />
       <node concept="3clFbS" id="6bh18$pfjaI" role="3clF47">
+        <node concept="3clFbF" id="4$34Uk8_DsM" role="3cqZAp">
+          <node concept="2YIFZM" id="4$34Uk8_D$V" role="3clFbG">
+            <ref role="37wK5l" to="e2lb:~System.setProperty(java.lang.String,java.lang.String):java.lang.String" resolve="setProperty" />
+            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+            <node concept="Xl_RD" id="4$34Uk8_D$W" role="37wK5m">
+              <property role="Xl_RC" value="apple.awt.UIElement" />
+            </node>
+            <node concept="Xl_RD" id="4$34Uk8_D$X" role="37wK5m">
+              <property role="Xl_RC" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4$34Uk8_DcS" role="3cqZAp" />
         <node concept="3cpWs8" id="5q1_tf9HSQk" role="3cqZAp">
           <node concept="3cpWsn" id="5q1_tf9HSQl" role="3cpWs9">
             <property role="TrG5h" value="script" />
