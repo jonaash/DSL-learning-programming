@@ -436,6 +436,11 @@
                 </node>
               </node>
               <node concept="3clFbH" id="1GufzGWgrof" role="3cqZAp" />
+              <node concept="3SKdUt" id="4$34Uk8mzFC" role="3cqZAp">
+                <node concept="3SKdUq" id="4$34Uk8mzIB" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO: predelat na side transformaci, aby tam nezustavalo =" />
+                </node>
+              </node>
               <node concept="3cpWs6" id="1GufzGWgo8x" role="3cqZAp">
                 <node concept="37vLTw" id="1GufzGWgoc$" role="3cqZAk">
                   <ref role="3cqZAo" node="1GufzGWglh3" resolve="wrapper" />
