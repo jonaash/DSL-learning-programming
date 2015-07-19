@@ -7,11 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b5458e9-3182-4c90-9d00-173c0c389a49" name="Default" comment="new build script output">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/resources/icons/Music_Player_Pause_Lines_24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/resources/icons/Music_Player_Play_24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/resources/icons/Recycle_bin_filled_tool_24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/resources/icons/Redo_arrow_24.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/resources/icons/Video_Player_Stop_Button_24.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/view/icons/ControlIcon.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/view/icons/IconProvider.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GUI/remote-gui/client/src/main/java/cz/dsllp/remote/client/Client.java" afterPath="$PROJECT_DIR$/../GUI/remote-gui/client/src/main/java/cz/dsllp/remote/client/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/view/ControlsView.java" afterPath="$PROJECT_DIR$/../GUI/remote-gui/gui/src/main/java/cz/dsllp/gui/view/ControlsView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="KarelG.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -49,62 +55,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Move" pinned="false" current-in-tab="false">
-        <entry file="mps://node://KarelExcercises/KarelExcercises.basic/Move">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="4" />
-                    <property name="caretX" value="71" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466505471" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Repeat" pinned="false" current-in-tab="true">
-        <entry file="mps://node://KarelExcercises/KarelExcercises.basic/Repeat">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="4" />
-                    <property name="caretX" value="71" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReturnCommand" pinned="false" current-in-tab="false">
         <entry file="mps://node://KarelFunctions/KarelFunctions.structure/ReturnCommand">
           <provider selected="true" editor-type-id="MPSFileEditor">
@@ -124,7 +74,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -153,7 +103,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -181,7 +131,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -210,7 +160,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -220,25 +170,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Program" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Program" pinned="false" current-in-tab="true">
         <entry file="mps://node://MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub/Program">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-31" />
-                    <property name="caretX" value="0" />
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="12" />
+                    <property name="caretX" value="362" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
-                      <node node_reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.getUnreachableInstructions%28%29:java.util.Set" />
+                    <cellInfo cellId="Constant_fao2ea_c0" cellNumber="0" isInList="false">
+                      <node node_reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -256,7 +207,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -284,7 +235,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -303,7 +254,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+              <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -451,15 +402,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelExcercises">
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelExcercises">
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="KarelExcercises.basic">
+            <PATH_ELEMENT USER_OBJECT="ViewPlugin.plugin">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1737,7 +1688,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1754,7 +1705,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1781,7 +1732,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1808,7 +1759,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1835,7 +1786,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1852,7 +1803,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1878,7 +1829,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1891,71 +1842,20 @@
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-31" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
-                  <node node_reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.getUnreachableInstructions%28%29:java.util.Set" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://KarelExcercises/KarelExcercises.basic/Move">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="12" />
+                <property name="caretX" value="362" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466505471" />
+                <cellInfo cellId="Constant_fao2ea_c0" cellNumber="0" isInList="false">
+                  <node node_reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://KarelExcercises/KarelExcercises.basic/Repeat">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="4" />
-                <property name="caretX" value="71" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a3c1e91a-4472-4eb5-8dfb-a4a9239cb0a7(KarelExcercises.basic)/353445184466507944" viewPositionX="0" viewPositionY="-5">
+          <inspectorMemento currentlyEditedNode="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.dataFlow.framework(MPS.Core/jetbrains.mps.lang.dataFlow.framework@java_stub)/~Program.size%28%29:int" viewPositionX="0" viewPositionY="-5">
             <selectionStack />
             <errorLabels />
             <folded />
