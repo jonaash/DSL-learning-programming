@@ -33,4 +33,4 @@ crashlytics-build.properties
 /**/source_gen.caches/
 /**/classes_gen/
 
-workspace.xml
+/**/.mps/workspace.xml
