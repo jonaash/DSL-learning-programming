@@ -3,6 +3,8 @@ package cz.dsllp.gui.view;
 import cz.dsllp.gui.controller.GuiController;
 import cz.dsllp.gui.model.controls.ControlsModel;
 import cz.dsllp.gui.util.Labels;
+import cz.dsllp.gui.view.icons.ControlIcon;
+import cz.dsllp.gui.view.icons.IconProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,9 +22,7 @@ import javax.swing.JTextPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingConstants;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
@@ -38,13 +38,16 @@ public class ControlsView {
 
     private static final Logger logger = LoggerFactory.getLogger(ControlsView.class);
 
-    private static final int BUTTON_SIZE = 30;
+    private static final int BUTTON_SIZE = 40;
     private static final int BUTTON_FONT_SIZE = 18;
 
     private JPanel panel = new JPanel();
 
     @Inject
     private ControlsModel model;
+
+    @Inject
+    private IconProvider iconProvider;
 
     private GuiController userControl;
 
@@ -67,16 +70,16 @@ public class ControlsView {
 
     private void initComponents() {
         // TODO: add actions
-        start = createButton("\u25B6", "Start", Color.GREEN);
+        start = createButton(ControlIcon.PLAY, "Start");
         start.setModel(model.getStart());
 
-        pause = createButton("\u275A\u275A", "Pause", Color.ORANGE);
+        pause = createButton(ControlIcon.PAUSE, "Pause");
         pause.setModel(model.getPause());
 
-        step = createButton("\u27A0", "One step", Color.BLACK);
+        step = createButton(ControlIcon.REDO, "One step");
         step.setModel(model.getStep());
 
-        stop = createButton("X", "Stop", Color.RED);
+        stop = createButton(ControlIcon.STOP, "Stop");
         stop.setModel(model.getStop());
 
         speed = new JSlider();
@@ -89,7 +92,7 @@ public class ControlsView {
         messages = new JTextPane(model.getMessages());
         messages.setEditable(false);
 
-        clearMessages = createButton("x", "Delete messages", Color.RED);
+        clearMessages = createButton(ControlIcon.RECYCLE_BIN, "Delete messages");
         clearMessages.setModel(model.getClearMessages());
     }
 
@@ -166,11 +169,10 @@ public class ControlsView {
         return panel;
     }
 
-    private JButton createButton(String label, String tooltip, Color color) {
-        JButton button = new JButton(label);
+    private JButton createButton(ControlIcon iconType, String tooltip) {
+        JButton button = new JButton();
         button.setPreferredSize(new Dimension(BUTTON_SIZE, BUTTON_SIZE));
-        button.setFont(new Font(Font.SANS_SERIF, Font.BOLD, BUTTON_FONT_SIZE));
-        button.setForeground(color);
+        button.setIcon(iconProvider.getIcon(iconType));
         button.setToolTipText(tooltip);
         button.setHorizontalAlignment(SwingConstants.CENTER);
         button.setVerticalAlignment(SwingConstants.CENTER);
@@ -187,5 +189,9 @@ public class ControlsView {
 
     public void setModel(ControlsModel model) {
         this.model = model;
+    }
+
+    public void setIconProvider(IconProvider iconProvider) {
+        this.iconProvider = iconProvider;
     }
 }

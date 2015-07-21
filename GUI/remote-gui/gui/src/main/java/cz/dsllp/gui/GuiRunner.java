@@ -24,7 +24,7 @@ public class GuiRunner {
 
 
     public static void main(String[] args) throws Exception {
-        GuiInitializer.init("rmi://localhost", 12346, "GuiService");
+        GuiInitializer.init("rmi://localhost", 12345, "GuiService");
 
         MainView panel = DependencyRepository.getInstance().getBean(MainView.class);
 
