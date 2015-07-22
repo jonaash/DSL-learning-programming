@@ -13,7 +13,7 @@ public class Client {
 
     private static final Logger logger = LoggerFactory.getLogger(Client.class);
 
-    private static final String RMI_REGISTRY_PORT = "1238";
+    private static final String RMI_REGISTRY_PORT = "12346";
 
     private GuiService guiService;
 
