@@ -23,9 +23,9 @@ In a directory GUI/remote-gui run Maven command:
 
 In case there are problems with build try tu rebuild solutions and languages separately in this order:
 
-1. Common, JavaKarel
-2. KarelBasic, KarelConditions, KarelVariables, KarelFunctions
-3. KarelBasic.sandbox and the rest
+0. Common, JavaKarel
+0. KarelBasic, KarelConditions, KarelVariables, KarelFunctions
+0. KarelBasic.sandbox and the rest
 
 2\) In menu View -> Tool Window open Karel View.
 
@@ -38,25 +38,19 @@ If a new script is started from MPS, previous script is discarded in KarelView a
 
 ## Build and run standalone Karel IDE
 
-1. Download MPS generic distribution
+0. Download MPS generic distribution
 MPS 3.2 generic distribution is necessary to build Karel IDE.
 Download it from www.jetbrains.com/mps/download/ and unpack it to the same directory where is this repository root.
+(MPS 3.2 and DSL-learning-programming are in the same level)
 
-The structure is:
-common parent
-├── DSL-learning-programming
-|    ├── KarelG
-|    ├── GUI
-├── MPS 3.2
-
-2. Open KarelG project in MPS
-3. If necessary Build all languages and solutions
-4. In solution StandaloneIDE run KarelG and wait until successfully finish.
-5. In solution StandaloneIDE run KarelGDistribution and wait until successfully finish.
-6. Go to /KarelG/build/artifacts/KarelGDistribution
-    a. MacOS: unpack KarelG-{version}-macos.zip and run unpacked application.
-    b. Windows: unpack KarelG-{version}.zip and run mps.bat in unpacked directory.
-    c. Linux: unpack KarelG-{version}-linux.tar.gz and run mps.sh in unpacked directory.
+0. Open KarelG project in MPS
+0. If necessary Build all languages and solutions
+0. In solution StandaloneIDE run KarelG and wait until successfully finish.
+0. In solution StandaloneIDE run KarelGDistribution and wait until successfully finish.
+0. Go to /KarelG/build/artifacts/KarelGDistribution
+    * MacOS: unpack KarelG-{version}-macos.zip and run unpacked application.
+    * Windows: unpack KarelG-{version}.zip and run mps.bat in unpacked directory.
+    * Linux: unpack KarelG-{version}-linux.tar.gz and run mps.sh in unpacked directory.
 
 ### Using Karel IDE
 
