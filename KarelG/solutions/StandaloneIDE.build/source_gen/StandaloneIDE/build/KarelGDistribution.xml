@@ -38,7 +38,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
-      <fileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/mps.sh" />
+      <fileset file="${mps_home}/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -92,8 +92,8 @@
       <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="KarelG-${version}/bin/mac" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="KarelG-${version}/bin/mac/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="KarelG-${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/mps.sh" prefix="KarelG-${version}" filemode="755" />
-      <zipfileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/mps.bat" prefix="KarelG-${version}" filemode="755" />
+      <zipfileset file="${mps_home}/mps.sh" prefix="KarelG-${version}" filemode="755" />
+      <zipfileset file="${mps_home}/mps.bat" prefix="KarelG-${version}" filemode="755" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip" />
     </zip>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
@@ -120,14 +120,14 @@
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755">
-      <fileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/mps.sh" />
+      <fileset file="${mps_home}/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <zip destfile="${build.layout}/${KarelG.build.number}-macos.zip">
       <zipfileset dir="${artifacts.KarelG}" prefix="KarelG-${version}.app/Contents" />
-      <zipfileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/Info.plist" prefix="KarelG-${version}.app/Contents" />
+      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="KarelG-${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="KarelG-${version}.app/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="KarelG-${version}.app/Contents/MacOS" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="KarelG-${version}.app/Contents/bin" />
