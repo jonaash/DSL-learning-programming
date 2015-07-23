@@ -637,6 +637,7 @@
   </node>
   <node concept="3UOs0u" id="aB0Z16Q3Me">
     <property role="3GE5qa" value="command.control" />
+    <property role="TrG5h" value="forCycle_changeDirection" />
     <node concept="3UNGvq" id="aB0Z16Q3Mf" role="3UOs0v">
       <property role="2uHTBK" value="ext_1_RTransform" />
       <property role="3mWRNi" value=" change to down to" />
