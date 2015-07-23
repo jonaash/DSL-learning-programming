@@ -311,7 +311,7 @@
     <node concept="2kB4xC" id="1JtUjhLyCyy" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="1JtUjhLyCyz" role="aVJcv">
-        <property role="hHN3Y" value="201504016" />
+        <property role="hHN3Y" value="20150723" />
       </node>
     </node>
     <node concept="2kB4xC" id="1JtUjhLyCy$" role="1l3spd">
@@ -339,7 +339,7 @@
       <node concept="aVJcg" id="6q44gEQSZPc" role="aVJcv">
         <node concept="NbPM2" id="6q44gEQSZPb" role="aVJcq">
           <node concept="3Mxwew" id="6q44gEQSZPa" role="3MwsjC">
-            <property role="3MwjfP" value="Karel" />
+            <property role="3MwjfP" value="Karel01" />
           </node>
         </node>
       </node>
@@ -349,19 +349,19 @@
       <node concept="55IIr" id="6QHpumWMsUf" role="398pKh">
         <node concept="2Ry0Ak" id="6QHpumWMsVx" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="6QHpumWMsWe" role="2Ry0An">
+          <node concept="2Ry0Ak" id="3SokQcDNQup" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6QHpumWMsW$" role="2Ry0An">
+            <node concept="2Ry0Ak" id="2SksdU40CfM" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="1I19JzivP_R" role="2Ry0An">
+              <node concept="2Ry0Ak" id="2SksdU40CnI" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="1I19JziwaK_" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2SksdU40Cz8" role="2Ry0An">
                   <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="1I19JziwaNy" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="2SksdU40CEp" role="2Ry0An">
                     <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="1I19JziwaTn" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="2SksdU40CLE" role="2Ry0An">
                       <property role="2Ry0Am" value="MPS 3.2.app" />
-                      <node concept="2Ry0Ak" id="1I19JziwaTs" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="2SksdU40CXf" role="2Ry0An">
                         <property role="2Ry0Am" value="Contents" />
                       </node>
                     </node>
@@ -448,17 +448,33 @@
         </node>
         <node concept="3ygNvl" id="1JtUjhLyC$b" role="39821P">
           <ref role="3ygNvj" to="ffeo:3cxBkkDa4_O" resolve="bin" />
-          <node concept="3LWZYx" id="1JtUjhLyC$c" role="1juEy9">
-            <property role="3LWZYw" value="log.xml" />
-          </node>
           <node concept="3LWZYx" id="1JtUjhLyC$d" role="1juEy9">
             <property role="3LWZYw" value="log4j.dtd" />
+          </node>
+        </node>
+        <node concept="28jJK3" id="3Pa_jPIfW" role="39821P">
+          <node concept="55IIr" id="3Pa_jPIfY" role="28jJRO">
+            <node concept="2Ry0Ak" id="3Pa_jPT6h" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="3Pa_jPT6m" role="2Ry0An">
+                <property role="2Ry0Am" value="StandaloneIDE.build" />
+                <node concept="2Ry0Ak" id="3Pa_jPT6r" role="2Ry0An">
+                  <property role="2Ry0Am" value="resources" />
+                  <node concept="2Ry0Ak" id="3Pa_jPT6w" role="2Ry0An">
+                    <property role="2Ry0Am" value="config" />
+                    <node concept="2Ry0Ak" id="3Pa_jPT6_" role="2Ry0An">
+                      <property role="2Ry0Am" value="log.xml" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="28jJK3" id="1JtUjhLyC$e" role="39821P">
           <node concept="1688n2" id="1JtUjhLyC$f" role="28jJR8">
             <property role="1688n6" value="g" />
-            <property role="1688n3" value="\.MPS(\w+)" />
+            <property role="1688n3" value="VAR_BUILD_NUMBER" />
             <node concept="NbPM2" id="1JtUjhLyC$g" role="1688n0">
               <node concept="3Mxwew" id="1JtUjhLyC$h" role="3MwsjC">
                 <property role="3MwjfP" value="\." />
@@ -468,12 +484,20 @@
               </node>
             </node>
           </node>
-          <node concept="398BVA" id="1JtUjhLyC$2" role="28jJRO">
-            <ref role="398BVh" node="1JtUjhLyCyC" resolve="mps_home" />
-            <node concept="2Ry0Ak" id="1JtUjhLyC$3" role="iGT6I">
-              <property role="2Ry0Am" value="bin" />
-              <node concept="2Ry0Ak" id="1JtUjhLyC$4" role="2Ry0An">
-                <property role="2Ry0Am" value="idea.properties" />
+          <node concept="55IIr" id="3Pa_jPHsa" role="28jJRO">
+            <node concept="2Ry0Ak" id="3Pa_jPHKv" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="3Pa_jPHK$" role="2Ry0An">
+                <property role="2Ry0Am" value="StandaloneIDE.build" />
+                <node concept="2Ry0Ak" id="3Pa_jPHKD" role="2Ry0An">
+                  <property role="2Ry0Am" value="resources" />
+                  <node concept="2Ry0Ak" id="3Pa_jPHKK" role="2Ry0An">
+                    <property role="2Ry0Am" value="config" />
+                    <node concept="2Ry0Ak" id="3Pa_jPHKP" role="2Ry0An">
+                      <property role="2Ry0Am" value="idea.properties" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1890,6 +1914,14 @@
               </node>
             </node>
             <node concept="28jJK3" id="pHVhH$M49c" role="39821P">
+              <node concept="1688n2" id="3SokQcDNPj6" role="28jJR8">
+                <property role="1688n3" value="MPS32" />
+                <node concept="NbPM2" id="3SokQcDNPj7" role="1688n0">
+                  <node concept="3Mxwey" id="3SokQcDNPj8" role="3MwsjC">
+                    <ref role="3Mxwex" node="6q44gEQSZKO" resolve="karel.path.selector" />
+                  </node>
+                </node>
+              </node>
               <node concept="398BVA" id="2NVGbblaySS" role="28jJRO">
                 <ref role="398BVh" node="1JtUjhLyC__" resolve="mps_home" />
                 <node concept="2Ry0Ak" id="2NVGbblaySY" role="iGT6I">

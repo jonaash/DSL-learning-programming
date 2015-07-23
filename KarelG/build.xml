@@ -4,11 +4,11 @@
   <property name="build.tmp" location="${build.dir}/tmp/KarelG" />
   <property name="build.layout" location="${build.dir}/artifacts/KarelG" />
   <tstamp>
-    <format property="date" pattern="201504016" />
+    <format property="date" pattern="20150723" />
   </tstamp>
   <property name="build.number" value="KarelG-139.SNAPSHOT" />
   <property name="build.version" value="0.1" />
-  <property name="karel.path.selector" value="Karel" />
+  <property name="karel.path.selector" value="Karel01" />
   <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
@@ -38,15 +38,17 @@
     <mkdir dir="${build.layout}/bin" />
     <copy todir="${build.layout}/bin">
       <fileset dir="${artifacts.mpsStandalone}/bin">
-        <include name="log.xml" />
         <include name="log4j.dtd" />
       </fileset>
     </copy>
     <copy todir="${build.layout}/bin">
-      <fileset file="${mps_home}/bin/idea.properties" />
+      <fileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/log.xml" />
+    </copy>
+    <copy todir="${build.layout}/bin">
+      <fileset file="${basedir}/solutions/StandaloneIDE.build/resources/config/idea.properties" />
       <filterchain>
         <tokenfilter>
-          <replaceregex pattern="\.MPS(\w+)" replace="\.${build.number}" flags="g" />
+          <replaceregex pattern="VAR_BUILD_NUMBER" replace="\.${build.number}" flags="g" />
         </tokenfilter>
       </filterchain>
     </copy>

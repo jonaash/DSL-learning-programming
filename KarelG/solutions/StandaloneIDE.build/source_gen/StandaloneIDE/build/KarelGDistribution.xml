@@ -99,6 +99,14 @@
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG-${version}.app" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG-${version}.app/Contents" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG-${version}.app/Contents">
+      <fileset file="${mps_home}/bin/mac/Contents/Info.plist" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="MPS32" replace="${KarelG.karel.path.selector}" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG-${version}.app/Contents/bin" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/KarelG-${version}.app/Contents/bin">
       <fileset file="${mps_home}/bin/mps.vmoptions" />
@@ -127,7 +135,6 @@
     </copy>
     <zip destfile="${build.layout}/${KarelG.build.number}-macos.zip">
       <zipfileset dir="${artifacts.KarelG}" prefix="KarelG-${version}.app/Contents" />
-      <zipfileset file="${mps_home}/bin/mac/Contents/Info.plist" prefix="KarelG-${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="KarelG-${version}.app/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="KarelG-${version}.app/Contents/MacOS" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/libbreakgen.jnilib" prefix="KarelG-${version}.app/Contents/bin" />
