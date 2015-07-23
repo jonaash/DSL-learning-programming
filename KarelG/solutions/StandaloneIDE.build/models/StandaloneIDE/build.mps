@@ -351,23 +351,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3SokQcDNQup" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2SksdU40CfM" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="2SksdU40CnI" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="2SksdU40Cz8" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="2SksdU40CEp" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="2SksdU40CLE" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 3.2.app" />
-                      <node concept="2Ry0Ak" id="2SksdU40CXf" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node concept="2Ry0Ak" id="5zAkk8MRB4p" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 3.2" />
             </node>
           </node>
         </node>

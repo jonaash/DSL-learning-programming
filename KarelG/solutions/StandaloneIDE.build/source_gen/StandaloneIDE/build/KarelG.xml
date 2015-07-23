@@ -9,7 +9,7 @@
   <property name="build.number" value="KarelG-139.SNAPSHOT" />
   <property name="build.version" value="0.1" />
   <property name="karel.path.selector" value="Karel01" />
-  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../MPS 3.2" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.mpsDebuggerPlugin" location="${mps_home}/plugins" />
