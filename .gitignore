@@ -29,7 +29,7 @@ crashlytics-build.properties
 /GUI/**/target/
 
 #MPS generated java sources and classes
-/**/source_gen/
+/**/source_gen/*
 /**/source_gen.caches/
 /**/classes_gen/
 
