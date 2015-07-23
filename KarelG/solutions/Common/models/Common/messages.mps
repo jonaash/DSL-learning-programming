@@ -326,6 +326,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
         <node concept="3clFbF" id="7jmg6nozrBC" role="3cqZAp">
           <node concept="37vLTI" id="7jmg6nozrBD" role="3clFbG">
             <node concept="3EllGN" id="7jmg6nozrBE" role="37vLTJ">
@@ -356,7 +357,23 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="18k56XDr0M2" role="3cqZAp">
+          <node concept="37vLTI" id="18k56XDr0M3" role="3clFbG">
+            <node concept="3EllGN" id="18k56XDr0M4" role="37vLTJ">
+              <node concept="37vLTw" id="18k56XDr0Mb" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="18k56XDr0M5" role="3ElVtu">
+                <property role="Xl_RC" value="warning.repeated.command" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="18k56XDr1aF" role="37vLTx">
+              <property role="Xl_RC" value="Consider using repeat to avoid repetition" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="30eT$TCw8yJ" role="3cqZAp" />
+        <node concept="3clFbH" id="18k56XDr0Jg" role="3cqZAp" />
         <node concept="3clFbF" id="30eT$TCvZlD" role="3cqZAp">
           <node concept="37vLTI" id="30eT$TCw30Q" role="3clFbG">
             <node concept="3EllGN" id="30eT$TCw2dX" role="37vLTJ">

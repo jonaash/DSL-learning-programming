@@ -77,14 +77,18 @@
       <node concept="1$shr6" id="5eWJqD2oIqe" role="3jGSnO" />
       <node concept="1$shr6" id="2WqFKNC_fw3" role="3jGSnO" />
       <node concept="17J3f2" id="14XUkkdIMtn" role="3jGSnO" />
-      <node concept="17J3f2" id="aB0Z16L536" role="3jGSnO" />
-      <node concept="3dudH9" id="14XUkkdEuKa" role="3jGSnO">
-        <node concept="29J8_c" id="14XUkkdFlpQ" role="3dudC3">
-          <ref role="hRIc0" node="14XUkkdFlom" resolve="turn around" />
+      <node concept="3dudH9" id="18k56XDsWcR" role="3jGSnO">
+        <node concept="29J8_c" id="18k56XDsWcP" role="3dudC3">
+          <ref role="hRIc0" node="aB0Z16JU0d" resolve="turn around" />
         </node>
       </node>
       <node concept="3dudH9" id="14XUkkdFlrg" role="3jGSnO">
         <node concept="29J8_c" id="14XUkkdFlrs" role="3dudC3">
+          <ref role="hRIc0" node="14XUkkdFlp4" resolve="turn right" />
+        </node>
+      </node>
+      <node concept="3dudH9" id="18k56XDtSV$" role="3jGSnO">
+        <node concept="29J8_c" id="18k56XDtSVy" role="3dudC3">
           <ref role="hRIc0" node="14XUkkdFlp4" resolve="turn right" />
         </node>
       </node>
