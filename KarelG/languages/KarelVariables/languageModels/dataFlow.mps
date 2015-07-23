@@ -24,18 +24,32 @@
       </concept>
     </language>
     <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
+      <concept id="1207062474157" name="jetbrains.mps.lang.dataFlow.structure.EmitLabelStatement" flags="ng" index="axUMO" />
+      <concept id="1207062697254" name="jetbrains.mps.lang.dataFlow.structure.LabelPosition" flags="ng" index="ayLgZ">
+        <reference id="1207062703832" name="label" index="ayMZ1" />
+      </concept>
       <concept id="1206442055221" name="jetbrains.mps.lang.dataFlow.structure.DataFlowBuilderDeclaration" flags="ig" index="3_zdsH">
         <reference id="1206442096288" name="conceptDeclaration" index="3_znuS" />
         <child id="1206442812839" name="builderBlock" index="3_A6iZ" />
       </concept>
       <concept id="1206442659665" name="jetbrains.mps.lang.dataFlow.structure.BuilderBlock" flags="in" index="3__wT9" />
       <concept id="1206442747519" name="jetbrains.mps.lang.dataFlow.structure.NodeParameter" flags="nn" index="3__QtB" />
+      <concept id="1206443823146" name="jetbrains.mps.lang.dataFlow.structure.EmitReadStatement" flags="nn" index="3_DX4M" />
       <concept id="1206444349662" name="jetbrains.mps.lang.dataFlow.structure.EmitWriteStatement" flags="nn" index="3_FXB6">
         <child id="1230468250683" name="value" index="1XBRO_" />
       </concept>
       <concept id="1206444622344" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitVariableStatement" flags="nn" index="3_H0cg">
         <child id="1206444629799" name="variable" index="3_H1SZ" />
       </concept>
+      <concept id="1206444910183" name="jetbrains.mps.lang.dataFlow.structure.RelativePosition" flags="ng" index="3_I6tZ">
+        <child id="1206444923842" name="relativeTo" index="3_I9Fq" />
+      </concept>
+      <concept id="1206445082906" name="jetbrains.mps.lang.dataFlow.structure.AfterPosition" flags="ng" index="3_IKw2" />
+      <concept id="1206445181593" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitJumpStatement" flags="nn" index="3_J8I1">
+        <child id="1206445193860" name="jumpTo" index="3_JbIs" />
+      </concept>
+      <concept id="1206445295557" name="jetbrains.mps.lang.dataFlow.structure.EmitIfJumpStatement" flags="nn" index="3_J$rt" />
+      <concept id="1206445310309" name="jetbrains.mps.lang.dataFlow.structure.EmitJumpStatement" flags="nn" index="3_JC1X" />
       <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
         <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
       </concept>
@@ -48,6 +62,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -98,6 +115,59 @@
             <node concept="3TrEf2" id="5B0fQ1kPbtT" role="2OqNvi">
               <ref role="3Tt5mk" to="3y9h:1GufzGWfyPl" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="7jmg6noxydQ">
+    <property role="3GE5qa" value="command.control" />
+    <ref role="3_znuS" to="3y9h:aB0Z16Oiyf" resolve="ForCycle" />
+    <node concept="3__wT9" id="7jmg6noxydR" role="3_A6iZ">
+      <node concept="3clFbS" id="7jmg6noxydS" role="2VODD2">
+        <node concept="3AgYrR" id="7jmg6noxyeq" role="3cqZAp">
+          <node concept="2OqwBi" id="7jmg6noxyh3" role="3Ah4Yx">
+            <node concept="3__QtB" id="7jmg6noxyeE" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7jmg6noxyNF" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:aB0Z16Ok4W" />
+            </node>
+          </node>
+        </node>
+        <node concept="axUMO" id="7jmg6noxyQO" role="3cqZAp">
+          <property role="TrG5h" value="cycle start" />
+        </node>
+        <node concept="3_DX4M" id="7jmg6noxzcF" role="3cqZAp">
+          <node concept="2OqwBi" id="7jmg6noxzgz" role="3_H1SZ">
+            <node concept="3__QtB" id="7jmg6noxzea" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7jmg6noxzFw" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:aB0Z16Ok4W" />
+            </node>
+          </node>
+        </node>
+        <node concept="3AgYrR" id="7jmg6noxySW" role="3cqZAp">
+          <node concept="2OqwBi" id="7jmg6noxyWw" role="3Ah4Yx">
+            <node concept="3__QtB" id="7jmg6noxyU8" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7jmg6noxzad" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:aB0Z16Ok4Y" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_J$rt" id="7jmg6noxzIs" role="3cqZAp">
+          <node concept="3_IKw2" id="7jmg6noxzK3" role="3_JbIs">
+            <node concept="3__QtB" id="7jmg6noxzKl" role="3_I9Fq" />
+          </node>
+        </node>
+        <node concept="3AgYrR" id="7jmg6noxzMs" role="3cqZAp">
+          <node concept="2OqwBi" id="7jmg6noxzQK" role="3Ah4Yx">
+            <node concept="3__QtB" id="7jmg6noxzOo" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7jmg6nox$4t" role="2OqNvi">
+              <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
+            </node>
+          </node>
+        </node>
+        <node concept="3_JC1X" id="7jmg6nox$7J" role="3cqZAp">
+          <node concept="ayLgZ" id="7jmg6nox$9U" role="3_JbIs">
+            <ref role="ayMZ1" node="7jmg6noxyQO" resolve="cycle start" />
           </node>
         </node>
       </node>

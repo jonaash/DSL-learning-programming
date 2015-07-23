@@ -49,6 +49,10 @@
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentCommand" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -70,6 +74,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="KarelConditions">
+      <concept id="3267332360033971606" name="KarelConditions.structure.IfStatement" flags="ng" index="17CkzI">
+        <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
+        <child id="3267332360033971743" name="condition" index="17CkHB" />
+      </concept>
+      <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
     </language>
   </registry>
   <node concept="1$vsWe" id="3hBhvFT6RhQ">
@@ -126,6 +137,53 @@
           </node>
         </node>
       </node>
+      <node concept="17J3f2" id="7jmg6nozkcc" role="3jGSnO" />
+      <node concept="B81uQ" id="7jmg6nozkdh" role="3jGSnO">
+        <node concept="36MIYZ" id="7jmg6nozke8" role="B81dI">
+          <ref role="36MIYq" node="5Ihd_CfnfCV" resolve="result" />
+        </node>
+        <node concept="36MIYZ" id="7jmg6nozkdf" role="B81dD">
+          <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+        </node>
+      </node>
+      <node concept="36Mw20" id="7jmg6noztGQ" role="3jGSnO">
+        <node concept="36MCFd" id="7jmg6noztGT" role="36Mw2n">
+          <property role="TrG5h" value="b" />
+          <node concept="36MCER" id="7jmg6noztGO" role="36MCEW" />
+        </node>
+      </node>
+      <node concept="B81uQ" id="7jmg6no$Qhu" role="3jGSnO">
+        <node concept="36MIYZ" id="7jmg6no$Qif" role="B81dI">
+          <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+        </node>
+        <node concept="36MIYZ" id="7jmg6no$Qhs" role="B81dD">
+          <ref role="36MIYq" node="7jmg6noztGT" resolve="b" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="7jmg6no$Qd9" role="3jGSnO" />
+      <node concept="17CkzI" id="7jmg6no$IKh" role="3jGSnO">
+        <node concept="17Ff7J" id="7jmg6no$IKV" role="17CkHB" />
+        <node concept="3jGSmg" id="7jmg6no$IKl" role="17CkHq">
+          <node concept="B81uQ" id="7jmg6no$IL4" role="3jGSnO">
+            <node concept="36MIYZ" id="7jmg6no$ILp" role="B81dI">
+              <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+            </node>
+            <node concept="36MIYZ" id="7jmg6no$IL2" role="B81dD">
+              <ref role="36MIYq" node="7jmg6noztGT" resolve="b" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="7jmg6noztHq" role="3jGSnO" />
+      <node concept="B81uQ" id="7jmg6noztIj" role="3jGSnO">
+        <node concept="36MIYZ" id="7jmg6noztIR" role="B81dI">
+          <ref role="36MIYq" node="7jmg6noztGT" resolve="b" />
+        </node>
+        <node concept="36MIYZ" id="7jmg6noztIh" role="B81dD">
+          <ref role="36MIYq" node="3hBhvFTdG54" resolve="a" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="7jmg6no$Qat" role="3jGSnO" />
     </node>
   </node>
 </model>

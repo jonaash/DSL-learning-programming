@@ -1255,6 +1255,30 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7jmg6no_ffT" role="3bR37C">
+          <node concept="3bR9La" id="7jmg6no_ffU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfK" resolve="jetbrains.mps.dataFlow.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7jmg6no_ffV" role="3bR37C">
+          <node concept="3bR9La" id="7jmg6no_ffW" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7jmg6no_ffX" role="3bR37C">
+          <node concept="3bR9La" id="7jmg6no_ffY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7jmg6no_ffZ" role="3bR37C">
+          <node concept="3bR9La" id="7jmg6no_fg0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkokU" role="2G$12L">
         <property role="BnDLt" value="true" />
