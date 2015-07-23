@@ -32,12 +32,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -108,11 +102,6 @@
             <node concept="3TrEf2" id="30eT$TCyiHo" role="2OqNvi">
               <ref role="3Tt5mk" to="a5m:3hBhvFT7nZx" />
             </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="4KmNsLiaKd2" role="3cqZAp">
-          <node concept="3SKdUq" id="4KmNsLiaKdS" role="3SKWNk">
-            <property role="3SKdUp" value="fixme next ret caused that return statement is always unreachable and also function call" />
           </node>
         </node>
         <node concept="3AM$9J" id="4KmNsLiaKjA" role="3cqZAp" />
