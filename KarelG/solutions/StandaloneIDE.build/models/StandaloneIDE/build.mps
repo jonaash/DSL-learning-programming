@@ -311,7 +311,7 @@
     <node concept="2kB4xC" id="1JtUjhLyCyy" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="1JtUjhLyCyz" role="aVJcv">
-        <property role="hHN3Y" value="20150723" />
+        <property role="hHN3Y" value="yyyy-MM-dd" />
       </node>
     </node>
     <node concept="2kB4xC" id="1JtUjhLyCy$" role="1l3spd">

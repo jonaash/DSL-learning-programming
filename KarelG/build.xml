@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/KarelG" />
   <property name="build.layout" location="${build.dir}/artifacts/KarelG" />
   <tstamp>
-    <format property="date" pattern="20150723" />
+    <format property="date" pattern="yyyy-MM-dd" />
   </tstamp>
   <property name="build.number" value="KarelG-139.SNAPSHOT" />
   <property name="build.version" value="0.1" />
