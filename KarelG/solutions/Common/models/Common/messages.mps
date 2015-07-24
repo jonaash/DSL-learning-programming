@@ -334,11 +334,11 @@
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="7jmg6nowC2B" role="3ElVtu">
-                <property role="Xl_RC" value="warning.not.initialized.variable" />
+                <property role="Xl_RC" value="warning.uninitialized.read" />
               </node>
             </node>
             <node concept="Xl_RD" id="7jmg6nozrBG" role="37vLTx">
-              <property role="Xl_RC" value="Variable ''{0}'' is not initialized" />
+              <property role="Xl_RC" value="Variable ''{0}'' does not contain any value" />
             </node>
           </node>
         </node>
@@ -348,8 +348,8 @@
               <node concept="37vLTw" id="7jmg6nozscR" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="7jmg6nozscL" role="3ElVtu">
-                <property role="Xl_RC" value="warning.not.read.variable" />
+              <node concept="Xl_RD" id="18k56XDxSNJ" role="3ElVtu">
+                <property role="Xl_RC" value="warning.unused.assignment" />
               </node>
             </node>
             <node concept="Xl_RD" id="7jmg6nozscM" role="37vLTx">
@@ -364,10 +364,25 @@
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="18k56XDr0M5" role="3ElVtu">
-                <property role="Xl_RC" value="warning.repeated.command" />
+                <property role="Xl_RC" value="warning.unused.variable" />
               </node>
             </node>
             <node concept="Xl_RD" id="18k56XDr1aF" role="37vLTx">
+              <property role="Xl_RC" value="Variable ''{0}'' is not used." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="18k56XDxUba" role="3cqZAp">
+          <node concept="37vLTI" id="18k56XDxUbb" role="3clFbG">
+            <node concept="3EllGN" id="18k56XDxUbc" role="37vLTJ">
+              <node concept="37vLTw" id="18k56XDxUbj" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="18k56XDxUbd" role="3ElVtu">
+                <property role="Xl_RC" value="warning.repeated.command" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="18k56XDxUbe" role="37vLTx">
               <property role="Xl_RC" value="Consider using repeat to avoid repetition" />
             </node>
           </node>
