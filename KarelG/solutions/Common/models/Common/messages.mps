@@ -371,8 +371,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2RjUFdDpB3y" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDpB3$" role="3clFbG">
+            <node concept="3EllGN" id="2RjUFdDpB3_" role="37vLTJ">
+              <node concept="37vLTw" id="2RjUFdDpB3G" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2RjUFdDpAR7" role="3ElVtu">
+                <property role="Xl_RC" value="error.return.missing.value" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2RjUFdDpB3B" role="37vLTx">
+              <property role="Xl_RC" value="Function must return value of type {0}." />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="18k56XD_SbT" role="3cqZAp" />
-        <node concept="3clFbH" id="18k56XD_Pcp" role="3cqZAp" />
         <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
         <node concept="3clFbF" id="7jmg6nozrBC" role="3cqZAp">
           <node concept="37vLTI" id="7jmg6nozrBD" role="3clFbG">
