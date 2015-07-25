@@ -53,6 +53,9 @@
       <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
         <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
       </concept>
+      <concept id="1206534235764" name="jetbrains.mps.lang.dataFlow.structure.EmitMayBeUnreachable" flags="nn" index="3F2QtG">
+        <child id="1206534244140" name="emitStatement" index="3F2SoO" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -165,9 +168,11 @@
             </node>
           </node>
         </node>
-        <node concept="3_JC1X" id="7jmg6nox$7J" role="3cqZAp">
-          <node concept="ayLgZ" id="7jmg6nox$9U" role="3_JbIs">
-            <ref role="ayMZ1" node="7jmg6noxyQO" resolve="cycle start" />
+        <node concept="3F2QtG" id="2RjUFdDp_2o" role="3cqZAp">
+          <node concept="3_JC1X" id="7jmg6nox$7J" role="3F2SoO">
+            <node concept="ayLgZ" id="7jmg6nox$9U" role="3_JbIs">
+              <ref role="ayMZ1" node="7jmg6noxyQO" resolve="cycle start" />
+            </node>
           </node>
         </node>
       </node>
