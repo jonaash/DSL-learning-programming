@@ -11,9 +11,6 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -124,15 +121,13 @@
             </node>
           </node>
         </node>
-        <node concept="u8gfJ" id="7jmg6noAttC" role="3cqZAp">
-          <node concept="3clFbH" id="5beVc_raxWV" role="u8lrQ" />
-          <node concept="axUMO" id="5beVc_raxV4" role="u8lrQ">
-            <property role="TrG5h" value="cycle start" />
-          </node>
-          <node concept="3_J$rt" id="14XUkkdVY33" role="u8lrQ">
-            <node concept="3_IKw2" id="14XUkkdVY4h" role="3_JbIs">
-              <node concept="3__QtB" id="14XUkkdVY4z" role="3_I9Fq" />
-            </node>
+        <node concept="3clFbH" id="5beVc_raxWV" role="3cqZAp" />
+        <node concept="axUMO" id="5beVc_raxV4" role="3cqZAp">
+          <property role="TrG5h" value="cycle start" />
+        </node>
+        <node concept="3_J$rt" id="14XUkkdVY33" role="3cqZAp">
+          <node concept="3_IKw2" id="14XUkkdVY4h" role="3_JbIs">
+            <node concept="3__QtB" id="14XUkkdVY4z" role="3_I9Fq" />
           </node>
         </node>
         <node concept="3AgYrR" id="14XUkkdVYfi" role="3cqZAp">
@@ -143,8 +138,8 @@
             </node>
           </node>
         </node>
-        <node concept="u8gfJ" id="7jmg6noAtvj" role="3cqZAp">
-          <node concept="3_JC1X" id="5beVc_ray1I" role="u8lrQ">
+        <node concept="3F2QtG" id="2RjUFdDmLV7" role="3cqZAp">
+          <node concept="3_JC1X" id="5beVc_ray1I" role="3F2SoO">
             <node concept="ayLgZ" id="5beVc_ray3F" role="3_JbIs">
               <ref role="ayMZ1" node="5beVc_raxV4" resolve="cycle start" />
             </node>
@@ -359,8 +354,8 @@
     <ref role="3_znuS" to="dyrx:2PnTnxEUX_x" resolve="CommentLine" />
     <node concept="3__wT9" id="7jmg6novTmv" role="3_A6iZ">
       <node concept="3clFbS" id="7jmg6novTmw" role="2VODD2">
-        <node concept="3F2QtG" id="7jmg6novTmM" role="3cqZAp">
-          <node concept="3_DlnG" id="7jmg6novTmE" role="3F2SoO" />
+        <node concept="3F2QtG" id="18k56XDyxE8" role="3cqZAp">
+          <node concept="3_DlnG" id="18k56XDyxE0" role="3F2SoO" />
         </node>
       </node>
     </node>

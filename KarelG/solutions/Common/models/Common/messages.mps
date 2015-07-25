@@ -326,6 +326,53 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="18k56XD_PiK" role="3cqZAp">
+          <node concept="37vLTI" id="18k56XD_PiL" role="3clFbG">
+            <node concept="3EllGN" id="18k56XD_PiM" role="37vLTJ">
+              <node concept="Xl_RD" id="18k56XD_PiN" role="3ElVtu">
+                <property role="Xl_RC" value="error.function.cannot.return.value" />
+              </node>
+              <node concept="37vLTw" id="18k56XD_PiT" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="18k56XD_PiO" role="37vLTx">
+              <property role="Xl_RC" value="This function cannot return any value." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="18k56XD_SeC" role="3cqZAp">
+          <node concept="37vLTI" id="18k56XD_SeD" role="3clFbG">
+            <node concept="3EllGN" id="18k56XD_SeE" role="37vLTJ">
+              <node concept="Xl_RD" id="18k56XD_SeF" role="3ElVtu">
+                <property role="Xl_RC" value="error.return.function.must.return.value" />
+              </node>
+              <node concept="37vLTw" id="18k56XD_SeL" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="18k56XD_SeG" role="37vLTx">
+              <property role="Xl_RC" value="Function must return value of type {0}." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2RjUFdDnS_y" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDnSX0" role="3clFbG">
+            <node concept="Xl_RD" id="2RjUFdDnT3i" role="37vLTx">
+              <property role="Xl_RC" value="Function must return value in all code branches." />
+            </node>
+            <node concept="3EllGN" id="2RjUFdDnS_$" role="37vLTJ">
+              <node concept="Xl_RD" id="2RjUFdDnS__" role="3ElVtu">
+                <property role="Xl_RC" value="error.definition.function.must.return.value" />
+              </node>
+              <node concept="37vLTw" id="2RjUFdDnS_E" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="18k56XD_SbT" role="3cqZAp" />
+        <node concept="3clFbH" id="18k56XD_Pcp" role="3cqZAp" />
         <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
         <node concept="3clFbF" id="7jmg6nozrBC" role="3cqZAp">
           <node concept="37vLTI" id="7jmg6nozrBD" role="3clFbG">
@@ -515,7 +562,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="jBG8nbI0OT" role="3cqZAp" />
+        <node concept="3clFbF" id="2RjUFdDfHrS" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDfKGp" role="3clFbG">
+            <node concept="Xl_RD" id="2RjUFdDfKKj" role="37vLTx">
+              <property role="Xl_RC" value="Change Return Type to {0}" />
+            </node>
+            <node concept="3EllGN" id="2RjUFdDfKjH" role="37vLTJ">
+              <node concept="Xl_RD" id="2RjUFdDfKnG" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.change.function.type" />
+              </node>
+              <node concept="37vLTw" id="2RjUFdDfHrQ" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="jBG8nbHO3I" role="3cqZAp" />
         <node concept="3clFbH" id="jBG8nbI0Am" role="3cqZAp" />
         <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />

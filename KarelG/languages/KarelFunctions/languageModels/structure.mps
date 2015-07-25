@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
@@ -16,12 +15,8 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
-        <reference id="1169127628841" name="intfc" index="PrY4T" />
-      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
-        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -64,7 +59,7 @@
     <property role="3GE5qa" value="function" />
     <property role="34LRSv" value="function" />
     <property role="R4oN_" value="defines command sequence as a function" />
-    <ref role="1TJDcQ" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+    <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="1TJgyj" id="3hBhvFT4iaL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="returnType" />
@@ -100,11 +95,8 @@
     <property role="TrG5h" value="VoidType" />
     <property role="3GE5qa" value="type" />
     <property role="34LRSv" value="none" />
-    <property role="R4oN_" value="type of function that returns nothing" />
+    <property role="R4oN_" value="nothing" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-    <node concept="PrWs8" id="3hBhvFT70p4" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT7nZw">
     <property role="3GE5qa" value="function" />
@@ -115,7 +107,7 @@
     <node concept="1TJgyj" id="3hBhvFT7nZx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
   </node>

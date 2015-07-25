@@ -1279,6 +1279,12 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="18k56XDz3HO" role="3bR37C">
+          <node concept="3bR9La" id="18k56XDz3HP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkokU" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1340,6 +1346,18 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="1CDPOOIknXx" resolve="KarelVariables#3394217739153893707" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="18k56XDz3xu" role="3bR37C">
+          <node concept="3bR9La" id="18k56XDz3xv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2RjUFdDjv43" role="3bR37C">
+          <node concept="3bR9La" id="2RjUFdDjv44" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzH" resolve="Common" />
           </node>
         </node>
       </node>

@@ -1015,7 +1015,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.KarelFunctions" depends="java.compile.KarelBasic, java.compile.KarelConditions, java.compile.KarelVariables, fetchDependencies">
+  <target name="java.compile.KarelFunctions" depends="java.compile.Common, java.compile.KarelBasic, java.compile.KarelConditions, java.compile.KarelVariables, fetchDependencies">
     <mkdir dir="${basedir}/languages/KarelFunctions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/KarelFunctions" />
     <javac destdir="${build.tmp}/java/out/KarelFunctions" fork="true" includeantruntime="false">
@@ -1026,6 +1026,7 @@
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <pathelement path="${build.tmp}/java/out/Common" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />

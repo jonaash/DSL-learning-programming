@@ -169,6 +169,9 @@
     <property role="34LRSv" value="&lt;empty&gt;" />
     <property role="R4oN_" value="empty line" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="PrWs8" id="18k56XD$bne" role="PzmwI">
+      <ref role="PrY4T" node="18k56XD$bnd" resolve="IDocumentation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEUX_x">
     <property role="3GE5qa" value="command.documentation" />
@@ -179,6 +182,9 @@
     <node concept="1TJgyi" id="2PnTnxEUXAJ" role="1TKVEl">
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="18k56XD$bng" role="PzmwI">
+      <ref role="PrY4T" node="18k56XD$bnd" resolve="IDocumentation" />
     </node>
   </node>
   <node concept="1TIwiD" id="4in_MZdaLTz">
@@ -231,18 +237,21 @@
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="BooleanType" />
     <property role="34LRSv" value="logical" />
+    <property role="R4oN_" value="true or false" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mV">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="number" />
+    <property role="R4oN_" value="integer number" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDQKD4">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="StringType" />
     <property role="34LRSv" value="text" />
+    <property role="R4oN_" value="any text" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mJ">
@@ -515,6 +524,10 @@
       <property role="1uS6qv" value="PROHIBITED" />
       <property role="1uS6qo" value="PROHIBITED" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="18k56XD$bnd">
+    <property role="3GE5qa" value="command.documentation" />
+    <property role="TrG5h" value="IDocumentation" />
   </node>
 </model>
 
