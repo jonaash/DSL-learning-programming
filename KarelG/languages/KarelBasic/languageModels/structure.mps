@@ -32,7 +32,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -306,14 +308,11 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="variable" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2WqFKNCAeG_" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="2WqFKNDRTcZ" role="PzmwI">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
     </node>
-    <node concept="PrWs8" id="6xChywqpHrT" role="PzmwI">
-      <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+    <node concept="PrWs8" id="2RjUFdDsT5P" role="PzmwI">
+      <ref role="PrY4T" node="2RjUFdDsT1_" resolve="IVariableDeclaration" />
     </node>
     <node concept="1TJgyj" id="2WqFKNDO2mK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -528,6 +527,13 @@
   <node concept="PlHQZ" id="18k56XD$bnd">
     <property role="3GE5qa" value="command.documentation" />
     <property role="TrG5h" value="IDocumentation" />
+  </node>
+  <node concept="PlHQZ" id="2RjUFdDsT1_">
+    <property role="3GE5qa" value="variable" />
+    <property role="TrG5h" value="IVariableDeclaration" />
+    <node concept="PrWs8" id="2RjUFdDsT2Z" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
