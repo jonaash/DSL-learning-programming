@@ -69,7 +69,7 @@
                             <finalName>karel-gui</finalName>
                             <archive>
                                 <manifest>
-                                    <mainClass>cz.dsllp.gui.GuiRunner</mainClass>
+                                    <mainClass>cz.dsllp.gui.standalone.GuiRunner</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>

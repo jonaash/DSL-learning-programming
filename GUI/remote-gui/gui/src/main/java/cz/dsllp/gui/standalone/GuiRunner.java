@@ -1,6 +1,7 @@
-package cz.dsllp.gui;
+package cz.dsllp.gui.standalone;
 
 import com.googlecode.tinydi.DependencyRepository;
+import cz.dsllp.gui.GuiInitializer;
 import cz.dsllp.gui.api.message.appearance.TextAppearance;
 import cz.dsllp.gui.model.world.Cell;
 import cz.dsllp.gui.model.world.Thing;
