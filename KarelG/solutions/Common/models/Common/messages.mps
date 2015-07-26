@@ -410,7 +410,7 @@
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="18k56XDxSNJ" role="3ElVtu">
-                <property role="Xl_RC" value="warning.unused.assignment" />
+                <property role="Xl_RC" value="warning.variable.unused.assignment" />
               </node>
             </node>
             <node concept="Xl_RD" id="7jmg6nozscM" role="37vLTx">
@@ -418,6 +418,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2RjUFdDrN8_" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDrN8A" role="3clFbG">
+            <node concept="3EllGN" id="2RjUFdDrN8B" role="37vLTJ">
+              <node concept="37vLTw" id="2RjUFdDrN8I" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2RjUFdDrN8C" role="3ElVtu">
+                <property role="Xl_RC" value="warning.parameter.unused.assignment" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2RjUFdDrN8D" role="37vLTx">
+              <property role="Xl_RC" value="Parameter value is never read." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2RjUFdDrN1i" role="3cqZAp" />
         <node concept="3clFbF" id="18k56XDr0M2" role="3cqZAp">
           <node concept="37vLTI" id="18k56XDr0M3" role="3clFbG">
             <node concept="3EllGN" id="18k56XDr0M4" role="37vLTJ">
@@ -429,10 +445,26 @@
               </node>
             </node>
             <node concept="Xl_RD" id="18k56XDr1aF" role="37vLTx">
-              <property role="Xl_RC" value="Variable ''{0}'' is not used." />
+              <property role="Xl_RC" value="Variable ''{0}'' is never used." />
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2RjUFdDsb9x" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDsb9z" role="3clFbG">
+            <node concept="3EllGN" id="2RjUFdDsb9$" role="37vLTJ">
+              <node concept="37vLTw" id="2RjUFdDsb9F" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2RjUFdDsb9_" role="3ElVtu">
+                <property role="Xl_RC" value="warning.unused.parameter" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2RjUFdDsb9A" role="37vLTx">
+              <property role="Xl_RC" value="Parameter ''{0}'' is never used." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2RjUFdDsb6n" role="3cqZAp" />
         <node concept="3clFbF" id="18k56XDxUba" role="3cqZAp">
           <node concept="37vLTI" id="18k56XDxUbb" role="3clFbG">
             <node concept="3EllGN" id="18k56XDxUbc" role="37vLTJ">

@@ -124,6 +124,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -141,6 +142,10 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -317,6 +322,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -1581,6 +1587,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="2RjUFdDsmzY" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="2RjUFdDnzG9" role="3clFbw">
                 <node concept="37vLTw" id="2RjUFdDnzEL" role="2Oq$k0">
@@ -1592,18 +1599,73 @@
                   </node>
                 </node>
               </node>
+              <node concept="3eNFk2" id="2RjUFdDslbl" role="3eNLev">
+                <node concept="2OqwBi" id="2RjUFdDslm9" role="3eO9$A">
+                  <node concept="37vLTw" id="2RjUFdDslkM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
+                  </node>
+                  <node concept="1mIQ4w" id="2RjUFdDslxn" role="2OqNvi">
+                    <node concept="chp4Y" id="2RjUFdDslxS" role="cj9EA">
+                      <ref role="cht4Q" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2RjUFdDslbn" role="3eOfB_">
+                  <node concept="3cpWs8" id="2RjUFdDsl$g" role="3cqZAp">
+                    <node concept="3cpWsn" id="2RjUFdDsl$h" role="3cpWs9">
+                      <property role="TrG5h" value="variableDecl" />
+                      <node concept="3Tqbb2" id="2RjUFdDsl$i" role="1tU5fm">
+                        <ref role="ehGHo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                      </node>
+                      <node concept="1PxgMI" id="2RjUFdDsl$k" role="33vP2m">
+                        <ref role="1PxNhF" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                        <node concept="37vLTw" id="2RjUFdDsl$l" role="1PxMeX">
+                          <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="a7r0C" id="2RjUFdDsl$n" role="3cqZAp">
+                    <node concept="37vLTw" id="2RjUFdDsl$o" role="2OEOjV">
+                      <ref role="3cqZAo" node="2RjUFdDsl$h" resolve="variableDecl" />
+                    </node>
+                    <node concept="2YIFZM" id="2RjUFdDsl$p" role="a7wSD">
+                      <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+                      <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                      <node concept="Xl_RD" id="2RjUFdDsl$q" role="37wK5m">
+                        <property role="Xl_RC" value="warning.unused.assignment" />
+                      </node>
+                      <node concept="2OqwBi" id="2RjUFdDsl$r" role="37wK5m">
+                        <node concept="37vLTw" id="2RjUFdDsl$t" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2RjUFdDsl$h" resolve="variableDecl" />
+                        </node>
+                        <node concept="2qgKlT" id="2RjUFdDsl$v" role="2OqNvi">
+                          <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="2RjUFdDsmDm" role="3cqZAp" />
+                </node>
+              </node>
               <node concept="9aQIb" id="2RjUFdDnADE" role="9aQIa">
                 <node concept="3clFbS" id="2RjUFdDnADF" role="9aQI4">
-                  <node concept="34ab3g" id="2RjUFdDnBiR" role="3cqZAp">
+                  <node concept="34ab3g" id="2RjUFdDsnd8" role="3cqZAp">
                     <property role="35gtTG" value="warn" />
-                    <node concept="2YIFZM" id="2RjUFdDnBiS" role="34bqiv">
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                    <node concept="2YIFZM" id="2RjUFdDsnd9" role="34bqiv">
                       <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <node concept="Xl_RD" id="2RjUFdDnBiT" role="37wK5m">
-                        <property role="Xl_RC" value="Checking unused assignments: Expected AssignmentCommand but got {0}" />
+                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                      <node concept="Xl_RD" id="2RjUFdDsnda" role="37wK5m">
+                        <property role="Xl_RC" value="Checking unused assignments: Got node {0} of unexpected concept {1}" />
                       </node>
-                      <node concept="37vLTw" id="2RjUFdDnC4B" role="37wK5m">
+                      <node concept="37vLTw" id="2RjUFdDsndb" role="37wK5m">
                         <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
+                      </node>
+                      <node concept="2OqwBi" id="2RjUFdDrYWB" role="37wK5m">
+                        <node concept="37vLTw" id="2RjUFdDrYUu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
+                        </node>
+                        <node concept="2yIwOk" id="2RjUFdDrZ9u" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -1636,7 +1698,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="18k56XDxwxJ" role="1B3o_S" />
+      <node concept="3Tmbuc" id="2RjUFdDrHfT" role="1B3o_S" />
       <node concept="3cqZAl" id="18k56XDxwxK" role="3clF45" />
       <node concept="37vLTG" id="18k56XDxwxL" role="3clF46">
         <property role="TrG5h" value="program" />
@@ -1687,7 +1749,11 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="18k56XDxDHI" role="3cqZAp" />
+        <node concept="3SKdUt" id="2RjUFdDsyPg" role="3cqZAp">
+          <node concept="3SKdUq" id="2RjUFdDsz1h" role="3SKWNk">
+            <property role="3SKdUp" value="TODO check bevaves in the same way as checkUnreadAssignments - think if it is necessary" />
+          </node>
+        </node>
         <node concept="Jncv_" id="2RjUFdDmwyB" role="3cqZAp">
           <ref role="JncvD" to="dyrx:3a5rfDmYafO" resolve="Script" />
           <node concept="37vLTw" id="2RjUFdDmwJo" role="JncvB">
