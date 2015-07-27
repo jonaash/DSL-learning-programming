@@ -4,6 +4,7 @@ import cz.dsllp.gui.model.WorldHolder;
 import cz.dsllp.gui.model.controls.ControlsModel;
 import cz.dsllp.gui.model.world.World;
 import cz.dsllp.gui.service.WorldService;
+import cz.dsllp.gui.util.SwingInvoker;
 import cz.dsllp.gui.view.ControlsView;
 import cz.dsllp.gui.view.MainView;
 import org.slf4j.Logger;
@@ -78,8 +79,14 @@ public class GuiControllerImpl implements GuiController {
     public void createVisualWorld() {
         World world = worldHolder.getWorld();
         mainView.createWorldPanel(world);
-        controlsModel.getStart().setEnabled(true);
-        controlsModel.getStep().setEnabled(true);
+
+        new SwingInvoker(){
+            @Override
+            protected void operation() {
+                controlsModel.getStart().setEnabled(true);
+                controlsModel.getStep().setEnabled(true);
+            }
+        }.invokeLater();
     }
 
     @Override

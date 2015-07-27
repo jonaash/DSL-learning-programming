@@ -1,6 +1,7 @@
 package cz.dsllp.gui.model.controls;
 
 import cz.dsllp.gui.api.exception.GuiInternalException;
+import cz.dsllp.gui.util.SwingInvoker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +25,6 @@ import java.awt.event.ActionEvent;
 public class ControlsModel {
 
     private static final Logger logger = LoggerFactory.getLogger(ControlsModel.class);
-
 
 
     private static final int SPEED_SLIDER_DEFAULT = 2;
@@ -60,21 +60,25 @@ public class ControlsModel {
         });
     }
 
-
-
     public void addMessage(String message){
         appendMessage(message);
     }
 
-    private void appendMessage(String message){
-        int offset = messages.getLength();
-        try {
-            String messageWithNewLine = message + DOCUMENT_END_OF_LINE;
-            messages.insertString(offset, messageWithNewLine, null);
-            logger.debug("Printing message: {}", messageWithNewLine);
-        } catch (BadLocationException e) {
-            throw new GuiInternalException("Could not append message to document", e);
-        }
+    private void appendMessage(final String message) {
+        final int offset = messages.getLength();
+        final String messageWithNewLine = message + DOCUMENT_END_OF_LINE;
+        logger.debug("Printing message: {}", messageWithNewLine);
+
+        new SwingInvoker() {
+            @Override
+            protected void operation() {
+                try {
+                    messages.insertString(offset, messageWithNewLine, null);
+                } catch (BadLocationException e) {
+                    throw new GuiInternalException("Could not append message to document", e);
+                }
+            }
+        }.invokeLater();
     }
 
     private void clearMessages() {
