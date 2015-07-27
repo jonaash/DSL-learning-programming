@@ -1148,7 +1148,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIknAg" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="3LESm3" value="53b38693-ceee-4191-9779-c7bca6c13739" />
         <property role="2GAjPV" value="false" />
         <property role="TrG5h" value="KarelVariables" />
@@ -1167,12 +1167,6 @@
           <node concept="3bR9La" id="1CDPOOIknW0" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1CDPOOIknXh" role="3bR37C">
-          <node concept="3bR9La" id="1CDPOOIknXi" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="1CDPOOIknAg" resolve="KarelVariables" />
           </node>
         </node>
         <node concept="1SiIV0" id="1CDPOOIknXj" role="3bR37C">
@@ -1208,11 +1202,6 @@
         <node concept="1SiIV0" id="1CDPOOIknXt" role="3bR37C">
           <node concept="1Busua" id="1CDPOOIknXu" role="1SiIV1">
             <ref role="1Busuk" node="1CDPOOIkmAj" resolve="KarelConditions" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1CDPOOIknXv" role="3bR37C">
-          <node concept="1Busua" id="1CDPOOIknXw" role="1SiIV1">
-            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
         <node concept="1yeLz9" id="1CDPOOIknXx" role="1TViLv">

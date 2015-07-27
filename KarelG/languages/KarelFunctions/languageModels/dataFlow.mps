@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -46,10 +45,6 @@
       </concept>
       <concept id="1206442659665" name="jetbrains.mps.lang.dataFlow.structure.BuilderBlock" flags="in" index="3__wT9" />
       <concept id="1206442747519" name="jetbrains.mps.lang.dataFlow.structure.NodeParameter" flags="nn" index="3__QtB" />
-      <concept id="1206444349662" name="jetbrains.mps.lang.dataFlow.structure.EmitWriteStatement" flags="nn" index="3_FXB6" />
-      <concept id="1206444622344" name="jetbrains.mps.lang.dataFlow.structure.BaseEmitVariableStatement" flags="nn" index="3_H0cg">
-        <child id="1206444629799" name="variable" index="3_H1SZ" />
-      </concept>
       <concept id="1206454052847" name="jetbrains.mps.lang.dataFlow.structure.EmitCodeForStatement" flags="nn" index="3AgYrR">
         <child id="1206454079161" name="codeFor" index="3Ah4Yx" />
       </concept>
@@ -79,47 +74,6 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
     </language>
   </registry>
-  <node concept="3_zdsH" id="14XUkkdVNwL">
-    <property role="3GE5qa" value="function" />
-    <ref role="3_znuS" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
-    <node concept="3__wT9" id="14XUkkdVNwM" role="3_A6iZ">
-      <node concept="3clFbS" id="14XUkkdVNwN" role="2VODD2">
-        <node concept="3clFbF" id="2RjUFdDit_U" role="3cqZAp">
-          <node concept="2OqwBi" id="2RjUFdDiuNY" role="3clFbG">
-            <node concept="2OqwBi" id="2RjUFdDitCx" role="2Oq$k0">
-              <node concept="3__QtB" id="2RjUFdDit_S" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2RjUFdDitQx" role="2OqNvi">
-                <ref role="3TtcxE" to="a5m:3hBhvFT4iaN" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="2RjUFdDiwKp" role="2OqNvi">
-              <node concept="1bVj0M" id="2RjUFdDiwKr" role="23t8la">
-                <node concept="3clFbS" id="2RjUFdDiwKs" role="1bW5cS">
-                  <node concept="3AgYrR" id="2RjUFdDiwN3" role="3cqZAp">
-                    <node concept="37vLTw" id="2RjUFdDiwP5" role="3Ah4Yx">
-                      <ref role="3cqZAo" node="2RjUFdDiwKt" resolve="it" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="2RjUFdDiwKt" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="2RjUFdDiwKu" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3AgYrR" id="30eT$TCxI8X" role="3cqZAp">
-          <node concept="2OqwBi" id="30eT$TCxIbD" role="3Ah4Yx">
-            <node concept="3__QtB" id="30eT$TCxI9l" role="2Oq$k0" />
-            <node concept="3TrEf2" id="30eT$TCxIoZ" role="2OqNvi">
-              <ref role="3Tt5mk" to="dyrx:5eWJqD2oA9V" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="3_zdsH" id="30eT$TCxIqs">
     <property role="3GE5qa" value="function" />
     <ref role="3_znuS" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
@@ -168,17 +122,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7jmg6noxZnN" role="3cqZAp" />
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="2RjUFdDisTN">
-    <property role="3GE5qa" value="function" />
-    <ref role="3_znuS" to="a5m:3hBhvFT4i9B" resolve="ParameterDeclaration" />
-    <node concept="3__wT9" id="2RjUFdDisTO" role="3_A6iZ">
-      <node concept="3clFbS" id="2RjUFdDisTP" role="2VODD2">
-        <node concept="3_FXB6" id="2RjUFdDisUu" role="3cqZAp">
-          <node concept="3__QtB" id="2RjUFdDisUI" role="3_H1SZ" />
-        </node>
       </node>
     </node>
   </node>

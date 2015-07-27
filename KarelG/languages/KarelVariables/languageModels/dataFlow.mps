@@ -88,8 +88,8 @@
     </node>
   </node>
   <node concept="3_zdsH" id="5B0fQ1kP8rg">
-    <property role="3GE5qa" value="variable" />
-    <ref role="3_znuS" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="3_znuS" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
     <node concept="3__wT9" id="5B0fQ1kP8rh" role="3_A6iZ">
       <node concept="3clFbS" id="5B0fQ1kP8ri" role="2VODD2">
         <node concept="3AgYrR" id="5B0fQ1kPaFA" role="3cqZAp">

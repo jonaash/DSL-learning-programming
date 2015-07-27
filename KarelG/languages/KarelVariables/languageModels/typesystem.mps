@@ -449,7 +449,7 @@
   </node>
   <node concept="1YbPZF" id="3hBhvFSpekl">
     <property role="TrG5h" value="typeof_AssignmentCommand" />
-    <property role="3GE5qa" value="variable" />
+    <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="3hBhvFSpekm" role="18ibNy">
       <node concept="nvevp" id="3hBhvFSpemf" role="3cqZAp">
         <node concept="2X1qdy" id="3hBhvFSpemg" role="2X0Ygz">
@@ -519,7 +519,7 @@
     </node>
     <node concept="1YaCAy" id="3hBhvFSpeko" role="1YuTPh">
       <property role="TrG5h" value="assignment" />
-      <ref role="1YaFvo" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+      <ref role="1YaFvo" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="3hBhvFSxTCg">
@@ -1551,7 +1551,7 @@
                     </node>
                     <node concept="2OqwBi" id="18k56XDwrjP" role="33vP2m">
                       <node concept="1PxgMI" id="2RjUFdDn$XS" role="2Oq$k0">
-                        <ref role="1PxNhF" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+                        <ref role="1PxNhF" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
                         <node concept="37vLTw" id="2RjUFdDn$Km" role="1PxMeX">
                           <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
                         </node>
@@ -1595,7 +1595,7 @@
                 </node>
                 <node concept="1mIQ4w" id="2RjUFdDnzRo" role="2OqNvi">
                   <node concept="chp4Y" id="2RjUFdDnzRT" role="cj9EA">
-                    <ref role="cht4Q" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+                    <ref role="cht4Q" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
                   </node>
                 </node>
               </node>

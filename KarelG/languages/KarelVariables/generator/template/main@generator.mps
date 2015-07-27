@@ -192,6 +192,7 @@
   </registry>
   <node concept="bUwia" id="2WqFKNCAe_c">
     <property role="TrG5h" value="main" />
+    <property role="3GE5qa" value="expression" />
     <node concept="2rT7sh" id="2WqFKNE42gp" role="2rTMjI">
       <property role="TrG5h" value="variable" />
       <ref role="2rTdP9" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
@@ -271,9 +272,9 @@
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNE4Hic" role="3acgRq">
-      <ref role="30HIoZ" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+      <ref role="30HIoZ" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
       <node concept="j$656" id="2WqFKNE9lHz" role="1lVwrX">
-        <ref role="v9R2y" node="2WqFKNE4HxS" resolve="reduce_AssignmentCommand" />
+        <ref role="v9R2y" node="2WqFKNE4HxS" resolve="reduce_AssignmentExpression" />
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNEg8hF" role="3acgRq">
@@ -567,9 +568,9 @@
     </node>
   </node>
   <node concept="13MO4I" id="2WqFKNE4HxS">
-    <property role="TrG5h" value="reduce_AssignmentCommand" />
-    <property role="3GE5qa" value="variable" />
-    <ref role="3gUMe" to="3y9h:1GufzGWfyAd" resolve="AssignmentCommand" />
+    <property role="TrG5h" value="reduce_AssignmentExpression" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="3gUMe" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
     <node concept="9aQIb" id="2WqFKNE4HxX" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNE4HxZ" role="9aQI4">
         <node concept="3cpWs8" id="2WqFKNE4Hy4" role="3cqZAp">
@@ -614,8 +615,8 @@
                 </node>
               </node>
             </node>
+            <node concept="raruj" id="7KcPMNJhuYp" role="lGtFl" />
           </node>
-          <node concept="raruj" id="1GufzGWgz6l" role="lGtFl" />
         </node>
       </node>
     </node>
