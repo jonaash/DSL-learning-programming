@@ -321,11 +321,11 @@
   </node>
   <node concept="1M2fIO" id="6H9YPQxHHWU">
     <property role="3GE5qa" value="variable" />
-    <ref role="1M2myG" to="dyrx:2WqFKNDO42N" resolve="LocalVariableReference" />
+    <ref role="1M2myG" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
     <node concept="1N5Pfh" id="1GufzGWegTF" role="1Mr941">
-      <ref role="1N5Vy1" to="dyrx:2WqFKNDO42O" />
-      <node concept="1dDu$B" id="1GufzGWegTL" role="1N6uqs">
-        <ref role="1dDu$A" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+      <ref role="1N5Vy1" to="dyrx:2WqFKNDO42m" />
+      <node concept="1dDu$B" id="7KcPMNIXMut" role="1N6uqs">
+        <ref role="1dDu$A" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
       </node>
     </node>
   </node>
@@ -334,7 +334,7 @@
     <ref role="1M2myG" to="dyrx:1IJMvjRjER" resolve="CommandList" />
     <node concept="3EP7_v" id="1GufzGWeeBz" role="1MtirG">
       <node concept="1dDu$B" id="1GufzGWeeKb" role="3EP$qY">
-        <ref role="1dDu$A" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+        <ref role="1dDu$A" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
       </node>
     </node>
   </node>

@@ -9,6 +9,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
@@ -129,6 +130,9 @@
     <ref role="1TJDcQ" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="PrWs8" id="aB0Z16Oiyz" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJ2cE7" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
     </node>
     <node concept="1TJgyj" id="aB0Z16Ok4W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

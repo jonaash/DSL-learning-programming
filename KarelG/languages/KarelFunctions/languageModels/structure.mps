@@ -6,6 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
@@ -15,8 +17,12 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -42,18 +48,6 @@
     <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
-  <node concept="1TIwiD" id="3hBhvFT4ia6">
-    <property role="TrG5h" value="ParameterReference" />
-    <property role="3GE5qa" value="function" />
-    <property role="R4oN_" value="referres to parameter value" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
-    <node concept="1TJgyj" id="3hBhvFT4ia$" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <ref role="20lvS9" node="3hBhvFT4i9B" resolve="ParameterDeclaration" />
-      <ref role="20ksaX" to="dyrx:2WqFKNDO42m" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3hBhvFT4iaH">
     <property role="TrG5h" value="FunctionDefinition" />
     <property role="3GE5qa" value="function" />
@@ -71,6 +65,12 @@
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="parameters" />
       <ref role="20lvS9" node="3hBhvFT4i9B" resolve="ParameterDeclaration" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJ29wm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJ3KlS" role="PzmwI">
+      <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT4iaK">

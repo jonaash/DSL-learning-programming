@@ -290,18 +290,6 @@
     <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
-  <node concept="1TIwiD" id="2WqFKNDO42N">
-    <property role="TrG5h" value="LocalVariableReference" />
-    <property role="3GE5qa" value="variable" />
-    <property role="R4oN_" value="reference to a local variable" />
-    <ref role="1TJDcQ" node="2WqFKNDO42l" resolve="VariableReference" />
-    <node concept="1TJgyj" id="2WqFKNDO42O" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <ref role="20ksaX" node="2WqFKNDO42m" />
-      <ref role="20lvS9" node="2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2WqFKNCAeGz">
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="R5$K7" value="true" />
@@ -332,7 +320,7 @@
   </node>
   <node concept="1TIwiD" id="2WqFKNDO42l">
     <property role="TrG5h" value="VariableReference" />
-    <property role="R5$K7" value="true" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="variable" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
