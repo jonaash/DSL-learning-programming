@@ -145,5 +145,48 @@
       <ref role="20lvS9" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7KcPMNJflpH">
+    <property role="3GE5qa" value="class.member" />
+    <property role="TrG5h" value="ThisExpression" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJflq2">
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="ReferenceExpression" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJfsB9">
+    <property role="TrG5h" value="ClassType" />
+    <property role="3GE5qa" value="type" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+    <node concept="1TJgyj" id="7KcPMNJfsBa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJfsDD">
+    <property role="TrG5h" value="DotOperator" />
+    <property role="3GE5qa" value="expression" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJfsDG">
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="MethodCall" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="7KcPMNJfsDH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJicY_">
+    <property role="3GE5qa" value="class.member" />
+    <property role="TrG5h" value="Constructor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

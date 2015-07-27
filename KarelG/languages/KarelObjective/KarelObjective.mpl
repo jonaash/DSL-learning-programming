@@ -19,6 +19,7 @@
         <dependency reexport="false">aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">d223546c-3e13-4afc-be4a-36273604a4c6(KarelVariables#3394217739153893707)</dependency>
+        <dependency reexport="false">1049e1e4-e198-4fe2-af4a-15791afe439a(KarelObjective)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>

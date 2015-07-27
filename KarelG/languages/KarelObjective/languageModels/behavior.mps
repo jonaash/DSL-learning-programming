@@ -11,6 +11,7 @@
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -21,6 +22,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -41,6 +43,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -274,6 +277,27 @@
     </node>
     <node concept="13hLZK" id="7KcPMNJb_2K" role="13h7CW">
       <node concept="3clFbS" id="7KcPMNJb_2L" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7KcPMNJfsBY">
+    <property role="3GE5qa" value="type" />
+    <ref role="13h7C2" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+    <node concept="13hLZK" id="7KcPMNJfsBZ" role="13h7CW">
+      <node concept="3clFbS" id="7KcPMNJfsC0" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7KcPMNJfsD0" role="13h7CS">
+      <property role="TrG5h" value="getDefaultInitTypeValue" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:2WqFKNE1H27" resolve="getDefaultInitTypeValue" />
+      <node concept="3Tm1VV" id="7KcPMNJfsD1" role="1B3o_S" />
+      <node concept="3clFbS" id="7KcPMNJfsD8" role="3clF47">
+        <node concept="3cpWs6" id="7KcPMNJfsDe" role="3cqZAp">
+          <node concept="10Nm6u" id="7KcPMNJfsDt" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7KcPMNJfsD9" role="3clF45" />
     </node>
   </node>
 </model>
