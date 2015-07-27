@@ -65,7 +65,9 @@
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
       <concept id="3776063756796240591" name="KarelFunctions.structure.VoidType" flags="ng" index="3dtAsP" />
-      <concept id="3776063756796240560" name="KarelFunctions.structure.FunctionCall" flags="ng" index="3dtAta" />
+      <concept id="3776063756796240560" name="KarelFunctions.structure.FunctionCall" flags="ng" index="3dtAta">
+        <child id="3776063756797739467" name="parameters" index="3djOgL" />
+      </concept>
       <concept id="3776063756796240557" name="KarelFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn">
         <child id="3776063756796240563" name="parameters" index="3dtAt9" />
         <child id="3776063756796240561" name="returnType" index="3dtAtb" />
@@ -170,6 +172,9 @@
       <node concept="3dudH9" id="14XUkkdJbER" role="3jGSnO">
         <node concept="3dtAta" id="14XUkkdJbEO" role="3dudC3">
           <ref role="hRIc0" node="14XUkkdIUtb" resolve="countMarks" />
+          <node concept="36Kqmr" id="7KcPMNJ6HYU" role="3djOgL">
+            <property role="36Kqnr" value="6" />
+          </node>
         </node>
       </node>
       <node concept="17J3f2" id="5Ihd_CfnfCr" role="3jGSnO" />

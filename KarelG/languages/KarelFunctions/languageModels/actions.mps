@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
@@ -97,7 +96,7 @@
     <property role="TrG5h" value="functionCallCommand" />
     <node concept="3FOIzC" id="3hBhvFTdJMd" role="3FOPby">
       <property role="3mWAmy" value="allows to write function call in place of Command" />
-      <ref role="3FOWKa" to="tpee:gEShaYr" resolve="AbstractCreator" />
+      <ref role="3FOWKa" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
       <node concept="tYCnQ" id="3hBhvFTdJMk" role="tZc4B">
         <ref role="uz4UX" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
         <node concept="yEb5T" id="3hBhvFTdJMO" role="uz6Si">

@@ -19,7 +19,6 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" implicit="true" />
     <import index="a7pc" ref="r:9674315f-e343-40a4-a337-9711999ea66a(KarelFunctions.behavior)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
@@ -790,8 +789,8 @@
                 </node>
               </node>
               <node concept="1_3QMl" id="2RjUFdDrQWA" role="1_3QMm">
-                <node concept="3gn64h" id="2RjUFdDrWPe" role="3Kbmr1">
-                  <ref role="3gnhBz" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+                <node concept="3gn64h" id="7KcPMNJ7_CC" role="3Kbmr1">
+                  <ref role="3gnhBz" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
                 </node>
                 <node concept="3clFbS" id="2RjUFdDrQWC" role="3Kbo56">
                   <node concept="3cpWs8" id="2RjUFdDrWRE" role="3cqZAp">
