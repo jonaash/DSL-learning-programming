@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/KarelBasic/sandbox/KarelBasic.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelConditions/KarelConditions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelFunctions/KarelFunctions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/KarelMapDefinition/KarelMapDefinition.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelVariables/KarelVariables.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Common/Common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" folder="" />
@@ -13,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/KarelJava/KarelJava.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/StandaloneIDE.build/StandaloneIDE.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ViewPlugin/ViewPlugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="" />
     </projectModules>
   </component>
 </project>
