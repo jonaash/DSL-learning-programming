@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="3717222724954931025" name="KarelBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK" />
       <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
         <child id="7286718421228329341" name="message" index="16wSqL" />
@@ -55,7 +56,11 @@
       </node>
       <node concept="17GwzF" id="2PnTnxEU3i1" role="3jGSnO" />
       <node concept="1$shr6" id="ATD4KvcqQi" role="3jGSnO" />
-      <node concept="1$shr6" id="ATD4KvcqQo" role="3jGSnO" />
+      <node concept="2kp8ke" id="2RjUFdDvaBT" role="3jGSnO">
+        <node concept="16y5rI" id="2RjUFdDvaBU" role="16wSqL">
+          <property role="16xLMo" value="Hello world!" />
+        </node>
+      </node>
       <node concept="17J3Kp" id="jBG8nbFEMW" role="3jGSnO">
         <property role="17J3Nn" value="coomm" />
       </node>
