@@ -59,6 +59,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="8gmNnrJKBi" resolve="FieldVariableDeclaration" />
     </node>
+    <node concept="1TJgyj" id="7KcPMNJvgrF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7KcPMNJicY_" resolve="ConstructorDefinition" />
+    </node>
     <node concept="1TJgyj" id="7KcPMNJ6upa" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="methods" />
@@ -170,23 +176,80 @@
     <property role="TrG5h" value="DotOperator" />
     <property role="3GE5qa" value="expression" />
     <property role="34LRSv" value="." />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="7KcPMNJAnay" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7KcPMNJASib" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7KcPMNJAkcq" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJBZCN" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:7KcPMNJAT6q" resolve="IBinaryLike" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJFepn" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsDG">
-    <property role="3GE5qa" value="class" />
+    <property role="3GE5qa" value="class.member" />
     <property role="TrG5h" value="MethodCall" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7KcPMNJfsDH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
     </node>
+    <node concept="PrWs8" id="7KcPMNJAnaD" role="PzmwI">
+      <ref role="PrY4T" node="7KcPMNJAkcq" resolve="IOperation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJicY_">
     <property role="3GE5qa" value="class.member" />
-    <property role="TrG5h" value="Constructor" />
+    <property role="TrG5h" value="ConstructorDefinition" />
+    <property role="34LRSv" value="constructor" />
+    <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
+    <node concept="PrWs8" id="7KcPMNJwoRf" role="PzmwI">
+      <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJwmdX">
+    <property role="3GE5qa" value="class.member" />
+    <property role="TrG5h" value="ConstructorCall" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="7KcPMNJwmdY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="class" />
+      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7KcPMNJAkcq">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="IOperation" />
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJAnaA">
+    <property role="3GE5qa" value="class.member" />
+    <property role="TrG5h" value="FieldReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7KcPMNJAnaB" role="PzmwI">
+      <ref role="PrY4T" node="7KcPMNJAkcq" resolve="IOperation" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJNqyn" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+    </node>
+    <node concept="1TJgyj" id="7KcPMNJEbU2" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="8gmNnrJKBi" resolve="FieldVariableDeclaration" />
+    </node>
   </node>
 </model>
 

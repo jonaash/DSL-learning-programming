@@ -20,6 +20,9 @@
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
       </concept>
       <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
+      <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
+        <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
       <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739174290881" name="KarelBasic.structure.LocalVariableDeclaration" flags="ng" index="36MCFd" />
@@ -28,14 +31,23 @@
       </concept>
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <child id="3394217739174290864" name="type" index="36MCEW" />
+        <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756796240487" name="KarelBasic.structure.ParameterDeclaration" flags="ng" index="3dtAut" />
+      <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739178660495" name="KarelVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
@@ -48,12 +60,24 @@
       </concept>
     </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="KarelObjective">
+      <concept id="8938755948415928937" name="KarelObjective.structure.DotOperator" flags="ng" index="2jchP5">
+        <child id="8938755948421935778" name="expression" index="2j_qme" />
+        <child id="8938755948422071435" name="operation" index="2j_PeB" />
+      </concept>
       <concept id="8938755948415928777" name="KarelObjective.structure.ClassType" flags="ng" index="2jchV_">
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
+      </concept>
+      <concept id="8938755948416651173" name="KarelObjective.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
+      <concept id="8938755948420359037" name="KarelObjective.structure.ConstructorCall" flags="ng" index="2jzrhh">
+        <reference id="8938755948420359038" name="class" index="2jzrhi" />
+      </concept>
+      <concept id="8938755948421935782" name="KarelObjective.structure.FieldReference" flags="ng" index="2j_qma">
+        <reference id="8938755948422938242" name="declaration" index="2jD6AI" />
       </concept>
       <concept id="148719074581307086" name="KarelObjective.structure.ClassDefinition" flags="ng" index="3pFwnV">
         <child id="8938755948413576755" name="fields" index="2j5j4v" />
         <child id="8938755948413576778" name="methods" index="2j5j5A" />
+        <child id="8938755948420073195" name="constructors" index="2jst77" />
       </concept>
       <concept id="148719074581350866" name="KarelObjective.structure.FieldVariableDeclaration" flags="ng" index="3pFPbB" />
       <concept id="148719074581351648" name="KarelObjective.structure.IClassMember" flags="ng" index="3pFPvl">
@@ -73,6 +97,13 @@
   </registry>
   <node concept="3pFwnV" id="7KcPMNJ6HO_">
     <property role="TrG5h" value="BasicClass" />
+    <node concept="2jh1y9" id="7KcPMNJyQbA" role="2jst77">
+      <node concept="3dtAsP" id="7KcPMNJyQbB" role="2jg$Xp" />
+      <node concept="3jGSmg" id="7KcPMNJyQbC" role="hRHZh">
+        <node concept="17J3f2" id="7KcPMNJyQbD" role="3jGSnO" />
+      </node>
+      <node concept="3pOcrW" id="7KcPMNJyQbK" role="2j5jbD" />
+    </node>
     <node concept="3pOcrA" id="7KcPMNJp1S6" role="2j5j5A">
       <node concept="3dtAtn" id="7KcPMNJp1S7" role="2j5B9k">
         <property role="TrG5h" value="publicVoid" />
@@ -91,6 +122,24 @@
               <property role="TrG5h" value="b" />
               <node concept="2jchV_" id="7KcPMNJp1WX" role="36MCEW">
                 <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
+              </node>
+              <node concept="2jzrhh" id="7KcPMNJE_PO" role="36MIYJ">
+                <ref role="2jzrhi" node="7KcPMNJ6HO_" resolve="BasicClass" />
+              </node>
+            </node>
+          </node>
+          <node concept="3dudH9" id="7KcPMNJNqxy" role="3jGSnO">
+            <node concept="B81uQ" id="7KcPMNJNqxX" role="3dudC3">
+              <node concept="2jchP5" id="7KcPMNJNqxK" role="B81dD">
+                <node concept="2j_qma" id="7KcPMNJS1Ct" role="2j_PeB">
+                  <ref role="2jD6AI" node="7KcPMNJ6HP1" resolve="publicNumber" />
+                </node>
+                <node concept="36MIYp" id="7KcPMNJNqxw" role="2j_qme">
+                  <ref role="36MIYq" node="7KcPMNJp1X2" resolve="b" />
+                </node>
+              </node>
+              <node concept="36Kqmr" id="7KcPMNJS1CD" role="B81dI">
+                <property role="36Kqnr" value="8" />
               </node>
             </node>
           </node>
@@ -171,6 +220,9 @@
         <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
       </node>
     </node>
+  </node>
+  <node concept="3pFwnV" id="7KcPMNJ$r1X">
+    <property role="TrG5h" value="Class" />
   </node>
 </model>
 

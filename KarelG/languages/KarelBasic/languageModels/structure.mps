@@ -333,6 +333,9 @@
     <node concept="PrWs8" id="7KcPMNJfIqP" role="PzmwI">
       <ref role="PrY4T" node="3hBhvFT7TZS" resolve="IStandaloneExpression" />
     </node>
+    <node concept="PrWs8" id="7KcPMNJI2Uw" role="PzmwI">
+      <ref role="PrY4T" node="7KcPMNJI2DJ" resolve="IVariableReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6kvBWKz_Wyo">
     <property role="3GE5qa" value="expression" />
@@ -385,6 +388,9 @@
       <property role="20kJfa" value="rightExpression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7KcPMNJATUG" role="PzmwI">
+      <ref role="PrY4T" node="7KcPMNJAT6q" resolve="IBinaryLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFS$B8N">
@@ -557,6 +563,47 @@
     <property role="34LRSv" value="none" />
     <property role="R4oN_" value="nothing" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="7KcPMNJwYJD">
+    <property role="3GE5qa" value="routine" />
+    <property role="TrG5h" value="ParameterFill" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7KcPMNJwYL9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2mJ" resolve="Type" />
+    </node>
+    <node concept="1TJgyj" id="7KcPMNJwYLb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7KcPMNJwYOl">
+    <property role="3GE5qa" value="routine" />
+    <property role="TrG5h" value="IMethodCall" />
+    <node concept="1TJgyj" id="7KcPMNJwYQw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7KcPMNJwYJD" resolve="ParameterFill" />
+    </node>
+    <node concept="1TJgyj" id="7KcPMNJwYQy" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7KcPMNJAT6q">
+    <property role="3GE5qa" value="expression.operator" />
+    <property role="TrG5h" value="IBinaryLike" />
+  </node>
+  <node concept="PlHQZ" id="7KcPMNJI2DJ">
+    <property role="3GE5qa" value="variable" />
+    <property role="TrG5h" value="IVariableReference" />
   </node>
 </model>
 

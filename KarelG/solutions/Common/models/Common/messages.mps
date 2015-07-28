@@ -414,7 +414,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="7jmg6nozscM" role="37vLTx">
-              <property role="Xl_RC" value="Assigned value is never read from the variable ''{0}''" />
+              <property role="Xl_RC" value="Assigned value is never read." />
             </node>
           </node>
         </node>

@@ -101,7 +101,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variable" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="1GufzGWfyPl" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
