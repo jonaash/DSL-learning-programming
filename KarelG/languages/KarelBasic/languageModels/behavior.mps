@@ -18,6 +18,7 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -30,6 +31,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
+        <property id="1225194472833" name="isPrivate" index="13i0is" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -1961,6 +1963,38 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="3uMihSQAdh0" role="13h7CS">
+      <property role="13i0is" value="false" />
+      <property role="TrG5h" value="getPresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3Tm1VV" id="3uMihSQAdi8" role="1B3o_S" />
+      <node concept="3clFbS" id="3uMihSQAdkn" role="3clF47">
+        <node concept="3cpWs6" id="3uMihSQAkWo" role="3cqZAp">
+          <node concept="2YIFZM" id="3uMihSQAkYV" role="3cqZAk">
+            <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+            <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+            <node concept="Xl_RD" id="3uMihSQAiuy" role="37wK5m">
+              <property role="Xl_RC" value="presentation.concept.variable.declaration" />
+            </node>
+            <node concept="2OqwBi" id="3uMihSQAl5m" role="37wK5m">
+              <node concept="13iPFW" id="3uMihSQAl1k" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3uMihSQAlvy" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3uMihSQAlCI" role="37wK5m">
+              <node concept="13iPFW" id="3uMihSQAl_h" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3uMihSQAlR7" role="2OqNvi">
+                <ref role="3Tt5mk" to="dyrx:2WqFKNDO2mK" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="3uMihSQAdko" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6kvBWKzBw2M">

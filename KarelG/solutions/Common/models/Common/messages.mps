@@ -624,7 +624,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="jBG8nbHO3I" role="3cqZAp" />
-        <node concept="3clFbH" id="jBG8nbI0Am" role="3cqZAp" />
+        <node concept="3clFbF" id="3uMihSQAiuu" role="3cqZAp">
+          <node concept="37vLTI" id="3uMihSQAiuv" role="3clFbG">
+            <node concept="Xl_RD" id="3uMihSQAiuw" role="37vLTx">
+              <property role="Xl_RC" value="{0} ({1})" />
+            </node>
+            <node concept="3EllGN" id="3uMihSQAiux" role="37vLTJ">
+              <node concept="Xl_RD" id="3uMihSQAiuy" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.variable.declaration" />
+              </node>
+              <node concept="37vLTw" id="3uMihSQAiuB" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
         <node concept="3clFbH" id="3hBhvFSIIlC" role="3cqZAp" />
       </node>
