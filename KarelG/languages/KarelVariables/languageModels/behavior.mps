@@ -165,6 +165,12 @@
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -488,6 +494,30 @@
         <node concept="x79VA" id="7KcPMNJ3HN1" role="x79VK">
           <property role="x79VB" value="scope with added for cycle variable" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1BMnhOnhDfn">
+    <property role="3GE5qa" value="expression.converter" />
+    <ref role="13h7C2" to="3y9h:aB0Z16LeEo" resolve="ConverterToString" />
+    <node concept="13hLZK" id="1BMnhOnhDfo" role="13h7CW">
+      <node concept="3clFbS" id="1BMnhOnhDfp" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1BMnhOnhDhm" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="1BMnhOnhDhn" role="1B3o_S" />
+      <node concept="3clFbS" id="1BMnhOnhDhs" role="3clF47">
+        <node concept="3cpWs6" id="1BMnhOnhJtT" role="3cqZAp">
+          <node concept="35c_gC" id="1BMnhOnhJu7" role="3cqZAk">
+            <ref role="35c_gD" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+          </node>
+        </node>
+      </node>
+      <node concept="3bZ5Sz" id="1BMnhOnhDht" role="3clF45">
+        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
   </node>

@@ -503,6 +503,9 @@
     <node concept="PrWs8" id="7KcPMNJl08F" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
     </node>
+    <node concept="PrWs8" id="1BMnhOng08Q" role="PzmwI">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="14XUkkdJcI9">
     <property role="TrG5h" value="IMethodsDefinition" />
@@ -541,6 +544,9 @@
     <property role="TrG5h" value="IVariableDeclaration" />
     <node concept="PrWs8" id="2RjUFdDsT2Z" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1BMnhOnfOiS" role="PrDN$">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT4i9B">
@@ -597,6 +603,9 @@
   <node concept="PlHQZ" id="7KcPMNJI2DJ">
     <property role="3GE5qa" value="variable" />
     <property role="TrG5h" value="IVariableReference" />
+    <node concept="PrWs8" id="1BMnhOnfOdU" role="PrDN$">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
   </node>
 </model>
 
