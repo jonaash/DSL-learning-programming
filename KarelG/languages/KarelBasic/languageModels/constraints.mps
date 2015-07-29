@@ -9,10 +9,10 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
-    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -39,6 +39,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -168,15 +171,10 @@
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
-        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
-      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -245,9 +243,6 @@
             <node concept="3cpWs8" id="aB0Z16NTgA" role="3cqZAp">
               <node concept="3cpWsn" id="aB0Z16NTgD" role="3cpWs9">
                 <property role="TrG5h" value="type" />
-                <node concept="3bZ5Sz" id="aB0Z16NTg$" role="1tU5fm">
-                  <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-                </node>
                 <node concept="2OqwBi" id="aB0Z16NSpA" role="33vP2m">
                   <node concept="1PxgMI" id="aB0Z16NSG7" role="2Oq$k0">
                     <ref role="1PxNhF" to="dyrx:2WqFKNDRDv2" resolve="ITypeAnnotable" />
@@ -256,6 +251,9 @@
                   <node concept="2qgKlT" id="aB0Z16NT0F" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
                   </node>
+                </node>
+                <node concept="3Tqbb2" id="1BMnhOnuqG7" role="1tU5fm">
+                  <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
                 </node>
               </node>
             </node>
@@ -288,9 +286,11 @@
                     <node concept="37vLTw" id="aB0Z16NVZK" role="2Oq$k0">
                       <ref role="3cqZAo" node="aB0Z16NTgD" resolve="type" />
                     </node>
-                    <node concept="2Zo12i" id="aB0Z16NVZL" role="2OqNvi">
-                      <node concept="chp4Y" id="aB0Z16NZhj" role="2Zo12j">
-                        <ref role="cht4Q" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+                    <node concept="2qgKlT" id="1BMnhOnusl8" role="2OqNvi">
+                      <ref role="37wK5l" to="ljn0:1BMnhOnqmiD" resolve="isExactly" />
+                      <node concept="10M0yZ" id="1BMnhOnusub" role="37wK5m">
+                        <ref role="1PxDUh" to="ljn0:1BMnhOnqlwJ" resolve="TypeUtil" />
+                        <ref role="3cqZAo" to="ljn0:1BMnhOnqra5" resolve="INTEGER" />
                       </node>
                     </node>
                   </node>
@@ -381,14 +381,14 @@
             <node concept="3cpWs8" id="1BMnhOnjjbH" role="3cqZAp">
               <node concept="3cpWsn" id="1BMnhOnjjbK" role="3cpWs9">
                 <property role="TrG5h" value="type" />
-                <node concept="3bZ5Sz" id="1BMnhOnjjbF" role="1tU5fm">
-                  <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-                </node>
                 <node concept="2OqwBi" id="1BMnhOnjk4g" role="33vP2m">
                   <node concept="EsrRn" id="1BMnhOnjjX1" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1BMnhOnjkCT" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
                   </node>
+                </node>
+                <node concept="3Tqbb2" id="1BMnhOnut7R" role="1tU5fm">
+                  <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
                 </node>
               </node>
             </node>
@@ -425,23 +425,25 @@
                 </node>
               </node>
               <node concept="1Wc70l" id="1BMnhOnjluH" role="3clFbw">
-                <node concept="3fqX7Q" id="1BMnhOnjmhp" role="3uHU7w">
-                  <node concept="2OqwBi" id="1BMnhOnjmhr" role="3fr31v">
-                    <node concept="37vLTw" id="1BMnhOnjmhs" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1BMnhOnjjbK" resolve="type" />
-                    </node>
-                    <node concept="2Zo12i" id="1BMnhOnjmht" role="2OqNvi">
-                      <node concept="chp4Y" id="1BMnhOnjmhu" role="2Zo12j">
-                        <ref role="cht4Q" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3y3z36" id="1BMnhOnjlfA" role="3uHU7B">
                   <node concept="37vLTw" id="1BMnhOnjl6T" role="3uHU7B">
                     <ref role="3cqZAo" node="1BMnhOnjjbK" resolve="type" />
                   </node>
                   <node concept="10Nm6u" id="1BMnhOnjln7" role="3uHU7w" />
+                </node>
+                <node concept="3fqX7Q" id="1BMnhOnuEno" role="3uHU7w">
+                  <node concept="2OqwBi" id="1BMnhOnuEnq" role="3fr31v">
+                    <node concept="37vLTw" id="1BMnhOnuEnr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1BMnhOnjjbK" resolve="type" />
+                    </node>
+                    <node concept="2qgKlT" id="1BMnhOnuEns" role="2OqNvi">
+                      <ref role="37wK5l" to="ljn0:1BMnhOnqmiD" resolve="isExactly" />
+                      <node concept="10M0yZ" id="1BMnhOnuEnt" role="37wK5m">
+                        <ref role="1PxDUh" to="ljn0:1BMnhOnqlwJ" resolve="TypeUtil" />
+                        <ref role="3cqZAo" to="ljn0:1BMnhOnqra5" resolve="INTEGER" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

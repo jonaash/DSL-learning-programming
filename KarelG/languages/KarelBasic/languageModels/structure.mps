@@ -240,21 +240,21 @@
     <property role="TrG5h" value="BooleanType" />
     <property role="34LRSv" value="logical" />
     <property role="R4oN_" value="true or false" />
-    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mV">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="number" />
     <property role="R4oN_" value="integer number" />
-    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDQKD4">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="StringType" />
     <property role="34LRSv" value="text" />
     <property role="R4oN_" value="any text" />
-    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mJ">
     <property role="TrG5h" value="Type" />
@@ -561,7 +561,7 @@
     <property role="3GE5qa" value="type" />
     <property role="34LRSv" value="none" />
     <property role="R4oN_" value="nothing" />
-    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJwYJD">
     <property role="3GE5qa" value="routine" />
@@ -606,6 +606,13 @@
     <node concept="PrWs8" id="1BMnhOnfOdU" role="PrDN$">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1BMnhOnqAYu">
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="SimpleType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
 </model>
 

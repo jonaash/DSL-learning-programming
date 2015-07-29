@@ -168,9 +168,6 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
-        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
-      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -511,13 +508,18 @@
       <node concept="3Tm1VV" id="1BMnhOnhDhn" role="1B3o_S" />
       <node concept="3clFbS" id="1BMnhOnhDhs" role="3clF47">
         <node concept="3cpWs6" id="1BMnhOnhJtT" role="3cqZAp">
-          <node concept="35c_gC" id="1BMnhOnhJu7" role="3cqZAk">
-            <ref role="35c_gD" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+          <node concept="2OqwBi" id="1BMnhOnvwQf" role="3cqZAk">
+            <node concept="35c_gC" id="1BMnhOnhJu7" role="2Oq$k0">
+              <ref role="35c_gD" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+            </node>
+            <node concept="2qgKlT" id="1BMnhOnvx1E" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
+            </node>
           </node>
         </node>
       </node>
-      <node concept="3bZ5Sz" id="1BMnhOnhDht" role="3clF45">
-        <ref role="3bZ5Sy" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      <node concept="3Tqbb2" id="1BMnhOnvwLn" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
   </node>

@@ -163,6 +163,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -547,11 +548,14 @@
             <node concept="3clFbS" id="2WqFKNE3CmF" role="2VODD2">
               <node concept="3clFbF" id="2WqFKNE3CmG" role="3cqZAp">
                 <node concept="2OqwBi" id="2WqFKNE3CM4" role="3clFbG">
-                  <node concept="2OqwBi" id="2WqFKNE3CmH" role="2Oq$k0">
-                    <node concept="30H73N" id="2WqFKNE3CmI" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2WqFKNE3CIu" role="2OqNvi">
-                      <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+                  <node concept="2OqwBi" id="1BMnhOnvxym" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2WqFKNE3CmH" role="2Oq$k0">
+                      <node concept="30H73N" id="2WqFKNE3CmI" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="2WqFKNE3CIu" role="2OqNvi">
+                        <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+                      </node>
                     </node>
+                    <node concept="2yIwOk" id="1BMnhOnvxUW" role="2OqNvi" />
                   </node>
                   <node concept="2qgKlT" id="2WqFKNE3CXi" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:2WqFKNE1H27" resolve="getDefaultInitTypeValue" />
