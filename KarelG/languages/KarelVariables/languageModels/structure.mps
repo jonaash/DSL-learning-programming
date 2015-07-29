@@ -117,7 +117,7 @@
     <property role="3GE5qa" value="expression.converter" />
     <property role="TrG5h" value="ConverterToString" />
     <property role="34LRSv" value="conv" />
-    <ref role="1TJDcQ" to="dyrx:6kvBWKz_Wyo" resolve="StringExpression" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="aB0Z16Ll8v" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expression" />

@@ -466,7 +466,7 @@
     <property role="TrG5h" value="ToString_Conversion" />
     <node concept="3FOIzC" id="aB0Z16LljQ" role="3FOPby">
       <property role="3mWAmy" value="implicit conversion to String from other types" />
-      <ref role="3FOWKa" to="dyrx:6kvBWKz_Wyo" resolve="StringExpression" />
+      <ref role="3FOWKa" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
       <node concept="tYCnQ" id="aB0Z16LllO" role="tZc4B">
         <ref role="uz4UX" to="3y9h:aB0Z16LeEo" resolve="ConverterToString" />
         <node concept="yEb5T" id="aB0Z16LllQ" role="uz6Si">
