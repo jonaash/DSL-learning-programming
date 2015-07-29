@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,6 +15,9 @@
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="cttk" ref="r:5ff047e0-2953-4750-806a-bdc16824aa89(jetbrains.mps.smodel)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
+    <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -556,7 +560,7 @@
       <property role="TrG5h" value="isSubTypeOf" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ljn0:1BMnhOnutvV" resolve="isSubtypeOf" />
+      <ref role="13i0hy" to="ljn0:1BMnhOnutvV" resolve="isSubTypeOf" />
       <node concept="3Tm1VV" id="1BMnhOnvXtI" role="1B3o_S" />
       <node concept="3clFbS" id="1BMnhOnvXtN" role="3clF47">
         <node concept="3clFbJ" id="1BMnhOnyvKO" role="3cqZAp">
@@ -633,7 +637,7 @@
       <property role="TrG5h" value="isSuperTypeOf" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
-      <ref role="13i0hy" to="ljn0:1BMnhOnutBB" resolve="isSupertypeOf" />
+      <ref role="13i0hy" to="ljn0:1BMnhOnutBB" resolve="isSuperTypeOf" />
       <node concept="3Tm1VV" id="1BMnhOnvXtU" role="1B3o_S" />
       <node concept="3clFbS" id="1BMnhOnvXtZ" role="3clF47">
         <node concept="3clFbJ" id="1BMnhOnywBb" role="3cqZAp">
