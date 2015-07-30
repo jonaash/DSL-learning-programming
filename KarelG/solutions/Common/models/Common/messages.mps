@@ -640,7 +640,37 @@
           </node>
         </node>
         <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
-        <node concept="3clFbH" id="3hBhvFSIIlC" role="3cqZAp" />
+        <node concept="3clFbF" id="1ZF81FZUjdg" role="3cqZAp">
+          <node concept="37vLTI" id="1ZF81FZUjT_" role="3clFbG">
+            <node concept="3EllGN" id="1ZF81FZUjnS" role="37vLTJ">
+              <node concept="Xl_RD" id="1ZF81FZUjrH" role="3ElVtu">
+                <property role="Xl_RC" value="control.panel.not.initialized" />
+              </node>
+              <node concept="37vLTw" id="1ZF81FZUjde" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7iSQ$Ce1T6T" role="37vLTx">
+              <property role="Xl_RC" value="Panel is not initialized." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1ZF81FZUpps" role="3cqZAp">
+          <node concept="37vLTI" id="1ZF81FZUpYL" role="3clFbG">
+            <node concept="Xl_RD" id="1ZF81FZUq2M" role="37vLTx">
+              <property role="Xl_RC" value="Panel is turned off in configuration" />
+            </node>
+            <node concept="3EllGN" id="1ZF81FZUpGQ" role="37vLTJ">
+              <node concept="Xl_RD" id="1ZF81FZUpKZ" role="3ElVtu">
+                <property role="Xl_RC" value="control.panel.turned.off" />
+              </node>
+              <node concept="37vLTw" id="1ZF81FZUp_k" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1ZF81FZUj4A" role="3cqZAp" />
       </node>
     </node>
     <node concept="2YIFZL" id="7_uVVPcCT7O" role="jymVt">

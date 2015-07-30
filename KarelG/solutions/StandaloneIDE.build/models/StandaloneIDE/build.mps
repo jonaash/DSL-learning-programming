@@ -873,8 +873,20 @@
         </node>
         <node concept="1SiIV0" id="1JtUjhLyC_n" role="3bR37C">
           <node concept="3bR9La" id="1JtUjhLyC_o" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ZF81FZRQbD" role="3bR37C">
+          <node concept="3bR9La" id="1ZF81FZRQbE" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L2l" resolve="jetbrains.mps.baseLanguage.logging" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1ZF81FZRQbF" role="3bR37C">
+          <node concept="3bR9La" id="1ZF81FZRQbG" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:35abdaXtLpL" resolve="jetbrains.mps.baseLanguage.logging.runtime" />
           </node>
         </node>
       </node>

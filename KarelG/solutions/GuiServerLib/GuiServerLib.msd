@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" pluginKind="PLUGIN_CORE" compileInMPS="true">
+<solution name="GuiLib" uuid="9e2adce0-3032-497b-bf7e-e4b747a76a49" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

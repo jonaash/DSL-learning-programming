@@ -12,7 +12,7 @@
   </languages>
   <imports>
     <import index="f1am" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiServerLib/cz.dsllp.gui@java_stub)" />
-    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)" />
+    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.configuration)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="z9dx" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.view(GuiLib/cz.dsllp.gui.view@java_stub)" />
@@ -27,6 +27,7 @@
     <import index="2vhp" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.world(GuiLib/cz.dsllp.gui.model.world@java_stub)" />
     <import index="onej" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.controls(GuiLib/cz.dsllp.gui.model.controls@java_stub)" />
     <import index="f70c" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.controller(GuiLib/cz.dsllp.gui.controller@java_stub)" />
+    <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -57,9 +58,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1177326519037" name="jetbrains.mps.baseLanguage.structure.CommentedStatementsBlock" flags="nn" index="u8gfJ">
-        <child id="1177326540772" name="statement" index="u8lrQ" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -88,9 +86,15 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -98,16 +102,14 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <property id="4467513934994662257" name="forceMultiLine" index="TyiWK" />
-        <property id="4467513934994662256" name="forceOneLine" index="TyiWL" />
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -117,6 +119,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
@@ -155,7 +160,9 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
       <concept id="1205769003971" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration" flags="ng" index="2XrIbr" />
-      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL" />
+      <concept id="1205769149993" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodCallOperation" flags="nn" index="2XshWL">
+        <child id="1205770614681" name="actualArgument" index="2XxRq1" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -183,69 +190,60 @@
       <node concept="3clFbS" id="3H_tUICS7wC" role="3clF47">
         <node concept="SfApY" id="3H_tUICS7Tq" role="3cqZAp">
           <node concept="3clFbS" id="3H_tUICS7Tr" role="SfCbr">
-            <node concept="3SKdUt" id="3H_tUICS9O9" role="3cqZAp">
-              <node concept="3SKdUq" id="3H_tUICS9Sh" role="3SKWNk">
-                <property role="3SKdUp" value="check wheather GUI is not already initialized" />
-              </node>
-            </node>
-            <node concept="u8gfJ" id="6BEcVWAL5sx" role="3cqZAp">
-              <node concept="SfApY" id="3H_tUICS8g2" role="u8lrQ">
-                <node concept="3clFbS" id="3H_tUICS8g4" role="SfCbr">
-                  <node concept="3clFbF" id="3H_tUICS8ou" role="3cqZAp">
-                    <node concept="37vLTI" id="3H_tUICS8ov" role="3clFbG">
-                      <node concept="2OqwBi" id="3H_tUICS8ow" role="37vLTJ">
-                        <node concept="2WthIp" id="3H_tUICS8ox" role="2Oq$k0" />
-                        <node concept="2BZ7hE" id="3H_tUICS8oy" role="2OqNvi">
-                          <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="3H_tUICS8oz" role="37vLTx">
-                        <node concept="2YIFZM" id="3H_tUICS8o$" role="2Oq$k0">
-                          <ref role="1Pybhc" to="gj7t:~DependencyRepository" resolve="DependencyRepository" />
-                          <ref role="37wK5l" to="gj7t:~DependencyRepository.getInstance():com.googlecode.tinydi.DependencyRepository" resolve="getInstance" />
-                        </node>
-                        <node concept="liA8E" id="3H_tUICS8o_" role="2OqNvi">
-                          <ref role="37wK5l" to="gj7t:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
-                          <node concept="3VsKOn" id="3H_tUICS8oA" role="37wK5m">
-                            <ref role="3VsUkX" to="z9dx:~MainView" resolve="MainView" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+            <node concept="3clFbH" id="pLBRfXAYUc" role="3cqZAp" />
+            <node concept="3cpWs8" id="pLBRfXAUFN" role="3cqZAp">
+              <node concept="3cpWsn" id="pLBRfXAUFO" role="3cpWs9">
+                <property role="TrG5h" value="address" />
+                <node concept="17QB3L" id="pLBRfXAUMN" role="1tU5fm" />
+                <node concept="2YIFZM" id="pLBRfXAUFQ" role="33vP2m">
+                  <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+                  <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+                  <node concept="10M0yZ" id="pLBRfXAUFR" role="37wK5m">
+                    <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                    <ref role="3cqZAo" to="5htl:pLBRfXAk9d" resolve="RMI_ADDRESS" />
                   </node>
-                  <node concept="34ab3g" id="3H_tUICSaiQ" role="3cqZAp">
-                    <property role="35gtTG" value="info" />
-                    <node concept="Xl_RD" id="3H_tUICSaiS" role="34bqiv">
-                      <property role="Xl_RC" value="MainView already exists. It will be used." />
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="3H_tUICV4HZ" role="3cqZAp">
-                    <node concept="3SKdUq" id="3H_tUICV4KM" role="3SKWNk">
-                      <property role="3SKdUp" value="GUI is initialized, we are finished here" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="3H_tUICS95x" role="3cqZAp" />
-                  <node concept="3clFbH" id="3H_tUICV4M9" role="3cqZAp" />
-                </node>
-                <node concept="TDmWw" id="3H_tUICS8g5" role="TEbGg">
-                  <node concept="3clFbS" id="3H_tUICS8g7" role="TDEfX">
-                    <node concept="34ab3g" id="3H_tUICS8YG" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <property role="34fQS0" value="true" />
-                      <node concept="Xl_RD" id="3H_tUICS928" role="34bqiv">
-                        <property role="Xl_RC" value="MainView class not exists yet. Gui will be initialized." />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWsn" id="3H_tUICS8g9" role="TDEfY">
-                    <property role="TrG5h" value="e" />
-                    <node concept="3uibUv" id="3H_tUICS8OT" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~InstantiationException" resolve="InstantiationException" />
-                    </node>
+                  <node concept="3VsKOn" id="pLBRfXAUFS" role="37wK5m">
+                    <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="1JtUjhLyhYR" role="3cqZAp">
+              <node concept="3cpWsn" id="1JtUjhLyhYU" role="3cpWs9">
+                <property role="TrG5h" value="port" />
+                <node concept="10Oyi0" id="1JtUjhLyhYP" role="1tU5fm" />
+                <node concept="2YIFZM" id="pLBRfXAU5I" role="33vP2m">
+                  <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+                  <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+                  <node concept="10M0yZ" id="pLBRfXAUaY" role="37wK5m">
+                    <ref role="3cqZAo" to="5htl:pLBRfXAobR" resolve="RMI_PORT" />
+                    <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                  </node>
+                  <node concept="3VsKOn" id="pLBRfXAUvM" role="37wK5m">
+                    <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="pLBRfXAVa2" role="3cqZAp">
+              <node concept="3cpWsn" id="pLBRfXAVa5" role="3cpWs9">
+                <property role="TrG5h" value="serviceName" />
+                <node concept="17QB3L" id="pLBRfXAVa0" role="1tU5fm" />
+                <node concept="2YIFZM" id="pLBRfXAVnX" role="33vP2m">
+                  <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+                  <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+                  <node concept="10M0yZ" id="pLBRfXAVnY" role="37wK5m">
+                    <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                    <ref role="3cqZAo" to="5htl:pLBRfXAoc$" resolve="RMI_SERVICE_NAME" />
+                  </node>
+                  <node concept="3VsKOn" id="pLBRfXAVnZ" role="37wK5m">
+                    <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="pLBRfXAVrq" role="3cqZAp" />
+            <node concept="3clFbH" id="pLBRfXAZ08" role="3cqZAp" />
             <node concept="34ab3g" id="3H_tUICS7Tj" role="3cqZAp">
               <property role="35gtTG" value="info" />
               <node concept="2YIFZM" id="3H_tUICV3vS" role="34bqiv">
@@ -254,17 +252,14 @@
                 <node concept="Xl_RD" id="3H_tUICV3vT" role="37wK5m">
                   <property role="Xl_RC" value="Initializing GUI panel server on address {0}:{1}/{2}" />
                 </node>
-                <node concept="10M0yZ" id="3H_tUICV3vU" role="37wK5m">
-                  <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                <node concept="37vLTw" id="pLBRfXB0D9" role="37wK5m">
+                  <ref role="3cqZAo" node="pLBRfXAUFO" resolve="address" />
                 </node>
-                <node concept="10M0yZ" id="3H_tUICV3vV" role="37wK5m">
-                  <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                <node concept="37vLTw" id="pLBRfXB0GE" role="37wK5m">
+                  <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
                 </node>
-                <node concept="10M0yZ" id="3H_tUICV3vW" role="37wK5m">
-                  <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
+                <node concept="37vLTw" id="pLBRfXB3rH" role="37wK5m">
+                  <ref role="3cqZAo" node="pLBRfXAVa5" resolve="serviceName" />
                 </node>
               </node>
             </node>
@@ -273,17 +268,14 @@
               <node concept="2YIFZM" id="3H_tUICS7Ty" role="3clFbG">
                 <ref role="1Pybhc" to="f1am:~GuiInitializer" resolve="GuiInitializer" />
                 <ref role="37wK5l" to="f1am:~GuiInitializer.init(java.lang.String,int,java.lang.String):void" resolve="init" />
-                <node concept="10M0yZ" id="3H_tUICS7Tz" role="37wK5m">
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                  <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
+                <node concept="37vLTw" id="pLBRfXB3F3" role="37wK5m">
+                  <ref role="3cqZAo" node="pLBRfXAUFO" resolve="address" />
                 </node>
-                <node concept="10M0yZ" id="3H_tUICS7T$" role="37wK5m">
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                  <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
+                <node concept="37vLTw" id="pLBRfXB3Zv" role="37wK5m">
+                  <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
                 </node>
-                <node concept="10M0yZ" id="3H_tUICV2wW" role="37wK5m">
-                  <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                  <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
+                <node concept="37vLTw" id="pLBRfXB46t" role="37wK5m">
+                  <ref role="3cqZAo" node="pLBRfXAVa5" resolve="serviceName" />
                 </node>
               </node>
             </node>
@@ -335,6 +327,35 @@
       </node>
       <node concept="3Tm6S6" id="3H_tUICS7Qz" role="1B3o_S" />
     </node>
+    <node concept="2XrIbr" id="1ZF81FZUPaB" role="2XNbBy">
+      <property role="TrG5h" value="setNotInitializedMessage" />
+      <node concept="3cqZAl" id="1ZF81FZUPvs" role="3clF45" />
+      <node concept="3clFbS" id="1ZF81FZUPaD" role="3clF47">
+        <node concept="3clFbF" id="1ZF81FZUv8m" role="3cqZAp">
+          <node concept="37vLTI" id="1ZF81FZUvYw" role="3clFbG">
+            <node concept="2ShNRf" id="1ZF81FZUw3p" role="37vLTx">
+              <node concept="1pGfFk" id="1ZF81FZUI3O" role="2ShVmc">
+                <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <node concept="37vLTw" id="1ZF81FZUQ6f" role="37wK5m">
+                  <ref role="3cqZAo" node="1ZF81FZUP_o" resolve="message" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1ZF81FZUv8g" role="37vLTJ">
+              <node concept="2WthIp" id="1ZF81FZUv8j" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="1ZF81FZUv8l" role="2OqNvi">
+                <ref role="2WH_rO" node="1ZF81FZUku_" resolve="component" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1ZF81FZUP_o" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="1ZF81FZUP_n" role="1tU5fm" />
+      </node>
+      <node concept="3Tm6S6" id="1ZF81FZUP_A" role="1B3o_S" />
+    </node>
     <node concept="2BZ0e9" id="6q44gEQYroX" role="2XNbBz">
       <property role="TrG5h" value="mainView" />
       <node concept="3Tm6S6" id="6q44gEQYroY" role="1B3o_S" />
@@ -342,77 +363,23 @@
         <ref role="3uigEE" to="z9dx:~MainView" resolve="MainView" />
       </node>
     </node>
-    <node concept="2XrIbr" id="3Gf07gf_9Vh" role="2XNbBy">
-      <property role="TrG5h" value="createServiceName" />
-      <node concept="17QB3L" id="3Gf07gf_aby" role="3clF45" />
-      <node concept="3clFbS" id="3Gf07gf_9Vj" role="3clF47">
-        <node concept="3clFbH" id="3Gf07gf_h0h" role="3cqZAp" />
-        <node concept="3cpWs6" id="3Gf07gf_igV" role="3cqZAp">
-          <node concept="10M0yZ" id="4NU9lKD8rfe" role="3cqZAk">
-            <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-            <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="3Gf07gf_dAL" role="3cqZAp" />
+    <node concept="2BZ0e9" id="1ZF81FZUku_" role="2XNbBz">
+      <property role="TrG5h" value="component" />
+      <node concept="3Tm6S6" id="1ZF81FZUkuA" role="1B3o_S" />
+      <node concept="3uibUv" id="1ZF81FZUmjb" role="1tU5fm">
+        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
       </node>
     </node>
     <node concept="2UmK3q" id="6bh18$pfQ5q" role="2Um5zG">
       <node concept="3clFbS" id="6bh18$pfQ5r" role="2VODD2">
-        <node concept="3clFbJ" id="7iSQ$Ce1vyS" role="3cqZAp">
-          <property role="TyiWK" value="true" />
-          <property role="TyiWL" value="false" />
-          <node concept="3clFbS" id="7iSQ$Ce1vyU" role="3clFbx">
-            <node concept="34ab3g" id="1CHCs7qJfSP" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="1CHCs7qKAoq" role="34bqiv">
-                <property role="Xl_RC" value="Getting JComponent to display from initialized MainView." />
-              </node>
-            </node>
-            <node concept="3cpWs6" id="7iSQ$Ce1QSE" role="3cqZAp">
-              <node concept="2OqwBi" id="1CHCs7qK_2i" role="3cqZAk">
-                <node concept="2OqwBi" id="3E6$11QNbKc" role="2Oq$k0">
-                  <node concept="2WthIp" id="3E6$11QNbKf" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="1CHCs7qK$B6" role="2OqNvi">
-                    <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1CHCs7qK_pl" role="2OqNvi">
-                  <ref role="37wK5l" to="z9dx:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="7iSQ$Ce1Qyo" role="3clFbw">
-            <node concept="10Nm6u" id="7iSQ$Ce1$G7" role="3uHU7w" />
-            <node concept="2OqwBi" id="7iSQ$Ce1Xcc" role="3uHU7B">
-              <node concept="2WthIp" id="7iSQ$Ce1Xcd" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1CHCs7qK$hS" role="2OqNvi">
-                <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
-              </node>
-            </node>
-          </node>
-          <node concept="9aQIb" id="7iSQ$Ce1RER" role="9aQIa">
-            <node concept="3clFbS" id="7iSQ$Ce1RES" role="9aQI4">
-              <node concept="34ab3g" id="1CHCs7qJTIb" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="Xl_RD" id="1CHCs7qJXg0" role="34bqiv">
-                  <property role="Xl_RC" value="Gatting JComponent to display, but panel has not been initialized." />
-                </node>
-              </node>
-              <node concept="3cpWs6" id="7iSQ$Ce1RR_" role="3cqZAp">
-                <node concept="2ShNRf" id="7iSQ$Ce1Sbf" role="3cqZAk">
-                  <node concept="1pGfFk" id="7iSQ$Ce1SA9" role="2ShVmc">
-                    <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
-                    <node concept="Xl_RD" id="7iSQ$Ce1T6T" role="37wK5m">
-                      <property role="Xl_RC" value="Panel is not initialized." />
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3cpWs6" id="1ZF81FZUKaQ" role="3cqZAp">
+          <node concept="2OqwBi" id="1ZF81FZUKsT" role="3cqZAk">
+            <node concept="2WthIp" id="1ZF81FZUKsW" role="2Oq$k0" />
+            <node concept="2BZ7hE" id="1ZF81FZUKsY" role="2OqNvi">
+              <ref role="2WH_rO" node="1ZF81FZUku_" resolve="component" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7iSQ$Ce1Rhe" role="3cqZAp" />
       </node>
     </node>
     <node concept="2xpIHi" id="6bh18$pg90I" role="uR5cp">
@@ -424,35 +391,138 @@
           </node>
         </node>
         <node concept="3clFbH" id="7idJGRwqx3n" role="3cqZAp" />
-        <node concept="3clFbF" id="3H_tUICSbdP" role="3cqZAp">
-          <node concept="2OqwBi" id="3H_tUICSbdJ" role="3clFbG">
-            <node concept="2WthIp" id="3H_tUICSbdM" role="2Oq$k0" />
-            <node concept="2XshWL" id="3H_tUICSbdO" role="2OqNvi">
-              <ref role="2WH_rO" node="3H_tUICS7wA" resolve="initRemoteGui" />
+        <node concept="3cpWs8" id="1ZF81FZUsA8" role="3cqZAp">
+          <node concept="3cpWsn" id="1ZF81FZUsAb" role="3cpWs9">
+            <property role="TrG5h" value="turnOffPanel" />
+            <node concept="10P_77" id="1ZF81FZUsA6" role="1tU5fm" />
+            <node concept="2YIFZM" id="1ZF81FZUsCe" role="33vP2m">
+              <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+              <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+              <node concept="10M0yZ" id="1ZF81FZUsEq" role="37wK5m">
+                <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                <ref role="3cqZAo" to="5htl:1ZF81FZUmNs" resolve="GUI_PANEL_TURN_OFF" />
+              </node>
+              <node concept="3VsKOn" id="1ZF81FZUsGn" role="37wK5m">
+                <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3H_tUICSb3w" role="3cqZAp" />
-        <node concept="3clFbJ" id="1CHCs7qK2Cq" role="3cqZAp">
-          <node concept="3clFbS" id="1CHCs7qK2Cs" role="3clFbx">
-            <node concept="34ab3g" id="1CHCs7qK4hr" role="3cqZAp">
+        <node concept="3clFbH" id="1ZF81FZUisS" role="3cqZAp" />
+        <node concept="3clFbJ" id="1ZF81FZUuZ_" role="3cqZAp">
+          <node concept="3clFbS" id="1ZF81FZUuZB" role="3clFbx">
+            <node concept="3clFbF" id="1ZF81FZUPTI" role="3cqZAp">
+              <node concept="2OqwBi" id="1ZF81FZUPUq" role="3clFbG">
+                <node concept="2WthIp" id="1ZF81FZUPTH" role="2Oq$k0" />
+                <node concept="2XshWL" id="1ZF81FZUQ4U" role="2OqNvi">
+                  <ref role="2WH_rO" node="1ZF81FZUPaB" resolve="setNotInitializedMessage" />
+                  <node concept="2YIFZM" id="1ZF81FZUIs6" role="2XxRq1">
+                    <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                    <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                    <node concept="Xl_RD" id="1ZF81FZUpKZ" role="37wK5m">
+                      <property role="Xl_RC" value="control.panel.turned.off" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34ab3g" id="1ZF81FZUWRc" role="3cqZAp">
               <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="1CHCs7qK4ht" role="34bqiv">
-                <property role="Xl_RC" value="MainView is still null after initialization" />
+              <node concept="Xl_RD" id="1ZF81FZUWRe" role="34bqiv">
+                <property role="Xl_RC" value="Tool is turned of by configuration." />
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="1CHCs7qK3ui" role="3clFbw">
-            <node concept="10Nm6u" id="1CHCs7qK3_e" role="3uHU7w" />
-            <node concept="2OqwBi" id="1CHCs7qK2PY" role="3uHU7B">
-              <node concept="2WthIp" id="1CHCs7qK2KZ" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="1CHCs7qK3h8" role="2OqNvi">
-                <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
+          <node concept="37vLTw" id="1ZF81FZUv1W" role="3clFbw">
+            <ref role="3cqZAo" node="1ZF81FZUsAb" resolve="turnOffPanel" />
+          </node>
+          <node concept="9aQIb" id="1ZF81FZUIFH" role="9aQIa">
+            <node concept="3clFbS" id="1ZF81FZUIFI" role="9aQI4">
+              <node concept="3SKdUt" id="1ZF81FZUJ9c" role="3cqZAp">
+                <node concept="3SKdUq" id="1ZF81FZUJa2" role="3SKWNk">
+                  <property role="3SKdUp" value="this is overwritten after initialization" />
+                </node>
               </node>
+              <node concept="3clFbF" id="1ZF81FZUQmg" role="3cqZAp">
+                <node concept="2OqwBi" id="1ZF81FZUQok" role="3clFbG">
+                  <node concept="2WthIp" id="1ZF81FZUQme" role="2Oq$k0" />
+                  <node concept="2XshWL" id="1ZF81FZUQH1" role="2OqNvi">
+                    <ref role="2WH_rO" node="1ZF81FZUPaB" resolve="setNotInitializedMessage" />
+                    <node concept="2YIFZM" id="1ZF81FZUILL" role="2XxRq1">
+                      <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                      <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                      <node concept="Xl_RD" id="1ZF81FZUILM" role="37wK5m">
+                        <property role="Xl_RC" value="control.panel.not.initialized" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1ZF81FZUQI4" role="3cqZAp" />
+              <node concept="3clFbF" id="3H_tUICSbdP" role="3cqZAp">
+                <node concept="2OqwBi" id="3H_tUICSbdJ" role="3clFbG">
+                  <node concept="2WthIp" id="3H_tUICSbdM" role="2Oq$k0" />
+                  <node concept="2XshWL" id="3H_tUICSbdO" role="2OqNvi">
+                    <ref role="2WH_rO" node="3H_tUICS7wA" resolve="initRemoteGui" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="3H_tUICSb3w" role="3cqZAp" />
+              <node concept="3clFbJ" id="1CHCs7qK2Cq" role="3cqZAp">
+                <node concept="3clFbS" id="1CHCs7qK2Cs" role="3clFbx">
+                  <node concept="34ab3g" id="1CHCs7qJfSP" role="3cqZAp">
+                    <property role="35gtTG" value="info" />
+                    <node concept="Xl_RD" id="1CHCs7qKAoq" role="34bqiv">
+                      <property role="Xl_RC" value="Getting JComponent to display from initialized MainView." />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1ZF81FZUL6x" role="3cqZAp">
+                    <node concept="37vLTI" id="1ZF81FZUM0I" role="3clFbG">
+                      <node concept="2OqwBi" id="1ZF81FZULag" role="37vLTJ">
+                        <node concept="2WthIp" id="1ZF81FZUL6v" role="2Oq$k0" />
+                        <node concept="2BZ7hE" id="1ZF81FZULuZ" role="2OqNvi">
+                          <ref role="2WH_rO" node="1ZF81FZUku_" resolve="component" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1CHCs7qK_2i" role="37vLTx">
+                        <node concept="2OqwBi" id="3E6$11QNbKc" role="2Oq$k0">
+                          <node concept="2WthIp" id="3E6$11QNbKf" role="2Oq$k0" />
+                          <node concept="2BZ7hE" id="1CHCs7qK$B6" role="2OqNvi">
+                            <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1CHCs7qK_pl" role="2OqNvi">
+                          <ref role="37wK5l" to="z9dx:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="1ZF81FZUJwu" role="3clFbw">
+                  <node concept="2OqwBi" id="1CHCs7qK2PY" role="3uHU7B">
+                    <node concept="2WthIp" id="1CHCs7qK2KZ" role="2Oq$k0" />
+                    <node concept="2BZ7hE" id="1CHCs7qK3h8" role="2OqNvi">
+                      <ref role="2WH_rO" node="6q44gEQYroX" resolve="mainView" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="1CHCs7qK3_e" role="3uHU7w" />
+                </node>
+                <node concept="9aQIb" id="1ZF81FZUJyy" role="9aQIa">
+                  <node concept="3clFbS" id="1ZF81FZUJyz" role="9aQI4">
+                    <node concept="34ab3g" id="1CHCs7qK4hr" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="Xl_RD" id="1CHCs7qK4ht" role="34bqiv">
+                        <property role="Xl_RC" value="MainView is still null after initialization" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1ZF81FZUNsE" role="3cqZAp" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3H_tUICUU2k" role="3cqZAp" />
+        <node concept="3clFbH" id="1ZF81FZUNHE" role="3cqZAp" />
         <node concept="34ab3g" id="3H_tUICUU3y" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="Xl_RD" id="3H_tUICUU3z" role="34bqiv">

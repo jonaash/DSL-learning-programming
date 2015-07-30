@@ -18,7 +18,8 @@
     <import index="d577" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message(GuiServerLib/cz.dsllp.gui.api.message@java_stub)" />
     <import index="52rl" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.service(GuiServerLib/cz.dsllp.gui.api.service@java_stub)" />
     <import index="to5d" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.logging(MPS.Core/jetbrains.mps.logging@java_stub)" />
-    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.constants)" />
+    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.configuration)" />
+    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -247,6 +248,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -2780,65 +2784,96 @@
         <ref role="3uigEE" to="25kt:~NotBoundException" resolve="NotBoundException" />
       </node>
       <node concept="3clFbS" id="3T8UWqFNR0r" role="3clF47">
-        <node concept="3SKdUt" id="3T8UWqFNR0O" role="3cqZAp">
-          <node concept="3SKdUq" id="3T8UWqFNR0N" role="3SKWNk">
-            <property role="3SKdUp" value="Call registry for GuiService" />
+        <node concept="3cpWs8" id="pLBRfXAUFN" role="3cqZAp">
+          <node concept="3cpWsn" id="pLBRfXAUFO" role="3cpWs9">
+            <property role="TrG5h" value="address" />
+            <node concept="17QB3L" id="pLBRfXAUMN" role="1tU5fm" />
+            <node concept="2YIFZM" id="pLBRfXAUFQ" role="33vP2m">
+              <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+              <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+              <node concept="10M0yZ" id="pLBRfXAUFR" role="37wK5m">
+                <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                <ref role="3cqZAo" to="5htl:pLBRfXAk9d" resolve="RMI_ADDRESS" />
+              </node>
+              <node concept="3VsKOn" id="pLBRfXAUFS" role="37wK5m">
+                <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="1JtUjhLyhYR" role="3cqZAp">
           <node concept="3cpWsn" id="1JtUjhLyhYU" role="3cpWs9">
             <property role="TrG5h" value="port" />
             <node concept="10Oyi0" id="1JtUjhLyhYP" role="1tU5fm" />
-            <node concept="10M0yZ" id="1JtUjhLyi63" role="33vP2m">
-              <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-              <ref role="3cqZAo" to="5htl:1JtUjhLx_yH" resolve="PORT" />
+            <node concept="2YIFZM" id="pLBRfXAU5I" role="33vP2m">
+              <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+              <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+              <node concept="10M0yZ" id="pLBRfXAUaY" role="37wK5m">
+                <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                <ref role="3cqZAo" to="5htl:pLBRfXAobR" resolve="RMI_PORT" />
+              </node>
+              <node concept="3VsKOn" id="pLBRfXAUvM" role="37wK5m">
+                <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="1I19JziyNx_" role="3cqZAp">
-          <node concept="3cpWsn" id="1I19JziyNxC" role="3cpWs9">
+        <node concept="3cpWs8" id="pLBRfXAVa2" role="3cqZAp">
+          <node concept="3cpWsn" id="pLBRfXAVa5" role="3cpWs9">
+            <property role="TrG5h" value="serviceName" />
+            <node concept="17QB3L" id="pLBRfXAVa0" role="1tU5fm" />
+            <node concept="2YIFZM" id="pLBRfXAVnX" role="33vP2m">
+              <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
+              <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
+              <node concept="10M0yZ" id="pLBRfXAVnY" role="37wK5m">
+                <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
+                <ref role="3cqZAo" to="5htl:pLBRfXAoc$" resolve="RMI_SERVICE_NAME" />
+              </node>
+              <node concept="3VsKOn" id="pLBRfXAVnZ" role="37wK5m">
+                <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="pLBRfXAVrq" role="3cqZAp" />
+        <node concept="3cpWs8" id="pLBRfXAVFa" role="3cqZAp">
+          <node concept="3cpWsn" id="pLBRfXAVFd" role="3cpWs9">
             <property role="TrG5h" value="lookupAddress" />
-            <node concept="17QB3L" id="1I19JziyNxz" role="1tU5fm" />
-            <node concept="3cpWs3" id="1I19JziylHB" role="33vP2m">
-              <node concept="3cpWs3" id="3T8UWqFNR0w" role="3uHU7B">
-                <node concept="3cpWs3" id="3T8UWqFNR0x" role="3uHU7B">
-                  <node concept="2YIFZM" id="1XlOgn$rwGz" role="3uHU7w">
-                    <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                    <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                    <node concept="37vLTw" id="1JtUjhLyikJ" role="37wK5m">
-                      <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs3" id="1I19JziykOP" role="3uHU7B">
-                    <node concept="10M0yZ" id="1I19JziykB2" role="3uHU7B">
-                      <ref role="3cqZAo" to="5htl:1I19Jziyi51" resolve="RMI_ADDRESS" />
-                      <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                    </node>
-                    <node concept="Xl_RD" id="1I19JziykWu" role="3uHU7w">
-                      <property role="Xl_RC" value=":" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3T8UWqFNR0$" role="3uHU7w">
-                  <property role="Xl_RC" value="/" />
-                </node>
+            <node concept="17QB3L" id="pLBRfXAVF8" role="1tU5fm" />
+            <node concept="2YIFZM" id="1ZF81FZU6De" role="33vP2m">
+              <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+              <node concept="Xl_RD" id="1ZF81FZU6Df" role="37wK5m">
+                <property role="Xl_RC" value="%s:%d/%s" />
               </node>
-              <node concept="10M0yZ" id="3V_Ioyp$9zE" role="3uHU7w">
-                <ref role="1PxDUh" to="5htl:1JtUjhLx_xV" resolve="Comunication" />
-                <ref role="3cqZAo" to="5htl:1JtUjhLx_S5" resolve="SERVICE_NAME" />
+              <node concept="37vLTw" id="1ZF81FZU6Dg" role="37wK5m">
+                <ref role="3cqZAo" node="pLBRfXAUFO" resolve="address" />
+              </node>
+              <node concept="37vLTw" id="1ZF81FZU6Dh" role="37wK5m">
+                <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
+              </node>
+              <node concept="37vLTw" id="1ZF81FZU6Di" role="37wK5m">
+                <ref role="3cqZAo" node="pLBRfXAVa5" resolve="serviceName" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="1ZF81FZU7lP" role="3cqZAp" />
         <node concept="34ab3g" id="1I19Jzi$rMj" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="3cpWs3" id="1I19Jzi$sdz" role="34bqiv">
-            <node concept="37vLTw" id="1I19Jzi$si_" role="3uHU7w">
-              <ref role="3cqZAo" node="1I19JziyNxC" resolve="lookupAddress" />
+            <node concept="37vLTw" id="pLBRfXAX0z" role="3uHU7w">
+              <ref role="3cqZAo" node="pLBRfXAVFd" resolve="lookupAddress" />
             </node>
             <node concept="Xl_RD" id="1I19Jzi$s4b" role="3uHU7B">
-              <property role="Xl_RC" value="Connecting to:" />
+              <property role="Xl_RC" value="Connecting to: " />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="pLBRfXAY6G" role="3cqZAp" />
+        <node concept="3SKdUt" id="3T8UWqFNR0O" role="3cqZAp">
+          <node concept="3SKdUq" id="3T8UWqFNR0N" role="3SKWNk">
+            <property role="3SKdUp" value="Call registry for GuiService" />
           </node>
         </node>
         <node concept="3cpWs8" id="3T8UWqFNR0t" role="3cqZAp">
@@ -2851,8 +2886,8 @@
             <node concept="2YIFZM" id="3T8UWqFNT2S" role="33vP2m">
               <ref role="37wK5l" to="25kt:~Naming.lookup(java.lang.String):java.rmi.Remote" resolve="lookup" />
               <ref role="1Pybhc" to="25kt:~Naming" resolve="Naming" />
-              <node concept="37vLTw" id="1I19JziyNZN" role="37wK5m">
-                <ref role="3cqZAo" node="1I19JziyNxC" resolve="lookupAddress" />
+              <node concept="37vLTw" id="pLBRfXAX7f" role="37wK5m">
+                <ref role="3cqZAo" node="pLBRfXAVFd" resolve="lookupAddress" />
               </node>
             </node>
           </node>
