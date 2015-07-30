@@ -2186,7 +2186,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3hBhvFSNnVl">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="13i0hz" id="3hBhvFSNnVo" role="13h7CS">
       <property role="TrG5h" value="isLocalCall" />
@@ -2267,7 +2267,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="14XUkkdQqrs">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="13i0hz" id="14XUkkdQt0O" role="13h7CS">
       <property role="TrG5h" value="createScope" />
@@ -2741,7 +2741,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7KcPMNJkP1t">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="13h7C2" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="13i0hz" id="18k56XD$$d0" role="13h7CS">
       <property role="TrG5h" value="returnsValue" />

@@ -332,7 +332,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="30eT$TCynJf">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="3_znuS" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="3__wT9" id="30eT$TCynJg" role="3_A6iZ">
       <node concept="3clFbS" id="30eT$TCynJh" role="2VODD2">
@@ -381,7 +381,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="7jmg6novVyn">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="3_znuS" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="3__wT9" id="7jmg6novVyo" role="3_A6iZ">
       <node concept="3clFbS" id="7jmg6novVyp" role="2VODD2">
@@ -435,7 +435,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="2RjUFdDisTN">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="3_znuS" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
     <node concept="3__wT9" id="2RjUFdDisTO" role="3_A6iZ">
       <node concept="3clFbS" id="2RjUFdDisTP" role="2VODD2">

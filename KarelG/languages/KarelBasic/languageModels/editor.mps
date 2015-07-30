@@ -698,7 +698,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5eWJqD2oCGI">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="1iCGBv" id="5eWJqD2oUIX" role="2wV5jI">
       <ref role="1NtTu8" to="dyrx:14XUkkdIUvj" />
@@ -712,7 +712,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5eWJqD2oD$P">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="3EZMnI" id="5eWJqD2oD_0" role="2wV5jI">
       <node concept="PMmxH" id="5eWJqD2oDAe" role="3EZMnx">
@@ -959,7 +959,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3hBhvFSK1AK">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="dyrx:3hBhvFSK1_a" resolve="Require" />
     <node concept="3EZMnI" id="3hBhvFSK1DF" role="2wV5jI">
       <node concept="PMmxH" id="3hBhvFSK1DM" role="3EZMnx">
@@ -1505,7 +1505,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3hBhvFT6Frv">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <ref role="1XX52x" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
     <node concept="3EZMnI" id="3hBhvFT6Frx" role="2wV5jI">
       <node concept="3F1sOY" id="3hBhvFT6FrC" role="3EZMnx">

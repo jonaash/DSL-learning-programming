@@ -191,7 +191,7 @@
   </node>
   <node concept="1TIwiD" id="4in_MZdaLTz">
     <property role="TrG5h" value="RoutineCall" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="R4oN_" value="executes procedure" />
     <ref role="1TJDcQ" node="14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="14XUkkdIUvj" role="1TKVEi">
@@ -203,7 +203,7 @@
   </node>
   <node concept="1TIwiD" id="4in_MZdaKkC">
     <property role="TrG5h" value="RoutineDefinition" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="34LRSv" value="procedure" />
     <property role="R4oN_" value="defines sequence of commands as a procedure" />
     <ref role="1TJDcQ" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
@@ -411,7 +411,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFSK1_a">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="TrG5h" value="Require" />
     <property role="34LRSv" value="require" />
     <property role="R4oN_" value="imports procedures from external Library" />
@@ -455,7 +455,7 @@
     <property role="TrG5h" value="IStandaloneExpression" />
   </node>
   <node concept="1TIwiD" id="14XUkkdDnzd">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="TrG5h" value="AbstractCall" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -471,7 +471,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="14XUkkdEva7">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="TrG5h" value="AbstractMethodDefinition" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -551,7 +551,7 @@
   </node>
   <node concept="1TIwiD" id="3hBhvFT4i9B">
     <property role="TrG5h" value="ParameterDeclaration" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="R4oN_" value="declares a function parameter" />
     <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
     <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
@@ -564,7 +564,7 @@
     <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJwYJD">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="TrG5h" value="ParameterFill" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7KcPMNJwYL9" role="1TKVEi">
@@ -581,7 +581,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="7KcPMNJwYOl">
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <property role="TrG5h" value="IMethodCall" />
     <node concept="1TJgyj" id="7KcPMNJwYQw" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -229,7 +229,7 @@
   </registry>
   <node concept="18kY7G" id="5eWJqD2t9Ah">
     <property role="TrG5h" value="MethodNameUniqueness" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="5eWJqD2t9Ai" role="18ibNy">
       <node concept="3clFbJ" id="5eWJqD2tbdJ" role="3cqZAp">
         <node concept="3clFbS" id="5eWJqD2tbdL" role="3clFbx">
@@ -377,7 +377,7 @@
   </node>
   <node concept="18kY7G" id="5eWJqD2tnPy">
     <property role="TrG5h" value="methodAllowedCharactesCheck" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="5eWJqD2tnPz" role="18ibNy">
       <node concept="3clFbJ" id="5eWJqD2tnQg" role="3cqZAp">
         <node concept="3clFbS" id="5eWJqD2tnQh" role="3clFbx">
@@ -631,7 +631,7 @@
   </node>
   <node concept="18kY7G" id="3hBhvFT1154">
     <property role="TrG5h" value="LibraryRequireDuplicites" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method" />
     <node concept="3clFbS" id="3hBhvFT1155" role="18ibNy">
       <node concept="3clFbJ" id="3hBhvFT1156" role="3cqZAp">
         <node concept="3clFbS" id="3hBhvFT1157" role="3clFbx">
