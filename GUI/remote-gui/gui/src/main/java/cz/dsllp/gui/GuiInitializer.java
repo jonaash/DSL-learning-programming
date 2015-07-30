@@ -36,12 +36,14 @@ public class GuiInitializer {
     public static synchronized void init(String rmiAddress, int port, String serviceName) throws IllegalAccessException,
             InvocationTargetException, InstantiationException {
 
+        logger.info("Starting GUI initialization with parameters:\nRMI address: {}\nPort:{}\nService name:{}",
+                rmiAddress, port, serviceName);
+
         if(initialized){
             logger.info("GUI is already initialized.");
             return;
         }
 
-        logger.info("Starting GUI initialization.");
 
         // init dependency injection container
         ClassfileDependencyScanner scanner = new ClassfileDependencyScanner();
