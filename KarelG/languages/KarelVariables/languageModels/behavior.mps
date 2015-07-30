@@ -23,6 +23,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -62,6 +63,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -113,6 +115,12 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -507,6 +515,24 @@
       <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
       <node concept="3Tm1VV" id="1BMnhOnhDhn" role="1B3o_S" />
       <node concept="3clFbS" id="1BMnhOnhDhs" role="3clF47">
+        <node concept="3cpWs6" id="6pJoTiq6Xk1" role="3cqZAp">
+          <node concept="BsUDl" id="6pJoTiq6Xkj" role="3cqZAk">
+            <ref role="37wK5l" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1BMnhOnvwLn" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6pJoTiq6Xhi" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStaticType" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+      <node concept="3Tm1VV" id="6pJoTiq6Xhj" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6Xho" role="3clF47">
         <node concept="3cpWs6" id="1BMnhOnhJtT" role="3cqZAp">
           <node concept="2OqwBi" id="1BMnhOnvwQf" role="3cqZAk">
             <node concept="35c_gC" id="1BMnhOnhJu7" role="2Oq$k0">
@@ -518,9 +544,149 @@
           </node>
         </node>
       </node>
-      <node concept="3Tqbb2" id="1BMnhOnvwLn" role="3clF45">
+      <node concept="3Tqbb2" id="6pJoTiq6Xhp" role="3clF45">
         <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6pJoTiq6UmE">
+    <property role="3GE5qa" value="expression" />
+    <ref role="13h7C2" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
+    <node concept="13hLZK" id="6pJoTiq6UmF" role="13h7CW">
+      <node concept="3clFbS" id="6pJoTiq6UmG" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6pJoTiq6UoO" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="6pJoTiq6UoP" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6UoU" role="3clF47">
+        <node concept="3cpWs6" id="6pJoTiq6YHf" role="3cqZAp">
+          <node concept="10Nm6u" id="6pJoTiq6YHu" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6pJoTiq6UoV" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6pJoTiq6YEw" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStaticType" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+      <node concept="3Tm1VV" id="6pJoTiq6YEx" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6YEA" role="3clF47">
+        <node concept="3SKdUt" id="6pJoTiq6YIN" role="3cqZAp">
+          <node concept="3SKdUq" id="6pJoTiq6YJO" role="3SKWNk">
+            <property role="3SKdUp" value="to prevent creating instances at places that expects some expression with value" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6pJoTiq6Uqk" role="3cqZAp">
+          <node concept="2OqwBi" id="6pJoTiq6Uut" role="3cqZAk">
+            <node concept="35c_gC" id="6pJoTiq6Us6" role="2Oq$k0">
+              <ref role="35c_gD" to="dyrx:3hBhvFT4ibf" resolve="VoidType" />
+            </node>
+            <node concept="2qgKlT" id="6pJoTiq6UDT" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6pJoTiq6YEB" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6pJoTiq6UQB">
+    <property role="3GE5qa" value="expression.operator" />
+    <ref role="13h7C2" to="3y9h:2WqFKNEeyTn" resolve="DivideOperator" />
+    <node concept="13hLZK" id="6pJoTiq6UQC" role="13h7CW">
+      <node concept="3clFbS" id="6pJoTiq6UQD" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6pJoTiq6UQE" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStaticType" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+      <node concept="3Tm1VV" id="6pJoTiq6UQF" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6UQK" role="3clF47">
+        <node concept="3cpWs6" id="6pJoTiq6V3H" role="3cqZAp">
+          <node concept="2OqwBi" id="6pJoTiq6V6n" role="3cqZAk">
+            <node concept="35c_gC" id="6pJoTiq6V40" role="2Oq$k0">
+              <ref role="35c_gD" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+            </node>
+            <node concept="2qgKlT" id="6pJoTiq6VsS" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6pJoTiq6UQL" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6pJoTiq6Vuk">
+    <property role="3GE5qa" value="expression.operator" />
+    <ref role="13h7C2" to="3y9h:2WqFKNE4Haw" resolve="MinusOperator" />
+    <node concept="13i0hz" id="6pJoTiq6VuJ" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStaticType" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+      <node concept="3Tm1VV" id="6pJoTiq6VuK" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6VuL" role="3clF47">
+        <node concept="3cpWs6" id="6pJoTiq6VuM" role="3cqZAp">
+          <node concept="2OqwBi" id="6pJoTiq6VuN" role="3cqZAk">
+            <node concept="35c_gC" id="6pJoTiq6VuO" role="2Oq$k0">
+              <ref role="35c_gD" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+            </node>
+            <node concept="2qgKlT" id="6pJoTiq6VuP" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6pJoTiq6VuQ" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6pJoTiq6Vul" role="13h7CW">
+      <node concept="3clFbS" id="6pJoTiq6Vum" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6pJoTiq6Vw4">
+    <property role="3GE5qa" value="expression.operator" />
+    <ref role="13h7C2" to="3y9h:2WqFKNEeySp" resolve="MultOperator" />
+    <node concept="13i0hz" id="6pJoTiq6Vwv" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getStaticType" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+      <node concept="3Tm1VV" id="6pJoTiq6Vww" role="1B3o_S" />
+      <node concept="3clFbS" id="6pJoTiq6Vwx" role="3clF47">
+        <node concept="3cpWs6" id="6pJoTiq6Vwy" role="3cqZAp">
+          <node concept="2OqwBi" id="6pJoTiq6Vwz" role="3cqZAk">
+            <node concept="35c_gC" id="6pJoTiq6Vw$" role="2Oq$k0">
+              <ref role="35c_gD" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+            </node>
+            <node concept="2qgKlT" id="6pJoTiq6Vw_" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6pJoTiq6VwA" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="6pJoTiq6Vw5" role="13h7CW">
+      <node concept="3clFbS" id="6pJoTiq6Vw6" role="2VODD2" />
     </node>
   </node>
 </model>
