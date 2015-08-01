@@ -361,7 +361,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3hBhvFSKuRF">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="1M2myG" to="dyrx:3hBhvFSK1_a" resolve="Require" />
     <node concept="1N5Pfh" id="3hBhvFT0iIs" role="1Mr941">
       <ref role="1N5Vy1" to="dyrx:3hBhvFSK1_A" />
@@ -457,7 +457,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3hBhvFT0iEK">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="1M2myG" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="1N5Pfh" id="14XUkkdQLnc" role="1Mr941">
       <ref role="1N5Vy1" to="dyrx:14XUkkdIUvj" />
@@ -623,7 +623,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="18k56XDyqiu">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <ref role="1M2myG" to="dyrx:3hBhvFT4ibf" resolve="VoidType" />
     <node concept="nKS2y" id="18k56XDyqjA" role="1MLUbF">
       <node concept="3clFbS" id="18k56XDyqjB" role="2VODD2">

@@ -14,7 +14,7 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
-      <concept id="8938755948420525033" name="KarelBasic.structure.ParameterFill" flags="ng" index="2jzNN5">
+      <concept id="8938755948420525033" name="KarelBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
@@ -46,8 +46,6 @@
       <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
       </concept>
-      <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
-      <concept id="3776063756796240487" name="KarelBasic.structure.ParameterDeclaration" flags="ng" index="3dtAut" />
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
@@ -69,6 +67,8 @@
       </concept>
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
+      <concept id="2041423954150618879" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="KarelFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
       <concept id="3776063756796240560" name="KarelFunctions.structure.FunctionCall" flags="ng" index="3dtAta" />
       <concept id="3776063756796240557" name="KarelFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn" />
       <concept id="3776063756797050848" name="KarelFunctions.structure.ReturnCommand" flags="ng" index="3duzCq">
@@ -110,8 +110,8 @@
           <node concept="36MCFd" id="2RjUFdDqBcx" role="36Mw2n">
             <property role="TrG5h" value="uuu" />
             <node concept="36MCER" id="2RjUFdDqBcs" role="36MCEW" />
-            <node concept="36MIYp" id="7KcPMNJp1Qf" role="36MIYJ">
-              <ref role="36MIYq" node="7KcPMNJp1Mr" resolve="m" />
+            <node concept="36MIYp" id="1LkA4kR8TWZ" role="36MIYJ">
+              <ref role="36MIYq" node="1LkA4kR8TWI" resolve="m" />
             </node>
           </node>
         </node>
@@ -125,8 +125,8 @@
           </node>
           <node concept="3jGSmg" id="2RjUFdDp_sU" role="3azrUc">
             <node concept="3duzCq" id="2RjUFdDp_tC" role="3jGSnO">
-              <node concept="36MIYp" id="7KcPMNJp1Qq" role="3duzCr">
-                <ref role="36MIYq" node="7KcPMNJp1Mr" resolve="m" />
+              <node concept="36MIYp" id="1LkA4kR8TXa" role="3duzCr">
+                <ref role="36MIYq" node="1LkA4kR8TWI" resolve="m" />
               </node>
             </node>
           </node>
@@ -141,16 +141,9 @@
           </node>
         </node>
       </node>
-      <node concept="3dtAut" id="7KcPMNJp1Mr" role="3dtAt9">
+      <node concept="FiAUU" id="1LkA4kR8TWI" role="3dtAt9">
         <property role="TrG5h" value="m" />
-        <node concept="36MCER" id="7KcPMNJp1Mx" role="36MCEW" />
-      </node>
-    </node>
-    <node concept="3dtAtn" id="6pJoTiqbOko" role="sZtrN">
-      <property role="TrG5h" value="test" />
-      <node concept="3dtAsP" id="6pJoTiqbOkp" role="2jg$Xp" />
-      <node concept="3jGSmg" id="6pJoTiqbOku" role="hRHZh">
-        <node concept="17J3f2" id="6pJoTiqbOkv" role="3jGSnO" />
+        <node concept="36MCER" id="1LkA4kR8TWS" role="36MCEW" />
       </node>
     </node>
     <node concept="3jGSmg" id="3hBhvFT6RhR" role="3jGSko">
@@ -174,12 +167,12 @@
           </node>
         </node>
       </node>
-      <node concept="3dudH9" id="1LkA4kR6mGC" role="3jGSnO">
-        <node concept="3dtAta" id="1LkA4kR6mGE" role="3dudC3">
+      <node concept="3dudH9" id="1LkA4kR7C4r" role="3jGSnO">
+        <node concept="3dtAta" id="1LkA4kR7C4t" role="3dudC3">
           <ref role="hRIc0" node="7KcPMNJp1LJ" resolve="countMarks" />
-          <node concept="2jzNN5" id="1LkA4kR6mGF" role="3WjpkI">
-            <ref role="3WiQSc" node="7KcPMNJp1Mr" resolve="m" />
-            <node concept="36MIYp" id="1LkA4kR6mGX" role="2jzNHB">
+          <node concept="FiVY1" id="1LkA4kR8TXD" role="3WjpkI">
+            <ref role="3WiQSc" node="1LkA4kR8TWI" resolve="m" />
+            <node concept="36MIYp" id="1LkA4kR8TYl" role="2jzNHB">
               <ref role="36MIYq" node="8gmNnrPZV$" resolve="a" />
             </node>
           </node>

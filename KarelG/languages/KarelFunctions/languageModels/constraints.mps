@@ -195,7 +195,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="3hBhvFT7nZT">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <ref role="1M2myG" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
     <node concept="nKS2y" id="3hBhvFT7nZU" role="1MLUbF">
       <node concept="3clFbS" id="3hBhvFT7nZV" role="2VODD2">
@@ -318,7 +318,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="3hBhvFTe3gB">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="call" />
     <ref role="1M2myG" to="a5m:3hBhvFT4iaK" resolve="FunctionCall" />
     <node concept="1N5Pfh" id="14XUkkdQY0T" role="1Mr941">
       <ref role="1N5Vy1" to="a5m:14XUkkdIUuJ" />

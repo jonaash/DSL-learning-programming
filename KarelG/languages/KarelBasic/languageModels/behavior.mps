@@ -377,7 +377,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="2WqFKNDQKG7">
-    <property role="3GE5qa" value="expression.number" />
+    <property role="3GE5qa" value="expression.literal" />
     <ref role="13h7C2" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
     <node concept="13hLZK" id="2WqFKNDQKG8" role="13h7CW">
       <node concept="3clFbS" id="2WqFKNDQKG9" role="2VODD2" />
@@ -590,7 +590,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2WqFKNE1H4h">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <ref role="13h7C2" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
     <node concept="13hLZK" id="2WqFKNE1H4i" role="13h7CW">
       <node concept="3clFbS" id="2WqFKNE1H4j" role="2VODD2" />
@@ -665,7 +665,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2WqFKNE1Hht">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <ref role="13h7C2" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
     <node concept="13i0hz" id="3hBhvFT4iJE" role="13h7CS">
       <property role="TrG5h" value="getDefaultInitTypeValue" />
@@ -740,7 +740,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2WqFKNE1HkB">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <ref role="13h7C2" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
     <node concept="13hLZK" id="2WqFKNE1HkC" role="13h7CW">
       <node concept="3clFbS" id="2WqFKNE1HkD" role="2VODD2" />
@@ -2246,7 +2246,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3hBhvFSNnVl">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="13h7C2" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="13i0hz" id="3hBhvFSNnVo" role="13h7CS">
       <property role="TrG5h" value="isLocalCall" />
@@ -2588,7 +2588,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6xChywqnRMz">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <ref role="13h7C2" to="dyrx:3hBhvFT4iX8" resolve="BooleanLiteral" />
     <node concept="13hLZK" id="6xChywqnRM$" role="13h7CW">
       <node concept="3clFbS" id="6xChywqnRM_" role="2VODD2" />
@@ -2631,7 +2631,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6xChywqnX6W">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <ref role="13h7C2" to="dyrx:6kvBWKz_W$y" resolve="StringLiteral" />
     <node concept="13hLZK" id="6xChywqnX6X" role="13h7CW">
       <node concept="3clFbS" id="6xChywqnX6Y" role="2VODD2" />
@@ -2808,7 +2808,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3hBhvFT4FpZ">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <ref role="13h7C2" to="dyrx:3hBhvFT4ibf" resolve="VoidType" />
     <node concept="13hLZK" id="3hBhvFT4Fq0" role="13h7CW">
       <node concept="3clFbS" id="3hBhvFT4Fq1" role="2VODD2" />
@@ -3766,7 +3766,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6pJoTiqkwZ0">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="13h7C2" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="13hLZK" id="6pJoTiqkwZ1" role="13h7CW">
       <node concept="3clFbS" id="6pJoTiqkwZ2" role="2VODD2" />

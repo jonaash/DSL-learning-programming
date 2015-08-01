@@ -76,7 +76,7 @@
     </language>
   </registry>
   <node concept="3_zdsH" id="30eT$TCxIqs">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <ref role="3_znuS" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
     <node concept="3__wT9" id="30eT$TCxIqt" role="3_A6iZ">
       <node concept="3clFbS" id="30eT$TCxIqu" role="2VODD2">
@@ -93,7 +93,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="7jmg6noxZ64">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="call" />
     <ref role="3_znuS" to="a5m:3hBhvFT4iaK" resolve="FunctionCall" />
     <node concept="3__wT9" id="7jmg6noxZ65" role="3_A6iZ">
       <node concept="3clFbS" id="7jmg6noxZ66" role="2VODD2">

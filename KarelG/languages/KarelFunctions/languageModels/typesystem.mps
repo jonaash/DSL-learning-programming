@@ -290,7 +290,7 @@
   </registry>
   <node concept="18kY7G" id="14XUkkdVKMZ">
     <property role="TrG5h" value="check_ReturnCommand" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <node concept="3clFbS" id="14XUkkdVKN0" role="18ibNy">
       <node concept="3SKdUt" id="18k56XD_UH0" role="3cqZAp">
         <node concept="3SKdUq" id="18k56XD_ULV" role="3SKWNk">
@@ -420,7 +420,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="5Ihd_CfnhHY">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="call" />
     <property role="TrG5h" value="typeof_FunctionCall" />
     <node concept="3clFbS" id="5Ihd_CfnhHZ" role="18ibNy">
       <node concept="1Z5TYs" id="5Ihd_CfnsHe" role="3cqZAp">
@@ -734,17 +734,17 @@
               </node>
               <node concept="1_3QMl" id="2RjUFdDrQt$" role="1_3QMm">
                 <node concept="3gn64h" id="7KcPMNJlOQh" role="3Kbmr1">
-                  <ref role="3gnhBz" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
+                  <ref role="3gnhBz" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
                 </node>
                 <node concept="3clFbS" id="2RjUFdDrQtA" role="3Kbo56">
                   <node concept="3cpWs8" id="2RjUFdDrNW7" role="3cqZAp">
                     <node concept="3cpWsn" id="2RjUFdDrNW8" role="3cpWs9">
                       <property role="TrG5h" value="paramDeclaration" />
                       <node concept="3Tqbb2" id="2RjUFdDrNW9" role="1tU5fm">
-                        <ref role="ehGHo" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
+                        <ref role="ehGHo" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
                       </node>
                       <node concept="1PxgMI" id="2RjUFdDrNWb" role="33vP2m">
-                        <ref role="1PxNhF" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
+                        <ref role="1PxNhF" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
                         <node concept="37vLTw" id="2RjUFdDrNWc" role="1PxMeX">
                           <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
                         </node>
@@ -977,6 +977,7 @@
   </node>
   <node concept="18kY7G" id="18k56XDwGuZ">
     <property role="TrG5h" value="check_FunctionDataFlow" />
+    <property role="3GE5qa" value="definition" />
     <node concept="3clFbS" id="18k56XDwGv0" role="18ibNy">
       <node concept="3clFbF" id="18k56XDwGv1" role="3cqZAp">
         <node concept="2OqwBi" id="18k56XDwGv2" role="3clFbG">

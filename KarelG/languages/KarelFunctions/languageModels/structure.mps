@@ -37,14 +37,14 @@
   </registry>
   <node concept="1TIwiD" id="3hBhvFT4iaH">
     <property role="TrG5h" value="FunctionDefinition" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <property role="34LRSv" value="function" />
     <property role="R4oN_" value="defines command sequence as a function" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
   </node>
   <node concept="1TIwiD" id="3hBhvFT4iaK">
     <property role="TrG5h" value="FunctionCall" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="call" />
     <property role="R4oN_" value="executes function (and use its result)" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="14XUkkdIUuJ" role="1TKVEi">
@@ -55,7 +55,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT7nZw">
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <property role="TrG5h" value="ReturnCommand" />
     <property role="34LRSv" value="return" />
     <property role="R4oN_" value="defines a result of the function and ends function execution" />
@@ -66,6 +66,18 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1LkA4kR7JrZ">
+    <property role="3GE5qa" value="definition" />
+    <property role="TrG5h" value="ParameterDeclaration" />
+    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
+    <property role="R4oN_" value="Declare a function parameter" />
+    <ref role="1TJDcQ" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="1LkA4kR7Mv4">
+    <property role="3GE5qa" value="call" />
+    <property role="TrG5h" value="ParameterFill" />
+    <ref role="1TJDcQ" to="dyrx:7KcPMNJwYJD" resolve="AbstractParameterFill" />
   </node>
 </model>
 

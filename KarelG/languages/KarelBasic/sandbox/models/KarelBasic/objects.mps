@@ -35,7 +35,6 @@
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
-      <concept id="3776063756796240487" name="KarelBasic.structure.ParameterDeclaration" flags="ng" index="3dtAut" />
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
@@ -54,6 +53,7 @@
       </concept>
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
+      <concept id="2041423954150618879" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
       <concept id="3776063756796240557" name="KarelFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn" />
       <concept id="3776063756797050848" name="KarelFunctions.structure.ReturnCommand" flags="ng" index="3duzCq">
         <child id="3776063756797050849" name="value" index="3duzCr" />
@@ -173,14 +173,14 @@
         <node concept="36MBwV" id="7KcPMNJp1TK" role="2jg$Xp" />
         <node concept="3jGSmg" id="7KcPMNJp1SX" role="hRHZh">
           <node concept="3duzCq" id="7KcPMNJp1TH" role="3jGSnO">
-            <node concept="36MIYp" id="7KcPMNJp1TN" role="3duzCr">
-              <ref role="36MIYq" node="7KcPMNJp1Tn" resolve="b" />
+            <node concept="36MIYp" id="1LkA4kR9EG0" role="3duzCr">
+              <ref role="36MIYq" node="1LkA4kR9EFL" resolve="b" />
             </node>
           </node>
         </node>
-        <node concept="3dtAut" id="7KcPMNJp1Tn" role="3dtAt9">
+        <node concept="FiAUU" id="1LkA4kR9EFL" role="3dtAt9">
           <property role="TrG5h" value="b" />
-          <node concept="36MBwV" id="7KcPMNJp1Tt" role="36MCEW" />
+          <node concept="36MBwV" id="1LkA4kR9EFT" role="36MCEW" />
         </node>
       </node>
     </node>
@@ -191,22 +191,22 @@
         <node concept="3jGSmg" id="7KcPMNJp1UU" role="hRHZh">
           <node concept="3duzCq" id="7KcPMNJp1VU" role="3jGSnO">
             <node concept="3527Q3" id="7KcPMNJp1VZ" role="3duzCr">
-              <node concept="36MIYp" id="7KcPMNJp1Wc" role="3527S9">
-                <ref role="36MIYq" node="7KcPMNJp1VF" resolve="b" />
+              <node concept="36MIYp" id="1LkA4kR9EKH" role="3527S9">
+                <ref role="36MIYq" node="1LkA4kR9EKf" resolve="b" />
               </node>
-              <node concept="36MIYp" id="7KcPMNJp1VX" role="3527ZY">
-                <ref role="36MIYq" node="7KcPMNJp1Vu" resolve="a" />
+              <node concept="36MIYp" id="1LkA4kR9EKy" role="3527ZY">
+                <ref role="36MIYq" node="1LkA4kR9EIw" resolve="a" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3dtAut" id="7KcPMNJp1Vu" role="3dtAt9">
+        <node concept="FiAUU" id="1LkA4kR9EIw" role="3dtAt9">
           <property role="TrG5h" value="a" />
-          <node concept="36MCER" id="7KcPMNJp1V$" role="36MCEW" />
+          <node concept="36MCER" id="1LkA4kR9EIE" role="36MCEW" />
         </node>
-        <node concept="3dtAut" id="7KcPMNJp1VF" role="3dtAt9">
+        <node concept="FiAUU" id="1LkA4kR9EKf" role="3dtAt9">
           <property role="TrG5h" value="b" />
-          <node concept="36Kql8" id="7KcPMNJp1VN" role="36MCEW" />
+          <node concept="36Kql8" id="1LkA4kR9EKt" role="36MCEW" />
         </node>
       </node>
       <node concept="3pOcrZ" id="7KcPMNJp1Wq" role="2j5jbD" />

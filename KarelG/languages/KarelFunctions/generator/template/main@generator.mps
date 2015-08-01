@@ -173,6 +173,7 @@
   </registry>
   <node concept="bUwia" id="3hBhvFT4i0q">
     <property role="TrG5h" value="main" />
+    <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="3hBhvFT7_iI" role="3acgRq">
       <ref role="30HIoZ" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
       <node concept="j$656" id="3hBhvFT7_iO" role="1lVwrX">
@@ -180,7 +181,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="3hBhvFT7CGh" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
+      <ref role="30HIoZ" to="a5m:1LkA4kR7JrZ" resolve="ParameterDeclaration" />
       <node concept="j$656" id="3hBhvFT7CYU" role="1lVwrX">
         <ref role="v9R2y" node="3hBhvFT7CYS" resolve="reduce_ParameterDeclaration" />
       </node>
@@ -204,7 +205,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="6pJoTiq9E52" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:7KcPMNJwYJD" resolve="ParameterFill" />
+      <ref role="30HIoZ" to="a5m:1LkA4kR7Mv4" resolve="ParameterFill" />
       <node concept="j$656" id="6pJoTiq9Erf" role="1lVwrX">
         <ref role="v9R2y" node="6pJoTiq9Erd" resolve="reduce_ParameterFill" />
       </node>
@@ -212,7 +213,7 @@
   </node>
   <node concept="13MO4I" id="3hBhvFT7_iM">
     <property role="TrG5h" value="reduce_FunctionDefinition" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <ref role="3gUMe" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
     <node concept="312cEu" id="5eWJqD2pi5a" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -320,7 +321,7 @@
   <node concept="13MO4I" id="3hBhvFT7CYS">
     <property role="TrG5h" value="reduce_ParameterDeclaration" />
     <property role="3GE5qa" value="function" />
-    <ref role="3gUMe" to="dyrx:3hBhvFT4i9B" resolve="ParameterDeclaration" />
+    <ref role="3gUMe" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
     <node concept="312cEu" id="3hBhvFT7CYX" role="13RCb5">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Foo" />
@@ -379,7 +380,7 @@
   </node>
   <node concept="13MO4I" id="3hBhvFT7DeM">
     <property role="TrG5h" value="reduce_ReturnCommand" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="definition" />
     <ref role="3gUMe" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
     <node concept="312cEu" id="3hBhvFT7DeR" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -442,7 +443,7 @@
   </node>
   <node concept="13MO4I" id="14XUkkdIN4H">
     <property role="TrG5h" value="reduce_FunctionCall" />
-    <property role="3GE5qa" value="function" />
+    <property role="3GE5qa" value="call" />
     <ref role="3gUMe" to="a5m:3hBhvFT4iaK" resolve="FunctionCall" />
     <node concept="312cEu" id="14XUkkdIN4M" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -535,7 +536,7 @@
   <node concept="13MO4I" id="6pJoTiq9Erd">
     <property role="TrG5h" value="reduce_ParameterFill" />
     <property role="3GE5qa" value="function" />
-    <ref role="3gUMe" to="dyrx:7KcPMNJwYJD" resolve="ParameterFill" />
+    <ref role="3gUMe" to="dyrx:7KcPMNJwYJD" resolve="AbstractParameterFill" />
     <node concept="9aQIb" id="6pJoTiq9Eri" role="13RCb5">
       <node concept="3clFbS" id="6pJoTiq9Erk" role="9aQI4">
         <node concept="3cpWs8" id="6pJoTiq9Ey9" role="3cqZAp">

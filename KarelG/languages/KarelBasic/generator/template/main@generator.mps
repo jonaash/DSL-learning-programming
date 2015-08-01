@@ -1106,7 +1106,7 @@
   </node>
   <node concept="13MO4I" id="5eWJqD2phKw">
     <property role="TrG5h" value="reduce_RoutineCall" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="3gUMe" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="312cEu" id="5eWJqD2pjub" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -1159,7 +1159,7 @@
   </node>
   <node concept="13MO4I" id="5eWJqD2pi4e">
     <property role="TrG5h" value="reduce_RoutineDefinition" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="3gUMe" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
     <node concept="312cEu" id="5eWJqD2pi5a" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -1224,7 +1224,7 @@
   </node>
   <node concept="13MO4I" id="2WqFKNDSU$B">
     <property role="TrG5h" value="reduce_IntegerLiteral" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <ref role="3gUMe" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
     <node concept="9aQIb" id="2WqFKNDSU$H" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDSU$J" role="9aQI4">
@@ -1261,7 +1261,7 @@
   </node>
   <node concept="13MO4I" id="6kvBWKzAbou">
     <property role="TrG5h" value="reduce_StringLiteral" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <ref role="3gUMe" to="dyrx:6kvBWKz_W$y" resolve="StringLiteral" />
     <node concept="9aQIb" id="6kvBWKzAcgV" role="13RCb5">
       <node concept="3clFbS" id="6kvBWKzAcgX" role="9aQI4">
@@ -1424,7 +1424,7 @@
   </node>
   <node concept="13MO4I" id="3hBhvFSO2D9">
     <property role="TrG5h" value="reduce_ExternalRoutineCall" />
-    <property role="3GE5qa" value="routine" />
+    <property role="3GE5qa" value="method.procedure" />
     <ref role="3gUMe" to="dyrx:4in_MZdaLTz" resolve="RoutineCall" />
     <node concept="312cEu" id="3hBhvFSOaib" role="13RCb5">
       <property role="2bfB8j" value="true" />

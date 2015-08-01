@@ -277,7 +277,7 @@
   </node>
   <node concept="1TIwiD" id="4in_MZdaLTz">
     <property role="TrG5h" value="RoutineCall" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <property role="R4oN_" value="executes procedure" />
     <ref role="1TJDcQ" node="14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="14XUkkdIUvj" role="1TKVEi">
@@ -289,7 +289,7 @@
   </node>
   <node concept="1TIwiD" id="4in_MZdaKkC">
     <property role="TrG5h" value="RoutineDefinition" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <property role="34LRSv" value="procedure" />
     <property role="R4oN_" value="defines sequence of commands as a procedure" />
     <ref role="1TJDcQ" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
@@ -305,7 +305,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2WqFKNDQKEn">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <property role="TrG5h" value="IntegerLiteral" />
     <property role="R4oN_" value="some integral number" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
@@ -322,21 +322,21 @@
     <property role="TrG5h" value="ITypeAnnotable" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDOdsR">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <property role="TrG5h" value="BooleanType" />
     <property role="34LRSv" value="logical" />
     <property role="R4oN_" value="true or false" />
     <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2mV">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <property role="TrG5h" value="IntegerType" />
     <property role="34LRSv" value="number" />
     <property role="R4oN_" value="integer number" />
     <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDQKD4">
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <property role="TrG5h" value="StringType" />
     <property role="34LRSv" value="text" />
     <property role="R4oN_" value="any text" />
@@ -424,7 +424,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6kvBWKz_W$y">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="some text" />
@@ -497,7 +497,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFSK1_a">
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <property role="TrG5h" value="Require" />
     <property role="34LRSv" value="require" />
     <property role="R4oN_" value="imports procedures from external Library" />
@@ -510,7 +510,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT4iX8">
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <property role="TrG5h" value="BooleanLiteral" />
     <property role="R4oN_" value="logical value - true or false" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
@@ -562,7 +562,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7KcPMNJwYJD" resolve="ParameterFill" />
+      <ref role="20lvS9" node="7KcPMNJwYJD" resolve="AbstractParameterFill" />
     </node>
   </node>
   <node concept="1TIwiD" id="14XUkkdEva7">
@@ -575,7 +575,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="0..n" />
       <property role="20kJfa" value="parameters" />
-      <ref role="20lvS9" node="3hBhvFT4i9B" resolve="ParameterDeclaration" />
+      <ref role="20lvS9" node="3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
     </node>
     <node concept="1TJgyj" id="5eWJqD2oA9V" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -645,22 +645,24 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFT4i9B">
-    <property role="TrG5h" value="ParameterDeclaration" />
+    <property role="TrG5h" value="AbstractParameterDeclaration" />
     <property role="3GE5qa" value="method" />
-    <property role="R4oN_" value="declares a function parameter" />
-    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="3hBhvFT4ibf">
     <property role="TrG5h" value="VoidType" />
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="type.concrete" />
     <property role="34LRSv" value="none" />
     <property role="R4oN_" value="nothing" />
     <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJwYJD">
     <property role="3GE5qa" value="method" />
-    <property role="TrG5h" value="ParameterFill" />
+    <property role="TrG5h" value="AbstractParameterFill" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7KcPMNJwYLb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -675,7 +677,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3hBhvFT4i9B" resolve="ParameterDeclaration" />
+      <ref role="20lvS9" node="3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
     </node>
   </node>
   <node concept="PlHQZ" id="7KcPMNJwYOl">
@@ -685,7 +687,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7KcPMNJwYJD" resolve="ParameterFill" />
+      <ref role="20lvS9" node="7KcPMNJwYJD" resolve="AbstractParameterFill" />
     </node>
     <node concept="1TJgyj" id="7KcPMNJwYQy" role="1TKVEi">
       <property role="20lmBu" value="reference" />

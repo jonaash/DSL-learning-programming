@@ -437,7 +437,7 @@
   </node>
   <node concept="1YbPZF" id="6kvBWKzDO9y">
     <property role="TrG5h" value="typeof_IntegerLiteral" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <node concept="3clFbS" id="6kvBWKzDO9z" role="18ibNy">
       <node concept="1Z5TYs" id="1WgzhSyV1QH" role="3cqZAp">
         <node concept="mw_s8" id="1WgzhSyV1QI" role="1ZfhK$">
@@ -573,7 +573,7 @@
   </node>
   <node concept="1YbPZF" id="3hBhvFSgvsJ">
     <property role="TrG5h" value="typeof_StringLiteral" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <node concept="3clFbS" id="3hBhvFSgvsK" role="18ibNy">
       <node concept="1Z5TYs" id="3hBhvFSgvvB" role="3cqZAp">
         <node concept="mw_s8" id="3hBhvFSgvvW" role="1ZfhKB">
@@ -631,7 +631,7 @@
   </node>
   <node concept="18kY7G" id="3hBhvFT1154">
     <property role="TrG5h" value="LibraryRequireDuplicites" />
-    <property role="3GE5qa" value="method" />
+    <property role="3GE5qa" value="method.procedure" />
     <node concept="3clFbS" id="3hBhvFT1155" role="18ibNy">
       <node concept="3clFbJ" id="3hBhvFT1156" role="3cqZAp">
         <node concept="3clFbS" id="3hBhvFT1157" role="3clFbx">
@@ -789,7 +789,7 @@
   </node>
   <node concept="1YbPZF" id="3hBhvFT4j08">
     <property role="TrG5h" value="typeof_BooleanLiteral" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="expression.literal" />
     <node concept="3clFbS" id="3hBhvFT4j09" role="18ibNy">
       <node concept="1Z5TYs" id="3hBhvFT4j2C" role="3cqZAp">
         <node concept="mw_s8" id="3hBhvFT4j2W" role="1ZfhKB">
