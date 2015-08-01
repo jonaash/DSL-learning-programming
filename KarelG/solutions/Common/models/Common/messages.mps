@@ -231,6 +231,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2J_q78dihKb" role="3cqZAp">
+          <node concept="37vLTI" id="2J_q78dihKc" role="3clFbG">
+            <node concept="3EllGN" id="2J_q78dihKd" role="37vLTJ">
+              <node concept="37vLTw" id="2J_q78dii2L" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="2J_q78dihKe" role="3ElVtu">
+                <property role="Xl_RC" value="error.variable.standalone" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2J_q78dihKf" role="37vLTx">
+              <property role="Xl_RC" value="Variable cannot be used alone." />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="146X79f00Ui" role="3cqZAp" />
         <node concept="3clFbF" id="7_uVVPcJTw2" role="3cqZAp">
           <node concept="37vLTI" id="7_uVVPcJTUt" role="3clFbG">

@@ -25,10 +25,6 @@
       </concept>
       <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
-      <concept id="3394217739174290881" name="KarelBasic.structure.LocalVariableDeclaration" flags="ng" index="36MCFd" />
-      <concept id="3394217739174297749" name="KarelBasic.structure.VariableReference" flags="ng" index="36MIYp">
-        <reference id="3394217739174297750" name="declaration" index="36MIYq" />
-      </concept>
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <child id="3394217739174290864" name="type" index="36MCEW" />
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
@@ -43,6 +39,10 @@
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="3163049152356415489" name="KarelVariables.structure.VariableReference" flags="ng" index="AE91N">
+        <reference id="3163049152356415490" name="declaration" index="AE91K" />
+      </concept>
+      <concept id="3163049152356225024" name="KarelVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
       <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
         <child id="1954067712460074322" name="variable" index="B81dD" />
         <child id="1954067712460074325" name="value" index="B81dI" />
@@ -110,7 +110,7 @@
         <node concept="3dtAsP" id="7KcPMNJp1S8" role="2jg$Xp" />
         <node concept="3jGSmg" id="7KcPMNJp1S9" role="hRHZh">
           <node concept="36Mw20" id="7KcPMNJp1WA" role="3jGSnO">
-            <node concept="36MCFd" id="7KcPMNJp1WD" role="36Mw2n">
+            <node concept="AFBxM" id="7KcPMNJp1WD" role="36Mw2n">
               <property role="TrG5h" value="d" />
               <node concept="2jchV_" id="7KcPMNJp1W$" role="36MCEW">
                 <ref role="2jchVA" node="7KcPMNJicwL" resolve="Dependency" />
@@ -118,7 +118,7 @@
             </node>
           </node>
           <node concept="36Mw20" id="7KcPMNJp1WZ" role="3jGSnO">
-            <node concept="36MCFd" id="7KcPMNJp1X2" role="36Mw2n">
+            <node concept="AFBxM" id="7KcPMNJp1X2" role="36Mw2n">
               <property role="TrG5h" value="b" />
               <node concept="2jchV_" id="7KcPMNJp1WX" role="36MCEW">
                 <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
@@ -134,8 +134,8 @@
                 <node concept="2j_qma" id="7KcPMNJS1Ct" role="2j_PeB">
                   <ref role="2jD6AI" node="7KcPMNJ6HP1" resolve="publicNumber" />
                 </node>
-                <node concept="36MIYp" id="7KcPMNJNqxw" role="2j_qme">
-                  <ref role="36MIYq" node="7KcPMNJp1X2" resolve="b" />
+                <node concept="AE91N" id="2J_q78dkDHa" role="2j_qme">
+                  <ref role="AE91K" node="7KcPMNJp1X2" resolve="b" />
                 </node>
               </node>
               <node concept="36Kqmr" id="7KcPMNJS1CD" role="B81dI">
@@ -173,8 +173,8 @@
         <node concept="36MBwV" id="7KcPMNJp1TK" role="2jg$Xp" />
         <node concept="3jGSmg" id="7KcPMNJp1SX" role="hRHZh">
           <node concept="3duzCq" id="7KcPMNJp1TH" role="3jGSnO">
-            <node concept="36MIYp" id="1LkA4kR9EG0" role="3duzCr">
-              <ref role="36MIYq" node="1LkA4kR9EFL" resolve="b" />
+            <node concept="AE91N" id="2J_q78dkDFr" role="3duzCr">
+              <ref role="AE91K" node="1LkA4kR9EFL" resolve="b" />
             </node>
           </node>
         </node>
@@ -191,11 +191,11 @@
         <node concept="3jGSmg" id="7KcPMNJp1UU" role="hRHZh">
           <node concept="3duzCq" id="7KcPMNJp1VU" role="3jGSnO">
             <node concept="3527Q3" id="7KcPMNJp1VZ" role="3duzCr">
-              <node concept="36MIYp" id="1LkA4kR9EKH" role="3527S9">
-                <ref role="36MIYq" node="1LkA4kR9EKf" resolve="b" />
+              <node concept="AE91N" id="2J_q78dkDGx" role="3527S9">
+                <ref role="AE91K" node="1LkA4kR9EKf" resolve="b" />
               </node>
-              <node concept="36MIYp" id="1LkA4kR9EKy" role="3527ZY">
-                <ref role="36MIYq" node="1LkA4kR9EIw" resolve="a" />
+              <node concept="AE91N" id="2J_q78dkDFV" role="3527ZY">
+                <ref role="AE91K" node="1LkA4kR9EIw" resolve="a" />
               </node>
             </node>
           </node>

@@ -366,13 +366,6 @@
     <property role="TrG5h" value="ILocalVariableDeclarationCommand" />
     <property role="3GE5qa" value="variable" />
   </node>
-  <node concept="1TIwiD" id="2WqFKNDO2n1">
-    <property role="TrG5h" value="LocalVariableDeclaration" />
-    <property role="3GE5qa" value="variable" />
-    <property role="R4oN_" value="declares a local variable" />
-    <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
-    <ref role="1TJDcQ" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
-  </node>
   <node concept="1TIwiD" id="2WqFKNCAeGz">
     <property role="TrG5h" value="VariableDeclaration" />
     <property role="R5$K7" value="true" />
@@ -399,25 +392,6 @@
     <node concept="1TJgyi" id="aB0Z16O_Ub" role="1TKVEl">
       <property role="TrG5h" value="isInitializer" />
       <ref role="AX2Wp" node="aB0Z16O_y_" resolve="Mandatority" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2WqFKNDO42l">
-    <property role="TrG5h" value="VariableReference" />
-    <property role="R5$K7" value="false" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="variable" />
-    <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
-    <node concept="1TJgyj" id="2WqFKNDO42m" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="declaration" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2WqFKNCAeGz" resolve="VariableDeclaration" />
-    </node>
-    <node concept="PrWs8" id="7KcPMNJfIqP" role="PzmwI">
-      <ref role="PrY4T" node="3hBhvFT7TZS" resolve="IStandaloneExpression" />
-    </node>
-    <node concept="PrWs8" id="7KcPMNJI2Uw" role="PzmwI">
-      <ref role="PrY4T" node="7KcPMNJI2DJ" resolve="IVariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="6kvBWKz_W$y">

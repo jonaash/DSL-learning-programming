@@ -16,9 +16,9 @@
     <import index="vuk8" ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(KarelBasic.generator.util)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -206,7 +206,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNDVWYD" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+      <ref role="30HIoZ" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
       <node concept="j$656" id="2WqFKNDVZzc" role="1lVwrX">
         <ref role="v9R2y" node="2WqFKNDVWZ1" resolve="reduce_LocalVariableDeclarationInit" />
       </node>
@@ -227,7 +227,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2WqFKNE3A9j" role="3acgRq">
-      <ref role="30HIoZ" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+      <ref role="30HIoZ" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
       <node concept="30G5F_" id="2WqFKNE3Amd" role="30HLyM">
         <node concept="3clFbS" id="2WqFKNE3Ame" role="2VODD2">
           <node concept="3clFbF" id="2WqFKNE3Ara" role="3cqZAp">
@@ -249,7 +249,7 @@
     </node>
     <node concept="3aamgX" id="2WqFKNDVWYN" role="3acgRq">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+      <ref role="30HIoZ" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
       <node concept="j$656" id="3hBhvFT9vkT" role="1lVwrX">
         <ref role="v9R2y" node="2WqFKNDVWZy" resolve="reduce_VariableReference" />
       </node>
@@ -366,7 +366,7 @@
   <node concept="13MO4I" id="2WqFKNDVWZ1">
     <property role="TrG5h" value="reduce_LocalVariableDeclarationInit" />
     <property role="3GE5qa" value="variable" />
-    <ref role="3gUMe" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+    <ref role="3gUMe" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
     <node concept="9aQIb" id="2WqFKNDW1t5" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDW1t7" role="9aQI4">
         <node concept="3cpWs8" id="2WqFKNDW1tc" role="3cqZAp">
@@ -437,7 +437,7 @@
   <node concept="13MO4I" id="2WqFKNDVWZy">
     <property role="TrG5h" value="reduce_VariableReference" />
     <property role="3GE5qa" value="variable" />
-    <ref role="3gUMe" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+    <ref role="3gUMe" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
     <node concept="9aQIb" id="2WqFKNDW1D4" role="13RCb5">
       <node concept="3clFbS" id="2WqFKNDW1D6" role="9aQI4">
         <node concept="3cpWs8" id="2WqFKNDW1Db" role="3cqZAp">
@@ -466,7 +466,7 @@
                           <node concept="2OqwBi" id="3hBhvFT9uQr" role="1iwH7V">
                             <node concept="30H73N" id="2WqFKNDW1XR" role="2Oq$k0" />
                             <node concept="3TrEf2" id="3hBhvFT9vdO" role="2OqNvi">
-                              <ref role="3Tt5mk" to="dyrx:2WqFKNDO42m" />
+                              <ref role="3Tt5mk" to="3y9h:2J_q78djvw2" />
                             </node>
                           </node>
                         </node>
@@ -501,7 +501,7 @@
   <node concept="13MO4I" id="2WqFKNE3C4O">
     <property role="TrG5h" value="reduce_LocalVariableDeclaration" />
     <property role="3GE5qa" value="variable" />
-    <ref role="3gUMe" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+    <ref role="3gUMe" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
     <node concept="3cpWsn" id="2WqFKNE3Cmn" role="13RCb5">
       <property role="TrG5h" value="i" />
       <node concept="10Oyi0" id="2WqFKNE3Cmo" role="1tU5fm">

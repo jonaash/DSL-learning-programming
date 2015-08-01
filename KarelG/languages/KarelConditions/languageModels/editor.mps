@@ -10,7 +10,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" implicit="true" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -453,7 +453,7 @@
                         <ref role="37wK5l" to="srng:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
                         <node concept="2OqwBi" id="jBG8nbMZvL" role="37wK5m">
                           <node concept="2OqwBi" id="jBG8nbMY8c" role="2Oq$k0">
-                            <node concept="Jnkvi" id="jBG8nbMXq0" role="2Oq$k0">
+                            <node concept="Jnkvi" id="4OhcFiDeWFK" role="2Oq$k0">
                               <ref role="1M0zk5" node="jBG8nbMtXr" resolve="cmdList" />
                             </node>
                             <node concept="3Tsc0h" id="jBG8nbMYxL" role="2OqNvi">
@@ -461,7 +461,7 @@
                             </node>
                           </node>
                           <node concept="34jXtK" id="jBG8nbN138" role="2OqNvi">
-                            <node concept="37vLTw" id="jBG8nbN1d0" role="25WWJ7">
+                            <node concept="37vLTw" id="4OhcFiDeWHO" role="25WWJ7">
                               <ref role="3cqZAo" node="jBG8nbMV4m" resolve="lastCmd" />
                             </node>
                           </node>

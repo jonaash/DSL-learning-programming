@@ -250,7 +250,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="aB0Z16PyuY" role="2OqNvi">
-              <ref role="1A9B2P" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+              <ref role="1A9B2P" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
             </node>
           </node>
         </node>
@@ -684,6 +684,58 @@
     </node>
     <node concept="13hLZK" id="6pJoTiq6Vw5" role="13h7CW">
       <node concept="3clFbS" id="6pJoTiq6Vw6" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2J_q78djvw8">
+    <property role="3GE5qa" value="variable" />
+    <ref role="13h7C2" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
+    <node concept="13hLZK" id="2J_q78djvw9" role="13h7CW">
+      <node concept="3clFbS" id="2J_q78djvwa" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2J_q78djvwb" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="2J_q78djvwc" role="1B3o_S" />
+      <node concept="3clFbS" id="2J_q78djvwd" role="3clF47">
+        <node concept="3cpWs6" id="2J_q78djvwe" role="3cqZAp">
+          <node concept="2OqwBi" id="2J_q78djvwf" role="3cqZAk">
+            <node concept="2OqwBi" id="2J_q78djvwg" role="2Oq$k0">
+              <node concept="13iPFW" id="2J_q78djvwh" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2J_q78djvwi" role="2OqNvi">
+                <ref role="3Tt5mk" to="3y9h:2J_q78djvw2" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2J_q78djvwj" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2J_q78djvwk" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="2J_q78djvwl" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getDeclaration" />
+      <ref role="13i0hy" to="ljn0:7KcPMNJI2DN" resolve="getDeclaration" />
+      <node concept="3Tm1VV" id="2J_q78djvwm" role="1B3o_S" />
+      <node concept="3clFbS" id="2J_q78djvwn" role="3clF47">
+        <node concept="3cpWs6" id="2J_q78djvwo" role="3cqZAp">
+          <node concept="2OqwBi" id="2J_q78djvwp" role="3cqZAk">
+            <node concept="13iPFW" id="2J_q78djvwq" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2J_q78djvwr" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:2J_q78djvw2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2J_q78djvws" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+      </node>
     </node>
   </node>
 </model>

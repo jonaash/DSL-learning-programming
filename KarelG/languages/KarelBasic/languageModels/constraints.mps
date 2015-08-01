@@ -340,16 +340,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="6H9YPQxHHWU">
-    <property role="3GE5qa" value="variable" />
-    <ref role="1M2myG" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
-    <node concept="1N5Pfh" id="1GufzGWegTF" role="1Mr941">
-      <ref role="1N5Vy1" to="dyrx:2WqFKNDO42m" />
-      <node concept="1dDu$B" id="7KcPMNIXMut" role="1N6uqs">
-        <ref role="1dDu$A" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="1GufzGWeeBl">
     <property role="3GE5qa" value="command" />
     <ref role="1M2myG" to="dyrx:1IJMvjRjER" resolve="CommandList" />

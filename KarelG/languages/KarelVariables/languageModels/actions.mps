@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
+    <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" />
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -264,7 +264,7 @@
       <node concept="tYCnQ" id="2WqFKNE9S0e" role="tZc4B">
         <ref role="uz4UX" to="3y9h:2WqFKNDOaYc" resolve="LocalVariableDeclarationCommand" />
         <node concept="yEb5T" id="2WqFKNE9S0h" role="uz6Si">
-          <ref role="yEYPM" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+          <ref role="yEYPM" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
           <node concept="yEnE0" id="2WqFKNE9S0i" role="yEVE$">
             <node concept="3clFbS" id="2WqFKNE9S0j" role="2VODD2">
               <node concept="3cpWs8" id="2WqFKNE9S2b" role="3cqZAp">
@@ -343,7 +343,7 @@
                 <node concept="3cpWsn" id="2WqFKNEaHee" role="3cpWs9">
                   <property role="TrG5h" value="declaration" />
                   <node concept="3Tqbb2" id="2WqFKNEaHe9" role="1tU5fm">
-                    <ref role="ehGHo" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+                    <ref role="ehGHo" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
                   </node>
                   <node concept="2OqwBi" id="2WqFKNEaI1E" role="33vP2m">
                     <node concept="2OqwBi" id="2WqFKNEaHHu" role="2Oq$k0">
@@ -351,7 +351,7 @@
                       <node concept="I4A8Y" id="2WqFKNEaHS2" role="2OqNvi" />
                     </node>
                     <node concept="15TzpJ" id="2WqFKNEaIcC" role="2OqNvi">
-                      <ref role="I8UWU" to="dyrx:2WqFKNDO2n1" resolve="LocalVariableDeclaration" />
+                      <ref role="I8UWU" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -408,7 +408,7 @@
       <node concept="tYCnQ" id="1GufzGWgl4e" role="tZc4B">
         <ref role="uz4UX" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
         <node concept="yEb5T" id="1GufzGWgl4k" role="uz6Si">
-          <ref role="yEYPM" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+          <ref role="yEYPM" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
           <node concept="yEnE0" id="1GufzGWgl4l" role="yEVE$">
             <node concept="3clFbS" id="1GufzGWgl4m" role="2VODD2">
               <node concept="3cpWs8" id="1GufzGWglh0" role="3cqZAp">
@@ -684,7 +684,7 @@
   <node concept="3UOs0u" id="7KcPMNJfIfj">
     <property role="TrG5h" value="VariableReferenceAssignment" />
     <node concept="3UNGvq" id="7KcPMNJfIiH" role="3UOs0v">
-      <ref role="3UNGvu" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+      <ref role="3UNGvu" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
     </node>
   </node>
   <node concept="3FK_9_" id="7KcPMNJfIkR">
@@ -696,7 +696,7 @@
       <node concept="tYCnQ" id="7KcPMNJfIkT" role="tZc4B">
         <ref role="uz4UX" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
         <node concept="yEb5T" id="7KcPMNJfIkU" role="uz6Si">
-          <ref role="yEYPM" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
+          <ref role="yEYPM" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
           <node concept="yEnE0" id="7KcPMNJfIkV" role="yEVE$">
             <node concept="3clFbS" id="7KcPMNJfIkW" role="2VODD2">
               <node concept="3cpWs8" id="7KcPMNJfIkX" role="3cqZAp">

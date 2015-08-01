@@ -1868,58 +1868,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="2WqFKNDRDvT">
-    <property role="3GE5qa" value="variable" />
-    <ref role="13h7C2" to="dyrx:2WqFKNDO42l" resolve="VariableReference" />
-    <node concept="13hLZK" id="2WqFKNDRDvU" role="13h7CW">
-      <node concept="3clFbS" id="2WqFKNDRDvV" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2WqFKNDRTff" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getTypeAnnotation" />
-      <ref role="13i0hy" node="2WqFKNDRDv6" resolve="getTypeAnnotation" />
-      <node concept="3Tm1VV" id="2WqFKNDRTfg" role="1B3o_S" />
-      <node concept="3clFbS" id="2WqFKNDRTfj" role="3clF47">
-        <node concept="3cpWs6" id="2WqFKNDRTj3" role="3cqZAp">
-          <node concept="2OqwBi" id="2WqFKNDSiOI" role="3cqZAk">
-            <node concept="2OqwBi" id="2WqFKNDSige" role="2Oq$k0">
-              <node concept="13iPFW" id="2WqFKNDSidN" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6FJbaIqkwn6" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:2WqFKNDO42m" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2WqFKNDSj0x" role="2OqNvi">
-              <ref role="37wK5l" node="2WqFKNDRDv6" resolve="getTypeAnnotation" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="1BMnhOnsNeY" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="7KcPMNJI2X4" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getDeclaration" />
-      <ref role="13i0hy" node="7KcPMNJI2DN" resolve="getDeclaration" />
-      <node concept="3Tm1VV" id="7KcPMNJI2X5" role="1B3o_S" />
-      <node concept="3clFbS" id="7KcPMNJI2X8" role="3clF47">
-        <node concept="3cpWs6" id="7KcPMNJI2ZP" role="3cqZAp">
-          <node concept="2OqwBi" id="7KcPMNJI33j" role="3cqZAk">
-            <node concept="13iPFW" id="7KcPMNJI307" role="2Oq$k0" />
-            <node concept="3TrEf2" id="7KcPMNJI3hH" role="2OqNvi">
-              <ref role="3Tt5mk" to="dyrx:2WqFKNDO42m" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="7KcPMNJI2X9" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="2WqFKNDREAo">
     <property role="3GE5qa" value="variable" />
     <ref role="13h7C2" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
