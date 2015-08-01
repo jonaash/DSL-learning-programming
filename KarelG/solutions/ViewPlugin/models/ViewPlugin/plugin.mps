@@ -4,8 +4,6 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
@@ -17,16 +15,7 @@
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
     <import index="z9dx" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.view(GuiLib/cz.dsllp.gui.view@java_stub)" />
     <import index="gj7t" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#com.googlecode.tinydi(GuiLib/com.googlecode.tinydi@java_stub)" />
-    <import index="xqpa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" />
-    <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
-    <import index="3v9x" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.service(GuiLib/cz.dsllp.gui.service@java_stub)" />
-    <import index="zppf" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.server(GuiLib/cz.dsllp.gui.server@java_stub)" />
-    <import index="2vhp" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.world(GuiLib/cz.dsllp.gui.model.world@java_stub)" />
-    <import index="onej" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.model.controls(GuiLib/cz.dsllp.gui.model.controls@java_stub)" />
-    <import index="f70c" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.controller(GuiLib/cz.dsllp.gui.controller@java_stub)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
@@ -128,6 +117,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -205,6 +195,9 @@
                   <node concept="3VsKOn" id="pLBRfXAUFS" role="37wK5m">
                     <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
                   </node>
+                  <node concept="3uibUv" id="1LkA4kRgE3T" role="3PaCim">
+                    <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -222,6 +215,9 @@
                   <node concept="3VsKOn" id="pLBRfXAUvM" role="37wK5m">
                     <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
                   </node>
+                  <node concept="3uibUv" id="1LkA4kRgEhX" role="3PaCim">
+                    <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -238,6 +234,9 @@
                   </node>
                   <node concept="3VsKOn" id="pLBRfXAVnZ" role="37wK5m">
                     <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+                  </node>
+                  <node concept="3uibUv" id="1LkA4kRgEwi" role="3PaCim">
+                    <ref role="3uigEE" to="e2lb:~String" resolve="String" />
                   </node>
                 </node>
               </node>
@@ -404,6 +403,9 @@
               </node>
               <node concept="3VsKOn" id="1ZF81FZUsGn" role="37wK5m">
                 <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+              </node>
+              <node concept="3uibUv" id="1LkA4kRgCEO" role="3PaCim">
+                <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
               </node>
             </node>
           </node>

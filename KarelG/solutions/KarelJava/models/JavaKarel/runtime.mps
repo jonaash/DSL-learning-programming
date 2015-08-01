@@ -4,22 +4,17 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
   </languages>
   <imports>
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="22fg" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
     <import index="25kt" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.rmi(JDK/java.rmi@java_stub)" />
     <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="hme7" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message.appearance(GuiServerLib/cz.dsllp.gui.api.message.appearance@java_stub)" />
     <import index="be9c" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message.command(GuiServerLib/cz.dsllp.gui.api.message.command@java_stub)" />
-    <import index="f1am" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiServerLib/cz.dsllp.gui@java_stub)" />
     <import index="d577" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message(GuiServerLib/cz.dsllp.gui.api.message@java_stub)" />
     <import index="52rl" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.service(GuiServerLib/cz.dsllp.gui.api.service@java_stub)" />
-    <import index="to5d" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.logging(MPS.Core/jetbrains.mps.logging@java_stub)" />
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.configuration)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -183,6 +178,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
@@ -2798,6 +2794,9 @@
               <node concept="3VsKOn" id="pLBRfXAUFS" role="37wK5m">
                 <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
               </node>
+              <node concept="3uibUv" id="1LkA4kRgtr7" role="3PaCim">
+                <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+              </node>
             </node>
           </node>
         </node>
@@ -2815,6 +2814,9 @@
               <node concept="3VsKOn" id="pLBRfXAUvM" role="37wK5m">
                 <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
               </node>
+              <node concept="3uibUv" id="1LkA4kRgtBM" role="3PaCim">
+                <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+              </node>
             </node>
           </node>
         </node>
@@ -2822,15 +2824,18 @@
           <node concept="3cpWsn" id="pLBRfXAVa5" role="3cpWs9">
             <property role="TrG5h" value="serviceName" />
             <node concept="17QB3L" id="pLBRfXAVa0" role="1tU5fm" />
-            <node concept="2YIFZM" id="pLBRfXAVnX" role="33vP2m">
+            <node concept="2YIFZM" id="1LkA4kRgfm9" role="33vP2m">
               <ref role="37wK5l" to="5htl:pLBRfXAqZd" resolve="get" />
               <ref role="1Pybhc" to="5htl:pLBRfXAoeA" resolve="ConfigurationProvider" />
-              <node concept="10M0yZ" id="pLBRfXAVnY" role="37wK5m">
+              <node concept="10M0yZ" id="1LkA4kRgfma" role="37wK5m">
                 <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
                 <ref role="3cqZAo" to="5htl:pLBRfXAoc$" resolve="RMI_SERVICE_NAME" />
               </node>
-              <node concept="3VsKOn" id="pLBRfXAVnZ" role="37wK5m">
+              <node concept="3VsKOn" id="1LkA4kRgfmb" role="37wK5m">
                 <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+              </node>
+              <node concept="3uibUv" id="1LkA4kRgfyU" role="3PaCim">
+                <ref role="3uigEE" to="e2lb:~String" resolve="String" />
               </node>
             </node>
           </node>
