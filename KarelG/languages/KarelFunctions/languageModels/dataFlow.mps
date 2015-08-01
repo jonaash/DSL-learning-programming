@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -100,8 +101,8 @@
           <node concept="2OqwBi" id="7jmg6noy0np" role="3clFbG">
             <node concept="2OqwBi" id="7jmg6noxZ8M" role="2Oq$k0">
               <node concept="3__QtB" id="7jmg6noxZ6g" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="7jmg6noxZAJ" role="2OqNvi">
-                <ref role="3TtcxE" to="a5m:3hBhvFTa07b" />
+              <node concept="3Tsc0h" id="6pJoTiqax4W" role="2OqNvi">
+                <ref role="3TtcxE" to="dyrx:6pJoTiq8JqU" />
               </node>
             </node>
             <node concept="2es0OD" id="7jmg6noy3Wl" role="2OqNvi">

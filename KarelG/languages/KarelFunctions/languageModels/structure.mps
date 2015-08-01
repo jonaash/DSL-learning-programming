@@ -47,12 +47,6 @@
     <property role="3GE5qa" value="function" />
     <property role="R4oN_" value="executes function (and use its result)" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
-    <node concept="1TJgyj" id="3hBhvFTa07b" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parameters" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
-    </node>
     <node concept="1TJgyj" id="14XUkkdIUuJ" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="definition" />
