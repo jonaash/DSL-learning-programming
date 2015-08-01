@@ -32,5 +32,7 @@ crashlytics-build.properties
 /**/source_gen/*
 /**/source_gen.caches/
 /**/classes_gen/
+/**/test_gen/*
+/**/test_gen.caches/*
 
 /**/.mps/workspace.xml
