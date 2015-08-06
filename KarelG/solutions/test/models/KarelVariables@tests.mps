@@ -17,6 +17,9 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
@@ -85,6 +88,9 @@
         <node concept="7OXhh" id="4OhcFiDjFOE" role="7EUXB" />
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="3eViXf8n_4v">
+    <property role="2XOHcw" value="./../" />
   </node>
 </model>
 
