@@ -165,6 +165,7 @@
     <node concept="2tJIrI" id="7_uVVPcF8RN" role="jymVt" />
     <node concept="1Pe0a1" id="7_uVVPcCVwe" role="jymVt">
       <node concept="3clFbS" id="7_uVVPcCVwg" role="1Pe0a2">
+        <node concept="3clFbH" id="3eViXf8ngxO" role="3cqZAp" />
         <node concept="3SKdUt" id="3hBhvFSIIvc" role="3cqZAp">
           <node concept="3SKdUq" id="3hBhvFSIIwe" role="3SKWNk">
             <property role="3SKdUp" value="Errors" />
@@ -398,8 +399,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="18k56XD_SbT" role="3cqZAp" />
         <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
+        <node concept="3clFbF" id="3eViXf8ukDC" role="3cqZAp">
+          <node concept="37vLTI" id="3eViXf8ukDD" role="3clFbG">
+            <node concept="3EllGN" id="3eViXf8ukDE" role="37vLTJ">
+              <node concept="37vLTw" id="3eViXf8ukDL" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="3eViXf8ukDF" role="3ElVtu">
+                <property role="Xl_RC" value="error.function.call.wrong.parameters.count" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3eViXf8ukDG" role="37vLTx">
+              <property role="Xl_RC" value="Wrong parameter count. Function has {0} parameters, but it is called with {1} parameters." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3eViXf8ukwu" role="3cqZAp" />
+        <node concept="3clFbH" id="3eViXf8uk$$" role="3cqZAp" />
         <node concept="3clFbF" id="7jmg6nozrBC" role="3cqZAp">
           <node concept="37vLTI" id="7jmg6nozrBD" role="3clFbG">
             <node concept="3EllGN" id="7jmg6nozrBE" role="37vLTJ">

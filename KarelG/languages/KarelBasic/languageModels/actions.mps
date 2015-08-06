@@ -12,6 +12,7 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -117,6 +118,7 @@
         <child id="1177339176647" name="matchingText" index="uSyvl" />
         <child id="1177339186632" name="descriptionText" index="uS$Nq" />
         <child id="1177339421668" name="handler" index="uTubQ" />
+        <child id="6400740936056405411" name="iconNode" index="1o8C9r" />
       </concept>
       <concept id="1177337833147" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parameterObject" flags="nn" index="uNquD" />
       <concept id="1177337890340" name="jetbrains.mps.lang.actions.structure.QueryFunction_ParameterizedSubstitute_Query" flags="in" index="uNCsQ" />
@@ -143,6 +145,7 @@
       </concept>
       <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
       <concept id="1154465273778" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parentNode" flags="nn" index="3bvxqY" />
+      <concept id="6400740936061763657" name="jetbrains.mps.lang.actions.structure.QueryFunction_IconNode" flags="in" index="1p$bYL" />
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
       <concept id="5584396657084920413" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_SampleNode" flags="nn" index="1r4N5L" />
       <concept id="1182819125053" name="jetbrains.mps.lang.actions.structure.ConceptRightTransformPart" flags="ng" index="1_wSoI">
@@ -1024,6 +1027,14 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="3eViXf8sMh7" role="3cqZAp">
+                <node concept="2OqwBi" id="3eViXf8sMw6" role="3clFbG">
+                  <node concept="1Q6Npb" id="3eViXf8sMsf" role="2Oq$k0" />
+                  <node concept="15TzpJ" id="3eViXf8sMD6" role="2OqNvi">
+                    <ref role="I8UWU" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="6pJoTiqcTqn" role="3cqZAp">
                 <node concept="3cpWsn" id="6pJoTiqcTqo" role="3cpWs9">
                   <property role="TrG5h" value="call" />
@@ -1034,6 +1045,7 @@
                     <node concept="uNquD" id="6pJoTiqld_Z" role="2Oq$k0" />
                     <node concept="2qgKlT" id="6pJoTiqldVb" role="2OqNvi">
                       <ref role="37wK5l" to="ljn0:6pJoTiqkWq9" resolve="createCallNode" />
+                      <node concept="GyYSE" id="3eViXf8qNt7" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1091,7 +1103,7 @@
               <node concept="3clFbF" id="6pJoTiqktob" role="3cqZAp">
                 <node concept="2OqwBi" id="6pJoTiqktPA" role="3clFbG">
                   <node concept="uNquD" id="6pJoTiqktoa" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="6pJoTiqku8L" role="2OqNvi">
+                  <node concept="2qgKlT" id="4OhcFiDoEo4" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:6pJoTiqegUP" resolve="getCallPresentation" />
                   </node>
                 </node>
@@ -1124,6 +1136,20 @@
         <node concept="uMFAO" id="2PpeCt3iRtw" role="uz6Si">
           <node concept="uSIkt" id="2PpeCt3iRtx" role="uTubQ">
             <node concept="3clFbS" id="2PpeCt3iRty" role="2VODD2">
+              <node concept="34ab3g" id="3eViXf8syoY" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="2YIFZM" id="3eViXf8sB_S" role="34bqiv">
+                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <node concept="Xl_RD" id="3eViXf8sBDC" role="37wK5m">
+                    <property role="Xl_RC" value="AbstractCall_Expression - parameterObject: {0}, currentTargetNode: {1}, parentNode: [2}, pattern: {3}" />
+                  </node>
+                  <node concept="uNquD" id="3eViXf8sDHk" role="37wK5m" />
+                  <node concept="GyYSE" id="3eViXf8sDRn" role="37wK5m" />
+                  <node concept="3bvxqY" id="3eViXf8sE1l" role="37wK5m" />
+                  <node concept="ub8z3" id="3eViXf8sEbR" role="37wK5m" />
+                </node>
+              </node>
               <node concept="3cpWs8" id="2PpeCt3iRtD" role="3cqZAp">
                 <node concept="3cpWsn" id="2PpeCt3iRtE" role="3cpWs9">
                   <property role="TrG5h" value="call" />
@@ -1134,6 +1160,7 @@
                     <node concept="uNquD" id="2PpeCt3iRtH" role="2Oq$k0" />
                     <node concept="2qgKlT" id="2PpeCt3iRtI" role="2OqNvi">
                       <ref role="37wK5l" to="ljn0:6pJoTiqkWq9" resolve="createCallNode" />
+                      <node concept="GyYSE" id="3eViXf8qT9P" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1174,7 +1201,7 @@
               <node concept="3clFbF" id="2PpeCt3iRu5" role="3cqZAp">
                 <node concept="2OqwBi" id="2PpeCt3iRu6" role="3clFbG">
                   <node concept="uNquD" id="2PpeCt3iRu7" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="2PpeCt3iRu8" role="2OqNvi">
+                  <node concept="2qgKlT" id="4OhcFiDoDWd" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:6pJoTiqegUP" resolve="getCallPresentation" />
                   </node>
                 </node>
@@ -1188,6 +1215,19 @@
                   <node concept="uNquD" id="2PpeCt3iRud" role="2Oq$k0" />
                   <node concept="2qgKlT" id="2PpeCt3iRue" role="2OqNvi">
                     <ref role="37wK5l" to="ljn0:6pJoTiqkw7u" resolve="getCallDescription" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1p$bYL" id="3eViXf8x2Rm" role="1o8C9r">
+            <node concept="3clFbS" id="3eViXf8x2Rn" role="2VODD2">
+              <node concept="3clFbF" id="3eViXf8x3aO" role="3cqZAp">
+                <node concept="2ShNRf" id="3eViXf8x3aM" role="3clFbG">
+                  <node concept="3zrR0B" id="3eViXf8x3hU" role="2ShVmc">
+                    <node concept="3Tqbb2" id="3eViXf8x3hW" role="3zrR0E">
+                      <ref role="ehGHo" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
+                    </node>
                   </node>
                 </node>
               </node>

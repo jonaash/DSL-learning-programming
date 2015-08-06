@@ -2,7 +2,6 @@
 <model ref="r:1a47b6be-09d7-4623-b1f5-ee119ec24bfe(KarelBasic.routines)">
   <persistence version="9" />
   <languages>
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="0" />
   </languages>
   <imports />
@@ -11,7 +10,7 @@
       <concept id="4942585347623820899" name="KarelBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
       <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
       <concept id="1242405555016616841" name="KarelBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
-        <child id="1242405555016843190" name="routines" index="sZtrN" />
+        <child id="1242405555016843190" name="methods" index="sZtrN" />
       </concept>
       <concept id="1242405555015381639" name="KarelBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />

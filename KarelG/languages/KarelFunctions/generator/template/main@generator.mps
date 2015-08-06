@@ -233,8 +233,8 @@
                 <node concept="3clFbF" id="3hBhvFT7BTz" role="3cqZAp">
                   <node concept="2OqwBi" id="3hBhvFT7BYA" role="3clFbG">
                     <node concept="30H73N" id="3hBhvFT7BTy" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7KcPMNJmk2I" role="2OqNvi">
-                      <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
+                    <node concept="3Tsc0h" id="3eViXf8oul5" role="2OqNvi">
+                      <ref role="3TtcxE" to="a5m:3eViXf8nNpS" />
                     </node>
                   </node>
                 </node>
@@ -321,7 +321,7 @@
   <node concept="13MO4I" id="3hBhvFT7CYS">
     <property role="TrG5h" value="reduce_ParameterDeclaration" />
     <property role="3GE5qa" value="function" />
-    <ref role="3gUMe" to="dyrx:3hBhvFT4i9B" resolve="AbstractParameterDeclaration" />
+    <ref role="3gUMe" to="a5m:1LkA4kR7JrZ" resolve="ParameterDeclaration" />
     <node concept="312cEu" id="3hBhvFT7CYX" role="13RCb5">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Foo" />

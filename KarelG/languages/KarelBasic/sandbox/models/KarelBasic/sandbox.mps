@@ -2,7 +2,6 @@
 <model ref="r:23b7089f-9530-47f2-810e-0291c46a086d(KarelBasic.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="0" />
   </languages>
   <imports />

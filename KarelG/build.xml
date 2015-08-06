@@ -894,7 +894,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.KarelVariables" depends="java.compile.Common, java.compile.KarelBasic, java.compile.KarelConditions, fetchDependencies">
+  <target name="java.compile.KarelVariables" depends="java.compile.Common, java.compile.GuiLib, java.compile.JavaKarel, java.compile.KarelBasic, java.compile.KarelConditions, fetchDependencies">
     <mkdir dir="${basedir}/languages/KarelVariables/source_gen" />
     <mkdir dir="${build.tmp}/java/out/KarelVariables" />
     <javac destdir="${build.tmp}/java/out/KarelVariables" fork="true" includeantruntime="false">
@@ -906,6 +906,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/Common" />
+        <pathelement path="${build.tmp}/java/out/GuiLib" />
+        <pathelement path="${build.tmp}/java/out/JavaKarel" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
@@ -915,6 +917,13 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/KarelBasic" />
         <pathelement path="${build.tmp}/java/out/KarelConditions" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/tinydi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />
@@ -987,7 +996,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.KarelFunctions" depends="java.compile.Common, java.compile.KarelBasic, java.compile.KarelConditions, java.compile.KarelVariables, fetchDependencies">
+  <target name="java.compile.KarelFunctions" depends="java.compile.Common, java.compile.GuiLib, java.compile.JavaKarel, java.compile.KarelBasic, java.compile.KarelConditions, java.compile.KarelVariables, fetchDependencies">
     <mkdir dir="${basedir}/languages/KarelFunctions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/KarelFunctions" />
     <javac destdir="${build.tmp}/java/out/KarelFunctions" fork="true" includeantruntime="false">
@@ -999,6 +1008,8 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/Common" />
+        <pathelement path="${build.tmp}/java/out/GuiLib" />
+        <pathelement path="${build.tmp}/java/out/JavaKarel" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
@@ -1009,6 +1020,13 @@
         <pathelement path="${build.tmp}/java/out/KarelBasic" />
         <pathelement path="${build.tmp}/java/out/KarelConditions" />
         <pathelement path="${build.tmp}/java/out/KarelVariables" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/api.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/slf4j-log4j12.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/gui.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/javax.inject.jar" />
+        <fileset file="${basedir}/solutions/GuiServerLib/lib/tinydi.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/jdom.jar" />

@@ -1015,6 +1015,7 @@
     <ref role="1XX52x" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
     <node concept="3F1sOY" id="3hBhvFTakal" role="2wV5jI">
       <ref role="1NtTu8" to="dyrx:3hBhvFT7TZT" />
+      <ref role="1ERwB7" node="4OhcFiDl0j$" resolve="StandAloneExpressionCommand_Delete" />
     </node>
   </node>
   <node concept="1h_SRR" id="6xChywqBrIK">
@@ -1505,6 +1506,24 @@
     <ref role="1XX52x" to="dyrx:3hBhvFT4ibf" resolve="VoidType" />
     <node concept="PMmxH" id="3hBhvFT71d8" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4OhcFiDl0j$">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="StandAloneExpressionCommand_Delete" />
+    <ref role="1h_SK9" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
+    <node concept="1hA7zw" id="4OhcFiDl0qD" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="4OhcFiDl0qE" role="1hA7z_">
+        <node concept="3clFbS" id="4OhcFiDl0qF" role="2VODD2">
+          <node concept="3clFbF" id="4OhcFiDl0F1" role="3cqZAp">
+            <node concept="2OqwBi" id="4OhcFiDl0GM" role="3clFbG">
+              <node concept="0IXxy" id="4OhcFiDl0F0" role="2Oq$k0" />
+              <node concept="1PgB_6" id="4OhcFiDl0SO" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

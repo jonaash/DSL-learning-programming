@@ -15,6 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(KarelObjective.behavior)" implicit="true" />
   </imports>
@@ -580,8 +581,8 @@
                         <ref role="3Tt5mk" to="t2e5:7KcPMNJ6ElS" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="7KcPMNJmlSo" role="2OqNvi">
-                      <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
+                    <node concept="3Tsc0h" id="3eViXf8vgQZ" role="2OqNvi">
+                      <ref role="3TtcxE" to="a5m:3eViXf8nNpS" />
                     </node>
                   </node>
                 </node>

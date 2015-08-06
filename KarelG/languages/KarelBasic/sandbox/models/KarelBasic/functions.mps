@@ -3,17 +3,18 @@
   <persistence version="9" />
   <languages>
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="KarelConditions" version="0" />
-    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="0" />
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="4942585347623814440" name="KarelBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
+      <concept id="8938755948420525033" name="KarelBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
+        <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
+        <child id="8938755948420525131" name="value" index="2jzNHB" />
+      </concept>
       <concept id="1242405555016616841" name="KarelBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
         <child id="1242405555016843190" name="methods" index="sZtrN" />
       </concept>
@@ -22,9 +23,14 @@
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
         <child id="3776063756796240563" name="parameters" index="3dtAt9" />
       </concept>
+      <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+        <child id="7381227804175824570" name="parameters" index="3WjpkI" />
+      </concept>
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
+      <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <child id="3394217739174290864" name="type" index="36MCEW" />
@@ -33,6 +39,13 @@
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="7730986614922691039" name="KarelBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
+      </concept>
+      <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
+      <concept id="3776063756796243784" name="KarelBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
+        <property id="3776063756796243785" name="value" index="3dtAEN" />
+      </concept>
+      <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -57,6 +70,8 @@
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
       <concept id="2041423954150618879" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="KarelFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
+      <concept id="3776063756796240560" name="KarelFunctions.structure.FunctionCall" flags="ng" index="3dtAta" />
       <concept id="3776063756796240557" name="KarelFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn" />
       <concept id="3776063756797050848" name="KarelFunctions.structure.ReturnCommand" flags="ng" index="3duzCq">
         <child id="3776063756797050849" name="value" index="3duzCr" />
@@ -77,7 +92,7 @@
     </language>
   </registry>
   <node concept="1$vsWe" id="3hBhvFT6RhQ">
-    <property role="TrG5h" value="VoidType" />
+    <property role="TrG5h" value="Functions" />
     <node concept="3dtAtn" id="7KcPMNJp1LJ" role="sZtrN">
       <property role="TrG5h" value="countMarks" />
       <node concept="36MCER" id="7KcPMNJp1MC" role="2jg$Xp" />
@@ -133,6 +148,83 @@
         <node concept="36MCER" id="1LkA4kR8TWS" role="36MCEW" />
       </node>
     </node>
+    <node concept="3dtAtn" id="3eViXf8nLWH" role="sZtrN">
+      <property role="TrG5h" value="countMarks2" />
+      <node concept="36MCER" id="3eViXf8ussT" role="2jg$Xp" />
+      <node concept="3jGSmg" id="3eViXf8nLWJ" role="hRHZh">
+        <node concept="17CkzI" id="3eViXf8nLWK" role="3jGSnO">
+          <node concept="17Ff7J" id="3eViXf8nLWL" role="17CkHB" />
+          <node concept="3jGSmg" id="3eViXf8nLWM" role="17CkHq" />
+          <node concept="3jGSmg" id="3eViXf8nLWN" role="17CkHv">
+            <node concept="3duzCq" id="3eViXf8nLWO" role="3jGSnO">
+              <node concept="36Kqmr" id="3eViXf8nLWP" role="3duzCr">
+                <property role="36Kqnr" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="36Mw20" id="3eViXf8nLWQ" role="3jGSnO">
+          <node concept="AFBxM" id="3eViXf8nLWR" role="36Mw2n">
+            <property role="TrG5h" value="uuu" />
+            <node concept="36MCER" id="3eViXf8nLWS" role="36MCEW" />
+            <node concept="AE91N" id="3eViXf8nLWT" role="36MIYJ">
+              <ref role="AE91K" node="3eViXf8nLX5" resolve="m1" />
+            </node>
+          </node>
+        </node>
+        <node concept="14tyHZ" id="3eViXf8nLWU" role="3jGSnO">
+          <node concept="AFBxM" id="3eViXf8nLWV" role="14t$bc">
+            <property role="TrG5h" value="u" />
+            <node concept="36MCER" id="3eViXf8nLWW" role="36MCEW" />
+            <node concept="36Kqmr" id="3eViXf8nLWX" role="36MIYJ">
+              <property role="36Kqnr" value="1" />
+            </node>
+          </node>
+          <node concept="3jGSmg" id="3eViXf8nLWY" role="3azrUc">
+            <node concept="3duzCq" id="3eViXf8nLWZ" role="3jGSnO">
+              <node concept="AE91N" id="3eViXf8nLX0" role="3duzCr">
+                <ref role="AE91K" node="3eViXf8nLX5" resolve="m1" />
+              </node>
+            </node>
+          </node>
+          <node concept="36Kqmr" id="3eViXf8nLX1" role="14t$be">
+            <property role="36Kqnr" value="6" />
+          </node>
+        </node>
+        <node concept="17J3f2" id="3eViXf8nLX2" role="3jGSnO" />
+        <node concept="3duzCq" id="3eViXf8nLX3" role="3jGSnO">
+          <node concept="36Kqmr" id="3eViXf8nLX4" role="3duzCr">
+            <property role="36Kqnr" value="8" />
+          </node>
+        </node>
+      </node>
+      <node concept="FiAUU" id="3eViXf8nLX5" role="3dtAt9">
+        <property role="TrG5h" value="m1" />
+        <node concept="36MCER" id="3eViXf8nLX6" role="36MCEW" />
+      </node>
+      <node concept="FiAUU" id="3eViXf8qiJ6" role="3dtAt9">
+        <property role="TrG5h" value="m2" />
+        <node concept="36MCER" id="3eViXf8qiJ7" role="36MCEW" />
+      </node>
+    </node>
+    <node concept="3dtAtn" id="4OhcFiDjZn1" role="sZtrN">
+      <property role="TrG5h" value="c" />
+      <node concept="3jGSmg" id="4OhcFiDjZn7" role="hRHZh">
+        <node concept="3duzCq" id="3eViXf8ustc" role="3jGSnO">
+          <node concept="3dtAEM" id="3eViXf8ustf" role="3duzCr">
+            <property role="3dtAEN" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="36MBwV" id="3eViXf8ust9" role="2jg$Xp" />
+    </node>
+    <node concept="29J987" id="4OhcFiDojVz" role="sZtrN">
+      <property role="TrG5h" value="test" />
+      <node concept="3dtAsP" id="4OhcFiDojV$" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4OhcFiDojVB" role="hRHZh">
+        <node concept="17J3f2" id="4OhcFiDojVC" role="3jGSnO" />
+      </node>
+    </node>
     <node concept="3jGSmg" id="3hBhvFT6RhR" role="3jGSko">
       <node concept="1$shr6" id="3hBhvFTabia" role="3jGSnO" />
       <node concept="17J3f2" id="1LkA4kR6sLY" role="3jGSnO" />
@@ -140,16 +232,35 @@
         <node concept="AFBxM" id="8gmNnrPZV$" role="36Mw2n">
           <property role="TrG5h" value="a" />
           <node concept="36MCER" id="8gmNnrPZVv" role="36MCEW" />
+          <node concept="3dtAta" id="3eViXf8qfQq" role="36MIYJ">
+            <ref role="hRIc0" node="7KcPMNJp1LJ" resolve="countMarks" />
+            <node concept="FiVY1" id="3eViXf8qfQr" role="3WjpkI">
+              <ref role="3WiQSc" node="1LkA4kR8TWI" resolve="m" />
+              <node concept="36Kqmr" id="3eViXf8qfQA" role="2jzNHB">
+                <property role="36Kqnr" value="5" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="36Mw20" id="5Ihd_CfnfCS" role="3jGSnO">
-        <node concept="AFBxM" id="5Ihd_CfnfCV" role="36Mw2n">
-          <property role="TrG5h" value="result" />
-          <node concept="36MCER" id="5Ihd_CfnfCQ" role="36MCEW" />
+      <node concept="17J3f2" id="3eViXf8nz7b" role="3jGSnO" />
+      <node concept="3dudH9" id="3eViXf8tdyE" role="3jGSnO">
+        <node concept="3dtAta" id="3eViXf8uqGD" role="3dudC3">
+          <ref role="hRIc0" node="3eViXf8nLWH" resolve="countMarks2" />
+          <node concept="FiVY1" id="3eViXf8uqGE" role="3WjpkI">
+            <ref role="3WiQSc" node="3eViXf8nLX5" resolve="m1" />
+            <node concept="36Kqmr" id="3eViXf8uybg" role="2jzNHB">
+              <property role="36Kqnr" value="4" />
+            </node>
+          </node>
+          <node concept="FiVY1" id="3eViXf8uqGF" role="3WjpkI">
+            <ref role="3WiQSc" node="3eViXf8qiJ6" resolve="m2" />
+            <node concept="36Kqmr" id="3eViXf8uqBo" role="2jzNHB">
+              <property role="36Kqnr" value="3" />
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="17J3f2" id="2J_q78dic3F" role="3jGSnO" />
-      <node concept="17J3f2" id="2J_q78didVp" role="3jGSnO" />
     </node>
   </node>
 </model>

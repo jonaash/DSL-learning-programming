@@ -1035,6 +1035,12 @@
             <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3eViXf8$lC5" role="3bR37C">
+          <node concept="3bR9La" id="3eViXf8$lC6" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="JavaKarel" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkmAj" role="2G$12L">
         <property role="BnDLt" value="false" />
