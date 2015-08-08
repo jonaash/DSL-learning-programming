@@ -176,7 +176,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7KcPMNJ6Drl" role="3EZMnx">
-        <property role="3F0ifm" value="functions" />
+        <property role="3F0ifm" value="methods:" />
         <node concept="ljvvj" id="7KcPMNJ6IoB" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
