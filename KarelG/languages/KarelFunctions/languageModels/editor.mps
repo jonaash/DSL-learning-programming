@@ -429,11 +429,6 @@
           <ref role="1k5W1q" to="y2uj:6H9YPQx_WVi" resolve="EndBlockMatcher" />
         </node>
       </node>
-      <node concept="3F0ifn" id="3hBhvFT9PGN" role="3EZMnx">
-        <node concept="pVoyu" id="3hBhvFT9PN4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="l2Vlx" id="3hBhvFT6Fzb" role="2iSdaV" />
     </node>
   </node>

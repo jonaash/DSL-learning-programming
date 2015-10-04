@@ -154,6 +154,7 @@
   <node concept="1TIwiD" id="7KcPMNJflpH">
     <property role="3GE5qa" value="class.member" />
     <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJflq2">

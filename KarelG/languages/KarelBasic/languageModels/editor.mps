@@ -21,9 +21,11 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -33,6 +35,7 @@
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -381,6 +384,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="14XUkkdK9wU" role="3EZMnx">
+        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="dyrx:14XUkkdK3YQ" />
         <node concept="l2Vlx" id="14XUkkdK9wW" role="2czzBx" />
         <node concept="ljvvj" id="jBG8nbFEQI" role="3F10Kt">
@@ -388,6 +392,11 @@
         </node>
         <node concept="pj6Ft" id="jBG8nbGaUh" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="tppnM" id="4rigtwtlfeC" role="sWeuL">
+          <node concept="pj6Ft" id="4rigtwtlqqJ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
     </node>
@@ -749,11 +758,6 @@
         <property role="3F0ifm" value="routine" />
         <ref role="1k5W1q" node="6H9YPQx_WVi" resolve="EndBlockMatcher" />
       </node>
-      <node concept="3F0ifn" id="6H9YPQxFNRS" role="3EZMnx">
-        <node concept="pVoyu" id="6H9YPQxFNSY" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="l2Vlx" id="5eWJqD2oD_3" role="2iSdaV" />
     </node>
   </node>
@@ -990,8 +994,14 @@
         <ref role="1k5W1q" node="4kfw1ThDqQE" resolve="BeginBlock" />
       </node>
       <node concept="3F2HdR" id="14XUkkdK9tn" role="3EZMnx">
+        <property role="2czwfO" value=" " />
         <ref role="1NtTu8" to="dyrx:14XUkkdK3YQ" />
         <node concept="l2Vlx" id="14XUkkdK9tp" role="2czzBx" />
+        <node concept="tppnM" id="4rigtwtlFFR" role="sWeuL">
+          <node concept="pj6Ft" id="4rigtwtlFFT" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="3hBhvFSK8fl" role="3EZMnx">
         <property role="3F0ifm" value="end" />
