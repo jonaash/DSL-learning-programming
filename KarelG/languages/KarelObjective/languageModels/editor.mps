@@ -105,7 +105,7 @@
     <ref role="1XX52x" to="t2e5:8gmNnrJ_Ve" resolve="ClassDefinition" />
     <node concept="3EZMnI" id="7KcPMNJ6Dmx" role="2wV5jI">
       <node concept="3F0ifn" id="7KcPMNJ6Dmz" role="3EZMnx">
-        <property role="3F0ifm" value="Class" />
+        <property role="3F0ifm" value="class" />
       </node>
       <node concept="3F0A7n" id="7KcPMNJ6Dnb" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

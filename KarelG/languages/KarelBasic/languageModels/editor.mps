@@ -344,7 +344,7 @@
     <ref role="1XX52x" to="dyrx:3a5rfDmYafO" resolve="Script" />
     <node concept="3EZMnI" id="1IJMvjStn8" role="2wV5jI">
       <node concept="3F0ifn" id="1IJMvjStnf" role="3EZMnx">
-        <property role="3F0ifm" value="Script" />
+        <property role="3F0ifm" value="script" />
         <ref role="1k5W1q" node="2PnTnxEVbOt" resolve="Control" />
       </node>
       <node concept="3F0A7n" id="1IJMvjStnl" role="3EZMnx">
@@ -978,7 +978,7 @@
     <ref role="1XX52x" to="dyrx:3hBhvFSK1cO" resolve="Library" />
     <node concept="3EZMnI" id="3hBhvFSK8dU" role="2wV5jI">
       <node concept="3F0ifn" id="3hBhvFSK8eE" role="3EZMnx">
-        <property role="3F0ifm" value="Library" />
+        <property role="3F0ifm" value="library" />
         <ref role="1k5W1q" node="2PnTnxEVbOt" resolve="Control" />
       </node>
       <node concept="l2Vlx" id="3hBhvFSK8dX" role="2iSdaV" />
