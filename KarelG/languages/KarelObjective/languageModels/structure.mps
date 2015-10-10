@@ -8,7 +8,6 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
-    <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
@@ -36,6 +35,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -71,6 +71,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
     </node>
+    <node concept="1TJgyj" id="1jWJ98HoMl2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7KcPMNJfsB9" resolve="ClassType" />
+    </node>
     <node concept="PrWs8" id="8gmNnrJKBa" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -92,7 +98,7 @@
   </node>
   <node concept="1TIwiD" id="8gmNnrJKBi">
     <property role="TrG5h" value="FieldVariableDeclaration" />
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <property role="34LRSv" value="class" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="7KcPMNJ6unz" role="PzmwI">
@@ -128,10 +134,10 @@
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9Rj">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="MethodDefinition" />
-    <property role="34LRSv" value="function" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="method" />
+    <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="PrWs8" id="8gmNnrK9Rk" role="PzmwI">
       <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
     </node>
@@ -144,15 +150,9 @@
       <property role="20kJfa" value="overrides" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
     </node>
-    <node concept="1TJgyj" id="7KcPMNJ6ElS" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="function" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJflpH">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="ThisExpression" />
     <property role="34LRSv" value="this" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
@@ -198,21 +198,22 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsDG">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="MethodCall" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="7KcPMNJfsDH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
+      <ref role="20ksaX" to="dyrx:5eWJqD2o_UE" />
     </node>
     <node concept="PrWs8" id="7KcPMNJAnaD" role="PzmwI">
       <ref role="PrY4T" node="7KcPMNJAkcq" resolve="IOperation" />
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJicY_">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="ConstructorDefinition" />
     <property role="34LRSv" value="constructor" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
@@ -221,7 +222,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJwmdX">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="ConstructorCall" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="7KcPMNJwmdY" role="1TKVEi">
@@ -236,7 +237,7 @@
     <property role="TrG5h" value="IOperation" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJAnaA">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="FieldReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KcPMNJAnaB" role="PzmwI">

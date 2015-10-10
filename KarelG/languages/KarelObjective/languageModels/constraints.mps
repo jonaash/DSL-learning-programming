@@ -83,7 +83,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="7KcPMNJuWt5">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="1M2myG" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
     <node concept="nKS2y" id="7KcPMNJuWt6" role="1MLUbF">
       <node concept="3clFbS" id="7KcPMNJuWt7" role="2VODD2">
@@ -101,7 +101,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7KcPMNJAnbu">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="1M2myG" to="t2e5:8gmNnrJKBi" resolve="FieldVariableDeclaration" />
   </node>
   <node concept="1M2fIO" id="7KcPMNJAnbv">

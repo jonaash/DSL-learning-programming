@@ -15,7 +15,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(KarelObjective.behavior)" implicit="true" />
   </imports>
@@ -218,6 +217,7 @@
   </registry>
   <node concept="bUwia" id="8gmNnrJwE2">
     <property role="TrG5h" value="main" />
+    <property role="3GE5qa" value="class.member.reference" />
     <node concept="3aamgX" id="7KcPMNJ700H" role="3acgRq">
       <ref role="30HIoZ" to="t2e5:8gmNnrJKBi" resolve="FieldVariableDeclaration" />
       <node concept="j$656" id="7KcPMNJ700N" role="1lVwrX">
@@ -393,7 +393,7 @@
   </node>
   <node concept="13MO4I" id="7KcPMNJ700L">
     <property role="TrG5h" value="reduce_FieldVariableDeclaration" />
-    <property role="3GE5qa" value="member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="3gUMe" to="t2e5:8gmNnrJKBi" resolve="FieldVariableDeclaration" />
     <node concept="312cEu" id="7KcPMNJ701l" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -464,7 +464,7 @@
   </node>
   <node concept="13MO4I" id="7KcPMNJ73oz">
     <property role="TrG5h" value="reduce_MethodDefinition" />
-    <property role="3GE5qa" value="member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="3gUMe" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
     <node concept="312cEu" id="7KcPMNJ73A6" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -486,12 +486,7 @@
                 <node concept="3clFbS" id="7KcPMNJ7ckm" role="2VODD2">
                   <node concept="3clFbF" id="7KcPMNJ7cks" role="3cqZAp">
                     <node concept="2OqwBi" id="7KcPMNJ7cxU" role="3clFbG">
-                      <node concept="2OqwBi" id="7KcPMNJ7ckn" role="2Oq$k0">
-                        <node concept="3TrEf2" id="7KcPMNJ7ckq" role="2OqNvi">
-                          <ref role="3Tt5mk" to="t2e5:7KcPMNJ6ElS" />
-                        </node>
-                        <node concept="30H73N" id="7KcPMNJ7ckr" role="2Oq$k0" />
-                      </node>
+                      <node concept="30H73N" id="7KcPMNJ7ckr" role="2Oq$k0" />
                       <node concept="3TrEf2" id="7KcPMNJ7cZx" role="2OqNvi">
                         <ref role="3Tt5mk" to="dyrx:5eWJqD2oA9V" />
                       </node>
@@ -524,12 +519,7 @@
               <node concept="3clFbS" id="7KcPMNJ73D6" role="2VODD2">
                 <node concept="3clFbF" id="7KcPMNJ73Dc" role="3cqZAp">
                   <node concept="2OqwBi" id="7KcPMNJ73QG" role="3clFbG">
-                    <node concept="2OqwBi" id="7KcPMNJ73D7" role="2Oq$k0">
-                      <node concept="3TrEf2" id="7KcPMNJ73Da" role="2OqNvi">
-                        <ref role="3Tt5mk" to="t2e5:7KcPMNJ6ElS" />
-                      </node>
-                      <node concept="30H73N" id="7KcPMNJ73Db" role="2Oq$k0" />
-                    </node>
+                    <node concept="30H73N" id="7KcPMNJ73Db" role="2Oq$k0" />
                     <node concept="3TrEf2" id="7KcPMNJmlp0" role="2OqNvi">
                       <ref role="3Tt5mk" to="dyrx:7KcPMNJjDxP" />
                     </node>
@@ -552,12 +542,7 @@
                   <ref role="37wK5l" to="vuk8:2WqFKNE43h$" resolve="createMethodName" />
                   <ref role="1Pybhc" to="vuk8:2WqFKNE1did" resolve="NamingUtils" />
                   <node concept="2OqwBi" id="7KcPMNJ77Xh" role="37wK5m">
-                    <node concept="2OqwBi" id="7KcPMNJ76PY" role="2Oq$k0">
-                      <node concept="30H73N" id="7KcPMNJ75vq" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7KcPMNJ77Iz" role="2OqNvi">
-                        <ref role="3Tt5mk" to="t2e5:7KcPMNJ6ElS" />
-                      </node>
-                    </node>
+                    <node concept="30H73N" id="7KcPMNJ75vq" role="2Oq$k0" />
                     <node concept="3TrcHB" id="7KcPMNJ78ve" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
@@ -575,14 +560,9 @@
               <node concept="3clFbS" id="7KcPMNJ7dDk" role="2VODD2">
                 <node concept="3clFbF" id="7KcPMNJ7dIN" role="3cqZAp">
                   <node concept="2OqwBi" id="7KcPMNJ7esI" role="3clFbG">
-                    <node concept="2OqwBi" id="7KcPMNJ7dNr" role="2Oq$k0">
-                      <node concept="30H73N" id="7KcPMNJ7dIM" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7KcPMNJ7eaD" role="2OqNvi">
-                        <ref role="3Tt5mk" to="t2e5:7KcPMNJ6ElS" />
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="3eViXf8vgQZ" role="2OqNvi">
-                      <ref role="3TtcxE" to="a5m:3eViXf8nNpS" />
+                    <node concept="30H73N" id="7KcPMNJ7dIM" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1jWJ98Hrt$t" role="2OqNvi">
+                      <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
                     </node>
                   </node>
                 </node>
@@ -656,7 +636,7 @@
   </node>
   <node concept="13MO4I" id="7KcPMNJyFsD">
     <property role="TrG5h" value="reduce_ConstructorCall" />
-    <property role="3GE5qa" value="member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <ref role="3gUMe" to="t2e5:7KcPMNJwmdX" resolve="ConstructorCall" />
     <node concept="9aQIb" id="7KcPMNJyFsI" role="13RCb5">
       <node concept="3clFbS" id="7KcPMNJyFsK" role="9aQI4">
@@ -701,7 +681,7 @@
   </node>
   <node concept="13MO4I" id="7KcPMNJyQ96">
     <property role="TrG5h" value="reduce_ConstructorDefinition" />
-    <property role="3GE5qa" value="member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="3gUMe" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
     <node concept="312cEu" id="7KcPMNJyQ9b" role="13RCb5">
       <property role="2bfB8j" value="true" />
@@ -797,7 +777,7 @@
   </node>
   <node concept="13MO4I" id="7KcPMNJS2f_">
     <property role="TrG5h" value="reduce_FieldReference" />
-    <property role="3GE5qa" value="member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <ref role="3gUMe" to="t2e5:7KcPMNJAnaA" resolve="FieldReference" />
     <node concept="312cEu" id="7KcPMNJS2jD" role="13RCb5">
       <property role="2bfB8j" value="true" />

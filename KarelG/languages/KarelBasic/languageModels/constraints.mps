@@ -780,6 +780,13 @@
       <ref role="1N5Vy1" to="dyrx:6pJoTiq90Qo" />
       <node concept="13QW63" id="3eViXf8toVf" role="1N6uqs">
         <node concept="3clFbS" id="3eViXf8toVg" role="2VODD2">
+          <node concept="3SKdUt" id="1jWJ98Hv8QQ" role="3cqZAp">
+            <node concept="3SKdUq" id="1jWJ98Hv8YE" role="3SKWNk">
+              <property role="3SKdUp" value="TODO: This returns allways scope with one parameter or empty scope. Maybe it would be beter create some custom rule with custom error message for it." />
+            </node>
+          </node>
+          <node concept="3clFbH" id="1jWJ98Hv99r" role="3cqZAp" />
+          <node concept="3clFbH" id="1jWJ98Hv8Ax" role="3cqZAp" />
           <node concept="3SKdUt" id="3eViXf8u4eA" role="3cqZAp">
             <node concept="3SKdUq" id="3eViXf8u4qD" role="3SKWNk">
               <property role="3SKdUp" value="Return only parameter at the same index as index of this PrameterFill" />
@@ -817,7 +824,6 @@
             <node concept="3clFbS" id="3eViXf8tpap" role="Jncv$">
               <node concept="3clFbJ" id="3eViXf8tqgj" role="3cqZAp">
                 <node concept="3clFbS" id="3eViXf8tqgk" role="3clFbx">
-                  <node concept="3clFbH" id="3eViXf8tvvE" role="3cqZAp" />
                   <node concept="3SKdUt" id="3eViXf8u3Fi" role="3cqZAp">
                     <node concept="3SKdUq" id="3eViXf8u3QR" role="3SKWNk">
                       <property role="3SKdUp" value="index of this ParameterFill" />
@@ -830,6 +836,32 @@
                       <node concept="2OqwBi" id="3eViXf8tT3u" role="33vP2m">
                         <node concept="2rP1CM" id="3eViXf8tSVw" role="2Oq$k0" />
                         <node concept="2bSWHS" id="3eViXf8tTj1" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="34ab3g" id="1jWJ98Hvdnb" role="3cqZAp">
+                    <property role="35gtTG" value="debug" />
+                    <node concept="2YIFZM" id="1jWJ98HvdG7" role="34bqiv">
+                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                      <node concept="Xl_RD" id="1jWJ98HvdMM" role="37wK5m">
+                        <property role="Xl_RC" value="Looking for declaration: index: {0}, parameters: {1}" />
+                      </node>
+                      <node concept="37vLTw" id="1jWJ98Hvocc" role="37wK5m">
+                        <ref role="3cqZAo" node="3eViXf8tWzd" resolve="index" />
+                      </node>
+                      <node concept="2OqwBi" id="1jWJ98Hvk4P" role="37wK5m">
+                        <node concept="2OqwBi" id="1jWJ98HviZt" role="2Oq$k0">
+                          <node concept="Jnkvi" id="1jWJ98HviQ2" role="2Oq$k0">
+                            <ref role="1M0zk5" node="3eViXf8tpan" resolve="call" />
+                          </node>
+                          <node concept="3TrEf2" id="1jWJ98HvjBB" role="2OqNvi">
+                            <ref role="3Tt5mk" to="dyrx:5eWJqD2o_UE" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="1jWJ98HvkGi" role="2OqNvi">
+                          <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -872,6 +904,7 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="1jWJ98HvhX5" role="3cqZAp" />
                       <node concept="3cpWs6" id="3eViXf8tw8F" role="3cqZAp">
                         <node concept="2ShNRf" id="3eViXf8twdE" role="3cqZAk">
                           <node concept="YeOm9" id="3eViXf8ty3y" role="2ShVmc">
@@ -947,7 +980,12 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="3eViXf8tpd6" role="3cqZAp" />
+          <node concept="34ab3g" id="1jWJ98Hvc$G" role="3cqZAp">
+            <property role="35gtTG" value="debug" />
+            <node concept="Xl_RD" id="1jWJ98Hvc$I" role="34bqiv">
+              <property role="Xl_RC" value="Emty scope" />
+            </node>
+          </node>
           <node concept="3cpWs6" id="3eViXf8tpdH" role="3cqZAp">
             <node concept="2ShNRf" id="3eViXf8t_39" role="3cqZAk">
               <node concept="1pGfFk" id="3eViXf8tCLC" role="2ShVmc">

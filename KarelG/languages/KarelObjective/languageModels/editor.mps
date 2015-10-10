@@ -10,6 +10,7 @@
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
+    <import index="59lc" ref="r:b335bb80-3ea8-4608-a111-e7719d8a9029(KarelFunctions.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" implicit="true" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
@@ -33,6 +34,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -100,6 +102,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -224,35 +229,41 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJ6EmW">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="1XX52x" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
     <node concept="3EZMnI" id="7KcPMNJ6En_" role="2wV5jI">
-      <node concept="3F1sOY" id="7KcPMNJ6EnG" role="3EZMnx">
-        <ref role="1NtTu8" to="t2e5:7KcPMNJ6un5" />
+      <node concept="l2Vlx" id="7KcPMNJ6EnC" role="2iSdaV" />
+      <node concept="PMmxH" id="1jWJ98Hrb0s" role="3EZMnx">
+        <ref role="PMmxG" node="1jWJ98Hra95" resolve="MethodDefinitionModifiers_Component" />
       </node>
-      <node concept="3F0ifn" id="7KcPMNJ6EnU" role="3EZMnx">
-        <property role="3F0ifm" value="abstract" />
-        <node concept="pkWqt" id="7KcPMNJ6EnZ" role="pqm2j">
-          <node concept="3clFbS" id="7KcPMNJ6Eo0" role="2VODD2">
-            <node concept="3clFbF" id="7KcPMNJ6Ex1" role="3cqZAp">
-              <node concept="2OqwBi" id="7KcPMNJ6E_o" role="3clFbG">
-                <node concept="pncrf" id="7KcPMNJ6Ex0" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7KcPMNJ6EOq" role="2OqNvi">
-                  <ref role="3TsBF5" to="t2e5:7KcPMNJ6upw" resolve="abstract" />
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="PMmxH" id="1jWJ98HrchJ" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="1jWJ98Hrb0x" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="PMmxH" id="1jWJ98HrchS" role="3EZMnx">
+        <ref role="PMmxG" to="59lc:1jWJ98HqM8z" resolve="MethodDefinitionParams_Component" />
+        <node concept="pVoyu" id="1jWJ98HrchX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="7KcPMNJ6EnM" role="3EZMnx">
-        <ref role="1NtTu8" to="t2e5:7KcPMNJ6ElS" />
+      <node concept="PMmxH" id="1jWJ98Hrci7" role="3EZMnx">
+        <ref role="PMmxG" to="59lc:1jWJ98Hrb_2" resolve="MethodDefinitionReturn_Component" />
+        <node concept="pVoyu" id="1jWJ98HrciW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="l2Vlx" id="7KcPMNJ6EnC" role="2iSdaV" />
+      <node concept="PMmxH" id="1jWJ98Hrcj8" role="3EZMnx">
+        <ref role="PMmxG" to="59lc:1jWJ98HqSBj" resolve="MethodDefinitionBody_Component" />
+        <node concept="pVoyu" id="1jWJ98Hrcjh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJ6I7o">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="1XX52x" to="t2e5:8gmNnrJKBi" resolve="FieldVariableDeclaration" />
     <node concept="3EZMnI" id="7KcPMNJ6I7P" role="2wV5jI">
       <node concept="3F1sOY" id="7KcPMNJ6I7Z" role="3EZMnx">
@@ -305,7 +316,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJuX4q">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.definition" />
     <ref role="1XX52x" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
     <node concept="3EZMnI" id="7KcPMNJuX5I" role="2wV5jI">
       <node concept="3F1sOY" id="7KcPMNJwoS0" role="3EZMnx">
@@ -353,7 +364,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJwme5">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <ref role="1XX52x" to="t2e5:7KcPMNJwmdX" resolve="ConstructorCall" />
     <node concept="3EZMnI" id="7KcPMNJwmel" role="2wV5jI">
       <node concept="l2Vlx" id="7KcPMNJwmeo" role="2iSdaV" />
@@ -392,7 +403,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJEbTV">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <ref role="1XX52x" to="t2e5:7KcPMNJAnaA" resolve="FieldReference" />
     <node concept="1iCGBv" id="7KcPMNJEbXN" role="2wV5jI">
       <ref role="1NtTu8" to="t2e5:7KcPMNJEbU2" />
@@ -405,28 +416,55 @@
     </node>
   </node>
   <node concept="24kQdi" id="7KcPMNJEbZJ">
-    <property role="3GE5qa" value="class.member" />
+    <property role="3GE5qa" value="class.member.reference" />
     <ref role="1XX52x" to="t2e5:7KcPMNJfsDG" resolve="MethodCall" />
-    <node concept="1iCGBv" id="7KcPMNJEbZL" role="2wV5jI">
-      <ref role="1NtTu8" to="t2e5:7KcPMNJfsDH" />
-      <node concept="1sVBvm" id="7KcPMNJEbZN" role="1sWHZn">
-        <node concept="1iCGBv" id="7KcPMNJEbZU" role="2wV5jI">
-          <ref role="1NtTu8" to="t2e5:7KcPMNJ6ElS" />
-          <node concept="1sVBvm" id="7KcPMNJEbZW" role="1sWHZn">
-            <node concept="3F0A7n" id="7KcPMNJEc03" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="1jWJ98Hrag8" role="2wV5jI">
+      <node concept="1iCGBv" id="1jWJ98Hraf1" role="3EZMnx">
+        <ref role="1NtTu8" to="t2e5:7KcPMNJfsDH" />
+        <node concept="1sVBvm" id="1jWJ98Hraf3" role="1sWHZn">
+          <node concept="3F0A7n" id="1jWJ98Hrag2" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="1jWJ98Hragt" role="3EZMnx">
+        <ref role="PMmxG" to="59lc:1LkA4kR75mq" resolve="CallParameters_Component" />
+      </node>
+      <node concept="l2Vlx" id="1jWJ98Hrag9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4rigtwtkGeU">
+    <property role="3GE5qa" value="class.member.reference" />
+    <ref role="1XX52x" to="t2e5:7KcPMNJflpH" resolve="ThisExpression" />
+    <node concept="PMmxH" id="4rigtwtkGLi" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="1jWJ98Hra95">
+    <property role="3GE5qa" value="class.member.definition" />
+    <property role="TrG5h" value="MethodDefinitionModifiers_Component" />
+    <ref role="1XX52x" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
+    <node concept="3EZMnI" id="1jWJ98Hrab1" role="2wV5jI">
+      <node concept="3F1sOY" id="1jWJ98Hrab8" role="3EZMnx">
+        <ref role="1NtTu8" to="t2e5:7KcPMNJ6un5" />
+      </node>
+      <node concept="l2Vlx" id="1jWJ98Hrab4" role="2iSdaV" />
+      <node concept="3F0ifn" id="7KcPMNJ6EnU" role="3EZMnx">
+        <property role="3F0ifm" value="abstract" />
+        <node concept="pkWqt" id="7KcPMNJ6EnZ" role="pqm2j">
+          <node concept="3clFbS" id="7KcPMNJ6Eo0" role="2VODD2">
+            <node concept="3clFbF" id="7KcPMNJ6Ex1" role="3cqZAp">
+              <node concept="2OqwBi" id="7KcPMNJ6E_o" role="3clFbG">
+                <node concept="pncrf" id="7KcPMNJ6Ex0" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7KcPMNJ6EOq" role="2OqNvi">
+                  <ref role="3TsBF5" to="t2e5:7KcPMNJ6upw" resolve="abstract" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="4rigtwtkGeU">
-    <property role="3GE5qa" value="class.member" />
-    <ref role="1XX52x" to="t2e5:7KcPMNJflpH" resolve="ThisExpression" />
-    <node concept="PMmxH" id="4rigtwtkGLi" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
