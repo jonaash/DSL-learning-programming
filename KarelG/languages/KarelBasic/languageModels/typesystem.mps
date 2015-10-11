@@ -11,6 +11,7 @@
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -150,6 +151,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -223,7 +225,7 @@
       <node concept="3clFbH" id="5eWJqD2tbi9" role="3cqZAp" />
       <node concept="3cpWs8" id="5eWJqD2tbkS" role="3cqZAp">
         <node concept="3cpWsn" id="5eWJqD2tbkV" role="3cpWs9">
-          <property role="TrG5h" value="defs" />
+          <property role="TrG5h" value="duplicites" />
           <node concept="A3Dl8" id="5eWJqD2tbkP" role="1tU5fm">
             <node concept="3Tqbb2" id="5eWJqD2tbmu" role="A3Ik2">
               <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
@@ -233,22 +235,22 @@
       </node>
       <node concept="3cpWs8" id="5eWJqD2ta88" role="3cqZAp">
         <node concept="3cpWsn" id="5eWJqD2ta8b" role="3cpWs9">
-          <property role="TrG5h" value="script" />
+          <property role="TrG5h" value="methodDefs" />
           <node concept="2OqwBi" id="5eWJqD2t9QR" role="33vP2m">
             <node concept="1YBJjd" id="5eWJqD2t9Pn" role="2Oq$k0">
               <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
             </node>
             <node concept="2Xjw5R" id="5eWJqD2ta0e" role="2OqNvi">
               <node concept="1xMEDy" id="5eWJqD2ta0g" role="1xVPHs">
-                <node concept="chp4Y" id="5eWJqD2ta1k" role="ri$Ld">
-                  <ref role="cht4Q" to="dyrx:3a5rfDmYafO" resolve="Script" />
+                <node concept="chp4Y" id="1jWJ98HEZLh" role="ri$Ld">
+                  <ref role="cht4Q" to="dyrx:14XUkkdJcI9" resolve="IMethodsDefinition" />
                 </node>
               </node>
               <node concept="1xLf8o" id="5eWJqD2ta3c" role="1xVPHs" />
             </node>
           </node>
           <node concept="3Tqbb2" id="5eWJqD2tbak" role="1tU5fm">
-            <ref role="ehGHo" to="dyrx:3a5rfDmYafO" resolve="Script" />
+            <ref role="ehGHo" to="dyrx:14XUkkdJcI9" resolve="IMethodsDefinition" />
           </node>
         </node>
       </node>
@@ -257,14 +259,10 @@
           <node concept="2OqwBi" id="5eWJqD2ted1" role="37vLTx">
             <node concept="2OqwBi" id="5eWJqD2tbJk" role="2Oq$k0">
               <node concept="37vLTw" id="5eWJqD2tbGE" role="2Oq$k0">
-                <ref role="3cqZAo" node="5eWJqD2ta8b" resolve="script" />
+                <ref role="3cqZAo" node="5eWJqD2ta8b" resolve="methodDefs" />
               </node>
-              <node concept="2Rf3mk" id="5eWJqD2tc4p" role="2OqNvi">
-                <node concept="1xMEDy" id="5eWJqD2tc4r" role="1xVPHs">
-                  <node concept="chp4Y" id="14XUkkdEPmr" role="ri$Ld">
-                    <ref role="cht4Q" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
-                  </node>
-                </node>
+              <node concept="2qgKlT" id="1jWJ98HF0$$" role="2OqNvi">
+                <ref role="37wK5l" to="ljn0:14XUkkdQFDr" resolve="getLocalDefinitions" />
               </node>
             </node>
             <node concept="3zZkjj" id="5eWJqD2thQO" role="2OqNvi">
@@ -302,7 +300,7 @@
             </node>
           </node>
           <node concept="37vLTw" id="5eWJqD2tbsM" role="37vLTJ">
-            <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="defs" />
+            <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="duplicites" />
           </node>
         </node>
       </node>
@@ -314,31 +312,39 @@
               <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
             </node>
             <node concept="2YIFZM" id="7_uVVPcI5bI" role="2MkJ7o">
-              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
               <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+              <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
               <node concept="Xl_RD" id="7_uVVPcI5fO" role="37wK5m">
-                <property role="Xl_RC" value="error.routine.not.unique" />
+                <property role="Xl_RC" value="error.method.name.not.unique" />
+              </node>
+              <node concept="2OqwBi" id="1jWJ98HF2H2" role="37wK5m">
+                <node concept="1YBJjd" id="1jWJ98HF2Cs" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5eWJqD2t9Gm" resolve="abstractMethodDefinition" />
+                </node>
+                <node concept="2qgKlT" id="1jWJ98HF30E" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:1jWJ98HEL$X" resolve="getMethodTypePresentation" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="1jWJ98HF3mY" role="37wK5m">
+                <node concept="37vLTw" id="1jWJ98HF3fG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5eWJqD2ta8b" resolve="methodDefs" />
+                </node>
+                <node concept="2qgKlT" id="1jWJ98HF3zD" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:2PpeCt3hhm9" resolve="getCallPresentation" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1Wc70l" id="7_uVVPcHxOp" role="3clFbw">
-          <node concept="3y3z36" id="7_uVVPcHy3r" role="3uHU7B">
-            <node concept="10Nm6u" id="7_uVVPcHy5A" role="3uHU7w" />
-            <node concept="37vLTw" id="7_uVVPcHxRe" role="3uHU7B">
-              <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="defs" />
-            </node>
+        <node concept="3eOSWO" id="5eWJqD2td_i" role="3clFbw">
+          <node concept="3cmrfG" id="5eWJqD2td_l" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
           </node>
-          <node concept="3eOSWO" id="5eWJqD2td_i" role="3uHU7w">
-            <node concept="3cmrfG" id="5eWJqD2td_l" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
+          <node concept="2OqwBi" id="5eWJqD2tcnP" role="3uHU7B">
+            <node concept="37vLTw" id="5eWJqD2tcdt" role="2Oq$k0">
+              <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="duplicites" />
             </node>
-            <node concept="2OqwBi" id="5eWJqD2tcnP" role="3uHU7B">
-              <node concept="37vLTw" id="5eWJqD2tcdt" role="2Oq$k0">
-                <ref role="3cqZAo" node="5eWJqD2tbkV" resolve="defs" />
-              </node>
-              <node concept="34oBXx" id="5eWJqD2tcY3" role="2OqNvi" />
-            </node>
+            <node concept="34oBXx" id="5eWJqD2tcY3" role="2OqNvi" />
           </node>
         </node>
       </node>

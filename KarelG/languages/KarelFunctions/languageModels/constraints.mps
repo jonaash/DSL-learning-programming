@@ -52,9 +52,16 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -62,6 +69,7 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -100,6 +108,9 @@
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -136,19 +147,49 @@
     <ref role="1M2myG" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
     <node concept="nKS2y" id="3hBhvFT7nZU" role="1MLUbF">
       <node concept="3clFbS" id="3hBhvFT7nZV" role="2VODD2">
-        <node concept="3clFbF" id="3hBhvFT7o4P" role="3cqZAp">
-          <node concept="2OqwBi" id="3hBhvFT7phW" role="3clFbG">
-            <node concept="2OqwBi" id="3hBhvFT7o_d" role="2Oq$k0">
+        <node concept="3SKdUt" id="1jWJ98HM5cJ" role="3cqZAp">
+          <node concept="3SKdUq" id="1jWJ98HM5kj" role="3SKWNk">
+            <property role="3SKdUp" value="ReturnCommand may not have been created yet so we cannot use ReturnCommand.getMethod()" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1jWJ98HJlx5" role="3cqZAp">
+          <node concept="3cpWsn" id="1jWJ98HJlx8" role="3cpWs9">
+            <property role="TrG5h" value="methodDef" />
+            <node concept="3Tqbb2" id="1jWJ98HJlx3" role="1tU5fm">
+              <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
+            </node>
+            <node concept="2OqwBi" id="3hBhvFT7o_d" role="33vP2m">
               <node concept="nLn13" id="3hBhvFT7ove" role="2Oq$k0" />
               <node concept="2Xjw5R" id="3hBhvFT7p54" role="2OqNvi">
                 <node concept="1xMEDy" id="3hBhvFT7p56" role="1xVPHs">
-                  <node concept="chp4Y" id="3hBhvFT7pan" role="ri$Ld">
-                    <ref role="cht4Q" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
+                  <node concept="chp4Y" id="1jWJ98HJkpr" role="ri$Ld">
+                    <ref role="cht4Q" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3x8VRR" id="3hBhvFT7pHk" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1jWJ98HJmkN" role="3cqZAp">
+          <node concept="1Wc70l" id="1jWJ98HJn$c" role="3cqZAk">
+            <node concept="3fqX7Q" id="1jWJ98HJoxO" role="3uHU7w">
+              <node concept="2OqwBi" id="1jWJ98HJoxQ" role="3fr31v">
+                <node concept="37vLTw" id="1jWJ98HJoxR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1jWJ98HJlx8" resolve="methodDef" />
+                </node>
+                <node concept="1mIQ4w" id="1jWJ98HJoxS" role="2OqNvi">
+                  <node concept="chp4Y" id="1jWJ98HJoxT" role="cj9EA">
+                    <ref role="cht4Q" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1jWJ98HJmy7" role="3uHU7B">
+              <node concept="37vLTw" id="1jWJ98HJmsr" role="2Oq$k0">
+                <ref role="3cqZAo" node="1jWJ98HJlx8" resolve="methodDef" />
+              </node>
+              <node concept="3x8VRR" id="1jWJ98HJn2J" role="2OqNvi" />
+            </node>
           </node>
         </node>
       </node>
@@ -167,7 +208,7 @@
               <node concept="2OqwBi" id="2J_q78di9cs" role="2Oq$k0">
                 <node concept="EsrRn" id="2J_q78di8JQ" role="2Oq$k0" />
                 <node concept="2qgKlT" id="2J_q78di9rU" role="2OqNvi">
-                  <ref role="37wK5l" to="a7pc:18k56XD_MuE" resolve="getFunction" />
+                  <ref role="37wK5l" to="a7pc:18k56XD_MuE" resolve="getMethod" />
                 </node>
               </node>
               <node concept="3TrEf2" id="2J_q78di9YB" role="2OqNvi">

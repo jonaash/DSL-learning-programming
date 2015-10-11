@@ -1150,8 +1150,8 @@
               <node concept="2YIFZM" id="18k56XDwqqK" role="2MkJ7o">
                 <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
                 <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-                <node concept="Xl_RD" id="18k56XDwqqL" role="37wK5m">
-                  <property role="Xl_RC" value="error.unreachable.command" />
+                <node concept="Xl_RD" id="1jWJ98HEUu6" role="37wK5m">
+                  <property role="Xl_RC" value="error.method.unreachable.command" />
                 </node>
               </node>
             </node>

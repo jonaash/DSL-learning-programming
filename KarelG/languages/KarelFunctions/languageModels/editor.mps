@@ -16,6 +16,7 @@
     <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="a7pc" ref="r:9674315f-e343-40a4-a337-9711999ea66a(KarelFunctions.behavior)" implicit="true" />
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="6uzs" ref="r:505b89ea-ced8-4bdc-a08d-883ede758d60(KarelVariables.editor)" implicit="true" />
@@ -124,9 +125,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
-        <child id="5861024100072578575" name="addHints" index="3xwHhi" />
-      </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
         <child id="7279578193766667846" name="addHints" index="78xua" />
       </concept>
@@ -397,12 +396,8 @@
                     <node concept="2OqwBi" id="18k56XDyjpj" role="2Oq$k0">
                       <node concept="2OqwBi" id="18k56XDyjpk" role="2Oq$k0">
                         <node concept="pncrf" id="18k56XDyjpl" role="2Oq$k0" />
-                        <node concept="2Xjw5R" id="18k56XDyjpm" role="2OqNvi">
-                          <node concept="1xMEDy" id="18k56XDyjpn" role="1xVPHs">
-                            <node concept="chp4Y" id="18k56XDyjpo" role="ri$Ld">
-                              <ref role="cht4Q" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
-                            </node>
-                          </node>
+                        <node concept="2qgKlT" id="1jWJ98HM4rN" role="2OqNvi">
+                          <ref role="37wK5l" to="a7pc:18k56XD_MuE" resolve="getMethod" />
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7KcPMNJkWmr" role="2OqNvi">
@@ -416,26 +411,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Hnlc$" id="18k56XD$slT" role="3xwHhi">
-          <node concept="3clFbS" id="18k56XD$slU" role="2VODD2">
-            <node concept="3clFbF" id="18k56XD$sXq" role="3cqZAp">
-              <node concept="2OqwBi" id="18k56XD$v5T" role="3clFbG">
-                <node concept="2ShNRf" id="18k56XD$u15" role="2Oq$k0">
-                  <node concept="3g6Rrh" id="18k56XD$u8S" role="2ShVmc">
-                    <node concept="17QB3L" id="18k56XD$ue$" role="3g7fb8" />
-                    <node concept="Xl_RD" id="18k56XD$unf" role="3g7hyw">
-                      <property role="Xl_RC" value="sdfsd" />
-                    </node>
-                    <node concept="Xl_RD" id="18k56XD$uLj" role="3g7hyw">
-                      <property role="Xl_RC" value="sdfsdf" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="39bAoz" id="18k56XD$vJi" role="2OqNvi" />
               </node>
             </node>
           </node>

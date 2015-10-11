@@ -214,19 +214,19 @@
     <property role="3GE5qa" value="definition" />
     <ref role="13h7C2" to="a5m:3hBhvFT7nZw" resolve="ReturnCommand" />
     <node concept="13i0hz" id="18k56XD_MuE" role="13h7CS">
-      <property role="TrG5h" value="getFunction" />
+      <property role="TrG5h" value="getMethod" />
       <node concept="3Tm1VV" id="18k56XD_MuF" role="1B3o_S" />
       <node concept="3Tqbb2" id="18k56XD_MuM" role="3clF45">
-        <ref role="ehGHo" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
+        <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
       </node>
       <node concept="3clFbS" id="18k56XD_MuH" role="3clF47">
-        <node concept="3cpWs6" id="18k56XD_MuP" role="3cqZAp">
-          <node concept="2OqwBi" id="18k56XD_MwZ" role="3cqZAk">
+        <node concept="3clFbF" id="1jWJ98HLPHJ" role="3cqZAp">
+          <node concept="2OqwBi" id="18k56XD_MwZ" role="3clFbG">
             <node concept="13iPFW" id="18k56XD_Mv4" role="2Oq$k0" />
             <node concept="2Xjw5R" id="18k56XD_MEc" role="2OqNvi">
               <node concept="1xMEDy" id="18k56XD_MEe" role="1xVPHs">
-                <node concept="chp4Y" id="18k56XD_MEF" role="ri$Ld">
-                  <ref role="cht4Q" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
+                <node concept="chp4Y" id="1jWJ98HJrxP" role="ri$Ld">
+                  <ref role="cht4Q" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
                 </node>
               </node>
             </node>
@@ -340,6 +340,25 @@
         </node>
       </node>
       <node concept="17QB3L" id="6pJoTiqn7Pz" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="1jWJ98HEMsf" role="13h7CS">
+      <property role="TrG5h" value="getMethodTypePresentation" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ljn0:1jWJ98HEL$X" resolve="getMethodTypePresentation" />
+      <node concept="3Tm1VV" id="1jWJ98HEMsg" role="1B3o_S" />
+      <node concept="3clFbS" id="1jWJ98HEMsj" role="3clF47">
+        <node concept="3clFbF" id="1jWJ98HF9uO" role="3cqZAp">
+          <node concept="2YIFZM" id="1jWJ98HF9v3" role="3clFbG">
+            <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+            <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+            <node concept="Xl_RD" id="1jWJ98HEMBW" role="37wK5m">
+              <property role="Xl_RC" value="presentation.concept.function" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1jWJ98HEMsk" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="3eViXf8sXxY">

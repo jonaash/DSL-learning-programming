@@ -7,6 +7,11 @@
   </languages>
   <imports>
     <import index="y2uj" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:28e8e61b-0784-4a02-811f-05136c1f73e1(KarelBasic/KarelBasic.editor)" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="9a8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" />
+    <import index="nu8v" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
+    <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" implicit="true" />
     <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
@@ -44,8 +49,6 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
-      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
-      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -430,12 +433,6 @@
         <property role="1cu_pB" value="3" />
         <ref role="1NtTu8" to="t2e5:7KcPMNJASib" />
         <ref role="1ERwB7" node="1jWJ98HwhuX" resolve="DotExpression_Actions" />
-        <node concept="11L4FC" id="7KcPMNJFWJJ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="7KcPMNJFWLs" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
         <node concept="VPxyj" id="1jWJ98Hw87N" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -540,7 +537,7 @@
                   <ref role="3Tt5mk" to="t2e5:7KcPMNJASib" />
                 </node>
               </node>
-              <node concept="3w_OXm" id="1jWJ98HwOGG" role="2OqNvi" />
+              <node concept="3w_OXm" id="1jWJ98HxQXh" role="2OqNvi" />
             </node>
             <node concept="9aQIb" id="1jWJ98HwRCF" role="9aQIa">
               <node concept="3clFbS" id="1jWJ98HwRCG" role="9aQI4">
@@ -552,8 +549,8 @@
                         <ref role="3Tt5mk" to="t2e5:7KcPMNJASib" />
                       </node>
                     </node>
-                    <node concept="2oxUTD" id="1jWJ98HwSn2" role="2OqNvi">
-                      <node concept="10Nm6u" id="1jWJ98HwSo$" role="2oxUTC" />
+                    <node concept="2oxUTD" id="1jWJ98HxLug" role="2OqNvi">
+                      <node concept="10Nm6u" id="1jWJ98HxLvK" role="2oxUTC" />
                     </node>
                   </node>
                 </node>

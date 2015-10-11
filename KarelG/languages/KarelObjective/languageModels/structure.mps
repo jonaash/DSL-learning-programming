@@ -6,9 +6,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
+    <import index="prg8" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/f:java_stub#f3061a53-9226-4cc5-a443-f952ceaf5816#jetbrains.mps.baseLanguage(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -70,6 +71,7 @@
       <property role="20kJfa" value="methods" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
+      <ref role="20ksaX" to="dyrx:14XUkkdK3YQ" />
     </node>
     <node concept="1TJgyj" id="1jWJ98HoMl2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,6 +87,9 @@
     </node>
     <node concept="PrWs8" id="7KcPMNJ6unC" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
+    </node>
+    <node concept="PrWs8" id="1jWJ98HxbEV" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:14XUkkdJcI9" resolve="IMethodsDefinition" />
     </node>
     <node concept="1TJgyj" id="7KcPMNJ6ups" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -188,7 +193,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operation" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7KcPMNJAkcq" resolve="IOperation" />
+      <ref role="20lvS9" to="dyrx:1jWJ98HyPqg" resolve="IOperation" />
     </node>
     <node concept="PrWs8" id="7KcPMNJBZCN" role="PzmwI">
       <ref role="PrY4T" to="dyrx:7KcPMNJAT6q" resolve="IBinaryLike" />
@@ -207,9 +212,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
       <ref role="20ksaX" to="dyrx:5eWJqD2o_UE" />
-    </node>
-    <node concept="PrWs8" id="7KcPMNJAnaD" role="PzmwI">
-      <ref role="PrY4T" node="7KcPMNJAkcq" resolve="IOperation" />
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJicY_">
@@ -232,16 +234,12 @@
       <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
     </node>
   </node>
-  <node concept="PlHQZ" id="7KcPMNJAkcq">
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="IOperation" />
-  </node>
   <node concept="1TIwiD" id="7KcPMNJAnaA">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="FieldReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KcPMNJAnaB" role="PzmwI">
-      <ref role="PrY4T" node="7KcPMNJAkcq" resolve="IOperation" />
+      <ref role="PrY4T" to="dyrx:1jWJ98HyPqg" resolve="IOperation" />
     </node>
     <node concept="PrWs8" id="7KcPMNJNqyn" role="PzmwI">
       <ref role="PrY4T" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
@@ -252,6 +250,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8gmNnrJKBi" resolve="FieldVariableDeclaration" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1jWJ98H$8kD">
+    <property role="3GE5qa" value="class.visibility" />
+    <property role="TrG5h" value="Protected" />
+    <property role="34LRSv" value="protected" />
+    <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
 </model>
 

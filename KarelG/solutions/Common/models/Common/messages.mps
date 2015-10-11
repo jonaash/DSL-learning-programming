@@ -171,21 +171,6 @@
             <property role="3SKdUp" value="Errors" />
           </node>
         </node>
-        <node concept="3clFbF" id="7_uVVPcD05e" role="3cqZAp">
-          <node concept="37vLTI" id="7_uVVPcD34x" role="3clFbG">
-            <node concept="Xl_RD" id="7_uVVPcD37Z" role="37vLTx">
-              <property role="Xl_RC" value="Routine name must be unique within Script" />
-            </node>
-            <node concept="3EllGN" id="7_uVVPcD0cK" role="37vLTJ">
-              <node concept="Xl_RD" id="7_uVVPcD2Ns" role="3ElVtu">
-                <property role="Xl_RC" value="error.routine.not.unique" />
-              </node>
-              <node concept="37vLTw" id="7_uVVPcD05d" role="3ElQJh">
-                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="3hBhvFT16Qp" role="3cqZAp">
           <node concept="37vLTI" id="3hBhvFT16Qq" role="3clFbG">
             <node concept="Xl_RD" id="3hBhvFT16Qr" role="37vLTx">
@@ -324,11 +309,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="146X79f00AZ" role="3cqZAp" />
+        <node concept="3SKdUt" id="1jWJ98HEKSo" role="3cqZAp">
+          <node concept="3SKdUq" id="1jWJ98HEKXF" role="3SKWNk">
+            <property role="3SKdUp" value="Methods, types of methods are inserted as first param when necessary (procedure, function, method...)" />
+          </node>
+        </node>
         <node concept="3clFbF" id="30eT$TCw8AG" role="3cqZAp">
           <node concept="37vLTI" id="30eT$TCw8AH" role="3clFbG">
             <node concept="3EllGN" id="30eT$TCw8AI" role="37vLTJ">
               <node concept="Xl_RD" id="30eT$TCw8AJ" role="3ElVtu">
-                <property role="Xl_RC" value="error.unreachable.command" />
+                <property role="Xl_RC" value="error.method.unreachable.command" />
               </node>
               <node concept="37vLTw" id="30eT$TCw8AP" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
@@ -343,67 +333,51 @@
           <node concept="37vLTI" id="18k56XD_PiL" role="3clFbG">
             <node concept="3EllGN" id="18k56XD_PiM" role="37vLTJ">
               <node concept="Xl_RD" id="18k56XD_PiN" role="3ElVtu">
-                <property role="Xl_RC" value="error.function.cannot.return.value" />
+                <property role="Xl_RC" value="error.method.cannot.return.value" />
               </node>
               <node concept="37vLTw" id="18k56XD_PiT" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
             </node>
             <node concept="Xl_RD" id="18k56XD_PiO" role="37vLTx">
-              <property role="Xl_RC" value="This function cannot return any value." />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="18k56XD_SeC" role="3cqZAp">
-          <node concept="37vLTI" id="18k56XD_SeD" role="3clFbG">
-            <node concept="3EllGN" id="18k56XD_SeE" role="37vLTJ">
-              <node concept="Xl_RD" id="18k56XD_SeF" role="3ElVtu">
-                <property role="Xl_RC" value="error.return.function.must.return.value" />
-              </node>
-              <node concept="37vLTw" id="18k56XD_SeL" role="3ElQJh">
-                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="18k56XD_SeG" role="37vLTx">
-              <property role="Xl_RC" value="Function must return value of type {0}." />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2RjUFdDnS_y" role="3cqZAp">
-          <node concept="37vLTI" id="2RjUFdDnSX0" role="3clFbG">
-            <node concept="Xl_RD" id="2RjUFdDnT3i" role="37vLTx">
-              <property role="Xl_RC" value="Function must return value in all code branches." />
-            </node>
-            <node concept="3EllGN" id="2RjUFdDnS_$" role="37vLTJ">
-              <node concept="Xl_RD" id="2RjUFdDnS__" role="3ElVtu">
-                <property role="Xl_RC" value="error.definition.function.must.return.value" />
-              </node>
-              <node concept="37vLTw" id="2RjUFdDnS_E" role="3ElQJh">
-                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
-              </node>
+              <property role="Xl_RC" value="This {0} cannot return any value." />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2RjUFdDpB3y" role="3cqZAp">
           <node concept="37vLTI" id="2RjUFdDpB3$" role="3clFbG">
             <node concept="3EllGN" id="2RjUFdDpB3_" role="37vLTJ">
-              <node concept="37vLTw" id="2RjUFdDpB3G" role="3ElQJh">
+              <node concept="37vLTw" id="1jWJ98HEXhX" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
-              <node concept="Xl_RD" id="2RjUFdDpAR7" role="3ElVtu">
-                <property role="Xl_RC" value="error.return.missing.value" />
+              <node concept="Xl_RD" id="1jWJ98HEWd7" role="3ElVtu">
+                <property role="Xl_RC" value="error.method.return.value.missing" />
               </node>
             </node>
             <node concept="Xl_RD" id="2RjUFdDpB3B" role="37vLTx">
-              <property role="Xl_RC" value="Function must return value of type {0}." />
+              <property role="Xl_RC" value="This {0} must return value of type {1}." />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
+        <node concept="3clFbF" id="7_uVVPcD05e" role="3cqZAp">
+          <node concept="37vLTI" id="7_uVVPcD34x" role="3clFbG">
+            <node concept="Xl_RD" id="7_uVVPcD37Z" role="37vLTx">
+              <property role="Xl_RC" value="A {0} name must be unique within {1}" />
+            </node>
+            <node concept="3EllGN" id="7_uVVPcD0cK" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HEZdd" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="7_uVVPcI5fO" role="3ElVtu">
+                <property role="Xl_RC" value="error.method.name.not.unique" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="4rigtwtl8OG" role="3cqZAp">
           <node concept="37vLTI" id="4rigtwtl8OH" role="3clFbG">
             <node concept="3EllGN" id="4rigtwtl8OI" role="37vLTJ">
-              <node concept="37vLTw" id="4rigtwtl8OP" role="3ElQJh">
+              <node concept="37vLTw" id="1jWJ98HFcL2" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="4rigtwtl8OJ" role="3ElVtu">
@@ -415,23 +389,39 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4rigtwtl8$Y" role="3cqZAp" />
-        <node concept="3clFbH" id="4rigtwtl8Jv" role="3cqZAp" />
         <node concept="3clFbF" id="3eViXf8ukDC" role="3cqZAp">
           <node concept="37vLTI" id="3eViXf8ukDD" role="3clFbG">
             <node concept="3EllGN" id="3eViXf8ukDE" role="37vLTJ">
-              <node concept="37vLTw" id="3eViXf8ukDL" role="3ElQJh">
+              <node concept="37vLTw" id="1jWJ98HFd5$" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="3eViXf8ukDF" role="3ElVtu">
-                <property role="Xl_RC" value="error.function.call.wrong.parameters.count" />
+                <property role="Xl_RC" value="error.method.call.wrong.parameters.count" />
               </node>
             </node>
             <node concept="Xl_RD" id="3eViXf8ukDG" role="37vLTx">
-              <property role="Xl_RC" value="Wrong parameter count. Function has {0} parameters, but it is called with {1} parameters." />
+              <property role="Xl_RC" value="Wrong parameter count, {0} has {1} parameters, but it is called with {2} parameters." />
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2RjUFdDnS_y" role="3cqZAp">
+          <node concept="37vLTI" id="2RjUFdDnSX0" role="3clFbG">
+            <node concept="Xl_RD" id="2RjUFdDnT3i" role="37vLTx">
+              <property role="Xl_RC" value="This {0} must return value in all code branches." />
+            </node>
+            <node concept="3EllGN" id="2RjUFdDnS_$" role="37vLTJ">
+              <node concept="Xl_RD" id="2RjUFdDnS__" role="3ElVtu">
+                <property role="Xl_RC" value="error.method.must.return.value.in.all.branches" />
+              </node>
+              <node concept="37vLTw" id="2RjUFdDnS_E" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
+        <node concept="3clFbH" id="4rigtwtl8$Y" role="3cqZAp" />
+        <node concept="3clFbH" id="4rigtwtl8Jv" role="3cqZAp" />
         <node concept="3clFbH" id="3eViXf8ukwu" role="3cqZAp" />
         <node concept="3clFbH" id="3eViXf8uk$$" role="3cqZAp" />
         <node concept="3clFbF" id="7jmg6nozrBC" role="3cqZAp">
@@ -807,7 +797,83 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6pJoTiqkFC3" role="3cqZAp" />
+        <node concept="3clFbF" id="1jWJ98HxeVn" role="3cqZAp">
+          <node concept="37vLTI" id="1jWJ98HxeVp" role="3clFbG">
+            <node concept="Xl_RD" id="1jWJ98HxeVq" role="37vLTx">
+              <property role="Xl_RC" value="class {0}" />
+            </node>
+            <node concept="3EllGN" id="1jWJ98HxeVr" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HxeVx" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1jWJ98HxeVs" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.class.call" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1jWJ98HEMK9" role="3cqZAp" />
+        <node concept="3clFbF" id="1jWJ98HEMBS" role="3cqZAp">
+          <node concept="37vLTI" id="1jWJ98HEMBT" role="3clFbG">
+            <node concept="Xl_RD" id="1jWJ98HEMBU" role="37vLTx">
+              <property role="Xl_RC" value="procedure" />
+            </node>
+            <node concept="3EllGN" id="1jWJ98HEMBV" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HEMC1" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1jWJ98HEMBW" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.procedure" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1jWJ98HEMC3" role="3cqZAp">
+          <node concept="37vLTI" id="1jWJ98HEMC4" role="3clFbG">
+            <node concept="Xl_RD" id="1jWJ98HEMC5" role="37vLTx">
+              <property role="Xl_RC" value="method" />
+            </node>
+            <node concept="3EllGN" id="1jWJ98HEMC6" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HEMCc" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1jWJ98HEMC7" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.instance.method" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1jWJ98HEMCe" role="3cqZAp">
+          <node concept="37vLTI" id="1jWJ98HEMCf" role="3clFbG">
+            <node concept="Xl_RD" id="1jWJ98HEMCg" role="37vLTx">
+              <property role="Xl_RC" value="function" />
+            </node>
+            <node concept="3EllGN" id="1jWJ98HEMCh" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HEMCn" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1jWJ98HEMCi" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.function" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1jWJ98HFc7B" role="3cqZAp">
+          <node concept="37vLTI" id="1jWJ98HFc7D" role="3clFbG">
+            <node concept="Xl_RD" id="1jWJ98HFc7E" role="37vLTx">
+              <property role="Xl_RC" value="constructor" />
+            </node>
+            <node concept="3EllGN" id="1jWJ98HFc7F" role="37vLTJ">
+              <node concept="37vLTw" id="1jWJ98HFc7L" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="1jWJ98HFbni" role="3ElVtu">
+                <property role="Xl_RC" value="presentation.concept.class.constructor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1jWJ98HFc1J" role="3cqZAp" />
         <node concept="3clFbH" id="6pJoTiqe4hk" role="3cqZAp" />
         <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
         <node concept="3clFbF" id="1ZF81FZUjdg" role="3cqZAp">

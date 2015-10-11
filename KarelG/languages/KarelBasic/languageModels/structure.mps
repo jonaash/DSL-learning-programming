@@ -8,10 +8,10 @@
   </languages>
   <imports>
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
+    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="4fqr" ref="4caf0310-491e-41f5-8a9b-2006b3a94898/r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util/jetbrains.mps.execution.util.structure)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" implicit="true" />
-    <import index="4fqr" ref="4caf0310-491e-41f5-8a9b-2006b3a94898/r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util/jetbrains.mps.execution.util.structure)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -529,6 +529,9 @@
     <node concept="PrWs8" id="4OhcFiDq8oc" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
+    <node concept="PrWs8" id="1jWJ98Hztzz" role="PzmwI">
+      <ref role="PrY4T" node="1jWJ98HyPqg" resolve="IOperation" />
+    </node>
     <node concept="1TJgyj" id="6pJoTiq8JqU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
@@ -850,6 +853,13 @@
     </node>
     <node concept="2tJIrI" id="6pJoTiqe1c3" role="jymVt" />
     <node concept="3Tm1VV" id="6pJoTiqdIKM" role="1B3o_S" />
+  </node>
+  <node concept="PlHQZ" id="1jWJ98HyPqg">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="IOperation" />
+    <node concept="PrWs8" id="1jWJ98HzJ4U" role="PrDN$">
+      <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
   </node>
 </model>
 

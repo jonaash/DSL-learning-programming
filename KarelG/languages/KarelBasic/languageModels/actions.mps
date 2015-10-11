@@ -11,9 +11,10 @@
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1079,6 +1080,13 @@
           </node>
           <node concept="uNCsQ" id="6pJoTiqkj7k" role="uO7ob">
             <node concept="3clFbS" id="6pJoTiqkj7l" role="2VODD2">
+              <node concept="34ab3g" id="1jWJ98HyDDT" role="3cqZAp">
+                <property role="35gtTG" value="debug" />
+                <node concept="Xl_RD" id="1jWJ98HyDDU" role="34bqiv">
+                  <property role="Xl_RC" value="Query AbstractCall Command" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="1jWJ98HyDy1" role="3cqZAp" />
               <node concept="3clFbF" id="6pJoTiqcRG0" role="3cqZAp">
                 <node concept="2OqwBi" id="6pJoTiqcRG1" role="3clFbG">
                   <node concept="2OqwBi" id="6pJoTiqcRG2" role="2Oq$k0">
@@ -1177,6 +1185,12 @@
           </node>
           <node concept="uNCsQ" id="2PpeCt3iRtT" role="uO7ob">
             <node concept="3clFbS" id="2PpeCt3iRtU" role="2VODD2">
+              <node concept="34ab3g" id="1jWJ98HyzbV" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="Xl_RD" id="1jWJ98HyzbX" role="34bqiv">
+                  <property role="Xl_RC" value="Query AbstractCall Expression" />
+                </node>
+              </node>
               <node concept="3clFbF" id="2PpeCt3iRtV" role="3cqZAp">
                 <node concept="2OqwBi" id="2PpeCt3iRtW" role="3clFbG">
                   <node concept="2OqwBi" id="2PpeCt3iRtX" role="2Oq$k0">
