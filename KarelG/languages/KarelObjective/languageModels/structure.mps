@@ -160,7 +160,7 @@
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="ThisExpression" />
     <property role="34LRSv" value="this" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <ref role="1TJDcQ" node="1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJflq2">
     <property role="3GE5qa" value="class" />
@@ -256,6 +256,13 @@
     <property role="TrG5h" value="Protected" />
     <property role="34LRSv" value="protected" />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
+  </node>
+  <node concept="1TIwiD" id="1jWJ98HNK3l">
+    <property role="3GE5qa" value="class.member.reference" />
+    <property role="TrG5h" value="AbstractClassPointerExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
   </node>
 </model>
 

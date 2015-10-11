@@ -472,13 +472,6 @@
       <node concept="l2Vlx" id="1jWJ98Hrag9" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4rigtwtkGeU">
-    <property role="3GE5qa" value="class.member.reference" />
-    <ref role="1XX52x" to="t2e5:7KcPMNJflpH" resolve="ThisExpression" />
-    <node concept="PMmxH" id="4rigtwtkGLi" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="PKFIW" id="1jWJ98Hra95">
     <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="MethodDefinitionModifiers_Component" />
@@ -559,6 +552,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jWJ98HNK4M">
+    <property role="3GE5qa" value="class.member.reference" />
+    <ref role="1XX52x" to="t2e5:1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
+    <node concept="PMmxH" id="1jWJ98HNK7g" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

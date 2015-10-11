@@ -1595,6 +1595,35 @@
     <node concept="13hLZK" id="1jWJ98HnSi$" role="13h7CW">
       <node concept="3clFbS" id="1jWJ98HnSi_" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="1jWJ98HO$Fz" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTypeAnnotation" />
+      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+      <node concept="3Tm1VV" id="1jWJ98HO$F$" role="1B3o_S" />
+      <node concept="3clFbS" id="1jWJ98HO$FD" role="3clF47">
+        <node concept="3clFbF" id="1jWJ98HO$Rs" role="3cqZAp">
+          <node concept="2OqwBi" id="1jWJ98HO_gC" role="3clFbG">
+            <node concept="2OqwBi" id="1jWJ98HO$U7" role="2Oq$k0">
+              <node concept="13iPFW" id="1jWJ98HO$Rr" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="1jWJ98HO_6I" role="2OqNvi">
+                <node concept="1xMEDy" id="1jWJ98HO_6K" role="1xVPHs">
+                  <node concept="chp4Y" id="1jWJ98HOAuN" role="ri$Ld">
+                    <ref role="cht4Q" to="t2e5:8gmNnrJ_Ve" resolve="ClassDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3TrEf2" id="1jWJ98HOAHI" role="2OqNvi">
+              <ref role="3Tt5mk" to="t2e5:1jWJ98HoMl2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1jWJ98HO$FE" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="1jWJ98H$87f">
     <property role="3GE5qa" value="class.visibility" />
