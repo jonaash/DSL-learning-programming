@@ -74,7 +74,7 @@
       <property role="TrG5h" value="test" />
       <node concept="3dtAsP" id="1jWJ98Hs5bp" role="2jg$Xp" />
       <node concept="3jGSmg" id="1jWJ98Hs5bq" role="hRHZh">
-        <node concept="3duzCq" id="1jWJ98HM3PW" role="3jGSnO" />
+        <node concept="3duzCq" id="1jWJ98HJrkt" role="3jGSnO" />
       </node>
       <node concept="3pOcrW" id="1jWJ98HEJ26" role="2j5jbD" />
       <node concept="FiAUU" id="1jWJ98HEIXd" role="3dtAt9">
@@ -109,6 +109,9 @@
             <property role="TrG5h" value="basic" />
             <node concept="2jchV_" id="1jWJ98HEfOu" role="36MCEW">
               <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
+            </node>
+            <node concept="2jzrhh" id="1jWJ98HMKFG" role="36MIYJ">
+              <ref role="2jzrhi" node="7KcPMNJ6HO_" resolve="BasicClass" />
             </node>
           </node>
         </node>

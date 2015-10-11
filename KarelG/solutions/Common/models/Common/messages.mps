@@ -745,7 +745,7 @@
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="4rigtwtm9bw" role="3ElVtu">
-                <property role="Xl_RC" value="presentation.description.class.method.call" />
+                <property role="Xl_RC" value="presentation.description.method.call" />
               </node>
             </node>
           </node>
