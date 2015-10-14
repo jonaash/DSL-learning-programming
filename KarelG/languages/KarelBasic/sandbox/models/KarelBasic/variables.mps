@@ -23,8 +23,10 @@
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
+      <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
+        <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
@@ -83,7 +85,18 @@
       <node concept="36Mw20" id="8gmNnrQ9VT" role="3jGSnO">
         <node concept="AFBxM" id="8gmNnrQ9VW" role="36Mw2n">
           <property role="TrG5h" value="a" />
+          <property role="36jPZJ" value="true" />
           <node concept="36MCER" id="8gmNnrQ9VR" role="36MCEW" />
+          <node concept="36Kqmr" id="5xGSFEuionT" role="36MIYJ">
+            <property role="36Kqnr" value="5" />
+          </node>
+        </node>
+      </node>
+      <node concept="36Mw20" id="5xGSFEuh0yA" role="3jGSnO">
+        <node concept="AFBxM" id="5xGSFEuh0yD" role="36Mw2n">
+          <property role="TrG5h" value="log" />
+          <property role="36jPZJ" value="true" />
+          <node concept="36MBwV" id="5xGSFEuh0y$" role="36MCEW" />
         </node>
       </node>
       <node concept="36Mw20" id="8gmNnrQ9YL" role="3jGSnO">
@@ -109,6 +122,9 @@
         <node concept="AFBxM" id="6pJoTiq6iQt" role="36Mw2n">
           <property role="TrG5h" value="t" />
           <node concept="36Kql8" id="6pJoTiq6iQo" role="36MCEW" />
+          <node concept="16y5rI" id="5xGSFEuiooX" role="36MIYJ">
+            <property role="16xLMo" value="" />
+          </node>
         </node>
       </node>
       <node concept="3dudH9" id="7KcPMNJhtvI" role="3jGSnO">
@@ -165,6 +181,7 @@
           <node concept="36Mw20" id="aB0Z16FBmQ" role="3jGSnO">
             <node concept="AFBxM" id="aB0Z16FBmT" role="36Mw2n">
               <property role="TrG5h" value="sadsdasd" />
+              <property role="36jPZJ" value="true" />
               <node concept="36MCER" id="aB0Z16FBmP" role="36MCEW" />
             </node>
           </node>
@@ -179,6 +196,7 @@
           <node concept="36Mw20" id="aB0Z16FBp3" role="3jGSnO">
             <node concept="AFBxM" id="aB0Z16FBp6" role="36Mw2n">
               <property role="TrG5h" value="q" />
+              <property role="36jPZJ" value="true" />
               <node concept="36MCER" id="aB0Z16FBp1" role="36MCEW" />
             </node>
           </node>
@@ -209,12 +227,14 @@
       <node concept="36Mw20" id="3hBhvFSqlu_" role="3jGSnO">
         <node concept="AFBxM" id="3hBhvFSqluC" role="36Mw2n">
           <property role="TrG5h" value="s" />
+          <property role="36jPZJ" value="true" />
           <node concept="36Kql8" id="3hBhvFSqluz" role="36MCEW" />
         </node>
       </node>
       <node concept="36Mw20" id="7KcPMNJ4htG" role="3jGSnO">
         <node concept="AFBxM" id="7KcPMNJ4htJ" role="36Mw2n">
           <property role="TrG5h" value="y" />
+          <property role="36jPZJ" value="true" />
           <node concept="36MCER" id="7KcPMNJ4htE" role="36MCEW" />
         </node>
       </node>
@@ -224,6 +244,7 @@
           <node concept="36Mw20" id="jBG8nbI7Pu" role="3jGSnO">
             <node concept="AFBxM" id="jBG8nbI7Px" role="36Mw2n">
               <property role="TrG5h" value="r" />
+              <property role="36jPZJ" value="true" />
               <node concept="36Kql8" id="jBG8nbI7Ps" role="36MCEW" />
             </node>
           </node>

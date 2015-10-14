@@ -1314,6 +1314,85 @@
         <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="5xGSFEua7LW" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableDeclarationIfExists" />
+      <ref role="13i0hy" to="ljn0:5xGSFEu9T2g" resolve="getVariableDeclarationIfExists" />
+      <node concept="3Tm1VV" id="5xGSFEua7LX" role="1B3o_S" />
+      <node concept="3clFbS" id="5xGSFEua7Mb" role="3clF47">
+        <node concept="3clFbJ" id="5xGSFEuaajs" role="3cqZAp">
+          <node concept="3clFbS" id="5xGSFEuaajt" role="3clFbx">
+            <node concept="3cpWs6" id="5xGSFEuaajN" role="3cqZAp">
+              <node concept="2OqwBi" id="5xGSFEuabYm" role="3cqZAk">
+                <node concept="2qgKlT" id="5xGSFEuablf" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:7KcPMNJI2DN" resolve="getDeclaration" />
+                </node>
+                <node concept="1PxgMI" id="5xGSFEuadce" role="2Oq$k0">
+                  <ref role="1PxNhF" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+                  <node concept="2OqwBi" id="5xGSFEuacmN" role="1PxMeX">
+                    <node concept="13iPFW" id="5xGSFEuachO" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5xGSFEuacR9" role="2OqNvi">
+                      <ref role="3Tt5mk" to="t2e5:7KcPMNJASib" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="BsUDl" id="5xGSFEuaajC" role="3clFbw">
+            <ref role="37wK5l" to="ljn0:5xGSFEu9Sf5" resolve="isVariableReference" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5xGSFEuabFJ" role="3cqZAp">
+          <node concept="10Nm6u" id="5xGSFEuabJI" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5xGSFEua7Mc" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2RjUFdDsT1_" resolve="IVariableDeclaration" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5xGSFEua7Md" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="isVariableReference" />
+      <ref role="13i0hy" to="ljn0:5xGSFEu9Sf5" resolve="isVariableReference" />
+      <node concept="3Tm1VV" id="5xGSFEua7Me" role="1B3o_S" />
+      <node concept="3clFbS" id="5xGSFEua7Mh" role="3clF47">
+        <node concept="3clFbJ" id="5xGSFEua826" role="3cqZAp">
+          <node concept="3clFbS" id="5xGSFEua827" role="3clFbx">
+            <node concept="3cpWs6" id="5xGSFEua9LF" role="3cqZAp">
+              <node concept="3clFbT" id="5xGSFEua9Mp" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5xGSFEua9zK" role="3clFbw">
+            <node concept="2OqwBi" id="5xGSFEua8aB" role="2Oq$k0">
+              <node concept="13iPFW" id="5xGSFEua876" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5xGSFEua8Ey" role="2OqNvi">
+                <ref role="3Tt5mk" to="t2e5:7KcPMNJASib" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="5xGSFEua9HC" role="2OqNvi">
+              <node concept="chp4Y" id="5xGSFEua9J_" role="cj9EA">
+                <ref role="cht4Q" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="5xGSFEua9Pq" role="9aQIa">
+            <node concept="3clFbS" id="5xGSFEua9Pr" role="9aQI4">
+              <node concept="3cpWs6" id="5xGSFEua9RH" role="3cqZAp">
+                <node concept="3clFbT" id="5xGSFEua9U9" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5xGSFEua7Mi" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7KcPMNJNqyr">
     <property role="3GE5qa" value="class.member.reference" />

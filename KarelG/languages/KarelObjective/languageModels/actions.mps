@@ -13,6 +13,7 @@
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(KarelObjective.behavior)" />
+    <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -110,6 +111,7 @@
       </concept>
       <concept id="5480835971642155304" name="jetbrains.mps.lang.actions.structure.NF_Model_CreateNewNodeOperation" flags="nn" index="15TzpJ" />
       <concept id="1154465273778" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parentNode" flags="nn" index="3bvxqY" />
+      <concept id="1154622616118" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstitutePreconditionFunction" flags="in" index="3kRJcU" />
       <concept id="6400740936061763657" name="jetbrains.mps.lang.actions.structure.QueryFunction_IconNode" flags="in" index="1p$bYL" />
       <concept id="1182819125053" name="jetbrains.mps.lang.actions.structure.ConceptRightTransformPart" flags="ng" index="1_wSoI">
         <reference id="1182819234902" name="concept" index="1_xjl5" />
@@ -128,6 +130,7 @@
         <property id="1158952484319" name="description" index="3mWRNi" />
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
         <child id="1177442283389" name="part" index="_1QTJ" />
+        <child id="1154622757656" name="precondition" index="3kShCk" />
       </concept>
       <concept id="1138079416598" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActions" flags="ng" index="3UOs0u">
         <child id="1138079416599" name="actionsBuilder" index="3UOs0v" />
@@ -140,6 +143,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
@@ -148,6 +154,9 @@
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -500,6 +509,65 @@
               <node concept="3clFbF" id="1jWJ98HOtGM" role="3cqZAp">
                 <node concept="37vLTw" id="1jWJ98HOtGK" role="3clFbG">
                   <ref role="3cqZAo" node="1jWJ98HNKCN" resolve="dotOperator" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3UOs0u" id="5xGSFEucTkL">
+    <property role="TrG5h" value="assignmentExpression_Objective" />
+    <property role="3GE5qa" value="expression" />
+    <node concept="3UNGvq" id="5xGSFEucTkM" role="3UOs0v">
+      <property role="3mWRNi" value=" create assignment expression when typing its alias on the right side of DotExpression containing FieldReference" />
+      <ref role="3UNGvu" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+      <node concept="1_wSoI" id="5xGSFEucTkN" role="_1QTJ">
+        <ref role="1_xjl5" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
+        <node concept="E3ukw" id="5xGSFEucTkO" role="1_xdl1">
+          <node concept="3clFbS" id="5xGSFEucTkP" role="2VODD2">
+            <node concept="3clFbF" id="5xGSFEudjTp" role="3cqZAp">
+              <node concept="2OqwBi" id="5xGSFEudjZZ" role="3clFbG">
+                <node concept="Cj7Ep" id="5xGSFEudjTn" role="2Oq$k0" />
+                <node concept="1P9Npp" id="5xGSFEudkyJ" role="2OqNvi">
+                  <node concept="E3gs8" id="5xGSFEudkAx" role="1P9ThW" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5xGSFEucTkV" role="3cqZAp">
+              <node concept="2OqwBi" id="5xGSFEucTkW" role="3clFbG">
+                <node concept="2OqwBi" id="5xGSFEucTkX" role="2Oq$k0">
+                  <node concept="E3gs8" id="5xGSFEucTkY" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7KcPMNJgEoa" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+                  </node>
+                </node>
+                <node concept="2oxUTD" id="5xGSFEucTkZ" role="2OqNvi">
+                  <node concept="Cj7Ep" id="5xGSFEudhx4" role="2oxUTC" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5xGSFEucTl1" role="3cqZAp" />
+            <node concept="3cpWs6" id="5xGSFEucTl2" role="3cqZAp">
+              <node concept="E3gs8" id="5xGSFEucTl3" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3kRJcU" id="5xGSFEudfk3" role="3kShCk">
+        <node concept="3clFbS" id="5xGSFEudfk4" role="2VODD2">
+          <node concept="3clFbF" id="5xGSFEudft6" role="3cqZAp">
+            <node concept="2OqwBi" id="5xGSFEudgTd" role="3clFbG">
+              <node concept="2OqwBi" id="5xGSFEudf_C" role="2Oq$k0">
+                <node concept="Cj7Ep" id="5xGSFEudft5" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5xGSFEudfUA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="t2e5:7KcPMNJASib" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="5xGSFEudhgi" role="2OqNvi">
+                <node concept="chp4Y" id="5xGSFEudhnf" role="cj9EA">
+                  <ref role="cht4Q" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
                 </node>
               </node>
             </node>

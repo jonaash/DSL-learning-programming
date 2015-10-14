@@ -93,16 +93,6 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
-        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
-        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
-        <child id="1083172003582" name="member" index="M5hS2" />
-      </concept>
-      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
-        <property id="1083923523172" name="externalValue" index="1uS6qo" />
-        <property id="1083923523171" name="internalValue" index="1uS6qv" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -389,9 +379,9 @@
       <property role="20kJfa" value="initializer" />
       <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
     </node>
-    <node concept="1TJgyi" id="aB0Z16O_Ub" role="1TKVEl">
-      <property role="TrG5h" value="isInitializer" />
-      <ref role="AX2Wp" node="aB0Z16O_y_" resolve="Mandatority" />
+    <node concept="1TJgyi" id="5xGSFEu8VPl" role="1TKVEl">
+      <property role="TrG5h" value="mutable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="6kvBWKz_W$y">
@@ -585,25 +575,6 @@
       <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
     </node>
   </node>
-  <node concept="AxPO7" id="aB0Z16O_y_">
-    <property role="3GE5qa" value="variable" />
-    <property role="TrG5h" value="Mandatority" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="Qgau1" node="aB0Z16O_MY" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="aB0Z16O_MW" role="M5hS2">
-      <property role="1uS6qo" value="MANDATORY" />
-      <property role="1uS6qv" value="MANDATORY" />
-    </node>
-    <node concept="M4N5e" id="aB0Z16O_MY" role="M5hS2">
-      <property role="1uS6qo" value="OPTIONAL" />
-      <property role="1uS6qv" value="OPTIONAL" />
-    </node>
-    <node concept="M4N5e" id="aB0Z16O_N1" role="M5hS2">
-      <property role="1uS6qv" value="PROHIBITED" />
-      <property role="1uS6qo" value="PROHIBITED" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="18k56XD$bnd">
     <property role="3GE5qa" value="command.documentation" />
     <property role="TrG5h" value="IDocumentation" />
@@ -679,6 +650,9 @@
     <property role="TrG5h" value="IVariableReference" />
     <node concept="PrWs8" id="1BMnhOnfOdU" role="PrDN$">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
+    </node>
+    <node concept="PrWs8" id="5xGSFEu9Sbv" role="PrDN$">
+      <ref role="PrY4T" node="5xGSFEu9Sbr" resolve="IPotentialVariableReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1BMnhOnqAYu">
@@ -860,6 +834,10 @@
     <node concept="PrWs8" id="1jWJ98HzJ4U" role="PrDN$">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5xGSFEu9Sbr">
+    <property role="3GE5qa" value="variable" />
+    <property role="TrG5h" value="IPotentialVariableReference" />
   </node>
 </model>
 

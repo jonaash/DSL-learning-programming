@@ -232,7 +232,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5xGSFEuhY7b" role="3cqZAp">
+          <node concept="37vLTI" id="5xGSFEuhY7c" role="3clFbG">
+            <node concept="3EllGN" id="5xGSFEuhY7d" role="37vLTJ">
+              <node concept="37vLTw" id="5xGSFEuhY7k" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5xGSFEuhY7e" role="3ElVtu">
+                <property role="Xl_RC" value="error.variable.cannot.be.initialized" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5xGSFEuhY7f" role="37vLTx">
+              <property role="Xl_RC" value="This variable cannot be initialized." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5xGSFEuhYLe" role="3cqZAp">
+          <node concept="37vLTI" id="5xGSFEuhYLf" role="3clFbG">
+            <node concept="3EllGN" id="5xGSFEuhYLg" role="37vLTJ">
+              <node concept="37vLTw" id="5xGSFEuhYLn" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5xGSFEuhYLh" role="3ElVtu">
+                <property role="Xl_RC" value="error.variable.must.be.initialized" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5xGSFEuhYLi" role="37vLTx">
+              <property role="Xl_RC" value="This variable must be initialized." />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="146X79f00Ui" role="3cqZAp" />
+        <node concept="3clFbH" id="5xGSFEuhY0D" role="3cqZAp" />
         <node concept="3clFbF" id="7_uVVPcJTw2" role="3cqZAp">
           <node concept="37vLTI" id="7_uVVPcJTUt" role="3clFbG">
             <node concept="3EllGN" id="7_uVVPcJU_n" role="37vLTJ">
@@ -278,6 +309,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5xGSFEudr18" role="3cqZAp">
+          <node concept="37vLTI" id="5xGSFEudr19" role="3clFbG">
+            <node concept="Xl_RD" id="5xGSFEudr1a" role="37vLTx">
+              <property role="Xl_RC" value="Variable is immutable and it cannot be assigned here." />
+            </node>
+            <node concept="3EllGN" id="5xGSFEudr1b" role="37vLTJ">
+              <node concept="37vLTw" id="5xGSFEudr1h" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5xGSFEudr1c" role="3ElVtu">
+                <property role="Xl_RC" value="error.assignment.into.immutable.variable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5xGSFEudqPh" role="3cqZAp" />
         <node concept="3clFbF" id="5KhqV1J_wQ2" role="3cqZAp">
           <node concept="37vLTI" id="5KhqV1J_wQ3" role="3clFbG">
             <node concept="Xl_RD" id="5KhqV1J_wQ4" role="37vLTx">
@@ -906,6 +953,36 @@
           </node>
         </node>
         <node concept="3clFbH" id="1jWJ98HFc1J" role="3cqZAp" />
+        <node concept="3clFbF" id="5xGSFEugIzO" role="3cqZAp">
+          <node concept="37vLTI" id="5xGSFEugIzP" role="3clFbG">
+            <node concept="Xl_RD" id="5xGSFEugJ9L" role="37vLTx">
+              <property role="Xl_RC" value="Immutable - Value can be assigned only once, during initialization." />
+            </node>
+            <node concept="3EllGN" id="5xGSFEugIzR" role="37vLTJ">
+              <node concept="37vLTw" id="5xGSFEugIzX" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5xGSFEugIzS" role="3ElVtu">
+                <property role="Xl_RC" value="description.variable.modifier.immutable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5xGSFEugJBO" role="3cqZAp">
+          <node concept="37vLTI" id="5xGSFEugJBP" role="3clFbG">
+            <node concept="Xl_RD" id="5xGSFEugJBQ" role="37vLTx">
+              <property role="Xl_RC" value="Mutable - Value can be changed any time." />
+            </node>
+            <node concept="3EllGN" id="5xGSFEugJBR" role="37vLTJ">
+              <node concept="37vLTw" id="5xGSFEugJBX" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5xGSFEugJBS" role="3ElVtu">
+                <property role="Xl_RC" value="description.variable.modifier.mutable" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="6pJoTiqe4hk" role="3cqZAp" />
         <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
         <node concept="3clFbF" id="1ZF81FZUjdg" role="3cqZAp">

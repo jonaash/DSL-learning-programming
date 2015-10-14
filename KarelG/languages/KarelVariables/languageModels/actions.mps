@@ -752,8 +752,8 @@
     <property role="TrG5h" value="assignmentExpression" />
     <property role="3GE5qa" value="expression" />
     <node concept="3UNGvq" id="2WqFKNEcJjX" role="3UOs0v">
-      <property role="3mWRNi" value=" create assignment expression when typing its alias on the right side of expression" />
-      <ref role="3UNGvu" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      <property role="3mWRNi" value=" create assignment expression when typing its alias on the right side of VariableReference" />
+      <ref role="3UNGvu" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
       <node concept="1_wSoI" id="2WqFKNEcM02" role="_1QTJ">
         <ref role="1_xjl5" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
         <node concept="E3ukw" id="2WqFKNEcM03" role="1_xdl1">

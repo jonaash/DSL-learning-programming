@@ -30,6 +30,7 @@
       <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
+        <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
@@ -146,22 +147,6 @@
             </node>
           </node>
         </node>
-        <node concept="3dudH9" id="5KhqV1J$csc" role="3jGSnO">
-          <node concept="2jchP5" id="5KhqV1J$csM" role="3dudC3">
-            <node concept="2jchP0" id="5KhqV1J$cym" role="2j_PeB">
-              <ref role="hRIc0" node="1jWJ98Hw82l" resolve="method" />
-              <node concept="FiVY1" id="5KhqV1J$cyn" role="3WjpkI">
-                <ref role="3WiQSc" node="1jWJ98HzwhF" resolve="log" />
-                <node concept="3dtAEM" id="5KhqV1JBui1" role="2jzNHB">
-                  <property role="3dtAEN" value="true" />
-                </node>
-              </node>
-            </node>
-            <node concept="AE91N" id="5KhqV1J$csa" role="2j_qme">
-              <ref role="AE91K" node="1jWJ98Hw81e" resolve="test" />
-            </node>
-          </node>
-        </node>
         <node concept="36Mw20" id="1jWJ98HEfOw" role="3jGSnO">
           <node concept="AFBxM" id="1jWJ98HEfOz" role="36Mw2n">
             <property role="TrG5h" value="basic" />
@@ -173,21 +158,32 @@
             </node>
           </node>
         </node>
+        <node concept="3dudH9" id="5xGSFEucBcB" role="3jGSnO">
+          <node concept="2jchP5" id="5xGSFEucBd0" role="3dudC3">
+            <node concept="2jchP0" id="5xGSFEucBdq" role="2j_PeB">
+              <ref role="hRIc0" node="1jWJ98Hw82l" resolve="method" />
+              <node concept="FiVY1" id="5xGSFEucBdr" role="3WjpkI">
+                <ref role="3WiQSc" node="1jWJ98HzwhF" resolve="log" />
+                <node concept="3dtAEM" id="5xGSFEucBd_" role="2jzNHB">
+                  <property role="3dtAEN" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="AE91N" id="5xGSFEucBc_" role="2j_qme">
+              <ref role="AE91K" node="1jWJ98Hw81e" resolve="test" />
+            </node>
+          </node>
+        </node>
         <node concept="3dudH9" id="1jWJ98HQvvR" role="3jGSnO">
-          <node concept="B81uQ" id="5KhqV1JyaMo" role="3dudC3">
-            <node concept="16y5rI" id="5KhqV1JyaPD" role="B81dI">
+          <node concept="B81uQ" id="5xGSFEudmLF" role="3dudC3">
+            <node concept="16y5rI" id="5xGSFEudmM$" role="B81dI">
               <property role="16xLMo" value="" />
             </node>
             <node concept="2jchP5" id="1jWJ98HQvw6" role="B81dD">
-              <node concept="2jchP5" id="1jWJ98HQEY1" role="2j_qme">
-                <node concept="AE91N" id="1jWJ98HQEZd" role="2j_qme">
-                  <ref role="AE91K" node="1jWJ98HEfOz" resolve="basic" />
-                </node>
-                <node concept="2j_qma" id="1jWJ98HQEZq" role="2j_PeB">
-                  <ref role="2jD6AI" node="1jWJ98Hw80s" resolve="instance" />
-                </node>
+              <node concept="AE91N" id="1jWJ98HQEZd" role="2j_qme">
+                <ref role="AE91K" node="1jWJ98HEfOz" resolve="basic" />
               </node>
-              <node concept="2j_qma" id="5KhqV1JyaMh" role="2j_PeB">
+              <node concept="2j_qma" id="5xGSFEucPdJ" role="2j_PeB">
                 <ref role="2jD6AI" node="7KcPMNJfiFU" resolve="privateText" />
               </node>
             </node>
@@ -203,6 +199,7 @@
     </node>
     <node concept="3pFPbB" id="7KcPMNJfiFU" role="2j5j4v">
       <property role="TrG5h" value="privateText" />
+      <property role="36jPZJ" value="true" />
       <node concept="36Kql8" id="7KcPMNJfiGg" role="36MCEW" />
       <node concept="3pOcrZ" id="7KcPMNJfiG3" role="2j5jbD" />
     </node>
@@ -229,6 +226,7 @@
         <node concept="36Mw20" id="1jWJ98HyIQR" role="3jGSnO">
           <node concept="AFBxM" id="1jWJ98HyIQU" role="36Mw2n">
             <property role="TrG5h" value="basic" />
+            <property role="36jPZJ" value="true" />
             <node concept="2jchV_" id="1jWJ98HEfN4" role="36MCEW">
               <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
             </node>

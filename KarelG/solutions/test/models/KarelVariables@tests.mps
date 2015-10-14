@@ -30,6 +30,7 @@
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
+        <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
       </concept>
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
@@ -71,6 +72,7 @@
           <node concept="36Mw20" id="4OhcFiDj2Oz" role="3jGSnO">
             <node concept="AFBxM" id="4OhcFiDj2OA" role="36Mw2n">
               <property role="TrG5h" value="test" />
+              <property role="36jPZJ" value="true" />
               <node concept="36MCER" id="4OhcFiDj2Ox" role="36MCEW" />
             </node>
           </node>

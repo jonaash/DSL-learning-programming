@@ -187,6 +187,9 @@
     <node concept="PrWs8" id="7KcPMNJFepn" role="PzmwI">
       <ref role="PrY4T" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
     </node>
+    <node concept="PrWs8" id="5xGSFEua7Hp" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:5xGSFEu9Sbr" resolve="IPotentialVariableReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsDG">
     <property role="3GE5qa" value="class.member.reference" />

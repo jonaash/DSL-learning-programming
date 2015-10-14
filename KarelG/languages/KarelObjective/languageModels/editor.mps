@@ -18,7 +18,6 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="59lc" ref="r:b335bb80-3ea8-4608-a111-e7719d8a9029(KarelFunctions.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -48,7 +47,6 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
-      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -115,15 +113,11 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
@@ -305,35 +299,8 @@
       <node concept="3F1sOY" id="7KcPMNJ6I7Z" role="3EZMnx">
         <ref role="1NtTu8" to="t2e5:7KcPMNJ6un5" />
       </node>
-      <node concept="3F1sOY" id="7KcPMNJ6I85" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:2WqFKNDO2mK" />
-      </node>
-      <node concept="3F0A7n" id="7KcPMNJ6Igb" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3EZMnI" id="2WqFKNDO5GN" role="3EZMnx">
-        <node concept="VPM3Z" id="2WqFKNDO5GP" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="2WqFKNDO5GR" role="3EZMnx">
-          <property role="3F0ifm" value="=" />
-        </node>
-        <node concept="l2Vlx" id="2WqFKNDO5GS" role="2iSdaV" />
-        <node concept="3F1sOY" id="2WqFKNDO5Hy" role="3EZMnx">
-          <ref role="1NtTu8" to="dyrx:2WqFKNDO42z" />
-        </node>
-        <node concept="pkWqt" id="2WqFKNDO5HD" role="pqm2j">
-          <node concept="3clFbS" id="2WqFKNDO5HE" role="2VODD2">
-            <node concept="3clFbF" id="2WqFKNDO5MB" role="3cqZAp">
-              <node concept="2OqwBi" id="2WqFKNDO5Rt" role="3clFbG">
-                <node concept="pncrf" id="2WqFKNDO5MA" role="2Oq$k0" />
-                <node concept="2qgKlT" id="aB0Z16OPoh" role="2OqNvi">
-                  <ref role="37wK5l" to="ljn0:aB0Z16OA3n" resolve="displayInitializer" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="PMmxH" id="5xGSFEuew$m" role="3EZMnx">
+        <ref role="PMmxG" to="y2uj:5xGSFEuelXM" resolve="VariableDeclaration_EditorComponent" />
       </node>
       <node concept="l2Vlx" id="7KcPMNJ6I7S" role="2iSdaV" />
     </node>
