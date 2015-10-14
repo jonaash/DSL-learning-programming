@@ -278,6 +278,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5KhqV1J_wQ2" role="3cqZAp">
+          <node concept="37vLTI" id="5KhqV1J_wQ3" role="3clFbG">
+            <node concept="Xl_RD" id="5KhqV1J_wQ4" role="37vLTx">
+              <property role="Xl_RC" value="Value of type ''{1}'' cannot be used as parameter of type ''{0}''" />
+            </node>
+            <node concept="3EllGN" id="5KhqV1J_wQ5" role="37vLTJ">
+              <node concept="37vLTw" id="5KhqV1J_wQb" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5KhqV1J_wQ6" role="3ElVtu">
+                <property role="Xl_RC" value="error.parameter.assignment.wrong.types" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5KhqV1J_xU9" role="3cqZAp">
+          <node concept="37vLTI" id="5KhqV1J_xUa" role="3clFbG">
+            <node concept="Xl_RD" id="5KhqV1J_xUb" role="37vLTx">
+              <property role="Xl_RC" value="Value of type ''{1}'' cannot be used as return value of function with return type ''{0}''" />
+            </node>
+            <node concept="3EllGN" id="5KhqV1J_xUc" role="37vLTJ">
+              <node concept="37vLTw" id="5KhqV1J_xUi" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="5KhqV1J_xUd" role="3ElVtu">
+                <property role="Xl_RC" value="error.return.assignment.wrong.types" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5KhqV1J_rai" role="3cqZAp" />
+        <node concept="3clFbH" id="5KhqV1J_xO5" role="3cqZAp" />
         <node concept="3clFbF" id="3hBhvFSEzZ1" role="3cqZAp">
           <node concept="37vLTI" id="3hBhvFSE_06" role="3clFbG">
             <node concept="Xl_RD" id="3hBhvFSE_3H" role="37vLTx">

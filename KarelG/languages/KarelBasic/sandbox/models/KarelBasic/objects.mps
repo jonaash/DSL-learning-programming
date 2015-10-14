@@ -10,6 +10,10 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="8938755948420525033" name="KarelBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
+        <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
+        <child id="8938755948420525131" name="value" index="2jzNHB" />
+      </concept>
       <concept id="1242405555016616841" name="KarelBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
         <child id="1242405555016843190" name="methods" index="sZtrN" />
       </concept>
@@ -17,6 +21,10 @@
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
         <child id="3776063756796240563" name="parameters" index="3dtAt9" />
+      </concept>
+      <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+        <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
       <concept id="7286718421228046626" name="KarelBasic.structure.StringLiteral" flags="ng" index="16y5rI">
         <property id="7286718421228094292" name="value" index="16xLMo" />
@@ -30,6 +38,9 @@
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
+      <concept id="3776063756796243784" name="KarelBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
+        <property id="3776063756796243785" name="value" index="3dtAEN" />
+      </concept>
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
@@ -52,9 +63,11 @@
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
       <concept id="2041423954150618879" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="KarelFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
       <concept id="3776063756797050848" name="KarelFunctions.structure.ReturnCommand" flags="ng" index="3duzCq" />
     </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="KarelObjective">
+      <concept id="8938755948415928940" name="KarelObjective.structure.MethodCall" flags="ng" index="2jchP0" />
       <concept id="8938755948415928937" name="KarelObjective.structure.DotOperator" flags="ng" index="2jchP5">
         <child id="8938755948421935778" name="expression" index="2j_qme" />
         <child id="8938755948422071435" name="operation" index="2j_PeB" />
@@ -136,6 +149,22 @@
             </node>
           </node>
         </node>
+        <node concept="3dudH9" id="5KhqV1J$csc" role="3jGSnO">
+          <node concept="2jchP5" id="5KhqV1J$csM" role="3dudC3">
+            <node concept="2jchP0" id="5KhqV1J$cym" role="2j_PeB">
+              <ref role="hRIc0" node="1jWJ98Hw82l" resolve="method" />
+              <node concept="FiVY1" id="5KhqV1J$cyn" role="3WjpkI">
+                <ref role="3WiQSc" node="1jWJ98HzwhF" resolve="log" />
+                <node concept="3dtAEM" id="5KhqV1JBui1" role="2jzNHB">
+                  <property role="3dtAEN" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="AE91N" id="5KhqV1J$csa" role="2j_qme">
+              <ref role="AE91K" node="1jWJ98Hw81e" resolve="test" />
+            </node>
+          </node>
+        </node>
         <node concept="36Mw20" id="1jWJ98HEfOw" role="3jGSnO">
           <node concept="AFBxM" id="1jWJ98HEfOz" role="36Mw2n">
             <property role="TrG5h" value="basic" />
@@ -201,12 +230,12 @@
     <node concept="3pFPbB" id="1jWJ98HEfxl" role="2j5j4v">
       <property role="TrG5h" value="count" />
       <node concept="36MCER" id="1jWJ98HEfxv" role="36MCEW" />
-      <node concept="3pOcrW" id="1jWJ98HEfQi" role="2j5jbD" />
+      <node concept="3pOcrW" id="5KhqV1J$cwU" role="2j5jbD" />
     </node>
     <node concept="3pOcrA" id="1jWJ98Hw82l" role="sZtrN">
       <property role="TrG5h" value="method" />
       <node concept="3dtAsP" id="1jWJ98Hw82m" role="2jg$Xp" />
-      <node concept="3pOcrZ" id="1jWJ98Hw82n" role="2j5jbD" />
+      <node concept="3pOcrW" id="5KhqV1J$rRu" role="2j5jbD" />
       <node concept="3jGSmg" id="1jWJ98Hw82o" role="hRHZh">
         <node concept="36Mw20" id="1jWJ98HyIQR" role="3jGSnO">
           <node concept="AFBxM" id="1jWJ98HyIQU" role="36Mw2n">
