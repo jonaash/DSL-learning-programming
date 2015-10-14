@@ -14,9 +14,6 @@
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
-      <concept id="1242405555016616841" name="KarelBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
-        <child id="1242405555016843190" name="methods" index="sZtrN" />
-      </concept>
       <concept id="1242405555015381639" name="KarelBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
@@ -84,8 +81,8 @@
       </concept>
       <concept id="148719074581307086" name="KarelObjective.structure.ClassDefinition" flags="ng" index="3pFwnV">
         <child id="8938755948413576755" name="fields" index="2j5j4v" />
+        <child id="8938755948413576778" name="methods" index="2j5j5A" />
         <child id="8938755948420073195" name="constructors" index="2jst77" />
-        <child id="1512290910902363458" name="type" index="TBTBg" />
       </concept>
       <concept id="148719074581350866" name="KarelObjective.structure.FieldVariableDeclaration" flags="ng" index="3pFPbB" />
       <concept id="148719074581351648" name="KarelObjective.structure.IClassMember" flags="ng" index="3pFPvl">
@@ -103,7 +100,7 @@
   </registry>
   <node concept="3pFwnV" id="7KcPMNJ6HO_">
     <property role="TrG5h" value="BasicClass" />
-    <node concept="3pOcrA" id="1jWJ98Hs5bo" role="sZtrN">
+    <node concept="3pOcrA" id="1jWJ98Hs5bo" role="2j5j5A">
       <property role="TrG5h" value="test" />
       <node concept="3dtAsP" id="1jWJ98Hs5bp" role="2jg$Xp" />
       <node concept="3jGSmg" id="1jWJ98Hs5bq" role="hRHZh">
@@ -123,7 +120,7 @@
         <node concept="36MBwV" id="1jWJ98HEJ0f" role="36MCEW" />
       </node>
     </node>
-    <node concept="3pOcrA" id="1jWJ98HQvx2" role="sZtrN">
+    <node concept="3pOcrA" id="1jWJ98HQvx2" role="2j5j5A">
       <property role="TrG5h" value="test2" />
       <node concept="3dtAsP" id="1jWJ98HQvx3" role="2jg$Xp" />
       <node concept="3pOcrZ" id="1jWJ98HQvx4" role="2j5jbD" />
@@ -221,18 +218,10 @@
       </node>
       <node concept="3pOcrZ" id="1jWJ98HEfOM" role="2j5jbD" />
     </node>
-    <node concept="2jchV_" id="1jWJ98HrFIG" role="TBTBg">
-      <ref role="2jchVA" node="7KcPMNJ6HO_" resolve="BasicClass" />
-    </node>
   </node>
   <node concept="3pFwnV" id="1jWJ98Hw7Zf">
     <property role="TrG5h" value="Test" />
-    <node concept="3pFPbB" id="1jWJ98HEfxl" role="2j5j4v">
-      <property role="TrG5h" value="count" />
-      <node concept="36MCER" id="1jWJ98HEfxv" role="36MCEW" />
-      <node concept="3pOcrW" id="5KhqV1J$cwU" role="2j5jbD" />
-    </node>
-    <node concept="3pOcrA" id="1jWJ98Hw82l" role="sZtrN">
+    <node concept="3pOcrA" id="1jWJ98Hw82l" role="2j5j5A">
       <property role="TrG5h" value="method" />
       <node concept="3dtAsP" id="1jWJ98Hw82m" role="2jg$Xp" />
       <node concept="3pOcrW" id="5KhqV1J$rRu" role="2j5jbD" />
@@ -251,8 +240,10 @@
         <node concept="36MBwV" id="1jWJ98HzwhL" role="36MCEW" />
       </node>
     </node>
-    <node concept="2jchV_" id="1jWJ98Hw7Zg" role="TBTBg">
-      <ref role="2jchVA" node="1jWJ98Hw7Zf" resolve="Test" />
+    <node concept="3pFPbB" id="1jWJ98HEfxl" role="2j5j4v">
+      <property role="TrG5h" value="count" />
+      <node concept="36MCER" id="1jWJ98HEfxv" role="36MCEW" />
+      <node concept="3pOcrW" id="5KhqV1J$cwU" role="2j5jbD" />
     </node>
     <node concept="2jh1y9" id="1jWJ98Hw7Zh" role="2jst77">
       <node concept="3dtAsP" id="1jWJ98Hw7Zi" role="2jg$Xp" />

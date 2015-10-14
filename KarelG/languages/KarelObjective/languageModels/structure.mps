@@ -71,13 +71,6 @@
       <property role="20kJfa" value="methods" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="8gmNnrK9Rj" resolve="MethodDefinition" />
-      <ref role="20ksaX" to="dyrx:14XUkkdK3YQ" />
-    </node>
-    <node concept="1TJgyj" id="1jWJ98HoMl2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7KcPMNJfsB9" resolve="ClassType" />
     </node>
     <node concept="PrWs8" id="8gmNnrJKBa" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -87,9 +80,6 @@
     </node>
     <node concept="PrWs8" id="7KcPMNJ6unC" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
-    </node>
-    <node concept="PrWs8" id="1jWJ98HxbEV" role="PzmwI">
-      <ref role="PrY4T" to="dyrx:14XUkkdJcI9" resolve="IMethodsDefinition" />
     </node>
     <node concept="1TJgyj" id="7KcPMNJ6ups" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -161,11 +151,6 @@
     <property role="TrG5h" value="ThisExpression" />
     <property role="34LRSv" value="this" />
     <ref role="1TJDcQ" node="1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
-  </node>
-  <node concept="1TIwiD" id="7KcPMNJflq2">
-    <property role="3GE5qa" value="class" />
-    <property role="TrG5h" value="ReferenceExpression" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsB9">
     <property role="TrG5h" value="ClassType" />
