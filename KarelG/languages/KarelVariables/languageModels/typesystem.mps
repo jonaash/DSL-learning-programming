@@ -21,6 +21,7 @@
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1441,8 +1442,8 @@
                           <ref role="3Tt5mk" to="3y9h:2J_q78djvw2" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="18k56XDxXi0" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                      <node concept="2qgKlT" id="5xGSFEu2J_A" role="2OqNvi">
+                        <ref role="37wK5l" to="ljn0:5xGSFEu2HZ_" resolve="getLabel" />
                       </node>
                     </node>
                   </node>
@@ -1828,8 +1829,8 @@
                         <node concept="37vLTw" id="18k56XDxVRl" role="2Oq$k0">
                           <ref role="3cqZAo" node="18k56XDxQ$j" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="18k56XDxWk2" role="2OqNvi">
-                          <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                        <node concept="2qgKlT" id="5xGSFEu2Ko$" role="2OqNvi">
+                          <ref role="37wK5l" to="ljn0:5xGSFEu2HZ_" resolve="getLabel" />
                         </node>
                       </node>
                     </node>
