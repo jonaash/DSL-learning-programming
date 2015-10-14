@@ -28,6 +28,7 @@
       <concept id="3394217739174336311" name="KarelBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3394217739174290875" name="KarelBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
+        <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
@@ -86,18 +87,21 @@
       <node concept="36Mw20" id="3eViXf8zNe5" role="3jGSnO">
         <node concept="AFBxM" id="3eViXf8zNe8" role="36Mw2n">
           <property role="TrG5h" value="bNotInit" />
+          <property role="36jPZJ" value="true" />
           <node concept="36MBwV" id="3eViXf8zNe3" role="36MCEW" />
         </node>
       </node>
       <node concept="36Mw20" id="3eViXf8zNfB" role="3jGSnO">
         <node concept="AFBxM" id="3eViXf8zNfE" role="36Mw2n">
           <property role="TrG5h" value="iNotInit" />
+          <property role="36jPZJ" value="true" />
           <node concept="36MCER" id="3eViXf8zNf_" role="36MCEW" />
         </node>
       </node>
       <node concept="36Mw20" id="3eViXf8zNgG" role="3jGSnO">
         <node concept="AFBxM" id="3eViXf8zNgJ" role="36Mw2n">
           <property role="TrG5h" value="sNotInit" />
+          <property role="36jPZJ" value="true" />
           <node concept="36Kql8" id="3eViXf8zNgE" role="36MCEW" />
         </node>
       </node>
