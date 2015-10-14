@@ -78,6 +78,12 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -157,6 +163,183 @@
   <node concept="1M2fIO" id="1jWJ98HyIVN">
     <property role="3GE5qa" value="class.member.reference" />
     <ref role="1M2myG" to="t2e5:7KcPMNJfsDG" resolve="MethodCall" />
+    <node concept="1N5Pfh" id="5KhqV1J$lXb" role="1Mr941">
+      <ref role="1N5Vy1" to="t2e5:7KcPMNJfsDH" />
+      <node concept="13QW63" id="5KhqV1J$lXd" role="1N6uqs">
+        <node concept="3clFbS" id="5KhqV1J$lXe" role="2VODD2">
+          <node concept="3cpWs8" id="5KhqV1J$m0O" role="3cqZAp">
+            <node concept="3cpWsn" id="5KhqV1J$m0P" role="3cpWs9">
+              <property role="TrG5h" value="dotOperator" />
+              <node concept="3Tqbb2" id="5KhqV1J$m0Q" role="1tU5fm">
+                <ref role="ehGHo" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+              </node>
+              <node concept="3K4zz7" id="5KhqV1J$m0R" role="33vP2m">
+                <node concept="1PxgMI" id="5KhqV1J$m0S" role="3K4GZi">
+                  <property role="1BlNFB" value="true" />
+                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+                  <node concept="2OqwBi" id="5KhqV1J$m0T" role="1PxMeX">
+                    <node concept="2rP1CM" id="5KhqV1J$m0U" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="5KhqV1J$m0V" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5KhqV1J$m0W" role="3K4Cdx">
+                  <node concept="2rP1CM" id="5KhqV1J$m0X" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="5KhqV1J$m0Y" role="2OqNvi">
+                    <node concept="chp4Y" id="5KhqV1J$m0Z" role="cj9EA">
+                      <ref role="cht4Q" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1PxgMI" id="5KhqV1J$m10" role="3K4E3e">
+                  <property role="1BlNFB" value="true" />
+                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+                  <node concept="2rP1CM" id="5KhqV1J$m11" role="1PxMeX" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5KhqV1J$m12" role="3cqZAp">
+            <node concept="3clFbS" id="5KhqV1J$m13" role="3clFbx">
+              <node concept="34ab3g" id="5KhqV1J$m14" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="2YIFZM" id="5KhqV1J$m15" role="34bqiv">
+                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <node concept="Xl_RD" id="5KhqV1J$m16" role="37wK5m">
+                    <property role="Xl_RC" value="Unexpected MethodCall contextNode. Expected MethodCall or DotOperator but found: {}" />
+                  </node>
+                  <node concept="2rP1CM" id="5KhqV1J$m17" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3cpWs6" id="5KhqV1J$m18" role="3cqZAp">
+                <node concept="2ShNRf" id="5KhqV1J$m19" role="3cqZAk">
+                  <node concept="1pGfFk" id="5KhqV1J$m1a" role="2ShVmc">
+                    <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5KhqV1J$m1b" role="3clFbw">
+              <node concept="37vLTw" id="5KhqV1J$m1c" role="2Oq$k0">
+                <ref role="3cqZAo" node="5KhqV1J$m0P" resolve="dotOperator" />
+              </node>
+              <node concept="3w_OXm" id="5KhqV1J$m1d" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="5KhqV1J$m1e" role="3cqZAp" />
+          <node concept="3cpWs8" id="5KhqV1J$m1f" role="3cqZAp">
+            <node concept="3cpWsn" id="5KhqV1J$m1g" role="3cpWs9">
+              <property role="TrG5h" value="operandType" />
+              <node concept="3Tqbb2" id="5KhqV1J$m1h" role="1tU5fm">
+                <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+              </node>
+              <node concept="2OqwBi" id="5KhqV1J$m1i" role="33vP2m">
+                <node concept="2qgKlT" id="5KhqV1J$m1j" role="2OqNvi">
+                  <ref role="37wK5l" to="azf3:1jWJ98HzHfO" resolve="getSyntacticallyLeftType" />
+                </node>
+                <node concept="37vLTw" id="5KhqV1J$m1k" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5KhqV1J$m0P" resolve="dotOperator" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5KhqV1J$m1l" role="3cqZAp" />
+          <node concept="3cpWs8" id="5KhqV1J$m1m" role="3cqZAp">
+            <node concept="3cpWsn" id="5KhqV1J$m1n" role="3cpWs9">
+              <property role="TrG5h" value="targetClass" />
+              <node concept="3Tqbb2" id="5KhqV1J$m1o" role="1tU5fm">
+                <ref role="ehGHo" to="t2e5:8gmNnrJ_Ve" resolve="ClassDefinition" />
+              </node>
+              <node concept="2OqwBi" id="5KhqV1J$m1p" role="33vP2m">
+                <node concept="1PxgMI" id="5KhqV1J$m1q" role="2Oq$k0">
+                  <property role="1BlNFB" value="true" />
+                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+                  <node concept="37vLTw" id="5KhqV1J$m1r" role="1PxMeX">
+                    <ref role="3cqZAo" node="5KhqV1J$m1g" resolve="operandType" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="5KhqV1J$m1s" role="2OqNvi">
+                  <ref role="3Tt5mk" to="t2e5:7KcPMNJfsBa" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="34ab3g" id="5KhqV1J$m1t" role="3cqZAp">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="5KhqV1J$m1u" role="34bqiv">
+              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <node concept="Xl_RD" id="5KhqV1J$m1v" role="37wK5m">
+                <property role="Xl_RC" value="Creating scope for {0}, targetClass: {1}, model:{2}" />
+              </node>
+              <node concept="37vLTw" id="5KhqV1J$m1w" role="37wK5m">
+                <ref role="3cqZAo" node="5KhqV1J$m1g" resolve="operandType" />
+              </node>
+              <node concept="37vLTw" id="5KhqV1J$m1x" role="37wK5m">
+                <ref role="3cqZAo" node="5KhqV1J$m1n" resolve="targetClass" />
+              </node>
+              <node concept="1Q6Npb" id="5KhqV1J$m1y" role="37wK5m" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5KhqV1J$m1z" role="3cqZAp">
+            <node concept="3clFbS" id="5KhqV1J$m1$" role="3clFbx">
+              <node concept="3cpWs8" id="5KhqV1J$m1_" role="3cqZAp">
+                <node concept="3cpWsn" id="5KhqV1J$m1A" role="3cpWs9">
+                  <property role="TrG5h" value="accessContext" />
+                  <node concept="3uibUv" id="5KhqV1J$m1B" role="1tU5fm">
+                    <ref role="3uigEE" to="azf3:1jWJ98H$88U" resolve="Access" />
+                  </node>
+                  <node concept="2YIFZM" id="5KhqV1J$m1C" role="33vP2m">
+                    <ref role="1Pybhc" to="azf3:1jWJ98H$DvE" resolve="VisibilityUtil" />
+                    <ref role="37wK5l" to="azf3:1jWJ98H$Dx9" resolve="getAccessContext" />
+                    <node concept="2rP1CM" id="5KhqV1J$m1D" role="37wK5m" />
+                    <node concept="37vLTw" id="5KhqV1J$m1E" role="37wK5m">
+                      <ref role="3cqZAo" node="5KhqV1J$m1n" resolve="targetClass" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="5KhqV1J$m1F" role="3cqZAp" />
+              <node concept="3cpWs6" id="5KhqV1J$m1G" role="3cqZAp">
+                <node concept="2OqwBi" id="5KhqV1J$m1H" role="3cqZAk">
+                  <node concept="37vLTw" id="5KhqV1J$m1I" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5KhqV1J$m1n" resolve="targetClass" />
+                  </node>
+                  <node concept="2qgKlT" id="5KhqV1J$m1J" role="2OqNvi">
+                    <ref role="37wK5l" to="azf3:1jWJ98H$yYy" resolve="getMethodScope" />
+                    <node concept="37vLTw" id="5KhqV1J$m1K" role="37wK5m">
+                      <ref role="3cqZAo" node="5KhqV1J$m1A" resolve="accessContext" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5KhqV1J$m1L" role="3clFbw">
+              <node concept="37vLTw" id="5KhqV1J$m1M" role="2Oq$k0">
+                <ref role="3cqZAo" node="5KhqV1J$m1n" resolve="targetClass" />
+              </node>
+              <node concept="3x8VRR" id="5KhqV1J$m1N" role="2OqNvi" />
+            </node>
+            <node concept="9aQIb" id="5KhqV1J$m1O" role="9aQIa">
+              <node concept="3clFbS" id="5KhqV1J$m1P" role="9aQI4">
+                <node concept="3SKdUt" id="5KhqV1J$pUt" role="3cqZAp">
+                  <node concept="3SKdUq" id="5KhqV1J$q2Z" role="3SKWNk">
+                    <property role="3SKdUp" value="operand is not class type" />
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="5KhqV1J$m1Q" role="3cqZAp">
+                  <node concept="2ShNRf" id="5KhqV1J$m1R" role="3cqZAk">
+                    <node concept="1pGfFk" id="5KhqV1J$m1S" role="2ShVmc">
+                      <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="1jWJ98HBkkb">
     <property role="3GE5qa" value="class.member.reference" />
@@ -199,7 +382,7 @@
           <node concept="3clFbJ" id="1jWJ98HC4XN" role="3cqZAp">
             <node concept="3clFbS" id="1jWJ98HC4XP" role="3clFbx">
               <node concept="34ab3g" id="1jWJ98HC6MG" role="3cqZAp">
-                <property role="35gtTG" value="error" />
+                <property role="35gtTG" value="warn" />
                 <node concept="2YIFZM" id="1jWJ98HC7dN" role="34bqiv">
                   <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
                   <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
@@ -263,7 +446,7 @@
             </node>
           </node>
           <node concept="34ab3g" id="1jWJ98HBkpf" role="3cqZAp">
-            <property role="35gtTG" value="info" />
+            <property role="35gtTG" value="debug" />
             <node concept="2YIFZM" id="1jWJ98HBkpg" role="34bqiv">
               <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
               <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
@@ -320,6 +503,11 @@
             </node>
             <node concept="9aQIb" id="1jWJ98HBkp_" role="9aQIa">
               <node concept="3clFbS" id="1jWJ98HBkpA" role="9aQI4">
+                <node concept="3SKdUt" id="5KhqV1J$qie" role="3cqZAp">
+                  <node concept="3SKdUq" id="5KhqV1J$qif" role="3SKWNk">
+                    <property role="3SKdUp" value="operand is not class type" />
+                  </node>
+                </node>
                 <node concept="3cpWs6" id="1jWJ98HBkpB" role="3cqZAp">
                   <node concept="2ShNRf" id="1jWJ98HBkpC" role="3cqZAk">
                     <node concept="1pGfFk" id="1jWJ98HBkpD" role="2ShVmc">
