@@ -14,6 +14,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -236,18 +237,21 @@
       <ref role="20lvS9" node="8gmNnrJKBi" resolve="FieldVariableDeclaration" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1jWJ98H$8kD">
-    <property role="3GE5qa" value="class.visibility" />
-    <property role="TrG5h" value="Protected" />
-    <property role="34LRSv" value="protected" />
-    <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
-  </node>
   <node concept="1TIwiD" id="1jWJ98HNK3l">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="AbstractClassPointerExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1jWJ98H$8kD">
+    <property role="3GE5qa" value="class.visibility" />
+    <property role="TrG5h" value="Protected" />
+    <property role="34LRSv" value="protected" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="R4oN_" value="it is bastrcat because not used" />
+    <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
 </model>
 

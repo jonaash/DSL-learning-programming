@@ -561,5 +561,15 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="5xGSFEu1oyj">
+    <property role="3GE5qa" value="class.visibility" />
+    <ref role="1XX52x" to="t2e5:8gmNnrJKNC" resolve="Visibility" />
+    <node concept="PMmxH" id="5xGSFEu1oXF" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="VPxyj" id="5xGSFEu1tZq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 
