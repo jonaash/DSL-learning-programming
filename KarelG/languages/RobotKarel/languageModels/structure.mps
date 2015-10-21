@@ -50,28 +50,28 @@
     <property role="TrG5h" value="LeftTurn" />
     <property role="34LRSv" value="turn left" />
     <property role="R4oN_" value="makes the robot to turn left" />
-    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" node="6bbx8uICPS8" resolve="KarelCommand" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIx4ZZ">
     <property role="3GE5qa" value="command" />
     <property role="TrG5h" value="PickMark" />
     <property role="34LRSv" value="pick mark" />
     <property role="R4oN_" value="pick one mark from the ground (if there is any)" />
-    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" node="6bbx8uICPS8" resolve="KarelCommand" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIx500">
     <property role="3GE5qa" value="command" />
     <property role="TrG5h" value="PutMark" />
     <property role="34LRSv" value="put mark" />
     <property role="R4oN_" value="put one mark on the ground (unless it's full)" />
-    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" node="6bbx8uICPS8" resolve="KarelCommand" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIx501">
     <property role="TrG5h" value="Step" />
     <property role="34LRSv" value="step" />
     <property role="R4oN_" value="makes the robot to do one step in current direction" />
     <property role="3GE5qa" value="command" />
-    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" node="6bbx8uICPS8" resolve="KarelCommand" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIA50X">
     <property role="3GE5qa" value="expression" />
@@ -85,7 +85,7 @@
     <property role="TrG5h" value="IsLooking" />
     <property role="34LRSv" value="looking" />
     <property role="R4oN_" value="checks if robot is looking in given direction" />
-    <ref role="1TJDcQ" node="6bbx8uIA512" resolve="LogicalQuery" />
+    <ref role="1TJDcQ" node="6bbx8uIA512" resolve="KarelLogicalQuery" />
     <node concept="1TJgyi" id="6bbx8uIA50Z" role="1TKVEl">
       <property role="TrG5h" value="direction" />
       <ref role="AX2Wp" node="6bbx8uIAdh4" resolve="Direction" />
@@ -107,7 +107,7 @@
   </node>
   <node concept="1TIwiD" id="6bbx8uIA512">
     <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="LogicalQuery" />
+    <property role="TrG5h" value="KarelLogicalQuery" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
@@ -117,7 +117,7 @@
     <property role="TrG5h" value="NullaryLogicalQuery" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="6bbx8uIA512" resolve="LogicalQuery" />
+    <ref role="1TJDcQ" node="6bbx8uIA512" resolve="KarelLogicalQuery" />
   </node>
   <node concept="AxPO7" id="6bbx8uIAdh4">
     <property role="3GE5qa" value="expression" />
@@ -141,6 +141,13 @@
       <property role="1uS6qv" value="west" />
       <property role="1uS6qo" value="west" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6bbx8uICPS8">
+    <property role="3GE5qa" value="command" />
+    <property role="TrG5h" value="KarelCommand" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
 </model>
 
