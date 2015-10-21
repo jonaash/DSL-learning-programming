@@ -88,10 +88,10 @@
         <child id="3267332360033971751" name="falseBranch" index="17CkHv" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
-      <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
     </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
       <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
+      <concept id="7118929354273869885" name="" flags="ng" index="3ckXiU" />
     </language>
   </registry>
   <node concept="1$vsWe" id="3hBhvFT6RhQ">
@@ -101,7 +101,7 @@
       <node concept="36MCER" id="7KcPMNJp1MC" role="2jg$Xp" />
       <node concept="3jGSmg" id="7KcPMNJp1LP" role="hRHZh">
         <node concept="17CkzI" id="2RjUFdDmX7n" role="3jGSnO">
-          <node concept="17Ff7J" id="2RjUFdDmX8q" role="17CkHB" />
+          <node concept="3ckXiU" id="2RjUFdDmX8q" role="17CkHB" />
           <node concept="3jGSmg" id="2RjUFdDmX7p" role="17CkHq" />
           <node concept="3jGSmg" id="2RjUFdDniO9" role="17CkHv">
             <node concept="3duzCq" id="2RjUFdDqBas" role="3jGSnO">
@@ -156,7 +156,7 @@
       <node concept="36MCER" id="3eViXf8ussT" role="2jg$Xp" />
       <node concept="3jGSmg" id="3eViXf8nLWJ" role="hRHZh">
         <node concept="17CkzI" id="3eViXf8nLWK" role="3jGSnO">
-          <node concept="17Ff7J" id="3eViXf8nLWL" role="17CkHB" />
+          <node concept="3ckXiU" id="3eViXf8nLWL" role="17CkHB" />
           <node concept="3jGSmg" id="3eViXf8nLWM" role="17CkHq" />
           <node concept="3jGSmg" id="3eViXf8nLWN" role="17CkHv">
             <node concept="3duzCq" id="3eViXf8nLWO" role="3jGSnO">

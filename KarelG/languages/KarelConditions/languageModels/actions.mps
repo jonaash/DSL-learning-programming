@@ -292,13 +292,6 @@
         </node>
       </node>
     </node>
-    <node concept="37WvkG" id="7FfY7DNt7ES" role="37WGs$">
-      <property role="3mWdv0" value="change complex queries to nullary" />
-      <ref role="37XkoT" to="9xx6:5eWJqD2l4JP" resolve="NullaryLogicalQuery" />
-      <node concept="37Y9Zx" id="7FfY7DNt7ET" role="37ZfLb">
-        <node concept="3clFbS" id="7FfY7DNt7EU" role="2VODD2" />
-      </node>
-    </node>
   </node>
   <node concept="3UOs0u" id="jBG8nbPhWS">
     <property role="TrG5h" value="ElseInTrueBranch" />

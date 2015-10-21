@@ -1043,7 +1043,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkmAj" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="3LESm3" value="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" />
         <property role="2GAjPV" value="false" />
         <property role="TrG5h" value="KarelConditions" />

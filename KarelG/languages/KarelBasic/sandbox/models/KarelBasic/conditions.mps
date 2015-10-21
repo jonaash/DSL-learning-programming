@@ -54,16 +54,16 @@
         <child id="3267332360033971751" name="falseBranch" index="17CkHv" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
-      <concept id="3267332360034260059" name="KarelConditions.structure.IsMark" flags="ng" index="17Ff4z" />
-      <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
-      <concept id="3267332360034124262" name="KarelConditions.structure.IsLooking" flags="ng" index="17FIiu">
-        <property id="3267332360034136801" name="direction" index="17FHup" />
-      </concept>
     </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
       <concept id="7118929354272559103" name="RobotKarel.structure.PickMark" flags="ng" index="3cjWHS" />
       <concept id="7118929354272559102" name="RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
       <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
+      <concept id="7118929354273869886" name="RobotKarel.structure.IsLooking" flags="ng" index="3ckXiT">
+        <property id="7118929354273869887" name="direction" index="3ckXiS" />
+      </concept>
+      <concept id="7118929354273869885" name="RobotKarel.structure.IsFull" flags="ng" index="3ckXiU" />
+      <concept id="7118929354273869888" name="RobotKarel.structure.IsMark" flags="ng" index="3ckXj7" />
     </language>
   </registry>
   <node concept="1$vsWe" id="2PnTnxEYM42">
@@ -80,7 +80,7 @@
           <node concept="3cjXi6" id="2PnTnxF2C$P" role="3jGSnO" />
           <node concept="3cjXi6" id="2PnTnxF2CWb" role="3jGSnO" />
         </node>
-        <node concept="17Ff7J" id="5beVc_rbtEg" role="17CkHB" />
+        <node concept="3ckXiU" id="5beVc_rbtEg" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="6OirKjsB1Bt" role="3jGSnO" />
       <node concept="17CkzI" id="2PnTnxF5MKd" role="3jGSnO">
@@ -91,8 +91,8 @@
           <node concept="3cjXi6" id="jBG8nbSoSN" role="3jGSnO" />
           <node concept="3cjXi6" id="jBG8nbSoTE" role="3jGSnO" />
         </node>
-        <node concept="17FIiu" id="7FfY7DNt70R" role="17CkHB">
-          <property role="17FHup" value="south" />
+        <node concept="3ckXiT" id="6bbx8uIAlR7" role="17CkHB">
+          <property role="3ckXiS" value="south" />
         </node>
       </node>
       <node concept="17J3f2" id="146X79eWTTY" role="3jGSnO" />
@@ -101,9 +101,9 @@
           <node concept="3cjXi6" id="7FfY7DNwTa3" role="3jGSnO" />
         </node>
         <node concept="2LJN8D" id="146X79eYE$q" role="17CkHB">
-          <node concept="17Ff4z" id="146X79eYE$E" role="3527ZY" />
+          <node concept="3ckXj7" id="146X79eYE$E" role="3527ZY" />
           <node concept="2LJymW" id="146X79eYJ3P" role="3527S9">
-            <node concept="17Ff7J" id="7FfY7DN$mOM" role="3cXj02" />
+            <node concept="3ckXiU" id="7FfY7DN$mOM" role="3cXj02" />
           </node>
         </node>
       </node>
@@ -121,13 +121,13 @@
         </node>
         <node concept="3jGSmg" id="6OirKjsHb$i" role="17CkHv" />
         <node concept="2LJN8D" id="3hBhvFS$Q8o" role="17CkHB">
-          <node concept="17Ff7J" id="3hBhvFS$Q8D" role="3527ZY" />
-          <node concept="17Ff7J" id="3hBhvFSGZXj" role="3527S9" />
+          <node concept="3ckXiU" id="3hBhvFS$Q8D" role="3527ZY" />
+          <node concept="3ckXiU" id="3hBhvFSGZXj" role="3527S9" />
         </node>
       </node>
       <node concept="17J3f2" id="3hBhvFSHxaM" role="3jGSnO" />
       <node concept="17CkzI" id="3hBhvFSHxb5" role="3jGSnO">
-        <node concept="17Ff7J" id="3hBhvFSHxbo" role="17CkHB" />
+        <node concept="3ckXiU" id="3hBhvFSHxbo" role="17CkHB" />
         <node concept="3jGSmg" id="3hBhvFSHxb9" role="17CkHq">
           <node concept="17J3f2" id="3hBhvFSHxba" role="3jGSnO" />
         </node>
@@ -142,14 +142,14 @@
         <node concept="3jGSmg" id="jBG8nbJOWD" role="3azrUc">
           <node concept="3cjXi6" id="jBG8nbKsZ7" role="3jGSnO" />
         </node>
-        <node concept="17Ff7J" id="jBG8nbKppZ" role="2LFUC5" />
+        <node concept="3ckXiU" id="jBG8nbKppZ" role="2LFUC5" />
       </node>
       <node concept="3cjXi6" id="jBG8nbKsZa" role="3jGSnO" />
       <node concept="3cjWHT" id="jBG8nbKsZi" role="3jGSnO" />
       <node concept="17J3f2" id="jBG8nbSq12" role="3jGSnO" />
       <node concept="17CkzI" id="2fiU1DVANXB" role="3jGSnO">
-        <node concept="17FIiu" id="2fiU1DVANXm" role="17CkHB">
-          <property role="17FHup" value="east" />
+        <node concept="3ckXiT" id="6bbx8uIAlUB" role="17CkHB">
+          <property role="3ckXiS" value="north" />
         </node>
         <node concept="3jGSmg" id="2fiU1DVANXn" role="17CkHq">
           <node concept="17J3f2" id="2fiU1DVANXo" role="3jGSnO" />
@@ -164,7 +164,7 @@
     <property role="TrG5h" value="IfStatement" />
     <node concept="3jGSmg" id="4kfw1ThrmoR" role="3jGSko">
       <node concept="17CkzI" id="4kfw1Thrmuy" role="3jGSnO">
-        <node concept="17Ff7J" id="4kfw1ThrmuE" role="17CkHB" />
+        <node concept="3ckXiU" id="4kfw1ThrmuE" role="17CkHB" />
         <node concept="3jGSmg" id="4kfw1Thrmu$" role="17CkHq">
           <node concept="3cjXi6" id="4kfw1ThrmuH" role="3jGSnO" />
         </node>
@@ -177,12 +177,12 @@
       <node concept="17CkzI" id="4kfw1ThAV6d" role="3jGSnO">
         <node concept="3jGSmg" id="4kfw1ThAV6h" role="17CkHq" />
         <node concept="3jGSmg" id="4kfw1ThAV6j" role="17CkHv" />
-        <node concept="17Ff7J" id="5eWJqD2o3B4" role="17CkHB" />
+        <node concept="3ckXiU" id="5eWJqD2o3B4" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="4kfw1ThF8A7" role="3jGSnO" />
       <node concept="17CkzI" id="jBG8nbJivC" role="3jGSnO">
-        <node concept="17FIiu" id="146X79eYJpZ" role="17CkHB">
-          <property role="17FHup" value="south" />
+        <node concept="3ckXiT" id="6bbx8uIAlST" role="17CkHB">
+          <property role="3ckXiS" value="north" />
         </node>
         <node concept="3jGSmg" id="3hBhvFSH$fO" role="17CkHq">
           <node concept="17J3f2" id="146X79eYJnj" role="3jGSnO" />

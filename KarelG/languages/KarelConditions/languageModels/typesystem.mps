@@ -8,7 +8,8 @@
   <imports>
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
-    <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" implicit="true" />
+    <import index="758v" ref="r:491f3992-c1ea-43a0-9484-780e8244a773(RobotKarel.structure)" />
+    <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -129,32 +130,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1YbPZF" id="3hBhvFSEy1s">
-    <property role="TrG5h" value="typeof_LogicalQuery" />
-    <property role="3GE5qa" value="expression.logical.query" />
-    <node concept="3clFbS" id="3hBhvFSEy1t" role="18ibNy">
-      <node concept="1Z5TYs" id="3hBhvFSEy3G" role="3cqZAp">
-        <node concept="mw_s8" id="3hBhvFSEy40" role="1ZfhKB">
-          <node concept="2pJPEk" id="3hBhvFSEy3W" role="mwGJk">
-            <node concept="2pJPED" id="3hBhvFSEy7V" role="2pJPEn">
-              <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="3hBhvFSEy3J" role="1ZfhK$">
-          <node concept="1Z2H0r" id="3hBhvFSEy1z" role="mwGJk">
-            <node concept="1YBJjd" id="3hBhvFSEy1Z" role="1Z2MuG">
-              <ref role="1YBMHb" node="3hBhvFSEy1v" resolve="logicalQuery" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3hBhvFSEy1v" role="1YuTPh">
-      <property role="TrG5h" value="logicalQuery" />
-      <ref role="1YaFvo" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="3hBhvFSEyMD">
     <property role="TrG5h" value="typeof_BinaryLogicalOperator" />
     <property role="3GE5qa" value="expression.logical.operator" />

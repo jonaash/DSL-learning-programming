@@ -8,7 +8,8 @@
   <imports>
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
-    <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" implicit="true" />
+    <import index="758v" ref="r:491f3992-c1ea-43a0-9484-780e8244a773(RobotKarel.structure)" />
+    <import index="9xx6" ref="r:b316d19d-6977-4fd4-af5b-bfecf5af5b5f(KarelConditions.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -74,53 +75,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="13h7C7" id="6xChywqsMIo">
-    <property role="3GE5qa" value="expression.logical.query" />
-    <ref role="13h7C2" to="9xx6:3hBhvFSEy0h" resolve="LogicalQuery" />
-    <node concept="13hLZK" id="6xChywqsMIp" role="13h7CW">
-      <node concept="3clFbS" id="6xChywqsMIq" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="6xChywqsMIr" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getTypeAnnotation" />
-      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
-      <node concept="3Tm1VV" id="6xChywqsMIs" role="1B3o_S" />
-      <node concept="3clFbS" id="6xChywqsMIx" role="3clF47">
-        <node concept="3cpWs6" id="6xChywqsMK0" role="3cqZAp">
-          <node concept="BsUDl" id="6pJoTiq6PjM" role="3cqZAk">
-            <ref role="37wK5l" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="1BMnhOnvWPt" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6pJoTiq6Pgx" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getStaticType" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
-      <node concept="3Tm1VV" id="6pJoTiq6Pgy" role="1B3o_S" />
-      <node concept="3clFbS" id="6pJoTiq6PgB" role="3clF47">
-        <node concept="3cpWs6" id="6pJoTiq6PhZ" role="3cqZAp">
-          <node concept="2OqwBi" id="1BMnhOnvWR$" role="3cqZAk">
-            <node concept="35c_gC" id="6xChywqsMLG" role="2Oq$k0">
-              <ref role="35c_gD" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
-            </node>
-            <node concept="2qgKlT" id="1BMnhOnvX2Z" role="2OqNvi">
-              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="6pJoTiq6PgC" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="7FfY7DNvvk_">
     <property role="3GE5qa" value="expression.logical.operator" />
     <ref role="13h7C2" to="9xx6:3hBhvFSDZzq" resolve="BinaryLogicalOperator" />

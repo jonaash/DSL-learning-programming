@@ -1246,8 +1246,8 @@
     <delete dir="${basedir}/languages/KarelFunctions/source_gen" />
     <delete dir="${basedir}/languages/KarelVariables/source_gen" />
     <delete dir="${basedir}/languages/RobotKarel/source_gen" />
+    <delete dir="${basedir}/languages/RobotKarel/generator/source_gen" />
     <delete dir="${basedir}/languages/KarelFunctions/generator/source_gen" />
     <delete dir="${basedir}/languages/KarelVariables/generator/source_gen" />
-    <delete dir="${basedir}/languages/RobotKarel/generator/source_gen" />
   </target>
 </project>
