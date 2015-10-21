@@ -6,6 +6,7 @@
     <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="KarelConditions" version="0" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="0" />
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables" version="0" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel" version="0" />
   </languages>
   <imports />
   <registry>
@@ -50,7 +51,6 @@
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
@@ -89,6 +89,9 @@
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
       <concept id="3267332360034260119" name="KarelConditions.structure.IsFull" flags="ng" index="17Ff7J" />
+    </language>
+    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
+      <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
     </language>
   </registry>
   <node concept="1$vsWe" id="3hBhvFT6RhQ">
@@ -230,7 +233,7 @@
       </node>
     </node>
     <node concept="3jGSmg" id="3hBhvFT6RhR" role="3jGSko">
-      <node concept="1$shr6" id="3hBhvFTabia" role="3jGSnO" />
+      <node concept="3cjXi6" id="3hBhvFTabia" role="3jGSnO" />
       <node concept="17J3f2" id="1LkA4kR6sLY" role="3jGSnO" />
       <node concept="36Mw20" id="8gmNnrPZVx" role="3jGSnO">
         <node concept="AFBxM" id="8gmNnrPZV$" role="36Mw2n">

@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/KarelMapDefinition/KarelMapDefinition.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelObjective/KarelObjective.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/KarelVariables/KarelVariables.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/RobotKarel/RobotKarel.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Common/Common.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GuiServerLib/GuiServerLib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KarelJava/KarelJava.msd" folder="" />

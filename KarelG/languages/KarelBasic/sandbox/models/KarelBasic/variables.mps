@@ -4,6 +4,7 @@
   <languages>
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables" version="0" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic" version="0" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel" version="0" />
   </languages>
   <imports />
   <registry>
@@ -43,11 +44,9 @@
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="3640435696255400508" name="KarelBasic.structure.Step" flags="ng" index="1$shr6" />
       <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
-      <concept id="3640435696255671307" name="KarelBasic.structure.LeftTurn" flags="ng" index="1$vv3L" />
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
       <concept id="3163049152356415489" name="KarelVariables.structure.VariableReference" flags="ng" index="AE91N">
@@ -76,6 +75,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
+      <concept id="7118929354272559102" name="RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
+      <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
     </language>
   </registry>
   <node concept="1$vsWe" id="2WqFKNDOciS">
@@ -175,7 +178,7 @@
           </node>
         </node>
       </node>
-      <node concept="1$shr6" id="aB0Z16FBhS" role="3jGSnO" />
+      <node concept="3cjXi6" id="aB0Z16FBhS" role="3jGSnO" />
       <node concept="17JERQ" id="aB0Z16O64s" role="3jGSnO">
         <node concept="3jGSmg" id="aB0Z16O64u" role="3azrUc">
           <node concept="36Mw20" id="aB0Z16FBmQ" role="3jGSnO">
@@ -240,7 +243,7 @@
       </node>
       <node concept="17JERQ" id="1GufzGWgFP3" role="3jGSnO">
         <node concept="3jGSmg" id="1GufzGWgFP5" role="3azrUc">
-          <node concept="1$shr6" id="1GufzGWgFPU" role="3jGSnO" />
+          <node concept="3cjXi6" id="1GufzGWgFPU" role="3jGSnO" />
           <node concept="36Mw20" id="jBG8nbI7Pu" role="3jGSnO">
             <node concept="AFBxM" id="jBG8nbI7Px" role="36Mw2n">
               <property role="TrG5h" value="r" />
@@ -290,8 +293,8 @@
           </node>
         </node>
         <node concept="3jGSmg" id="aB0Z16PBXp" role="3azrUc">
-          <node concept="1$shr6" id="aB0Z16PQBe" role="3jGSnO" />
-          <node concept="1$shr6" id="aB0Z16QbX7" role="3jGSnO" />
+          <node concept="3cjXi6" id="aB0Z16PQBe" role="3jGSnO" />
+          <node concept="3cjXi6" id="aB0Z16QbX7" role="3jGSnO" />
         </node>
         <node concept="36Kqmr" id="aB0Z16PBXR" role="14t$be">
           <property role="36Kqnr" value="7" />
@@ -308,8 +311,8 @@
           </node>
         </node>
         <node concept="3jGSmg" id="aB0Z16Q2RG" role="3azrUc">
-          <node concept="1$shr6" id="aB0Z16Q2TR" role="3jGSnO" />
-          <node concept="1$vv3L" id="aB0Z16Q2TX" role="3jGSnO" />
+          <node concept="3cjXi6" id="aB0Z16Q2TR" role="3jGSnO" />
+          <node concept="3cjWHT" id="aB0Z16Q2TX" role="3jGSnO" />
         </node>
         <node concept="36Kqmr" id="aB0Z16Q2Sr" role="14t$be">
           <property role="36Kqnr" value="1" />

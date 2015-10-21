@@ -136,26 +136,12 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="3a5rfDmX7CW">
-    <property role="TrG5h" value="Step" />
-    <property role="34LRSv" value="step" />
-    <property role="R4oN_" value="makes the robot to do one step in current direction" />
-    <property role="3GE5qa" value="command.action" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
-  </node>
   <node concept="1TIwiD" id="3a5rfDmXdLg">
     <property role="TrG5h" value="AbstractCommand" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="command" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3a5rfDmY9Kb">
-    <property role="3GE5qa" value="command.action" />
-    <property role="TrG5h" value="LeftTurn" />
-    <property role="34LRSv" value="turn left" />
-    <property role="R4oN_" value="makes the robot to turn left" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmYafO">
     <property role="TrG5h" value="Script" />
@@ -210,20 +196,6 @@
     <property role="34LRSv" value="alert" />
     <property role="R4oN_" value="displays dialog with a message" />
     <ref role="1TJDcQ" node="6kvBWKzB1_W" resolve="MessageCommand" />
-  </node>
-  <node concept="1TIwiD" id="2PnTnxETuQj">
-    <property role="3GE5qa" value="command.action" />
-    <property role="TrG5h" value="PutMark" />
-    <property role="34LRSv" value="put mark" />
-    <property role="R4oN_" value="put one mark on the ground (unless it's full)" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
-  </node>
-  <node concept="1TIwiD" id="2PnTnxETuQk">
-    <property role="3GE5qa" value="command.action" />
-    <property role="TrG5h" value="PickMark" />
-    <property role="34LRSv" value="pick mark" />
-    <property role="R4oN_" value="pick one mark from the ground (if there is any)" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
   <node concept="1TIwiD" id="2PnTnxEUkye">
     <property role="3GE5qa" value="command.control" />

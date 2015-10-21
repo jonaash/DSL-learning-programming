@@ -14,6 +14,7 @@
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" />
     <import index="d577" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.api.message(GuiLib/cz.dsllp.gui.api.message@java_stub)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
+    <import index="758v" ref="r:491f3992-c1ea-43a0-9484-780e8244a773(RobotKarel.structure)" />
     <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -364,22 +365,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="1IJMvjQDw_">
-    <property role="3GE5qa" value="command.action" />
-    <ref role="1XX52x" to="dyrx:3a5rfDmY9Kb" resolve="LeftTurn" />
-    <node concept="PMmxH" id="1IJMvjQWFw" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1IJMvjQWFG">
-    <property role="3GE5qa" value="command.action" />
-    <ref role="1XX52x" to="dyrx:3a5rfDmX7CW" resolve="Step" />
-    <node concept="PMmxH" id="1IJMvjQWGc" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1IJMvjStmF">
     <ref role="1XX52x" to="dyrx:3a5rfDmYafO" resolve="Script" />
     <node concept="3EZMnI" id="1IJMvjStn8" role="2wV5jI">
@@ -673,22 +658,6 @@
         <property role="1cu_pB" value="2" />
         <ref role="1NtTu8" to="dyrx:6kvBWKzB1_X" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="2PnTnxETyg3">
-    <property role="3GE5qa" value="command.action" />
-    <ref role="1XX52x" to="dyrx:2PnTnxETuQj" resolve="PutMark" />
-    <node concept="PMmxH" id="2PnTnxETyCv" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2PnTnxETyCA">
-    <property role="3GE5qa" value="command.action" />
-    <ref role="1XX52x" to="dyrx:2PnTnxETuQk" resolve="PickMark" />
-    <node concept="PMmxH" id="2PnTnxETyCF" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" node="1IJMvjSEh6" resolve="Action" />
     </node>
   </node>
   <node concept="24kQdi" id="2PnTnxEUmZm">

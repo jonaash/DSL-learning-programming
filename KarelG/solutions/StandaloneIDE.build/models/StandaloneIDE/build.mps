@@ -1321,6 +1321,56 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="6bbx8uIz$Ze" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="RobotKarel" />
+        <property role="3LESm3" value="862fe5da-6916-4d19-b869-dbe8a02b6bb1" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="6bbx8uIz$Zh" role="3LF7KH">
+          <node concept="2Ry0Ak" id="6bbx8uIz_rn" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="6bbx8uIz_vK" role="2Ry0An">
+              <property role="2Ry0Am" value="RobotKarel" />
+              <node concept="2Ry0Ak" id="6bbx8uIz_yH" role="2Ry0An">
+                <property role="2Ry0Am" value="RobotKarel.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bbx8uIz_T6" role="3bR37C">
+          <node concept="3bR9La" id="6bbx8uIz_T7" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1CDPOOIkmAj" resolve="KarelConditions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bbx8uIz_T8" role="3bR37C">
+          <node concept="3bR9La" id="6bbx8uIz_T9" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="KarelBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bbx8uIz_Ta" role="3bR37C">
+          <node concept="1Busua" id="6bbx8uIz_Tb" role="1SiIV1">
+            <ref role="1Busuk" node="1JtUjhLyCzN" resolve="KarelBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bbx8uIz_Tc" role="3bR37C">
+          <node concept="1Busua" id="6bbx8uIz_Td" role="1SiIV1">
+            <ref role="1Busuk" node="1CDPOOIkmAj" resolve="KarelConditions" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="6bbx8uIz_Te" role="1TViLv">
+          <property role="TrG5h" value="RobotKarel#7118929354272558643" />
+          <property role="3LESm3" value="385bbd21-ecb4-455e-b498-6f50667d14aa" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="6bbx8uIz_Tf" role="3bR37C">
+            <node concept="3bR9La" id="6bbx8uIz_Tg" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyC_x" resolve="KarelBasic#3640435696255147963" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="1JtUjhLyC_y">
