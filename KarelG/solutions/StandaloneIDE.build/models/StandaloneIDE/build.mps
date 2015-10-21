@@ -1322,7 +1322,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="6bbx8uIz$Ze" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="RobotKarel" />
         <property role="3LESm3" value="862fe5da-6916-4d19-b869-dbe8a02b6bb1" />
         <property role="2GAjPV" value="false" />
@@ -1368,6 +1368,12 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="1JtUjhLyC_x" resolve="KarelBasic#3640435696255147963" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6bbx8uIFtqH" role="3bR37C">
+          <node concept="3bR9La" id="6bbx8uIFtqI" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
       </node>
