@@ -44,12 +44,18 @@
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
+      </concept>
+      <concept id="3640435696255673332" name="KarelBasic.structure.Script" flags="ng" index="1$vsWe">
+        <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
@@ -84,6 +90,7 @@
         <child id="8938755948413576645" name="visibility" index="2j5jbD" />
       </concept>
       <concept id="148719074581454291" name="KarelObjective.structure.MethodDefinition" flags="ng" index="3pOcrA" />
+      <concept id="148719074581454281" name="KarelObjective.structure.Public" flags="ng" index="3pOcrW" />
       <concept id="148719074581454282" name="KarelObjective.structure.Private" flags="ng" index="3pOcrZ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -99,7 +106,7 @@
     <property role="TrG5h" value="Signleton" />
     <node concept="1qefOq" id="5wv4$CeZIPk" role="1SKRRt">
       <node concept="3crwiD" id="5wv4$Cf0ByI" role="1qenE9">
-        <property role="TrG5h" value="TestSingleton" />
+        <property role="TrG5h" value="TestSingletonDef" />
         <node concept="3couw1" id="5wv4$Cf0ByJ" role="2jst77">
           <node concept="3dtAsP" id="5wv4$Cf0ByK" role="2jg$Xp" />
           <node concept="3jGSmg" id="5wv4$Cf0ByN" role="hRHZh">
@@ -109,7 +116,7 @@
                   <ref role="hRIc0" node="5wv4$Cf0N5j" resolve="doSomtehing" />
                 </node>
                 <node concept="3ctECo" id="5wv4$Cf0B$2" role="2j_qme">
-                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingleton" />
+                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
                   <node concept="7CXmI" id="5wv4$Cf0N66" role="lGtFl">
                     <node concept="1TM$A" id="5wv4$Cf0N6f" role="7EUXB" />
                   </node>
@@ -121,15 +128,15 @@
         </node>
         <node concept="1mVJFA" id="5wv4$Cf0ByR" role="1mVCRr">
           <property role="36jPZJ" value="false" />
-          <property role="TrG5h" value="TestSingleton" />
+          <property role="TrG5h" value="TestSingletonDef" />
           <node concept="2jchV_" id="5wv4$Cf0ByT" role="36MCEW">
-            <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingleton" />
+            <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
           </node>
         </node>
         <node concept="3pOcrA" id="5wv4$Cf0N5j" role="2j5j5A">
           <property role="TrG5h" value="doSomtehing" />
           <node concept="3dtAsP" id="5wv4$Cf0N5k" role="2jg$Xp" />
-          <node concept="3pOcrZ" id="5wv4$Cf0N5m" role="2j5jbD" />
+          <node concept="3pOcrW" id="5wv4$CfeBQk" role="2j5jbD" />
           <node concept="3jGSmg" id="5wv4$Cf0N5n" role="hRHZh">
             <node concept="3dudH9" id="5wv4$Cf0RJ6" role="3jGSnO">
               <node concept="2jchP5" id="5wv4$Cf0RJd" role="3dudC3">
@@ -137,7 +144,7 @@
                   <ref role="hRIc0" node="5wv4$Cf0N5j" resolve="doSomtehing" />
                 </node>
                 <node concept="3ctECo" id="5wv4$Cf0RJ5" role="2j_qme">
-                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingleton" />
+                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
                 </node>
               </node>
             </node>
@@ -147,10 +154,10 @@
                 <property role="36jPZJ" value="false" />
                 <property role="TrG5h" value="singletonInstance" />
                 <node concept="2jchV_" id="5wv4$Cf0RJO" role="36MCEW">
-                  <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingleton" />
+                  <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
                 </node>
                 <node concept="3ctECo" id="5wv4$Cf0RKf" role="36MIYJ">
-                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingleton" />
+                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
                 </node>
               </node>
             </node>
@@ -159,6 +166,64 @@
       </node>
       <node concept="7CXmI" id="5wv4$Cf0RLc" role="lGtFl">
         <node concept="7OXhh" id="5wv4$Cf0RLe" role="7EUXB" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="5wv4$CfeBPa" role="1SKRRt">
+      <node concept="1$vsWe" id="5wv4$CfeBPD" role="1qenE9">
+        <property role="TrG5h" value="SingletonTestScript" />
+        <node concept="3jGSmg" id="5wv4$CfeBPE" role="3jGSko">
+          <node concept="17J3Kp" id="5wv4$CfeBQA" role="3jGSnO">
+            <property role="17J3Nn" value="calling method" />
+          </node>
+          <node concept="3dudH9" id="5wv4$CfeBPL" role="3jGSnO">
+            <node concept="2jchP5" id="5wv4$CfeBPS" role="3dudC3">
+              <node concept="3ctECo" id="5wv4$CfeBPJ" role="2j_qme">
+                <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
+              </node>
+              <node concept="2jchP0" id="5wv4$CfeBQq" role="2j_PeB">
+                <ref role="hRIc0" node="5wv4$Cf0N5j" resolve="doSomtehing" />
+              </node>
+            </node>
+          </node>
+          <node concept="17J3f2" id="5wv4$CfeBQH" role="3jGSnO" />
+          <node concept="17J3Kp" id="5wv4$CfeBQW" role="3jGSnO">
+            <property role="17J3Nn" value="assign to singleton is not allowed" />
+          </node>
+          <node concept="36Mw20" id="5wv4$CfeBSB" role="3jGSnO">
+            <node concept="AFBxM" id="5wv4$CfeBSE" role="36Mw2n">
+              <property role="36jPZJ" value="false" />
+              <property role="TrG5h" value="singletonInstance" />
+              <node concept="2jchV_" id="5wv4$CfeBS_" role="36MCEW">
+                <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
+              </node>
+              <node concept="3ctECo" id="5wv4$CfeBT7" role="36MIYJ">
+                <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
+              </node>
+            </node>
+          </node>
+          <node concept="17J3f2" id="5wv4$Cff77k" role="3jGSnO" />
+          <node concept="17J3Kp" id="5wv4$CffB2e" role="3jGSnO">
+            <property role="17J3Nn" value="use variable singletonInstace" />
+          </node>
+          <node concept="3dudH9" id="5wv4$CffB2O" role="3jGSnO">
+            <node concept="2jchP5" id="5wv4$CffB3b" role="3dudC3">
+              <node concept="2jchP0" id="5wv4$CffB3N" role="2j_PeB">
+                <ref role="hRIc0" node="5wv4$Cf0N5j" resolve="doSomtehing" />
+              </node>
+              <node concept="AE91N" id="5wv4$CffB2M" role="2j_qme">
+                <ref role="AE91K" node="5wv4$CfeBSE" resolve="singletonInstance" />
+              </node>
+            </node>
+          </node>
+          <node concept="17J3f2" id="5wv4$CffB1X" role="3jGSnO" />
+          <node concept="17J3Kp" id="5wv4$Cff770" role="3jGSnO">
+            <property role="17J3Nn" value="TODO: chack error when assign to singleton" />
+          </node>
+          <node concept="17J3f2" id="5wv4$CffAq1" role="3jGSnO" />
+        </node>
+      </node>
+      <node concept="7CXmI" id="5wv4$CffXtn" role="lGtFl">
+        <node concept="7OXhh" id="5wv4$CffXtp" role="7EUXB" />
       </node>
     </node>
   </node>

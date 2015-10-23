@@ -264,6 +264,9 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
         <child id="1227096836496" name="messageTarget" index="2OEWyd" />
@@ -1607,8 +1610,8 @@
                     <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
                   </node>
                   <node concept="1mIQ4w" id="2RjUFdDslxn" role="2OqNvi">
-                    <node concept="chp4Y" id="2RjUFdDslxS" role="cj9EA">
-                      <ref role="cht4Q" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                    <node concept="chp4Y" id="5wv4$Cffgze" role="cj9EA">
+                      <ref role="cht4Q" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
                     </node>
                   </node>
                 </node>
@@ -1617,10 +1620,10 @@
                     <node concept="3cpWsn" id="2RjUFdDsl$h" role="3cpWs9">
                       <property role="TrG5h" value="variableDecl" />
                       <node concept="3Tqbb2" id="2RjUFdDsl$i" role="1tU5fm">
-                        <ref role="ehGHo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                        <ref role="ehGHo" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
                       </node>
                       <node concept="1PxgMI" id="2RjUFdDsl$k" role="33vP2m">
-                        <ref role="1PxNhF" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+                        <ref role="1PxNhF" to="3y9h:2J_q78diL00" resolve="LocalVariableDeclaration" />
                         <node concept="37vLTw" id="2RjUFdDsl$l" role="1PxMeX">
                           <ref role="3cqZAo" node="18k56XDwrkd" resolve="ua" />
                         </node>
@@ -2298,6 +2301,9 @@
               <node concept="Xl_RD" id="5xGSFEudr1c" role="37wK5m">
                 <property role="Xl_RC" value="error.assignment.into.immutable.variable" />
               </node>
+            </node>
+            <node concept="2OE7Q9" id="5wv4$CfeCcw" role="2OEWyd">
+              <ref role="2OEe5H" to="3y9h:1GufzGWfyPi" />
             </node>
           </node>
         </node>
