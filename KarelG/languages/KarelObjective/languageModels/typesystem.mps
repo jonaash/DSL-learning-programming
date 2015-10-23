@@ -159,5 +159,39 @@
       <ref role="1YaFvo" to="t2e5:7KcPMNJwmdX" resolve="ConstructorCall" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6bbx8uIKQaW">
+    <property role="TrG5h" value="typeof_SingletonReference" />
+    <property role="3GE5qa" value="class.member.reference" />
+    <node concept="3clFbS" id="6bbx8uIKQaX" role="18ibNy">
+      <node concept="1Z5TYs" id="6bbx8uIKQaY" role="3cqZAp">
+        <node concept="mw_s8" id="6bbx8uIKQaZ" role="1ZfhKB">
+          <node concept="2OqwBi" id="6bbx8uIKQUF" role="mwGJk">
+            <node concept="2OqwBi" id="6bbx8uIKQb1" role="2Oq$k0">
+              <node concept="1YBJjd" id="6bbx8uIKQb2" role="2Oq$k0">
+                <ref role="1YBMHb" node="6bbx8uIKQb8" resolve="singletonReference" />
+              </node>
+              <node concept="3TrEf2" id="6bbx8uIKQGq" role="2OqNvi">
+                <ref role="3Tt5mk" to="t2e5:6bbx8uIJiUw" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6bbx8uIKRag" role="2OqNvi">
+              <ref role="37wK5l" to="azf3:5KhqV1JD40Q" resolve="getType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6bbx8uIKQb5" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6bbx8uIKQb6" role="mwGJk">
+            <node concept="1YBJjd" id="6bbx8uIKQb7" role="1Z2MuG">
+              <ref role="1YBMHb" node="6bbx8uIKQb8" resolve="singletonReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6bbx8uIKQb8" role="1YuTPh">
+      <property role="TrG5h" value="singletonReference" />
+      <ref role="1YaFvo" to="t2e5:6bbx8uIJiUv" resolve="SingletonReference" />
+    </node>
+  </node>
 </model>
 

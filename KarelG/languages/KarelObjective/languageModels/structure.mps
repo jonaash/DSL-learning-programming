@@ -51,9 +51,10 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="8gmNnrJ_Ve">
-    <property role="TrG5h" value="ClassDefinition" />
+    <property role="TrG5h" value="AbstractClassDefinition" />
     <property role="3GE5qa" value="class" />
-    <property role="19KtqR" value="true" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7KcPMNJ6uoN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -63,8 +64,8 @@
     </node>
     <node concept="1TJgyj" id="7KcPMNJvgrF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constructors" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="constructor" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7KcPMNJicY_" resolve="ConstructorDefinition" />
     </node>
     <node concept="1TJgyj" id="7KcPMNJ6upa" role="1TKVEi">
@@ -85,7 +86,7 @@
     <node concept="1TJgyj" id="7KcPMNJ6ups" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="extends" />
-      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
+      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     </node>
     <node concept="1TJgyi" id="7KcPMNJ6upy" role="1TKVEl">
       <property role="TrG5h" value="abstract" />
@@ -161,7 +162,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
+      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsDD">
@@ -220,7 +221,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="class" />
-      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="ClassDefinition" />
+      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJAnaA">
@@ -255,6 +256,45 @@
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="it is bastrcat because not used" />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
+  </node>
+  <node concept="1TIwiD" id="6bbx8uIDo0I">
+    <property role="TrG5h" value="Singleton" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="class" />
+    <property role="34LRSv" value="singleton" />
+    <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
+    <node concept="1TJgyj" id="6bbx8uIEHkQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constructor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6bbx8uIEAM6" resolve="SingletonConstructor" />
+      <ref role="20ksaX" node="7KcPMNJvgrF" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6bbx8uIEAM6">
+    <property role="3GE5qa" value="class.member.definition" />
+    <property role="TrG5h" value="SingletonConstructor" />
+    <ref role="1TJDcQ" node="7KcPMNJicY_" resolve="ConstructorDefinition" />
+  </node>
+  <node concept="1TIwiD" id="6bbx8uIHCEi">
+    <property role="3GE5qa" value="class" />
+    <property role="TrG5h" value="Class" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="class" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
+  </node>
+  <node concept="1TIwiD" id="6bbx8uIJiUv">
+    <property role="3GE5qa" value="class.member.reference" />
+    <property role="TrG5h" value="SingletonReference" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="6bbx8uIJiUw" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6bbx8uIDo0I" resolve="Singleton" />
+    </node>
   </node>
 </model>
 
