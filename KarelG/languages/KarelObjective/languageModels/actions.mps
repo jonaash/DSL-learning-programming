@@ -24,6 +24,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -344,7 +348,7 @@
                     <node concept="3cpWsn" id="1jWJ98HBkp9" role="3cpWs9">
                       <property role="TrG5h" value="targetClass" />
                       <node concept="3Tqbb2" id="1jWJ98HBkpa" role="1tU5fm">
-                        <ref role="ehGHo" to="t2e5:8gmNnrJ_Ve" resolve="ClassDefinition" />
+                        <ref role="ehGHo" to="t2e5:8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
                       </node>
                       <node concept="2OqwBi" id="1jWJ98HBkpb" role="33vP2m">
                         <node concept="1PxgMI" id="1jWJ98HBkpc" role="2Oq$k0">
@@ -568,6 +572,122 @@
               <node concept="1mIQ4w" id="5xGSFEudhgi" role="2OqNvi">
                 <node concept="chp4Y" id="5xGSFEudhnf" role="cj9EA">
                   <ref role="cht4Q" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3FK_9_" id="6bbx8uIP75f">
+    <property role="TrG5h" value="ConstructorCall_Expression" />
+    <node concept="3FOIzC" id="6bbx8uIP75g" role="3FOPby">
+      <property role="3mWAmy" value="allows to write constructor call in place of Expression" />
+      <ref role="3FOWKa" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      <node concept="tYCnQ" id="6bbx8uIP75h" role="tZc4B">
+        <ref role="uz4UX" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
+        <node concept="uMFAO" id="6bbx8uIP75i" role="uz6Si">
+          <node concept="uSIkt" id="6bbx8uIP75j" role="uTubQ">
+            <node concept="3clFbS" id="6bbx8uIP75k" role="2VODD2">
+              <node concept="34ab3g" id="6bbx8uIP75l" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="2YIFZM" id="6bbx8uIP75m" role="34bqiv">
+                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <node concept="Xl_RD" id="6bbx8uIP75n" role="37wK5m">
+                    <property role="Xl_RC" value="Creating child node parameterObject: {0}, currentTargetNode: {1}, parentNode: [2}, pattern: {3}" />
+                  </node>
+                  <node concept="uNquD" id="6bbx8uIP75o" role="37wK5m" />
+                  <node concept="GyYSE" id="6bbx8uIP75p" role="37wK5m" />
+                  <node concept="3bvxqY" id="6bbx8uIP75q" role="37wK5m" />
+                  <node concept="ub8z3" id="6bbx8uIP75r" role="37wK5m" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6bbx8uIP75s" role="3cqZAp" />
+              <node concept="3SKdUt" id="6bbx8uIP75t" role="3cqZAp">
+                <node concept="3SKdUq" id="6bbx8uIP75u" role="3SKWNk">
+                  <property role="3SKdUp" value="we use abstract call in order to reuse method call creation system" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="6bbx8uIP75v" role="3cqZAp">
+                <node concept="3SKdUq" id="6bbx8uIP75w" role="3SKWNk">
+                  <property role="3SKdUp" value="AbstractCall implements IOperation" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6bbx8uIP75x" role="3cqZAp">
+                <node concept="3cpWsn" id="6bbx8uIP75y" role="3cpWs9">
+                  <property role="TrG5h" value="call" />
+                  <node concept="3Tqbb2" id="6bbx8uIP75z" role="1tU5fm">
+                    <ref role="ehGHo" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
+                  </node>
+                  <node concept="2OqwBi" id="6bbx8uIP75$" role="33vP2m">
+                    <node concept="uNquD" id="6bbx8uIP75_" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="6bbx8uIP75A" role="2OqNvi">
+                      <ref role="37wK5l" to="ljn0:6pJoTiqkWq9" resolve="createCallNode" />
+                      <node concept="GyYSE" id="6bbx8uIP75B" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="6bbx8uIP75C" role="3cqZAp">
+                <node concept="37vLTw" id="6bbx8uIP75D" role="3cqZAk">
+                  <ref role="3cqZAo" node="6bbx8uIP75y" resolve="call" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tqbb2" id="6bbx8uIP75E" role="uMOYW">
+            <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
+          </node>
+          <node concept="uNCsQ" id="6bbx8uIP75F" role="uO7ob">
+            <node concept="3clFbS" id="6bbx8uIP75G" role="2VODD2">
+              <node concept="3cpWs6" id="6bbx8uIPJAV" role="3cqZAp">
+                <node concept="2YIFZM" id="6bbx8uIPKf2" role="3cqZAk">
+                  <ref role="37wK5l" to="azf3:6bbx8uIPdFl" resolve="getConstructors" />
+                  <ref role="1Pybhc" to="azf3:6bbx8uIPdAY" resolve="ReferenceUtils" />
+                  <node concept="1Q6Npb" id="6bbx8uIPKSw" role="37wK5m" />
+                  <node concept="Rm8GO" id="6bbx8uIPLsS" role="37wK5m">
+                    <ref role="Rm8GQ" to="azf3:1jWJ98H$8aV" resolve="OUTER" />
+                    <ref role="1Px2BO" to="azf3:1jWJ98H$88U" resolve="Access" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uSjag" id="6bbx8uIP76t" role="uSyvl">
+            <node concept="3clFbS" id="6bbx8uIP76u" role="2VODD2">
+              <node concept="3clFbF" id="6bbx8uIP76v" role="3cqZAp">
+                <node concept="2OqwBi" id="6bbx8uIP76w" role="3clFbG">
+                  <node concept="uNquD" id="6bbx8uIP76x" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6bbx8uIP76y" role="2OqNvi">
+                    <ref role="37wK5l" to="ljn0:6pJoTiqegUP" resolve="getCallPresentation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uSjag" id="6bbx8uIP76z" role="uS$Nq">
+            <node concept="3clFbS" id="6bbx8uIP76$" role="2VODD2">
+              <node concept="3clFbF" id="6bbx8uIP76_" role="3cqZAp">
+                <node concept="2OqwBi" id="6bbx8uIP76A" role="3clFbG">
+                  <node concept="uNquD" id="6bbx8uIP76B" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="6bbx8uIP76C" role="2OqNvi">
+                    <ref role="37wK5l" to="ljn0:6pJoTiqkw7u" resolve="getCallDescription" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1p$bYL" id="6bbx8uIP76D" role="1o8C9r">
+            <node concept="3clFbS" id="6bbx8uIP76E" role="2VODD2">
+              <node concept="3clFbF" id="6bbx8uIP76F" role="3cqZAp">
+                <node concept="2ShNRf" id="6bbx8uIP76G" role="3clFbG">
+                  <node concept="3zrR0B" id="6bbx8uIP76H" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6bbx8uIP76I" role="3zrR0E">
+                      <ref role="ehGHo" to="tpee:i4hAInZ" resolve="ConstructorInvocationStatement" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

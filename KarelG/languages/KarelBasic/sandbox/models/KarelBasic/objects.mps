@@ -14,12 +14,16 @@
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
       </concept>
+      <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+      </concept>
       <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -36,9 +40,7 @@
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
       </concept>
       <concept id="8938755948416651173" name="KarelObjective.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
-      <concept id="8938755948420359037" name="KarelObjective.structure.ConstructorCall" flags="ng" index="2jzrhh">
-        <reference id="8938755948420359038" name="class" index="2jzrhi" />
-      </concept>
+      <concept id="8938755948420359037" name="KarelObjective.structure.ConstructorCall" flags="ng" index="2jzrhh" />
       <concept id="7118929354275056774" name="KarelObjective.structure.SingletonConstructor" flags="ng" index="3couw1" />
       <concept id="7118929354274734126" name="KarelObjective.structure.Singleton" flags="ng" index="3crwiD" />
       <concept id="7118929354276286111" name="KarelObjective.structure.SingletonReference" flags="ng" index="3ctECo">
@@ -75,11 +77,12 @@
             <node concept="2jchV_" id="6bbx8uIKPDt" role="36MCEW">
               <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
             </node>
-            <node concept="2jzrhh" id="6bbx8uIKPDM" role="36MIYJ">
-              <ref role="2jzrhi" node="6bbx8uIIwJC" resolve="Basic" />
+            <node concept="2jzrhh" id="6bbx8uISBvL" role="36MIYJ">
+              <ref role="hRIc0" node="6bbx8uIIwJD" />
             </node>
           </node>
         </node>
+        <node concept="17J3f2" id="6bbx8uISBvW" role="3jGSnO" />
       </node>
     </node>
     <node concept="3pFPbB" id="6bbx8uIJVFe" role="2j5j4v">

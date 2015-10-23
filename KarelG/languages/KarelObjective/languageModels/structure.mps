@@ -108,6 +108,7 @@
     <node concept="1TJgyj" id="7KcPMNJ6un5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="visibility" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="8gmNnrJKNC" resolve="Visibility" />
     </node>
   </node>
@@ -216,12 +217,13 @@
   <node concept="1TIwiD" id="7KcPMNJwmdX">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="ConstructorCall" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
-    <node concept="1TJgyj" id="7KcPMNJwmdY" role="1TKVEi">
+    <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
+    <node concept="1TJgyj" id="6bbx8uINSyt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
       <property role="20lbJX" value="1" />
-      <property role="20kJfa" value="class" />
-      <ref role="20lvS9" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
+      <ref role="20lvS9" node="7KcPMNJicY_" resolve="ConstructorDefinition" />
+      <ref role="20ksaX" to="dyrx:5eWJqD2o_UE" />
     </node>
   </node>
   <node concept="1TIwiD" id="7KcPMNJAnaA">
