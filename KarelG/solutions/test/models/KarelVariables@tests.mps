@@ -133,6 +133,9 @@
       <node concept="1$vsWe" id="6bbx8uJ1_1p" role="1qenE9">
         <property role="TrG5h" value="Test" />
         <node concept="3jGSmg" id="6bbx8uJ1_1q" role="3jGSko">
+          <node concept="17J3Kp" id="5wv4$CeWoDv" role="3jGSnO">
+            <property role="17J3Nn" value="FIXME: THIS TEST DOES NOT WORK" />
+          </node>
           <node concept="17J3Kp" id="6bbx8uJ1_2O" role="3jGSnO">
             <property role="17J3Nn" value="muttable var does not need initializer" />
           </node>
