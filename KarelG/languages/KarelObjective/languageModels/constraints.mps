@@ -441,7 +441,7 @@
                   <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
                   <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="1jWJ98HC7mM" role="37wK5m">
-                    <property role="Xl_RC" value="Unexpected FieldReference contextNode. Expected FieldReference or DotOperator but found: {}" />
+                    <property role="Xl_RC" value="Unexpected FieldReference contextNode. Expected FieldReference or DotOperator but found: {0}" />
                   </node>
                   <node concept="2rP1CM" id="1jWJ98HCh1I" role="37wK5m" />
                 </node>
