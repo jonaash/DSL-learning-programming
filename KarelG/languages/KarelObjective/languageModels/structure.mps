@@ -10,6 +10,7 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" />
     <import index="prg8" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/f:java_stub#f3061a53-9226-4cc5-a443-f952ceaf5816#jetbrains.mps.baseLanguage(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(KarelVariables.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -264,6 +265,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="class" />
     <property role="34LRSv" value="singleton" />
+    <property role="R4oN_" value="definition of object that can have only single instance" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     <node concept="1TJgyj" id="6bbx8uIEHkQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -271,6 +273,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6bbx8uIEAM6" resolve="SingletonConstructor" />
       <ref role="20ksaX" node="7KcPMNJvgrF" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$CeWpYh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="6bbx8uIEAM6">
@@ -285,18 +293,26 @@
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="class" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="definition of object" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIJiUv">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="SingletonReference" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <ref role="1TJDcQ" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
     <node concept="1TJgyj" id="6bbx8uIJiUw" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="instance" />
+      <property role="20kJfa" value="declaration" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6bbx8uIDo0I" resolve="Singleton" />
+      <ref role="20ksaX" to="3y9h:2J_q78djvw2" />
+      <ref role="20lvS9" node="5wv4$CeWuyG" resolve="SingletonInstance" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CeWuyG">
+    <property role="3GE5qa" value="class.member.definition" />
+    <property role="TrG5h" value="SingletonInstance" />
+    <property role="R4oN_" value="reference to instance of singleton object" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
 </model>
 

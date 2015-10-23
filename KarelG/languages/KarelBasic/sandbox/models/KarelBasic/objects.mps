@@ -42,19 +42,21 @@
       <concept id="8938755948416651173" name="KarelObjective.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
       <concept id="8938755948420359037" name="KarelObjective.structure.ConstructorCall" flags="ng" index="2jzrhh" />
       <concept id="7118929354275056774" name="KarelObjective.structure.SingletonConstructor" flags="ng" index="3couw1" />
-      <concept id="7118929354274734126" name="KarelObjective.structure.Singleton" flags="ng" index="3crwiD" />
-      <concept id="7118929354276286111" name="KarelObjective.structure.SingletonReference" flags="ng" index="3ctECo">
-        <reference id="7118929354276286112" name="instance" index="3ctECB" />
+      <concept id="7118929354274734126" name="KarelObjective.structure.Singleton" flags="ng" index="3crwiD">
+        <child id="6349814108903284625" name="instance" index="1mVCRr" />
       </concept>
       <concept id="7118929354275850898" name="KarelObjective.structure.Class" flags="ng" index="3cvgSl" />
+      <concept id="6349814108903303340" name="KarelObjective.structure.SingletonInstance" flags="ng" index="1mVJFA" />
       <concept id="148719074581307086" name="KarelObjective.structure.AbstractClassDefinition" flags="ng" index="3pFwnV">
         <child id="8938755948413576755" name="fields" index="2j5j4v" />
+        <child id="8938755948413576778" name="methods" index="2j5j5A" />
         <child id="8938755948420073195" name="constructor" index="2jst77" />
       </concept>
       <concept id="148719074581350866" name="KarelObjective.structure.FieldVariableDeclaration" flags="ng" index="3pFPbB" />
       <concept id="148719074581351648" name="KarelObjective.structure.IClassMember" flags="ng" index="3pFPvl">
         <child id="8938755948413576645" name="visibility" index="2j5jbD" />
       </concept>
+      <concept id="148719074581454291" name="KarelObjective.structure.MethodDefinition" flags="ng" index="3pOcrA" />
       <concept id="148719074581454281" name="KarelObjective.structure.Public" flags="ng" index="3pOcrW" />
       <concept id="148719074581454282" name="KarelObjective.structure.Private" flags="ng" index="3pOcrZ" />
     </language>
@@ -66,6 +68,12 @@
   </registry>
   <node concept="3cvgSl" id="6bbx8uIIwJC">
     <property role="TrG5h" value="Basic" />
+    <node concept="3pOcrA" id="5wv4$Cf6ABK" role="2j5j5A">
+      <property role="TrG5h" value="do" />
+      <node concept="3dtAsP" id="5wv4$Cf6ABL" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="5wv4$Cf6ABN" role="2j5jbD" />
+      <node concept="3jGSmg" id="5wv4$Cf6ABO" role="hRHZh" />
+    </node>
     <node concept="2jh1y9" id="6bbx8uIIwJD" role="2jst77">
       <node concept="3dtAsP" id="6bbx8uIIwJE" role="2jg$Xp" />
       <node concept="3pOcrW" id="6bbx8uIIwJF" role="2j5jbD" />
@@ -82,7 +90,8 @@
             </node>
           </node>
         </node>
-        <node concept="17J3f2" id="6bbx8uISBvW" role="3jGSnO" />
+        <node concept="17J3f2" id="5wv4$CeXTj_" role="3jGSnO" />
+        <node concept="17J3f2" id="5wv4$CeXTjF" role="3jGSnO" />
       </node>
     </node>
     <node concept="3pFPbB" id="6bbx8uIJVFe" role="2j5j4v">
@@ -90,35 +99,6 @@
       <property role="TrG5h" value="t" />
       <node concept="36Kql8" id="6bbx8uIJVFo" role="36MCEW" />
       <node concept="3pOcrW" id="6bbx8uIKPEd" role="2j5jbD" />
-    </node>
-  </node>
-  <node concept="3crwiD" id="6bbx8uIIDLM">
-    <property role="TrG5h" value="Sing" />
-    <node concept="3couw1" id="6bbx8uIIDLN" role="2jst77">
-      <node concept="3dtAsP" id="6bbx8uIIDLO" role="2jg$Xp" />
-      <node concept="3jGSmg" id="6bbx8uIIDLQ" role="hRHZh" />
-      <node concept="3pOcrZ" id="6bbx8uIIDLS" role="2j5jbD" />
-    </node>
-  </node>
-  <node concept="3crwiD" id="6bbx8uIJgFF">
-    <property role="TrG5h" value="singleton" />
-    <node concept="3couw1" id="6bbx8uIJgFG" role="2jst77">
-      <node concept="3dtAsP" id="6bbx8uIJgFP" role="2jg$Xp" />
-      <node concept="3jGSmg" id="6bbx8uIJgFR" role="hRHZh">
-        <node concept="36Mw20" id="6bbx8uIL$WS" role="3jGSnO">
-          <node concept="AFBxM" id="6bbx8uIL$WV" role="36Mw2n">
-            <property role="36jPZJ" value="false" />
-            <property role="TrG5h" value="sdfsd" />
-            <node concept="2jchV_" id="6bbx8uIL$WQ" role="36MCEW">
-              <ref role="2jchVA" node="6bbx8uIIDLM" resolve="Sing" />
-            </node>
-            <node concept="3ctECo" id="6bbx8uIL$X4" role="36MIYJ">
-              <ref role="3ctECB" node="6bbx8uIIDLM" resolve="Sing" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3pOcrZ" id="6bbx8uIJgFT" role="2j5jbD" />
     </node>
   </node>
   <node concept="3cvgSl" id="6bbx8uIYtjU">
@@ -129,6 +109,29 @@
       <node concept="3jGSmg" id="6bbx8uIYtjY" role="hRHZh">
         <node concept="17J3f2" id="6bbx8uIYtjZ" role="3jGSnO" />
       </node>
+    </node>
+  </node>
+  <node concept="3crwiD" id="5wv4$CeY3lY">
+    <property role="TrG5h" value="Singleton" />
+    <node concept="3couw1" id="5wv4$CeY3lZ" role="2jst77">
+      <node concept="3dtAsP" id="5wv4$CeY3m0" role="2jg$Xp" />
+      <node concept="3jGSmg" id="5wv4$CeY3m2" role="hRHZh" />
+      <node concept="3pOcrZ" id="5wv4$CeY3m4" role="2j5jbD" />
+    </node>
+    <node concept="1mVJFA" id="5wv4$CeY3m6" role="1mVCRr">
+      <property role="36jPZJ" value="false" />
+      <property role="TrG5h" value="Singleton" />
+      <node concept="2jchV_" id="5wv4$CeY3m8" role="36MCEW">
+        <ref role="2jchVA" node="5wv4$CeY3lY" resolve="Singleton" />
+      </node>
+    </node>
+    <node concept="3pFPbB" id="5wv4$CeZr$2" role="2j5j4v">
+      <property role="36jPZJ" value="false" />
+      <property role="TrG5h" value="bas" />
+      <node concept="2jchV_" id="5wv4$CeZr$u" role="36MCEW">
+        <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
+      </node>
+      <node concept="3pOcrW" id="5wv4$CeZr$p" role="2j5jbD" />
     </node>
   </node>
 </model>

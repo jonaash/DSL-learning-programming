@@ -499,6 +499,21 @@
           </node>
         </node>
         <node concept="3clFbH" id="18k56XDqYan" role="3cqZAp" />
+        <node concept="3clFbF" id="5wv4$CeZzJ_" role="3cqZAp">
+          <node concept="37vLTI" id="5wv4$CeZzJA" role="3clFbG">
+            <node concept="Xl_RD" id="5wv4$CeZzJB" role="37vLTx">
+              <property role="Xl_RC" value="Singleton cannot be accessed from its constructor." />
+            </node>
+            <node concept="3EllGN" id="5wv4$CeZzJC" role="37vLTJ">
+              <node concept="Xl_RD" id="5wv4$CeZzJD" role="3ElVtu">
+                <property role="Xl_RC" value="error.singleton.accessed.from.its.constructor" />
+              </node>
+              <node concept="37vLTw" id="5wv4$CeZzJI" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4rigtwtl8$Y" role="3cqZAp" />
         <node concept="3clFbH" id="4rigtwtl8Jv" role="3cqZAp" />
         <node concept="3clFbH" id="3eViXf8ukwu" role="3cqZAp" />

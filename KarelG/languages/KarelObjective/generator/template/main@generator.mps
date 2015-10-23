@@ -1216,10 +1216,15 @@
                       <node concept="1iwH7S" id="6bbx8uILwMS" role="2Oq$k0" />
                       <node concept="1iwH70" id="6bbx8uILwS_" role="2OqNvi">
                         <ref role="1iwH77" node="6bbx8uILoc2" resolve="singleton_instance" />
-                        <node concept="2OqwBi" id="6bbx8uILwYP" role="1iwH7V">
-                          <node concept="30H73N" id="6bbx8uILwVl" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="6bbx8uILxaQ" role="2OqNvi">
-                            <ref role="3Tt5mk" to="t2e5:6bbx8uIJiUw" />
+                        <node concept="2OqwBi" id="5wv4$CeY$nA" role="1iwH7V">
+                          <node concept="2OqwBi" id="6bbx8uILwYP" role="2Oq$k0">
+                            <node concept="30H73N" id="6bbx8uILwVl" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6bbx8uILxaQ" role="2OqNvi">
+                              <ref role="3Tt5mk" to="t2e5:6bbx8uIJiUw" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="5wv4$CeYGdY" role="2OqNvi">
+                            <ref role="37wK5l" to="azf3:5wv4$CeY$JK" resolve="getSingletonDefinition" />
                           </node>
                         </node>
                       </node>
@@ -1238,10 +1243,15 @@
                       <node concept="1iwH7S" id="6bbx8uIL_c9" role="2Oq$k0" />
                       <node concept="1iwH70" id="6bbx8uIL_hQ" role="2OqNvi">
                         <ref role="1iwH77" node="7KcPMNJ6Oqj" resolve="class" />
-                        <node concept="2OqwBi" id="6bbx8uIL_on" role="1iwH7V">
-                          <node concept="30H73N" id="6bbx8uIL_kT" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="6bbx8uIL_Jg" role="2OqNvi">
-                            <ref role="3Tt5mk" to="t2e5:6bbx8uIJiUw" />
+                        <node concept="2OqwBi" id="5wv4$CeYFDA" role="1iwH7V">
+                          <node concept="2OqwBi" id="6bbx8uIL_on" role="2Oq$k0">
+                            <node concept="30H73N" id="6bbx8uIL_kT" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="6bbx8uIL_Jg" role="2OqNvi">
+                              <ref role="3Tt5mk" to="t2e5:6bbx8uIJiUw" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="5wv4$CeYFUT" role="2OqNvi">
+                            <ref role="37wK5l" to="azf3:5wv4$CeY$JK" resolve="getSingletonDefinition" />
                           </node>
                         </node>
                       </node>
