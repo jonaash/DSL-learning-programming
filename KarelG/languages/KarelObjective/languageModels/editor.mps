@@ -14,7 +14,6 @@
     <import index="jsgz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" implicit="true" />
-    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="59lc" ref="r:b335bb80-3ea8-4608-a111-e7719d8a9029(KarelFunctions.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -260,13 +259,9 @@
     <property role="3GE5qa" value="class.member.definition" />
     <ref role="1XX52x" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
     <node concept="3EZMnI" id="7KcPMNJuX5I" role="2wV5jI">
-      <node concept="PMmxH" id="7KcPMNJuX5S" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
-      </node>
       <node concept="l2Vlx" id="7KcPMNJuX5L" role="2iSdaV" />
       <node concept="3F0ifn" id="7KcPMNJuX6c" role="3EZMnx">
-        <property role="3F0ifm" value="with parameters" />
+        <property role="3F0ifm" value="constructor with parameters" />
       </node>
       <node concept="3F2HdR" id="7KcPMNJuX61" role="3EZMnx">
         <ref role="1NtTu8" to="dyrx:3hBhvFT4iaN" />

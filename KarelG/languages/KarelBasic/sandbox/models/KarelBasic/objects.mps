@@ -77,7 +77,7 @@
             <node concept="2jchV_" id="6bbx8uIKPDt" role="36MCEW">
               <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
             </node>
-            <node concept="2jzrhh" id="6bbx8uISBvL" role="36MIYJ">
+            <node concept="2jzrhh" id="5wv4$CeO_th" role="36MIYJ">
               <ref role="hRIc0" node="6bbx8uIIwJD" />
             </node>
           </node>
@@ -119,6 +119,16 @@
         </node>
       </node>
       <node concept="3pOcrZ" id="6bbx8uIJgFT" role="2j5jbD" />
+    </node>
+  </node>
+  <node concept="3cvgSl" id="6bbx8uIYtjU">
+    <property role="TrG5h" value="Test" />
+    <node concept="2jh1y9" id="6bbx8uIYtjV" role="2jst77">
+      <node concept="3dtAsP" id="6bbx8uIYtjW" role="2jg$Xp" />
+      <node concept="3pOcrW" id="6bbx8uIYtjX" role="2j5jbD" />
+      <node concept="3jGSmg" id="6bbx8uIYtjY" role="hRHZh">
+        <node concept="17J3f2" id="6bbx8uIYtjZ" role="3jGSnO" />
+      </node>
     </node>
   </node>
 </model>

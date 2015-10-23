@@ -91,7 +91,7 @@
     </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
       <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
-      <concept id="7118929354273869885" name="" flags="ng" index="3ckXiU" />
+      <concept id="7118929354273869885" name="RobotKarel.structure.IsFull" flags="ng" index="3ckXiU" />
     </language>
   </registry>
   <node concept="1$vsWe" id="3hBhvFT6RhQ">
@@ -114,10 +114,10 @@
         <node concept="36Mw20" id="2RjUFdDqBcu" role="3jGSnO">
           <node concept="AFBxM" id="2RjUFdDqBcx" role="36Mw2n">
             <property role="TrG5h" value="uuu" />
-            <node concept="36MCER" id="2RjUFdDqBcs" role="36MCEW" />
-            <node concept="AE91N" id="2J_q78dkDDe" role="36MIYJ">
+            <node concept="AE91N" id="5wv4$CeWl0F" role="36MIYJ">
               <ref role="AE91K" node="1LkA4kR8TWI" resolve="m" />
             </node>
+            <node concept="36MCER" id="2RjUFdDqBcs" role="36MCEW" />
           </node>
         </node>
         <node concept="14tyHZ" id="2RjUFdDp_sP" role="3jGSnO">
