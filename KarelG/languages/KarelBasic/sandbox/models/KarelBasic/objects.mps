@@ -10,12 +10,18 @@
   <imports />
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="KarelBasic">
+      <concept id="8938755948420525033" name="KarelBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
+        <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
+        <child id="8938755948420525131" name="value" index="2jzNHB" />
+      </concept>
       <concept id="1242405555015381639" name="KarelBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
+        <child id="3776063756796240563" name="parameters" index="3dtAt9" />
       </concept>
       <concept id="1242405555015088333" name="KarelBasic.structure.AbstractCall" flags="ng" index="sA968">
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
+        <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
       <concept id="3394217739175004740" name="KarelBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739153894179" name="KarelBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
@@ -24,7 +30,13 @@
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
+      <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
+      </concept>
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -35,10 +47,20 @@
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
     </language>
+    <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions">
+      <concept id="2041423954150618879" name="KarelFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="KarelFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
+    </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="KarelObjective">
+      <concept id="8938755948415928940" name="KarelObjective.structure.MethodCall" flags="ng" index="2jchP0" />
+      <concept id="8938755948415928937" name="KarelObjective.structure.DotOperator" flags="ng" index="2jchP5">
+        <child id="8938755948421935778" name="expression" index="2j_qme" />
+        <child id="8938755948422071435" name="operation" index="2j_PeB" />
+      </concept>
       <concept id="8938755948415928777" name="KarelObjective.structure.ClassType" flags="ng" index="2jchV_">
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
       </concept>
+      <concept id="8938755948415899245" name="KarelObjective.structure.ThisExpression" flags="ng" index="2jco51" />
       <concept id="8938755948416651173" name="KarelObjective.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
       <concept id="8938755948420359037" name="KarelObjective.structure.ConstructorCall" flags="ng" index="2jzrhh" />
       <concept id="7118929354275056774" name="KarelObjective.structure.SingletonConstructor" flags="ng" index="3couw1" />
@@ -72,7 +94,30 @@
       <property role="TrG5h" value="do" />
       <node concept="3dtAsP" id="5wv4$Cf6ABL" role="2jg$Xp" />
       <node concept="3pOcrZ" id="5wv4$Cf6ABN" role="2j5jbD" />
-      <node concept="3jGSmg" id="5wv4$Cf6ABO" role="hRHZh" />
+      <node concept="3jGSmg" id="5wv4$Cf6ABO" role="hRHZh">
+        <node concept="17J3Kp" id="5wv4$Cfi_X9" role="3jGSnO">
+          <property role="17J3Nn" value="TODO fix argument of WHEN CONCERETE block never concrete" />
+        </node>
+        <node concept="3dudH9" id="5wv4$CfhYSG" role="3jGSnO">
+          <node concept="2jchP5" id="5wv4$CfhYSD" role="3dudC3">
+            <node concept="2jchP0" id="5wv4$CfhYSX" role="2j_PeB">
+              <ref role="hRIc0" node="5wv4$Cf6ABK" resolve="do" />
+              <node concept="FiVY1" id="5wv4$CfhYSY" role="3WjpkI">
+                <ref role="3WiQSc" node="5wv4$CfhYSr" resolve="tes" />
+                <node concept="2jco51" id="5wv4$CfhYT7" role="2jzNHB" />
+              </node>
+            </node>
+            <node concept="2jco51" id="5wv4$CfhYSC" role="2j_qme" />
+          </node>
+        </node>
+      </node>
+      <node concept="FiAUU" id="5wv4$CfhYSr" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="tes" />
+        <node concept="2jchV_" id="5wv4$CfhYSx" role="36MCEW">
+          <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
+        </node>
+      </node>
     </node>
     <node concept="2jh1y9" id="6bbx8uIIwJD" role="2jst77">
       <node concept="3dtAsP" id="6bbx8uIIwJE" role="2jg$Xp" />

@@ -17,6 +17,7 @@
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(KarelObjective.behavior)" implicit="true" />
+    <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/KarelBasic.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -482,6 +483,35 @@
     <node concept="3Tm1VV" id="18k56XDy9qP" role="1B3o_S" />
     <node concept="3uibUv" id="5wv4$CfffDm" role="1zkMxy">
       <ref role="3uigEE" to="w9k:18k56XDy9qO" resolve="FunctionDataFlow" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5wv4$CfhYTj">
+    <property role="TrG5h" value="typeof_ThisExpression" />
+    <property role="3GE5qa" value="class.member.reference" />
+    <node concept="3clFbS" id="5wv4$CfhYTk" role="18ibNy">
+      <node concept="1Z5TYs" id="5wv4$CfhYYk" role="3cqZAp">
+        <node concept="mw_s8" id="5wv4$CfhYYA" role="1ZfhKB">
+          <node concept="2OqwBi" id="5wv4$CfhZ12" role="mwGJk">
+            <node concept="1YBJjd" id="5wv4$CfhYY$" role="2Oq$k0">
+              <ref role="1YBMHb" node="5wv4$CfhYTm" resolve="thisExpression" />
+            </node>
+            <node concept="2qgKlT" id="5wv4$CfhZtu" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5wv4$CfhYYn" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5wv4$CfhYVX" role="mwGJk">
+            <node concept="1YBJjd" id="5wv4$CfhYWp" role="1Z2MuG">
+              <ref role="1YBMHb" node="5wv4$CfhYTm" resolve="thisExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5wv4$CfhYTm" role="1YuTPh">
+      <property role="TrG5h" value="thisExpression" />
+      <ref role="1YaFvo" to="t2e5:7KcPMNJflpH" resolve="ThisExpression" />
     </node>
   </node>
 </model>
