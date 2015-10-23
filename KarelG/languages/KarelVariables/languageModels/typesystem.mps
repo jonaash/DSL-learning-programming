@@ -5,6 +5,9 @@
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -192,6 +195,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -2235,14 +2241,37 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="check_ImmutableVariableAssignment" />
     <node concept="3clFbS" id="5xGSFEu98_D" role="18ibNy">
+      <node concept="3SKdUt" id="5wv4$Cf7$I3" role="3cqZAp">
+        <node concept="3SKdUq" id="5wv4$Cf7$NY" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: fix calling abstract method getVariableDeclarationIfExists on instance of abstract class" />
+        </node>
+      </node>
+      <node concept="34ab3g" id="5wv4$Cf78r8" role="3cqZAp">
+        <property role="35gtTG" value="info" />
+        <node concept="2YIFZM" id="5wv4$Cf78vr" role="34bqiv">
+          <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+          <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+          <node concept="Xl_RD" id="5wv4$Cf78vN" role="37wK5m">
+            <property role="Xl_RC" value="{0}" />
+          </node>
+          <node concept="2OqwBi" id="5wv4$Cf78Bp" role="37wK5m">
+            <node concept="1YBJjd" id="5wv4$Cf78zs" role="2Oq$k0">
+              <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
+            </node>
+            <node concept="3TrEf2" id="5wv4$Cf78Sq" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3cpWs8" id="5xGSFEudt3e" role="3cqZAp">
         <node concept="3cpWsn" id="5xGSFEudt3h" role="3cpWs9">
           <property role="TrG5h" value="declaration" />
           <node concept="3Tqbb2" id="5xGSFEudt3c" role="1tU5fm">
             <ref role="ehGHo" to="dyrx:2RjUFdDsT1_" resolve="IVariableDeclaration" />
           </node>
-          <node concept="2OqwBi" id="5xGSFEudsm4" role="33vP2m">
-            <node concept="2OqwBi" id="5xGSFEudrUr" role="2Oq$k0">
+          <node concept="2EnYce" id="5wv4$Cf6IE3" role="33vP2m">
+            <node concept="2EnYce" id="5wv4$Cf6I5X" role="2Oq$k0">
               <node concept="1YBJjd" id="5xGSFEudrRL" role="2Oq$k0">
                 <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
               </node>
@@ -2256,6 +2285,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="5wv4$Cf78kd" role="3cqZAp" />
       <node concept="3clFbJ" id="5xGSFEudrR_" role="3cqZAp">
         <node concept="3clFbS" id="5xGSFEudrRA" role="3clFbx">
           <node concept="2MkqsV" id="5xGSFEuduJj" role="3cqZAp">
