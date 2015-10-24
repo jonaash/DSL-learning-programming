@@ -813,5 +813,23 @@
     <property role="3GE5qa" value="variable" />
     <property role="TrG5h" value="IPotentialVariableReference" />
   </node>
+  <node concept="1TIwiD" id="5wv4$CfyOGH">
+    <property role="TrG5h" value="AbstractScene" />
+    <property role="3GE5qa" value="scene" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5wv4$CfyOLM" role="1TKVEl">
+      <property role="TrG5h" value="width" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5wv4$CfyOLO" role="1TKVEl">
+      <property role="TrG5h" value="heigth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="5wv4$CfyOLK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

@@ -44,13 +44,13 @@
           <greater-priority-mapping>
             <generator generatorUID="385bbd21-ecb4-455e-b498-6f50667d14aa(RobotKarel#7118929354272558643)" />
             <external-mapping>
-              <all-local-mappings />
+              <mapping-node modelUID="r:7ddd28a9-6fec-4412-83f2-6de74295daaf(RobotKarel.generator.template.main@generator)" nodeID="*" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="aef79034-b65a-4990-a1ad-bac27333a76b(KarelBasic#3640435696255147963)" />
             <external-mapping>
-              <all-local-mappings />
+              <mapping-node modelUID="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/KarelBasic.generator.template.main@generator)" nodeID="*" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
