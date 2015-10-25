@@ -93,6 +93,16 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -162,6 +172,16 @@
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$CfHFNo" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tutorial" />
+      <ref role="20lvS9" node="5wv4$CfHFDB" resolve="AbstractTutorial" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$CfHFNr" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="scene" />
+      <ref role="20lvS9" node="5wv4$CfyOGH" resolve="AbstractScene" />
     </node>
   </node>
   <node concept="1TIwiD" id="1IJMvjRjER">
@@ -819,6 +839,12 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5wv4$CfMmKa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="startPosition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5wv4$CfKdx_" resolve="AbstractPosition" />
+    </node>
     <node concept="1TJgyi" id="5wv4$CfyOLM" role="1TKVEl">
       <property role="TrG5h" value="width" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -829,6 +855,81 @@
     </node>
     <node concept="PrWs8" id="5wv4$CfyOLK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$CfFEL1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sceneConstruction" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5wv4$CfFDiU" resolve="AbstractSceneConstruction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfFDiU">
+    <property role="3GE5qa" value="scene" />
+    <property role="TrG5h" value="AbstractSceneConstruction" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5wv4$CfFEFk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfHFDB">
+    <property role="3GE5qa" value="scene" />
+    <property role="TrG5h" value="AbstractTutorial" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5wv4$CfHFH7" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="scene" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5wv4$CfyOGH" resolve="AbstractScene" />
+    </node>
+    <node concept="PrWs8" id="5wv4$CfHFH9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfKdx_">
+    <property role="3GE5qa" value="scene" />
+    <property role="TrG5h" value="AbstractPosition" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5wv4$CfKdt$" role="1TKVEl">
+      <property role="TrG5h" value="row" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5wv4$CfKdtC" role="1TKVEl">
+      <property role="TrG5h" value="col" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5wv4$CfKdxj" role="1TKVEl">
+      <property role="TrG5h" value="direction" />
+      <ref role="AX2Wp" node="5wv4$CfKdHF" resolve="Direction" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="5wv4$CfKdHF">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="Direction" />
+    <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="5wv4$CfKdHG" role="M5hS2">
+      <property role="1uS6qv" value="east" />
+      <property role="1uS6qo" value="east" />
+    </node>
+    <node concept="M4N5e" id="5wv4$CfKdHH" role="M5hS2">
+      <property role="1uS6qv" value="north" />
+      <property role="1uS6qo" value="north" />
+    </node>
+    <node concept="M4N5e" id="5wv4$CfKdHI" role="M5hS2">
+      <property role="1uS6qv" value="south" />
+      <property role="1uS6qo" value="south" />
+    </node>
+    <node concept="M4N5e" id="5wv4$CfKdHJ" role="M5hS2">
+      <property role="1uS6qv" value="west" />
+      <property role="1uS6qo" value="west" />
     </node>
   </node>
 </model>

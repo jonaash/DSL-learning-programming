@@ -9,7 +9,10 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(KarelObjective.structure)" implicit="true" />
+    <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(KarelFunctions.structure)" implicit="true" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/KarelBasic.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,6 +29,7 @@
         <property id="1071599776563" name="role" index="20kJfa" />
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -45,6 +49,39 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="statement" />
       <ref role="20lvS9" to="tpee:fK9aQHR" resolve="BlockStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfPHBQ">
+    <property role="TrG5h" value="SceneSingleton" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfPHC2">
+    <property role="TrG5h" value="NativeMethodDefinition" />
+    <property role="34LRSv" value="native method" />
+    <property role="R4oN_" value="Method that call base language" />
+    <ref role="1TJDcQ" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
+    <node concept="1TJgyj" id="5wv4$CfPJzt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nativeMethod" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$CfQ24e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5wv4$CfQ224" resolve="NativeParameter" />
+      <ref role="20ksaX" to="dyrx:3hBhvFT4iaN" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$CfQ224">
+    <property role="TrG5h" value="NativeParameter" />
+    <ref role="1TJDcQ" to="a5m:1LkA4kR7JrZ" resolve="ParameterDeclaration" />
+    <node concept="1TJgyj" id="5wv4$CfQ23_" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="blParameter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz7vLUk" resolve="ParameterDeclaration" />
     </node>
   </node>
 </model>
