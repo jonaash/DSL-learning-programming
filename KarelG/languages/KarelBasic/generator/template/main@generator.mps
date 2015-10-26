@@ -266,7 +266,7 @@
   </registry>
   <node concept="bUwia" id="3a5rfDmW9YW">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="documentation" />
     <node concept="2rT7sh" id="2WqFKNE4zm3" role="2rTMjI">
       <property role="TrG5h" value="method" />
       <ref role="2rZz_L" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
@@ -928,7 +928,7 @@
   </node>
   <node concept="13MO4I" id="2PnTnxEViFj">
     <property role="TrG5h" value="reduce_CommentLine" />
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <ref role="3gUMe" to="dyrx:2PnTnxEUX_x" resolve="CommentLine" />
     <node concept="9aQIb" id="2PnTnxEViHp" role="13RCb5">
       <node concept="3clFbS" id="2PnTnxEViHr" role="9aQI4">

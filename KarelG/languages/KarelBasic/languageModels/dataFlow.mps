@@ -311,7 +311,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="7jmg6novTmu">
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <ref role="3_znuS" to="dyrx:2PnTnxEUX_x" resolve="CommentLine" />
     <node concept="3__wT9" id="7jmg6novTmv" role="3_A6iZ">
       <node concept="3clFbS" id="7jmg6novTmw" role="2VODD2">
@@ -322,7 +322,7 @@
     </node>
   </node>
   <node concept="3_zdsH" id="7jmg6novToR">
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <ref role="3_znuS" to="dyrx:2PnTnxEUXqU" resolve="EmptyLine" />
     <node concept="3__wT9" id="7jmg6novToS" role="3_A6iZ">
       <node concept="3clFbS" id="7jmg6novToT" role="2VODD2">

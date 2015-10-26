@@ -93,6 +93,9 @@
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -102,6 +105,10 @@
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -140,6 +147,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -232,7 +240,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEUXqU">
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="EmptyLine" />
     <property role="34LRSv" value="&lt;empty&gt;" />
     <property role="R4oN_" value="empty line" />
@@ -242,7 +250,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2PnTnxEUX_x">
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="CommentLine" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="enters a comment that is just for user" />
@@ -559,6 +567,9 @@
     <node concept="PrWs8" id="1BMnhOng08Q" role="PzmwI">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
     </node>
+    <node concept="PrWs8" id="5wv4$Cg4wDk" role="PzmwI">
+      <ref role="PrY4T" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
+    </node>
   </node>
   <node concept="PlHQZ" id="14XUkkdJcI9">
     <property role="TrG5h" value="IMethodsDefinition" />
@@ -570,7 +581,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="18k56XD$bnd">
-    <property role="3GE5qa" value="command.documentation" />
+    <property role="3GE5qa" value="documentation" />
     <property role="TrG5h" value="IDocumentation" />
   </node>
   <node concept="PlHQZ" id="2RjUFdDsT1_">
@@ -879,6 +890,8 @@
   <node concept="1TIwiD" id="5wv4$CfHFDB">
     <property role="3GE5qa" value="scene" />
     <property role="TrG5h" value="AbstractTutorial" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5wv4$CfHFH7" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -930,6 +943,79 @@
     <node concept="M4N5e" id="5wv4$CfKdHJ" role="M5hS2">
       <property role="1uS6qv" value="west" />
       <property role="1uS6qo" value="west" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$Cg00cc">
+    <property role="3GE5qa" value="scene" />
+    <property role="TrG5h" value="AbstractSceneEvent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5wv4$Cg00cd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2WqFKNDO2n2" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$Cg00cf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="action" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1IJMvjRjER" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$Cg1VwW">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="DocumentationBlock" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5wv4$Cg1VwX" role="PzmwI">
+      <ref role="PrY4T" node="18k56XD$bnd" resolve="IDocumentation" />
+    </node>
+    <node concept="1TJgyj" id="5wv4$Cg1Wd2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5wv4$Cg1W9O" resolve="DocumentationBlockPart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$Cg1W9O">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="DocumentationBlockPart" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5wv4$Cg1W9P" role="PzmwI">
+      <ref role="PrY4T" node="18k56XD$bnd" resolve="IDocumentation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wv4$Cg1Wo$">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="DocumentationLine" />
+    <ref role="1TJDcQ" node="5wv4$Cg1W9O" resolve="DocumentationBlockPart" />
+    <node concept="1TJgyi" id="5wv4$Cg1Wpj" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5wv4$Cg3XUq">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="ICanHaveComment" />
+  </node>
+  <node concept="1TIwiD" id="5wv4$Cg3XXE">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="CommentAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="5wv4$Cg3Y0V" role="lGtFl">
+      <property role="Hh88m" value="comment" />
+      <node concept="trNpa" id="5wv4$Cg3Y0X" role="EQaZv">
+        <ref role="trN6q" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="5wv4$Cg3Y4h" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="documentation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5wv4$Cg1VwW" resolve="DocumentationBlock" />
     </node>
   </node>
 </model>

@@ -251,6 +251,7 @@
       <concept id="8077936094962911282" name="jetbrains.mps.lang.scopes.structure.ParentScope" flags="nn" index="iy90A" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="5480835971642155304" name="jetbrains.mps.lang.actions.structure.NF_Model_CreateNewNodeOperation" flags="nn" index="15TzpJ" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -4149,6 +4150,48 @@
         <node concept="3clFbF" id="6bbx8uIykbs" role="3cqZAp">
           <node concept="3clFbT" id="6bbx8uIykbr" role="3clFbG">
             <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2bb0VNY9RH4">
+    <property role="3GE5qa" value="documentation" />
+    <ref role="13h7C2" to="dyrx:5wv4$Cg1Wo$" resolve="DocumentationLine" />
+    <node concept="13hLZK" id="2bb0VNY9RH5" role="13h7CW">
+      <node concept="3clFbS" id="2bb0VNY9RH6" role="2VODD2">
+        <node concept="3clFbF" id="2bb0VNY7c1q" role="3cqZAp">
+          <node concept="2OqwBi" id="2bb0VNY7m$g" role="3clFbG">
+            <node concept="2OqwBi" id="2bb0VNY7cn_" role="2Oq$k0">
+              <node concept="13iPFW" id="2bb0VNY7c1p" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2bb0VNY9lon" role="2OqNvi">
+                <ref role="3TsBF5" to="dyrx:5wv4$Cg1Wpj" resolve="text" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="2bb0VNY7ngy" role="2OqNvi">
+              <node concept="Xl_RD" id="2bb0VNY7ngS" role="tz02z" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2bb0VNYeh8S">
+    <property role="3GE5qa" value="documentation" />
+    <ref role="13h7C2" to="dyrx:5wv4$Cg1VwW" resolve="DocumentationBlock" />
+    <node concept="13hLZK" id="2bb0VNYeh8T" role="13h7CW">
+      <node concept="3clFbS" id="2bb0VNYeh8U" role="2VODD2">
+        <node concept="3clFbF" id="2bb0VNYeh9Z" role="3cqZAp">
+          <node concept="2OqwBi" id="2bb0VNYehYC" role="3clFbG">
+            <node concept="2OqwBi" id="2bb0VNYehbs" role="2Oq$k0">
+              <node concept="13iPFW" id="2bb0VNYeh9Y" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2bb0VNYehk_" role="2OqNvi">
+                <ref role="3TtcxE" to="dyrx:5wv4$Cg1Wd2" />
+              </node>
+            </node>
+            <node concept="2DeJg1" id="2bb0VNYejk5" role="2OqNvi">
+              <ref role="1A0vxQ" to="dyrx:5wv4$Cg1Wo$" resolve="DocumentationLine" />
+            </node>
           </node>
         </node>
       </node>

@@ -33,6 +33,15 @@
       <concept id="3267332360033261921" name="KarelBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
+      <concept id="6349814108922044266" name="KarelBasic.structure.CommentAnnotation" flags="ng" index="184cOw">
+        <child id="6349814108922044689" name="documentation" index="184fdr" />
+      </concept>
+      <concept id="6349814108921509948" name="KarelBasic.structure.DocumentationBlock" flags="ng" index="186aDQ">
+        <child id="6349814108921512770" name="content" index="186d48" />
+      </concept>
+      <concept id="6349814108921513508" name="KarelBasic.structure.DocumentationLine" flags="ng" index="186dhI">
+        <property id="6349814108921513555" name="text" index="186dgp" />
+      </concept>
       <concept id="3776063756796240591" name="KarelBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
@@ -42,6 +51,9 @@
       </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="3163049152356415489" name="KarelVariables.structure.VariableReference" flags="ng" index="AE91N">
+        <reference id="3163049152356415490" name="declaration" index="AE91K" />
+      </concept>
       <concept id="3163049152356225024" name="KarelVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
@@ -67,6 +79,7 @@
       <concept id="7118929354274734126" name="KarelObjective.structure.Singleton" flags="ng" index="3crwiD">
         <child id="6349814108903284625" name="instance" index="1mVCRr" />
       </concept>
+      <concept id="7118929354276286111" name="KarelObjective.structure.SingletonReference" flags="ng" index="3ctECo" />
       <concept id="7118929354275850898" name="KarelObjective.structure.Class" flags="ng" index="3cvgSl" />
       <concept id="6349814108903303340" name="KarelObjective.structure.SingletonInstance" flags="ng" index="1mVJFA" />
       <concept id="148719074581307086" name="KarelObjective.structure.AbstractClassDefinition" flags="ng" index="3pFwnV">
@@ -83,6 +96,9 @@
       <concept id="148719074581454282" name="KarelObjective.structure.Private" flags="ng" index="3pOcrZ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -177,6 +193,30 @@
         <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
       </node>
       <node concept="3pOcrW" id="5wv4$CeZr$p" role="2j5jbD" />
+    </node>
+    <node concept="3pOcrA" id="2bb0VNYcAgR" role="2j5j5A">
+      <property role="TrG5h" value="sdfdw" />
+      <node concept="3dtAsP" id="2bb0VNYcAgS" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="2bb0VNYcAgU" role="2j5jbD" />
+      <node concept="3jGSmg" id="2bb0VNYcAgV" role="hRHZh">
+        <node concept="3dudH9" id="2bb0VNYcApK" role="3jGSnO">
+          <node concept="2jchP5" id="2bb0VNYcApR" role="3dudC3">
+            <node concept="2jchP0" id="2bb0VNYcAqa" role="2j_PeB">
+              <ref role="hRIc0" node="2bb0VNYcAgR" resolve="sdfdw" />
+            </node>
+            <node concept="3ctECo" id="2bb0VNYcApI" role="2j_qme">
+              <ref role="AE91K" node="5wv4$CeY3m6" resolve="Singleton" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="184cOw" id="2bb0VNYnXqJ" role="lGtFl">
+        <node concept="186aDQ" id="2bb0VNYnXqK" role="184fdr">
+          <node concept="186dhI" id="2bb0VNYnXqL" role="186d48">
+            <property role="186dgp" value="d" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
