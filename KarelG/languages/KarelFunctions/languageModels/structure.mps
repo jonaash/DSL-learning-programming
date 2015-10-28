@@ -84,6 +84,13 @@
     <property role="3GE5qa" value="call" />
     <property role="TrG5h" value="ParameterFill" />
     <ref role="1TJDcQ" to="dyrx:7KcPMNJwYJD" resolve="AbstractParameterFill" />
+    <node concept="1TJgyj" id="2xfsEoBVFSS" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="declaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1LkA4kR7JrZ" resolve="ParameterDeclaration" />
+      <ref role="20ksaX" to="dyrx:6pJoTiq90Qo" />
+    </node>
   </node>
 </model>
 

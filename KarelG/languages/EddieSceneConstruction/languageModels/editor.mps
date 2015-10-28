@@ -204,5 +204,29 @@
       <node concept="l2Vlx" id="5wv4$CfOpyX" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6snOov8TMnK">
+    <ref role="1XX52x" to="vlyv:5wv4$CfZXb_" resolve="Tutorial" />
+    <node concept="3EZMnI" id="6snOov8TMp7" role="2wV5jI">
+      <node concept="3F0ifn" id="6snOov8TMpy" role="3EZMnx">
+        <property role="3F0ifm" value="Tutorial" />
+      </node>
+      <node concept="3F0A7n" id="6snOov8TMpL" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="6snOov8TMqg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6snOov8TMqM" role="3EZMnx">
+        <property role="3F0ifm" value="scene" />
+        <node concept="lj46D" id="6snOov8TMqY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6snOov8TMqt" role="3EZMnx">
+        <ref role="1NtTu8" to="dyrx:6snOov8zm4$" />
+      </node>
+      <node concept="l2Vlx" id="6snOov8TMpa" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -193,7 +193,7 @@
   </registry>
   <node concept="bUwia" id="2WqFKNCAe_c">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="" />
     <node concept="2rT7sh" id="2WqFKNE42gp" role="2rTMjI">
       <property role="TrG5h" value="variable" />
       <ref role="2rTdP9" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />

@@ -5,7 +5,11 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -20,6 +24,7 @@
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(Common.messages)" />
+    <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(Common.configuration)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2238,6 +2243,18 @@
       </node>
       <node concept="17QB3L" id="2PpeCt3hhQ4" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="2xfsEoC3p2B" role="13h7CS">
+      <property role="TrG5h" value="getScene" />
+      <node concept="3Tm1VV" id="2xfsEoC3p2C" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2xfsEoC3pak" role="3clF45">
+        <ref role="ehGHo" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+      </node>
+      <node concept="3clFbS" id="2xfsEoC3p2E" role="3clF47">
+        <node concept="3cpWs6" id="2xfsEoC3qUh" role="3cqZAp">
+          <node concept="10Nm6u" id="6snOov8Klqw" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3hBhvFSNnVl">
     <property role="3GE5qa" value="method.procedure" />
@@ -4195,6 +4212,69 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2xfsEoBVyIb">
+    <property role="3GE5qa" value="method" />
+    <ref role="13h7C2" to="dyrx:7KcPMNJwYOl" resolve="IMethodCall" />
+    <node concept="13i0hz" id="2xfsEoBVz6X" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getDefinition" />
+      <node concept="3Tm1VV" id="2xfsEoBVz6Y" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2xfsEoBVzea" role="3clF45" />
+      <node concept="3clFbS" id="2xfsEoBVz70" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2xfsEoBVyIc" role="13h7CW">
+      <node concept="3clFbS" id="2xfsEoBVyId" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2xfsEoBVzVY">
+    <property role="3GE5qa" value="method" />
+    <ref role="13h7C2" to="dyrx:2xfsEoBVzVX" resolve="IParameterFill" />
+    <node concept="13i0hz" id="2xfsEoBVzW1" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getName" />
+      <node concept="3Tm1VV" id="2xfsEoBVzW2" role="1B3o_S" />
+      <node concept="17QB3L" id="2xfsEoBVzW9" role="3clF45" />
+      <node concept="3clFbS" id="2xfsEoBVzW4" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="2xfsEoBVzWc" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValue" />
+      <node concept="3Tm1VV" id="2xfsEoBVzWd" role="1B3o_S" />
+      <node concept="3Tqbb2" id="2xfsEoBVzWo" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      </node>
+      <node concept="3clFbS" id="2xfsEoBVzWf" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="2xfsEoBVzWr" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getTypeName" />
+      <node concept="3Tm1VV" id="2xfsEoBVzWs" role="1B3o_S" />
+      <node concept="3clFbS" id="2xfsEoBVzWu" role="3clF47" />
+      <node concept="17QB3L" id="2xfsEoBV_be" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="2xfsEoBVzVZ" role="13h7CW">
+      <node concept="3clFbS" id="2xfsEoBVzW0" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2xfsEoBV_F8">
+    <property role="3GE5qa" value="method" />
+    <ref role="13h7C2" to="dyrx:7KcPMNJwYJD" resolve="AbstractParameterFill" />
+    <node concept="13i0hz" id="2xfsEoBWBjw" role="13h7CS">
+      <property role="TrG5h" value="getTypeName" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="2xfsEoBWBjx" role="1B3o_S" />
+      <node concept="17QB3L" id="2xfsEoBWBjC" role="3clF45" />
+      <node concept="3clFbS" id="2xfsEoBWBjz" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="2xfsEoBV_F9" role="13h7CW">
+      <node concept="3clFbS" id="2xfsEoBV_Fa" role="2VODD2" />
     </node>
   </node>
 </model>

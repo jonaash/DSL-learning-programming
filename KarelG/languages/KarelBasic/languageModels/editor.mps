@@ -26,7 +26,9 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
       <concept id="1164052588708" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_DescriptionText" flags="in" index="6WeAF" />
@@ -448,6 +450,24 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2xfsEoCaFxX" role="6VMZX">
+      <node concept="l2Vlx" id="2xfsEoCaFxY" role="2iSdaV" />
+      <node concept="3F0ifn" id="2xfsEoCaFy1" role="3EZMnx">
+        <property role="3F0ifm" value="tutorial:" />
+      </node>
+      <node concept="3F1sOY" id="6snOov8xZw9" role="3EZMnx">
+        <ref role="1NtTu8" to="dyrx:6snOov8xmI1" />
+      </node>
+      <node concept="3F0ifn" id="6snOov888x_" role="3EZMnx">
+        <property role="3F0ifm" value="scene:" />
+        <node concept="pVoyu" id="6snOov888z2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="6snOov888yE" role="3EZMnx">
+        <ref role="1NtTu8" to="dyrx:6snOov888tH" />
       </node>
     </node>
   </node>
@@ -1851,6 +1871,32 @@
               <node concept="1PgB_6" id="2bb0VNYcRSH" role="2OqNvi" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6snOov886wb">
+    <property role="3GE5qa" value="scene" />
+    <ref role="1XX52x" to="dyrx:6snOov886se" resolve="SceneReference" />
+    <node concept="1iCGBv" id="6snOov888ka" role="2wV5jI">
+      <ref role="1NtTu8" to="dyrx:6snOov886sE" />
+      <node concept="1sVBvm" id="6snOov888kc" role="1sWHZn">
+        <node concept="3F0A7n" id="6snOov888kq" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6snOov8UomM">
+    <property role="3GE5qa" value="scene" />
+    <ref role="1XX52x" to="dyrx:6snOov8xmHy" resolve="TutorialReference" />
+    <node concept="1iCGBv" id="6snOov8Uonf" role="2wV5jI">
+      <ref role="1NtTu8" to="dyrx:6snOov8xmHz" />
+      <node concept="1sVBvm" id="6snOov8Uonh" role="1sWHZn">
+        <node concept="3F0A7n" id="6snOov8Uonr" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>

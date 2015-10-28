@@ -34,5 +34,10 @@
     <property role="TrG5h" value="Position" />
     <ref role="1TJDcQ" to="dyrx:5wv4$CfKdx_" resolve="AbstractPosition" />
   </node>
+  <node concept="1TIwiD" id="5wv4$CfZXb_">
+    <property role="TrG5h" value="Tutorial" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
+  </node>
 </model>
 

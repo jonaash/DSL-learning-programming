@@ -9,6 +9,9 @@
   <dependencies>
     <dependency reexport="false">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
     <dependency reexport="false">66dab714-2a05-45f0-b8c0-fe4315826144(EddieObjectiveSupport)</dependency>
+    <dependency reexport="false">abbb403e-0a41-4661-9279-eb17d3806875(EddieBaseLanguageObjects)</dependency>
+    <dependency reexport="false">1049e1e4-e198-4fe2-af4a-15791afe439a(KarelObjective)</dependency>
+    <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(KarelBasic)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</usedLanguage>
@@ -23,8 +26,10 @@
     <usedLanguage>862fe5da-6916-4d19-b869-dbe8a02b6bb1(RobotKarel)</usedLanguage>
     <usedLanguage>dc9a4c3b-8230-4d95-b8c3-3b04b5bea12f(EddieBaseLanguageSupport)</usedLanguage>
     <usedLanguage>22533a47-d9a8-4eae-8829-e07835315c1f(EddieSceneConstruction)</usedLanguage>
+    <usedLanguage>abbb403e-0a41-4661-9279-eb17d3806875(EddieBaseLanguageObjects)</usedLanguage>
   </usedLanguages>
   <languageVersions>
+    <language id="abbb403e-0a41-4661-9279-eb17d3806875" fqName="EddieBaseLanguageObjects" version="0" />
     <language id="dc9a4c3b-8230-4d95-b8c3-3b04b5bea12f" fqName="EddieBaseLanguageSupport" version="0" />
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" fqName="EddieSceneConstruction" version="0" />
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="KarelBasic" version="0" />

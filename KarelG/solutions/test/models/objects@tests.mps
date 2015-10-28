@@ -63,6 +63,10 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="KarelVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="1954067712460073357" name="KarelVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739174326156" name="KarelVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -219,7 +223,19 @@
           <node concept="17J3Kp" id="5wv4$Cff770" role="3jGSnO">
             <property role="17J3Nn" value="TODO: chack error when assign to singleton" />
           </node>
-          <node concept="17J3f2" id="5wv4$CffAq1" role="3jGSnO" />
+          <node concept="3dudH9" id="2xfsEoC0U5N" role="3jGSnO">
+            <node concept="B81uQ" id="2xfsEoC0U7g" role="3dudC3">
+              <node concept="AE91N" id="2xfsEoC0U7P" role="B81dI">
+                <ref role="AE91K" node="5wv4$CfeBSE" resolve="singletonInstance" />
+              </node>
+              <node concept="3ctECo" id="2xfsEoC0U5L" role="B81dD">
+                <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
+              </node>
+              <node concept="7CXmI" id="2xfsEoC0Uh4" role="lGtFl">
+                <node concept="1TM$A" id="2xfsEoC0Uh5" role="7EUXB" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="7CXmI" id="5wv4$CffXtn" role="lGtFl">

@@ -1148,28 +1148,5 @@
     </node>
     <node concept="3Tm1VV" id="pLBRfXAofe" role="1B3o_S" />
   </node>
-  <node concept="3HP615" id="5wv4$CfK8AN">
-    <property role="TrG5h" value="Scene" />
-    <node concept="Wx3nA" id="5wv4$CfK8Bl" role="jymVt">
-      <property role="TrG5h" value="DEFAULT_WIDTH" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5wv4$CfK8Bm" role="1B3o_S" />
-      <node concept="10Oyi0" id="5wv4$CfK9iC" role="1tU5fm" />
-      <node concept="3cmrfG" id="5wv4$CfK8BK" role="33vP2m">
-        <property role="3cmrfH" value="10" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5wv4$CfK8Mg" role="jymVt">
-      <property role="TrG5h" value="DEFAULT_HEIGHT" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5wv4$CfK8Mh" role="1B3o_S" />
-      <node concept="10Oyi0" id="5wv4$CfK9iM" role="1tU5fm" />
-      <node concept="3cmrfG" id="5wv4$CfK8Mj" role="33vP2m">
-        <property role="3cmrfH" value="10" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5wv4$CfK8GU" role="jymVt" />
-    <node concept="3Tm1VV" id="5wv4$CfK8AO" role="1B3o_S" />
-  </node>
 </model>
 
