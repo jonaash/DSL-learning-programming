@@ -475,6 +475,47 @@
         <ref role="3gnhBz" to="3y9h:2WqFKNE4Haf" resolve="PlusOperator" />
       </node>
     </node>
+    <node concept="3ciAk0" id="6snOov98zII" role="3he0YX">
+      <node concept="3ciZUL" id="6snOov98zIN" role="32tDT$">
+        <node concept="3clFbS" id="6snOov98zIS" role="2VODD2">
+          <node concept="3clFbF" id="6snOov98$0U" role="3cqZAp">
+            <node concept="2pJPEk" id="6snOov98$0S" role="3clFbG">
+              <node concept="2pJPED" id="6snOov98$1O" role="2pJPEn">
+                <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="6snOov98zRd" role="3ciSkW">
+        <node concept="2pJPED" id="6snOov98zRL" role="2pJPEn">
+          <ref role="2pJxaS" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+        </node>
+      </node>
+      <node concept="3gn64h" id="6snOov98zKQ" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98iu1" resolve="LessOrEqual" />
+      </node>
+      <node concept="3gn64h" id="6snOov98zLR" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98isq" resolve="LessThan" />
+      </node>
+      <node concept="3gn64h" id="6snOov98zMW" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98ir7" resolve="GreaterOrEqual" />
+      </node>
+      <node concept="3gn64h" id="6snOov98zO5" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98irK" resolve="GreaterThan" />
+      </node>
+      <node concept="3gn64h" id="6snOov98zPi" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98iq5" resolve="EqualityOperator" />
+      </node>
+      <node concept="3gn64h" id="6snOov98zQz" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:6snOov98ivc" resolve="InequalityOperator" />
+      </node>
+      <node concept="2pJPEk" id="6snOov98zSb" role="3ciSnv">
+        <node concept="2pJPED" id="6snOov98zSc" role="2pJPEn">
+          <ref role="2pJxaS" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1YbPZF" id="3hBhvFSpekl">
     <property role="TrG5h" value="typeof_AssignmentCommand" />

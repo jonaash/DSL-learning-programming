@@ -601,7 +601,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6pJoTiq6UQB">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <ref role="13h7C2" to="3y9h:2WqFKNEeyTn" resolve="DivideOperator" />
     <node concept="13hLZK" id="6pJoTiq6UQC" role="13h7CW">
       <node concept="3clFbS" id="6pJoTiq6UQD" role="2VODD2" />
@@ -631,7 +631,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6pJoTiq6Vuk">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <ref role="13h7C2" to="3y9h:2WqFKNE4Haw" resolve="MinusOperator" />
     <node concept="13i0hz" id="6pJoTiq6VuJ" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -661,7 +661,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6pJoTiq6Vw4">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <ref role="13h7C2" to="3y9h:2WqFKNEeySp" resolve="MultOperator" />
     <node concept="13i0hz" id="6pJoTiq6Vwv" role="13h7CS">
       <property role="13i0iv" value="false" />

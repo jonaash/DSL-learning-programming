@@ -64,28 +64,28 @@
     </node>
   </node>
   <node concept="1TIwiD" id="2WqFKNE4Haf">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <property role="TrG5h" value="PlusOperator" />
     <property role="34LRSv" value="+" />
     <property role="R4oN_" value="adds two variables" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNE4Haw">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <property role="TrG5h" value="MinusOperator" />
     <property role="34LRSv" value="-" />
     <property role="R4oN_" value="subtracts two numbers" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeySp">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <property role="TrG5h" value="MultOperator" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="multiplies two numbers" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeyTn">
-    <property role="3GE5qa" value="expression.operator" />
+    <property role="3GE5qa" value="expression.arithmetics" />
     <property role="TrG5h" value="DivideOperator" />
     <property role="34LRSv" value="/" />
     <property role="R4oN_" value="divide two numbers" />
@@ -183,6 +183,42 @@
     <node concept="PrWs8" id="2J_q78djvw4" role="PzmwI">
       <ref role="PrY4T" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6snOov98iq5">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="EqualityOperator" />
+    <property role="34LRSv" value="==" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="6snOov98ir7">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="GreaterOrEqual" />
+    <property role="34LRSv" value="&gt;=" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="6snOov98irK">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="GreaterThan" />
+    <property role="34LRSv" value="&gt;" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="6snOov98isq">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="LessThan" />
+    <property role="34LRSv" value="&lt;" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="6snOov98iu1">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="LessOrEqual" />
+    <property role="34LRSv" value="&lt;=" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="6snOov98ivc">
+    <property role="3GE5qa" value="expression.comparison" />
+    <property role="TrG5h" value="InequalityOperator" />
+    <property role="34LRSv" value="!=" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
 </model>
 
