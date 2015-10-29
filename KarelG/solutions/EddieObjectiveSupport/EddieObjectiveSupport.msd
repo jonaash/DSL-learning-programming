@@ -8,7 +8,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">645c5093-3842-40e7-938b-f9d0f9cd529b(JavaKarel)</dependency>
-    <dependency reexport="false">dc9a4c3b-8230-4d95-b8c3-3b04b5bea12f(EddieBaseLanguageSupport)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>1049e1e4-e198-4fe2-af4a-15791afe439a(KarelObjective)</usedLanguage>

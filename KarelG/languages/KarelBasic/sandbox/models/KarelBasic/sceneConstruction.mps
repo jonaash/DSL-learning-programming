@@ -13,7 +13,6 @@
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions" version="0" />
   </languages>
   <imports>
-    <import index="l60" ref="r:4199d966-845f-4f4d-aee0-bebe7acdd6bd(EddieObjectiveSupport.scene)" />
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(JavaKarel.runtime)" />
   </imports>
   <registry>
