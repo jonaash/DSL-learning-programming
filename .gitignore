@@ -26,7 +26,7 @@ crashlytics.properties
 crashlytics-build.properties
 
 #Maven
-/GUI/**/target/
+/**/**/target/
 
 #MPS generated java sources and classes
 /**/source_gen/*

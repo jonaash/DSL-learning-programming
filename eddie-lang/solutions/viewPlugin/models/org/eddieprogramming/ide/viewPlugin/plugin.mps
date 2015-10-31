@@ -9,14 +9,14 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
   </languages>
   <imports>
-    <import index="f1am" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui(GuiServerLib/cz.dsllp.gui@java_stub)" />
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(org.eddieprogramming.common.support.configuration)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="z9dx" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#cz.dsllp.gui.view(GuiLib/cz.dsllp.gui.view@java_stub)" />
     <import index="gj7t" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#com.googlecode.tinydi(GuiLib/com.googlecode.tinydi@java_stub)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)" />
+    <import index="fi19" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.eddieprogramming.gui.view(org.eddieprogramming.common.lib/org.eddieprogramming.gui.view@java_stub)" />
+    <import index="9bba" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.eddieprogramming.gui(org.eddieprogramming.common.lib/org.eddieprogramming.gui@java_stub)" />
     <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -264,16 +264,16 @@
             </node>
             <node concept="3clFbH" id="3H_tUICS9tz" role="3cqZAp" />
             <node concept="3clFbF" id="3H_tUICS7Tx" role="3cqZAp">
-              <node concept="2YIFZM" id="3H_tUICS7Ty" role="3clFbG">
-                <ref role="1Pybhc" to="f1am:~GuiInitializer" resolve="GuiInitializer" />
-                <ref role="37wK5l" to="f1am:~GuiInitializer.init(java.lang.String,int,java.lang.String):void" resolve="init" />
-                <node concept="37vLTw" id="pLBRfXB3F3" role="37wK5m">
+              <node concept="2YIFZM" id="6D1m6GTkJ2M" role="3clFbG">
+                <ref role="37wK5l" to="9bba:~GuiInitializer.init(java.lang.String,int,java.lang.String):void" resolve="init" />
+                <ref role="1Pybhc" to="9bba:~GuiInitializer" resolve="GuiInitializer" />
+                <node concept="37vLTw" id="6D1m6GTkJ2N" role="37wK5m">
                   <ref role="3cqZAo" node="pLBRfXAUFO" resolve="address" />
                 </node>
-                <node concept="37vLTw" id="pLBRfXB3Zv" role="37wK5m">
+                <node concept="37vLTw" id="6D1m6GTkJ2O" role="37wK5m">
                   <ref role="3cqZAo" node="1JtUjhLyhYU" resolve="port" />
                 </node>
-                <node concept="37vLTw" id="pLBRfXB46t" role="37wK5m">
+                <node concept="37vLTw" id="6D1m6GTkJ2P" role="37wK5m">
                   <ref role="3cqZAo" node="pLBRfXAVa5" resolve="serviceName" />
                 </node>
               </node>
@@ -294,7 +294,7 @@
                   <node concept="liA8E" id="3H_tUICS7TH" role="2OqNvi">
                     <ref role="37wK5l" to="gj7t:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
                     <node concept="3VsKOn" id="3H_tUICS7TI" role="37wK5m">
-                      <ref role="3VsUkX" to="z9dx:~MainView" resolve="MainView" />
+                      <ref role="3VsUkX" to="fi19:~MainView" resolve="MainView" />
                     </node>
                   </node>
                 </node>
@@ -358,8 +358,8 @@
     <node concept="2BZ0e9" id="6q44gEQYroX" role="2XNbBz">
       <property role="TrG5h" value="mainView" />
       <node concept="3Tm6S6" id="6q44gEQYroY" role="1B3o_S" />
-      <node concept="3uibUv" id="6q44gEQYvD4" role="1tU5fm">
-        <ref role="3uigEE" to="z9dx:~MainView" resolve="MainView" />
+      <node concept="3uibUv" id="6D1m6GTkKv0" role="1tU5fm">
+        <ref role="3uigEE" to="fi19:~MainView" resolve="MainView" />
       </node>
     </node>
     <node concept="2BZ0e9" id="1ZF81FZUku_" role="2XNbBz">
@@ -494,7 +494,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1CHCs7qK_pl" role="2OqNvi">
-                          <ref role="37wK5l" to="z9dx:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
+                          <ref role="37wK5l" to="fi19:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
                         </node>
                       </node>
                     </node>
