@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieBasic/EddieBasic.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieBasic/sandbox/EddieBasic.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieConditions/EddieConditions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieFunctions/EddieFunctions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieObjects/EddieObjects.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieVariables/EddieVariables.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/RobotKarel/RobotKarel.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/eddieStudio.build/eddieStudio.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/lib/lib.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/runtime/runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/support/support.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/viewPlugin/viewPlugin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
