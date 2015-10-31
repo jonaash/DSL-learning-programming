@@ -48,7 +48,7 @@ Download it from www.jetbrains.com/mps/download/ and unpack it to the same direc
 0. Open eddie-lang project in MPS
 0. If necessary Build all languages and solutions
 0. In solution eddieStudio.build run EddieStudio and wait until successfully finish.
-0. In solution StandaloneIDE run EddieStudioDistribution and wait until successfully finish.
+0. In solution eddieStudio.build run EddieStudioDistribution and wait until successfully finish.
 0. Go to /eddie-lang/build/artifacts/EddieStudioDistribution
     * MacOS: unpack EddieStudio-{version}-macos.zip and run unpacked application.
     * Windows: unpack EddieStudio-{version}.zip and run mps.bat in unpacked directory.
