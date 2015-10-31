@@ -21,7 +21,6 @@
       <concept id="7428636491485899618" name="KarelBasic.structure.TutorialReference" flags="ng" index="2J$FF_">
         <reference id="7428636491485899619" name="tutorial" index="2J$FF$" />
       </concept>
-      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="31172425217292983" name="KarelBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -37,6 +36,8 @@
       </concept>
     </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="RobotKarel">
+      <concept id="7118929354272559103" name="RobotKarel.structure.PickMark" flags="ng" index="3cjWHS" />
+      <concept id="7118929354272559102" name="RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
       <concept id="7118929354272559105" name="RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
     </language>
   </registry>
@@ -52,7 +53,13 @@
   <node concept="1$vsWe" id="6snOov8UnwX">
     <property role="TrG5h" value="Tutorial" />
     <node concept="3jGSmg" id="6snOov8UnwY" role="3jGSko">
-      <node concept="17J3f2" id="6snOov8UnwZ" role="3jGSnO" />
+      <node concept="3cjXi6" id="3zxup4fF6_1" role="3jGSnO" />
+      <node concept="3cjWHT" id="3zxup4fF6_g" role="3jGSnO" />
+      <node concept="3cjWHT" id="3zxup4fF6_o" role="3jGSnO" />
+      <node concept="3cjWHT" id="3zxup4fGsj0" role="3jGSnO" />
+      <node concept="3cjXi6" id="3zxup4fGqRE" role="3jGSnO" />
+      <node concept="3cjWHS" id="3zxup4fGsj8" role="3jGSnO" />
+      <node concept="3cjWHS" id="3zxup4fGsjo" role="3jGSnO" />
     </node>
     <node concept="2J$FF_" id="6snOov8Unxr" role="2J$FC6">
       <ref role="2J$FF$" to="cc2e:6snOov8U0IP" resolve="TestTutorial" />

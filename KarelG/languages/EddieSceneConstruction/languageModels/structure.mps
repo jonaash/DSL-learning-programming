@@ -39,5 +39,9 @@
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
   </node>
+  <node concept="1TIwiD" id="6snOov9bEfZ">
+    <property role="TrG5h" value="SceneEvent" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$Cg00cc" resolve="AbstractSceneEvent" />
+  </node>
 </model>
 

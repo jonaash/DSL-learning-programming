@@ -21,11 +21,27 @@
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
+      <concept id="3717222724954955759" name="KarelBasic.structure.Alert" flags="ng" index="2kpimK" />
       <concept id="7428636491479279374" name="KarelBasic.structure.SceneReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="scene" index="2JdVqH" />
       </concept>
+      <concept id="3394217739178654343" name="KarelBasic.structure.BinaryOperator" flags="ng" index="3521mb">
+        <child id="3394217739178660101" name="rightExpression" index="3527S9" />
+        <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
+      </concept>
+      <concept id="7286718421228329340" name="KarelBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
+      </concept>
+      <concept id="7286718421228046626" name="KarelBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
+      </concept>
       <concept id="3394217739175004823" name="KarelBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
+      <concept id="3267332360033261242" name="KarelBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="6349814108921004812" name="KarelBasic.structure.AbstractSceneEvent" flags="ng" index="187L56">
+        <child id="6349814108921004815" name="action" index="187L55" />
+        <child id="6349814108921004813" name="condition" index="187L57" />
       </concept>
       <concept id="3776063756797189811" name="KarelBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
@@ -40,6 +56,7 @@
         <child id="6349814108917427210" name="startPosition" index="1nPBT0" />
       </concept>
       <concept id="6349814108916202087" name="KarelBasic.structure.AbstractTutorial" flags="ng" index="1nEqwH">
+        <child id="7428636491496975407" name="events" index="2IerQC" />
         <child id="7428636491486421284" name="sceneRef" index="2JAF2z" />
       </concept>
       <concept id="6349814108915668154" name="KarelBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
@@ -51,6 +68,9 @@
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
     </language>
+    <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="KarelVariables">
+      <concept id="7428636491496105605" name="KarelVariables.structure.EqualityOperator" flags="ng" index="2IdJs2" />
+    </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="KarelObjective">
       <concept id="8938755948415928937" name="KarelObjective.structure.DotOperator" flags="ng" index="2jchP5">
         <child id="8938755948421935778" name="expression" index="2j_qme" />
@@ -58,6 +78,7 @@
       </concept>
     </language>
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="EddieSceneConstruction">
+      <concept id="7428636491496989695" name="EddieSceneConstruction.structure.SceneEvent" flags="ng" index="2Ien9S" />
       <concept id="6349814108916252933" name="EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
       <concept id="6349814108916252964" name="EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
@@ -84,9 +105,9 @@
     <property role="1n_5SY" value="11" />
     <property role="TrG5h" value="TestScene" />
     <node concept="1nNwun" id="5wv4$CfPqld" role="1nPBT0">
-      <property role="1nRWkI" value="2" />
-      <property role="1nRWky" value="3" />
-      <property role="1nRWCp" value="NORTH" />
+      <property role="1nRWkI" value="1" />
+      <property role="1nRWky" value="1" />
+      <property role="1nRWCp" value="EAST" />
     </node>
     <node concept="1nE9dI" id="5wv4$CfZSul" role="1nGrSb">
       <node concept="3jGSmg" id="5wv4$CfZSum" role="1nGryu">
@@ -123,6 +144,42 @@
   </node>
   <node concept="1nSc2J" id="6snOov8U0IP">
     <property role="TrG5h" value="TestTutorial" />
+    <node concept="2Ien9S" id="6snOov9bJzc" role="2IerQC">
+      <node concept="2IdJs2" id="6snOov9bJ_d" role="187L57">
+        <node concept="36Kqmr" id="6snOov9bJ_U" role="3527S9">
+          <property role="36Kqnr" value="1" />
+        </node>
+        <node concept="2jchP5" id="6snOov9bJzD" role="3527ZY">
+          <node concept="fF5TM" id="6snOov9bJ$H" role="2j_PeB">
+            <ref role="fCCSt" to="4ujd:6snOov985X0" resolve="getMarksCount" />
+            <node concept="fHUgU" id="6snOov9bJ$I" role="fHv3J">
+              <ref role="3WiQSc" to="4ujd:6snOov985ZO" resolve="row" />
+              <node concept="36Kqmr" id="6snOov9bJ$Y" role="2jzNHB">
+                <property role="36Kqnr" value="2" />
+              </node>
+            </node>
+            <node concept="fHUgU" id="6snOov9bJ$J" role="fHv3J">
+              <ref role="3WiQSc" to="4ujd:6snOov9861a" resolve="col" />
+              <node concept="36Kqmr" id="6snOov9bJ_4" role="2jzNHB">
+                <property role="36Kqnr" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="3sCHcl" id="6snOov9bJz$" role="2j_qme">
+            <ref role="3sDJ1y" to="4ujd:5wv4$CfyaqN" resolve="Scene" />
+          </node>
+        </node>
+      </node>
+      <node concept="3jGSmg" id="6snOov9bJzm" role="187L55">
+        <node concept="2kpimK" id="6snOov9bJAg" role="3jGSnO">
+          <node concept="16y5rI" id="6snOov9bJAh" role="16wSqL">
+            <property role="16xLMo" value="Missing acomplished" />
+          </node>
+        </node>
+        <node concept="17J3f2" id="6snOov9bJA9" role="3jGSnO" />
+        <node concept="17J3f2" id="6snOov9bJzn" role="3jGSnO" />
+      </node>
+    </node>
     <node concept="2JdVq9" id="6snOov8U0KC" role="2JAF2z">
       <ref role="2JdVqH" node="5wv4$CfPqlc" resolve="TestScene" />
     </node>

@@ -653,9 +653,6 @@
             <node concept="2ShNRf" id="3hBhvFSUnEd" role="37vLTx">
               <node concept="1pGfFk" id="3hBhvFSUnNI" role="2ShVmc">
                 <ref role="37wK5l" node="3hBhvFSL1oR" resolve="map_Library" />
-                <node concept="37vLTw" id="5wv4$CfD4b8" role="37wK5m">
-                  <ref role="3cqZAo" to="4ujd:5wv4$Cfl0fw" resolve="control" />
-                </node>
               </node>
             </node>
             <node concept="37vLTw" id="3hBhvFSUnBF" role="37vLTJ">
@@ -1135,9 +1132,6 @@
     </node>
     <node concept="3Tm1VV" id="6bh18$peNxN" role="1B3o_S" />
     <node concept="n94m4" id="6bh18$peNxO" role="lGtFl" />
-    <node concept="3uibUv" id="3hBhvFSN_Jv" role="1zkMxy">
-      <ref role="3uigEE" to="4ujd:3hBhvFSNyKL" resolve="RobotControl" />
-    </node>
   </node>
   <node concept="13MO4I" id="3eme_YBWQ$G">
     <property role="TrG5h" value="reduce_Trace" />
@@ -1156,8 +1150,9 @@
         <node concept="3clFbS" id="3eme_YBWQBU" role="3clF47">
           <node concept="3clFbF" id="3eme_YBWQBV" role="3cqZAp">
             <node concept="2OqwBi" id="3eme_YBWQBW" role="3clFbG">
-              <node concept="37vLTw" id="5wv4$Cfl1aj" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:5wv4$Cfl0fw" resolve="control" />
+              <node concept="2YIFZM" id="6snOov9cwY2" role="2Oq$k0">
+                <ref role="37wK5l" to="4ujd:6snOov9ccKT" resolve="getIntance" />
+                <ref role="1Pybhc" to="4ujd:6snOov9ccDq" resolve="ControlPanel" />
               </node>
               <node concept="liA8E" id="3eme_YBWQBY" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:3eme_YBWTIT" resolve="printMessage" />
@@ -1229,8 +1224,9 @@
                   </node>
                 </node>
               </node>
-              <node concept="37vLTw" id="5wv4$Cfl13X" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:5wv4$Cfl0fw" resolve="control" />
+              <node concept="2YIFZM" id="6snOov9cwG5" role="2Oq$k0">
+                <ref role="37wK5l" to="4ujd:6snOov9ccKT" resolve="getIntance" />
+                <ref role="1Pybhc" to="4ujd:6snOov9ccDq" resolve="ControlPanel" />
               </node>
             </node>
             <node concept="raruj" id="3eme_YBWQAn" role="lGtFl" />
@@ -1578,20 +1574,7 @@
     <node concept="3clFbW" id="3hBhvFSL1oR" role="jymVt">
       <node concept="3cqZAl" id="3hBhvFSL1oT" role="3clF45" />
       <node concept="3Tm1VV" id="3hBhvFSL1oU" role="1B3o_S" />
-      <node concept="3clFbS" id="3hBhvFSL1oV" role="3clF47">
-        <node concept="XkiVB" id="3hBhvFSL1_9" role="3cqZAp">
-          <ref role="37wK5l" to="4ujd:3hBhvFSKUUV" resolve="Library" />
-          <node concept="37vLTw" id="3hBhvFSL1_u" role="37wK5m">
-            <ref role="3cqZAo" node="3hBhvFSL1$D" resolve="control" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="3hBhvFSL1$D" role="3clF46">
-        <property role="TrG5h" value="control" />
-        <node concept="3uibUv" id="5wv4$CfD3YL" role="1tU5fm">
-          <ref role="3uigEE" to="4ujd:5wv4$CfiCPI" resolve="IControl" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="3hBhvFSL1oV" role="3clF47" />
       <node concept="2ZBi8u" id="3hBhvFT07$k" role="lGtFl">
         <ref role="2rW$FS" node="3hBhvFSUiUl" resolve="libraryClassConstructor" />
       </node>
@@ -1810,9 +1793,6 @@
               <node concept="2ShNRf" id="3hBhvFSUfpq" role="37vLTx">
                 <node concept="1pGfFk" id="3hBhvFSYcgz" role="2ShVmc">
                   <ref role="37wK5l" node="3hBhvFSL1oR" resolve="map_Library" />
-                  <node concept="37vLTw" id="5wv4$CfDcd_" role="37wK5m">
-                    <ref role="3cqZAo" to="4ujd:5wv4$Cfl0fw" resolve="control" />
-                  </node>
                   <node concept="1ZhdrF" id="3hBhvFSYg84" role="lGtFl">
                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                     <property role="2qtEX8" value="baseMethodDeclaration" />
@@ -2018,10 +1998,21 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6snOov9bSz0" role="jymVt" />
     <node concept="3Tm1VV" id="6snOov8Kv6i" role="1B3o_S" />
     <node concept="n94m4" id="6snOov8Kv6j" role="lGtFl" />
     <node concept="3uibUv" id="6snOov8Kven" role="1zkMxy">
       <ref role="3uigEE" to="4ujd:6snOov8yRAg" resolve="TutorialDescription" />
+    </node>
+    <node concept="3clFb_" id="6snOov9bSlg" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="checkEvents" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="6snOov9bSli" role="1B3o_S" />
+      <node concept="3cqZAl" id="6snOov9bSlj" role="3clF45" />
+      <node concept="3clFbS" id="6snOov9bSlk" role="3clF47" />
     </node>
   </node>
 </model>

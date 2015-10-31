@@ -892,6 +892,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6snOov886se" resolve="SceneReference" />
     </node>
+    <node concept="1TJgyj" id="6snOov9bAKJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5wv4$Cg00cc" resolve="AbstractSceneEvent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wv4$CfKdx_">
     <property role="3GE5qa" value="scene" />
