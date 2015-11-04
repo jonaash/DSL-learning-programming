@@ -89,6 +89,12 @@
       <concept id="1177337890340" name="jetbrains.mps.lang.actions.structure.QueryFunction_ParameterizedSubstitute_Query" flags="in" index="uNCsQ" />
       <concept id="1177339114370" name="jetbrains.mps.lang.actions.structure.QueryFunction_ParameterizedSubstitute_String" flags="in" index="uSjag" />
       <concept id="1177339225103" name="jetbrains.mps.lang.actions.structure.QueryFunction_ParameterizedSubstitute_Handler" flags="in" index="uSIkt" />
+      <concept id="1177402519659" name="jetbrains.mps.lang.actions.structure.WrapperSubstituteMenuPart" flags="ng" index="yEb5T">
+        <reference id="1177402731616" name="wrappedConcept" index="yEYPM" />
+        <child id="1177402719158" name="wrapperBlock" index="yEVE$" />
+      </concept>
+      <concept id="1177402571666" name="jetbrains.mps.lang.actions.structure.QueryFunction_SubstituteWrapper" flags="in" index="yEnE0" />
+      <concept id="1177402641904" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_nodeToWrap" flags="nn" index="yECNy" />
       <concept id="1177568407352" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_currentTargetNode" flags="nn" index="GyYSE" />
       <concept id="1154465273778" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parentNode" flags="nn" index="3bvxqY" />
       <concept id="6400740936061763657" name="jetbrains.mps.lang.actions.structure.QueryFunction_IconNode" flags="in" index="1p$bYL" />
@@ -427,6 +433,58 @@
                       <ref role="ehGHo" to="tpee:fzclF8t" resolve="InstanceMethodDeclaration" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3FK_9_" id="1N21bCDyXw4">
+    <property role="TrG5h" value="BLSingletonReference_iStandaloneExpression" />
+    <node concept="3FOIzC" id="1N21bCDyXy0" role="3FOPby">
+      <property role="3mWAmy" value="allows to reference BLSingleton reference in place of IStandaloneExpression" />
+      <ref role="3FOWKa" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
+      <node concept="tYCnQ" id="1N21bCDyXy4" role="tZc4B">
+        <ref role="uz4UX" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+        <node concept="yEb5T" id="1N21bCDyXy6" role="uz6Si">
+          <ref role="yEYPM" to="gkvc:2bb0VNYqt2D" resolve="BLSingletonReference" />
+          <node concept="yEnE0" id="1N21bCDyXy7" role="yEVE$">
+            <node concept="3clFbS" id="1N21bCDyXy8" role="2VODD2">
+              <node concept="3cpWs8" id="1N21bCDyZ7V" role="3cqZAp">
+                <node concept="3cpWsn" id="1N21bCDyZ7Y" role="3cpWs9">
+                  <property role="TrG5h" value="dotOperator" />
+                  <node concept="3Tqbb2" id="1N21bCDyZ7U" role="1tU5fm">
+                    <ref role="ehGHo" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+                  </node>
+                  <node concept="2ShNRf" id="1N21bCDyZJM" role="33vP2m">
+                    <node concept="2fJWfE" id="1N21bCDyZZ6" role="2ShVmc">
+                      <node concept="3Tqbb2" id="1N21bCDyZZ8" role="3zrR0E">
+                        <ref role="ehGHo" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1N21bCDz02R" role="3cqZAp">
+                <node concept="2OqwBi" id="1N21bCDz0G7" role="3clFbG">
+                  <node concept="2OqwBi" id="1N21bCDz06Q" role="2Oq$k0">
+                    <node concept="37vLTw" id="1N21bCDz02P" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1N21bCDyZ7Y" resolve="dotOperator" />
+                    </node>
+                    <node concept="3TrEf2" id="1N21bCDz0ol" role="2OqNvi">
+                      <ref role="3Tt5mk" to="t2e5:7KcPMNJAnay" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="1N21bCDz0S8" role="2OqNvi">
+                    <node concept="yECNy" id="1N21bCDz0VT" role="2oxUTC" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1N21bCDyZCu" role="3cqZAp">
+                <node concept="37vLTw" id="1N21bCDyZCs" role="3clFbG">
+                  <ref role="3cqZAo" node="1N21bCDyZ7Y" resolve="dotOperator" />
                 </node>
               </node>
             </node>

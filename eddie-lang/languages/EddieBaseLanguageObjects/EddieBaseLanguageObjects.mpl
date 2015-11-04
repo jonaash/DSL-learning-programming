@@ -74,6 +74,7 @@
     <dependency reexport="false">1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)</dependency>
     <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">03b98ce1-fecc-4ed5-a49d-43457de64e17(org.eddieprogramming.common.support)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)</usedLanguage>

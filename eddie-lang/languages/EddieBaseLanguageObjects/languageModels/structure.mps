@@ -45,9 +45,6 @@
       <property role="20kJfa" value="targetClass" />
       <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
-    <node concept="PrWs8" id="2bb0VNYrvVa" role="PzmwI">
-      <ref role="PrY4T" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2xfsEoBSMNk">
     <property role="TrG5h" value="BLMethodCall" />
