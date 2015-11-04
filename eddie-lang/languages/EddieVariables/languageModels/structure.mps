@@ -113,18 +113,6 @@
       <ref role="PrY4T" to="dyrx:3hBhvFT7TZS" resolve="IStandaloneExpression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="aB0Z16LeEo">
-    <property role="3GE5qa" value="expression.converter" />
-    <property role="TrG5h" value="ConverterToString" />
-    <property role="34LRSv" value="conv" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
-    <node concept="1TJgyj" id="aB0Z16Ll8v" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="aB0Z16Oiyf">
     <property role="TrG5h" value="ForCycle" />
     <property role="3GE5qa" value="command.control" />

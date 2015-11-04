@@ -20,7 +20,6 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -500,53 +499,6 @@
         <node concept="x79VA" id="7KcPMNJ3HN1" role="x79VK">
           <property role="x79VB" value="scope with added for cycle variable" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="1BMnhOnhDfn">
-    <property role="3GE5qa" value="expression.converter" />
-    <ref role="13h7C2" to="3y9h:aB0Z16LeEo" resolve="ConverterToString" />
-    <node concept="13hLZK" id="1BMnhOnhDfo" role="13h7CW">
-      <node concept="3clFbS" id="1BMnhOnhDfp" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1BMnhOnhDhm" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getTypeAnnotation" />
-      <ref role="13i0hy" to="ljn0:2WqFKNDRDv6" resolve="getTypeAnnotation" />
-      <node concept="3Tm1VV" id="1BMnhOnhDhn" role="1B3o_S" />
-      <node concept="3clFbS" id="1BMnhOnhDhs" role="3clF47">
-        <node concept="3cpWs6" id="6pJoTiq6Xk1" role="3cqZAp">
-          <node concept="BsUDl" id="6pJoTiq6Xkj" role="3cqZAk">
-            <ref role="37wK5l" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="1BMnhOnvwLn" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="6pJoTiq6Xhi" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getStaticType" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
-      <node concept="3Tm1VV" id="6pJoTiq6Xhj" role="1B3o_S" />
-      <node concept="3clFbS" id="6pJoTiq6Xho" role="3clF47">
-        <node concept="3cpWs6" id="1BMnhOnhJtT" role="3cqZAp">
-          <node concept="2OqwBi" id="1BMnhOnvwQf" role="3cqZAk">
-            <node concept="35c_gC" id="1BMnhOnhJu7" role="2Oq$k0">
-              <ref role="35c_gD" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
-            </node>
-            <node concept="2qgKlT" id="1BMnhOnvx1E" role="2OqNvi">
-              <ref role="37wK5l" to="ljn0:1BMnhOnqnbD" resolve="getInstance" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="6pJoTiq6Xhp" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
   </node>

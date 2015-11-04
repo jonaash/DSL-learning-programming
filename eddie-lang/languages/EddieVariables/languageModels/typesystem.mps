@@ -787,33 +787,6 @@
       <ref role="1YaFvo" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
     </node>
   </node>
-  <node concept="1YbPZF" id="aB0Z16Lsl_">
-    <property role="TrG5h" value="typeof_ToStringConverter" />
-    <property role="3GE5qa" value="expression.converter" />
-    <node concept="3clFbS" id="aB0Z16LslA" role="18ibNy">
-      <node concept="1Z5TYs" id="aB0Z16LsGs" role="3cqZAp">
-        <node concept="mw_s8" id="aB0Z16LsGL" role="1ZfhKB">
-          <node concept="2pJPEk" id="aB0Z16LsGH" role="mwGJk">
-            <node concept="2pJPED" id="aB0Z16LsGW" role="2pJPEn">
-              <ref role="2pJxaS" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="aB0Z16LsGv" role="1ZfhK$">
-          <node concept="1Z2H0r" id="aB0Z16LsAA" role="mwGJk">
-            <node concept="1YBJjd" id="aB0Z16LsB2" role="1Z2MuG">
-              <ref role="1YBMHb" node="aB0Z16LslC" resolve="toStringConverter" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="aB0Z16LsCL" role="3cqZAp" />
-    </node>
-    <node concept="1YaCAy" id="aB0Z16LslC" role="1YuTPh">
-      <property role="TrG5h" value="toStringConverter" />
-      <ref role="1YaFvo" to="3y9h:aB0Z16LeEo" resolve="ConverterToString" />
-    </node>
-  </node>
   <node concept="18kY7G" id="30eT$TCvUn1">
     <property role="TrG5h" value="check_ScriptMainDataFlow" />
     <node concept="3clFbS" id="30eT$TCvUn2" role="18ibNy">

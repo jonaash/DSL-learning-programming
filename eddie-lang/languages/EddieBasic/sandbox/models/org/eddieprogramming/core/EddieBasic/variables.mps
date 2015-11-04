@@ -66,9 +66,6 @@
       <concept id="7428636491496105605" name="org.eddieprogramming.core.EddieVariables.structure.EqualityOperator" flags="ng" index="2IdJs2" />
       <concept id="7428636491496105671" name="org.eddieprogramming.core.EddieVariables.structure.GreaterOrEqual" flags="ng" index="2IdJt0" />
       <concept id="7428636491496105712" name="org.eddieprogramming.core.EddieVariables.structure.GreaterThan" flags="ng" index="2IdJtR" />
-      <concept id="191125839700880024" name="org.eddieprogramming.core.EddieVariables.structure.ConverterToString" flags="ng" index="14oY_C">
-        <child id="191125839700906527" name="expression" index="14o_7J" />
-      </concept>
       <concept id="191125839701682319" name="org.eddieprogramming.core.EddieVariables.structure.ForCycle" flags="ng" index="14tyHZ">
         <property id="191125839701688673" name="downTo" index="14t$ah" />
         <child id="191125839701688636" name="var" index="14t$bc" />
@@ -289,6 +286,13 @@
           <node concept="36MCER" id="7KcPMNJ4htE" role="36MCEW" />
         </node>
       </node>
+      <node concept="17J3f2" id="4LNIB3H3rjs" role="3jGSnO" />
+      <node concept="2kp8ke" id="4LNIB3H3rlB" role="3jGSnO">
+        <node concept="AE91N" id="4LNIB3H3rmP" role="16wSqL">
+          <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="4LNIB3H3rmU" role="3jGSnO" />
       <node concept="17JERQ" id="1GufzGWgFP3" role="3jGSnO">
         <node concept="3jGSmg" id="1GufzGWgFP5" role="3azrUc">
           <node concept="3cjXi6" id="1GufzGWgFPU" role="3jGSnO" />
@@ -414,13 +418,6 @@
       <node concept="17J3f2" id="6snOov99cek" role="3jGSnO" />
       <node concept="17J3f2" id="6snOov99c5x" role="3jGSnO" />
       <node concept="17J3f2" id="6snOov99c84" role="3jGSnO" />
-      <node concept="2kp8ke" id="aB0Z16NDpY" role="3jGSnO">
-        <node concept="14oY_C" id="aB0Z16NDqV" role="16wSqL">
-          <node concept="AE91N" id="6snOov99dWO" role="14o_7J">
-            <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>

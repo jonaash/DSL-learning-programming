@@ -161,13 +161,6 @@
       <node concept="l2Vlx" id="1GufzGWfyQB" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="aB0Z16LuZ7">
-    <property role="3GE5qa" value="expression.converter" />
-    <ref role="1XX52x" to="3y9h:aB0Z16LeEo" resolve="ConverterToString" />
-    <node concept="3F1sOY" id="aB0Z16LvnH" role="2wV5jI">
-      <ref role="1NtTu8" to="3y9h:aB0Z16Ll8v" />
-    </node>
-  </node>
   <node concept="24kQdi" id="aB0Z16Ok6k">
     <property role="3GE5qa" value="command.control" />
     <ref role="1XX52x" to="3y9h:aB0Z16Oiyf" resolve="ForCycle" />
