@@ -1321,6 +1321,367 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="4LNIB3H6NSS" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.core.EddieObjects" />
+        <property role="3LESm3" value="1049e1e4-e198-4fe2-af4a-15791afe439a" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="4LNIB3H6NSV" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4LNIB3H6OlR" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4LNIB3H6OqF" role="2Ry0An">
+              <property role="2Ry0Am" value="EddieObjects" />
+              <node concept="2Ry0Ak" id="4LNIB3H6O$e" role="2Ry0An">
+                <property role="2Ry0Am" value="EddieObjects.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_P" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6O_Q" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_R" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6O_S" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_T" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6O_U" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_V" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6O_W" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_X" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6O_Y" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6O_Z" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OA0" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1CDPOOIkokU" resolve="org.eddieprogramming.core.EddieFunctions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OA1" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OA2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LbO" resolve="jetbrains.mps.lang.traceable" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OA3" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OA4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OA5" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OA6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OA7" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OA8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OA9" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OAa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzH" resolve="org.eddieprogramming.common.support" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OAb" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6OAc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OAd" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6OAe" role="1SiIV1">
+            <ref role="1Busuk" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6OAf" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6OAg" role="1SiIV1">
+            <ref role="1Busuk" node="1CDPOOIkokU" resolve="org.eddieprogramming.core.EddieFunctions" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4LNIB3H6OAh" role="1TViLv">
+          <property role="TrG5h" value="org.eddieprogramming.core.EddieObjects#148719074581285505" />
+          <property role="3LESm3" value="5a4a5f47-586f-419e-87fa-a05f61088824" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4LNIB3H6OAi" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6OAj" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyC_x" resolve="org.eddieprogramming.core.EddieBasic#3640435696255147963" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6OAk" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6OAl" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6OYD" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6OYE" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6OYF" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6OYG" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6OYH" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6OYI" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4LNIB3H6RF4" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.support.EddieBaseLanguageObjects" />
+        <property role="3LESm3" value="abbb403e-0a41-4661-9279-eb17d3806875" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="4LNIB3H6RF7" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4LNIB3H6RN4" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4LNIB3H6RQ_" role="2Ry0An">
+              <property role="2Ry0Am" value="EddieBaseLanguageObjects" />
+              <node concept="2Ry0Ak" id="4LNIB3H6RXy" role="2Ry0An">
+                <property role="2Ry0Am" value="EddieBaseLanguageObjects.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZi" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZj" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZk" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZl" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZm" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZo" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZp" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZq" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZs" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZt" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZu" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzH" resolve="org.eddieprogramming.common.support" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZw" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6RZx" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZy" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6RZz" role="1SiIV1">
+            <ref role="1Busuk" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZ$" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6RZ_" role="1SiIV1">
+            <ref role="1Busuk" node="1CDPOOIkokU" resolve="org.eddieprogramming.core.EddieFunctions" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6RZA" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6RZB" role="1SiIV1">
+            <ref role="1Busuk" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4LNIB3H6RZC" role="1TViLv">
+          <property role="TrG5h" value="org.eddieprogramming.support.EddieBaseLanguageObjects#2507101727818895526" />
+          <property role="3LESm3" value="828cbfd4-fdde-4f5e-91be-bc025c660edc" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4LNIB3H6RZD" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6RZE" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyC_x" resolve="org.eddieprogramming.core.EddieBasic#3640435696255147963" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4LNIB3H6Sjf" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.world.EddieSceneConstruction" />
+        <property role="3LESm3" value="22533a47-d9a8-4eae-8829-e07835315c1f" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="4LNIB3H6Sjg" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4LNIB3H6Sjh" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4LNIB3H6Sji" role="2Ry0An">
+              <property role="2Ry0Am" value="EddieSceneConstruction" />
+              <node concept="2Ry0Ak" id="4LNIB3H6SwD" role="2Ry0An">
+                <property role="2Ry0Am" value="EddieSceneConstruction.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6Sjm" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6Sjn" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6Sjq" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6Sjr" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6Sjs" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6Sjt" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6Sjw" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6Sjx" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzH" resolve="org.eddieprogramming.common.support" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6Sj$" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6Sj_" role="1SiIV1">
+            <ref role="1Busuk" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6SjC" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6SjD" role="1SiIV1">
+            <ref role="1Busuk" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4LNIB3H6SjE" role="1TViLv">
+          <property role="TrG5h" value="org.eddieprogramming.world.EddieSceneConstruction#6349814108916251914" />
+          <property role="3LESm3" value="48b62e1f-6bdf-4c2f-82ec-c3ceea5f44e8" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4LNIB3H6SjF" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6SjG" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyC_x" resolve="org.eddieprogramming.core.EddieBasic#3640435696255147963" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6Sy$" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6Sy_" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6SyA" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6SyB" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6S_5" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6S_6" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="4LNIB3H6RF4" resolve="org.eddieprogramming.support.EddieBaseLanguageObjects" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4LNIB3H6SD0" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.support.EddieComparisonOperators" />
+        <property role="3LESm3" value="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="4LNIB3H6SD1" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4LNIB3H6SD2" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4LNIB3H6SPo" role="2Ry0An">
+              <property role="2Ry0Am" value="EddieComparisonOperators" />
+              <node concept="2Ry0Ak" id="4LNIB3H6STt" role="2Ry0An">
+                <property role="2Ry0Am" value="EddieComparisonOperators.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6SDd" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6SDe" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6SDl" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6SDm" role="1SiIV1">
+            <ref role="1Busuk" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4LNIB3H6SDr" role="1TViLv">
+          <property role="TrG5h" value="org.eddieprogramming.support.EddieComparisonOperators#5508951763380556598" />
+          <property role="3LESm3" value="dc8c3e7a-4ae1-4fb8-9a97-f8b85fe844cd" />
+          <property role="2GAjPV" value="false" />
+          <node concept="1SiIV0" id="4LNIB3H6SVz" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6SV$" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4LNIB3H6SV_" role="3bR37C">
+            <node concept="3bR9La" id="4LNIB3H6SVA" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6SVv" role="3bR37C">
+          <node concept="3bR9La" id="4LNIB3H6SVw" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4LNIB3H6SVx" role="3bR37C">
+          <node concept="1Busua" id="4LNIB3H6SVy" role="1SiIV1">
+            <ref role="1Busuk" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="6bbx8uIz$Ze" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.eddieprogramming.dsl.RobotKarel" />
