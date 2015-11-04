@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieBasic/EddieBasic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieBasic/sandbox/EddieBasic.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieComparisonOperators/EddieComparisonOperators.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieConditions/EddieConditions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieFunctions/EddieFunctions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieObjects/EddieObjects.mpl" folder="" />

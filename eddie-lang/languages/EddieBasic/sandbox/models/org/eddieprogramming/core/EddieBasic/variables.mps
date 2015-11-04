@@ -8,6 +8,7 @@
     <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions" version="0" />
     <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
   </languages>
   <imports />
   <registry>
@@ -60,12 +61,6 @@
         <child id="1954067712460074322" name="variable" index="B81dD" />
         <child id="1954067712460074325" name="value" index="B81dI" />
       </concept>
-      <concept id="7428636491496105857" name="org.eddieprogramming.core.EddieVariables.structure.LessOrEqual" flags="ng" index="2IdJo6" />
-      <concept id="7428636491496105932" name="org.eddieprogramming.core.EddieVariables.structure.InequalityOperator" flags="ng" index="2IdJpb" />
-      <concept id="7428636491496105754" name="org.eddieprogramming.core.EddieVariables.structure.LessThan" flags="ng" index="2IdJqt" />
-      <concept id="7428636491496105605" name="org.eddieprogramming.core.EddieVariables.structure.EqualityOperator" flags="ng" index="2IdJs2" />
-      <concept id="7428636491496105671" name="org.eddieprogramming.core.EddieVariables.structure.GreaterOrEqual" flags="ng" index="2IdJt0" />
-      <concept id="7428636491496105712" name="org.eddieprogramming.core.EddieVariables.structure.GreaterThan" flags="ng" index="2IdJtR" />
       <concept id="191125839701682319" name="org.eddieprogramming.core.EddieVariables.structure.ForCycle" flags="ng" index="14tyHZ">
         <property id="191125839701688673" name="downTo" index="14t$ah" />
         <child id="191125839701688636" name="var" index="14t$bc" />
@@ -76,6 +71,14 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
+    </language>
+    <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
+      <concept id="5508951763380606441" name="" flags="ng" index="2xoUYp" />
+      <concept id="5508951763380606442" name="" flags="ng" index="2xoUYq" />
+      <concept id="5508951763380606443" name="" flags="ng" index="2xoUYr" />
+      <concept id="5508951763380606444" name="" flags="ng" index="2xoUYs" />
+      <concept id="5508951763380606445" name="" flags="ng" index="2xoUYt" />
+      <concept id="5508951763380606446" name="" flags="ng" index="2xoUYu" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -329,7 +332,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="gt" />
           <node concept="36MBwV" id="6snOov99c2E" role="36MCEW" />
-          <node concept="2IdJtR" id="6snOov99c4d" role="36MIYJ">
+          <node concept="2xoUYr" id="6snOov99c4d" role="36MIYJ">
             <node concept="36Kqmr" id="6snOov99c4Q" role="3527S9">
               <property role="36Kqnr" value="5" />
             </node>
@@ -344,7 +347,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="ge" />
           <node concept="36MBwV" id="6snOov99caf" role="36MCEW" />
-          <node concept="2IdJt0" id="6snOov99cw1" role="36MIYJ">
+          <node concept="2xoUYq" id="6snOov99cw1" role="36MIYJ">
             <node concept="AE91N" id="6snOov99cw4" role="3527ZY">
               <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
             </node>
@@ -359,7 +362,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="lt" />
           <node concept="36MBwV" id="6snOov99cfN" role="36MCEW" />
-          <node concept="2IdJqt" id="6snOov99cA3" role="36MIYJ">
+          <node concept="2xoUYu" id="6snOov99cA3" role="36MIYJ">
             <node concept="AE91N" id="6snOov99cA6" role="3527ZY">
               <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
             </node>
@@ -374,7 +377,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="le" />
           <node concept="36MBwV" id="6snOov99cj1" role="36MCEW" />
-          <node concept="2IdJo6" id="6snOov99cEB" role="36MIYJ">
+          <node concept="2xoUYt" id="6snOov99cEB" role="36MIYJ">
             <node concept="AE91N" id="6snOov99cEE" role="3527ZY">
               <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
             </node>
@@ -389,7 +392,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="eq" />
           <node concept="36MBwV" id="6snOov99cJA" role="36MCEW" />
-          <node concept="2IdJs2" id="6snOov99cNt" role="36MIYJ">
+          <node concept="2xoUYp" id="6snOov99cNt" role="36MIYJ">
             <node concept="36Kqmr" id="6snOov99cPe" role="3527S9">
               <property role="36Kqnr" value="5" />
             </node>
@@ -404,7 +407,7 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="ne" />
           <node concept="36MBwV" id="6snOov99cUQ" role="36MCEW" />
-          <node concept="2IdJpb" id="6snOov99cZb" role="36MIYJ">
+          <node concept="2xoUYs" id="6snOov99cZb" role="36MIYJ">
             <node concept="36Kqmr" id="6snOov99d1e" role="3527S9">
               <property role="36Kqnr" value="5" />
             </node>

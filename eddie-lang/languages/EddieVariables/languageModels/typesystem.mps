@@ -492,23 +492,8 @@
           <ref role="2pJxaS" to="dyrx:2WqFKNDO2mV" resolve="IntegerType" />
         </node>
       </node>
-      <node concept="3gn64h" id="6snOov98zKQ" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98iu1" resolve="LessOrEqual" />
-      </node>
-      <node concept="3gn64h" id="6snOov98zLR" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98isq" resolve="LessThan" />
-      </node>
-      <node concept="3gn64h" id="6snOov98zMW" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98ir7" resolve="GreaterOrEqual" />
-      </node>
-      <node concept="3gn64h" id="6snOov98zO5" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98irK" resolve="GreaterThan" />
-      </node>
-      <node concept="3gn64h" id="6snOov98zPi" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98iq5" resolve="EqualityOperator" />
-      </node>
-      <node concept="3gn64h" id="6snOov98zQz" role="32tDTA">
-        <ref role="3gnhBz" to="3y9h:6snOov98ivc" resolve="InequalityOperator" />
+      <node concept="3gn64h" id="4LNIB3H3RCN" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
       </node>
       <node concept="2pJPEk" id="6snOov98zSb" role="3ciSnv">
         <node concept="2pJPED" id="6snOov98zSc" role="2pJPEn">

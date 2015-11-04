@@ -11,6 +11,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="0" />
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="0" />
+    <use id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
@@ -68,9 +69,6 @@
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
     </language>
-    <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables">
-      <concept id="7428636491496105605" name="org.eddieprogramming.core.EddieVariables.structure.EqualityOperator" flags="ng" index="2IdJs2" />
-    </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects">
       <concept id="8938755948415928937" name="org.eddieprogramming.core.EddieObjects.structure.DotOperator" flags="ng" index="2jchP5">
         <child id="8938755948421935778" name="expression" index="2j_qme" />
@@ -83,6 +81,9 @@
       <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
       <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Tutorial" flags="ng" index="1nSc2J" />
+    </language>
+    <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
+      <concept id="5508951763380606441" name="" flags="ng" index="2xoUYp" />
     </language>
     <language id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects">
       <concept id="2904666342636596436" name="org.eddieprogramming.support.EddieBaseLanguageObjects.structure.BLMethodCall" flags="ng" index="fF5TM">
@@ -145,7 +146,7 @@
   <node concept="1nSc2J" id="6snOov8U0IP">
     <property role="TrG5h" value="TestTutorial" />
     <node concept="2Ien9S" id="6snOov9bJzc" role="2IerQC">
-      <node concept="2IdJs2" id="6snOov9bJ_d" role="187L57">
+      <node concept="2xoUYp" id="6snOov9bJ_d" role="187L57">
         <node concept="36Kqmr" id="6snOov9bJ_U" role="3527S9">
           <property role="36Kqnr" value="1" />
         </node>

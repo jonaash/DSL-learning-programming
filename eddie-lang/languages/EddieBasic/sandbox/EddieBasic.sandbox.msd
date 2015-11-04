@@ -25,6 +25,7 @@
     <usedLanguage>22533a47-d9a8-4eae-8829-e07835315c1f(org.eddieprogramming.world.EddieSceneConstruction)</usedLanguage>
     <usedLanguage>862fe5da-6916-4d19-b869-dbe8a02b6bb1(org.eddieprogramming.dsl.RobotKarel)</usedLanguage>
     <usedLanguage>1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)</usedLanguage>
+    <usedLanguage>ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe(org.eddieprogramming.support.EddieComparisonOperators)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
@@ -39,6 +40,7 @@
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" fqName="org.eddieprogramming.core.EddieVariables" version="0" />
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" fqName="org.eddieprogramming.dsl.RobotKarel" version="-1" />
     <language id="abbb403e-0a41-4661-9279-eb17d3806875" fqName="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
+    <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" fqName="org.eddieprogramming.support.EddieComparisonOperators" version="-1" />
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" fqName="org.eddieprogramming.world.EddieSceneConstruction" version="0" />
   </languageVersions>
 </solution>

@@ -172,40 +172,9 @@
       <ref role="PrY4T" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6snOov98iq5">
+  <node concept="1TIwiD" id="4LNIB3H3QF6">
     <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="EqualityOperator" />
-    <property role="34LRSv" value="==" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-  </node>
-  <node concept="1TIwiD" id="6snOov98ir7">
-    <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="GreaterOrEqual" />
-    <property role="34LRSv" value="&gt;=" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-  </node>
-  <node concept="1TIwiD" id="6snOov98irK">
-    <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="GreaterThan" />
-    <property role="34LRSv" value="&gt;" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-  </node>
-  <node concept="1TIwiD" id="6snOov98isq">
-    <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="LessThan" />
-    <property role="34LRSv" value="&lt;" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-  </node>
-  <node concept="1TIwiD" id="6snOov98iu1">
-    <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="LessOrEqual" />
-    <property role="34LRSv" value="&lt;=" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
-  </node>
-  <node concept="1TIwiD" id="6snOov98ivc">
-    <property role="3GE5qa" value="expression.comparison" />
-    <property role="TrG5h" value="InequalityOperator" />
-    <property role="34LRSv" value="!=" />
+    <property role="TrG5h" value="AbstractComparisonOperator" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
 </model>
