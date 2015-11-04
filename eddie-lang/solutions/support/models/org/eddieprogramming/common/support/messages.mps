@@ -388,6 +388,54 @@
           </node>
         </node>
         <node concept="3clFbH" id="146X79f00AZ" role="3cqZAp" />
+        <node concept="3clFbF" id="4LNIB3H0CAD" role="3cqZAp">
+          <node concept="37vLTI" id="4LNIB3H0GT9" role="3clFbG">
+            <node concept="Xl_RD" id="4LNIB3H0GVb" role="37vLTx">
+              <property role="Xl_RC" value="ERROR: Robot crashed into wall!" />
+            </node>
+            <node concept="3EllGN" id="4LNIB3H0FD8" role="37vLTJ">
+              <node concept="Xl_RD" id="4LNIB3H0FEZ" role="3ElVtu">
+                <property role="Xl_RC" value="error.runtime.robot.on.wall" />
+              </node>
+              <node concept="37vLTw" id="4LNIB3H0CAB" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4LNIB3H0HBp" role="3cqZAp">
+          <node concept="37vLTI" id="4LNIB3H0HBq" role="3clFbG">
+            <node concept="Xl_RD" id="4LNIB3H0HBr" role="37vLTx">
+              <property role="Xl_RC" value="ERROR: Cannot put mark! This field is full of marks capacity of marks!" />
+            </node>
+            <node concept="3EllGN" id="4LNIB3H0HBs" role="37vLTJ">
+              <node concept="Xl_RD" id="4LNIB3H0HBt" role="3ElVtu">
+                <property role="Xl_RC" value="error.runtime.marks.full" />
+              </node>
+              <node concept="37vLTw" id="4LNIB3H0HBy" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4LNIB3H0HOm" role="3cqZAp">
+          <node concept="37vLTI" id="4LNIB3H0HOn" role="3clFbG">
+            <node concept="Xl_RD" id="4LNIB3H0HOo" role="37vLTx">
+              <property role="Xl_RC" value="ERROR: Cannot pick mark! There is no mark!" />
+            </node>
+            <node concept="3EllGN" id="4LNIB3H0HOp" role="37vLTJ">
+              <node concept="Xl_RD" id="4LNIB3H0HOq" role="3ElVtu">
+                <property role="Xl_RC" value="error.runtime.marks.empty" />
+              </node>
+              <node concept="37vLTw" id="4LNIB3H0HOv" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4LNIB3H0HIa" role="3cqZAp" />
+        <node concept="3clFbH" id="4LNIB3H0Hxk" role="3cqZAp" />
+        <node concept="3clFbH" id="4LNIB3H0Bm0" role="3cqZAp" />
         <node concept="3SKdUt" id="1jWJ98HEKSo" role="3cqZAp">
           <node concept="3SKdUq" id="1jWJ98HEKXF" role="3SKWNk">
             <property role="3SKdUp" value="Methods, types of methods are inserted as first param when necessary (procedure, function, method...)" />

@@ -243,5 +243,12 @@
       </node>
     </node>
   </node>
+  <node concept="1$vsWe" id="4LNIB3H1nnf">
+    <property role="TrG5h" value="HitWall" />
+    <node concept="3jGSmg" id="4LNIB3H1nng" role="3jGSko">
+      <node concept="3cjWHT" id="4LNIB3H1nGO" role="3jGSnO" />
+      <node concept="3cjXi6" id="4LNIB3H1nGY" role="3jGSnO" />
+    </node>
+  </node>
 </model>
 
