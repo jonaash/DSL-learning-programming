@@ -69,12 +69,14 @@
         <child id="8938755948421935778" name="expression" index="2j_qme" />
         <child id="8938755948422071435" name="operation" index="2j_PeB" />
       </concept>
-      <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.ClassType" flags="ng" index="2jchV_">
+      <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassType" flags="ng" index="2jchV_">
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
       </concept>
       <concept id="8938755948415899245" name="org.eddieprogramming.core.EddieObjects.structure.ThisExpression" flags="ng" index="2jco51" />
       <concept id="8938755948416651173" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
       <concept id="8938755948420359037" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorCall" flags="ng" index="2jzrhh" />
+      <concept id="5508951763384160548" name="org.eddieprogramming.core.EddieObjects.structure.ClassType" flags="ng" index="2xduHk" />
+      <concept id="5508951763384009961" name="org.eddieprogramming.core.EddieObjects.structure.SingletonType" flags="ng" index="2xdVUp" />
       <concept id="7118929354275056774" name="org.eddieprogramming.core.EddieObjects.structure.SingletonConstructor" flags="ng" index="3couw1" />
       <concept id="7118929354274734126" name="org.eddieprogramming.core.EddieObjects.structure.Singleton" flags="ng" index="3crwiD">
         <child id="6349814108903284625" name="instance" index="1mVCRr" />
@@ -130,18 +132,17 @@
           <node concept="AFBxM" id="2xfsEoC0U$k" role="36Mw2n">
             <property role="36jPZJ" value="true" />
             <property role="TrG5h" value="sdf" />
-            <node concept="2jchV_" id="2xfsEoC0U$f" role="36MCEW">
+            <node concept="2xduHk" id="4LNIB3HidW9" role="36MCEW">
               <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
             </node>
           </node>
         </node>
         <node concept="17J3f2" id="2xfsEoC0U$N" role="3jGSnO" />
-        <node concept="17J3f2" id="2xfsEoC0U_c" role="3jGSnO" />
       </node>
       <node concept="FiAUU" id="5wv4$CfhYSr" role="3dtAt9">
         <property role="36jPZJ" value="false" />
         <property role="TrG5h" value="tes" />
-        <node concept="2jchV_" id="5wv4$CfhYSx" role="36MCEW">
+        <node concept="2xduHk" id="4LNIB3HidVX" role="36MCEW">
           <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
         </node>
       </node>
@@ -150,14 +151,14 @@
       <node concept="3dtAsP" id="6bbx8uIIwJE" role="2jg$Xp" />
       <node concept="3pOcrW" id="6bbx8uIIwJF" role="2j5jbD" />
       <node concept="3jGSmg" id="6bbx8uIIwJG" role="hRHZh">
-        <node concept="36Mw20" id="6bbx8uIKPDu" role="3jGSnO">
-          <node concept="AFBxM" id="6bbx8uIKPDx" role="36Mw2n">
+        <node concept="36Mw20" id="4LNIB3HidUy" role="3jGSnO">
+          <node concept="AFBxM" id="4LNIB3HidU_" role="36Mw2n">
             <property role="36jPZJ" value="false" />
-            <property role="TrG5h" value="asf" />
-            <node concept="2jchV_" id="6bbx8uIKPDt" role="36MCEW">
+            <property role="TrG5h" value="bas" />
+            <node concept="2xduHk" id="4LNIB3HidUw" role="36MCEW">
               <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
             </node>
-            <node concept="2jzrhh" id="3gkLCv0q0b1" role="36MIYJ">
+            <node concept="2jzrhh" id="4LNIB3HidVM" role="36MIYJ">
               <ref role="hRIc0" node="6bbx8uIIwJD" />
             </node>
           </node>
@@ -183,28 +184,8 @@
       </node>
     </node>
   </node>
-  <node concept="3crwiD" id="5wv4$CeY3lY">
+  <node concept="3crwiD" id="4LNIB3HioYb">
     <property role="TrG5h" value="Singleton" />
-    <node concept="3couw1" id="5wv4$CeY3lZ" role="2jst77">
-      <node concept="3dtAsP" id="5wv4$CeY3m0" role="2jg$Xp" />
-      <node concept="3jGSmg" id="5wv4$CeY3m2" role="hRHZh" />
-      <node concept="3pOcrZ" id="5wv4$CeY3m4" role="2j5jbD" />
-    </node>
-    <node concept="1mVJFA" id="5wv4$CeY3m6" role="1mVCRr">
-      <property role="36jPZJ" value="false" />
-      <property role="TrG5h" value="Singleton" />
-      <node concept="2jchV_" id="5wv4$CeY3m8" role="36MCEW">
-        <ref role="2jchVA" node="5wv4$CeY3lY" resolve="Singleton" />
-      </node>
-    </node>
-    <node concept="3pFPbB" id="5wv4$CeZr$2" role="2j5j4v">
-      <property role="36jPZJ" value="false" />
-      <property role="TrG5h" value="bas" />
-      <node concept="2jchV_" id="5wv4$CeZr$u" role="36MCEW">
-        <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
-      </node>
-      <node concept="3pOcrW" id="5wv4$CeZr$p" role="2j5jbD" />
-    </node>
     <node concept="3pOcrA" id="2bb0VNYcAgR" role="2j5j5A">
       <property role="TrG5h" value="sdfdw" />
       <node concept="3dtAsP" id="2bb0VNYcAgS" role="2jg$Xp" />
@@ -215,8 +196,8 @@
             <node concept="2jchP0" id="3gkLCv0q0cy" role="2j_PeB">
               <ref role="hRIc0" node="2bb0VNYcAgR" resolve="sdfdw" />
             </node>
-            <node concept="3ctECo" id="3gkLCv0q0c7" role="2j_qme">
-              <ref role="AE91K" node="5wv4$CeY3m6" resolve="Singleton" />
+            <node concept="3ctECo" id="4LNIB3Hip08" role="2j_qme">
+              <ref role="AE91K" node="4LNIB3HioYk" resolve="Singleton" />
             </node>
           </node>
         </node>
@@ -227,6 +208,28 @@
             <property role="186dgp" value="d" />
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3pFPbB" id="5wv4$CeZr$2" role="2j5j4v">
+      <property role="36jPZJ" value="false" />
+      <property role="TrG5h" value="bas" />
+      <node concept="2xduHk" id="4LNIB3HioZ0" role="36MCEW">
+        <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
+      </node>
+      <node concept="3pOcrW" id="5wv4$CeZr$p" role="2j5jbD" />
+    </node>
+    <node concept="3couw1" id="4LNIB3HioYc" role="2jst77">
+      <node concept="3dtAsP" id="4LNIB3HioYd" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4LNIB3HioYg" role="hRHZh">
+        <node concept="17J3f2" id="4LNIB3HioYh" role="3jGSnO" />
+      </node>
+      <node concept="3pOcrZ" id="4LNIB3HioYi" role="2j5jbD" />
+    </node>
+    <node concept="1mVJFA" id="4LNIB3HioYk" role="1mVCRr">
+      <property role="36jPZJ" value="false" />
+      <property role="TrG5h" value="Singleton" />
+      <node concept="2xdVUp" id="4LNIB3HioYm" role="36MCEW">
+        <ref role="2jchVA" node="4LNIB3HioYb" resolve="Singleton" />
       </node>
     </node>
   </node>

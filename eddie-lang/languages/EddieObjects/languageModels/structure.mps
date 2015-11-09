@@ -162,8 +162,10 @@
     <ref role="1TJDcQ" node="1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsB9">
-    <property role="TrG5h" value="ClassType" />
+    <property role="TrG5h" value="AbstractClassType" />
     <property role="3GE5qa" value="type" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
     <node concept="1TJgyj" id="7KcPMNJfsBa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -318,6 +320,32 @@
     <property role="TrG5h" value="SingletonInstance" />
     <property role="R4oN_" value="reference to instance of singleton object" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+  </node>
+  <node concept="1TIwiD" id="4LNIB3Hh0jD">
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="SingletonType" />
+    <ref role="1TJDcQ" node="7KcPMNJfsB9" resolve="AbstractClassType" />
+    <node concept="1TJgyj" id="4LNIB3HhUN5" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20ksaX" node="7KcPMNJfsBa" />
+      <ref role="20lvS9" node="6bbx8uIDo0I" resolve="Singleton" />
+    </node>
+    <node concept="PrWs8" id="4LNIB3HibSn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4LNIB3Hh_4$">
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="ClassType" />
+    <ref role="1TJDcQ" node="7KcPMNJfsB9" resolve="AbstractClassType" />
+    <node concept="1TJgyj" id="4LNIB3HhUMc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6bbx8uIHCEi" resolve="Class" />
+      <ref role="20ksaX" node="7KcPMNJfsBa" />
+    </node>
   </node>
 </model>
 

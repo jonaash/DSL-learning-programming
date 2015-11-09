@@ -41,7 +41,6 @@
       <concept id="3394217739153894179" name="org.eddieprogramming.core.EddieBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
-        <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
@@ -62,13 +61,9 @@
       <concept id="3163049152356415489" name="org.eddieprogramming.core.EddieVariables.structure.VariableReference" flags="ng" index="AE91N">
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
-      <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
       <concept id="1954067712460073357" name="org.eddieprogramming.core.EddieVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
         <child id="1954067712460074322" name="variable" index="B81dD" />
         <child id="1954067712460074325" name="value" index="B81dI" />
-      </concept>
-      <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
-        <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
     </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects">
@@ -77,9 +72,10 @@
         <child id="8938755948421935778" name="expression" index="2j_qme" />
         <child id="8938755948422071435" name="operation" index="2j_PeB" />
       </concept>
-      <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.ClassType" flags="ng" index="2jchV_">
+      <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassType" flags="ng" index="2jchV_">
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
       </concept>
+      <concept id="5508951763384009961" name="org.eddieprogramming.core.EddieObjects.structure.SingletonType" flags="ng" index="2xdVUp" />
       <concept id="7118929354275056774" name="org.eddieprogramming.core.EddieObjects.structure.SingletonConstructor" flags="ng" index="3couw1" />
       <concept id="7118929354274734126" name="org.eddieprogramming.core.EddieObjects.structure.Singleton" flags="ng" index="3crwiD">
         <child id="6349814108903284625" name="instance" index="1mVCRr" />
@@ -133,7 +129,7 @@
         <node concept="1mVJFA" id="5wv4$Cf0ByR" role="1mVCRr">
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="TestSingletonDef" />
-          <node concept="2jchV_" id="5wv4$Cf0ByT" role="36MCEW">
+          <node concept="2xdVUp" id="4LNIB3HjugT" role="36MCEW">
             <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
           </node>
         </node>
@@ -153,18 +149,6 @@
               </node>
             </node>
             <node concept="17J3f2" id="5wv4$Cf0RJB" role="3jGSnO" />
-            <node concept="36Mw20" id="5wv4$Cf0RJQ" role="3jGSnO">
-              <node concept="AFBxM" id="5wv4$Cf0RJT" role="36Mw2n">
-                <property role="36jPZJ" value="false" />
-                <property role="TrG5h" value="singletonInstance" />
-                <node concept="2jchV_" id="5wv4$Cf0RJO" role="36MCEW">
-                  <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
-                </node>
-                <node concept="3ctECo" id="5wv4$Cf0RKf" role="36MIYJ">
-                  <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
@@ -193,40 +177,10 @@
           <node concept="17J3Kp" id="5wv4$CfeBQW" role="3jGSnO">
             <property role="17J3Nn" value="assign to singleton is not allowed" />
           </node>
-          <node concept="36Mw20" id="5wv4$CfeBSB" role="3jGSnO">
-            <node concept="AFBxM" id="5wv4$CfeBSE" role="36Mw2n">
-              <property role="36jPZJ" value="false" />
-              <property role="TrG5h" value="singletonInstance" />
-              <node concept="2jchV_" id="5wv4$CfeBS_" role="36MCEW">
-                <ref role="2jchVA" node="5wv4$Cf0ByI" resolve="TestSingletonDef" />
-              </node>
-              <node concept="3ctECo" id="5wv4$CfeBT7" role="36MIYJ">
-                <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
-              </node>
-            </node>
-          </node>
-          <node concept="17J3f2" id="5wv4$Cff77k" role="3jGSnO" />
-          <node concept="17J3Kp" id="5wv4$CffB2e" role="3jGSnO">
-            <property role="17J3Nn" value="use variable singletonInstace" />
-          </node>
-          <node concept="3dudH9" id="5wv4$CffB2O" role="3jGSnO">
-            <node concept="2jchP5" id="5wv4$CffB3b" role="3dudC3">
-              <node concept="2jchP0" id="5wv4$CffB3N" role="2j_PeB">
-                <ref role="hRIc0" node="5wv4$Cf0N5j" resolve="doSomtehing" />
-              </node>
-              <node concept="AE91N" id="5wv4$CffB2M" role="2j_qme">
-                <ref role="AE91K" node="5wv4$CfeBSE" resolve="singletonInstance" />
-              </node>
-            </node>
-          </node>
-          <node concept="17J3f2" id="5wv4$CffB1X" role="3jGSnO" />
-          <node concept="17J3Kp" id="5wv4$Cff770" role="3jGSnO">
-            <property role="17J3Nn" value="TODO: chack error when assign to singleton" />
-          </node>
           <node concept="3dudH9" id="2xfsEoC0U5N" role="3jGSnO">
             <node concept="B81uQ" id="2xfsEoC0U7g" role="3dudC3">
-              <node concept="AE91N" id="2xfsEoC0U7P" role="B81dI">
-                <ref role="AE91K" node="5wv4$CfeBSE" resolve="singletonInstance" />
+              <node concept="3ctECo" id="4LNIB3HjunO" role="B81dI">
+                <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
               </node>
               <node concept="3ctECo" id="2xfsEoC0U5L" role="B81dD">
                 <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />

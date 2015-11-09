@@ -73,12 +73,12 @@
       </concept>
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
-      <concept id="5508951763380606441" name="" flags="ng" index="2xoUYp" />
-      <concept id="5508951763380606442" name="" flags="ng" index="2xoUYq" />
-      <concept id="5508951763380606443" name="" flags="ng" index="2xoUYr" />
-      <concept id="5508951763380606444" name="" flags="ng" index="2xoUYs" />
-      <concept id="5508951763380606445" name="" flags="ng" index="2xoUYt" />
-      <concept id="5508951763380606446" name="" flags="ng" index="2xoUYu" />
+      <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
+      <concept id="5508951763380606442" name="org.eddieprogramming.support.EddieComparisonOperators.structure.GreaterOrEqual" flags="ng" index="2xoUYq" />
+      <concept id="5508951763380606443" name="org.eddieprogramming.support.EddieComparisonOperators.structure.GreaterThan" flags="ng" index="2xoUYr" />
+      <concept id="5508951763380606444" name="org.eddieprogramming.support.EddieComparisonOperators.structure.InequalityOperator" flags="ng" index="2xoUYs" />
+      <concept id="5508951763380606445" name="org.eddieprogramming.support.EddieComparisonOperators.structure.LessOrEqual" flags="ng" index="2xoUYt" />
+      <concept id="5508951763380606446" name="org.eddieprogramming.support.EddieComparisonOperators.structure.LessThan" flags="ng" index="2xoUYu" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -332,12 +332,12 @@
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="gt" />
           <node concept="36MBwV" id="6snOov99c2E" role="36MCEW" />
-          <node concept="2xoUYr" id="6snOov99c4d" role="36MIYJ">
-            <node concept="36Kqmr" id="6snOov99c4Q" role="3527S9">
-              <property role="36Kqnr" value="5" />
-            </node>
-            <node concept="AE91N" id="6snOov99c3Z" role="3527ZY">
+          <node concept="2xoUYr" id="4LNIB3HhvHT" role="36MIYJ">
+            <node concept="AE91N" id="4LNIB3HhvHV" role="3527ZY">
               <ref role="AE91K" node="1GufzGWhqoz" resolve="a" />
+            </node>
+            <node concept="36Kqmr" id="4LNIB3HhvHW" role="3527S9">
+              <property role="36Kqnr" value="5" />
             </node>
           </node>
         </node>

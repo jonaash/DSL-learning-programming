@@ -4,7 +4,7 @@
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjective" version="-1" />
+    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -280,7 +280,8 @@
       </node>
     </node>
     <node concept="3aamgX" id="7KcPMNJh$Dg" role="3acgRq">
-      <ref role="30HIoZ" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="t2e5:7KcPMNJfsB9" resolve="AbstractClassType" />
       <node concept="j$656" id="7KcPMNJh$FF" role="1lVwrX">
         <ref role="v9R2y" node="7KcPMNJh$FD" resolve="reduce_ClassType" />
       </node>
@@ -652,7 +653,7 @@
   <node concept="13MO4I" id="7KcPMNJh$FD">
     <property role="TrG5h" value="reduce_ClassType" />
     <property role="3GE5qa" value="type" />
-    <ref role="3gUMe" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+    <ref role="3gUMe" to="t2e5:7KcPMNJfsB9" resolve="AbstractClassType" />
     <node concept="9aQIb" id="7KcPMNJh$FI" role="13RCb5">
       <node concept="3clFbS" id="7KcPMNJh$FK" role="9aQI4">
         <node concept="3cpWs8" id="7KcPMNJh$FU" role="3cqZAp">
