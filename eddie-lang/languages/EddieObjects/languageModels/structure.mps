@@ -86,6 +86,9 @@
     <node concept="PrWs8" id="7KcPMNJ6unC" role="PzmwI">
       <ref role="PrY4T" to="356a:4pl5GY7LKmy" resolve="ScopeConcept" />
     </node>
+    <node concept="PrWs8" id="2FICFVpLYxN" role="PzmwI">
+      <ref role="PrY4T" to="dyrx:5wv4$Cg3XUq" resolve="ICanHaveComment" />
+    </node>
     <node concept="1TJgyj" id="7KcPMNJ6ups" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="extends" />

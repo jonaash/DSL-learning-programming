@@ -608,7 +608,9 @@
     <property role="3GE5qa" value="type.concrete" />
     <property role="34LRSv" value="none" />
     <property role="R4oN_" value="nothing" />
-    <ref role="1TJDcQ" node="1BMnhOnqAYu" resolve="SimpleType" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJwYJD">
     <property role="3GE5qa" value="method" />
@@ -655,7 +657,7 @@
     <property role="TrG5h" value="SimpleType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" node="2FICFVpQpMa" resolve="VariableType" />
   </node>
   <node concept="312cEu" id="6pJoTiqdIKL">
     <property role="TrG5h" value="PresentationUtil" />
@@ -1063,6 +1065,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5wv4$CfHFDB" resolve="AbstractTutorial" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2FICFVpQpMa">
+    <property role="3GE5qa" value="type" />
+    <property role="TrG5h" value="VariableType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
   </node>
 </model>
 
