@@ -2,7 +2,6 @@ package org.eddieprogramming.gui.view;
 
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
-import org.eddieprogramming.gui.api.message.appearance.Orientation;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.model.world.Cell;
 import org.eddieprogramming.gui.model.world.Thing;
@@ -68,13 +67,14 @@ class VisualCell extends JPanel {
             Thing thing = things.get(things.size() - 1);
 
             setAppearance(top, thing.getAppearance());
-            top.setToolTipText(thing.getName());
+            top.setToolTipText(thing.getLabelOrName());
 
             layeredPane.add(top, JLayeredPane.DRAG_LAYER);
 
         }else{
             // clear thing label appearance
             setAppearance(top, null);
+            top.setToolTipText(null);
         }
 
     }
@@ -91,7 +91,7 @@ class VisualCell extends JPanel {
                 if (appearance instanceof IconAppearance){
                     IconAppearance iconAppearance = (IconAppearance)appearance;
                     label.setFont(ICON_LARGE_FONT);
-                    label.setOriantation(Orientation.TURNED_LEFT);
+                    label.setOriantation(iconAppearance.getOrientation());
                     this.setBackground(iconAppearance.getBackground());
                     label.setForeground(iconAppearance.getColor());
                     label.setText(String.valueOf(iconAppearance.getIcon().getCode()));

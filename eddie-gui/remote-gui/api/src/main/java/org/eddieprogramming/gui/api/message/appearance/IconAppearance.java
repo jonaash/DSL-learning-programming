@@ -10,13 +10,20 @@ public class IconAppearance implements Appearance {
     private Color background;
     private Color color;
     private Flaticon icon;
+    private Orientation orientation = Orientation.NORMAL;
+
+    public IconAppearance(Color background, Color color, Flaticon icon, Orientation orientation) {
+        this.background = background;
+        this.color = color;
+        this.icon = icon;
+        this.orientation = orientation;
+    }
 
     public IconAppearance(Color background, Color color, Flaticon icon) {
         this.background = background;
         this.color = color;
         this.icon = icon;
     }
-
 
     public Color getColor() {
         return color;
@@ -40,5 +47,13 @@ public class IconAppearance implements Appearance {
 
     public void setIcon(Flaticon icon) {
         this.icon = icon;
+    }
+
+    public Orientation getOrientation() {
+        return orientation;
+    }
+
+    public void setOrientation(Orientation orientation) {
+        this.orientation = orientation;
     }
 }

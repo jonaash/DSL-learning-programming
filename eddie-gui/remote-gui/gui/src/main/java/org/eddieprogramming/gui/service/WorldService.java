@@ -87,6 +87,11 @@ public class WorldService {
         setState(GuiState.PAUSED);
     }
 
+    public void stop() {
+        logger.debug("Stop script.");
+        setState(GuiState.STOPED);
+    }
+
     public Result doStep(Step step) {
         // TODO: check proper state
         validator.validateStep(step);

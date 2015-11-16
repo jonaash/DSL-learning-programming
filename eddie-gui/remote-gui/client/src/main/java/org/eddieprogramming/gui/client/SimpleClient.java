@@ -4,6 +4,7 @@ import org.eddieprogramming.gui.api.message.Speed;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.appearance.Flaticon;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
+import org.eddieprogramming.gui.api.message.appearance.Orientation;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.api.message.command.ChangeCell;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
@@ -59,12 +60,31 @@ public class SimpleClient {
         step.add(t);
 
         ChangeCell c2 = new ChangeCell();
-        c2.setPosition(new Position(4,4));
-        c2.setAppearance(new IconAppearance(Color.WHITE, Color.RED, Flaticon.ROBOT));
+        c2.setPosition(new Position(5, 5));
+        c2.setAppearance(new IconAppearance(null, Color.RED, Flaticon.ROBOT, Orientation.TURNED_RIGHT));
+
+
+        ChangeCell c3 = new ChangeCell();
+        c3.setPosition(new Position(5, 4));
+        c3.setAppearance(new IconAppearance(Color.WHITE, Color.RED, Flaticon.HOUSE));
+        step.add(c3);
+
+        ChangeCell c4 = new ChangeCell();
+        c4.setPosition(new Position(6, 4));
+        c4.setAppearance(new IconAppearance(Color.WHITE, Color.RED, Flaticon.MATH));
+        step.add(c4);
+
+        ChangeCell c5 = new ChangeCell();
+        c5.setPosition(new Position(8, 4));
+        c5.setAppearance(new IconAppearance(Color.WHITE, Color.RED, Flaticon.ABC));
+        step.add(c5);
+
+        ChangeCell c6 = new ChangeCell();
+        c6.setPosition(new Position(5, 5));
+        c6.setAppearance(new IconAppearance(Color.WHITE, Color.GREEN, Flaticon.BINARY));
+        step.add(c6);
 
         step.add(c2);
-
-
 
         gui.doStep(step);
 

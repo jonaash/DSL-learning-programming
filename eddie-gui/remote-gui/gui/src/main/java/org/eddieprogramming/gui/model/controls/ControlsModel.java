@@ -46,11 +46,7 @@ public class ControlsModel {
     private ButtonModel clearMessages = new DefaultButtonModel();
 
     public ControlsModel(){
-        // disable buttons
-        start.setEnabled(false);
-        pause.setEnabled(false);
-        step.setEnabled(false);
-        stop.setEnabled(false);
+        disableControlButtons();
 
         clearMessages.addActionListener(new AbstractAction() {
             @Override
@@ -58,6 +54,14 @@ public class ControlsModel {
                 clearMessages();
             }
         });
+    }
+
+    public void disableControlButtons() {
+        // disable buttons
+        start.setEnabled(false);
+        pause.setEnabled(false);
+        step.setEnabled(false);
+        stop.setEnabled(false);
     }
 
     public void addMessage(String message){

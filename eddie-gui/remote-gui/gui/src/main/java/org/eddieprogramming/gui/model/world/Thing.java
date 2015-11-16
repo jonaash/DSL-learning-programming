@@ -13,6 +13,7 @@ public class Thing {
     private String name;
     private Cell position;
     private Appearance appearance;
+    private String label;
 
     private World home;
 
@@ -54,5 +55,17 @@ public class Thing {
 
     public String getName() {
         return name;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public String getLabelOrName() {
+        return label != null ? label : name;
     }
 }

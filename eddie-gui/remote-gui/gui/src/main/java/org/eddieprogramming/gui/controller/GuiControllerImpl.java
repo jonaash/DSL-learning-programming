@@ -85,6 +85,7 @@ public class GuiControllerImpl implements GuiController {
             protected void operation() {
                 controlsModel.getStart().setEnabled(true);
                 controlsModel.getStep().setEnabled(true);
+                controlsModel.getStop().setEnabled(true);
             }
         }.invokeLater();
     }
@@ -175,7 +176,8 @@ public class GuiControllerImpl implements GuiController {
     private class StopActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            worldService.stop();
+            controlsModel.disableControlButtons();
         }
     }
 }
