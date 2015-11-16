@@ -13,9 +13,9 @@
     <import index="rflv" ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/org.eddieprogramming.core.EddieBasic.generator.template.main@generator)" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(org.eddieprogramming.core.EddieObjects.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" implicit="true" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(org.eddieprogramming.core.EddieObjects.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -744,6 +744,24 @@
       <property role="TrG5h" value="Clazz" />
       <node concept="2tJIrI" id="7KcPMNJyQ9P" role="jymVt" />
       <node concept="3clFbW" id="7KcPMNJyQ9F" role="jymVt">
+        <node concept="37vLTG" id="442XwrAVdEe" role="3clF46">
+          <property role="TrG5h" value="i" />
+          <node concept="10Oyi0" id="442XwrAVdEf" role="1tU5fm" />
+          <node concept="2b32R4" id="442XwrAVdEg" role="lGtFl">
+            <node concept="3JmXsc" id="442XwrAVdEh" role="2P8S$">
+              <node concept="3clFbS" id="442XwrAVdEi" role="2VODD2">
+                <node concept="3clFbF" id="442XwrAVdEj" role="3cqZAp">
+                  <node concept="2OqwBi" id="442XwrAVdEk" role="3clFbG">
+                    <node concept="30H73N" id="442XwrAVdEl" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="442XwrAVei5" role="2OqNvi">
+                      <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cqZAl" id="7KcPMNJyQ9G" role="3clF45" />
         <node concept="3clFbS" id="7KcPMNJyQ9I" role="3clF47">
           <node concept="3clFbF" id="7KcPMNJzeyx" role="3cqZAp">

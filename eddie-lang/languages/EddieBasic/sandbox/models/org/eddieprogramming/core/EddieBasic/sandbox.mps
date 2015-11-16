@@ -13,8 +13,20 @@
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
+      <concept id="4942585347623820899" name="org.eddieprogramming.core.EddieBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
+      <concept id="4942585347623814440" name="org.eddieprogramming.core.EddieBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
       <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
+      <concept id="1242405555016616841" name="org.eddieprogramming.core.EddieBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
+        <child id="1242405555016843190" name="methods" index="sZtrN" />
+      </concept>
+      <concept id="1242405555015381639" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
+        <child id="6033906139725455995" name="body" index="hRHZh" />
+        <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
+      </concept>
+      <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+      </concept>
       <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="scene" index="2JdVqH" />
       </concept>
@@ -36,6 +48,10 @@
       </concept>
       <concept id="7730986614922691039" name="org.eddieprogramming.core.EddieBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
+      </concept>
+      <concept id="3776063756796240591" name="org.eddieprogramming.core.EddieBasic.structure.VoidType" flags="ng" index="3dtAsP" />
+      <concept id="3776063756797189811" name="org.eddieprogramming.core.EddieBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -59,10 +75,17 @@
   </registry>
   <node concept="1$vsWe" id="ATD4KvcqPN">
     <property role="TrG5h" value="Test" />
+    <node concept="29J987" id="2FICFVpWT96" role="sZtrN">
+      <property role="TrG5h" value="step2" />
+      <node concept="3dtAsP" id="2FICFVpWT97" role="2jg$Xp" />
+      <node concept="3jGSmg" id="2FICFVpWT9a" role="hRHZh">
+        <node concept="17J3f2" id="2FICFVpWT9b" role="3jGSnO" />
+      </node>
+    </node>
     <node concept="3jGSmg" id="ATD4KvcqPO" role="3jGSko">
       <node concept="2kpimK" id="7FfY7DNqSu1" role="3jGSnO">
         <node concept="16y5rI" id="7FfY7DNqSu4" role="16wSqL">
-          <property role="16xLMo" value="test" />
+          <property role="16xLMo" value="test3" />
         </node>
       </node>
       <node concept="3cjXi7" id="2PnTnxEU3i1" role="3jGSnO" />
@@ -82,6 +105,11 @@
       <node concept="3cjWHT" id="2xfsEoC8ti1" role="3jGSnO" />
       <node concept="3cjXi6" id="3eme_YBWz7t" role="3jGSnO" />
       <node concept="3cjWHS" id="jBG8nbFEN9" role="3jGSnO" />
+      <node concept="3dudH9" id="2FICFVpWT9w" role="3jGSnO">
+        <node concept="29J8_c" id="2FICFVpWT9z" role="3dudC3">
+          <ref role="hRIc0" node="2FICFVpWT96" resolve="step2" />
+        </node>
+      </node>
     </node>
     <node concept="2JdVq9" id="6snOov8gofs" role="2JdPrE">
       <ref role="2JdVqH" to="cc2e:5wv4$CfPqlc" resolve="TestScene" />

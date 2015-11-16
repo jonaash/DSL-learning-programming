@@ -307,7 +307,7 @@
               <node concept="2OqwBi" id="5KhqV1J$m1p" role="33vP2m">
                 <node concept="1PxgMI" id="5KhqV1J$m1q" role="2Oq$k0">
                   <property role="1BlNFB" value="true" />
-                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsB9" resolve="AbstractClassType" />
                   <node concept="37vLTw" id="5KhqV1J$m1r" role="1PxMeX">
                     <ref role="3cqZAo" node="5KhqV1J$m1g" resolve="operandType" />
                   </node>
@@ -488,7 +488,7 @@
               <node concept="2OqwBi" id="1jWJ98HBkpb" role="33vP2m">
                 <node concept="1PxgMI" id="1jWJ98HBkpc" role="2Oq$k0">
                   <property role="1BlNFB" value="true" />
-                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsB9" resolve="ClassType" />
+                  <ref role="1PxNhF" to="t2e5:7KcPMNJfsB9" resolve="AbstractClassType" />
                   <node concept="37vLTw" id="1jWJ98HBkpd" role="1PxMeX">
                     <ref role="3cqZAo" node="1jWJ98HBkoZ" resolve="operandType" />
                   </node>
@@ -794,6 +794,24 @@
             <node concept="1mIQ4w" id="5wv4$CeYB5q" role="2OqNvi">
               <node concept="chp4Y" id="5wv4$CeYBaV" role="cj9EA">
                 <ref role="cht4Q" to="t2e5:6bbx8uIDo0I" resolve="Singleton" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2FICFVq5a2X">
+    <property role="3GE5qa" value="class.member.definition" />
+    <ref role="1M2myG" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
+    <node concept="nKS2y" id="2FICFVq5a70" role="1MLUbF">
+      <node concept="3clFbS" id="2FICFVq5a71" role="2VODD2">
+        <node concept="3clFbF" id="2FICFVq5abV" role="3cqZAp">
+          <node concept="2OqwBi" id="2FICFVq5b6M" role="3clFbG">
+            <node concept="nLn13" id="2FICFVq5aw_" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="2FICFVq5bhm" role="2OqNvi">
+              <node concept="chp4Y" id="2FICFVq5bmR" role="cj9EA">
+                <ref role="cht4Q" to="t2e5:8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
               </node>
             </node>
           </node>

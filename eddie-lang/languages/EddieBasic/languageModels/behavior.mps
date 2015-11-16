@@ -3677,6 +3677,60 @@
         <ref role="ehGHo" to="dyrx:2RjUFdDsT1_" resolve="IVariableDeclaration" />
       </node>
     </node>
+    <node concept="13i0hz" id="2FICFVq5JJV" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="isInAssignmentZone" />
+      <node concept="3Tm1VV" id="2FICFVq5JJW" role="1B3o_S" />
+      <node concept="10P_77" id="2FICFVq5K9L" role="3clF45" />
+      <node concept="3clFbS" id="2FICFVq5JJY" role="3clF47">
+        <node concept="3clFbF" id="6N2I4lcf8Uc" role="3cqZAp">
+          <node concept="3clFbT" id="6N2I4lcf8Ub" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="2FICFVq5Kaa" role="lGtFl">
+        <node concept="TZ5HA" id="2FICFVq5Kab" role="TZ5H$">
+          <node concept="1dT_AC" id="2FICFVq5Kac" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks if variable is in zone where it can be assigned. " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2FICFVq5Kar" role="TZ5H$">
+          <node concept="1dT_AC" id="2FICFVq5Kas" role="1dT_Ay">
+            <property role="1dT_AB" value="E.g. field variable in the class constructor of its class." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2FICFVq5Kax" role="TZ5H$">
+          <node concept="1dT_AC" id="2FICFVq5Kay" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="2FICFVq5KaD" role="TZ5H$">
+          <node concept="1dT_AC" id="2FICFVq5KaE" role="1dT_Ay">
+            <property role="1dT_AB" value="Result of this method should be ignored when the variable is mutable." />
+          </node>
+        </node>
+        <node concept="x79VA" id="2FICFVq5Kad" role="x79VK">
+          <property role="x79VB" value="true if it is in place where immutable can still be assigned" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="442XwrATxsy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableReferenceIfExists" />
+      <ref role="13i0hy" node="442XwrATvlC" resolve="getVariableReferenceIfExists" />
+      <node concept="3Tm1VV" id="442XwrATxsz" role="1B3o_S" />
+      <node concept="3clFbS" id="442XwrATxsL" role="3clF47">
+        <node concept="3cpWs6" id="442XwrATxtv" role="3cqZAp">
+          <node concept="13iPFW" id="442XwrATxtI" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="442XwrATxsM" role="3clF45">
+        <ref role="ehGHo" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="1BMnhOniM6N">
     <property role="3GE5qa" value="expression.operator" />
@@ -4200,7 +4254,43 @@
           </node>
         </node>
         <node concept="x79VA" id="5xGSFEu9T9z" role="x79VK">
-          <property role="x79VB" value="its declaration if ot is variable reference" />
+          <property role="x79VB" value="its declaration if it is variable reference" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="442XwrATvlC" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getVariableReferenceIfExists" />
+      <node concept="3Tm1VV" id="442XwrATvlD" role="1B3o_S" />
+      <node concept="3Tqbb2" id="442XwrATvlE" role="3clF45">
+        <ref role="ehGHo" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+      </node>
+      <node concept="3clFbS" id="442XwrATvlF" role="3clF47" />
+      <node concept="P$JXv" id="442XwrATvlG" role="lGtFl">
+        <node concept="TZ5HA" id="442XwrATvlH" role="TZ5H$">
+          <node concept="1dT_AC" id="442XwrATvlI" role="1dT_Ay">
+            <property role="1dT_AB" value="If " />
+          </node>
+          <node concept="1dT_AA" id="442XwrATvlJ" role="1dT_Ay">
+            <node concept="92FcH" id="442XwrATvlK" role="qph3F">
+              <node concept="VXe0Z" id="442XwrATvlL" role="92FcQ">
+                <ref role="VXe0S" node="5xGSFEu9SCg" resolve="isVariableReference" />
+              </node>
+              <node concept="TZ5HA" id="442XwrATvlM" role="2XjZqd" />
+            </node>
+          </node>
+          <node concept="1dT_AC" id="442XwrATvlN" role="1dT_Ay">
+            <property role="1dT_AB" value=" returns it as reference " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="442XwrATvlO" role="TZ5H$">
+          <node concept="1dT_AC" id="442XwrATvlP" role="1dT_Ay">
+            <property role="1dT_AB" value="Otherwise returns null." />
+          </node>
+        </node>
+        <node concept="x79VA" id="442XwrATvlQ" role="x79VK">
+          <property role="x79VB" value="its reference if it is variable reference" />
         </node>
       </node>
     </node>

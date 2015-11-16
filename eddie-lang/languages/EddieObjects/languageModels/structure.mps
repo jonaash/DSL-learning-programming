@@ -102,10 +102,12 @@
   <node concept="1TIwiD" id="8gmNnrJKBi">
     <property role="TrG5h" value="FieldVariableDeclaration" />
     <property role="3GE5qa" value="class.member.definition" />
-    <property role="34LRSv" value="class" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="7KcPMNJ6unz" role="PzmwI">
       <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
+    </node>
+    <node concept="PrWs8" id="2FICFVq5AAE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="PlHQZ" id="8gmNnrJKNw">
@@ -132,12 +134,14 @@
     <property role="3GE5qa" value="class.visibility" />
     <property role="TrG5h" value="Public" />
     <property role="34LRSv" value="public" />
+    <property role="R4oN_" value="It can be accessed from anywhere." />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9Ra">
     <property role="3GE5qa" value="class.visibility" />
     <property role="TrG5h" value="Private" />
     <property role="34LRSv" value="private" />
+    <property role="R4oN_" value="It can be accessed only from its own class." />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9Rj">
@@ -341,6 +345,7 @@
   <node concept="1TIwiD" id="4LNIB3Hh_4$">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="ClassType" />
+    <property role="R4oN_" value="class type" />
     <ref role="1TJDcQ" node="7KcPMNJfsB9" resolve="AbstractClassType" />
     <node concept="1TJgyj" id="4LNIB3HhUMc" role="1TKVEi">
       <property role="20lmBu" value="reference" />

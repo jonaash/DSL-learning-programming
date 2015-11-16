@@ -21,15 +21,24 @@
       <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
         <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
+      <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
+        <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
+      <concept id="3267332360033093774" name="org.eddieprogramming.core.EddieBasic.structure.Repeat" flags="ng" index="17JERQ">
+        <child id="3394217739175032606" name="iteration" index="36Ktwi" />
       </concept>
       <concept id="7730986614922691039" name="org.eddieprogramming.core.EddieBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
       </concept>
       <concept id="3776063756787937843" name="org.eddieprogramming.core.EddieBasic.structure.UnaryOperator" flags="ng" index="3cXjv9">
         <child id="3776063756787938808" name="expression" index="3cXj02" />
+      </concept>
+      <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
+        <property id="3776063756796243785" name="value" index="3dtAEN" />
       </concept>
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
@@ -215,6 +224,30 @@
       <node concept="2kpimK" id="6kvBWKzDg3_" role="3jGSnO">
         <node concept="16y5rI" id="6kvBWKzDg3A" role="16wSqL">
           <property role="16xLMo" value="Konec" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="4MOnZ90url_">
+    <property role="TrG5h" value="Infinite" />
+    <node concept="3jGSmg" id="4MOnZ90urlA" role="3jGSko">
+      <node concept="3cjXi6" id="4MOnZ90urvR" role="3jGSnO" />
+      <node concept="3cjWHT" id="4MOnZ90urvX" role="3jGSnO" />
+      <node concept="3cjWHT" id="4MOnZ90urw5" role="3jGSnO" />
+      <node concept="2LFUJI" id="4MOnZ90urwl" role="3jGSnO">
+        <node concept="3jGSmg" id="4MOnZ90urwn" role="3azrUc">
+          <node concept="17JERQ" id="4MOnZ90urwM" role="3jGSnO">
+            <node concept="3jGSmg" id="4MOnZ90urwO" role="3azrUc">
+              <node concept="3cjWHT" id="4MOnZ90urx8" role="3jGSnO" />
+              <node concept="3cjXi6" id="4MOnZ90urxe" role="3jGSnO" />
+            </node>
+            <node concept="36Kqmr" id="4MOnZ90urx2" role="36Ktwi">
+              <property role="36Kqnr" value="4" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dtAEM" id="4MOnZ90urwz" role="2LFUC5">
+          <property role="3dtAEN" value="true" />
         </node>
       </node>
     </node>

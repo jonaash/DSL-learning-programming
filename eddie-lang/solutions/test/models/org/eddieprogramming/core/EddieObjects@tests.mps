@@ -16,6 +16,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -38,6 +39,14 @@
       <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
       </concept>
+      <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
+      </concept>
+      <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
+      <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
+        <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
+      <concept id="3394217739174290875" name="org.eddieprogramming.core.EddieBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="org.eddieprogramming.core.EddieBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
@@ -75,6 +84,10 @@
       <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassType" flags="ng" index="2jchV_">
         <reference id="8938755948415928778" name="definition" index="2jchVA" />
       </concept>
+      <concept id="8938755948415899245" name="org.eddieprogramming.core.EddieObjects.structure.ThisExpression" flags="ng" index="2jco51" />
+      <concept id="8938755948421935782" name="org.eddieprogramming.core.EddieObjects.structure.FieldReference" flags="ng" index="2j_qma">
+        <reference id="8938755948422938242" name="declaration" index="2jD6AI" />
+      </concept>
       <concept id="5508951763384009961" name="org.eddieprogramming.core.EddieObjects.structure.SingletonType" flags="ng" index="2xdVUp" />
       <concept id="7118929354275056774" name="org.eddieprogramming.core.EddieObjects.structure.SingletonConstructor" flags="ng" index="3couw1" />
       <concept id="7118929354274734126" name="org.eddieprogramming.core.EddieObjects.structure.Singleton" flags="ng" index="3crwiD">
@@ -83,9 +96,11 @@
       <concept id="7118929354276286111" name="org.eddieprogramming.core.EddieObjects.structure.SingletonReference" flags="ng" index="3ctECo" />
       <concept id="6349814108903303340" name="org.eddieprogramming.core.EddieObjects.structure.SingletonInstance" flags="ng" index="1mVJFA" />
       <concept id="148719074581307086" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassDefinition" flags="ng" index="3pFwnV">
+        <child id="8938755948413576755" name="fields" index="2j5j4v" />
         <child id="8938755948413576778" name="methods" index="2j5j5A" />
         <child id="8938755948420073195" name="constructor" index="2jst77" />
       </concept>
+      <concept id="148719074581350866" name="org.eddieprogramming.core.EddieObjects.structure.FieldVariableDeclaration" flags="ng" index="3pFPbB" />
       <concept id="148719074581351648" name="org.eddieprogramming.core.EddieObjects.structure.IClassMember" flags="ng" index="3pFPvl">
         <child id="8938755948413576645" name="visibility" index="2j5jbD" />
       </concept>
@@ -110,6 +125,35 @@
         <node concept="3couw1" id="5wv4$Cf0ByJ" role="2jst77">
           <node concept="3dtAsP" id="5wv4$Cf0ByK" role="2jg$Xp" />
           <node concept="3jGSmg" id="5wv4$Cf0ByN" role="hRHZh">
+            <node concept="3dudH9" id="442XwrAUDuQ" role="3jGSnO">
+              <node concept="2jchP5" id="442XwrAUDuN" role="3dudC3">
+                <node concept="2j_qma" id="442XwrAUDvb" role="2j_PeB">
+                  <ref role="2jD6AI" node="442XwrAUDtw" resolve="name" />
+                  <node concept="7CXmI" id="442XwrAUHv9" role="lGtFl">
+                    <node concept="1TM$A" id="442XwrAUHva" role="7EUXB" />
+                  </node>
+                </node>
+                <node concept="2jco51" id="442XwrAUDuL" role="2j_qme" />
+              </node>
+            </node>
+            <node concept="17J3f2" id="442XwrAUDx4" role="3jGSnO" />
+            <node concept="17J3Kp" id="442XwrAUD$4" role="3jGSnO">
+              <property role="17J3Nn" value="can be initialized in constructor" />
+            </node>
+            <node concept="3dudH9" id="442XwrAUDxI" role="3jGSnO">
+              <node concept="B81uQ" id="442XwrAUDyz" role="3dudC3">
+                <node concept="16y5rI" id="442XwrAUDz1" role="B81dI">
+                  <property role="16xLMo" value="Karel" />
+                </node>
+                <node concept="2jchP5" id="442XwrAUDxF" role="B81dD">
+                  <node concept="2j_qma" id="442XwrAUDyk" role="2j_PeB">
+                    <ref role="2jD6AI" node="442XwrAUDtw" resolve="name" />
+                  </node>
+                  <node concept="2jco51" id="442XwrAUDxD" role="2j_qme" />
+                </node>
+              </node>
+            </node>
+            <node concept="17J3f2" id="442XwrAUDw4" role="3jGSnO" />
             <node concept="3dudH9" id="5wv4$Cf0B$3" role="3jGSnO">
               <node concept="2jchP5" id="5wv4$Cf0N54" role="3dudC3">
                 <node concept="2jchP0" id="5wv4$Cf0N5y" role="2j_PeB">
@@ -148,8 +192,35 @@
                 </node>
               </node>
             </node>
-            <node concept="17J3f2" id="5wv4$Cf0RJB" role="3jGSnO" />
+            <node concept="3dudH9" id="442XwrAUD_m" role="3jGSnO">
+              <node concept="B81uQ" id="442XwrAUD_T" role="3dudC3">
+                <node concept="36Kqmr" id="442XwrAUDAg" role="B81dI">
+                  <property role="36Kqnr" value="5" />
+                </node>
+                <node concept="2jchP5" id="442XwrAUD_j" role="B81dD">
+                  <node concept="2j_qma" id="442XwrAUD_F" role="2j_PeB">
+                    <ref role="2jD6AI" node="442XwrAUD$x" resolve="count" />
+                  </node>
+                  <node concept="2jco51" id="442XwrAUD_h" role="2j_qme" />
+                </node>
+                <node concept="7CXmI" id="442XwrAUHyk" role="lGtFl">
+                  <node concept="1TM$A" id="442XwrAUHyl" role="7EUXB" />
+                </node>
+              </node>
+            </node>
           </node>
+        </node>
+        <node concept="3pFPbB" id="442XwrAUDtw" role="2j5j4v">
+          <property role="36jPZJ" value="false" />
+          <property role="TrG5h" value="name" />
+          <node concept="3pOcrZ" id="442XwrAUDtx" role="2j5jbD" />
+          <node concept="36Kql8" id="442XwrAUDtv" role="36MCEW" />
+        </node>
+        <node concept="3pFPbB" id="442XwrAUD$x" role="2j5j4v">
+          <property role="36jPZJ" value="false" />
+          <property role="TrG5h" value="count" />
+          <node concept="3pOcrZ" id="442XwrAUD$y" role="2j5jbD" />
+          <node concept="36MCER" id="442XwrAUD_4" role="36MCEW" />
         </node>
       </node>
       <node concept="7CXmI" id="5wv4$Cf0RLc" role="lGtFl">
@@ -184,6 +255,9 @@
               </node>
               <node concept="3ctECo" id="2xfsEoC0U5L" role="B81dD">
                 <ref role="AE91K" node="5wv4$Cf0ByR" resolve="TestSingletonDef" />
+                <node concept="7CXmI" id="442XwrAUOk2" role="lGtFl">
+                  <node concept="29bkU" id="442XwrAUOk3" role="7EUXB" />
+                </node>
               </node>
               <node concept="7CXmI" id="2xfsEoC0Uh4" role="lGtFl">
                 <node concept="1TM$A" id="2xfsEoC0Uh5" role="7EUXB" />

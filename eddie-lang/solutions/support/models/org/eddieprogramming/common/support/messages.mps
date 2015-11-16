@@ -786,22 +786,23 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2RjUFdDfHrS" role="3cqZAp">
-          <node concept="37vLTI" id="2RjUFdDfKGp" role="3clFbG">
-            <node concept="Xl_RD" id="2RjUFdDfKKj" role="37vLTx">
-              <property role="Xl_RC" value="Change Return Type to {0}" />
+        <node concept="3clFbF" id="2FICFVpUMvk" role="3cqZAp">
+          <node concept="37vLTI" id="2FICFVpUMvl" role="3clFbG">
+            <node concept="Xl_RD" id="2FICFVpUMvm" role="37vLTx">
+              <property role="Xl_RC" value="Fix Parameters Count" />
             </node>
-            <node concept="3EllGN" id="2RjUFdDfKjH" role="37vLTJ">
-              <node concept="Xl_RD" id="2RjUFdDfKnG" role="3ElVtu">
-                <property role="Xl_RC" value="intention.menu.change.function.type" />
+            <node concept="3EllGN" id="2FICFVpUMvn" role="37vLTJ">
+              <node concept="Xl_RD" id="2FICFVpUMvo" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.constructor.call.fix.parameters.count" />
               </node>
-              <node concept="37vLTw" id="2RjUFdDfHrQ" role="3ElQJh">
+              <node concept="37vLTw" id="2FICFVpUMvt" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="jBG8nbHO3I" role="3cqZAp" />
+        <node concept="3clFbH" id="2FICFVpUMgE" role="3cqZAp" />
         <node concept="3clFbF" id="3uMihSQAiuu" role="3cqZAp">
           <node concept="37vLTI" id="3uMihSQAiuv" role="3clFbG">
             <node concept="Xl_RD" id="3uMihSQAiuw" role="37vLTx">

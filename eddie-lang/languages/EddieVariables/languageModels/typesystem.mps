@@ -28,6 +28,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -2254,7 +2255,7 @@
           <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
           <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
           <node concept="Xl_RD" id="5wv4$Cf78vN" role="37wK5m">
-            <property role="Xl_RC" value="{0}" />
+            <property role="Xl_RC" value="Variable reference: {0}" />
           </node>
           <node concept="2OqwBi" id="5wv4$Cf78Bp" role="37wK5m">
             <node concept="1YBJjd" id="5wv4$Cf78zs" role="2Oq$k0">
@@ -2290,19 +2291,77 @@
       <node concept="3clFbH" id="5wv4$Cf78kd" role="3cqZAp" />
       <node concept="3clFbJ" id="5xGSFEudrR_" role="3cqZAp">
         <node concept="3clFbS" id="5xGSFEudrRA" role="3clFbx">
-          <node concept="2MkqsV" id="5xGSFEuduJj" role="3cqZAp">
-            <node concept="1YBJjd" id="5xGSFEuduL6" role="2OEOjV">
-              <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
-            </node>
-            <node concept="2YIFZM" id="5xGSFEuduJY" role="2MkJ7o">
-              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
-              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-              <node concept="Xl_RD" id="5xGSFEudr1c" role="37wK5m">
-                <property role="Xl_RC" value="error.assignment.into.immutable.variable" />
+          <node concept="3cpWs8" id="6N2I4lchFmq" role="3cqZAp">
+            <node concept="3cpWsn" id="6N2I4lchFmt" role="3cpWs9">
+              <property role="TrG5h" value="reference" />
+              <node concept="3Tqbb2" id="6N2I4lchFmo" role="1tU5fm">
+                <ref role="ehGHo" to="dyrx:7KcPMNJI2DJ" resolve="IVariableReference" />
+              </node>
+              <node concept="2EnYce" id="442XwrATtQn" role="33vP2m">
+                <node concept="2EnYce" id="442XwrATuiP" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6N2I4lcfvsY" role="2Oq$k0">
+                    <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
+                  </node>
+                  <node concept="3TrEf2" id="6N2I4lcfvsZ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="442XwrATA$1" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:442XwrATvlC" resolve="getVariableReferenceIfExists" />
+                </node>
               </node>
             </node>
-            <node concept="2OE7Q9" id="5wv4$CfeCcw" role="2OEWyd">
-              <ref role="2OEe5H" to="3y9h:1GufzGWfyPi" />
+          </node>
+          <node concept="34ab3g" id="442XwrAQMw9" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="2YIFZM" id="442XwrAQMwa" role="34bqiv">
+              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <node concept="Xl_RD" id="442XwrAQMwb" role="37wK5m">
+                <property role="Xl_RC" value="Variable declaration {0}" />
+              </node>
+              <node concept="37vLTw" id="442XwrAQOZp" role="37wK5m">
+                <ref role="3cqZAo" node="5xGSFEudt3h" resolve="declaration" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="6N2I4lcibGd" role="3cqZAp" />
+          <node concept="3clFbJ" id="6N2I4lchFqb" role="3cqZAp">
+            <node concept="3clFbS" id="6N2I4lchFqd" role="3clFbx">
+              <node concept="2MkqsV" id="5xGSFEuduJj" role="3cqZAp">
+                <node concept="1YBJjd" id="5xGSFEuduL6" role="2OEOjV">
+                  <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
+                </node>
+                <node concept="2YIFZM" id="5xGSFEuduJY" role="2MkJ7o">
+                  <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                  <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                  <node concept="Xl_RD" id="5xGSFEudr1c" role="37wK5m">
+                    <property role="Xl_RC" value="error.assignment.into.immutable.variable" />
+                  </node>
+                </node>
+                <node concept="2OE7Q9" id="5wv4$CfeCcw" role="2OEWyd">
+                  <ref role="2OEe5H" to="3y9h:1GufzGWfyPi" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6N2I4lchFqc" role="3cqZAp" />
+            </node>
+            <node concept="22lmx$" id="6N2I4lchH3I" role="3clFbw">
+              <node concept="3fqX7Q" id="6N2I4lchHvI" role="3uHU7w">
+                <node concept="2OqwBi" id="6N2I4lchHvK" role="3fr31v">
+                  <node concept="37vLTw" id="6N2I4lchHvL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6N2I4lchFmt" resolve="reference" />
+                  </node>
+                  <node concept="2qgKlT" id="6N2I4lchHvM" role="2OqNvi">
+                    <ref role="37wK5l" to="ljn0:2FICFVq5JJV" resolve="isInAssignmentZone" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6N2I4lchFs8" role="3uHU7B">
+                <node concept="37vLTw" id="6N2I4lchFra" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6N2I4lchFmt" resolve="reference" />
+                </node>
+                <node concept="3w_OXm" id="6N2I4lchFZq" role="2OqNvi" />
+              </node>
             </node>
           </node>
         </node>
