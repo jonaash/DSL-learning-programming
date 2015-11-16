@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="SceneDefinition" uuid="114ed756-029f-4e38-b9de-d8e88dac495b">
+  <exported-language name="abbb403e-0a41-4661-9279-eb17d3806875(org.eddieprogramming.support.EddieBaseLanguageObjects)" />
+  <exported-language name="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe(org.eddieprogramming.support.EddieComparisonOperators)" />
+  <exported-language name="22533a47-d9a8-4eae-8829-e07835315c1f(org.eddieprogramming.world.EddieSceneConstruction)" />
+  <extendedDevKits>
+    <extendedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</extendedDevKit>
+  </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>645c5093-3842-40e7-938b-f9d0f9cd529b(org.eddieprogramming.core.runtime)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
