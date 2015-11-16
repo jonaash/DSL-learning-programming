@@ -1,6 +1,6 @@
 package org.eddieprogramming.gui.model.world;
 
-import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
+import org.eddieprogramming.gui.api.message.appearance.Appearance;
 
 /**
  * @author jonasklimes
@@ -12,7 +12,7 @@ public class Thing {
      */
     private String name;
     private Cell position;
-    private TextAppearance appearance;
+    private Appearance appearance;
 
     private World home;
 
@@ -44,11 +44,11 @@ public class Thing {
         this.home = home;
     }
 
-    public TextAppearance getAppearance() {
+    public Appearance getAppearance() {
         return appearance;
     }
 
-    public void setAppearance(TextAppearance appearance) {
+    public void setAppearance(Appearance appearance) {
         this.appearance = appearance;
     }
 

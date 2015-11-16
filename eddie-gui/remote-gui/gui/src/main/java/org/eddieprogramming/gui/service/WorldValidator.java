@@ -4,6 +4,7 @@ import org.apache.commons.lang3.Validate;
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
+import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.api.message.command.Command;
 import org.eddieprogramming.gui.model.WorldHolder;
@@ -45,7 +46,7 @@ public class WorldValidator {
     }
 
     public void validateAppearance(Appearance a) {
-        if (!(a instanceof TextAppearance)) {
+        if (!(a instanceof TextAppearance) && !(a instanceof IconAppearance)) {
             throw new GuiOperationException("Unsupported appearance: %s", a);
         }
 

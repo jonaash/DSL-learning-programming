@@ -3,7 +3,6 @@ package org.eddieprogramming.gui.service;
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
 import org.eddieprogramming.gui.api.message.Result;
 import org.eddieprogramming.gui.api.message.Step;
-import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.api.message.command.Alert;
 import org.eddieprogramming.gui.api.message.command.ChangeCell;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
@@ -145,6 +144,9 @@ public class WorldService {
     }
 
     public synchronized Result getResult() {
+        if (getState() == GuiState.STOPED){
+            return Result.CANCELLED;
+        }
         return Result.SUCCESS;
     }
 
@@ -186,7 +188,7 @@ public class WorldService {
 
         Cell cell = world.getCell(command.getPosition().getRow(), command.getPosition().getCol());
 
-        cell.setAppearance((TextAppearance) command.getAppearance());
+        cell.setAppearance(command.getAppearance());
 
     }
 
@@ -203,7 +205,7 @@ public class WorldService {
 
         if (command.getNewAppearance() != null) {
             validator.validateAppearance(command.getNewAppearance());
-            thing.setAppearance((TextAppearance) command.getNewAppearance());
+            thing.setAppearance(command.getNewAppearance());
         }
 
         if (command.getNewPosition() != null) {

@@ -28,7 +28,12 @@ public enum GuiState {
     /**
      * Script is paused.
      */
-    PAUSED(true, true);
+    PAUSED(true, true),
+
+    /**
+     * Script was stopped.
+     */
+    STOPED(false,false);
 
 
     GuiState(boolean canDoStep, boolean readyForRun){

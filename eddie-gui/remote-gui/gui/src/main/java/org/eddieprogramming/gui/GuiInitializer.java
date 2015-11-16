@@ -5,6 +5,7 @@ import com.googlecode.tinydi.DependencyRepository;
 import org.eddieprogramming.gui.controller.GuiController;
 import org.eddieprogramming.gui.server.GuiServer;
 import org.eddieprogramming.gui.view.MainView;
+import org.eddieprogramming.gui.view.icons.FontIconProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,6 +45,7 @@ public class GuiInitializer {
             return;
         }
 
+        FontIconProvider.initialize();
 
         // init dependency injection container
         ClassfileDependencyScanner scanner = new ClassfileDependencyScanner();

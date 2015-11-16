@@ -2,6 +2,8 @@ package org.eddieprogramming.gui.client;
 
 import org.eddieprogramming.gui.api.message.Speed;
 import org.eddieprogramming.gui.api.message.Step;
+import org.eddieprogramming.gui.api.message.appearance.Flaticon;
+import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.api.message.command.ChangeCell;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
@@ -55,6 +57,14 @@ public class SimpleClient {
                 ">"));
 
         step.add(t);
+
+        ChangeCell c2 = new ChangeCell();
+        c2.setPosition(new Position(4,4));
+        c2.setAppearance(new IconAppearance(Color.WHITE, Color.RED, Flaticon.ROBOT));
+
+        step.add(c2);
+
+
 
         gui.doStep(step);
 

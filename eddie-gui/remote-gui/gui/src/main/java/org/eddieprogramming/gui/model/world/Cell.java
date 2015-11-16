@@ -1,6 +1,6 @@
 package org.eddieprogramming.gui.model.world;
 
-import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
+import org.eddieprogramming.gui.api.message.appearance.Appearance;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Cell {
     protected List<Thing> things = new ArrayList<Thing>();
-    protected TextAppearance appearance;
+    protected Appearance appearance;
 
     void addThink(Thing thing) {
         things.add(thing);
@@ -21,12 +21,12 @@ public class Cell {
         things.remove(thing);
     }
 
-    public TextAppearance getAppearance() {
+    public Appearance getAppearance() {
 
         return appearance;
     }
 
-    public void setAppearance(TextAppearance appearance) {
+    public void setAppearance(Appearance appearance) {
 
         this.appearance = appearance;
     }

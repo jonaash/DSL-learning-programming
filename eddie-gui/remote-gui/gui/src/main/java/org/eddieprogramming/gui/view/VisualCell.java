@@ -1,8 +1,13 @@
 package org.eddieprogramming.gui.view;
 
+import org.eddieprogramming.gui.api.message.appearance.Appearance;
+import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
+import org.eddieprogramming.gui.api.message.appearance.Orientation;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.model.world.Cell;
 import org.eddieprogramming.gui.model.world.Thing;
+import org.eddieprogramming.gui.util.OrientedJLabel;
+import org.eddieprogramming.gui.view.icons.FontIconProvider;
 
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
@@ -20,11 +25,16 @@ class VisualCell extends JPanel {
 
     private static final long serialVersionUID = 4284114890877956865L;
 
-    private static final Font FONT = new Font("Arial", Font.BOLD, (int) Math.round(WorldView.CELL_SIZE * 0.7));
+    private static final Font TEXT_FONT = new Font("Arial", Font.BOLD, (int) Math.round(WorldView.CELL_SIZE * 0.7));
+
+    private static final Font ICON_LARGE_FONT = FontIconProvider.getFlaticonFont().deriveFont((float)Math.round
+            (WorldView.CELL_SIZE * 0.8));
+
+
 
     private JLayeredPane layeredPane;
-    private JLabel base = new JLabel();
-    private JLabel top = new JLabel();
+    private OrientedJLabel base = new OrientedJLabel();
+    private OrientedJLabel top = new OrientedJLabel();
 
     VisualCell() {
 
@@ -45,7 +55,7 @@ class VisualCell extends JPanel {
     private void initLayerLabel(JLabel label){
         label.setVerticalTextPosition(JLabel.BOTTOM);
         label.setHorizontalAlignment(JLabel.CENTER);
-        label.setFont(FONT);
+        label.setFont(TEXT_FONT);
         label.setBounds(0, 0, WorldView.CELL_SIZE, WorldView.CELL_SIZE);
     }
 
@@ -69,17 +79,29 @@ class VisualCell extends JPanel {
 
     }
 
-    private void setAppearance(JLabel label, TextAppearance appearance) {
-        if (appearance != null) {
-            this.setBackground(appearance.getBackground());
-            label.setForeground(appearance.getColor());
-            label.setText(appearance.getText());
+    private void setAppearance(OrientedJLabel label, Appearance appearance) {
+        if (appearance != null){
+            if (appearance instanceof TextAppearance){
+                TextAppearance textAppearance = (TextAppearance)appearance;
+                label.setFont(TEXT_FONT);
+                this.setBackground(textAppearance.getBackground());
+                label.setForeground(textAppearance.getColor());
+                label.setText(textAppearance.getText());
+            } else {
+                if (appearance instanceof IconAppearance){
+                    IconAppearance iconAppearance = (IconAppearance)appearance;
+                    label.setFont(ICON_LARGE_FONT);
+                    label.setOriantation(Orientation.TURNED_LEFT);
+                    this.setBackground(iconAppearance.getBackground());
+                    label.setForeground(iconAppearance.getColor());
+                    label.setText(String.valueOf(iconAppearance.getIcon().getCode()));
+                }
+            }
         } else {
             label.setForeground(null);
             label.setText(null);
         }
 
     }
-
 
 }
