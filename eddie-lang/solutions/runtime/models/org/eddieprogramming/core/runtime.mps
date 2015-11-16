@@ -3635,6 +3635,31 @@
                   <property role="Xl_RC" value="Status error" />
                 </node>
               </node>
+              <node concept="3zACq4" id="1UlhK23WaVP" role="3cqZAp" />
+            </node>
+          </node>
+          <node concept="3KbdKl" id="1UlhK23VYHK" role="3KbHQx">
+            <node concept="Rm8GO" id="1UlhK23WaM4" role="3Kbmr1">
+              <ref role="Rm8GQ" to="dr63:~Status.CANCELLED" resolve="CANCELLED" />
+              <ref role="1Px2BO" to="dr63:~Status" resolve="Status" />
+            </node>
+            <node concept="3clFbS" id="1UlhK23VYHM" role="3Kbo56">
+              <node concept="34ab3g" id="1UlhK23WaOF" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="Xl_RD" id="1UlhK23WaOH" role="34bqiv">
+                  <property role="Xl_RC" value="Status cancelled. Script exits." />
+                </node>
+              </node>
+              <node concept="3clFbF" id="1UlhK23WcbS" role="3cqZAp">
+                <node concept="2YIFZM" id="1UlhK23Wcwc" role="3clFbG">
+                  <ref role="37wK5l" to="e2lb:~System.exit(int):void" resolve="exit" />
+                  <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+                  <node concept="3cmrfG" id="1UlhK23WcwF" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3zACq4" id="1UlhK23WaVy" role="3cqZAp" />
             </node>
           </node>
           <node concept="3clFbS" id="5wv4$CfiKyG" role="3Kb1Dw">
