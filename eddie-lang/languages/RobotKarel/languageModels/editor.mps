@@ -100,38 +100,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="6bbx8uIx502">
-    <property role="3GE5qa" value="command" />
-    <ref role="1XX52x" to="758v:6bbx8uIx4ZY" resolve="LeftTurn" />
-    <node concept="PMmxH" id="6bbx8uIx503" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="y2uj:1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6bbx8uIx504">
-    <property role="3GE5qa" value="command" />
-    <ref role="1XX52x" to="758v:6bbx8uIx501" resolve="Step" />
-    <node concept="PMmxH" id="6bbx8uIx505" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="y2uj:1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6bbx8uIx506">
-    <property role="3GE5qa" value="command" />
-    <ref role="1XX52x" to="758v:6bbx8uIx500" resolve="PutMark" />
-    <node concept="PMmxH" id="6bbx8uIx507" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="y2uj:1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="6bbx8uIx508">
-    <property role="3GE5qa" value="command" />
-    <ref role="1XX52x" to="758v:6bbx8uIx4ZZ" resolve="PickMark" />
-    <node concept="PMmxH" id="6bbx8uIx509" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="y2uj:1IJMvjSEh6" resolve="Action" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6bbx8uIA51v">
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="758v:6bbx8uIA50Y" resolve="IsLooking" />
@@ -156,7 +124,6 @@
     <ref role="1XX52x" to="758v:6bbx8uIA513" resolve="NullaryLogicalQuery" />
     <node concept="PMmxH" id="6bbx8uIA51B" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="fj1h:2PnTnxEYS0C" resolve="LogicalExpresion" />
       <ref role="1ERwB7" node="6bbx8uIA51E" resolve="DeleteLogicalQuery" />
       <node concept="OXEIz" id="6bbx8uIA51C" role="P5bDN">
         <node concept="UkePV" id="6bbx8uIA51D" role="OY2wv">
@@ -215,6 +182,14 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2FICFVq47jN">
+    <property role="3GE5qa" value="command" />
+    <ref role="1XX52x" to="758v:6bbx8uICPS8" resolve="KarelCommand" />
+    <node concept="PMmxH" id="2FICFVq47jS" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="y2uj:1IJMvjSEh6" resolve="Action" />
     </node>
   </node>
 </model>

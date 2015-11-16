@@ -35,13 +35,9 @@
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
-      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
-      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -247,12 +243,6 @@
         <ref role="1ERwB7" node="jBG8nbMfUQ" resolve="DeleteElseBranch" />
       </node>
       <node concept="l2Vlx" id="2PnTnxF1QBo" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="V5hpn" id="2PnTnxEYS0_">
-    <property role="TrG5h" value="ConditionsStyles" />
-    <node concept="14StLt" id="2PnTnxEYS0C" role="V601i">
-      <property role="TrG5h" value="LogicalExpresion" />
     </node>
   </node>
   <node concept="24kQdi" id="6OirKjsJslm">

@@ -25,13 +25,9 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
-      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
-      </concept>
       <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
         <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
-      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
         <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
         <child id="1139535219969" name="item" index="1h_SK8" />
@@ -137,12 +133,6 @@
       <ref role="1NtTu8" to="3y9h:2WqFKNDOaYr" />
     </node>
   </node>
-  <node concept="V5hpn" id="2WqFKNDQh_n">
-    <property role="TrG5h" value="VariableStyles" />
-    <node concept="14StLt" id="2WqFKNDQh_J" role="V601i">
-      <property role="TrG5h" value="VariableName" />
-    </node>
-  </node>
   <node concept="24kQdi" id="1GufzGWfyPW">
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
@@ -176,6 +166,7 @@
       <node concept="3F0ifn" id="aB0Z16Q92y" role="3EZMnx">
         <property role="3F0ifm" value="down" />
         <ref role="1ERwB7" node="aB0Z16QzDB" resolve="ForCycle_EditDownTo" />
+        <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
         <node concept="2V7CMv" id="aB0Z16Q9Sy" role="3F10Kt">
           <property role="2V7CMs" value="ext_1_RTransform" />
         </node>
@@ -194,6 +185,7 @@
       </node>
       <node concept="3F0ifn" id="aB0Z16Q92Q" role="3EZMnx">
         <property role="3F0ifm" value="to" />
+        <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
         <node concept="2V7CMv" id="aB0Z16Q9RT" role="3F10Kt">
           <property role="2V7CMs" value="ext_1_RTransform" />
         </node>
@@ -256,6 +248,7 @@
         <node concept="3F0A7n" id="2J_q78djvww" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" to="y2uj:2FICFVpZtnO" resolve="IdentifierReference" />
         </node>
       </node>
     </node>
