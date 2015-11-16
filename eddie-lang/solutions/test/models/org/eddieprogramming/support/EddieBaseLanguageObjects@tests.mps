@@ -14,6 +14,8 @@
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
+    <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.karel)" />
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.scene)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -145,22 +147,22 @@
           <node concept="3dudH9" id="2xfsEoC0iTr" role="3jGSnO">
             <node concept="2jchP5" id="2xfsEoC0iTw" role="3dudC3">
               <node concept="fF5TM" id="2xfsEoC0iTO" role="2j_PeB">
-                <ref role="fCCSt" to="4ujd:5wv4$CfycpZ" resolve="removeWall" />
+                <ref role="fCCSt" to="uoo5:442XwrAYNV8" resolve="removeWall" />
                 <node concept="fHUgU" id="2xfsEoC0iTP" role="fHv3J">
-                  <ref role="3WiQSc" to="4ujd:5wv4$Cfycq3" resolve="row" />
+                  <ref role="3WiQSc" to="uoo5:442XwrAYNVc" resolve="row" />
                   <node concept="36Kqmr" id="2xfsEoC0iU2" role="2jzNHB">
                     <property role="36Kqnr" value="5" />
                   </node>
                 </node>
                 <node concept="fHUgU" id="2xfsEoC0iTQ" role="fHv3J">
-                  <ref role="3WiQSc" to="4ujd:5wv4$Cfycq5" resolve="col" />
+                  <ref role="3WiQSc" to="uoo5:442XwrAYNVe" resolve="col" />
                   <node concept="36Kqmr" id="2xfsEoC0iU7" role="2jzNHB">
                     <property role="36Kqnr" value="5" />
                   </node>
                 </node>
               </node>
               <node concept="3sCHcl" id="2xfsEoC0iTq" role="2j_qme">
-                <ref role="3sDJ1y" to="4ujd:5wv4$CfyaqN" resolve="Scene" />
+                <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
               </node>
             </node>
           </node>

@@ -22,6 +22,7 @@
     <import index="wa2b" ref="r:7ddd28a9-6fec-4412-83f2-6de74295daaf(org.eddieprogramming.dsl.RobotKarel.generator.template.main@generator)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.scene)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -839,7 +840,7 @@
           <node concept="3cpWsn" id="6snOov8Kr5v" role="3cpWs9">
             <property role="TrG5h" value="tutorial" />
             <node concept="3uibUv" id="6snOov8Kr5w" role="1tU5fm">
-              <ref role="3uigEE" to="4ujd:6snOov8yRAg" resolve="TutorialDescription" />
+              <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
             </node>
             <node concept="10Nm6u" id="6snOov8Kron" role="33vP2m" />
           </node>
@@ -931,7 +932,7 @@
           <node concept="3cpWsn" id="6snOov8hmLu" role="3cpWs9">
             <property role="TrG5h" value="scene" />
             <node concept="3uibUv" id="6snOov8hmLv" role="1tU5fm">
-              <ref role="3uigEE" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+              <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
             </node>
             <node concept="10Nm6u" id="6snOov8hnag" role="33vP2m" />
           </node>
@@ -1953,7 +1954,7 @@
       <node concept="3cqZAl" id="61GUnTJeEYM" role="3clF45" />
       <node concept="3clFbS" id="61GUnTJeEYO" role="3clF47">
         <node concept="XkiVB" id="61GUnTJeEZG" role="3cqZAp">
-          <ref role="37wK5l" to="4ujd:61GUnTJ9wb8" resolve="SceneDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKLU" resolve="SceneDescription" />
           <node concept="3cmrfG" id="61GUnTJeF0g" role="37wK5m">
             <property role="3cmrfH" value="1" />
           </node>
@@ -1971,14 +1972,14 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3Tmbuc" id="61GUnTJeEWW" role="1B3o_S" />
+      <node concept="3Tm1VV" id="442XwrAZc43" role="1B3o_S" />
       <node concept="3cqZAl" id="61GUnTJeEWX" role="3clF45" />
       <node concept="3clFbS" id="61GUnTJeEWY" role="3clF47" />
     </node>
     <node concept="3Tm1VV" id="61GUnTJeEVI" role="1B3o_S" />
     <node concept="n94m4" id="61GUnTJeEVJ" role="lGtFl" />
     <node concept="3uibUv" id="61GUnTJeEWL" role="1zkMxy">
-      <ref role="3uigEE" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
     </node>
   </node>
   <node concept="312cEu" id="6snOov8Kv6h">
@@ -2003,7 +2004,7 @@
       <node concept="3Tm1VV" id="6snOov8Kvf5" role="1B3o_S" />
       <node concept="3clFbS" id="6snOov8Kvf6" role="3clF47">
         <node concept="XkiVB" id="6snOov8KvfB" role="3cqZAp">
-          <ref role="37wK5l" to="4ujd:6snOov8z4RR" resolve="TutorialDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKKS" resolve="TutorialDescription" />
           <node concept="2ShNRf" id="6snOov8KvfW" role="37wK5m">
             <node concept="1pGfFk" id="6snOov8Kvnr" role="2ShVmc">
               <ref role="37wK5l" node="61GUnTJeEYL" resolve="SceneDescriptionGeneratorPlaceholder" />
@@ -2016,7 +2017,7 @@
     <node concept="3Tm1VV" id="6snOov8Kv6i" role="1B3o_S" />
     <node concept="n94m4" id="6snOov8Kv6j" role="lGtFl" />
     <node concept="3uibUv" id="6snOov8Kven" role="1zkMxy">
-      <ref role="3uigEE" to="4ujd:6snOov8yRAg" resolve="TutorialDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
     </node>
     <node concept="3clFb_" id="6snOov9bSlg" role="jymVt">
       <property role="1EzhhJ" value="false" />

@@ -14,6 +14,8 @@
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="cc2e" ref="r:e312d658-8754-4371-b7a9-475f8e38c360(org.eddieprogramming.core.EddieBasic.sceneConstruction)" />
+    <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.karel)" />
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.scene)" />
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
@@ -62,18 +64,18 @@
       <node concept="3dudH9" id="2xfsEoBSUlt" role="3jGSnO">
         <node concept="2jchP5" id="2xfsEoBTTrn" role="3dudC3">
           <node concept="3sCHcl" id="2xfsEoBSUls" role="2j_qme">
-            <ref role="3sDJ1y" to="4ujd:5wv4$CfyaqN" resolve="Scene" />
+            <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
           </node>
           <node concept="fF5TM" id="2xfsEoBYVS8" role="2j_PeB">
-            <ref role="fCCSt" to="4ujd:5wv4$CfycpZ" resolve="removeWall" />
+            <ref role="fCCSt" to="uoo5:442XwrAYNV8" resolve="removeWall" />
             <node concept="fHUgU" id="2xfsEoBYVS9" role="fHv3J">
-              <ref role="3WiQSc" to="4ujd:5wv4$Cfycq3" resolve="row" />
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVc" resolve="row" />
               <node concept="36Kqmr" id="2xfsEoBZ0Su" role="2jzNHB">
                 <property role="36Kqnr" value="5" />
               </node>
             </node>
             <node concept="fHUgU" id="2xfsEoBYVSa" role="fHv3J">
-              <ref role="3WiQSc" to="4ujd:5wv4$Cfycq5" resolve="col" />
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVe" resolve="col" />
               <node concept="36Kqmr" id="2xfsEoBZ0Sz" role="2jzNHB">
                 <property role="36Kqnr" value="5" />
               </node>
@@ -84,38 +86,38 @@
       <node concept="3dudH9" id="2xfsEoBZ0TZ" role="3jGSnO">
         <node concept="2jchP5" id="2xfsEoBZ0Ud" role="3dudC3">
           <node concept="fF5TM" id="2xfsEoBZ0U$" role="2j_PeB">
-            <ref role="fCCSt" to="4ujd:5wv4$CfycsF" resolve="setMarks" />
+            <ref role="fCCSt" to="uoo5:442XwrAYNVg" resolve="setMarks" />
             <node concept="fHUgU" id="2xfsEoBZ0U_" role="fHv3J">
-              <ref role="3WiQSc" to="4ujd:5wv4$Cfycts" resolve="row" />
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVk" resolve="row" />
               <node concept="36Kqmr" id="2xfsEoBZ0UQ" role="2jzNHB">
                 <property role="36Kqnr" value="5" />
               </node>
             </node>
             <node concept="fHUgU" id="2xfsEoBZ0UA" role="fHv3J">
-              <ref role="3WiQSc" to="4ujd:5wv4$CfyctU" resolve="col" />
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVm" resolve="col" />
               <node concept="36Kqmr" id="2xfsEoBZ0UV" role="2jzNHB">
                 <property role="36Kqnr" value="5" />
               </node>
             </node>
             <node concept="fHUgU" id="2xfsEoBZ0UB" role="fHv3J">
-              <ref role="3WiQSc" to="4ujd:5wv4$CfycuH" resolve="count" />
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVo" resolve="count" />
               <node concept="36Kqmr" id="2xfsEoBZ0V0" role="2jzNHB">
                 <property role="36Kqnr" value="5" />
               </node>
             </node>
           </node>
           <node concept="3sCHcl" id="2xfsEoBZ0TX" role="2j_qme">
-            <ref role="3sDJ1y" to="4ujd:5wv4$CfyaqN" resolve="Scene" />
+            <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
           </node>
         </node>
       </node>
       <node concept="3dudH9" id="2xfsEoC0NrV" role="3jGSnO">
         <node concept="2jchP5" id="2xfsEoC0Nsi" role="3dudC3">
           <node concept="fF5TM" id="2xfsEoC0NsM" role="2j_PeB">
-            <ref role="fCCSt" to="4ujd:2PnTnxEZTyK" resolve="isFull" />
+            <ref role="fCCSt" to="uoo5:442XwrAYNXF" resolve="isFull" />
           </node>
           <node concept="3sCHcl" id="2xfsEoC0NrT" role="2j_qme">
-            <ref role="3sDJ1y" to="4ujd:5wv4$CfktHm" resolve="Karel" />
+            <ref role="3sDJ1y" to="uoo5:442XwrAYO0$" resolve="Karel" />
           </node>
         </node>
       </node>

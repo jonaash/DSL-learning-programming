@@ -4,7 +4,7 @@
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="22533a47-d9a8-4eae-8829-e07835315c1f" name="EddieSceneConstruction" version="-1" />
+    <use id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -15,10 +15,11 @@
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="rflv" ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/org.eddieprogramming.core.EddieBasic.generator.template.main@generator)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="vlyv" ref="r:fc7da76e-21f1-4f7d-add6-81d7cfc71533(org.eddieprogramming.world.EddieSceneConstruction.structure)" />
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.scene)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="vlyv" ref="r:fc7da76e-21f1-4f7d-add6-81d7cfc71533(org.eddieprogramming.world.EddieSceneConstruction.structure)" implicit="true" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -127,7 +128,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
@@ -241,7 +241,7 @@
       <ref role="n9lRv" to="vlyv:5wv4$CfHS45" resolve="Scene" />
     </node>
     <node concept="3uibUv" id="61GUnTJ9Mpo" role="1zkMxy">
-      <ref role="3uigEE" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
     </node>
     <node concept="2tJIrI" id="61GUnTJ9Mqf" role="jymVt" />
     <node concept="2YIFZL" id="6snOov8rrqF" role="jymVt">
@@ -271,7 +271,7 @@
       <node concept="3cqZAl" id="61GUnTJ9PvF" role="3clF45" />
       <node concept="3clFbS" id="61GUnTJ9PvH" role="3clF47">
         <node concept="XkiVB" id="61GUnTJ9Yde" role="3cqZAp">
-          <ref role="37wK5l" to="4ujd:61GUnTJ9wb8" resolve="SceneDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKLU" resolve="SceneDescription" />
           <node concept="3cmrfG" id="61GUnTJapn6" role="37wK5m">
             <property role="3cmrfH" value="10" />
             <node concept="17Uvod" id="61GUnTJapnV" role="lGtFl">
@@ -315,7 +315,7 @@
           <node concept="2OqwBi" id="61GUnTJasNb" role="3clFbG">
             <node concept="Xjq3P" id="61GUnTJas_G" role="2Oq$k0" />
             <node concept="liA8E" id="61GUnTJat0A" role="2OqNvi">
-              <ref role="37wK5l" to="4ujd:61GUnTJ9PQX" resolve="setRobotStartPosition" />
+              <ref role="37wK5l" to="b3e7:442XwrAYKMf" resolve="setRobotStartPosition" />
               <node concept="3cmrfG" id="61GUnTJat1B" role="37wK5m">
                 <property role="3cmrfH" value="1" />
                 <node concept="17Uvod" id="61GUnTJatvw" role="lGtFl">
@@ -404,7 +404,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3Tmbuc" id="61GUnTJ9Mpz" role="1B3o_S" />
+      <node concept="3Tm1VV" id="442XwrAZcHv" role="1B3o_S" />
       <node concept="3cqZAl" id="61GUnTJ9Mp$" role="3clF45" />
       <node concept="3clFbS" id="61GUnTJ9Mp_" role="3clF47">
         <node concept="3clFbF" id="61GUnTJaLiQ" role="3cqZAp">
@@ -479,7 +479,7 @@
           <node concept="3cpWsn" id="6snOov8zm03" role="3cpWs9">
             <property role="TrG5h" value="scene" />
             <node concept="3uibUv" id="6snOov8zm04" role="1tU5fm">
-              <ref role="3uigEE" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+              <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
             </node>
             <node concept="2YIFZM" id="6snOov8rOgh" role="33vP2m">
               <ref role="1Pybhc" to="rflv:61GUnTJeEVH" resolve="SceneDescriptionGeneratorPlaceholder" />
@@ -567,7 +567,7 @@
       <node concept="3cqZAl" id="6snOov8zk6x" role="3clF45" />
       <node concept="3clFbS" id="6snOov8zk6z" role="3clF47">
         <node concept="XkiVB" id="6snOov8zkdc" role="3cqZAp">
-          <ref role="37wK5l" to="4ujd:6snOov8z4RR" resolve="TutorialDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKKS" resolve="TutorialDescription" />
           <node concept="37vLTw" id="6snOov8zkdx" role="37wK5m">
             <ref role="3cqZAo" node="6snOov8zkcn" resolve="scene" />
           </node>
@@ -577,7 +577,7 @@
       <node concept="37vLTG" id="6snOov8zkcn" role="3clF46">
         <property role="TrG5h" value="scene" />
         <node concept="3uibUv" id="6snOov8zkcm" role="1tU5fm">
-          <ref role="3uigEE" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+          <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
         </node>
       </node>
     </node>
@@ -618,7 +618,7 @@
       <ref role="n9lRv" to="vlyv:5wv4$CfZXb_" resolve="Tutorial" />
     </node>
     <node concept="3uibUv" id="6snOov8z4oX" role="1zkMxy">
-      <ref role="3uigEE" to="4ujd:6snOov8yRAg" resolve="TutorialDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
     </node>
     <node concept="17Uvod" id="6snOov8zizc" role="lGtFl">
       <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />

@@ -9,8 +9,9 @@
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(org.eddieprogramming.common.support.configuration)" />
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
+    <import index="vlyv" ref="r:fc7da76e-21f1-4f7d-add6-81d7cfc71533(org.eddieprogramming.world.EddieSceneConstruction.structure)" />
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.scene)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="vlyv" ref="r:fc7da76e-21f1-4f7d-add6-81d7cfc71533(org.eddieprogramming.world.EddieSceneConstruction.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -100,11 +101,11 @@
             </node>
             <node concept="2OqwBi" id="6snOov8Sh9P" role="37vLTx">
               <node concept="10M0yZ" id="6snOov8Sh3f" role="2Oq$k0">
-                <ref role="1PxDUh" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
-                <ref role="3cqZAo" to="4ujd:6snOov8S5R3" resolve="DEFAULT" />
+                <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+                <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
               </node>
               <node concept="liA8E" id="6snOov8Shlj" role="2OqNvi">
-                <ref role="37wK5l" to="4ujd:61GUnTJ9Riz" resolve="getWidth" />
+                <ref role="37wK5l" to="b3e7:442XwrAYKMV" resolve="getWidth" />
               </node>
             </node>
           </node>
@@ -119,11 +120,11 @@
             </node>
             <node concept="2OqwBi" id="6snOov8ShyQ" role="37vLTx">
               <node concept="10M0yZ" id="6snOov8Shxw" role="2Oq$k0">
-                <ref role="1PxDUh" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
-                <ref role="3cqZAo" to="4ujd:6snOov8S5R3" resolve="DEFAULT" />
+                <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+                <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
               </node>
               <node concept="liA8E" id="6snOov8ShIk" role="2OqNvi">
-                <ref role="37wK5l" to="4ujd:61GUnTJ9QQb" resolve="getHeight" />
+                <ref role="37wK5l" to="b3e7:442XwrAYKMM" resolve="getHeight" />
               </node>
             </node>
           </node>
@@ -171,11 +172,11 @@
             </node>
             <node concept="2OqwBi" id="6snOov8ShXb" role="37vLTx">
               <node concept="10M0yZ" id="6snOov8ShVU" role="2Oq$k0">
-                <ref role="3cqZAo" to="4ujd:6snOov8S5R3" resolve="DEFAULT" />
-                <ref role="1PxDUh" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
+                <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
+                <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
               </node>
               <node concept="liA8E" id="6snOov8Siqc" role="2OqNvi">
-                <ref role="37wK5l" to="4ujd:61GUnTJ9RX$" resolve="getStartRow" />
+                <ref role="37wK5l" to="b3e7:442XwrAYKNd" resolve="getStartRow" />
               </node>
             </node>
           </node>
@@ -190,11 +191,11 @@
             </node>
             <node concept="2OqwBi" id="6snOov8SixL" role="37vLTx">
               <node concept="10M0yZ" id="6snOov8Siru" role="2Oq$k0">
-                <ref role="1PxDUh" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
-                <ref role="3cqZAo" to="4ujd:6snOov8S5R3" resolve="DEFAULT" />
+                <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+                <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
               </node>
               <node concept="liA8E" id="6snOov8SiH8" role="2OqNvi">
-                <ref role="37wK5l" to="4ujd:61GUnTJ9RId" resolve="getStartCol" />
+                <ref role="37wK5l" to="b3e7:442XwrAYKN4" resolve="getStartCol" />
               </node>
             </node>
           </node>
@@ -211,11 +212,11 @@
               <node concept="2OqwBi" id="6snOov8TtTW" role="tz02z">
                 <node concept="2OqwBi" id="6snOov8TtEg" role="2Oq$k0">
                   <node concept="10M0yZ" id="6snOov8TtCC" role="2Oq$k0">
-                    <ref role="1PxDUh" to="4ujd:61GUnTJ9nMC" resolve="SceneDescription" />
-                    <ref role="3cqZAo" to="4ujd:6snOov8S5R3" resolve="DEFAULT" />
+                    <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+                    <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
                   </node>
                   <node concept="liA8E" id="6snOov8TtKL" role="2OqNvi">
-                    <ref role="37wK5l" to="4ujd:61GUnTJ9Sef" resolve="getStartDirection" />
+                    <ref role="37wK5l" to="b3e7:442XwrAYKNm" resolve="getStartDirection" />
                   </node>
                 </node>
                 <node concept="liA8E" id="6snOov8Tuo7" role="2OqNvi">
