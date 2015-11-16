@@ -9,7 +9,7 @@
     <devkit ref="b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)" />
   </languages>
   <imports>
-    <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.karel)" />
+    <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.runtime.karel)" />
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
