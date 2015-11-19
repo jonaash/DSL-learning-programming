@@ -175,6 +175,8 @@
   <node concept="1TIwiD" id="4LNIB3H3QF6">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="AbstractComparisonOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
 </model>
