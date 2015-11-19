@@ -154,6 +154,9 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -812,6 +815,69 @@
             <node concept="1mIQ4w" id="2FICFVq5bhm" role="2OqNvi">
               <node concept="chp4Y" id="2FICFVq5bmR" role="cj9EA">
                 <ref role="cht4Q" to="t2e5:8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1mpZf2HHSXB">
+    <property role="3GE5qa" value="type" />
+    <ref role="1M2myG" to="t2e5:4LNIB3Hh_4$" resolve="ClassType" />
+    <node concept="1N5Pfh" id="1mpZf2HHT1M" role="1Mr941">
+      <ref role="1N5Vy1" to="t2e5:4LNIB3HhUMc" />
+      <node concept="13QW63" id="1mpZf2HHT1W" role="1N6uqs">
+        <node concept="3clFbS" id="1mpZf2HHT1Y" role="2VODD2">
+          <node concept="3cpWs8" id="1mpZf2HI4xH" role="3cqZAp">
+            <node concept="3cpWsn" id="1mpZf2HI4xI" role="3cpWs9">
+              <property role="TrG5h" value="classes" />
+              <node concept="2I9FWS" id="1mpZf2HI4xF" role="1tU5fm">
+                <ref role="2I9WkF" to="t2e5:6bbx8uIHCEi" resolve="Class" />
+              </node>
+              <node concept="2YIFZM" id="1mpZf2HI4xJ" role="33vP2m">
+                <ref role="37wK5l" to="azf3:1mpZf2HHWNf" resolve="getClasses" />
+                <ref role="1Pybhc" to="azf3:6bbx8uIPdAY" resolve="ReferenceUtils" />
+                <node concept="1Q6Npb" id="1mpZf2HI4xK" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1mpZf2HI4OK" role="3cqZAp">
+            <node concept="2ShNRf" id="1mpZf2HI4Qe" role="3cqZAk">
+              <node concept="YeOm9" id="1mpZf2HI6Y8" role="2ShVmc">
+                <node concept="1Y3b0j" id="1mpZf2HI6Yb" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                  <ref role="37wK5l" to="o8zo:4IP40Bi3e_T" resolve="ListScope" />
+                  <node concept="3Tm1VV" id="1mpZf2HI6Yc" role="1B3o_S" />
+                  <node concept="3clFb_" id="1mpZf2HI6Yn" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="getName" />
+                    <node concept="17QB3L" id="1mpZf2HI6Yo" role="3clF45" />
+                    <node concept="3Tm1VV" id="1mpZf2HI6Yp" role="1B3o_S" />
+                    <node concept="37vLTG" id="1mpZf2HI6Yr" role="3clF46">
+                      <property role="TrG5h" value="child" />
+                      <node concept="3Tqbb2" id="1mpZf2HI6Ys" role="1tU5fm">
+                        <ref role="ehGHo" to="t2e5:6bbx8uIHCEi" resolve="Class" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="1mpZf2HI6Yt" role="3clF47">
+                      <node concept="3clFbF" id="1mpZf2HI7cy" role="3cqZAp">
+                        <node concept="2OqwBi" id="1mpZf2HI7iw" role="3clFbG">
+                          <node concept="37vLTw" id="1mpZf2HI7cx" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1mpZf2HI6Yr" resolve="child" />
+                          </node>
+                          <node concept="3TrcHB" id="1mpZf2HI7z2" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="1mpZf2HI77i" role="37wK5m">
+                    <ref role="3cqZAo" node="1mpZf2HI4xI" resolve="classes" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

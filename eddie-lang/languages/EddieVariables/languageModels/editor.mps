@@ -143,6 +143,7 @@
       </node>
       <node concept="PMmxH" id="1GufzGWfyQX" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1ERwB7" node="3uaXG0jxyWK" resolve="AssignmentExpression_DeleteOperator" />
       </node>
       <node concept="3F1sOY" id="1GufzGWfyRk" role="3EZMnx">
         <ref role="1NtTu8" to="3y9h:1GufzGWfyPl" />
@@ -369,6 +370,113 @@
       <property role="1hHO97" value="do nothing" />
       <node concept="1hAIg9" id="5xGSFEucEzP" role="1hA7z_">
         <node concept="3clFbS" id="5xGSFEucEzQ" role="2VODD2" />
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="3uaXG0jxyWK">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="AssignmentExpression_DeleteOperator" />
+    <ref role="1h_SK9" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
+    <node concept="1hA7zw" id="3uaXG0jxyWL" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hHO97" value="first delete value and then delete this AssignmentExpression" />
+      <node concept="1hAIg9" id="3uaXG0jxyWM" role="1hA7z_">
+        <node concept="3clFbS" id="3uaXG0jxyWN" role="2VODD2">
+          <node concept="3clFbJ" id="3uaXG0jxyWO" role="3cqZAp">
+            <node concept="3clFbS" id="3uaXG0jxyWP" role="3clFbx">
+              <node concept="3clFbF" id="3uaXG0jxyWQ" role="3cqZAp">
+                <node concept="2OqwBi" id="3uaXG0jxyWR" role="3clFbG">
+                  <node concept="2OqwBi" id="3uaXG0jxyWS" role="2Oq$k0">
+                    <node concept="0IXxy" id="3uaXG0jxyWT" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3uaXG0jxyWU" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3y9h:1GufzGWfyPl" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="3uaXG0jxyWV" role="2OqNvi">
+                    <node concept="10Nm6u" id="3uaXG0jxyWW" role="2oxUTC" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3uaXG0jxyWX" role="3clFbw">
+              <node concept="2OqwBi" id="3uaXG0jxyWY" role="2Oq$k0">
+                <node concept="0IXxy" id="3uaXG0jxyWZ" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3uaXG0jxz$R" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3y9h:1GufzGWfyPl" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="3uaXG0jxyX1" role="2OqNvi" />
+            </node>
+            <node concept="9aQIb" id="3uaXG0jxyX2" role="9aQIa">
+              <node concept="3clFbS" id="3uaXG0jxyX3" role="9aQI4">
+                <node concept="3clFbF" id="3uaXG0jxyX4" role="3cqZAp">
+                  <node concept="2OqwBi" id="3uaXG0jxyX5" role="3clFbG">
+                    <node concept="0IXxy" id="3uaXG0jxyX6" role="2Oq$k0" />
+                    <node concept="1P9Npp" id="3uaXG0jxyX7" role="2OqNvi">
+                      <node concept="2OqwBi" id="3uaXG0jxyX8" role="1P9ThW">
+                        <node concept="0IXxy" id="3uaXG0jxyX9" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="3uaXG0jx$1P" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="3uaXG0jxyXb" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <property role="1hHO97" value="first delete variable and then delete this AssignmentExpression" />
+      <node concept="1hAIg9" id="3uaXG0jxyXc" role="1hA7z_">
+        <node concept="3clFbS" id="3uaXG0jxyXd" role="2VODD2">
+          <node concept="3clFbJ" id="3uaXG0jx$cp" role="3cqZAp">
+            <node concept="3clFbS" id="3uaXG0jx$cq" role="3clFbx">
+              <node concept="3clFbF" id="3uaXG0jx$cr" role="3cqZAp">
+                <node concept="2OqwBi" id="3uaXG0jx$cs" role="3clFbG">
+                  <node concept="2OqwBi" id="3uaXG0jx$ct" role="2Oq$k0">
+                    <node concept="0IXxy" id="3uaXG0jx$cu" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3uaXG0jx_et" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+                    </node>
+                  </node>
+                  <node concept="2oxUTD" id="3uaXG0jx$cw" role="2OqNvi">
+                    <node concept="10Nm6u" id="3uaXG0jx$cx" role="2oxUTC" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3uaXG0jx$cy" role="3clFbw">
+              <node concept="2OqwBi" id="3uaXG0jx$cz" role="2Oq$k0">
+                <node concept="0IXxy" id="3uaXG0jx$c$" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3uaXG0jx$LF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="3uaXG0jx$cA" role="2OqNvi" />
+            </node>
+            <node concept="9aQIb" id="3uaXG0jx$cB" role="9aQIa">
+              <node concept="3clFbS" id="3uaXG0jx$cC" role="9aQI4">
+                <node concept="3clFbF" id="3uaXG0jx$cD" role="3cqZAp">
+                  <node concept="2OqwBi" id="3uaXG0jx$cE" role="3clFbG">
+                    <node concept="0IXxy" id="3uaXG0jx$cF" role="2Oq$k0" />
+                    <node concept="1P9Npp" id="3uaXG0jx$cG" role="2OqNvi">
+                      <node concept="2OqwBi" id="3uaXG0jx$cH" role="1P9ThW">
+                        <node concept="0IXxy" id="3uaXG0jx$cI" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="3uaXG0jx_Fc" role="2OqNvi">
+                          <ref role="3Tt5mk" to="3y9h:1GufzGWfyPl" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

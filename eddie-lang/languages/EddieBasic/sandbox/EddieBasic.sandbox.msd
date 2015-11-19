@@ -11,6 +11,9 @@
     <dependency reexport="false">abbb403e-0a41-4661-9279-eb17d3806875(org.eddieprogramming.support.EddieBaseLanguageObjects)</dependency>
     <dependency reexport="false">1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)</dependency>
     <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</dependency>
+    <dependency reexport="false">53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</dependency>
+    <dependency reexport="false">b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</dependency>
+    <dependency reexport="false">992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</usedLanguage>

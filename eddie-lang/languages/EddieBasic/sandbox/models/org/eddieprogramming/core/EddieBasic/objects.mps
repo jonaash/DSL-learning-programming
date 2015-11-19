@@ -6,6 +6,7 @@
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="-1" />
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="-1" />
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="-1" />
+    <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -23,7 +24,14 @@
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
         <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
+      <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
+      </concept>
       <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
+      <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
+        <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
+      <concept id="3394217739174290875" name="org.eddieprogramming.core.EddieBasic.structure.IntegerType" flags="ng" index="36MCER" />
       <concept id="3394217739153894179" name="org.eddieprogramming.core.EddieBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
         <property id="6371716863967346005" name="mutable" index="36jPZJ" />
         <child id="3394217739174290864" name="type" index="36MCEW" />
@@ -46,6 +54,10 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="1954067712460073357" name="org.eddieprogramming.core.EddieVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -66,6 +78,9 @@
       <concept id="8938755948415899245" name="org.eddieprogramming.core.EddieObjects.structure.ThisExpression" flags="ng" index="2jco51" />
       <concept id="8938755948416651173" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
       <concept id="8938755948420359037" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorCall" flags="ng" index="2jzrhh" />
+      <concept id="8938755948421935782" name="org.eddieprogramming.core.EddieObjects.structure.FieldReference" flags="ng" index="2j_qma">
+        <reference id="8938755948422938242" name="declaration" index="2jD6AI" />
+      </concept>
       <concept id="5508951763384160548" name="org.eddieprogramming.core.EddieObjects.structure.ClassType" flags="ng" index="2xduHk" />
       <concept id="5508951763384009961" name="org.eddieprogramming.core.EddieObjects.structure.SingletonType" flags="ng" index="2xdVUp" />
       <concept id="7118929354275056774" name="org.eddieprogramming.core.EddieObjects.structure.SingletonConstructor" flags="ng" index="3couw1" />
@@ -146,10 +161,19 @@
       <node concept="3dtAsP" id="6bbx8uIIwJE" role="2jg$Xp" />
       <node concept="3pOcrW" id="6bbx8uIIwJF" role="2j5jbD" />
       <node concept="3jGSmg" id="6bbx8uIIwJG" role="hRHZh">
-        <node concept="17J3f2" id="2FICFVpV_SH" role="3jGSnO" />
-        <node concept="17J3f2" id="2FICFVpUJbS" role="3jGSnO" />
-        <node concept="17J3f2" id="2FICFVpUJbH" role="3jGSnO" />
-        <node concept="17J3f2" id="5wv4$CeXTj_" role="3jGSnO" />
+        <node concept="3dudH9" id="1mpZf2HujP3" role="3jGSnO">
+          <node concept="B81uQ" id="1mpZf2HuokO" role="3dudC3">
+            <node concept="16y5rI" id="1mpZf2Huolb" role="B81dI">
+              <property role="16xLMo" value="" />
+            </node>
+            <node concept="2jchP5" id="1mpZf2HujP0" role="B81dD">
+              <node concept="2j_qma" id="1mpZf2HujPn" role="2j_PeB">
+                <ref role="2jD6AI" node="6bbx8uIJVFe" resolve="text" />
+              </node>
+              <node concept="2jco51" id="1mpZf2HujOY" role="2j_qme" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3pFPbB" id="6bbx8uIJVFe" role="2j5j4v">
@@ -178,7 +202,24 @@
             </node>
           </node>
         </node>
-        <node concept="17J3f2" id="2FICFVq30i$" role="3jGSnO" />
+        <node concept="36Mw20" id="1mpZf2HsgEG" role="3jGSnO">
+          <node concept="AFBxM" id="1mpZf2HsgEJ" role="36Mw2n">
+            <property role="36jPZJ" value="false" />
+            <property role="TrG5h" value="test" />
+            <node concept="2xduHk" id="1mpZf2HsgEE" role="36MCEW">
+              <ref role="2jchVA" node="6bbx8uIYtjU" resolve="Test" />
+            </node>
+            <node concept="2jzrhh" id="1mpZf2HujyV" role="36MIYJ">
+              <ref role="hRIc0" node="6bbx8uIYtjV" />
+              <node concept="FiVY1" id="1mpZf2HujyW" role="3WjpkI">
+                <ref role="3WiQSc" node="1mpZf2HsfcY" resolve="count" />
+                <node concept="36Kqmr" id="1mpZf2Hujz9" role="2jzNHB">
+                  <property role="36Kqnr" value="6" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3pOcrA" id="2FICFVq30hM" role="2j5j5A">
@@ -194,6 +235,19 @@
       <node concept="3pOcrW" id="6bbx8uIYtjX" role="2j5jbD" />
       <node concept="3jGSmg" id="6bbx8uIYtjY" role="hRHZh">
         <node concept="17J3f2" id="6bbx8uIYtjZ" role="3jGSnO" />
+      </node>
+      <node concept="FiAUU" id="1mpZf2HsfcY" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="count" />
+        <node concept="36MCER" id="1mpZf2HsfcX" role="36MCEW" />
+      </node>
+    </node>
+    <node concept="3pFPbB" id="3uaXG0jw_pB" role="2j5j4v">
+      <property role="36jPZJ" value="false" />
+      <property role="TrG5h" value="basic" />
+      <node concept="3pOcrZ" id="3uaXG0jw_pC" role="2j5jbD" />
+      <node concept="2xduHk" id="3uaXG0jw_pA" role="36MCEW">
+        <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
       </node>
     </node>
   </node>

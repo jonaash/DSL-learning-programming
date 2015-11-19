@@ -42,6 +42,12 @@
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="6349814108921509948" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationBlock" flags="ng" index="186aDQ">
+        <child id="6349814108921512770" name="content" index="186d48" />
+      </concept>
+      <concept id="6349814108921513508" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationLine" flags="ng" index="186dhI">
+        <property id="6349814108921513555" name="text" index="186dgp" />
+      </concept>
       <concept id="6349814108921004812" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneEvent" flags="ng" index="187L56">
         <child id="6349814108921004815" name="action" index="187L55" />
         <child id="6349814108921004813" name="condition" index="187L57" />
@@ -61,6 +67,7 @@
       <concept id="6349814108916202087" name="org.eddieprogramming.core.EddieBasic.structure.AbstractTutorial" flags="ng" index="1nEqwH">
         <child id="7428636491496975407" name="events" index="2IerQC" />
         <child id="7428636491486421284" name="sceneRef" index="2JAF2z" />
+        <child id="1556553256867557255" name="description" index="2S29dR" />
       </concept>
       <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
         <child id="6349814108915673812" name="body" index="1nGryu" />
@@ -78,7 +85,9 @@
       </concept>
     </language>
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction">
-      <concept id="7428636491496989695" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneEvent" flags="ng" index="2Ien9S" />
+      <concept id="7428636491496989695" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneEvent" flags="ng" index="2Ien9S">
+        <property id="1556553256867107980" name="description" index="2S4QxW" />
+      </concept>
       <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
       <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
@@ -148,9 +157,10 @@
   <node concept="1nSc2J" id="6snOov8U0IP">
     <property role="TrG5h" value="TestTutorial" />
     <node concept="2Ien9S" id="6snOov9bJzc" role="2IerQC">
+      <property role="2S4QxW" value="All marks weere put in the right place" />
       <node concept="2xoUYp" id="6snOov9bJ_d" role="187L57">
         <node concept="36Kqmr" id="6snOov9bJ_U" role="3527S9">
-          <property role="36Kqnr" value="1" />
+          <property role="36Kqnr" value="5" />
         </node>
         <node concept="2jchP5" id="6snOov9bJzD" role="3527ZY">
           <node concept="fF5TM" id="6snOov9bJ$H" role="2j_PeB">
@@ -176,15 +186,53 @@
       <node concept="3jGSmg" id="6snOov9bJzm" role="187L55">
         <node concept="2kpimK" id="6snOov9bJAg" role="3jGSnO">
           <node concept="16y5rI" id="6snOov9bJAh" role="16wSqL">
-            <property role="16xLMo" value="Missing acomplished" />
+            <property role="16xLMo" value="Well done! Missing accomplished!" />
           </node>
         </node>
-        <node concept="17J3f2" id="6snOov9bJA9" role="3jGSnO" />
-        <node concept="17J3f2" id="6snOov9bJzn" role="3jGSnO" />
+      </node>
+    </node>
+    <node concept="2Ien9S" id="1mpZf2HzCpk" role="2IerQC">
+      <node concept="3jGSmg" id="1mpZf2HzCpu" role="187L55">
+        <node concept="2kpimK" id="1mpZf2HzCHN" role="3jGSnO">
+          <node concept="16y5rI" id="1mpZf2HzCHO" role="16wSqL">
+            <property role="16xLMo" value="Almost there." />
+          </node>
+        </node>
+        <node concept="17J3f2" id="1mpZf2HzCpv" role="3jGSnO" />
+      </node>
+      <node concept="2xoUYp" id="1mpZf2HzCGD" role="187L57">
+        <node concept="36Kqmr" id="1mpZf2HzCGE" role="3527S9">
+          <property role="36Kqnr" value="4" />
+        </node>
+        <node concept="2jchP5" id="1mpZf2HzCGF" role="3527ZY">
+          <node concept="fF5TM" id="1mpZf2HzCGG" role="2j_PeB">
+            <ref role="fCCSt" to="uoo5:442XwrAYNVz" resolve="getMarksCount" />
+            <node concept="fHUgU" id="1mpZf2HzCGH" role="fHv3J">
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVB" resolve="row" />
+              <node concept="36Kqmr" id="1mpZf2HzCGI" role="2jzNHB">
+                <property role="36Kqnr" value="2" />
+              </node>
+            </node>
+            <node concept="fHUgU" id="1mpZf2HzCGJ" role="fHv3J">
+              <ref role="3WiQSc" to="uoo5:442XwrAYNVD" resolve="col" />
+              <node concept="36Kqmr" id="1mpZf2HzCGK" role="2jzNHB">
+                <property role="36Kqnr" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="3sCHcl" id="1mpZf2HzCGL" role="2j_qme">
+            <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2JdVq9" id="6snOov8U0KC" role="2JAF2z">
       <ref role="2JdVqH" node="5wv4$CfPqlc" resolve="TestScene" />
+    </node>
+    <node concept="186aDQ" id="1mpZf2HAMhR" role="2S29dR">
+      <node concept="186dhI" id="1mpZf2HAMhS" role="186d48">
+        <property role="186dgp" value="Task: Put five marks in front of the house." />
+      </node>
     </node>
   </node>
 </model>

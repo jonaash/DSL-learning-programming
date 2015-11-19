@@ -126,6 +126,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -165,7 +166,8 @@
   <node concept="1TIwiD" id="3a5rfDmYafO">
     <property role="TrG5h" value="Script" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="script" />
+    <property role="34LRSv" value="program" />
+    <property role="MwhBj" value="${module}/icons/property.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3a5rfDmYagg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -175,6 +177,9 @@
     </node>
     <node concept="PrWs8" id="14XUkkdJRH7" role="PzmwI">
       <ref role="PrY4T" node="14XUkkdJcI9" resolve="IMethodsDefinition" />
+    </node>
+    <node concept="PrWs8" id="3uaXG0jCJip" role="PzmwI">
+      <ref role="PrY4T" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
     </node>
     <node concept="1TJgyj" id="1IJMvjRjCZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -268,7 +273,6 @@
   <node concept="1TIwiD" id="4in_MZdaLTz">
     <property role="TrG5h" value="RoutineCall" />
     <property role="3GE5qa" value="method.procedure" />
-    <property role="R4oN_" value="executes procedure" />
     <ref role="1TJDcQ" node="14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="14XUkkdIUvj" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -280,8 +284,8 @@
   <node concept="1TIwiD" id="4in_MZdaKkC">
     <property role="TrG5h" value="RoutineDefinition" />
     <property role="3GE5qa" value="method.procedure" />
-    <property role="34LRSv" value="procedure" />
-    <property role="R4oN_" value="defines sequence of commands as a procedure" />
+    <property role="34LRSv" value="action" />
+    <property role="R4oN_" value="defines custom action" />
     <ref role="1TJDcQ" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2n2">
@@ -453,12 +457,16 @@
     <property role="TrG5h" value="Library" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="library" />
+    <property role="MwhBj" value="${module}/icons/ppLib.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3hBhvFSK1ee" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="14XUkkdJcLb" role="PzmwI">
       <ref role="PrY4T" node="14XUkkdJcI9" resolve="IMethodsDefinition" />
+    </node>
+    <node concept="PrWs8" id="3uaXG0jCJej" role="PzmwI">
+      <ref role="PrY4T" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFSK1_a">
@@ -580,6 +588,9 @@
       <property role="20kJfa" value="methods" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
+    </node>
+    <node concept="PrWs8" id="3uaXG0jt0GY" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="18k56XD$bnd">
@@ -900,6 +911,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5wv4$Cg00cc" resolve="AbstractSceneEvent" />
     </node>
+    <node concept="1TJgyj" id="1mpZf2H$mY7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..1" />
+      <property role="20kJfa" value="description" />
+      <ref role="20lvS9" node="5wv4$Cg1VwW" resolve="DocumentationBlock" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wv4$CfKdx_">
     <property role="3GE5qa" value="scene" />
@@ -1072,6 +1089,13 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="2WqFKNDO2mJ" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="3uaXG0jybOj">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="DocumentationEmptyLine" />
+    <property role="34LRSv" value="&lt;empty&gt;" />
+    <property role="R4oN_" value="Empty line in documentation block." />
+    <ref role="1TJDcQ" node="5wv4$Cg1W9O" resolve="DocumentationBlockPart" />
   </node>
 </model>
 

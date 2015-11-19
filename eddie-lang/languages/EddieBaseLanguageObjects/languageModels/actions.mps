@@ -81,7 +81,6 @@
         <child id="1177337679534" name="type" index="uMOYW" />
         <child id="1177338017561" name="query" index="uO7ob" />
         <child id="1177339176647" name="matchingText" index="uSyvl" />
-        <child id="1177339186632" name="descriptionText" index="uS$Nq" />
         <child id="1177339421668" name="handler" index="uTubQ" />
         <child id="6400740936056405411" name="iconNode" index="1o8C9r" />
       </concept>
@@ -406,18 +405,6 @@
                 <node concept="2OqwBi" id="2PpeCt3iRu6" role="3clFbG">
                   <node concept="uNquD" id="2PpeCt3iRu7" role="2Oq$k0" />
                   <node concept="2qgKlT" id="2xfsEoBTJtB" role="2OqNvi">
-                    <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="uSjag" id="2PpeCt3iRu9" role="uS$Nq">
-            <node concept="3clFbS" id="2PpeCt3iRua" role="2VODD2">
-              <node concept="3clFbF" id="2PpeCt3iRub" role="3cqZAp">
-                <node concept="2OqwBi" id="2PpeCt3iRuc" role="3clFbG">
-                  <node concept="uNquD" id="2PpeCt3iRud" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="2xfsEoBTLgl" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
                   </node>
                 </node>

@@ -208,11 +208,10 @@
       </node>
       <node concept="17JERQ" id="2FICFVq5ehA" role="3jGSnO">
         <node concept="3jGSmg" id="2FICFVq5ehC" role="3azrUc" />
-        <node concept="36Kqmr" id="2FICFVq5ei0" role="36Ktwi">
+        <node concept="36Kqmr" id="3uaXG0jxykr" role="36Ktwi">
           <property role="36Kqnr" value="3" />
         </node>
       </node>
-      <node concept="17J3f2" id="2FICFVq5a1a" role="3jGSnO" />
       <node concept="17J3Kp" id="2FICFVq5eBa" role="3jGSnO">
         <property role="17J3Nn" value="variable declaration and reference" />
       </node>
@@ -243,7 +242,7 @@
           <node concept="2LJN6$" id="2FICFVq5evo" role="36MIYJ">
             <node concept="3ckXiU" id="2FICFVq5eGj" role="3527S9" />
             <node concept="3ckXiT" id="2FICFVq5etL" role="3527ZY">
-              <property role="3ckXiS" value="SOUTH" />
+              <property role="3ckXiS" value="NORTH" />
             </node>
           </node>
         </node>
@@ -430,36 +429,6 @@
   </node>
   <node concept="3cvgSl" id="2FICFVq5t6B">
     <property role="TrG5h" value="TracingRobot" />
-    <node concept="3pOcrA" id="442XwrAUPYE" role="2j5j5A">
-      <property role="TrG5h" value="trace" />
-      <node concept="3dtAsP" id="442XwrAUPYF" role="2jg$Xp" />
-      <node concept="3pOcrZ" id="442XwrAUPYH" role="2j5jbD" />
-      <node concept="3jGSmg" id="442XwrAUPYI" role="hRHZh">
-        <node concept="2kp8ke" id="442XwrAUPZ7" role="3jGSnO">
-          <node concept="3527Q3" id="442XwrAUQ03" role="16wSqL">
-            <node concept="3527Q3" id="442XwrAUQ2q" role="3527S9">
-              <node concept="AE91N" id="442XwrAUQ32" role="3527S9">
-                <ref role="AE91K" node="442XwrAUPYV" resolve="message" />
-              </node>
-              <node concept="16y5rI" id="442XwrAUQ0F" role="3527ZY">
-                <property role="16xLMo" value=": " />
-              </node>
-            </node>
-            <node concept="2jchP5" id="442XwrAUPZy" role="3527ZY">
-              <node concept="2j_qma" id="442XwrAUPZO" role="2j_PeB">
-                <ref role="2jD6AI" node="2FICFVq5D0p" resolve="robotName" />
-              </node>
-              <node concept="2jco51" id="442XwrAUPZr" role="2j_qme" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="FiAUU" id="442XwrAUPYV" role="3dtAt9">
-        <property role="36jPZJ" value="false" />
-        <property role="TrG5h" value="message" />
-        <node concept="36Kql8" id="442XwrAUPYU" role="36MCEW" />
-      </node>
-    </node>
     <node concept="3pOcrA" id="442XwrAUQ69" role="2j5j5A">
       <property role="TrG5h" value="doStep" />
       <node concept="3dtAsP" id="442XwrAUQ6a" role="2jg$Xp" />
@@ -499,6 +468,36 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3pOcrA" id="442XwrAUPYE" role="2j5j5A">
+      <property role="TrG5h" value="trace" />
+      <node concept="3dtAsP" id="442XwrAUPYF" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="442XwrAUPYH" role="2j5jbD" />
+      <node concept="3jGSmg" id="442XwrAUPYI" role="hRHZh">
+        <node concept="2kp8ke" id="442XwrAUPZ7" role="3jGSnO">
+          <node concept="3527Q3" id="442XwrAUQ03" role="16wSqL">
+            <node concept="3527Q3" id="442XwrAUQ2q" role="3527S9">
+              <node concept="AE91N" id="442XwrAUQ32" role="3527S9">
+                <ref role="AE91K" node="442XwrAUPYV" resolve="message" />
+              </node>
+              <node concept="16y5rI" id="442XwrAUQ0F" role="3527ZY">
+                <property role="16xLMo" value=": " />
+              </node>
+            </node>
+            <node concept="2jchP5" id="442XwrAUPZy" role="3527ZY">
+              <node concept="2j_qma" id="442XwrAUPZO" role="2j_PeB">
+                <ref role="2jD6AI" node="2FICFVq5D0p" resolve="robotName" />
+              </node>
+              <node concept="2jco51" id="442XwrAUPZr" role="2j_qme" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="FiAUU" id="442XwrAUPYV" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="message" />
+        <node concept="36Kql8" id="442XwrAUPYU" role="36MCEW" />
       </node>
     </node>
     <node concept="3pOcrA" id="442XwrAUQNh" role="2j5j5A">

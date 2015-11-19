@@ -107,6 +107,7 @@
       <node concept="PMmxH" id="6bbx8uIA51x" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         <ref role="1ERwB7" node="6bbx8uIA51E" resolve="DeleteLogicalQuery" />
+        <ref role="1k5W1q" to="y2uj:1UlhK23WIih" resolve="Expression" />
         <node concept="OXEIz" id="6bbx8uIA51y" role="P5bDN">
           <node concept="UkePV" id="6bbx8uIA51z" role="OY2wv">
             <ref role="Ul1FP" to="758v:6bbx8uIA512" resolve="KarelLogicalQuery" />
@@ -115,6 +116,7 @@
       </node>
       <node concept="3F0A7n" id="6bbx8uIA51$" role="3EZMnx">
         <ref role="1NtTu8" to="758v:6bbx8uIA50Z" resolve="direction" />
+        <ref role="1k5W1q" to="y2uj:1UlhK23WIih" resolve="Expression" />
       </node>
       <node concept="l2Vlx" id="6bbx8uIA51_" role="2iSdaV" />
     </node>
@@ -125,6 +127,7 @@
     <node concept="PMmxH" id="6bbx8uIA51B" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1ERwB7" node="6bbx8uIA51E" resolve="DeleteLogicalQuery" />
+      <ref role="1k5W1q" to="y2uj:1UlhK23WIih" resolve="Expression" />
       <node concept="OXEIz" id="6bbx8uIA51C" role="P5bDN">
         <node concept="UkePV" id="6bbx8uIA51D" role="OY2wv">
           <ref role="Ul1FP" to="758v:6bbx8uIA512" resolve="KarelLogicalQuery" />

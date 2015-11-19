@@ -10,6 +10,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2635,7 +2636,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4OhcFiDmgks" role="3cqZAp" />
+        <node concept="34ab3g" id="3uaXG0jx731" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="2YIFZM" id="3uaXG0jx77s" role="34bqiv">
+            <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+            <node concept="Xl_RD" id="3uaXG0jx780" role="37wK5m">
+              <property role="Xl_RC" value="All definitions: {0}" />
+            </node>
+            <node concept="37vLTw" id="3uaXG0jx7hZ" role="37wK5m">
+              <ref role="3cqZAo" node="4OhcFiDmgmQ" resolve="defs" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="14XUkkdQWM5" role="3cqZAp">
           <node concept="2ShNRf" id="14XUkkdQWTv" role="3cqZAk">
             <node concept="YeOm9" id="14XUkkdQX3u" role="2ShVmc">

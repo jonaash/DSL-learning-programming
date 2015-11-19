@@ -1098,8 +1098,8 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="6pJoTiqkt2z" role="2OqNvi">
-                    <ref role="37wK5l" to="ljn0:14XUkkdQFDr" resolve="getLocalDefinitions" />
+                  <node concept="2qgKlT" id="3uaXG0jD1Gr" role="2OqNvi">
+                    <ref role="37wK5l" to="ljn0:4OhcFiDloHv" resolve="getAllDefinitions" />
                   </node>
                 </node>
               </node>
@@ -1202,8 +1202,8 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="2PpeCt3iRu2" role="2OqNvi">
-                    <ref role="37wK5l" to="ljn0:14XUkkdQFDr" resolve="getLocalDefinitions" />
+                  <node concept="2qgKlT" id="3uaXG0jD2rX" role="2OqNvi">
+                    <ref role="37wK5l" to="ljn0:4OhcFiDloHv" resolve="getAllDefinitions" />
                   </node>
                 </node>
               </node>

@@ -29,6 +29,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -211,6 +212,7 @@
   <node concept="1TIwiD" id="7KcPMNJfsDG">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="MethodCall" />
+    <property role="MwhBj" value="${module}/icons/method.png" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="7KcPMNJfsDH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -280,6 +282,7 @@
     <property role="3GE5qa" value="class" />
     <property role="34LRSv" value="singleton" />
     <property role="R4oN_" value="definition of object that can have only single instance" />
+    <property role="MwhBj" value="${module}/icons/static.png" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     <node concept="1TJgyj" id="6bbx8uIEHkQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -308,6 +311,7 @@
     <property role="34LRSv" value="class" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="definition of object" />
+    <property role="MwhBj" value="${module}/icons/class.png" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIJiUv">

@@ -8,10 +8,14 @@
     <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
     <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects" version="-1" />
+    <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="-1" />
+    <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="-1" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="cc2e" ref="r:e312d658-8754-4371-b7a9-475f8e38c360(org.eddieprogramming.core.EddieBasic.sceneConstruction)" />
+    <import index="gdpi" ref="r:b28248e3-387e-43cb-9525-1e427905990c(org.eddieprogramming.core.EddieBasic.syntaxHighlighting)" />
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
@@ -21,6 +25,7 @@
       <concept id="7428636491485899618" name="org.eddieprogramming.core.EddieBasic.structure.TutorialReference" flags="ng" index="2J$FF_">
         <reference id="7428636491485899619" name="tutorial" index="2J$FF$" />
       </concept>
+      <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -60,6 +65,7 @@
       <node concept="3cjXi6" id="3zxup4fGqRE" role="3jGSnO" />
       <node concept="3cjWHS" id="3zxup4fGsj8" role="3jGSnO" />
       <node concept="3cjWHS" id="3zxup4fGsjo" role="3jGSnO" />
+      <node concept="17J3f2" id="1mpZf2HI$ty" role="3jGSnO" />
     </node>
     <node concept="2J$FF_" id="6snOov8Unxr" role="2J$FC6">
       <ref role="2J$FF$" to="cc2e:6snOov8U0IP" resolve="TestTutorial" />
