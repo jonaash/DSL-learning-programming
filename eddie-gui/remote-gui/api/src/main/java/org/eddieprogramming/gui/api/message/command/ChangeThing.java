@@ -26,12 +26,23 @@ public class ChangeThing extends Command {
      */
     private Appearance newAppearance;
 
+    /**
+     * New label that should be used. If it is null, label won't be changed.
+     */
+    private String newLabel;
+
     public ChangeThing(String thingName, Position newPosition, Appearance newAppearance) {
         this.thingName = thingName;
         this.newPosition = newPosition;
         this.newAppearance = newAppearance;
     }
 
+    public ChangeThing(String thingName, Position newPosition, Appearance newAppearance, String newLabel) {
+        this.thingName = thingName;
+        this.newPosition = newPosition;
+        this.newAppearance = newAppearance;
+        this.newLabel = newLabel;
+    }
 
     public ChangeThing(String thingName, Position newPosition) {
         this.thingName = thingName;
@@ -43,11 +54,14 @@ public class ChangeThing extends Command {
         this.newAppearance = newAppearance;
     }
 
+    public ChangeThing(String thingName, String newLabel) {
+        this.thingName = thingName;
+        this.newLabel = newLabel;
+    }
 
     public String getThingName() {
         return thingName;
     }
-
 
     public Position getNewPosition() {
         return newPosition;
@@ -57,6 +71,9 @@ public class ChangeThing extends Command {
         return newAppearance;
     }
 
+    public String getNewLabel() {
+        return newLabel;
+    }
 
     @Override
     public String toString() {
@@ -64,6 +81,7 @@ public class ChangeThing extends Command {
                 .append("thingName", thingName)
                 .append("newPosition", newPosition)
                 .append("newAppearance", newAppearance)
+                .append("newLabel", newLabel)
                 .toString();
     }
 }
