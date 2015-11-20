@@ -5,12 +5,27 @@
     <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions" version="-1" />
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="-1" />
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="-1" />
-    <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="KarelFunctions" version="-1" />
+    <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="-1" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <devkit ref="b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)" />
+    <devkit ref="114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.runtime.scene)" />
+    <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.runtime.karel)" />
+  </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
+      <concept id="8938755948420525033" name="org.eddieprogramming.core.EddieBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
+        <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
+        <child id="8938755948420525131" name="value" index="2jzNHB" />
+      </concept>
       <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
+      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
+        <reference id="7428636491479279402" name="scene" index="2JdVqH" />
+      </concept>
       <concept id="3394217739178654343" name="org.eddieprogramming.core.EddieBasic.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
@@ -45,10 +60,28 @@
       <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
         <property id="3776063756796243785" name="value" index="3dtAEN" />
       </concept>
+      <concept id="3776063756797189811" name="org.eddieprogramming.core.EddieBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
+        <child id="3776063756797190137" name="expression" index="3dudC3" />
+      </concept>
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
+      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScene" flags="ng" index="1n_5_B">
+        <property id="6349814108913355890" name="width" index="1n_5SS" />
+        <property id="6349814108913355892" name="heigth" index="1n_5SY" />
+        <child id="6349814108915674177" name="sceneConstruction" index="1nGrSb" />
+        <child id="6349814108917427210" name="startPosition" index="1nPBT0" />
+      </concept>
+      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
+        <child id="6349814108915673812" name="body" index="1nGryu" />
+      </concept>
+      <concept id="6349814108916865125" name="org.eddieprogramming.core.EddieBasic.structure.AbstractPosition" flags="ng" index="1nRWCJ">
+        <property id="6349814108916864872" name="col" index="1nRWky" />
+        <property id="6349814108916864868" name="row" index="1nRWkI" />
+        <property id="6349814108916865107" name="direction" index="1nRWCp" />
+      </concept>
       <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
+        <child id="7428636491479287661" name="sceneRef" index="2JdPrE" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -57,8 +90,39 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="3394217739178660495" name="org.eddieprogramming.core.EddieVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
+      </concept>
+      <concept id="2862375370118739790" name="org.eddieprogramming.core.EddieVariables.structure.TerminalExpression" flags="ng" index="3Eu0hP">
+        <child id="9151847315776664715" name="type" index="1ouL0I" />
+      </concept>
+      <concept id="2862375370118745561" name="org.eddieprogramming.core.EddieVariables.structure.IsTerminal" flags="ng" index="3Eu7Vy" />
+      <concept id="2862375370119080247" name="org.eddieprogramming.core.EddieVariables.structure.WriteTerminal" flags="ng" index="3EvPCc">
+        <child id="9151847315776729608" name="type" index="1ouxqH" />
+        <child id="9151847315776729610" name="value" index="1ouxqJ" />
+      </concept>
+      <concept id="2862375370119080246" name="org.eddieprogramming.core.EddieVariables.structure.ReadTerminal" flags="ng" index="3EvPCd" />
+    </language>
+    <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects">
+      <concept id="8938755948415928937" name="org.eddieprogramming.core.EddieObjects.structure.DotOperator" flags="ng" index="2jchP5">
+        <child id="8938755948421935778" name="expression" index="2j_qme" />
+        <child id="8938755948422071435" name="operation" index="2j_PeB" />
+      </concept>
+    </language>
+    <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction">
+      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
+      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
+      <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
+    </language>
+    <language id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects">
+      <concept id="2904666342636596436" name="org.eddieprogramming.support.EddieBaseLanguageObjects.structure.BLMethodCall" flags="ng" index="fF5TM">
+        <reference id="2904666342637305019" name="callTaget" index="fCCSt" />
+        <child id="2904666342638125641" name="parameters" index="fHv3J" />
+      </concept>
+      <concept id="2904666342638016156" name="org.eddieprogramming.support.EddieBaseLanguageObjects.structure.BLParameterFill" flags="ng" index="fHUgU" />
+      <concept id="2507101727818895529" name="org.eddieprogramming.support.EddieBaseLanguageObjects.structure.BLSingletonReference" flags="ng" index="3sCHcl">
+        <reference id="2507101727819166686" name="targetClass" index="3sDJ1y" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -72,6 +136,10 @@
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
+    </language>
+    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel">
+      <concept id="7118929354272559102" name="org.eddieprogramming.dsl.RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
+      <concept id="7118929354272559105" name="org.eddieprogramming.dsl.RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
     </language>
   </registry>
   <node concept="1$vsWe" id="3eViXf8zN7A">
@@ -178,6 +246,269 @@
         </node>
       </node>
       <node concept="17J3f2" id="3eViXf8zNqg" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="1nE9df" id="7W1TakB$IWf">
+    <property role="1n_5SS" value="10" />
+    <property role="1n_5SY" value="10" />
+    <property role="TrG5h" value="TestVariablesScene" />
+    <node concept="1nNwun" id="7W1TakB$IWg" role="1nPBT0">
+      <property role="1nRWkI" value="1" />
+      <property role="1nRWky" value="1" />
+      <property role="1nRWCp" value="EAST" />
+    </node>
+    <node concept="1nE9dI" id="7W1TakB$IWh" role="1nGrSb">
+      <node concept="3jGSmg" id="7W1TakB$IWi" role="1nGryu">
+        <node concept="3dudH9" id="7W1TakB$JgQ" role="3jGSnO">
+          <node concept="2jchP5" id="7W1TakB$JgN" role="3dudC3">
+            <node concept="fF5TM" id="7W1TakB$JmJ" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3scS9" resolve="setHome" />
+              <node concept="fHUgU" id="7W1TakB$JmK" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3scV4" resolve="row" />
+                <node concept="36Kqmr" id="7W1TakB$Jn4" role="2jzNHB">
+                  <property role="36Kqnr" value="5" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="7W1TakB$JmL" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3scWY" resolve="col" />
+                <node concept="36Kqmr" id="7W1TakB$Jnf" role="2jzNHB">
+                  <property role="36Kqnr" value="5" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="7W1TakB$JgM" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="7W1TakB$JuZ" role="3jGSnO" />
+        <node concept="17J3Kp" id="7W1TakB$JuF" role="3jGSnO">
+          <property role="17J3Nn" value="logical terminal without variable" />
+        </node>
+        <node concept="3dudH9" id="7W1TakB$JnD" role="3jGSnO">
+          <node concept="2jchP5" id="7W1TakB$JnA" role="3dudC3">
+            <node concept="fF5TM" id="7W1TakB$Jtj" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3vKft" resolve="createNumberTerminal" />
+              <node concept="fHUgU" id="7W1TakB$Jtk" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKfz" resolve="row" />
+                <node concept="36Kqmr" id="7W1TakB$JtC" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="7W1TakB$Jtl" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKf_" resolve="col" />
+                <node concept="36Kqmr" id="7W1TakB$JtN" role="2jzNHB">
+                  <property role="36Kqnr" value="2" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="7W1TakB$Jn$" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="7W1TakB$Ju6" role="3jGSnO" />
+        <node concept="17J3Kp" id="7W1TakB$JFu" role="3jGSnO">
+          <property role="17J3Nn" value="logical terminal with variable" />
+        </node>
+        <node concept="3dudH9" id="7W1TakB$JB3" role="3jGSnO">
+          <node concept="2jchP5" id="7W1TakB$JB0" role="3dudC3">
+            <node concept="fF5TM" id="7W1TakB$JCv" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3vKft" resolve="createNumberTerminal" />
+              <node concept="fHUgU" id="7W1TakB$JCw" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKfz" resolve="row" />
+                <node concept="36Kqmr" id="7W1TakB$JCO" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="7W1TakB$JCx" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKf_" resolve="col" />
+                <node concept="36Kqmr" id="7W1TakB$JCZ" role="2jzNHB">
+                  <property role="36Kqnr" value="3" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="7W1TakB$JAY" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dudH9" id="7W1TakB$JGx" role="3jGSnO">
+          <node concept="2jchP5" id="7W1TakB$JGu" role="3dudC3">
+            <node concept="fF5TM" id="7W1TakB$JN$" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3sfBb" resolve="writeNumber" />
+              <node concept="fHUgU" id="7W1TakB$JN_" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3sfCe" resolve="number" />
+                <node concept="36Kqmr" id="7W1TakB$JPF" role="2jzNHB">
+                  <property role="36Kqnr" value="6" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="7W1TakB$JNA" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3tsDP" resolve="row" />
+                <node concept="36Kqmr" id="7W1TakB$JOb" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="7W1TakB$JNB" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3tsHd" resolve="col" />
+                <node concept="36Kqmr" id="7W1TakB$JQa" role="2jzNHB">
+                  <property role="36Kqnr" value="3" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="7W1TakB$JGs" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="7W1TakB$JVi">
+    <property role="TrG5h" value="TestTerminal" />
+    <node concept="3jGSmg" id="7W1TakB$JVj" role="3jGSko">
+      <node concept="3cjXi6" id="7W1TakB$JVr" role="3jGSnO" />
+      <node concept="17CkzI" id="7W1TakB$JVJ" role="3jGSnO">
+        <node concept="3Eu7Vy" id="7W1TakB$JW5" role="17CkHB">
+          <node concept="36MCER" id="7W1TakB$JWg" role="1ouL0I" />
+        </node>
+        <node concept="3jGSmg" id="7W1TakB$JVN" role="17CkHq">
+          <node concept="2kp8ke" id="7W1TakB$JWo" role="3jGSnO">
+            <node concept="16y5rI" id="7W1TakB$JWp" role="16wSqL">
+              <property role="16xLMo" value="Test 1: is number" />
+            </node>
+          </node>
+          <node concept="36Mw20" id="7W1TakB$JWI" role="3jGSnO">
+            <node concept="AFBxM" id="7W1TakB$JWL" role="36Mw2n">
+              <property role="36jPZJ" value="false" />
+              <property role="TrG5h" value="n" />
+              <node concept="36MCER" id="7W1TakB$JWG" role="36MCEW" />
+              <node concept="3EvPCd" id="7W1TakB$JX3" role="36MIYJ">
+                <node concept="36MCER" id="7W1TakB$JXf" role="1ouL0I" />
+              </node>
+            </node>
+          </node>
+          <node concept="2kp8ke" id="7W1TakB$K3C" role="3jGSnO">
+            <node concept="3527Q3" id="7W1TakB$K4a" role="16wSqL">
+              <node concept="AE91N" id="7W1TakB$K4m" role="3527S9">
+                <ref role="AE91K" node="7W1TakB$JWL" resolve="n" />
+              </node>
+              <node concept="16y5rI" id="7W1TakB$K3D" role="3527ZY">
+                <property role="16xLMo" value="Number: " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="7W1TakB$JZ5" role="3jGSnO" />
+      <node concept="3cjXi6" id="7W1TakB$JZQ" role="3jGSnO" />
+      <node concept="17CkzI" id="7W1TakB$K0E" role="3jGSnO">
+        <node concept="3Eu7Vy" id="7W1TakB$K1m" role="17CkHB">
+          <node concept="36MCER" id="7W1TakB$K1x" role="1ouL0I" />
+        </node>
+        <node concept="3jGSmg" id="7W1TakB$K0I" role="17CkHq">
+          <node concept="2kp8ke" id="7W1TakB$K2t" role="3jGSnO">
+            <node concept="16y5rI" id="7W1TakB$K2u" role="16wSqL">
+              <property role="16xLMo" value="Test 2: is number" />
+            </node>
+          </node>
+          <node concept="36Mw20" id="7W1TakB$K2v" role="3jGSnO">
+            <node concept="AFBxM" id="7W1TakB$K2w" role="36Mw2n">
+              <property role="36jPZJ" value="false" />
+              <property role="TrG5h" value="n" />
+              <node concept="36MCER" id="7W1TakB$K2x" role="36MCEW" />
+              <node concept="3EvPCd" id="7W1TakB$K2y" role="36MIYJ">
+                <node concept="36MCER" id="7W1TakB$K2z" role="1ouL0I" />
+              </node>
+            </node>
+          </node>
+          <node concept="2kp8ke" id="7W1TakB$K4P" role="3jGSnO">
+            <node concept="3527Q3" id="7W1TakB$K4Q" role="16wSqL">
+              <node concept="AE91N" id="7W1TakB$K5i" role="3527S9">
+                <ref role="AE91K" node="7W1TakB$K2w" resolve="n" />
+              </node>
+              <node concept="16y5rI" id="7W1TakB$K4S" role="3527ZY">
+                <property role="16xLMo" value="Number: " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="7W1TakB$JVF" role="3jGSnO" />
+      <node concept="3cjXi6" id="7W1TakB$Kcg" role="3jGSnO" />
+      <node concept="17CkzI" id="7W1TakB$Kch" role="3jGSnO">
+        <node concept="3Eu7Vy" id="7W1TakB$Kci" role="17CkHB">
+          <node concept="36MCER" id="7W1TakB$Kcj" role="1ouL0I" />
+        </node>
+        <node concept="3jGSmg" id="7W1TakB$Kck" role="17CkHq">
+          <node concept="2kp8ke" id="7W1TakB$Kcl" role="3jGSnO">
+            <node concept="16y5rI" id="7W1TakB$Kcm" role="16wSqL">
+              <property role="16xLMo" value="Test 3: is number" />
+            </node>
+          </node>
+          <node concept="36Mw20" id="7W1TakB$Kcn" role="3jGSnO">
+            <node concept="AFBxM" id="7W1TakB$Kco" role="36Mw2n">
+              <property role="36jPZJ" value="false" />
+              <property role="TrG5h" value="n" />
+              <node concept="36MCER" id="7W1TakB$Kcp" role="36MCEW" />
+              <node concept="3EvPCd" id="7W1TakB$Kcq" role="36MIYJ">
+                <node concept="36MCER" id="7W1TakB$Kcr" role="1ouL0I" />
+              </node>
+            </node>
+          </node>
+          <node concept="2kp8ke" id="7W1TakB$Kcs" role="3jGSnO">
+            <node concept="3527Q3" id="7W1TakB$Kct" role="16wSqL">
+              <node concept="AE91N" id="7W1TakB$Kcu" role="3527S9">
+                <ref role="AE91K" node="7W1TakB$Kco" resolve="n" />
+              </node>
+              <node concept="16y5rI" id="7W1TakB$Kcv" role="3527ZY">
+                <property role="16xLMo" value="Number: " />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="7W1TakB$KGv" role="3jGSnO" />
+      <node concept="3cjWHT" id="7W1TakB$KJw" role="3jGSnO" />
+      <node concept="3cjWHT" id="7W1TakB$KM$" role="3jGSnO" />
+      <node concept="3cjXi6" id="7W1TakB$KPE" role="3jGSnO" />
+      <node concept="17J3f2" id="7W1TakB$KRe" role="3jGSnO" />
+      <node concept="3EvPCc" id="7W1TakB$KUn" role="3jGSnO">
+        <node concept="36MCER" id="7W1TakB$KYu" role="1ouxqH" />
+        <node concept="36Kqmr" id="7W1TakB$KYz" role="1ouxqJ">
+          <property role="36Kqnr" value="3" />
+        </node>
+      </node>
+      <node concept="2kp8ke" id="7W1TakB$L2F" role="3jGSnO">
+        <node concept="3527Q3" id="7W1TakB$L4D" role="16wSqL">
+          <node concept="3EvPCd" id="7W1TakB$L4U" role="3527S9">
+            <node concept="36MCER" id="7W1TakB$L5c" role="1ouL0I" />
+          </node>
+          <node concept="16y5rI" id="7W1TakB$L2G" role="3527ZY">
+            <property role="16xLMo" value="Num " />
+          </node>
+        </node>
+      </node>
+      <node concept="2kp8ke" id="7W1TakB$L9A" role="3jGSnO">
+        <node concept="3527Q3" id="7W1TakB$LbA" role="16wSqL">
+          <node concept="3EvPCd" id="7W1TakB$LbM" role="3527S9">
+            <node concept="36Kql8" id="7W1TakB$Lc4" role="1ouL0I" />
+          </node>
+          <node concept="16y5rI" id="7W1TakB$L9B" role="3527ZY">
+            <property role="16xLMo" value="Text " />
+          </node>
+        </node>
+      </node>
+      <node concept="3EvPCc" id="7W1TakB_chJ" role="3jGSnO">
+        <node concept="36Kql8" id="7W1TakB_cjE" role="1ouxqH" />
+        <node concept="16y5rI" id="7W1TakB_cjJ" role="1ouxqJ">
+          <property role="16xLMo" value="Test" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="7W1TakB$Kai" role="3jGSnO" />
+    </node>
+    <node concept="2JdVq9" id="7W1TakB$JVl" role="2JdPrE">
+      <ref role="2JdVqH" node="7W1TakB$IWf" resolve="TestVariablesScene" />
     </node>
   </node>
 </model>

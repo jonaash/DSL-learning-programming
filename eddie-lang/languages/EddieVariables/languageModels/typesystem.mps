@@ -2481,5 +2481,95 @@
       <ref role="1YaFvo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6bbx8uIA514">
+    <property role="TrG5h" value="typeof_IsTerminal" />
+    <property role="3GE5qa" value="terminal" />
+    <node concept="3clFbS" id="6bbx8uIA515" role="18ibNy">
+      <node concept="1Z5TYs" id="6bbx8uIA516" role="3cqZAp">
+        <node concept="mw_s8" id="6bbx8uIA517" role="1ZfhKB">
+          <node concept="2pJPEk" id="6bbx8uIA518" role="mwGJk">
+            <node concept="2pJPED" id="6bbx8uIA519" role="2pJPEn">
+              <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6bbx8uIA51a" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6bbx8uIA51b" role="mwGJk">
+            <node concept="1YBJjd" id="6bbx8uIA51c" role="1Z2MuG">
+              <ref role="1YBMHb" node="6bbx8uIA51d" resolve="isTerminal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6bbx8uIA51d" role="1YuTPh">
+      <property role="TrG5h" value="isTerminal" />
+      <ref role="1YaFvo" to="3y9h:2uTcNJdKkRp" resolve="IsTerminal" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7W1TakBvAAW">
+    <property role="TrG5h" value="typeof_ReadTerminal" />
+    <property role="3GE5qa" value="terminal" />
+    <node concept="3clFbS" id="7W1TakBvAAX" role="18ibNy">
+      <node concept="1Z5TYs" id="7W1TakBvAAY" role="3cqZAp">
+        <node concept="mw_s8" id="7W1TakBvAAZ" role="1ZfhKB">
+          <node concept="2OqwBi" id="7W1TakBvBun" role="mwGJk">
+            <node concept="1YBJjd" id="7W1TakBvACb" role="2Oq$k0">
+              <ref role="1YBMHb" node="7W1TakBvAB5" resolve="readTerminal" />
+            </node>
+            <node concept="3TrEf2" id="7W1TakBvBT9" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:7W1TakBuJib" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7W1TakBvAB2" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7W1TakBvAB3" role="mwGJk">
+            <node concept="1YBJjd" id="7W1TakBvAB4" role="1Z2MuG">
+              <ref role="1YBMHb" node="7W1TakBvAB5" resolve="readTerminal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7W1TakBvAB5" role="1YuTPh">
+      <property role="TrG5h" value="readTerminal" />
+      <ref role="1YaFvo" to="3y9h:2uTcNJdLA$Q" resolve="ReadTerminal" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="7W1TakBvCkV">
+    <property role="3GE5qa" value="terminal" />
+    <property role="TrG5h" value="check_WriteTerminal" />
+    <node concept="3clFbS" id="7W1TakBvCkW" role="18ibNy">
+      <node concept="1ZobV4" id="7W1TakBvCUl" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="7W1TakBvDin" role="1ZfhKB">
+          <node concept="2OqwBi" id="7W1TakBvDjZ" role="mwGJk">
+            <node concept="1YBJjd" id="7W1TakBvDil" role="2Oq$k0">
+              <ref role="1YBMHb" node="7W1TakBvCl7" resolve="writeTerminal" />
+            </node>
+            <node concept="3TrEf2" id="7W1TakBvDub" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:7W1TakBuZ88" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="7W1TakBvD5E" role="1ZfhK$">
+          <node concept="1Z2H0r" id="7W1TakBvD5w" role="mwGJk">
+            <node concept="2OqwBi" id="7W1TakBvD7C" role="1Z2MuG">
+              <node concept="1YBJjd" id="7W1TakBvD5V" role="2Oq$k0">
+                <ref role="1YBMHb" node="7W1TakBvCl7" resolve="writeTerminal" />
+              </node>
+              <node concept="3TrEf2" id="7W1TakBvDh4" role="2OqNvi">
+                <ref role="3Tt5mk" to="3y9h:7W1TakBuZ8a" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7W1TakBvCl7" role="1YuTPh">
+      <property role="TrG5h" value="writeTerminal" />
+      <ref role="1YaFvo" to="3y9h:2uTcNJdLA$R" resolve="WriteTerminal" />
+    </node>
+  </node>
 </model>
 

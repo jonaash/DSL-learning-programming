@@ -79,5 +79,12 @@
       <ref role="20ksaX" to="dyrx:6pJoTiq90Qo" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6xs90l3$Tbs">
+    <property role="TrG5h" value="BaseLanguageType" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+    <node concept="PrWs8" id="7W1TakB$J0Z" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
 </model>
 

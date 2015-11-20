@@ -275,5 +275,21 @@
       </node>
     </node>
   </node>
+  <node concept="3_zdsH" id="7W1TakBvQev">
+    <property role="3GE5qa" value="terminal" />
+    <ref role="3_znuS" to="3y9h:2uTcNJdLA$R" resolve="WriteTerminal" />
+    <node concept="3__wT9" id="7W1TakBvQew" role="3_A6iZ">
+      <node concept="3clFbS" id="7W1TakBvQex" role="2VODD2">
+        <node concept="3AgYrR" id="7W1TakBvQje" role="3cqZAp">
+          <node concept="2OqwBi" id="7W1TakBvQl8" role="3Ah4Yx">
+            <node concept="3__QtB" id="7W1TakBvQju" role="2Oq$k0" />
+            <node concept="3TrEf2" id="7W1TakBvQuL" role="2OqNvi">
+              <ref role="3Tt5mk" to="3y9h:7W1TakBuZ8a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

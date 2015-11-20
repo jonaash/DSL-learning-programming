@@ -179,5 +179,51 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
+  <node concept="1TIwiD" id="2uTcNJdKjte">
+    <property role="TrG5h" value="TerminalExpression" />
+    <property role="3GE5qa" value="terminal" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="1TJgyj" id="7W1TakBuJib" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:1BMnhOnqAYu" resolve="SimpleType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2uTcNJdKkRp">
+    <property role="3GE5qa" value="terminal" />
+    <property role="TrG5h" value="IsTerminal" />
+    <property role="34LRSv" value="terminal: is" />
+    <property role="R4oN_" value="checks if there is terminal of given type" />
+    <ref role="1TJDcQ" node="2uTcNJdKjte" resolve="TerminalExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uTcNJdLA$Q">
+    <property role="3GE5qa" value="terminal" />
+    <property role="TrG5h" value="ReadTerminal" />
+    <property role="34LRSv" value="terminal: read" />
+    <property role="R4oN_" value="read a value from the terminal" />
+    <ref role="1TJDcQ" node="2uTcNJdKjte" resolve="TerminalExpression" />
+  </node>
+  <node concept="1TIwiD" id="2uTcNJdLA$R">
+    <property role="3GE5qa" value="terminal" />
+    <property role="TrG5h" value="WriteTerminal" />
+    <property role="34LRSv" value="terminal: write" />
+    <property role="R4oN_" value="write a value to the terminal" />
+    <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+    <node concept="1TJgyj" id="7W1TakBuZ88" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:1BMnhOnqAYu" resolve="SimpleType" />
+    </node>
+    <node concept="1TJgyj" id="7W1TakBuZ8a" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    </node>
+  </node>
 </model>
 

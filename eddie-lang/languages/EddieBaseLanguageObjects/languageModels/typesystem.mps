@@ -93,6 +93,7 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -162,7 +163,7 @@
   </node>
   <node concept="1YbPZF" id="3eViXf8usvt">
     <property role="TrG5h" value="typeof_BLParameterFill" />
-    <property role="3GE5qa" value="call" />
+    <property role="3GE5qa" value="" />
     <node concept="3clFbS" id="3eViXf8usvu" role="18ibNy">
       <node concept="3cpWs8" id="1N21bCDyN73" role="3cqZAp">
         <node concept="3cpWsn" id="1N21bCDyN76" role="3cpWs9">
@@ -248,6 +249,37 @@
     <node concept="1YaCAy" id="3eViXf8usvw" role="1YuTPh">
       <property role="TrG5h" value="blParameterFill" />
       <ref role="1YaFvo" to="gkvc:2xfsEoBYdqs" resolve="BLParameterFill" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6xs90l3$TIv">
+    <property role="TrG5h" value="typeOf_BLSingletonReference" />
+    <node concept="3clFbS" id="6xs90l3$TIw" role="18ibNy">
+      <node concept="1Z5TYs" id="6xs90l3$Uj8" role="3cqZAp">
+        <node concept="mw_s8" id="6xs90l3$Ujq" role="1ZfhKB">
+          <node concept="2OqwBi" id="6xs90l3$UHG" role="mwGJk">
+            <node concept="2OqwBi" id="6xs90l3$Ulq" role="2Oq$k0">
+              <node concept="1YBJjd" id="6xs90l3$Ujo" role="2Oq$k0">
+                <ref role="1YBMHb" node="6xs90l3$U8g" resolve="blSingletonRef" />
+              </node>
+              <node concept="2yIwOk" id="6xs90l3$UwP" role="2OqNvi" />
+            </node>
+            <node concept="2qgKlT" id="6xs90l3$UV$" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6xs90l3$Ujb" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6xs90l3$UgR" role="mwGJk">
+            <node concept="1YBJjd" id="6xs90l3$Uhj" role="1Z2MuG">
+              <ref role="1YBMHb" node="6xs90l3$U8g" resolve="blSingletonRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6xs90l3$U8g" role="1YuTPh">
+      <property role="TrG5h" value="blSingletonRef" />
+      <ref role="1YaFvo" to="gkvc:2bb0VNYqt2D" resolve="BLSingletonReference" />
     </node>
   </node>
 </model>

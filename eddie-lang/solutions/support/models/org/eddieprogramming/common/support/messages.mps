@@ -262,6 +262,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3uaXG0jtabf" role="3cqZAp">
+          <node concept="37vLTI" id="3uaXG0jtaIg" role="3clFbG">
+            <node concept="Xl_RD" id="3uaXG0jtaMG" role="37vLTx">
+              <property role="Xl_RC" value="A root node with name ''{0}'' already exists." />
+            </node>
+            <node concept="3EllGN" id="3uaXG0jtabh" role="37vLTJ">
+              <node concept="Xl_RD" id="3uaXG0jtabi" role="3ElVtu">
+                <property role="Xl_RC" value="error.root.node.name.duplicite" />
+              </node>
+              <node concept="37vLTw" id="3uaXG0jtabn" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="146X79f00Ui" role="3cqZAp" />
         <node concept="3clFbH" id="5xGSFEuhY0D" role="3cqZAp" />
         <node concept="3clFbF" id="7_uVVPcJTw2" role="3cqZAp">
@@ -714,7 +729,7 @@
         <node concept="3clFbF" id="jBG8nbHNyL" role="3cqZAp">
           <node concept="37vLTI" id="jBG8nbHNyM" role="3clFbG">
             <node concept="Xl_RD" id="jBG8nbHNyN" role="37vLTx">
-              <property role="Xl_RC" value="Change to Repeat Statement" />
+              <property role="Xl_RC" value="Change to Repeat Loop" />
             </node>
             <node concept="3EllGN" id="jBG8nbHNyO" role="37vLTJ">
               <node concept="37vLTw" id="jBG8nbHNyU" role="3ElQJh">
@@ -729,7 +744,7 @@
         <node concept="3clFbF" id="jBG8nbHO5c" role="3cqZAp">
           <node concept="37vLTI" id="jBG8nbHO5d" role="3clFbG">
             <node concept="Xl_RD" id="jBG8nbHO5e" role="37vLTx">
-              <property role="Xl_RC" value="Change to While Statement" />
+              <property role="Xl_RC" value="Change to While Loop" />
             </node>
             <node concept="3EllGN" id="jBG8nbHO5f" role="37vLTJ">
               <node concept="37vLTw" id="jBG8nbHO5l" role="3ElQJh">
@@ -741,6 +756,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3uaXG0jxMXg" role="3cqZAp">
+          <node concept="37vLTI" id="3uaXG0jxMXh" role="3clFbG">
+            <node concept="Xl_RD" id="3uaXG0jxMXi" role="37vLTx">
+              <property role="Xl_RC" value="Change to For Loop" />
+            </node>
+            <node concept="3EllGN" id="3uaXG0jxMXj" role="37vLTJ">
+              <node concept="37vLTw" id="3uaXG0jxMXp" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="3uaXG0jxMXk" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.change.to.for" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3uaXG0jxMQQ" role="3cqZAp" />
         <node concept="3clFbF" id="jBG8nbI0Ca" role="3cqZAp">
           <node concept="37vLTI" id="jBG8nbI0Cb" role="3clFbG">
             <node concept="Xl_RD" id="jBG8nbI0Cc" role="37vLTx">
@@ -851,7 +882,7 @@
         <node concept="3clFbF" id="6pJoTiqkFFR" role="3cqZAp">
           <node concept="37vLTI" id="6pJoTiqkFFS" role="3clFbG">
             <node concept="Xl_RD" id="6pJoTiqkFFT" role="37vLTx">
-              <property role="Xl_RC" value="Call of procedure defined in {0}" />
+              <property role="Xl_RC" value="Call of action defined in {0}" />
             </node>
             <node concept="3EllGN" id="6pJoTiqkFFU" role="37vLTJ">
               <node concept="37vLTw" id="6pJoTiqkFG0" role="3ElQJh">
@@ -959,7 +990,7 @@
         <node concept="3clFbF" id="1jWJ98HEMBS" role="3cqZAp">
           <node concept="37vLTI" id="1jWJ98HEMBT" role="3clFbG">
             <node concept="Xl_RD" id="1jWJ98HEMBU" role="37vLTx">
-              <property role="Xl_RC" value="procedure" />
+              <property role="Xl_RC" value="action" />
             </node>
             <node concept="3EllGN" id="1jWJ98HEMBV" role="37vLTJ">
               <node concept="37vLTw" id="1jWJ98HEMC1" role="3ElQJh">

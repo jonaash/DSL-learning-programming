@@ -122,7 +122,7 @@
   </registry>
   <node concept="bUwia" id="6bbx8uIx4SO">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="expression" />
+    <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="6bh18$peMTo" role="3acgRq">
       <ref role="30HIoZ" to="758v:6bbx8uIx501" resolve="Step" />
       <node concept="j$656" id="6bh18$peO3j" role="1lVwrX">

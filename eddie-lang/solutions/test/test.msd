@@ -26,7 +26,11 @@
     <usedLanguage>992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)</usedLanguage>
     <usedLanguage>abbb403e-0a41-4661-9279-eb17d3806875(org.eddieprogramming.support.EddieBaseLanguageObjects)</usedLanguage>
     <usedLanguage>1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)</usedLanguage>
+    <usedLanguage>862fe5da-6916-4d19-b869-dbe8a02b6bb1(org.eddieprogramming.dsl.RobotKarel)</usedLanguage>
   </usedLanguages>
+  <usedDevKits>
+    <usedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</usedDevKit>
+  </usedDevKits>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -44,7 +48,10 @@
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" fqName="org.eddieprogramming.core.EddieFunctions" version="-1" />
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" fqName="org.eddieprogramming.core.EddieObjects" version="-1" />
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" fqName="org.eddieprogramming.core.EddieVariables" version="0" />
+    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" fqName="org.eddieprogramming.dsl.RobotKarel" version="0" />
     <language id="abbb403e-0a41-4661-9279-eb17d3806875" fqName="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
+    <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" fqName="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
+    <language id="22533a47-d9a8-4eae-8829-e07835315c1f" fqName="org.eddieprogramming.world.EddieSceneConstruction" version="0" />
   </languageVersions>
 </solution>
 

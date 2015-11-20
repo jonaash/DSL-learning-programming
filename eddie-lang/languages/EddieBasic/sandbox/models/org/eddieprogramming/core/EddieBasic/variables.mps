@@ -71,6 +71,15 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
+      <concept id="2862375370118739790" name="org.eddieprogramming.core.EddieVariables.structure.TerminalExpression" flags="ng" index="3Eu0hP">
+        <child id="9151847315776664715" name="type" index="1ouL0I" />
+      </concept>
+      <concept id="2862375370118745561" name="org.eddieprogramming.core.EddieVariables.structure.IsTerminal" flags="ng" index="3Eu7Vy" />
+      <concept id="2862375370119080247" name="org.eddieprogramming.core.EddieVariables.structure.WriteTerminal" flags="ng" index="3EvPCc">
+        <child id="9151847315776729608" name="type" index="1ouxqH" />
+        <child id="9151847315776729610" name="value" index="1ouxqJ" />
+      </concept>
+      <concept id="2862375370119080246" name="org.eddieprogramming.core.EddieVariables.structure.ReadTerminal" flags="ng" index="3EvPCd" />
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
       <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
@@ -83,6 +92,12 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
+      <concept id="3267332360033971606" name="org.eddieprogramming.core.EddieConditions.structure.IfStatement" flags="ng" index="17CkzI">
+        <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
+        <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
     </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel">
@@ -421,6 +436,34 @@
       <node concept="17J3f2" id="6snOov99cek" role="3jGSnO" />
       <node concept="17J3f2" id="6snOov99c5x" role="3jGSnO" />
       <node concept="17J3f2" id="6snOov99c84" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="1$vsWe" id="7W1TakBwAWo">
+    <property role="TrG5h" value="Terminals" />
+    <node concept="3jGSmg" id="7W1TakBwAWp" role="3jGSko">
+      <node concept="17CkzI" id="7W1TakBwB13" role="3jGSnO">
+        <node concept="3Eu7Vy" id="7W1TakBwB1i" role="17CkHB">
+          <node concept="36MBwV" id="7W1TakBwCpp" role="1ouL0I" />
+        </node>
+        <node concept="3jGSmg" id="7W1TakBwB17" role="17CkHq">
+          <node concept="3EvPCc" id="7W1TakBwB1M" role="3jGSnO">
+            <node concept="36Kql8" id="7W1TakBwB1V" role="1ouxqH" />
+            <node concept="16y5rI" id="7W1TakBwB20" role="1ouxqJ">
+              <property role="16xLMo" value="Test" />
+            </node>
+          </node>
+          <node concept="36Mw20" id="7W1TakBwB2p" role="3jGSnO">
+            <node concept="AFBxM" id="7W1TakBwB2s" role="36Mw2n">
+              <property role="36jPZJ" value="false" />
+              <property role="TrG5h" value="num" />
+              <node concept="36MCER" id="7W1TakBwB2n" role="36MCEW" />
+              <node concept="3EvPCd" id="7W1TakBwB2H" role="36MIYJ">
+                <node concept="36MCER" id="7W1TakBwB2T" role="1ouL0I" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
