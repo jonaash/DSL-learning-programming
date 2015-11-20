@@ -216,6 +216,10 @@ public class WorldService {
         if (command.getNewPosition() != null) {
             thing.setPosition(command.getNewPosition().getRow(), command.getNewPosition().getCol());
         }
+
+        if (command.getNewLabel() != null) {
+            thing.setLabel(command.getNewLabel());
+        }
     }
 
     private void showAlert(Alert command) {
