@@ -61,16 +61,16 @@ public class ControlsView {
 
     private void initComponents() {
         // TODO: add actions
-        start = createButton(ControlIcon.PLAY, "Start");
+        start = createButton(ControlIcon.PLAY, Labels.getLabel("controls.button.start.tooltip"));
         start.setModel(model.getStart());
 
-        pause = createButton(ControlIcon.PAUSE, "Pause");
+        pause = createButton(ControlIcon.PAUSE, Labels.getLabel("controls.button.pause.tooltip"));
         pause.setModel(model.getPause());
 
-        step = createButton(ControlIcon.REDO, "One step");
+        step = createButton(ControlIcon.REDO, Labels.getLabel("controls.button.step.tooltip"));
         step.setModel(model.getStep());
 
-        stop = createButton(ControlIcon.STOP, "Stop");
+        stop = createButton(ControlIcon.STOP, Labels.getLabel("controls.button.stop.tooltip"));
         stop.setModel(model.getStop());
 
         speed = new JSlider();
@@ -83,7 +83,7 @@ public class ControlsView {
         messages = new JTextPane(model.getMessages());
         messages.setEditable(false);
 
-        clearMessages = createButton(ControlIcon.RECYCLE_BIN, "Delete messages");
+        clearMessages = createButton(ControlIcon.RECYCLE_BIN, Labels.getLabel("controls.messages.delete.btn.tooltip"));
         clearMessages.setModel(model.getClearMessages());
     }
 
