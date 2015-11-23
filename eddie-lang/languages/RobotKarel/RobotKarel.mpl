@@ -60,12 +60,10 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</dependency>
-    <dependency reexport="true">4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(org.eddieprogramming.core.EddieConditions)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</usedLanguage>
-    <usedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(org.eddieprogramming.core.EddieConditions)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -103,11 +101,9 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="org.eddieprogramming.core.EddieBasic" version="0" />
-    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" fqName="org.eddieprogramming.core.EddieConditions" version="0" />
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</extendedLanguage>
-    <extendedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(org.eddieprogramming.core.EddieConditions)</extendedLanguage>
   </extendedLanguages>
 </language>
 
