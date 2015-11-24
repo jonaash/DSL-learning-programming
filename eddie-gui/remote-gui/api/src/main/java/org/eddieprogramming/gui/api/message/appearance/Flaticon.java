@@ -8,7 +8,8 @@ public enum Flaticon {
     HOUSE('\ue009'),
     ABC('\ue000'),
     MATH('\ue00c'),
-    BINARY('\ue002');
+    BINARY('\ue002'),
+    COMPUTER('\ue005');
 
     private char code;
 

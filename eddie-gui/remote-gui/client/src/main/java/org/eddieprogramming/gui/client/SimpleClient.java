@@ -84,6 +84,11 @@ public class SimpleClient {
         c6.setAppearance(new IconAppearance(Color.WHITE, Color.GREEN, Flaticon.BINARY));
         step.add(c6);
 
+        ChangeCell c7 = new ChangeCell();
+        c7.setPosition(new Position(6, 5));
+        c7.setAppearance(new IconAppearance(Color.WHITE, Color.GREEN, Flaticon.COMPUTER));
+        step.add(c7);
+
         step.add(c2);
 
         gui.doStep(step);
