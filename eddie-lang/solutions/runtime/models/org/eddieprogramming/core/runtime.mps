@@ -1447,33 +1447,6 @@
         </node>
       </node>
     </node>
-    <node concept="Wx3nA" id="3LwScSd8BD5" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="VARIABLES_COLOR" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="3LwScSd8BD6" role="1B3o_S" />
-      <node concept="3uibUv" id="3LwScSd8BD7" role="1tU5fm">
-        <ref role="3uigEE" to="k7g3:~Map" resolve="Map" />
-        <node concept="3uibUv" id="3LwScSd8BD8" role="11_B2D">
-          <ref role="3uigEE" node="6xs90l3vmQm" resolve="VariableType" />
-        </node>
-        <node concept="3uibUv" id="3LwScSd8BD9" role="11_B2D">
-          <ref role="3uigEE" to="10tj:~Appearance" resolve="Appearance" />
-        </node>
-      </node>
-      <node concept="2ShNRf" id="3LwScSd8BDa" role="33vP2m">
-        <node concept="1pGfFk" id="3LwScSd8BDb" role="2ShVmc">
-          <ref role="37wK5l" to="k7g3:~HashMap.&lt;init&gt;()" resolve="HashMap" />
-          <node concept="3uibUv" id="3LwScSd8BDc" role="1pMfVU">
-            <ref role="3uigEE" node="6xs90l3vmQm" resolve="VariableType" />
-          </node>
-          <node concept="3uibUv" id="3LwScSd8BDd" role="1pMfVU">
-            <ref role="3uigEE" to="10tj:~Appearance" resolve="Appearance" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="Wx3nA" id="1qfn$Gmrq60" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
@@ -1534,7 +1507,7 @@
           </node>
           <node concept="10M0yZ" id="3LwScSd8Dbn" role="37wK5m">
             <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-            <ref role="3cqZAo" to="1t7x:~Color.BLUE" resolve="BLUE" />
+            <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
           </node>
           <node concept="Xl_RD" id="3LwScSd8Ddc" role="37wK5m">
             <property role="Xl_RC" value="R" />
@@ -1559,8 +1532,8 @@
             <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
           </node>
           <node concept="10M0yZ" id="3LwScSd8DeV" role="37wK5m">
-            <ref role="3cqZAo" to="1t7x:~Color.BLUE" resolve="BLUE" />
             <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+            <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
           </node>
           <node concept="Xl_RD" id="3LwScSd8DeW" role="37wK5m">
             <property role="Xl_RC" value="W" />
@@ -1678,8 +1651,70 @@
                     <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
                     <ref role="3cqZAo" to="1t7x:~Color.BLUE" resolve="BLUE" />
                   </node>
-                  <node concept="Rm8GO" id="6xs90l3vy7m" role="37wK5m">
-                    <ref role="Rm8GQ" to="10tj:~Flaticon.MATH" resolve="MATH" />
+                  <node concept="Rm8GO" id="7aespp6KDvG" role="37wK5m">
+                    <ref role="Rm8GQ" to="10tj:~Flaticon.COMPUTER" resolve="COMPUTER" />
+                    <ref role="1Px2BO" to="10tj:~Flaticon" resolve="Flaticon" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3LwScSdbBEB" role="3cqZAp">
+          <node concept="2OqwBi" id="3LwScSdbBEC" role="3clFbG">
+            <node concept="37vLTw" id="3LwScSdbBEZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="6xs90l3vt2W" resolve="VARIABLES" />
+            </node>
+            <node concept="liA8E" id="3LwScSdbBED" role="2OqNvi">
+              <ref role="37wK5l" to="k7g3:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="Rm8GO" id="3LwScSdbCqP" role="37wK5m">
+                <ref role="Rm8GQ" node="6xs90l3vmRu" resolve="LOGICAL" />
+                <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
+              </node>
+              <node concept="2ShNRf" id="3LwScSdbBEF" role="37wK5m">
+                <node concept="1pGfFk" id="3LwScSdbBEG" role="2ShVmc">
+                  <ref role="37wK5l" to="10tj:~IconAppearance.&lt;init&gt;(java.awt.Color,java.awt.Color,org.eddieprogramming.gui.api.message.appearance.Flaticon)" resolve="IconAppearance" />
+                  <node concept="10M0yZ" id="3LwScSdbBEH" role="37wK5m">
+                    <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                  </node>
+                  <node concept="10M0yZ" id="3LwScSdbBEI" role="37wK5m">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.GRAY" resolve="GRAY" />
+                  </node>
+                  <node concept="Rm8GO" id="7aespp6KDzn" role="37wK5m">
+                    <ref role="Rm8GQ" to="10tj:~Flaticon.COMPUTER" resolve="COMPUTER" />
+                    <ref role="1Px2BO" to="10tj:~Flaticon" resolve="Flaticon" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3LwScSdbC7s" role="3cqZAp">
+          <node concept="2OqwBi" id="3LwScSdbC7t" role="3clFbG">
+            <node concept="37vLTw" id="3LwScSdbC7O" role="2Oq$k0">
+              <ref role="3cqZAo" node="6xs90l3vt2W" resolve="VARIABLES" />
+            </node>
+            <node concept="liA8E" id="3LwScSdbC7u" role="2OqNvi">
+              <ref role="37wK5l" to="k7g3:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="Rm8GO" id="3LwScSdbCwh" role="37wK5m">
+                <ref role="Rm8GQ" node="6xs90l3voGK" resolve="TEXT" />
+                <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
+              </node>
+              <node concept="2ShNRf" id="3LwScSdbC7w" role="37wK5m">
+                <node concept="1pGfFk" id="3LwScSdbC7x" role="2ShVmc">
+                  <ref role="37wK5l" to="10tj:~IconAppearance.&lt;init&gt;(java.awt.Color,java.awt.Color,org.eddieprogramming.gui.api.message.appearance.Flaticon)" resolve="IconAppearance" />
+                  <node concept="10M0yZ" id="3LwScSdbC7y" role="37wK5m">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
+                  </node>
+                  <node concept="10M0yZ" id="3LwScSdbC7z" role="37wK5m">
+                    <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
+                    <ref role="3cqZAo" to="1t7x:~Color.GREEN" resolve="GREEN" />
+                  </node>
+                  <node concept="Rm8GO" id="7aespp6KDB2" role="37wK5m">
+                    <ref role="Rm8GQ" to="10tj:~Flaticon.COMPUTER" resolve="COMPUTER" />
                     <ref role="1Px2BO" to="10tj:~Flaticon" resolve="Flaticon" />
                   </node>
                 </node>
@@ -8090,8 +8125,8 @@
             <node concept="liA8E" id="6xs90l3zVxn" role="2OqNvi">
               <ref role="37wK5l" node="6xs90l3smJq" resolve="isVariable" />
               <node concept="2OqwBi" id="6xs90l3zVxo" role="37wK5m">
-                <node concept="Rm8GO" id="6xs90l3zVxp" role="2Oq$k0">
-                  <ref role="Rm8GQ" node="6xs90l3vmRj" resolve="NUMBER" />
+                <node concept="Rm8GO" id="7aespp6LBKj" role="2Oq$k0">
+                  <ref role="Rm8GQ" node="6xs90l3voGK" resolve="TEXT" />
                   <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
                 </node>
                 <node concept="liA8E" id="6xs90l3zVxq" role="2OqNvi">
@@ -8197,8 +8232,8 @@
               <ref role="3cqZAo" node="6xs90l3tvll" resolve="col" />
             </node>
             <node concept="2OqwBi" id="6xs90l3zBJo" role="37wK5m">
-              <node concept="Rm8GO" id="6xs90l3zBJp" role="2Oq$k0">
-                <ref role="Rm8GQ" node="6xs90l3vmRj" resolve="NUMBER" />
+              <node concept="Rm8GO" id="7aespp6LAPu" role="2Oq$k0">
+                <ref role="Rm8GQ" node="6xs90l3vmRu" resolve="LOGICAL" />
                 <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
               </node>
               <node concept="liA8E" id="6xs90l3zBJq" role="2OqNvi">
@@ -8662,8 +8697,8 @@
             <node concept="37vLTw" id="6xs90l3zrVD" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3vN$U" resolve="col" />
             </node>
-            <node concept="Rm8GO" id="6xs90l3zs7T" role="37wK5m">
-              <ref role="Rm8GQ" node="6xs90l3vmRu" resolve="LOGICAL" />
+            <node concept="Rm8GO" id="7aespp6LANE" role="37wK5m">
+              <ref role="Rm8GQ" node="6xs90l3voGK" resolve="TEXT" />
               <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
             </node>
           </node>
