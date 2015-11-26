@@ -101,7 +101,7 @@
           <node concept="3cjXi6" id="jBG8nbSoTE" role="3jGSnO" />
         </node>
         <node concept="3ckXiT" id="6bbx8uIAlR7" role="17CkHB">
-          <property role="3ckXiS" value="south" />
+          <property role="3ckXiS" value="EAST" />
         </node>
       </node>
       <node concept="17J3f2" id="146X79eWTTY" role="3jGSnO" />

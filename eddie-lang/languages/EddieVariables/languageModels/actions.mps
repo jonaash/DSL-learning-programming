@@ -634,7 +634,7 @@
     <property role="TrG5h" value="VariablesNodeFactories" />
     <node concept="37WvkG" id="2uTcNJdLnYH" role="37WGs$">
       <property role="3mWdv0" value="keep type between terminal expressions" />
-      <ref role="37XkoT" to="3y9h:2uTcNJdKkRp" resolve="IsTerminal" />
+      <ref role="37XkoT" to="3y9h:2uTcNJdKjte" resolve="TerminalExpression" />
       <node concept="37Y9Zx" id="2uTcNJdLnYI" role="37ZfLb">
         <node concept="3clFbS" id="2uTcNJdLnYJ" role="2VODD2">
           <node concept="Jncv_" id="7W1TakBv3OS" role="3cqZAp">

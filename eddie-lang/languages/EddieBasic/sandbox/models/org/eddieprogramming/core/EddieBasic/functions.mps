@@ -42,6 +42,9 @@
       <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
+      <concept id="3267332360033093774" name="org.eddieprogramming.core.EddieBasic.structure.Repeat" flags="ng" index="17JERQ">
+        <child id="3394217739175032606" name="iteration" index="36Ktwi" />
+      </concept>
       <concept id="7730986614922691039" name="org.eddieprogramming.core.EddieBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
       </concept>
@@ -229,18 +232,26 @@
       </node>
       <node concept="36MBwV" id="3eViXf8ust9" role="2jg$Xp" />
     </node>
-    <node concept="29J987" id="4OhcFiDojVz" role="sZtrN">
+    <node concept="29J987" id="77XnNZonFwW" role="sZtrN">
       <property role="TrG5h" value="test" />
-      <node concept="3dtAsP" id="4OhcFiDojV$" role="2jg$Xp" />
-      <node concept="3jGSmg" id="4OhcFiDojVB" role="hRHZh">
-        <node concept="17J3f2" id="4OhcFiDojVC" role="3jGSnO" />
+      <node concept="3dtAsP" id="77XnNZonFwX" role="2jg$Xp" />
+      <node concept="3jGSmg" id="77XnNZonFx0" role="hRHZh">
+        <node concept="3cjXi6" id="77XnNZonFx1" role="3jGSnO" />
+        <node concept="17JERQ" id="77XnNZonFx2" role="3jGSnO">
+          <node concept="3jGSmg" id="77XnNZonFx3" role="3azrUc">
+            <node concept="17J3f2" id="77XnNZonFx4" role="3jGSnO" />
+          </node>
+          <node concept="36Kqmr" id="77XnNZonFx5" role="36Ktwi">
+            <property role="36Kqnr" value="6" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3jGSmg" id="3hBhvFT6RhR" role="3jGSko">
       <node concept="3cjXi6" id="3hBhvFTabia" role="3jGSnO" />
-      <node concept="3dudH9" id="2FICFVq4jNW" role="3jGSnO">
-        <node concept="29J8_c" id="2FICFVq4jNZ" role="3dudC3">
-          <ref role="hRIc0" node="4OhcFiDojVz" resolve="test" />
+      <node concept="3dudH9" id="77XnNZonFyR" role="3jGSnO">
+        <node concept="29J8_c" id="77XnNZonFyU" role="3dudC3">
+          <ref role="hRIc0" node="77XnNZonFwW" resolve="test" />
         </node>
       </node>
       <node concept="36Mw20" id="8gmNnrPZVx" role="3jGSnO">

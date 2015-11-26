@@ -13,6 +13,7 @@
     <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -729,8 +730,8 @@
   <node concept="37WguZ" id="jBG8nbJlqC">
     <property role="TrG5h" value="BasicNodeFactories" />
     <node concept="37WvkG" id="jBG8nbJltp" role="37WGs$">
-      <property role="3mWdv0" value="create repeat form another loop" />
-      <ref role="37XkoT" to="dyrx:2PnTnxEUkye" resolve="Repeat" />
+      <property role="3mWdv0" value="create loop form another loop" />
+      <ref role="37XkoT" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
       <node concept="37Y9Zx" id="jBG8nbJltq" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJltr" role="2VODD2">
           <node concept="3clFbJ" id="jBG8nbJltv" role="3cqZAp">
@@ -853,7 +854,7 @@
     </node>
     <node concept="37WvkG" id="jBG8nbJRcg" role="37WGs$">
       <property role="3mWdv0" value="create routine definition from any method-like definition" />
-      <ref role="37XkoT" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+      <ref role="37XkoT" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
       <node concept="37Y9Zx" id="jBG8nbJRch" role="37ZfLb">
         <node concept="3clFbS" id="jBG8nbJRci" role="2VODD2">
           <node concept="Jncv_" id="jBG8nbJRdf" role="3cqZAp">
@@ -879,6 +880,26 @@
                       </node>
                       <node concept="3TrEf2" id="jBG8nbJS9e" role="2OqNvi">
                         <ref role="3Tt5mk" to="dyrx:5eWJqD2oA9V" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="77XnNZonoDz" role="3cqZAp">
+                <node concept="2OqwBi" id="77XnNZon$cU" role="3clFbG">
+                  <node concept="2OqwBi" id="77XnNZonpqg" role="2Oq$k0">
+                    <node concept="1r4Lsj" id="77XnNZonoDx" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="77XnNZon_rs" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="tyxLq" id="77XnNZonAes" role="2OqNvi">
+                    <node concept="2OqwBi" id="77XnNZonAl4" role="tz02z">
+                      <node concept="Jnkvi" id="77XnNZonAgH" role="2Oq$k0">
+                        <ref role="1M0zk5" node="jBG8nbJRdh" resolve="methodDef" />
+                      </node>
+                      <node concept="3TrcHB" id="77XnNZonABD" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>
