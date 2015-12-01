@@ -945,7 +945,9 @@
           <node concept="10Nm6u" id="7KcPMNJfsDt" role="3cqZAk" />
         </node>
       </node>
-      <node concept="3Tqbb2" id="7KcPMNJfsD9" role="3clF45" />
+      <node concept="3Tqbb2" id="7KcPMNJfsD9" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      </node>
     </node>
     <node concept="13i0hz" id="1BMnhOnvXtc" role="13h7CS">
       <property role="TrG5h" value="isExactly" />
@@ -2573,6 +2575,24 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="6hZLPS2tQT" role="13h7CS">
+      <property role="TrG5h" value="isInitializerRequired" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ljn0:5xGSFEuh265" resolve="isInitializerRequired" />
+      <node concept="3Tm1VV" id="6hZLPS2tQU" role="1B3o_S" />
+      <node concept="3clFbS" id="6hZLPS2tQZ" role="3clF47">
+        <node concept="3SKdUt" id="6hZLPS2uF$" role="3cqZAp">
+          <node concept="3SKdUq" id="6hZLPS2uFF" role="3SKWNk">
+            <property role="3SKdUp" value="is not actually initialized in Eddie" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6hZLPS2uEo" role="3cqZAp">
+          <node concept="3clFbT" id="6hZLPS2uEn" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6hZLPS2tR0" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="2FICFVq60$K">

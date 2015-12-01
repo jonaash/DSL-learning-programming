@@ -80,7 +80,7 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</dependency>
+    <dependency reexport="true">53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">20c6e580-bdc5-4067-8049-d7e3265a86de(jetbrains.mps.typesystemEngine)</dependency>
   </dependencies>
@@ -133,6 +133,7 @@
   <extendedLanguages>
     <extendedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</extendedLanguage>
     <extendedLanguage>992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)</extendedLanguage>
+    <extendedLanguage>53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</extendedLanguage>
   </extendedLanguages>
 </language>
 

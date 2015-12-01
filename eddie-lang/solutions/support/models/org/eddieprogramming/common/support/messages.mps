@@ -832,6 +832,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1llnCx2_imK" role="3cqZAp">
+          <node concept="37vLTI" id="1llnCx2_imL" role="3clFbG">
+            <node concept="Xl_RD" id="1llnCx2_imM" role="37vLTx">
+              <property role="Xl_RC" value="Use Default Initializer" />
+            </node>
+            <node concept="3EllGN" id="1llnCx2_imN" role="37vLTJ">
+              <node concept="Xl_RD" id="1llnCx2_imO" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.variable.declaration.use.default.initializer" />
+              </node>
+              <node concept="37vLTw" id="1llnCx2_imT" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="jBG8nbHO3I" role="3cqZAp" />
         <node concept="3clFbH" id="2FICFVpUMgE" role="3cqZAp" />
         <node concept="3clFbF" id="3uMihSQAiuu" role="3cqZAp">

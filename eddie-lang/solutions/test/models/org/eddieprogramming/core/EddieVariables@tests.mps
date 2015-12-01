@@ -77,6 +77,7 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
+      <concept id="1537238787141588373" name="org.eddieprogramming.core.EddieVariables.structure.DefaultInitializer" flags="ng" index="1nOSGt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -106,6 +107,7 @@
               <property role="TrG5h" value="test" />
               <property role="36jPZJ" value="true" />
               <node concept="36MCER" id="4OhcFiDj2Ox" role="36MCEW" />
+              <node concept="1nOSGt" id="3KfICq3WA7j" role="36MIYJ" />
             </node>
           </node>
           <node concept="3dudH9" id="4OhcFiDj2OQ" role="3jGSnO">
@@ -137,13 +139,14 @@
             <property role="17J3Nn" value="FIXME: THIS TEST DOES NOT WORK" />
           </node>
           <node concept="17J3Kp" id="6bbx8uJ1_2O" role="3jGSnO">
-            <property role="17J3Nn" value="muttable var does not need initializer" />
+            <property role="17J3Nn" value="muttable var" />
           </node>
           <node concept="36Mw20" id="6bbx8uJ1_1x" role="3jGSnO">
             <node concept="AFBxM" id="6bbx8uJ1_1$" role="36Mw2n">
               <property role="36jPZJ" value="true" />
               <property role="TrG5h" value="logVar" />
               <node concept="36MBwV" id="6bbx8uJ1_1v" role="36MCEW" />
+              <node concept="1nOSGt" id="3KfICq3WAvz" role="36MIYJ" />
             </node>
           </node>
           <node concept="3dudH9" id="5wv4$CeOtTm" role="3jGSnO">

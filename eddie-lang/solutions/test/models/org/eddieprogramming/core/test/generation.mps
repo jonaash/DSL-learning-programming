@@ -151,13 +151,14 @@
       </node>
       <node concept="17J3f2" id="3eViXf8Ck0X" role="3jGSnO" />
       <node concept="17J3Kp" id="3eViXf8zSci" role="3jGSnO">
-        <property role="17J3Nn" value="local variables without initializator" />
+        <property role="17J3Nn" value="local variables with default initializator" />
       </node>
       <node concept="36Mw20" id="3eViXf8zNe5" role="3jGSnO">
         <node concept="AFBxM" id="3eViXf8zNe8" role="36Mw2n">
           <property role="TrG5h" value="bNotInit" />
           <property role="36jPZJ" value="true" />
           <node concept="36MBwV" id="3eViXf8zNe3" role="36MCEW" />
+          <node concept="3dtAEM" id="1llnCx2xF0O" role="36MIYJ" />
         </node>
       </node>
       <node concept="36Mw20" id="3eViXf8zNfB" role="3jGSnO">
@@ -165,6 +166,9 @@
           <property role="TrG5h" value="iNotInit" />
           <property role="36jPZJ" value="true" />
           <node concept="36MCER" id="3eViXf8zNf_" role="36MCEW" />
+          <node concept="36Kqmr" id="1llnCx2xF0Z" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
         </node>
       </node>
       <node concept="36Mw20" id="3eViXf8zNgG" role="3jGSnO">
@@ -172,6 +176,9 @@
           <property role="TrG5h" value="sNotInit" />
           <property role="36jPZJ" value="true" />
           <node concept="36Kql8" id="3eViXf8zNgE" role="36MCEW" />
+          <node concept="16y5rI" id="1llnCx2xF1a" role="36MIYJ">
+            <property role="16xLMo" value="&quot;" />
+          </node>
         </node>
       </node>
       <node concept="17J3f2" id="3eViXf8zNdw" role="3jGSnO" />

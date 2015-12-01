@@ -225,5 +225,14 @@
       <ref role="20lvS9" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1llnCx2xHml">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="DefaultInitializer" />
+    <property role="34LRSv" value="default initializer" />
+    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+    <node concept="PrWs8" id="1llnCx2xHnm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
 </model>
 

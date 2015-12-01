@@ -1339,7 +1339,7 @@
         </node>
         <node concept="1SiIV0" id="4LNIB3H6O_P" role="3bR37C">
           <node concept="3bR9La" id="4LNIB3H6O_Q" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
           </node>
         </node>
@@ -1452,6 +1452,11 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3KfICq3WBv2" role="3bR37C">
+          <node concept="1Busua" id="3KfICq3WBv3" role="1SiIV1">
+            <ref role="1Busuk" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
           </node>
         </node>
       </node>
