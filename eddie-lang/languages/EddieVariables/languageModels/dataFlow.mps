@@ -9,6 +9,7 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(org.eddieprogramming.core.EddieVariables.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
+    <import index="s20d" ref="r:020038ea-347c-4e40-ac91-9abd91dd243a(org.eddieprogramming.dsl.EddieVariableTerminals.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -269,22 +270,6 @@
             <node concept="3__QtB" id="5B0fQ1kPimB" role="2Oq$k0" />
             <node concept="3TrEf2" id="7jmg6noxZ2n" role="2OqNvi">
               <ref role="3Tt5mk" to="3y9h:2J_q78djvw2" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3_zdsH" id="7W1TakBvQev">
-    <property role="3GE5qa" value="terminal" />
-    <ref role="3_znuS" to="3y9h:2uTcNJdLA$R" resolve="WriteTerminal" />
-    <node concept="3__wT9" id="7W1TakBvQew" role="3_A6iZ">
-      <node concept="3clFbS" id="7W1TakBvQex" role="2VODD2">
-        <node concept="3AgYrR" id="7W1TakBvQje" role="3cqZAp">
-          <node concept="2OqwBi" id="7W1TakBvQl8" role="3Ah4Yx">
-            <node concept="3__QtB" id="7W1TakBvQju" role="2Oq$k0" />
-            <node concept="3TrEf2" id="7W1TakBvQuL" role="2OqNvi">
-              <ref role="3Tt5mk" to="3y9h:7W1TakBuZ8a" />
             </node>
           </node>
         </node>

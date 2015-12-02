@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/languages/EddieFunctions/EddieFunctions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieObjects/EddieObjects.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/EddieVariableTerminals/EddieVariableTerminals.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieVariables/EddieVariables.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/RobotKarel/RobotKarel.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/eddieStudio.build/eddieStudio.build.msd" folder="" />

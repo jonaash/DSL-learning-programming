@@ -12,6 +12,7 @@
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="-1" />
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="-1" />
     <use id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
+    <use id="a9e656c0-d096-4475-bb36-823817b9bb6d" name="org.eddieprogramming.dsl.EddieVariableTerminals" version="0" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
@@ -49,15 +50,15 @@
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
-    <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables">
-      <concept id="2862375370118739790" name="org.eddieprogramming.core.EddieVariables.structure.TerminalExpression" flags="ng" index="3Eu0hP">
-        <child id="9151847315776664715" name="type" index="1ouL0I" />
+    <language id="a9e656c0-d096-4475-bb36-823817b9bb6d" name="org.eddieprogramming.dsl.EddieVariableTerminals">
+      <concept id="4327882853829660607" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.WriteTerminal" flags="ng" index="2S2JkT">
+        <child id="4327882853829660608" name="type" index="2S2Jl6" />
+        <child id="4327882853829660609" name="value" index="2S2Jl7" />
       </concept>
-      <concept id="2862375370119080247" name="org.eddieprogramming.core.EddieVariables.structure.WriteTerminal" flags="ng" index="3EvPCc">
-        <child id="9151847315776729608" name="type" index="1ouxqH" />
-        <child id="9151847315776729610" name="value" index="1ouxqJ" />
+      <concept id="4327882853829660604" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.ReadTerminal" flags="ng" index="2S2JkU" />
+      <concept id="4327882853829660605" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.TerminalExpression" flags="ng" index="2S2JkV">
+        <child id="4327882853829660606" name="type" index="2S2JkS" />
       </concept>
-      <concept id="2862375370119080246" name="org.eddieprogramming.core.EddieVariables.structure.ReadTerminal" flags="ng" index="3EvPCd" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -89,13 +90,13 @@
             </node>
           </node>
         </node>
-        <node concept="3EvPCd" id="7W1TakBvPm3" role="17CkHB">
-          <node concept="36MBwV" id="7W1TakBvPmi" role="1ouL0I" />
+        <node concept="2S2JkU" id="7W1TakBvPm3" role="17CkHB">
+          <node concept="36MBwV" id="7DzA3Fd7uNP" role="2S2JkS" />
         </node>
       </node>
-      <node concept="3EvPCc" id="7W1TakBvPkn" role="3jGSnO">
-        <node concept="36MBwV" id="7W1TakBvPkF" role="1ouxqH" />
-        <node concept="3dtAEM" id="7W1TakBvPkK" role="1ouxqJ">
+      <node concept="2S2JkT" id="7W1TakBvPkn" role="3jGSnO">
+        <node concept="36MBwV" id="7DzA3Fd7uO0" role="2S2Jl6" />
+        <node concept="3dtAEM" id="7DzA3Fd7uOd" role="2S2Jl7">
           <property role="3dtAEN" value="true" />
         </node>
       </node>

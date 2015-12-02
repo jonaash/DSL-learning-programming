@@ -20,6 +20,7 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
+    <import index="s20d" ref="r:020038ea-347c-4e40-ac91-9abd91dd243a(org.eddieprogramming.dsl.EddieVariableTerminals.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -163,14 +164,6 @@
         <reference id="8077936094962945822" name="link" index="iy1sa" />
       </concept>
       <concept id="8077936094962911282" name="jetbrains.mps.lang.scopes.structure.ParentScope" flags="nn" index="iy90A" />
-    </language>
-    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
-        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
-      </concept>
-      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
-        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -755,33 +748,6 @@
         </node>
       </node>
       <node concept="10P_77" id="5xGSFEuiqI0" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="7W1TakBv$kb">
-    <property role="3GE5qa" value="terminal" />
-    <ref role="13h7C2" to="3y9h:2uTcNJdKkRp" resolve="IsTerminal" />
-    <node concept="13hLZK" id="7W1TakBv$kc" role="13h7CW">
-      <node concept="3clFbS" id="7W1TakBv$kd" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="7W1TakBv$ti" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="getStaticType" />
-      <property role="2Ki8OM" value="true" />
-      <ref role="13i0hy" to="ljn0:3uMihSQD4zZ" resolve="getStaticType" />
-      <node concept="3Tm1VV" id="7W1TakBv$tj" role="1B3o_S" />
-      <node concept="3clFbS" id="7W1TakBv$to" role="3clF47">
-        <node concept="3clFbF" id="7W1TakBv$FZ" role="3cqZAp">
-          <node concept="2pJPEk" id="7W1TakBv$FX" role="3clFbG">
-            <node concept="2pJPED" id="7W1TakBv$Gl" role="2pJPEn">
-              <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="7W1TakBv$tp" role="3clF45">
-        <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1llnCx2xMHm">

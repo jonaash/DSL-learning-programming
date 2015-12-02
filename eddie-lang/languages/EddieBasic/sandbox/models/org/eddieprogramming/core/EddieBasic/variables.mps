@@ -9,6 +9,7 @@
     <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
+    <use id="a9e656c0-d096-4475-bb36-823817b9bb6d" name="org.eddieprogramming.dsl.EddieVariableTerminals" version="0" />
   </languages>
   <imports />
   <registry>
@@ -75,15 +76,6 @@
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
       <concept id="1537238787141588373" name="org.eddieprogramming.core.EddieVariables.structure.DefaultInitializer" flags="ng" index="1nOSGt" />
-      <concept id="2862375370118739790" name="org.eddieprogramming.core.EddieVariables.structure.TerminalExpression" flags="ng" index="3Eu0hP">
-        <child id="9151847315776664715" name="type" index="1ouL0I" />
-      </concept>
-      <concept id="2862375370118745561" name="org.eddieprogramming.core.EddieVariables.structure.IsTerminal" flags="ng" index="3Eu7Vy" />
-      <concept id="2862375370119080247" name="org.eddieprogramming.core.EddieVariables.structure.WriteTerminal" flags="ng" index="3EvPCc">
-        <child id="9151847315776729608" name="type" index="1ouxqH" />
-        <child id="9151847315776729610" name="value" index="1ouxqJ" />
-      </concept>
-      <concept id="2862375370119080246" name="org.eddieprogramming.core.EddieVariables.structure.ReadTerminal" flags="ng" index="3EvPCd" />
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
       <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
@@ -92,6 +84,17 @@
       <concept id="5508951763380606444" name="org.eddieprogramming.support.EddieComparisonOperators.structure.InequalityOperator" flags="ng" index="2xoUYs" />
       <concept id="5508951763380606445" name="org.eddieprogramming.support.EddieComparisonOperators.structure.LessOrEqual" flags="ng" index="2xoUYt" />
       <concept id="5508951763380606446" name="org.eddieprogramming.support.EddieComparisonOperators.structure.LessThan" flags="ng" index="2xoUYu" />
+    </language>
+    <language id="a9e656c0-d096-4475-bb36-823817b9bb6d" name="org.eddieprogramming.dsl.EddieVariableTerminals">
+      <concept id="4327882853829660607" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.WriteTerminal" flags="ng" index="2S2JkT">
+        <child id="4327882853829660608" name="type" index="2S2Jl6" />
+        <child id="4327882853829660609" name="value" index="2S2Jl7" />
+      </concept>
+      <concept id="4327882853829660604" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.ReadTerminal" flags="ng" index="2S2JkU" />
+      <concept id="4327882853829660605" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.TerminalExpression" flags="ng" index="2S2JkV">
+        <child id="4327882853829660606" name="type" index="2S2JkS" />
+      </concept>
+      <concept id="4327882853829660603" name="org.eddieprogramming.dsl.EddieVariableTerminals.structure.IsTerminal" flags="ng" index="2S2JkX" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -473,13 +476,13 @@
     <property role="TrG5h" value="Terminals" />
     <node concept="3jGSmg" id="7W1TakBwAWp" role="3jGSko">
       <node concept="17CkzI" id="7W1TakBwB13" role="3jGSnO">
-        <node concept="3Eu7Vy" id="7W1TakBwB1i" role="17CkHB">
-          <node concept="36MBwV" id="7W1TakBwCpp" role="1ouL0I" />
+        <node concept="2S2JkX" id="7W1TakBwB1i" role="17CkHB">
+          <node concept="36MBwV" id="7DzA3Fd7uRe" role="2S2JkS" />
         </node>
         <node concept="3jGSmg" id="7W1TakBwB17" role="17CkHq">
-          <node concept="3EvPCc" id="7W1TakBwB1M" role="3jGSnO">
-            <node concept="36Kql8" id="7W1TakBwB1V" role="1ouxqH" />
-            <node concept="16y5rI" id="7W1TakBwB20" role="1ouxqJ">
+          <node concept="2S2JkT" id="7W1TakBwB1M" role="3jGSnO">
+            <node concept="36Kql8" id="7DzA3Fd7uRp" role="2S2Jl6" />
+            <node concept="16y5rI" id="7DzA3Fd7uRx" role="2S2Jl7">
               <property role="16xLMo" value="Test" />
             </node>
           </node>
@@ -488,8 +491,8 @@
               <property role="36jPZJ" value="false" />
               <property role="TrG5h" value="num" />
               <node concept="36MCER" id="7W1TakBwB2n" role="36MCEW" />
-              <node concept="3EvPCd" id="7W1TakBwB2H" role="36MIYJ">
-                <node concept="36MCER" id="7W1TakBwB2T" role="1ouL0I" />
+              <node concept="2S2JkU" id="7W1TakBwB2H" role="36MIYJ">
+                <node concept="36MCER" id="7DzA3Fd7uRR" role="2S2JkS" />
               </node>
             </node>
           </node>

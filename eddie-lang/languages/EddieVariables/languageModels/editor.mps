@@ -13,6 +13,7 @@
     <import index="cwjo" ref="r:2175c34b-c9d8-4a50-8663-8f43f29ccd9c(org.eddieprogramming.core.EddieVariables.behavior)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)" />
+    <import index="s20d" ref="r:020038ea-347c-4e40-ac91-9abd91dd243a(org.eddieprogramming.dsl.EddieVariableTerminals.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
@@ -552,48 +553,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7W1TakBtwVV">
-    <property role="3GE5qa" value="terminal" />
-    <ref role="1XX52x" to="3y9h:2uTcNJdKkRp" resolve="IsTerminal" />
-    <node concept="3EZMnI" id="7W1TakBtwVW" role="2wV5jI">
-      <node concept="PMmxH" id="7W1TakBtM$o" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F1sOY" id="7W1TakBuYPT" role="3EZMnx">
-        <ref role="1NtTu8" to="3y9h:7W1TakBuJib" />
-      </node>
-      <node concept="l2Vlx" id="7W1TakBtwW0" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7W1TakBuS7f">
-    <property role="3GE5qa" value="terminal" />
-    <ref role="1XX52x" to="3y9h:2uTcNJdLA$Q" resolve="ReadTerminal" />
-    <node concept="3EZMnI" id="7W1TakBuZf$" role="2wV5jI">
-      <node concept="PMmxH" id="7W1TakBuZfF" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F1sOY" id="7W1TakBuZfK" role="3EZMnx">
-        <ref role="1NtTu8" to="3y9h:7W1TakBuJib" />
-      </node>
-      <node concept="l2Vlx" id="7W1TakBuZfB" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7W1TakBuS7r">
-    <property role="3GE5qa" value="terminal" />
-    <ref role="1XX52x" to="3y9h:2uTcNJdLA$R" resolve="WriteTerminal" />
-    <node concept="3EZMnI" id="7W1TakBuZ9h" role="2wV5jI">
-      <node concept="PMmxH" id="7W1TakBuZ9r" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      </node>
-      <node concept="3F1sOY" id="7W1TakBuZ9$" role="3EZMnx">
-        <ref role="1NtTu8" to="3y9h:7W1TakBuZ88" />
-      </node>
-      <node concept="3F1sOY" id="7W1TakBuZ9L" role="3EZMnx">
-        <ref role="1NtTu8" to="3y9h:7W1TakBuZ8a" />
-      </node>
-      <node concept="l2Vlx" id="7W1TakBuZ9k" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1llnCx2xSnt">
