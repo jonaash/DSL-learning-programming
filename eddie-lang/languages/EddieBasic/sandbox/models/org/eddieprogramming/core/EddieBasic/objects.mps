@@ -15,6 +15,7 @@
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
+      <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="1242405555015381639" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
@@ -24,8 +25,8 @@
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
         <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
-      <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
-        <property id="7286718421228094292" name="value" index="16xLMo" />
+      <concept id="7286718421228329340" name="org.eddieprogramming.core.EddieBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
       </concept>
       <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
@@ -38,9 +39,6 @@
         <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
-      <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
-        <property id="3267332360033261999" name="text" index="17J3Nn" />
-      </concept>
       <concept id="3776063756796240591" name="org.eddieprogramming.core.EddieBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756797189811" name="org.eddieprogramming.core.EddieBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
@@ -54,10 +52,6 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
-      <concept id="1954067712460073357" name="org.eddieprogramming.core.EddieVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
-        <child id="1954067712460074322" name="variable" index="B81dD" />
-        <child id="1954067712460074325" name="value" index="B81dI" />
-      </concept>
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -116,9 +110,6 @@
       <node concept="3dtAsP" id="5wv4$Cf6ABL" role="2jg$Xp" />
       <node concept="3pOcrZ" id="5wv4$Cf6ABN" role="2j5jbD" />
       <node concept="3jGSmg" id="5wv4$Cf6ABO" role="hRHZh">
-        <node concept="17J3Kp" id="5wv4$Cfi_X9" role="3jGSnO">
-          <property role="17J3Nn" value="TODO fix argument of WHEN CONCERETE block" />
-        </node>
         <node concept="3dudH9" id="5wv4$CfhYSG" role="3jGSnO">
           <node concept="2jchP5" id="5wv4$CfhYSD" role="3dudC3">
             <node concept="2jchP0" id="5wv4$CfhYSX" role="2j_PeB">
@@ -143,6 +134,15 @@
             </node>
           </node>
         </node>
+        <node concept="17J3f2" id="3KfICq40Si6" role="3jGSnO" />
+        <node concept="2kp8ke" id="3KfICq40SlC" role="3jGSnO">
+          <node concept="2jchP5" id="3KfICq40Sq$" role="16wSqL">
+            <node concept="2j_qma" id="3KfICq40SqO" role="2j_PeB">
+              <ref role="2jD6AI" node="6bbx8uIJVFe" resolve="text" />
+            </node>
+            <node concept="2jco51" id="3KfICq40Sqt" role="2j_qme" />
+          </node>
+        </node>
       </node>
       <node concept="FiAUU" id="5wv4$CfhYSr" role="3dtAt9">
         <property role="36jPZJ" value="false" />
@@ -163,21 +163,7 @@
     <node concept="2jh1y9" id="6bbx8uIIwJD" role="2jst77">
       <node concept="3dtAsP" id="6bbx8uIIwJE" role="2jg$Xp" />
       <node concept="3pOcrW" id="6bbx8uIIwJF" role="2j5jbD" />
-      <node concept="3jGSmg" id="6bbx8uIIwJG" role="hRHZh">
-        <node concept="3dudH9" id="1mpZf2HujP3" role="3jGSnO">
-          <node concept="B81uQ" id="1mpZf2HuokO" role="3dudC3">
-            <node concept="16y5rI" id="1mpZf2Huolb" role="B81dI">
-              <property role="16xLMo" value="" />
-            </node>
-            <node concept="2jchP5" id="1mpZf2HujP0" role="B81dD">
-              <node concept="2j_qma" id="1mpZf2HujPn" role="2j_PeB">
-                <ref role="2jD6AI" node="6bbx8uIJVFe" resolve="text" />
-              </node>
-              <node concept="2jco51" id="1mpZf2HujOY" role="2j_qme" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3jGSmg" id="6bbx8uIIwJG" role="hRHZh" />
     </node>
     <node concept="3pFPbB" id="6bbx8uIJVFe" role="2j5j4v">
       <property role="36jPZJ" value="true" />

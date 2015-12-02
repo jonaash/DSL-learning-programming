@@ -28,6 +28,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
@@ -613,6 +614,61 @@
     <node concept="1YaCAy" id="2J_q78dig3T" role="1YuTPh">
       <property role="TrG5h" value="fieldReference" />
       <ref role="1YaFvo" to="t2e5:7KcPMNJAnaA" resolve="FieldReference" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3KfICq40hpq">
+    <property role="3GE5qa" value="class.member" />
+    <property role="TrG5h" value="check_FieldInitialization" />
+    <node concept="3clFbS" id="3KfICq40hpr" role="18ibNy">
+      <node concept="3clFbJ" id="3KfICq40uQR" role="3cqZAp">
+        <node concept="3clFbS" id="3KfICq40uQS" role="3clFbx">
+          <node concept="3cpWs6" id="3KfICq40vTp" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="3KfICq40v_s" role="3clFbw">
+          <node concept="2OqwBi" id="3KfICq40uVv" role="2Oq$k0">
+            <node concept="1YBJjd" id="3KfICq40uR3" role="2Oq$k0">
+              <ref role="1YBMHb" node="3KfICq40pag" resolve="field" />
+            </node>
+            <node concept="3TrEf2" id="3KfICq40vfE" role="2OqNvi">
+              <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="3KfICq40vSF" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3SKdUt" id="3KfICq41iJS" role="3cqZAp">
+        <node concept="3SKdUq" id="3KfICq41iK3" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: check whether it is initialized in constructor" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3KfICq40pag" role="1YuTPh">
+      <property role="TrG5h" value="field" />
+      <ref role="1YaFvo" to="t2e5:8gmNnrJKBi" resolve="FieldVariableDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="18k56XDwGuZ">
+    <property role="TrG5h" value="check_MethodDataFlow" />
+    <property role="3GE5qa" value="definition" />
+    <node concept="3clFbS" id="18k56XDwGv0" role="18ibNy">
+      <node concept="3clFbF" id="18k56XDwGv1" role="3cqZAp">
+        <node concept="2OqwBi" id="18k56XDwGv2" role="3clFbG">
+          <node concept="2YIFZM" id="3KfICq40QU2" role="2Oq$k0">
+            <ref role="37wK5l" node="18k56XDycX2" resolve="getInstance" />
+            <ref role="1Pybhc" node="18k56XDy9qO" resolve="ObjectDataFlow" />
+          </node>
+          <node concept="liA8E" id="18k56XDwGv4" role="2OqNvi">
+            <ref role="37wK5l" to="f13g:18k56XDw5Q3" resolve="checkDataFlow" />
+            <node concept="1YBJjd" id="18k56XDwGv5" role="37wK5m">
+              <ref role="1YBMHb" node="18k56XDwGv6" resolve="methodDefinition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="18k56XDwGv6" role="1YuTPh">
+      <property role="TrG5h" value="methodDefinition" />
+      <ref role="1YaFvo" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
     </node>
   </node>
 </model>
