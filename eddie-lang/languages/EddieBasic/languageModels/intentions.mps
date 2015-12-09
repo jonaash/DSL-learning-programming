@@ -237,9 +237,13 @@
     </node>
     <node concept="2S6ZIM" id="5wv4$Cg4szc" role="2ZfVej">
       <node concept="3clFbS" id="5wv4$Cg4szd" role="2VODD2">
-        <node concept="3clFbF" id="5wv4$Cg4tol" role="3cqZAp">
-          <node concept="Xl_RD" id="5wv4$Cg4tok" role="3clFbG">
-            <property role="Xl_RC" value="Add Comment" />
+        <node concept="3clFbF" id="3L7mNVquFZR" role="3cqZAp">
+          <node concept="2YIFZM" id="3L7mNVquG5d" role="3clFbG">
+            <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+            <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+            <node concept="Xl_RD" id="3L7mNVquEma" role="37wK5m">
+              <property role="Xl_RC" value="intention.menu.documentation.add.comment" />
+            </node>
           </node>
         </node>
       </node>
@@ -287,9 +291,13 @@
     </node>
     <node concept="2S6ZIM" id="2bb0VNYcN6c" role="2ZfVej">
       <node concept="3clFbS" id="2bb0VNYcN6d" role="2VODD2">
-        <node concept="3clFbF" id="2bb0VNYcN6e" role="3cqZAp">
-          <node concept="Xl_RD" id="2bb0VNYcN6f" role="3clFbG">
-            <property role="Xl_RC" value="Remove Comment" />
+        <node concept="3clFbF" id="3L7mNVquGVz" role="3cqZAp">
+          <node concept="2YIFZM" id="3L7mNVquGV$" role="3clFbG">
+            <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+            <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+            <node concept="Xl_RD" id="3L7mNVquGV_" role="37wK5m">
+              <property role="Xl_RC" value="intention.menu.documentation.remove.comment" />
+            </node>
           </node>
         </node>
       </node>
