@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="Eddie" uuid="b771c644-c438-46a8-aa4c-9cc65f7982b8">
+  <exported-language name="5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)" />
+  <exported-language name="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(org.eddieprogramming.core.EddieConditions)" />
+  <exported-language name="53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)" />
+  <exported-language name="992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)" />
+  <exported-language name="1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)" />
+  <exported-solutions>
+    <exported-solution>645c5093-3842-40e7-938b-f9d0f9cd529b(org.eddieprogramming.core.runtime)</exported-solution>
+  </exported-solutions>
+</dev-kit>
+
