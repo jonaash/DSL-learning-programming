@@ -8231,14 +8231,8 @@
             <node concept="37vLTw" id="6xs90l3zBJn" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvll" resolve="col" />
             </node>
-            <node concept="2OqwBi" id="6xs90l3zBJo" role="37wK5m">
-              <node concept="Rm8GO" id="7aespp6LAPu" role="2Oq$k0">
-                <ref role="Rm8GQ" node="6xs90l3vmRu" resolve="LOGICAL" />
-                <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
-              </node>
-              <node concept="liA8E" id="6xs90l3zBJq" role="2OqNvi">
-                <ref role="37wK5l" node="6xs90l3voNP" resolve="getInternalType" />
-              </node>
+            <node concept="3VsKOn" id="5DxA8FwHeTt" role="37wK5m">
+              <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
             </node>
           </node>
         </node>
@@ -8271,14 +8265,8 @@
             <node concept="37vLTw" id="6xs90l3zA1u" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvlw" resolve="col" />
             </node>
-            <node concept="2OqwBi" id="6xs90l3zAhA" role="37wK5m">
-              <node concept="Rm8GO" id="6xs90l3zAef" role="2Oq$k0">
-                <ref role="Rm8GQ" node="6xs90l3vmRj" resolve="NUMBER" />
-                <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
-              </node>
-              <node concept="liA8E" id="6xs90l3zApk" role="2OqNvi">
-                <ref role="37wK5l" node="6xs90l3voNP" resolve="getInternalType" />
-              </node>
+            <node concept="3VsKOn" id="5DxA8FwHiOz" role="37wK5m">
+              <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
             </node>
           </node>
         </node>
@@ -8311,14 +8299,8 @@
             <node concept="37vLTw" id="6xs90l3zAZ3" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvlD" resolve="col" />
             </node>
-            <node concept="2OqwBi" id="6xs90l3zAZ4" role="37wK5m">
-              <node concept="Rm8GO" id="6xs90l3zBUB" role="2Oq$k0">
-                <ref role="Rm8GQ" node="6xs90l3voGK" resolve="TEXT" />
-                <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
-              </node>
-              <node concept="liA8E" id="6xs90l3zAZ6" role="2OqNvi">
-                <ref role="37wK5l" node="6xs90l3voNP" resolve="getInternalType" />
-              </node>
+            <node concept="3VsKOn" id="5DxA8FwHjag" role="37wK5m">
+              <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
             </node>
           </node>
         </node>
