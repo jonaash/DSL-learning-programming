@@ -15,7 +15,7 @@ public class StateHolder {
 
     private static final Logger logger = LoggerFactory.getLogger(StateHolder.class);
 
-    private volatile GuiState state = GuiState.DISCONECTED;
+    private volatile GuiState state = GuiState.DISCONNECTED;
     private volatile boolean onlyOneStep;
 
     public synchronized GuiState getState() {

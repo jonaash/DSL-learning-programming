@@ -8,7 +8,7 @@ public enum GuiState {
     /**
      * Client hasn't been yet connected. World is not created.
      */
-    DISCONECTED(false, false),
+    DISCONNECTED(false, false),
 
     /**
      * World has been crested. Scene is being constructed.
@@ -33,7 +33,7 @@ public enum GuiState {
     /**
      * Script was stopped.
      */
-    STOPED(false,false);
+    STOPPED(false,false);
 
 
     GuiState(boolean canDoStep, boolean readyForRun){

@@ -63,7 +63,7 @@ public class WorldService {
 
     private void cancelOthers(){
         // set state to STOPPED to cancel previously runned script
-        setState(GuiState.STOPED);
+        setState(GuiState.STOPPED);
         // clear queue to all old script to enqueue step and return Result.CANCELLED because GuiState is STOPPED.
         stepsToDo.clear();
         // create a new queue, because the old thread is about tu add there its step. We cannot remove that step now,
@@ -105,7 +105,7 @@ public class WorldService {
 
     public void stop() {
         logger.debug("Stop script.");
-        setState(GuiState.STOPED);
+        setState(GuiState.STOPPED);
     }
 
     public Result doStep(Step step) {
@@ -165,7 +165,7 @@ public class WorldService {
     }
 
     public synchronized Result getResult() {
-        if (getState() == GuiState.STOPED){
+        if (getState() == GuiState.STOPPED){
             return Result.CANCELLED;
         }
         return Result.SUCCESS;
