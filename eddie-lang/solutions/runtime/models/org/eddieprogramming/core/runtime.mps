@@ -3129,6 +3129,28 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1qfn$Gmqzcd" role="3clF47">
+        <node concept="3cpWs8" id="G14AlteIQ_" role="3cqZAp">
+          <node concept="3cpWsn" id="G14AlteIQA" role="3cpWs9">
+            <property role="TrG5h" value="goldColor" />
+            <node concept="3uibUv" id="G14AlteIQB" role="1tU5fm">
+              <ref role="3uigEE" to="1t7x:~Color" resolve="Color" />
+            </node>
+            <node concept="2ShNRf" id="G14AlteB3d" role="33vP2m">
+              <node concept="1pGfFk" id="G14AlteFEb" role="2ShVmc">
+                <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                <node concept="3cmrfG" id="G14AlteFKW" role="37wK5m">
+                  <property role="3cmrfH" value="255" />
+                </node>
+                <node concept="3cmrfG" id="G14AlteHXM" role="37wK5m">
+                  <property role="3cmrfH" value="215" />
+                </node>
+                <node concept="3cmrfG" id="G14AlteIlB" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="1qfn$GmqzlT" role="3cqZAp">
           <node concept="2ShNRf" id="1qfn$Gmqzmt" role="3cqZAk">
             <node concept="1pGfFk" id="1qfn$GmqzC$" role="2ShVmc">
@@ -3137,9 +3159,8 @@
                 <ref role="3cqZAo" to="1t7x:~Color.WHITE" resolve="WHITE" />
                 <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
               </node>
-              <node concept="10M0yZ" id="1qfn$GmqzIC" role="37wK5m">
-                <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="1t7x:~Color.BLACK" resolve="BLACK" />
+              <node concept="37vLTw" id="G14AlteLq6" role="37wK5m">
+                <ref role="3cqZAo" node="G14AlteIQA" resolve="goldColor" />
               </node>
               <node concept="Rm8GO" id="6xs90l3rToL" role="37wK5m">
                 <ref role="Rm8GQ" to="10tj:~Flaticon.ROBOT" resolve="ROBOT" />
