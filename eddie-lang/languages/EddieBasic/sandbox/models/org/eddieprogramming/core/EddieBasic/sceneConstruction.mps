@@ -25,6 +25,7 @@
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
+      <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
       <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="scene" index="2JdVqH" />
@@ -59,6 +60,9 @@
         <child id="6349814108921004815" name="action" index="187L55" />
         <child id="6349814108921004813" name="condition" index="187L57" />
       </concept>
+      <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
+        <property id="3776063756796243785" name="value" index="3dtAEN" />
+      </concept>
       <concept id="3776063756797189811" name="org.eddieprogramming.core.EddieBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
       </concept>
@@ -90,6 +94,7 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="3394217739178660495" name="org.eddieprogramming.core.EddieVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -246,6 +251,80 @@
           </node>
         </node>
         <node concept="17J3f2" id="P0UJzKBM5_" role="3jGSnO" />
+        <node concept="3dudH9" id="6R5ctBWpbke" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWpbkb" role="3dudC3">
+            <node concept="fF5TM" id="6R5ctBWpblY" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFAB" resolve="putText" />
+              <node concept="fHUgU" id="6R5ctBWpblZ" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFAF" resolve="key" />
+                <node concept="16y5rI" id="6R5ctBWpbmj" role="2jzNHB">
+                  <property role="16xLMo" value="text" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWpbm0" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFAH" resolve="value" />
+                <node concept="2jchP5" id="6R5ctBWpbmN" role="2jzNHB">
+                  <node concept="fF5TM" id="6R5ctBWpbnb" role="2j_PeB">
+                    <ref role="fCCSt" to="caon:P0UJzK_B90" resolve="getAnimalName" />
+                  </node>
+                  <node concept="3sCHcl" id="6R5ctBWpbmB" role="2j_qme">
+                    <ref role="3sDJ1y" to="caon:P0UJzK_$oD" resolve="Random" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWpbk9" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dudH9" id="6R5ctBWpbrN" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWpbrO" role="3dudC3">
+            <node concept="fF5TM" id="6R5ctBWpbrP" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFwS" resolve="putLogical" />
+              <node concept="fHUgU" id="6R5ctBWpbrQ" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyf" resolve="key" />
+                <node concept="16y5rI" id="6R5ctBWpbrR" role="2jzNHB">
+                  <property role="16xLMo" value="logical" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWpbrS" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyR" resolve="value" />
+                <node concept="3dtAEM" id="6R5ctBWpb_S" role="2jzNHB">
+                  <property role="3dtAEN" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWpbrW" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dudH9" id="6R5ctBWpbww" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWpbwx" role="3dudC3">
+            <node concept="fF5TM" id="6R5ctBWpbwy" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnF$T" resolve="putNumber" />
+              <node concept="fHUgU" id="6R5ctBWpbwz" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnF$X" resolve="key" />
+                <node concept="16y5rI" id="6R5ctBWpbw$" role="2jzNHB">
+                  <property role="16xLMo" value="number" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWpbw_" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnF$Z" resolve="value" />
+                <node concept="36Kqmr" id="6R5ctBWpbCa" role="2jzNHB">
+                  <property role="36Kqnr" value="13" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWpbwD" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="6R5ctBWpbue" role="3jGSnO" />
+        <node concept="17J3f2" id="6R5ctBWpbpG" role="3jGSnO" />
+        <node concept="17J3f2" id="6R5ctBWpbiN" role="3jGSnO" />
         <node concept="17CkzI" id="6R5ctBWmHFB" role="3jGSnO">
           <node concept="2jchP5" id="6R5ctBWmHH7" role="17CkHB">
             <node concept="fF5TM" id="6R5ctBWmHIi" role="2j_PeB">
@@ -375,7 +454,7 @@
   <node concept="1nSc2J" id="6snOov8U0IP">
     <property role="TrG5h" value="TestTutorial" />
     <node concept="2Ien9S" id="6snOov9bJzc" role="2IerQC">
-      <property role="2S4QxW" value="All marks weere put in the right place" />
+      <property role="2S4QxW" value="All marks were put in the right place" />
       <node concept="2xoUYp" id="6snOov9bJ_d" role="187L57">
         <node concept="36Kqmr" id="6snOov9bJ_U" role="3527S9">
           <property role="36Kqnr" value="5" />
@@ -439,6 +518,86 @@
             </node>
           </node>
           <node concept="3sCHcl" id="1mpZf2HzCGL" role="2j_qme">
+            <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Ien9S" id="6R5ctBWpbFk" role="2IerQC">
+      <node concept="3jGSmg" id="6R5ctBWpbFu" role="187L55">
+        <node concept="2kp8ke" id="6R5ctBWpbPa" role="3jGSnO">
+          <node concept="3527Q3" id="6R5ctBWpbPy" role="16wSqL">
+            <node concept="2jchP5" id="6R5ctBWpbPZ" role="3527S9">
+              <node concept="fF5TM" id="6R5ctBWpbQv" role="2j_PeB">
+                <ref role="fCCSt" to="caon:6R5ctBWnFuf" resolve="getText" />
+                <node concept="fHUgU" id="6R5ctBWpbQw" role="fHv3J">
+                  <ref role="3WiQSc" to="caon:6R5ctBWnFuV" resolve="key" />
+                  <node concept="16y5rI" id="6R5ctBWpbQU" role="2jzNHB">
+                    <property role="16xLMo" value="text" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3sCHcl" id="6R5ctBWpbPI" role="2j_qme">
+                <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+              </node>
+            </node>
+            <node concept="16y5rI" id="6R5ctBWpbPb" role="3527ZY">
+              <property role="16xLMo" value="Text: " />
+            </node>
+          </node>
+        </node>
+        <node concept="2kp8ke" id="6R5ctBWpbRS" role="3jGSnO">
+          <node concept="3527Q3" id="6R5ctBWpbRT" role="16wSqL">
+            <node concept="2jchP5" id="6R5ctBWpbRU" role="3527S9">
+              <node concept="fF5TM" id="6R5ctBWpbRV" role="2j_PeB">
+                <ref role="fCCSt" to="caon:6R5ctBWnFrQ" resolve="getNumber" />
+                <node concept="fHUgU" id="6R5ctBWpbRW" role="fHv3J">
+                  <ref role="3WiQSc" to="caon:6R5ctBWnFsk" resolve="key" />
+                  <node concept="16y5rI" id="6R5ctBWpbRX" role="2jzNHB">
+                    <property role="16xLMo" value="number" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3sCHcl" id="6R5ctBWpbRY" role="2j_qme">
+                <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+              </node>
+            </node>
+            <node concept="16y5rI" id="6R5ctBWpbRZ" role="3527ZY">
+              <property role="16xLMo" value="Number: " />
+            </node>
+          </node>
+        </node>
+        <node concept="2kp8ke" id="6R5ctBWpbTn" role="3jGSnO">
+          <node concept="3527Q3" id="6R5ctBWpbTo" role="16wSqL">
+            <node concept="2jchP5" id="6R5ctBWpbTp" role="3527S9">
+              <node concept="3sCHcl" id="6R5ctBWpbTt" role="2j_qme">
+                <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+              </node>
+              <node concept="fF5TM" id="6R5ctBWpcQe" role="2j_PeB">
+                <ref role="fCCSt" to="caon:6R5ctBWnFqB" resolve="getLogical" />
+                <node concept="fHUgU" id="6R5ctBWpcQf" role="fHv3J">
+                  <ref role="3WiQSc" to="caon:6R5ctBWnFqR" resolve="key" />
+                  <node concept="16y5rI" id="6R5ctBWpcQA" role="2jzNHB">
+                    <property role="16xLMo" value="logical" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="16y5rI" id="6R5ctBWpbTu" role="3527ZY">
+              <property role="16xLMo" value="Logical: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2xoUYp" id="6R5ctBWpbOs" role="187L57">
+        <node concept="36Kqmr" id="6R5ctBWpbOT" role="3527S9">
+          <property role="36Kqnr" value="2" />
+        </node>
+        <node concept="2jchP5" id="6R5ctBWpbGa" role="3527ZY">
+          <node concept="fF5TM" id="6R5ctBWpbNp" role="2j_PeB">
+            <ref role="fCCSt" to="uoo5:442XwrAYNVK" resolve="getRobotCol" />
+          </node>
+          <node concept="3sCHcl" id="6R5ctBWpbG3" role="2j_qme">
             <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
           </node>
         </node>
