@@ -37,6 +37,9 @@
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -64,6 +67,9 @@
         <ref role="1NtTu8" to="s20d:3KfICq41kYY" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZM" role="2iSdaV" />
+      <node concept="3F0ifn" id="G14Alte36n" role="3EZMnx">
+        <property role="3F0ifm" value="in terminal" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3KfICq41kZN">
@@ -82,6 +88,9 @@
         <ref role="1NtTu8" to="s20d:3KfICq41kYY" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZR" role="2iSdaV" />
+      <node concept="3F0ifn" id="G14Alte253" role="3EZMnx">
+        <property role="3F0ifm" value="from terminal" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3KfICq41kZS">
@@ -105,6 +114,9 @@
         <ref role="1NtTu8" to="s20d:3KfICq41kZ1" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZX" role="2iSdaV" />
+      <node concept="3F0ifn" id="G14Alte35L" role="3EZMnx">
+        <property role="3F0ifm" value="to terminal" />
+      </node>
     </node>
   </node>
 </model>

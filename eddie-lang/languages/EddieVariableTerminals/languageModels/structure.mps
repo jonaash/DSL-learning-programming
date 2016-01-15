@@ -39,14 +39,14 @@
   <node concept="1TIwiD" id="3KfICq41kYV">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="IsTerminal" />
-    <property role="34LRSv" value="terminal: is" />
+    <property role="34LRSv" value="available" />
     <property role="R4oN_" value="checks if there is terminal of given type" />
     <ref role="1TJDcQ" node="3KfICq41kYX" resolve="TerminalExpression" />
   </node>
   <node concept="1TIwiD" id="3KfICq41kYW">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="ReadTerminal" />
-    <property role="34LRSv" value="terminal: read" />
+    <property role="34LRSv" value="read" />
     <property role="R4oN_" value="read a value from the terminal" />
     <ref role="1TJDcQ" node="3KfICq41kYX" resolve="TerminalExpression" />
   </node>
@@ -66,7 +66,7 @@
   <node concept="1TIwiD" id="3KfICq41kYZ">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="WriteTerminal" />
-    <property role="34LRSv" value="terminal: write" />
+    <property role="34LRSv" value="write" />
     <property role="R4oN_" value="write a value to the terminal" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3KfICq41kZ0" role="1TKVEi">
