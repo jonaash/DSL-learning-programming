@@ -61,10 +61,22 @@ public class WorldService {
     @Inject
     private StateHolder stateHolder;
 
+    private void cancelOthers(){
+        // set state to STOPPED to cancel previously runned script
+        setState(GuiState.STOPED);
+        // clear queue to all old script to enqueue step and return Result.CANCELLED because GuiState is STOPPED.
+        stepsToDo.clear();
+        // create a new queue, because the old thread is about tu add there its step. We cannot remove that step now,
+        // because we do not know whether it is already there or not yet.
+        stepsToDo = new LinkedBlockingQueue<Step>(1);
+    }
+
     public void createWorld(String name, int width, int height) {
         validator.validateNewWorld(name, width, height);
 
         logger.debug("Creating world with name: '{}', width: {}, height {}", name, width, height);
+
+        cancelOthers();
 
         World world = new World(name, width, height);
         worldHolder.setWorld(world);
@@ -265,15 +277,12 @@ public class WorldService {
     private class ExecutionTask extends TimerTask {
         @Override
         public void run() {
-            //fixme remove - logger cannot call synchronized methods
-            if (logger.isTraceEnabled()) {
-                logger.trace("timer execution - State: {}, Steps in queue: {}, Only one step: {}", getState(),
-                        stepsToDo.size(), stateHolder.isOnlyOneStep());
-            }
 
-            while (getState().equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
+            GuiState state = getState();
+
+            while (state.equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
                 boolean onlyOneStep = stateHolder.isOnlyOneStep();
-                logger.debug("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", getState(),
+                logger.debug("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", state,
                         stepsToDo.size(), onlyOneStep);
                 if (onlyOneStep) {
                     setState(GuiState.PAUSED);
