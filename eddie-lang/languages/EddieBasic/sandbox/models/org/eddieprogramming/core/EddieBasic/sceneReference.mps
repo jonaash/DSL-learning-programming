@@ -36,6 +36,7 @@
       <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
         <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
+      <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739174336311" name="org.eddieprogramming.core.EddieBasic.structure.BooleanType" flags="ng" index="36MBwV" />
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
@@ -80,6 +81,11 @@
   <node concept="1$vsWe" id="6snOov831AJ">
     <property role="TrG5h" value="Scene" />
     <node concept="3jGSmg" id="6snOov831AK" role="3jGSko">
+      <node concept="2kp8ke" id="6R5ctBWmXZ7" role="3jGSnO">
+        <node concept="2S2JkU" id="6R5ctBWmXZt" role="16wSqL">
+          <node concept="36Kql8" id="6R5ctBWmXZ_" role="2S2JkS" />
+        </node>
+      </node>
       <node concept="3cjXi6" id="6snOov831Lr" role="3jGSnO" />
       <node concept="3cjXi6" id="6xs90l3wDV2" role="3jGSnO" />
       <node concept="17CkzI" id="6xs90l3wDVa" role="3jGSnO">

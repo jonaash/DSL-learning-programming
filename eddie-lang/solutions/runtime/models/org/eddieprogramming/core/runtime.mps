@@ -305,9 +305,16 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
+        <child id="3106559687488741665" name="line" index="2Xj1qM" />
+      </concept>
+      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
+        <child id="6962838954693749192" name="tag" index="qph3F" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -4558,6 +4565,104 @@
         <node concept="Rm8GO" id="2bb0VNYreGn" role="2B70Vg">
           <ref role="Rm8GQ" to="rzz2:~ElementType.TYPE" resolve="TYPE" />
           <ref role="1Px2BO" to="rzz2:~ElementType" resolve="ElementType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="P0UJzKBobo" role="lGtFl">
+      <node concept="TZ5HA" id="P0UJzKBobp" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBobq" role="1dT_Ay">
+          <property role="1dT_AB" value="Annotation for creating reference to BaseLanguage classes from Eddie language as an Eddie language singleton." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp39" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp3a" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp3f" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp3g" role="1dT_Ay">
+          <property role="1dT_AB" value="Usage:" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp3n" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp3o" role="1dT_Ay">
+          <property role="1dT_AB" value="1. Create a class with this annotation and public static method getInstance. The method return type " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp4C" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp4D" role="1dT_Ay">
+          <property role="1dT_AB" value="must be an interface and it must return its implementation. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp3H" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp3I" role="1dT_Ay">
+          <property role="1dT_AB" value="2. In Eddie import language EddieBaseLanguageObjects and the model that contains created class." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp4o" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp4p" role="1dT_Ay">
+          <property role="1dT_AB" value="3. You can use created class name as Eddie singleton to call methods implemented in the interface. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp4U" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp4V" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKByaV" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKByaW" role="1dT_Ay">
+          <property role="1dT_AB" value="Note: Only methods that uses " />
+        </node>
+        <node concept="1dT_AA" id="P0UJzKBpLZ" role="1dT_Ay">
+          <node concept="VVOAv" id="P0UJzKBpM5" role="qph3F">
+            <node concept="TZ5HA" id="P0UJzKBpM7" role="2Xj1qM">
+              <node concept="1dT_AC" id="P0UJzKBpMb" role="1dT_Ay">
+                <property role="1dT_AB" value="boolean" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="P0UJzKBpLY" role="1dT_Ay">
+          <property role="1dT_AB" value=", " />
+        </node>
+        <node concept="1dT_AA" id="P0UJzKBpMe" role="1dT_Ay">
+          <node concept="VVOAv" id="P0UJzKBpMp" role="qph3F">
+            <node concept="TZ5HA" id="P0UJzKBpMr" role="2Xj1qM">
+              <node concept="1dT_AC" id="P0UJzKBpMv" role="1dT_Ay">
+                <property role="1dT_AB" value="int" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="P0UJzKBpMd" role="1dT_Ay">
+          <property role="1dT_AB" value=", or " />
+        </node>
+        <node concept="1dT_AA" id="P0UJzKBpMy" role="1dT_Ay">
+          <node concept="VVOAv" id="P0UJzKBpMM" role="qph3F">
+            <node concept="TZ5HA" id="P0UJzKBpMO" role="2Xj1qM">
+              <node concept="1dT_AC" id="P0UJzKBpMS" role="1dT_Ay">
+                <property role="1dT_AB" value="string" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1dT_AC" id="P0UJzKBpMx" role="1dT_Ay">
+          <property role="1dT_AB" value=" for parameters and return values are accesible. (only primitive types or baseLanguage string can be used. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBpQp" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBpQq" role="1dT_Ay">
+          <property role="1dT_AB" value="It does not support wrapper types or java.lang.String." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBpMU" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBpMV" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="P0UJzKBp3x" role="TZ5H$">
+        <node concept="1dT_AC" id="P0UJzKBp3y" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
         </node>
       </node>
     </node>

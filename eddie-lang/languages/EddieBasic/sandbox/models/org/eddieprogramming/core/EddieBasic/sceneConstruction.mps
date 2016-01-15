@@ -17,6 +17,7 @@
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.runtime.karel)" />
     <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.runtime.scene)" />
+    <import index="caon" ref="r:db9a8318-ef9d-4804-9f3a-a88765c7f48c(org.eddieprogramming.core.runtime.utils)" />
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
@@ -40,6 +41,12 @@
       </concept>
       <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
+      </concept>
+      <concept id="3394217739174290875" name="org.eddieprogramming.core.EddieBasic.structure.IntegerType" flags="ng" index="36MCER" />
+      <concept id="3394217739153894179" name="org.eddieprogramming.core.EddieBasic.structure.VariableDeclaration" flags="ng" index="37w$gJ">
+        <property id="6371716863967346005" name="mutable" index="36jPZJ" />
+        <child id="3394217739174290864" name="type" index="36MCEW" />
+        <child id="3394217739174297763" name="initializer" index="36MIYJ" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="6349814108921509948" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationBlock" flags="ng" index="186aDQ">
@@ -78,6 +85,15 @@
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
     </language>
+    <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables">
+      <concept id="3163049152356415489" name="org.eddieprogramming.core.EddieVariables.structure.VariableReference" flags="ng" index="AE91N">
+        <reference id="3163049152356415490" name="declaration" index="AE91K" />
+      </concept>
+      <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
+        <child id="3394217739174326171" name="declaration" index="36Mw2n" />
+      </concept>
+    </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects">
       <concept id="8938755948415928937" name="org.eddieprogramming.core.EddieObjects.structure.DotOperator" flags="ng" index="2jchP5">
         <child id="8938755948421935778" name="expression" index="2j_qme" />
@@ -109,6 +125,12 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
+      <concept id="3267332360033971606" name="org.eddieprogramming.core.EddieConditions.structure.IfStatement" flags="ng" index="17CkzI">
+        <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
+        <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
     </language>
   </registry>
@@ -219,6 +241,130 @@
               </node>
             </node>
             <node concept="3sCHcl" id="6xs90l3w6Nl" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="P0UJzKBM5_" role="3jGSnO" />
+        <node concept="17CkzI" id="6R5ctBWmHFB" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWmHH7" role="17CkHB">
+            <node concept="fF5TM" id="6R5ctBWmHIi" role="2j_PeB">
+              <ref role="fCCSt" to="caon:P0UJzK_Bbs" resolve="getLogical" />
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWmHHC" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:P0UJzK_$oD" resolve="Random" />
+            </node>
+          </node>
+          <node concept="3jGSmg" id="6R5ctBWmHFF" role="17CkHq">
+            <node concept="36Mw20" id="P0UJzKBMrl" role="3jGSnO">
+              <node concept="AFBxM" id="P0UJzKBMrp" role="36Mw2n">
+                <property role="36jPZJ" value="false" />
+                <property role="TrG5h" value="randomMarks" />
+                <node concept="36MCER" id="P0UJzKBMrj" role="36MCEW" />
+                <node concept="2jchP5" id="P0UJzKBMsP" role="36MIYJ">
+                  <node concept="fF5TM" id="P0UJzKBMtk" role="2j_PeB">
+                    <ref role="fCCSt" to="caon:P0UJzK_$Dm" resolve="getNumber" />
+                    <node concept="fHUgU" id="P0UJzKBMtl" role="fHv3J">
+                      <ref role="3WiQSc" to="caon:P0UJzK_$DA" resolve="min" />
+                      <node concept="36Kqmr" id="P0UJzKBMtM" role="2jzNHB">
+                        <property role="36Kqnr" value="1" />
+                      </node>
+                    </node>
+                    <node concept="fHUgU" id="P0UJzKBMtm" role="fHv3J">
+                      <ref role="3WiQSc" to="caon:P0UJzK_$DY" resolve="max" />
+                      <node concept="36Kqmr" id="P0UJzKBMtX" role="2jzNHB">
+                        <property role="36Kqnr" value="6" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3sCHcl" id="P0UJzKBMsD" role="2j_qme">
+                    <ref role="3sDJ1y" to="caon:P0UJzK_$oD" resolve="Random" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3dudH9" id="P0UJzKBMoB" role="3jGSnO">
+              <node concept="2jchP5" id="P0UJzKBMo$" role="3dudC3">
+                <node concept="fF5TM" id="P0UJzKBMpL" role="2j_PeB">
+                  <ref role="fCCSt" to="uoo5:442XwrAYNVg" resolve="setMarks" />
+                  <node concept="fHUgU" id="P0UJzKBMpM" role="fHv3J">
+                    <ref role="3WiQSc" to="uoo5:442XwrAYNVk" resolve="row" />
+                    <node concept="36Kqmr" id="P0UJzKBMqd" role="2jzNHB">
+                      <property role="36Kqnr" value="6" />
+                    </node>
+                  </node>
+                  <node concept="fHUgU" id="P0UJzKBMpN" role="fHv3J">
+                    <ref role="3WiQSc" to="uoo5:442XwrAYNVm" resolve="col" />
+                    <node concept="36Kqmr" id="P0UJzKBMqo" role="2jzNHB">
+                      <property role="36Kqnr" value="6" />
+                    </node>
+                  </node>
+                  <node concept="fHUgU" id="P0UJzKBMpO" role="fHv3J">
+                    <ref role="3WiQSc" to="uoo5:442XwrAYNVo" resolve="count" />
+                    <node concept="AE91N" id="P0UJzKBMwN" role="2jzNHB">
+                      <ref role="AE91K" node="P0UJzKBMrp" resolve="randomMarks" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sCHcl" id="P0UJzKBMoy" role="2j_qme">
+                  <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="6R5ctBWmTbq" role="3jGSnO" />
+        <node concept="3dudH9" id="6R5ctBWmTdy" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWmTdv" role="3dudC3">
+            <node concept="fF5TM" id="6R5ctBWmTgi" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3vKfL" resolve="createTextTerminal" />
+              <node concept="fHUgU" id="6R5ctBWmTgj" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKfR" resolve="row" />
+                <node concept="36Kqmr" id="6R5ctBWmTgB" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWmTgk" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3vKfT" resolve="col" />
+                <node concept="36Kqmr" id="6R5ctBWmTgM" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWmTdt" role="2j_qme">
+              <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dudH9" id="6R5ctBWmTic" role="3jGSnO">
+          <node concept="2jchP5" id="6R5ctBWmTi9" role="3dudC3">
+            <node concept="fF5TM" id="6R5ctBWmTjK" role="2j_PeB">
+              <ref role="fCCSt" to="uoo5:6xs90l3sfKg" resolve="writeText" />
+              <node concept="fHUgU" id="6R5ctBWmTjL" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3sfLF" resolve="text" />
+                <node concept="2jchP5" id="6R5ctBWmTko" role="2jzNHB">
+                  <node concept="fF5TM" id="6R5ctBWmTkK" role="2j_PeB">
+                    <ref role="fCCSt" to="caon:P0UJzK_B90" resolve="getAnimalName" />
+                  </node>
+                  <node concept="3sCHcl" id="6R5ctBWmTkc" role="2j_qme">
+                    <ref role="3sDJ1y" to="caon:P0UJzK_$oD" resolve="Random" />
+                  </node>
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWmTjM" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3tsPX" resolve="row" />
+                <node concept="36Kqmr" id="6R5ctBWmTkX" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="6R5ctBWmTjN" role="fHv3J">
+                <ref role="3WiQSc" to="uoo5:6xs90l3tsTt" resolve="col" />
+                <node concept="36Kqmr" id="6R5ctBWmTl8" role="2jzNHB">
+                  <property role="36Kqnr" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="6R5ctBWmTi7" role="2j_qme">
               <ref role="3sDJ1y" to="b3e7:442XwrAYZzU" resolve="Scene" />
             </node>
           </node>
