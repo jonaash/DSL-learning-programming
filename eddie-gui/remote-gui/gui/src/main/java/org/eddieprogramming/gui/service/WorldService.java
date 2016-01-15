@@ -22,10 +22,10 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
-import java.util.Queue;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @author Jonas Klimes
@@ -38,7 +38,11 @@ public class WorldService {
     private static final String TIMER_NAME = "WorldServiceProcess";
     private static final int TIMER_DELAY = 40;
 
-    private Queue<Step> stepsToDo = new ConcurrentLinkedQueue<Step>();
+    /**
+     * Blocking queue that ansures client client script waits with next steps unitil previous step is animated.
+     * Queue size is one, which means client script is one step ahead to GUI server.
+     */
+    private BlockingQueue<Step> stepsToDo = new LinkedBlockingQueue<Step>(1);
 
     private Timer timer;
 
@@ -157,7 +161,12 @@ public class WorldService {
 
 
     public void enqueueStep(Step step) {
-        stepsToDo.add(step);
+        try {
+            stepsToDo.put(step);
+        } catch (InterruptedException e) {
+            // ignore exception
+            logger.warn("Enqueuing step was interrupted.", e);
+        }
     }
 
     private synchronized void doStepNow(Step step) {
