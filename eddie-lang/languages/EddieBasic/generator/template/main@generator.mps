@@ -68,6 +68,7 @@
         <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
         <property id="6468716278899125786" name="isTransient" index="2dld4O" />
       </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -623,6 +624,14 @@
             <ref role="3cqZAo" node="1wz1usTwKuE" resolve="name" />
           </node>
         </node>
+        <node concept="3clFbF" id="6R5ctBWrE$1" role="3cqZAp">
+          <node concept="2OqwBi" id="6R5ctBWrE$Y" role="3clFbG">
+            <node concept="Xjq3P" id="6R5ctBWrEzZ" role="2Oq$k0" />
+            <node concept="liA8E" id="6R5ctBWrEGV" role="2OqNvi">
+              <ref role="37wK5l" node="6R5ctBWr$A$" resolve="collectStatistics" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="1wz1usTwJZ8" role="1B3o_S" />
       <node concept="37vLTG" id="1wz1usTwKuE" role="3clF46">
@@ -1016,6 +1025,47 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="6R5ctBWry3v" role="jymVt" />
+    <node concept="3clFb_" id="6R5ctBWr$A$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="collectStatistics" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6R5ctBWr$AB" role="3clF47">
+        <node concept="3clFbF" id="6R5ctBWrDCy" role="3cqZAp">
+          <node concept="2OqwBi" id="6R5ctBWrDV5" role="3clFbG">
+            <node concept="37vLTw" id="6R5ctBWrVgf" role="2Oq$k0">
+              <ref role="3cqZAo" to="4ujd:6R5ctBWrP0H" resolve="statisctics" />
+            </node>
+            <node concept="liA8E" id="6R5ctBWrEjv" role="2OqNvi">
+              <ref role="37wK5l" to="4ujd:6R5ctBWrtIl" resolve="setProgramBodyCommands" />
+              <node concept="3cmrfG" id="6R5ctBWrHG9" role="37wK5m">
+                <property role="3cmrfH" value="0" />
+                <node concept="17Uvod" id="6R5ctBWrHGH" role="lGtFl">
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
+                  <property role="2qtEX9" value="value" />
+                  <node concept="3zFVjK" id="6R5ctBWrHGI" role="3zH0cK">
+                    <node concept="3clFbS" id="6R5ctBWrHGJ" role="2VODD2">
+                      <node concept="3clFbF" id="6R5ctBWrIkZ" role="3cqZAp">
+                        <node concept="2OqwBi" id="6R5ctBWrItl" role="3clFbG">
+                          <node concept="30H73N" id="6R5ctBWrIkY" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="6R5ctBWrMnA" role="2OqNvi">
+                            <ref role="37wK5l" to="ljn0:6R5ctBWrJ3z" resolve="countBodyCommands" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6R5ctBWrySV" role="1B3o_S" />
+      <node concept="3cqZAl" id="6R5ctBWrG_S" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="6bh18$peL3Y" role="1B3o_S" />
     <node concept="n94m4" id="6bh18$peL3Z" role="lGtFl">

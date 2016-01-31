@@ -377,6 +377,8 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -2417,6 +2419,25 @@
       <node concept="3clFbS" id="2xfsEoC3p2E" role="3clF47">
         <node concept="3cpWs6" id="2xfsEoC3qUh" role="3cqZAp">
           <node concept="10Nm6u" id="6snOov8Klqw" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6R5ctBWrJ3z" role="13h7CS">
+      <property role="TrG5h" value="countBodyCommands" />
+      <node concept="3Tm1VV" id="6R5ctBWrJ3$" role="1B3o_S" />
+      <node concept="10Oyi0" id="6R5ctBWrJr9" role="3clF45" />
+      <node concept="3clFbS" id="6R5ctBWrJ3A" role="3clF47">
+        <node concept="3clFbF" id="6R5ctBWrJr$" role="3cqZAp">
+          <node concept="2YIFZM" id="2rxW3eqifQv" role="3clFbG">
+            <ref role="37wK5l" node="2rxW3eqhNyT" resolve="countCommands" />
+            <ref role="1Pybhc" node="2rxW3eqhNxR" resolve="StatisticsUtils" />
+            <node concept="2OqwBi" id="2rxW3eqifU5" role="37wK5m">
+              <node concept="13iPFW" id="2rxW3eqifQH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2rxW3eqignw" role="2OqNvi">
+                <ref role="3Tt5mk" to="dyrx:1IJMvjRjCZ" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -4653,6 +4674,67 @@
     <node concept="13hLZK" id="2xfsEoBV_F9" role="13h7CW">
       <node concept="3clFbS" id="2xfsEoBV_Fa" role="2VODD2" />
     </node>
+  </node>
+  <node concept="312cEu" id="2rxW3eqhNxR">
+    <property role="TrG5h" value="StatisticsUtils" />
+    <node concept="2YIFZL" id="2rxW3eqhNyT" role="jymVt">
+      <property role="TrG5h" value="countCommands" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2rxW3eqhNyW" role="3clF47">
+        <node concept="3clFbF" id="2rxW3eqhNE9" role="3cqZAp">
+          <node concept="2OqwBi" id="2rxW3eqi3gj" role="3clFbG">
+            <node concept="2OqwBi" id="2rxW3eqhNEb" role="2Oq$k0">
+              <node concept="2OqwBi" id="2rxW3eqhNEc" role="2Oq$k0">
+                <node concept="2Rf3mk" id="2rxW3eqhNEd" role="2OqNvi">
+                  <node concept="1xMEDy" id="2rxW3eqhNEe" role="1xVPHs">
+                    <node concept="chp4Y" id="2rxW3eqhNEf" role="ri$Ld">
+                      <ref role="cht4Q" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2rxW3eqibOx" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2rxW3eqhNz6" resolve="cmdList" />
+                </node>
+              </node>
+              <node concept="1aUR6E" id="2rxW3eqhT17" role="2OqNvi">
+                <node concept="1bVj0M" id="2rxW3eqhT19" role="23t8la">
+                  <node concept="3clFbS" id="2rxW3eqhT1a" role="1bW5cS">
+                    <node concept="3clFbF" id="2rxW3eqhUmy" role="3cqZAp">
+                      <node concept="2OqwBi" id="2rxW3eqhV_Y" role="3clFbG">
+                        <node concept="37vLTw" id="2rxW3eqhUmx" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2rxW3eqhT1b" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="2rxW3eqhZGh" role="2OqNvi">
+                          <node concept="chp4Y" id="2rxW3eqi1_9" role="cj9EA">
+                            <ref role="cht4Q" to="dyrx:18k56XD$bnd" resolve="IDocumentation" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Rh6nW" id="2rxW3eqhT1b" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="2rxW3eqhT1c" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="34oBXx" id="2rxW3eqi7Gn" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2rxW3eqhNyE" role="1B3o_S" />
+      <node concept="10Oyi0" id="2rxW3eqhNyP" role="3clF45" />
+      <node concept="37vLTG" id="2rxW3eqhNz6" role="3clF46">
+        <property role="TrG5h" value="cmdList" />
+        <node concept="3Tqbb2" id="2rxW3eqhNzf" role="1tU5fm">
+          <ref role="ehGHo" to="dyrx:1IJMvjRjER" resolve="CommandList" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="2rxW3eqhNxS" role="1B3o_S" />
   </node>
 </model>
 
