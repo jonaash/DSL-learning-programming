@@ -171,6 +171,12 @@
         <ref role="v9R2y" node="6bbx8uIAd9P" resolve="reduce_IsLooking" />
       </node>
     </node>
+    <node concept="3aamgX" id="2rxW3eqgaC4" role="3acgRq">
+      <ref role="30HIoZ" to="758v:2rxW3eqfXTi" resolve="IsHome" />
+      <node concept="j$656" id="2rxW3eqgaFH" role="1lVwrX">
+        <ref role="v9R2y" node="2rxW3eqfXXs" resolve="reduce_IsHome" />
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="6bbx8uIxBsV">
     <property role="TrG5h" value="reduce_LeftTurn" />
@@ -569,6 +575,40 @@
           <ref role="1Px2BO" to="4ujd:2RDssu5UQNI" resolve="Direction" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="2rxW3eqfXXs">
+    <property role="TrG5h" value="reduce_IsHome" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="3gUMe" to="758v:2rxW3eqfXTi" resolve="IsHome" />
+    <node concept="312cEu" id="2rxW3eqfXXt" role="13RCb5">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="Foo" />
+      <node concept="2tJIrI" id="2rxW3eqfXXu" role="jymVt" />
+      <node concept="3clFb_" id="2rxW3eqfXXv" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="foo" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="2rxW3eqfXXw" role="3clF47">
+          <node concept="3clFbF" id="2rxW3eqfXXx" role="3cqZAp">
+            <node concept="2OqwBi" id="2rxW3eqfXXy" role="3clFbG">
+              <node concept="liA8E" id="2rxW3eqfXXz" role="2OqNvi">
+                <ref role="37wK5l" to="uoo5:2rxW3eqfYil" resolve="isHome" />
+              </node>
+              <node concept="raruj" id="2rxW3eqfXX$" role="lGtFl" />
+              <node concept="2YIFZM" id="2rxW3eqfXX_" role="2Oq$k0">
+                <ref role="1Pybhc" to="uoo5:442XwrAYO0$" resolve="Karel" />
+                <ref role="37wK5l" to="uoo5:442XwrAYO0D" resolve="getInstance" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="2rxW3eqfXXA" role="1B3o_S" />
+        <node concept="3cqZAl" id="2rxW3eqfXXB" role="3clF45" />
+      </node>
+      <node concept="3Tm1VV" id="2rxW3eqfXXC" role="1B3o_S" />
     </node>
   </node>
 </model>

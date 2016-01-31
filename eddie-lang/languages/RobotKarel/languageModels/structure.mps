@@ -115,5 +115,11 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
   </node>
+  <node concept="1TIwiD" id="2rxW3eqfXTi">
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="IsHome" />
+    <property role="34LRSv" value="at home" />
+    <ref role="1TJDcQ" node="6bbx8uIA513" resolve="NullaryLogicalQuery" />
+  </node>
 </model>
 
