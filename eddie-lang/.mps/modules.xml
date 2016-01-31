@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/runtime/runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/support/support.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/tutorial/org.eddieprogramming.education.tutorial.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/viewPlugin/viewPlugin.msd" folder="" />
     </projectModules>
   </component>

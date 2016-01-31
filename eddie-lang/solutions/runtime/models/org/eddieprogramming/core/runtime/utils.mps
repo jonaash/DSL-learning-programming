@@ -1285,5 +1285,68 @@
       </node>
     </node>
   </node>
+  <node concept="312cEu" id="6R5ctBWrmvS">
+    <property role="3GE5qa" value="statistics" />
+    <property role="TrG5h" value="Statistics" />
+    <node concept="Wx3nA" id="6R5ctBWrn1G" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="instance" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6R5ctBWrn1r" role="1B3o_S" />
+      <node concept="3uibUv" id="6R5ctBWrn1A" role="1tU5fm">
+        <ref role="3uigEE" to="4ujd:6R5ctBWrtI3" resolve="IProgramStatistics" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6R5ctBWrn1S" role="jymVt" />
+    <node concept="2YIFZL" id="6R5ctBWrn2y" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6R5ctBWrn2_" role="3clF47">
+        <node concept="3clFbF" id="6R5ctBWrn3b" role="3cqZAp">
+          <node concept="37vLTw" id="6R5ctBWrn3a" role="3clFbG">
+            <ref role="3cqZAo" node="6R5ctBWrn1G" resolve="instance" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6R5ctBWrn2b" role="1B3o_S" />
+      <node concept="3uibUv" id="6R5ctBWrn2q" role="3clF45">
+        <ref role="3uigEE" to="4ujd:6R5ctBWrtI3" resolve="IProgramStatistics" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6R5ctBWrn3p" role="jymVt" />
+    <node concept="2YIFZL" id="6R5ctBWrn64" role="jymVt">
+      <property role="TrG5h" value="setInstance" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6R5ctBWrn67" role="3clF47">
+        <node concept="3clFbF" id="6R5ctBWrn7n" role="3cqZAp">
+          <node concept="37vLTI" id="6R5ctBWrn92" role="3clFbG">
+            <node concept="37vLTw" id="6R5ctBWrn9s" role="37vLTx">
+              <ref role="3cqZAo" node="6R5ctBWrn6_" resolve="stats" />
+            </node>
+            <node concept="37vLTw" id="6R5ctBWrn7m" role="37vLTJ">
+              <ref role="3cqZAo" node="6R5ctBWrn1G" resolve="instance" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6R5ctBWrn5y" role="1B3o_S" />
+      <node concept="3cqZAl" id="6R5ctBWrn6s" role="3clF45" />
+      <node concept="37vLTG" id="6R5ctBWrn6_" role="3clF46">
+        <property role="TrG5h" value="stats" />
+        <node concept="3uibUv" id="6R5ctBWrn6$" role="1tU5fm">
+          <ref role="3uigEE" to="4ujd:6R5ctBWrtI3" resolve="IProgramStatistics" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="6R5ctBWrmvT" role="1B3o_S" />
+    <node concept="2AHcQZ" id="6R5ctBWrnns" role="2AJF6D">
+      <ref role="2AI5Lk" to="4ujd:2bb0VNYqtjy" resolve="EddieSingleton" />
+    </node>
+  </node>
 </model>
 
