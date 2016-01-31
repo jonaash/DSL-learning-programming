@@ -202,7 +202,7 @@
   <node concept="1TIwiD" id="1IJMvjRjER">
     <property role="3GE5qa" value="command" />
     <property role="TrG5h" value="CommandList" />
-    <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1IJMvjRjFj" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="commands" />
