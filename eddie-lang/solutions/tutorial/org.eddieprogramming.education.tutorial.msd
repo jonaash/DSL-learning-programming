@@ -17,6 +17,7 @@
     <usedLanguage>53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</usedLanguage>
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
     <usedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</usedLanguage>
+    <usedLanguage>992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</usedDevKit>

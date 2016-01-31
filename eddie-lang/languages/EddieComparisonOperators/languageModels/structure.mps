@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -30,36 +31,42 @@
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="EqualityOperator" />
     <property role="34LRSv" value="==" />
+    <property role="R4oN_" value="equals" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nE">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="GreaterOrEqual" />
     <property role="34LRSv" value="&gt;=" />
+    <property role="R4oN_" value="greater or equals" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nF">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="GreaterThan" />
     <property role="34LRSv" value="&gt;" />
+    <property role="R4oN_" value="greater than" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nG">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="InequalityOperator" />
     <property role="34LRSv" value="!=" />
+    <property role="R4oN_" value="not equals" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nH">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="LessOrEqual" />
     <property role="34LRSv" value="&lt;=" />
+    <property role="R4oN_" value="less or equals" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nI">
     <property role="3GE5qa" value="expression.comparison" />
     <property role="TrG5h" value="LessThan" />
     <property role="34LRSv" value="&lt;" />
+    <property role="R4oN_" value="less than" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
 </model>
