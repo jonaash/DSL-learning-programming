@@ -121,7 +121,7 @@
     </node>
   </node>
   <node concept="jVnub" id="4LNIB3H3PWp">
-    <property role="TrG5h" value="swithc_ComparisonBinaryOperators" />
+    <property role="TrG5h" value="switch_ComparisonBinaryOperators" />
     <node concept="3aamgX" id="6snOov98Nc6" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="823u:4LNIB3H41nD" resolve="EqualityOperator" />
@@ -432,7 +432,7 @@
               </node>
               <node concept="raruj" id="2WqFKNE7QB_" role="lGtFl" />
               <node concept="1sPUBX" id="2WqFKNE7QSL" role="lGtFl">
-                <ref role="v9R2y" node="4LNIB3H3PWp" resolve="swithc_ComparisonBinaryOperators" />
+                <ref role="v9R2y" node="4LNIB3H3PWp" resolve="switch_ComparisonBinaryOperators" />
               </node>
             </node>
             <node concept="37vLTw" id="2WqFKNE7PXA" role="37vLTJ">
