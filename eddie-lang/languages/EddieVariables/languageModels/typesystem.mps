@@ -503,6 +503,32 @@
         </node>
       </node>
     </node>
+    <node concept="3ciAk0" id="2rxW3eqiWeT" role="3he0YX">
+      <node concept="3ciZUL" id="2rxW3eqiWeU" role="32tDT$">
+        <node concept="3clFbS" id="2rxW3eqiWeV" role="2VODD2">
+          <node concept="3clFbF" id="2rxW3eqiWeW" role="3cqZAp">
+            <node concept="2pJPEk" id="2rxW3eqiWeX" role="3clFbG">
+              <node concept="2pJPED" id="2rxW3eqiWeY" role="2pJPEn">
+                <ref role="2pJxaS" to="dyrx:2WqFKNDOdsR" resolve="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2pJPEk" id="2rxW3eqiWeZ" role="3ciSkW">
+        <node concept="2pJPED" id="62f2dLTICDR" role="2pJPEn">
+          <ref role="2pJxaS" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+        </node>
+      </node>
+      <node concept="3gn64h" id="2rxW3eqiWf1" role="32tDTA">
+        <ref role="3gnhBz" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
+      </node>
+      <node concept="2pJPEk" id="2rxW3eqiWf2" role="3ciSnv">
+        <node concept="2pJPED" id="62f2dLTICEd" role="2pJPEn">
+          <ref role="2pJxaS" to="dyrx:2WqFKNDQKD4" resolve="StringType" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1YbPZF" id="3hBhvFSpekl">
     <property role="TrG5h" value="typeof_AssignmentCommand" />
