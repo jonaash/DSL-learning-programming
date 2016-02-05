@@ -186,6 +186,19 @@
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
+      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375805250" name="extends" index="3LEz9a" />
+        <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375805242" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitRef" flags="ng" index="3LEz8M">
+        <reference id="322010710375805243" name="devkit" index="3LEz8N" />
+      </concept>
+      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
+        <reference id="322010710375832947" name="language" index="3LEDTV" />
+      </concept>
+      <concept id="322010710375832954" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportSolution" flags="ng" index="3LEDTM">
+        <reference id="322010710375832955" name="solution" index="3LEDTN" />
+      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -1053,6 +1066,12 @@
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4y6FdzEiSnO" role="3bR37C">
+          <node concept="3bR9La" id="4y6FdzEiSnP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYK" resolve="jetbrains.mps.baseLanguage.util" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkmAj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1124,7 +1143,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIknAg" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="3LESm3" value="53b38693-ceee-4191-9779-c7bca6c13739" />
         <property role="2GAjPV" value="false" />
         <property role="TrG5h" value="org.eddieprogramming.core.EddieVariables" />
@@ -1798,6 +1817,71 @@
               <ref role="3bR37D" node="1CDPOOIknXx" resolve="org.eddieprogramming.core.EddieVariables#3394217739153893707" />
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="4y6FdzEj1R$" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="Eddie" />
+        <property role="3LESm3" value="b771c644-c438-46a8-aa4c-9cc65f7982b8" />
+        <node concept="55IIr" id="4y6FdzEj1RB" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4y6FdzEj292" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4y6FdzEj2dF" role="2Ry0An">
+              <property role="2Ry0Am" value="Eddie" />
+              <node concept="2Ry0Ak" id="4y6FdzEj2KM" role="2Ry0An">
+                <property role="2Ry0Am" value="Eddie.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj2N6" role="3LEDUa">
+          <ref role="3LEDTV" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj2N7" role="3LEDUa">
+          <ref role="3LEDTV" node="1CDPOOIkmAj" resolve="org.eddieprogramming.core.EddieConditions" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj2N8" role="3LEDUa">
+          <ref role="3LEDTV" node="1CDPOOIknAg" resolve="org.eddieprogramming.core.EddieVariables" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj2N9" role="3LEDUa">
+          <ref role="3LEDTV" node="1CDPOOIkokU" resolve="org.eddieprogramming.core.EddieFunctions" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj2Na" role="3LEDUa">
+          <ref role="3LEDTV" node="4LNIB3H6NSS" resolve="org.eddieprogramming.core.EddieObjects" />
+        </node>
+        <node concept="3LEDTM" id="4y6FdzEj2Nb" role="3LEDUa">
+          <ref role="3LEDTN" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="4y6FdzEj2Y0" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="SceneDefinition" />
+        <property role="3LESm3" value="114ed756-029f-4e38-b9de-d8e88dac495b" />
+        <node concept="55IIr" id="4y6FdzEj2Y3" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4y6FdzEj38N" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4y6FdzEj3ds" role="2Ry0An">
+              <property role="2Ry0Am" value="SceneDefinition" />
+              <node concept="2Ry0Ak" id="4y6FdzEj3i5" role="2Ry0An">
+                <property role="2Ry0Am" value="SceneDefinition.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="4y6FdzEj3kp" role="3LEz9a">
+          <ref role="3LEz8N" node="4y6FdzEj1R$" resolve="Eddie" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj3kq" role="3LEDUa">
+          <ref role="3LEDTV" node="4LNIB3H6RF4" resolve="org.eddieprogramming.support.EddieBaseLanguageObjects" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj3kr" role="3LEDUa">
+          <ref role="3LEDTV" node="4LNIB3H6SD0" resolve="org.eddieprogramming.support.EddieComparisonOperators" />
+        </node>
+        <node concept="3LEDTy" id="4y6FdzEj3ks" role="3LEDUa">
+          <ref role="3LEDTV" node="4LNIB3H6Sjf" resolve="org.eddieprogramming.world.EddieSceneConstruction" />
+        </node>
+        <node concept="3LEDTM" id="4y6FdzEj3kt" role="3LEDUa">
+          <ref role="3LEDTN" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
         </node>
       </node>
     </node>

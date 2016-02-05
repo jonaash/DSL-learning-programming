@@ -732,6 +732,12 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieVariableTerminals-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieVariableTerminals-languageModels" prefix="module/languageModels" />
     </jar>
+    <copy todir="${build.layout}/plugins/Eddie/languages/Eddie">
+      <fileset file="${basedir}/devkits/Eddie/Eddie.devkit" />
+    </copy>
+    <copy todir="${build.layout}/plugins/Eddie/languages/Eddie">
+      <fileset file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/Eddie/runtime-libraries" />
     <copy todir="${build.layout}/plugins/Eddie/runtime-libraries">
       <fileset dir="${basedir}/solutions/lib/lib" />
@@ -852,6 +858,7 @@
         <module file="${basedir}/solutions/viewPlugin/viewPlugin.msd" />
       </chunk>
       <chunk>
+        <module file="${basedir}/devkits/Eddie/Eddie.devkit" />
         <module file="${basedir}/languages/EddieFunctions/EddieFunctions.mpl" />
         <module file="${basedir}/languages/EddieObjects/EddieObjects.mpl" />
         <module file="${basedir}/languages/EddieVariables/EddieVariables.mpl" />
@@ -859,6 +866,7 @@
         <module file="${basedir}/languages/RobotKarel/RobotKarel.mpl" />
       </chunk>
       <chunk>
+        <module file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
         <module file="${basedir}/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" />
         <module file="${basedir}/languages/EddieComparisonOperators/EddieComparisonOperators.mpl" />
         <module file="${basedir}/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" />
