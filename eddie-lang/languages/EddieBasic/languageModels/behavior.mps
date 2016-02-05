@@ -399,6 +399,7 @@
         <child id="1174557628217" name="part" index="1T5LoC" />
       </concept>
       <concept id="1174554211468" name="jetbrains.mps.baseLanguage.regexp.structure.PositiveSymbolClassRegexp" flags="ng" index="1SSJmt" />
+      <concept id="1174556813606" name="jetbrains.mps.baseLanguage.regexp.structure.DotRegexp" flags="ng" index="1T2EwR" />
       <concept id="1174557878319" name="jetbrains.mps.baseLanguage.regexp.structure.CharacterSymbolClassPart" flags="ng" index="1T6I$Y">
         <property id="1174557887320" name="character" index="1T6KD9" />
       </concept>
@@ -5243,7 +5244,56 @@
         <property role="TrG5h" value="value" />
         <node concept="17QB3L" id="4y6FdzE6e1E" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="4y6FdzEiD9S" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiD9T" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiD9U" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates text literal inside quotes." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4y6FdzEg1kJ" role="jymVt" />
+    <node concept="2YIFZL" id="4y6FdzEg1UO" role="jymVt">
+      <property role="TrG5h" value="matchTextLiteralStart" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4y6FdzEg1UP" role="3clF47">
+        <node concept="3clFbF" id="4y6FdzEhaPq" role="3cqZAp">
+          <node concept="2OqwBi" id="4y6FdzEhaXW" role="3clFbG">
+            <node concept="37vLTw" id="4y6FdzEhaPp" role="2Oq$k0">
+              <ref role="3cqZAo" node="4y6FdzEg1UW" resolve="value" />
+            </node>
+            <node concept="2kpEY9" id="4y6FdzEhbDE" role="2OqNvi">
+              <node concept="1Qi9sc" id="4y6FdzEhbDG" role="1YN4dH">
+                <node concept="1OJ37Q" id="4y6FdzEhbEu" role="1QigWp">
+                  <node concept="1OCmVF" id="4y6FdzEhbEL" role="1OLqdY">
+                    <node concept="1T2EwR" id="4y6FdzEhbEE" role="1OLDsb" />
+                  </node>
+                  <node concept="1OC9wW" id="4y6FdzEhbDV" role="1OLpdg">
+                    <property role="1OCb_u" value="&quot;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4y6FdzEg1UU" role="1B3o_S" />
+      <node concept="10P_77" id="4y6FdzEg1UV" role="3clF45" />
+      <node concept="37vLTG" id="4y6FdzEg1UW" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="4y6FdzEg1UX" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="4y6FdzEiD92" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiD93" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiD94" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if it is valid start of Text with quote in the beginning. " />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4y6FdzEg1S7" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzE8LFd" role="jymVt">
       <property role="TrG5h" value="validateNumberLiteral" />
       <property role="od$2w" value="false" />
@@ -5296,7 +5346,68 @@
         <property role="TrG5h" value="value" />
         <node concept="17QB3L" id="4y6FdzE8LFk" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="4y6FdzEiEk2" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiEk3" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiEk4" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates integral number literal." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4y6FdzEgwGw" role="jymVt" />
+    <node concept="2YIFZL" id="4y6FdzEgwMf" role="jymVt">
+      <property role="TrG5h" value="matchNumberLiteralStart" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4y6FdzEgwMg" role="3clF47">
+        <node concept="3clFbF" id="4y6FdzEgwMh" role="3cqZAp">
+          <node concept="2OqwBi" id="4y6FdzEgwMi" role="3clFbG">
+            <node concept="37vLTw" id="4y6FdzEgwMj" role="2Oq$k0">
+              <ref role="3cqZAo" node="4y6FdzEgwMz" resolve="value" />
+            </node>
+            <node concept="2kpEY9" id="4y6FdzEgwMk" role="2OqNvi">
+              <node concept="1Qi9sc" id="4y6FdzEgwMl" role="1YN4dH">
+                <node concept="1OCdqh" id="4y6FdzEgwMm" role="1QigWp">
+                  <node concept="1OJ37Q" id="4y6FdzEgwMn" role="1OLpdg">
+                    <node concept="1OCmVF" id="4y6FdzEhZDA" role="1OLqdY">
+                      <node concept="1SSJmt" id="4y6FdzEgwMs" role="1OLDsb">
+                        <node concept="1T8lYq" id="4y6FdzEgwMt" role="1T5LoC">
+                          <property role="1T8p8b" value="1" />
+                          <property role="1T8pRJ" value="9" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1SLe3L" id="4y6FdzEgwMu" role="1OLpdg">
+                      <node concept="1OC9wW" id="4y6FdzEgwMv" role="1OLDsb">
+                        <property role="1OCb_u" value="-" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1OC9wW" id="4y6FdzEgwMw" role="1OLqdY">
+                    <property role="1OCb_u" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4y6FdzEgwMx" role="1B3o_S" />
+      <node concept="10P_77" id="4y6FdzEgwMy" role="3clF45" />
+      <node concept="37vLTG" id="4y6FdzEgwMz" role="3clF46">
+        <property role="TrG5h" value="value" />
+        <node concept="17QB3L" id="4y6FdzEgwM$" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="4y6FdzEiEkj" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiEkk" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiEkl" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns true if it is valid beginning of integer number." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4y6FdzEgwIQ" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzE8RwB" role="jymVt">
       <property role="TrG5h" value="validateLogicalLiteral" />
       <property role="od$2w" value="false" />
@@ -5330,7 +5441,7 @@
         <node concept="17QB3L" id="4y6FdzE8RwM" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4y6FdzE8Rv4" role="jymVt" />
+    <node concept="2tJIrI" id="4y6FdzEiETF" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzE6tS5" role="jymVt">
       <property role="TrG5h" value="validateRootConceptName" />
       <property role="od$2w" value="false" />
@@ -5374,7 +5485,15 @@
         <property role="TrG5h" value="value" />
         <node concept="17QB3L" id="4y6FdzE6tSp" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="4y6FdzEiEWP" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiEWQ" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiEWR" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates root concept name that is being transformed into baseLanguage Class." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4y6FdzEiF0c" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzEeBUG" role="jymVt">
       <property role="TrG5h" value="validateVariableName" />
       <property role="od$2w" value="false" />
@@ -5434,7 +5553,15 @@
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="4y6FdzEeBUZ" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="4y6FdzEiF3r" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiF3s" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiF3t" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates variable identifier." />
+          </node>
+        </node>
+      </node>
     </node>
+    <node concept="2tJIrI" id="4y6FdzEiF6R" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzEf7GT" role="jymVt">
       <property role="TrG5h" value="validateMethodName" />
       <property role="od$2w" value="false" />
@@ -5494,8 +5621,15 @@
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="4y6FdzEf7He" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="4y6FdzEiFab" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiFac" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiFad" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates method name." />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="2tJIrI" id="4y6FdzEf7Ek" role="jymVt" />
+    <node concept="2tJIrI" id="4y6FdzEiFaq" role="jymVt" />
     <node concept="2YIFZL" id="4y6FdzEf8XC" role="jymVt">
       <property role="TrG5h" value="validateActionName" />
       <property role="od$2w" value="false" />
@@ -5557,6 +5691,13 @@
       <node concept="37vLTG" id="4y6FdzEf8XW" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="4y6FdzEf8XX" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="4y6FdzEiFdM" role="lGtFl">
+        <node concept="TZ5HA" id="4y6FdzEiFdN" role="TZ5H$">
+          <node concept="1dT_AC" id="4y6FdzEiFdO" role="1dT_Ay">
+            <property role="1dT_AB" value="Validates custom action name." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="4y6FdzEf8UE" role="jymVt" />
