@@ -54,7 +54,7 @@
     </language>
   </registry>
   <node concept="1$vsWe" id="3uaXG0jv1$H">
-    <property role="TrG5h" value="Short walk" />
+    <property role="TrG5h" value="Short_Walk" />
     <node concept="3jGSmg" id="3uaXG0jv1$I" role="3jGSko">
       <node concept="3cjXi6" id="3uaXG0jv1_e" role="3jGSnO" />
       <node concept="3cjXi6" id="3uaXG0jv1_s" role="3jGSnO" />
@@ -69,7 +69,7 @@
     </node>
   </node>
   <node concept="1$vsWe" id="1mpZf2HujGq">
-    <property role="TrG5h" value="Code Block Example" />
+    <property role="TrG5h" value="CodeBlockExample" />
     <node concept="29J987" id="1mpZf2HujGH" role="sZtrN">
       <property role="TrG5h" value="turn right" />
       <node concept="3dtAsP" id="1mpZf2HujGI" role="2jg$Xp" />

@@ -79,6 +79,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -123,9 +126,11 @@
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+        <child id="1212097481299" name="propertyValidator" index="QCWH9" />
         <child id="1152963095733" name="propertySetter" index="1LXaQT" />
       </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
@@ -198,6 +203,28 @@
   <node concept="1M2fIO" id="7KcPMNJuWt5">
     <property role="3GE5qa" value="class.member.definition" />
     <ref role="1M2myG" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
+    <node concept="EnEH3" id="4y6FdzEfBDm" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="4y6FdzEfEVb" role="QCWH9">
+        <node concept="3clFbS" id="4y6FdzEfEVc" role="2VODD2">
+          <node concept="3SKdUt" id="4y6FdzEfIAL" role="3cqZAp">
+            <node concept="3SKdUq" id="4y6FdzEfIFV" role="3SKWNk">
+              <property role="3SKdUp" value="override default validation" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="4y6FdzEfIjb" role="3cqZAp">
+            <node concept="3SKdUq" id="4y6FdzEfIoj" role="3SKWNk">
+              <property role="3SKdUp" value="name of constructor is never set, so it is always valid" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4y6FdzEfF06" role="3cqZAp">
+            <node concept="3clFbT" id="4y6FdzEfF05" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="nKS2y" id="7KcPMNJuWt6" role="1MLUbF">
       <node concept="3clFbS" id="7KcPMNJuWt7" role="2VODD2">
         <node concept="3clFbF" id="7KcPMNJuWy1" role="3cqZAp">

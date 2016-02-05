@@ -14,7 +14,10 @@
       <concept id="7428636491485899618" name="org.eddieprogramming.core.EddieBasic.structure.TutorialReference" flags="ng" index="2J$FF_">
         <reference id="7428636491485899619" name="tutorial" index="2J$FF$" />
       </concept>
-      <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg" />
+      <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
+        <child id="31172425217293011" name="commands" index="3jGSnO" />
+      </concept>
       <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
         <child id="7428636491485899649" name="tutorialRef" index="2J$FC6" />
         <child id="31172425217292863" name="body" index="3jGSko" />
@@ -31,7 +34,9 @@
     <node concept="2J$FF_" id="2rxW3eqd_P7" role="2J$FC6">
       <ref role="2J$FF$" to="er23:2rxW3eqdpJ9" resolve="Tut01Simple1" />
     </node>
-    <node concept="3jGSmg" id="42iL3W03F0v" role="3jGSko" />
+    <node concept="3jGSmg" id="4y6FdzEfJLM" role="3jGSko">
+      <node concept="17J3f2" id="4y6FdzEfJLN" role="3jGSnO" />
+    </node>
   </node>
 </model>
 

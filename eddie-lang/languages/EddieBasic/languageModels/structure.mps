@@ -181,6 +181,9 @@
     <node concept="PrWs8" id="3uaXG0jCJip" role="PzmwI">
       <ref role="PrY4T" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
     </node>
+    <node concept="PrWs8" id="4y6FdzEepC2" role="PzmwI">
+      <ref role="PrY4T" node="4y6FdzEdREs" resolve="IRootConceptIdentifier" />
+    </node>
     <node concept="1TJgyj" id="1IJMvjRjCZ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
@@ -467,6 +470,9 @@
     </node>
     <node concept="PrWs8" id="3uaXG0jCJej" role="PzmwI">
       <ref role="PrY4T" node="5wv4$Cg3XUq" resolve="ICanHaveComment" />
+    </node>
+    <node concept="PrWs8" id="4y6FdzEepFO" role="PzmwI">
+      <ref role="PrY4T" node="4y6FdzEdREs" resolve="IRootConceptIdentifier" />
     </node>
   </node>
   <node concept="1TIwiD" id="3hBhvFSK1_a">
@@ -1096,6 +1102,13 @@
     <property role="34LRSv" value="&lt;empty&gt;" />
     <property role="R4oN_" value="Empty line in documentation block." />
     <ref role="1TJDcQ" node="5wv4$Cg1W9O" resolve="DocumentationBlockPart" />
+  </node>
+  <node concept="PlHQZ" id="4y6FdzEdREs">
+    <property role="3GE5qa" value="helper" />
+    <property role="TrG5h" value="IRootConceptIdentifier" />
+    <node concept="PrWs8" id="4y6FdzEdREt" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

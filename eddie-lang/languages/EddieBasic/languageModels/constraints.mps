@@ -16,7 +16,6 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -361,14 +360,10 @@
       <node concept="QB0g5" id="2WqFKNDQtRT" role="QCWH9">
         <node concept="3clFbS" id="2WqFKNDQtRU" role="2VODD2">
           <node concept="3clFbF" id="2WqFKNDQtZv" role="3cqZAp">
-            <node concept="2OqwBi" id="2WqFKNDQucp" role="3clFbG">
-              <node concept="1Wqviy" id="2WqFKNDQtZu" role="2Oq$k0" />
-              <node concept="liA8E" id="2WqFKNDQuWU" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
-                <node concept="Xl_RD" id="5eWJqD2tpDV" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z_][a-zA-Z0-9_]*" />
-                </node>
-              </node>
+            <node concept="2YIFZM" id="4y6FdzEfaep" role="3clFbG">
+              <ref role="37wK5l" to="ljn0:4y6FdzEeBUG" resolve="validateVariableName" />
+              <ref role="1Pybhc" to="ljn0:4y6FdzE6dp3" resolve="Validation" />
+              <node concept="1Wqviy" id="4y6FdzEfajE" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -1028,6 +1023,60 @@
               <node concept="1pGfFk" id="3eViXf8tCLC" role="2ShVmc">
                 <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4y6FdzEdREv">
+    <property role="3GE5qa" value="helper" />
+    <ref role="1M2myG" to="dyrx:4y6FdzEdREs" resolve="IRootConceptIdentifier" />
+    <node concept="EnEH3" id="4y6FdzEdRJo" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="4y6FdzEdRJq" role="QCWH9">
+        <node concept="3clFbS" id="4y6FdzEdRJr" role="2VODD2">
+          <node concept="3clFbF" id="4y6FdzEdROl" role="3cqZAp">
+            <node concept="2YIFZM" id="4y6FdzEdRTy" role="3clFbG">
+              <ref role="37wK5l" to="ljn0:4y6FdzE6tS5" resolve="validateRootConceptName" />
+              <ref role="1Pybhc" to="ljn0:4y6FdzE6dp3" resolve="Validation" />
+              <node concept="1Wqviy" id="4y6FdzEdRYK" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4y6FdzEf7l4">
+    <property role="3GE5qa" value="method" />
+    <ref role="1M2myG" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
+    <node concept="EnEH3" id="4y6FdzEf7l5" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="4y6FdzEf7l7" role="QCWH9">
+        <node concept="3clFbS" id="4y6FdzEf7l8" role="2VODD2">
+          <node concept="3clFbF" id="4y6FdzEf7q2" role="3cqZAp">
+            <node concept="2YIFZM" id="4y6FdzEfawX" role="3clFbG">
+              <ref role="37wK5l" to="ljn0:4y6FdzEf7GT" resolve="validateMethodName" />
+              <ref role="1Pybhc" to="ljn0:4y6FdzE6dp3" resolve="Validation" />
+              <node concept="1Wqviy" id="4y6FdzEfawY" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4y6FdzEfau4">
+    <property role="3GE5qa" value="method.procedure" />
+    <ref role="1M2myG" to="dyrx:4in_MZdaKkC" resolve="RoutineDefinition" />
+    <node concept="EnEH3" id="4y6FdzEfaFq" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="QB0g5" id="4y6FdzEfaFs" role="QCWH9">
+        <node concept="3clFbS" id="4y6FdzEfaFt" role="2VODD2">
+          <node concept="3clFbF" id="4y6FdzEfaKn" role="3cqZAp">
+            <node concept="2YIFZM" id="4y6FdzEfaSb" role="3clFbG">
+              <ref role="37wK5l" to="ljn0:4y6FdzEf8XC" resolve="validateActionName" />
+              <ref role="1Pybhc" to="ljn0:4y6FdzE6dp3" resolve="Validation" />
+              <node concept="1Wqviy" id="4y6FdzEfaX$" role="37wK5m" />
             </node>
           </node>
         </node>

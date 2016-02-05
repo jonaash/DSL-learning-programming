@@ -19,6 +19,7 @@
     <import index="vlyv" ref="r:fc7da76e-21f1-4f7d-add6-81d7cfc71533(org.eddieprogramming.world.EddieSceneConstruction.structure)" />
     <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.runtime.scene)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="vuk8" ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(org.eddieprogramming.core.EddieBasic.generator.util)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -457,12 +458,16 @@
       <property role="2qtEX9" value="name" />
       <node concept="3zFVjK" id="61GUnTJap6C" role="3zH0cK">
         <node concept="3clFbS" id="61GUnTJap6D" role="2VODD2">
-          <node concept="3clFbF" id="61GUnTJap6J" role="3cqZAp">
-            <node concept="2OqwBi" id="61GUnTJap6E" role="3clFbG">
-              <node concept="3TrcHB" id="61GUnTJap6H" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3clFbF" id="4y6FdzEeu5S" role="3cqZAp">
+            <node concept="2YIFZM" id="4y6FdzEeubh" role="3clFbG">
+              <ref role="37wK5l" to="vuk8:3uaXG0jstV1" resolve="createClassName" />
+              <ref role="1Pybhc" to="vuk8:2WqFKNE1did" resolve="NamingUtils" />
+              <node concept="2OqwBi" id="4y6FdzEeul$" role="37wK5m">
+                <node concept="30H73N" id="4y6FdzEeugE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4y6FdzEeu_J" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
-              <node concept="30H73N" id="61GUnTJap6I" role="2Oq$k0" />
             </node>
           </node>
         </node>
@@ -632,11 +637,15 @@
       <property role="2qtEX9" value="name" />
       <node concept="3zFVjK" id="6snOov8zizd" role="3zH0cK">
         <node concept="3clFbS" id="6snOov8zize" role="2VODD2">
-          <node concept="3clFbF" id="6snOov8ziCp" role="3cqZAp">
-            <node concept="2OqwBi" id="6snOov8ziGn" role="3clFbG">
-              <node concept="30H73N" id="6snOov8ziCo" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6snOov8zjxq" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+          <node concept="3clFbF" id="4y6FdzEev8f" role="3cqZAp">
+            <node concept="2YIFZM" id="4y6FdzEev8g" role="3clFbG">
+              <ref role="1Pybhc" to="vuk8:2WqFKNE1did" resolve="NamingUtils" />
+              <ref role="37wK5l" to="vuk8:3uaXG0jstV1" resolve="createClassName" />
+              <node concept="2OqwBi" id="4y6FdzEev8h" role="37wK5m">
+                <node concept="30H73N" id="4y6FdzEev8i" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4y6FdzEev8j" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>

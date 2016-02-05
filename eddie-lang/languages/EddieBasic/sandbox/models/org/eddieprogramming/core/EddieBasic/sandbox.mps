@@ -4,8 +4,6 @@
   <languages>
     <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="0" />
     <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
-    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects" version="-1" />
-    <use id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects" version="-1" />
   </languages>
   <imports>
     <import index="cc2e" ref="r:e312d658-8754-4371-b7a9-475f8e38c360(org.eddieprogramming.core.EddieBasic.sceneConstruction)" />
@@ -76,7 +74,7 @@
   <node concept="1$vsWe" id="ATD4KvcqPN">
     <property role="TrG5h" value="Test" />
     <node concept="29J987" id="2FICFVpWT96" role="sZtrN">
-      <property role="TrG5h" value="step2" />
+      <property role="TrG5h" value="step 2" />
       <node concept="3dtAsP" id="2FICFVpWT97" role="2jg$Xp" />
       <node concept="3jGSmg" id="2FICFVpWT9a" role="hRHZh">
         <node concept="17J3f2" id="2FICFVpWT9b" role="3jGSnO" />
@@ -107,7 +105,7 @@
       <node concept="3cjWHS" id="jBG8nbFEN9" role="3jGSnO" />
       <node concept="3dudH9" id="2FICFVpWT9w" role="3jGSnO">
         <node concept="29J8_c" id="2FICFVpWT9z" role="3dudC3">
-          <ref role="hRIc0" node="2FICFVpWT96" resolve="step2" />
+          <ref role="hRIc0" node="2FICFVpWT96" resolve="step 2" />
         </node>
       </node>
     </node>
