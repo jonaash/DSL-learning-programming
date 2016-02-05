@@ -28,6 +28,7 @@
     <usedLanguage>1049e1e4-e198-4fe2-af4a-15791afe439a(org.eddieprogramming.core.EddieObjects)</usedLanguage>
     <usedLanguage>862fe5da-6916-4d19-b869-dbe8a02b6bb1(org.eddieprogramming.dsl.RobotKarel)</usedLanguage>
     <usedLanguage>a9e656c0-d096-4475-bb36-823817b9bb6d(org.eddieprogramming.dsl.EddieVariableTerminals)</usedLanguage>
+    <usedLanguage>81f0abb8-d71e-4d13-a0c1-d2291fbb28b7(jetbrains.mps.lang.editor.editorTest)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</usedDevKit>
@@ -41,6 +42,7 @@
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" fqName="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <language id="4caf0310-491e-41f5-8a9b-2006b3a94898" fqName="jetbrains.mps.execution.util" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language id="81f0abb8-d71e-4d13-a0c1-d2291fbb28b7" fqName="jetbrains.mps.lang.editor.editorTest" version="0" />
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" fqName="jetbrains.mps.lang.test" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />

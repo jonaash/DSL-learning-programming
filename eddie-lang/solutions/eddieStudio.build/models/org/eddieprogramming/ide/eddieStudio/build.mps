@@ -1041,6 +1041,18 @@
             <ref role="3bR37D" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5Teiyofc5_p" role="3bR37C">
+          <node concept="3bR9La" id="5Teiyofc5_q" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5Teiyofc5_r" role="3bR37C">
+          <node concept="3bR9La" id="5Teiyofc5_s" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1CDPOOIkmAj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1554,6 +1566,12 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="1JtUjhLyC_x" resolve="org.eddieprogramming.core.EddieBasic#3640435696255147963" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5Teiyof7VdX" role="3bR37C">
+          <node concept="3bR9La" id="5Teiyof7VdY" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4LNIB3H6RF4" resolve="org.eddieprogramming.support.EddieBaseLanguageObjects" />
           </node>
         </node>
       </node>

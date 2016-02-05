@@ -102,143 +102,87 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
-      <concept id="7859466366388913386" name="org.eddieprogramming.core.EddieConditions.structure.While" flags="ng" index="2LFUJI">
-        <child id="7859466366388913409" name="condition" index="2LFUC5" />
-      </concept>
-    </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel">
-      <concept id="7118929354272559103" name="org.eddieprogramming.dsl.RobotKarel.structure.PickMark" flags="ng" index="3cjWHS" />
       <concept id="7118929354272559102" name="org.eddieprogramming.dsl.RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
       <concept id="7118929354272559105" name="org.eddieprogramming.dsl.RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
-      <concept id="7118929354272559104" name="org.eddieprogramming.dsl.RobotKarel.structure.PutMark" flags="ng" index="3cjXi7" />
-      <concept id="7118929354273869888" name="org.eddieprogramming.dsl.RobotKarel.structure.IsMark" flags="ng" index="3ckXj7" />
     </language>
   </registry>
-  <node concept="1$vsWe" id="7$glgICLVIf">
+  <node concept="1$vsWe" id="5Teiyof2uVd">
     <property role="TrG5h" value="MarksCounter" />
-    <node concept="3dtAtn" id="7$glgICLVIx" role="sZtrN">
+    <node concept="2J$FF_" id="5Teiyof2v11" role="2J$FC6">
+      <ref role="2J$FF$" to="r4vp:7$glgICKvET" resolve="Tut01Marks" />
+    </node>
+    <node concept="3dtAtn" id="5Teiyof2Z4n" role="sZtrN">
       <property role="TrG5h" value="countMarks" />
-      <node concept="36MCER" id="7$glgICLVIF" role="2jg$Xp" />
-      <node concept="3jGSmg" id="7$glgICLVI_" role="hRHZh">
-        <node concept="17J3Kp" id="7$glgICLVJb" role="3jGSnO">
+      <node concept="36MCER" id="5Teiyof2Z4o" role="2jg$Xp" />
+      <node concept="3jGSmg" id="5Teiyof2Z4p" role="hRHZh">
+        <node concept="17J3Kp" id="5Teiyof2Z4q" role="3jGSnO">
           <property role="17J3Nn" value="TODO: implement function body" />
         </node>
-        <node concept="36Mw20" id="7$glgICM8dv" role="3jGSnO">
-          <node concept="AFBxM" id="7$glgICM8dz" role="36Mw2n">
-            <property role="36jPZJ" value="true" />
-            <property role="TrG5h" value="count" />
-            <node concept="1nOSGt" id="7$glgICM8d$" role="36MIYJ" />
-            <node concept="36MCER" id="7$glgICM8dt" role="36MCEW" />
-          </node>
-        </node>
-        <node concept="17J3f2" id="7$glgICM8gb" role="3jGSnO" />
-        <node concept="17J3Kp" id="7$glgICM8gU" role="3jGSnO">
-          <property role="17J3Nn" value="pick all marks and count them" />
-        </node>
-        <node concept="2LFUJI" id="7$glgICM8ed" role="3jGSnO">
-          <node concept="3jGSmg" id="7$glgICM8ef" role="3azrUc">
-            <node concept="3cjWHS" id="7$glgICM8eQ" role="3jGSnO" />
-            <node concept="3dudH9" id="7$glgICM8eY" role="3jGSnO">
-              <node concept="B81uQ" id="7$glgICM8f6" role="3dudC3">
-                <node concept="3527Q3" id="7$glgICM8fy" role="B81dI">
-                  <node concept="36Kqmr" id="7$glgICM8fN" role="3527S9">
-                    <property role="36Kqnr" value="1" />
-                  </node>
-                  <node concept="AE91N" id="7$glgICM8fm" role="3527ZY">
-                    <ref role="AE91K" node="7$glgICM8dz" resolve="count" />
-                  </node>
-                </node>
-                <node concept="AE91N" id="7$glgICM8eW" role="B81dD">
-                  <ref role="AE91K" node="7$glgICM8dz" resolve="count" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3ckXj7" id="7$glgICM8eK" role="2LFUC5" />
-        </node>
-        <node concept="17J3f2" id="7$glgICM8hj" role="3jGSnO" />
-        <node concept="17JERQ" id="7$glgICM8tR" role="3jGSnO">
-          <node concept="3jGSmg" id="7$glgICM8tT" role="3azrUc">
-            <node concept="3cjXi7" id="7$glgICMdOc" role="3jGSnO" />
-          </node>
-          <node concept="AE91N" id="7$glgICM8u$" role="36Ktwi">
-            <ref role="AE91K" node="7$glgICM8dz" resolve="count" />
-          </node>
-        </node>
-        <node concept="17J3f2" id="7$glgICM8tr" role="3jGSnO" />
-        <node concept="17J3Kp" id="7$glgICM8i6" role="3jGSnO">
-          <property role="17J3Nn" value="put the same amount back" />
-        </node>
-        <node concept="3duzCq" id="7$glgICLVII" role="3jGSnO">
-          <node concept="AE91N" id="7$glgICM8rY" role="3duzCr">
-            <ref role="AE91K" node="7$glgICM8dz" resolve="count" />
+        <node concept="17J3f2" id="5Teiyof2Z4r" role="3jGSnO" />
+        <node concept="3duzCq" id="5Teiyof2Z4s" role="3jGSnO">
+          <node concept="36Kqmr" id="5Teiyof2Z4t" role="3duzCr">
+            <property role="36Kqnr" value="0" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3jGSmg" id="7$glgICLVIg" role="3jGSko">
-      <node concept="17J3f2" id="7$glgICLWFb" role="3jGSnO" />
-      <node concept="36Mw20" id="7$glgICLWFL" role="3jGSnO">
-        <node concept="AFBxM" id="7$glgICLWFP" role="36Mw2n">
+    <node concept="3jGSmg" id="5Teiyof2Z4u" role="3jGSko">
+      <node concept="17J3f2" id="5Teiyof2Z4v" role="3jGSnO" />
+      <node concept="36Mw20" id="5Teiyof2Z4w" role="3jGSnO">
+        <node concept="AFBxM" id="5Teiyof2Z4x" role="36Mw2n">
           <property role="36jPZJ" value="true" />
           <property role="TrG5h" value="sum" />
-          <node concept="1nOSGt" id="7$glgICLWFQ" role="36MIYJ" />
-          <node concept="36MCER" id="7$glgICLWFJ" role="36MCEW" />
+          <node concept="1nOSGt" id="5Teiyof2Z4y" role="36MIYJ" />
+          <node concept="36MCER" id="5Teiyof2Z4z" role="36MCEW" />
         </node>
       </node>
-      <node concept="17J3f2" id="7$glgICM6mV" role="3jGSnO" />
-      <node concept="17JERQ" id="7$glgICLVJw" role="3jGSnO">
-        <node concept="3jGSmg" id="7$glgICLVJy" role="3azrUc">
-          <node concept="3cjXi6" id="7$glgICM5iC" role="3jGSnO" />
-          <node concept="3cjXi6" id="7$glgICM5j4" role="3jGSnO" />
-          <node concept="17J3f2" id="7$glgICM5jj" role="3jGSnO" />
-          <node concept="17J3Kp" id="7$glgICLWI$" role="3jGSnO">
-            <property role="17J3Nn" value="add makrs from this cell" />
-          </node>
-          <node concept="3dudH9" id="7$glgICLVK3" role="3jGSnO">
-            <node concept="B81uQ" id="7$glgICLWGA" role="3dudC3">
-              <node concept="AE91N" id="7$glgICLWGL" role="B81dD">
-                <ref role="AE91K" node="7$glgICLWFP" resolve="sum" />
+      <node concept="17J3f2" id="5Teiyof2Z4$" role="3jGSnO" />
+      <node concept="17JERQ" id="5Teiyof2Z4_" role="3jGSnO">
+        <node concept="3jGSmg" id="5Teiyof2Z4A" role="3azrUc">
+          <node concept="3cjXi6" id="5Teiyof2Z4B" role="3jGSnO" />
+          <node concept="3cjXi6" id="5Teiyof2Z4C" role="3jGSnO" />
+          <node concept="17J3f2" id="5Teiyof2Z4D" role="3jGSnO" />
+          <node concept="3dudH9" id="5Teiyof2Z4E" role="3jGSnO">
+            <node concept="B81uQ" id="5Teiyof2Z4F" role="3dudC3">
+              <node concept="AE91N" id="5Teiyof2Z4G" role="B81dD">
+                <ref role="AE91K" node="5Teiyof2Z4x" resolve="sum" />
               </node>
-              <node concept="3527Q3" id="7$glgICLWGZ" role="B81dI">
-                <node concept="AE91N" id="7$glgICLWHg" role="3527ZY">
-                  <ref role="AE91K" node="7$glgICLWFP" resolve="sum" />
+              <node concept="3527Q3" id="5Teiyof2Z4H" role="B81dI">
+                <node concept="AE91N" id="5Teiyof2Z4I" role="3527ZY">
+                  <ref role="AE91K" node="5Teiyof2Z4x" resolve="sum" />
                 </node>
-                <node concept="3dtAta" id="7$glgICLVK6" role="3527S9">
-                  <ref role="hRIc0" node="7$glgICLVIx" resolve="countMarks" />
+                <node concept="3dtAta" id="5Teiyof2Z4J" role="3527S9">
+                  <ref role="hRIc0" node="5Teiyof2Z4n" resolve="countMarks" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="17J3f2" id="7$glgICLWHy" role="3jGSnO" />
-          <node concept="3cjWHT" id="7$glgICLVKj" role="3jGSnO" />
+          <node concept="17J3f2" id="5Teiyof2Z4K" role="3jGSnO" />
+          <node concept="3cjWHT" id="5Teiyof2Z4L" role="3jGSnO" />
         </node>
-        <node concept="36Kqmr" id="7$glgICLVJJ" role="36Ktwi">
+        <node concept="36Kqmr" id="5Teiyof2Z4M" role="36Ktwi">
           <property role="36Kqnr" value="3" />
         </node>
       </node>
-      <node concept="17J3f2" id="7$glgICLWJh" role="3jGSnO" />
-      <node concept="3cjXi6" id="7$glgICM5lx" role="3jGSnO" />
-      <node concept="2kp8ke" id="7$glgICM6u0" role="3jGSnO">
-        <node concept="3527Q3" id="7$glgICM6uM" role="16wSqL">
-          <node concept="AE91N" id="7$glgICM6uY" role="3527S9">
-            <ref role="AE91K" node="7$glgICLWFP" resolve="sum" />
+      <node concept="17J3f2" id="5Teiyof2Z4N" role="3jGSnO" />
+      <node concept="3cjXi6" id="5Teiyof2Z4O" role="3jGSnO" />
+      <node concept="2kp8ke" id="5Teiyof2Z4P" role="3jGSnO">
+        <node concept="3527Q3" id="5Teiyof2Z4Q" role="16wSqL">
+          <node concept="AE91N" id="5Teiyof2Z4R" role="3527S9">
+            <ref role="AE91K" node="5Teiyof2Z4x" resolve="sum" />
           </node>
-          <node concept="16y5rI" id="7$glgICM6u1" role="3527ZY">
+          <node concept="16y5rI" id="5Teiyof2Z4S" role="3527ZY">
             <property role="16xLMo" value="Sum: " />
           </node>
         </node>
       </node>
-      <node concept="2S2JkT" id="7$glgICLWK2" role="3jGSnO">
-        <node concept="AE91N" id="7$glgICLWKD" role="2S2Jl7">
-          <ref role="AE91K" node="7$glgICLWFP" resolve="sum" />
+      <node concept="2S2JkT" id="5Teiyof2Z4T" role="3jGSnO">
+        <node concept="AE91N" id="5Teiyof2Z4U" role="2S2Jl7">
+          <ref role="AE91K" node="5Teiyof2Z4x" resolve="sum" />
         </node>
-        <node concept="36MCER" id="7$glgICLWK$" role="2S2Jl6" />
+        <node concept="36MCER" id="5Teiyof2Z4V" role="2S2Jl6" />
       </node>
-    </node>
-    <node concept="2J$FF_" id="7$glgICLWEY" role="2J$FC6">
-      <ref role="2J$FF$" to="r4vp:7$glgICKvET" resolve="Tut01Marks" />
     </node>
   </node>
 </model>

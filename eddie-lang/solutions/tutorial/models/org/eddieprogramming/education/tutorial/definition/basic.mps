@@ -2,6 +2,9 @@
 <model ref="r:57011dfa-a184-485a-bdfa-fe8ae8298951(org.eddieprogramming.education.tutorial.definition.basic)">
   <persistence version="9" />
   <languages>
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
+    <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)" />
     <devkit ref="114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)" />
   </languages>

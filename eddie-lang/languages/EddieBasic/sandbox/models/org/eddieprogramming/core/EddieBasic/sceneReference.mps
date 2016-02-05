@@ -132,5 +132,11 @@
       <ref role="2JdVqH" to="cc2e:5wv4$CfPqlc" resolve="TestScene" />
     </node>
   </node>
+  <node concept="1$vsWe" id="5Teiyof2ZbC">
+    <property role="TrG5h" value="TestReset" />
+    <node concept="3jGSmg" id="5Teiyof2ZbD" role="3jGSko">
+      <node concept="17J3f2" id="5Teiyof2ZbE" role="3jGSnO" />
+    </node>
+  </node>
 </model>
 

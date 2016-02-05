@@ -133,10 +133,14 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
+      <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
+        <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
+      </concept>
       <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1219952894531" name="dropRootRule" index="aQYdv" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -232,6 +236,9 @@
     <node concept="3lhOvk" id="6snOov8z4o7" role="3lj3bC">
       <ref role="30HIoZ" to="vlyv:5wv4$CfZXb_" resolve="Tutorial" />
       <ref role="3lhOvi" node="6snOov8z4oB" resolve="map_Tutorial" />
+    </node>
+    <node concept="aNPBN" id="50Oz1ODma0J" role="aQYdv">
+      <ref role="aOQi4" to="dyrx:3a5rfDmYafO" resolve="Script" />
     </node>
   </node>
   <node concept="312cEu" id="61GUnTJ9MkV">
