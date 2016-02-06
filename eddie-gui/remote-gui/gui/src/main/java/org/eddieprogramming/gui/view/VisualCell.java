@@ -2,6 +2,7 @@ package org.eddieprogramming.gui.view;
 
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
+import org.eddieprogramming.gui.api.message.appearance.Orientation;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
 import org.eddieprogramming.gui.model.world.Cell;
 import org.eddieprogramming.gui.model.world.Thing;
@@ -87,6 +88,7 @@ class VisualCell extends JPanel {
                 this.setBackground(textAppearance.getBackground());
                 label.setForeground(textAppearance.getColor());
                 label.setText(textAppearance.getText());
+                label.setOriantation(Orientation.NORMAL);
             } else {
                 if (appearance instanceof IconAppearance){
                     IconAppearance iconAppearance = (IconAppearance)appearance;
