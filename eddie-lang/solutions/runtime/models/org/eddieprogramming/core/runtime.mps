@@ -2551,7 +2551,7 @@
                     </node>
                     <node concept="10M0yZ" id="6xs90l3$GZg" role="37wK5m">
                       <ref role="1PxDUh" to="1t7x:~Color" resolve="Color" />
-                      <ref role="3cqZAo" to="1t7x:~Color.ORANGE" resolve="ORANGE" />
+                      <ref role="3cqZAo" to="1t7x:~Color.MAGENTA" resolve="MAGENTA" />
                     </node>
                     <node concept="Rm8GO" id="6xs90l3$Hgr" role="37wK5m">
                       <ref role="Rm8GQ" to="10tj:~Flaticon.HOUSE" resolve="HOUSE" />
@@ -8545,26 +8545,65 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6xs90l3zFKn" role="3clF47">
-        <node concept="3clFbF" id="6xs90l3tAtX" role="3cqZAp">
-          <node concept="2OqwBi" id="6xs90l3tABh" role="3clFbG">
-            <node concept="2OqwBi" id="6xs90l3tAtZ" role="2Oq$k0">
-              <node concept="1rXfSq" id="6xs90l3tAu0" role="2Oq$k0">
+        <node concept="3cpWs8" id="4y6FdzEqUit" role="3cqZAp">
+          <node concept="3cpWsn" id="4y6FdzEqUiu" role="3cpWs9">
+            <property role="TrG5h" value="variable" />
+            <node concept="3uibUv" id="4y6FdzEqUiq" role="1tU5fm">
+              <ref role="3uigEE" node="1UlhK23WmQU" resolve="Variable" />
+            </node>
+            <node concept="2OqwBi" id="4y6FdzEqUiv" role="33vP2m">
+              <node concept="1rXfSq" id="4y6FdzEqUiw" role="2Oq$k0">
                 <ref role="37wK5l" node="442XwrAYYJH" resolve="getCell" />
-                <node concept="37vLTw" id="6xs90l3zKcA" role="37wK5m">
+                <node concept="37vLTw" id="4y6FdzEqUix" role="37wK5m">
                   <ref role="3cqZAo" node="6xs90l3zGWL" resolve="row" />
                 </node>
-                <node concept="37vLTw" id="6xs90l3zKnP" role="37wK5m">
+                <node concept="37vLTw" id="4y6FdzEqUiy" role="37wK5m">
                   <ref role="3cqZAo" node="6xs90l3zHK1" resolve="col" />
                 </node>
               </node>
-              <node concept="liA8E" id="6xs90l3tAu3" role="2OqNvi">
+              <node concept="liA8E" id="4y6FdzEqUiz" role="2OqNvi">
                 <ref role="37wK5l" node="1UlhK23WrCK" resolve="getVariable" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6xs90l3tAtX" role="3cqZAp">
+          <node concept="2OqwBi" id="4y6FdzEqUwf" role="3clFbG">
+            <node concept="37vLTw" id="4y6FdzEqUi$" role="2Oq$k0">
+              <ref role="3cqZAo" node="4y6FdzEqUiu" resolve="variable" />
             </node>
             <node concept="liA8E" id="6xs90l3tAIC" role="2OqNvi">
               <ref role="37wK5l" node="1UlhK23WtJZ" resolve="setValue" />
               <node concept="37vLTw" id="6xs90l3zK1b" role="37wK5m">
                 <ref role="3cqZAo" node="6xs90l3zIq9" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4y6FdzEqTqc" role="3cqZAp">
+          <node concept="2OqwBi" id="4y6FdzEqTqe" role="3clFbG">
+            <node concept="37vLTw" id="4y6FdzEqTqf" role="2Oq$k0">
+              <ref role="3cqZAo" node="442XwrAYYF1" resolve="worldGui" />
+            </node>
+            <node concept="liA8E" id="4y6FdzEqTqg" role="2OqNvi">
+              <ref role="37wK5l" to="uoo5:6xs90l3veNo" resolve="changeVariableValue" />
+              <node concept="2OqwBi" id="4y6FdzEqTqh" role="37wK5m">
+                <node concept="37vLTw" id="4y6FdzEqU_3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4y6FdzEqUiu" resolve="variable" />
+                </node>
+                <node concept="liA8E" id="4y6FdzEqTqj" role="2OqNvi">
+                  <ref role="37wK5l" node="6xs90l3u5Gs" resolve="getName" />
+                </node>
+              </node>
+              <node concept="2YIFZM" id="4y6FdzEqTqk" role="37wK5m">
+                <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                <node concept="37vLTw" id="4y6FdzEqTql" role="37wK5m">
+                  <ref role="3cqZAo" node="6xs90l3zIq9" resolve="value" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="4y6FdzEqW4K" role="37wK5m">
+                <ref role="3cqZAo" node="4y6FdzEqUJ$" resolve="type" />
               </node>
             </node>
           </node>
@@ -8584,6 +8623,12 @@
         <property role="TrG5h" value="value" />
         <node concept="16syzq" id="6xs90l3zJXD" role="1tU5fm">
           <ref role="16sUi3" node="6xs90l3zJdq" resolve="T" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4y6FdzEqUJ$" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3uibUv" id="4y6FdzEqVFq" role="1tU5fm">
+          <ref role="3uigEE" node="6xs90l3vmQm" resolve="VariableType" />
         </node>
       </node>
       <node concept="16euLQ" id="6xs90l3zJdq" role="16eVyc">
@@ -8621,6 +8666,10 @@
             </node>
             <node concept="37vLTw" id="6xs90l3$3J0" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvlN" resolve="value" />
+            </node>
+            <node concept="Rm8GO" id="4y6FdzEqVPJ" role="37wK5m">
+              <ref role="Rm8GQ" node="6xs90l3vmRu" resolve="LOGICAL" />
+              <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
             </node>
           </node>
         </node>
@@ -8660,6 +8709,10 @@
             <node concept="37vLTw" id="6xs90l3$6GF" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvlY" resolve="value" />
             </node>
+            <node concept="Rm8GO" id="4y6FdzEqVTO" role="37wK5m">
+              <ref role="Rm8GQ" node="6xs90l3vmRj" resolve="NUMBER" />
+              <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
+            </node>
           </node>
         </node>
       </node>
@@ -8697,6 +8750,10 @@
             </node>
             <node concept="37vLTw" id="6xs90l3$6R2" role="37wK5m">
               <ref role="3cqZAo" node="6xs90l3tvm9" resolve="value" />
+            </node>
+            <node concept="Rm8GO" id="4y6FdzEqVZJ" role="37wK5m">
+              <ref role="Rm8GQ" node="6xs90l3voGK" resolve="TEXT" />
+              <ref role="1Px2BO" node="6xs90l3vmQm" resolve="VariableType" />
             </node>
           </node>
         </node>
