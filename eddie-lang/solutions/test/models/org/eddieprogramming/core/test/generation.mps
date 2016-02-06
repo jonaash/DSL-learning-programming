@@ -19,12 +19,26 @@
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
+      <concept id="4942585347623820899" name="org.eddieprogramming.core.EddieBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
+      <concept id="4942585347623814440" name="org.eddieprogramming.core.EddieBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
       <concept id="8938755948420525033" name="org.eddieprogramming.core.EddieBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
       <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
+      <concept id="1242405555016616841" name="org.eddieprogramming.core.EddieBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
+        <child id="1242405555016843190" name="methods" index="sZtrN" />
+      </concept>
+      <concept id="1242405555015381639" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
+        <child id="6033906139725455995" name="body" index="hRHZh" />
+        <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
+        <child id="3776063756796240563" name="parameters" index="3dtAt9" />
+      </concept>
+      <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+        <child id="7381227804175824570" name="parameters" index="3WjpkI" />
+      </concept>
       <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="scene" index="2JdVqH" />
       </concept>
@@ -59,6 +73,11 @@
       <concept id="7730986614922691039" name="org.eddieprogramming.core.EddieBasic.structure.AbstractLoopCommand" flags="ng" index="3azrE2">
         <child id="7730986614922692049" name="body" index="3azrUc" />
       </concept>
+      <concept id="3776063756790928180" name="org.eddieprogramming.core.EddieBasic.structure.Library" flags="ng" index="3cDPre" />
+      <concept id="3776063756790929738" name="org.eddieprogramming.core.EddieBasic.structure.Require" flags="ng" index="3cDPMK">
+        <reference id="3776063756790929766" name="library" index="3cDPMs" />
+      </concept>
+      <concept id="3776063756796240591" name="org.eddieprogramming.core.EddieBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
         <property id="3776063756796243785" name="value" index="3dtAEN" />
       </concept>
@@ -95,6 +114,15 @@
       <concept id="3394217739178660495" name="org.eddieprogramming.core.EddieVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
+      </concept>
+    </language>
+    <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions">
+      <concept id="2041423954150618879" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
+      <concept id="3776063756796240560" name="org.eddieprogramming.core.EddieFunctions.structure.FunctionCall" flags="ng" index="3dtAta" />
+      <concept id="3776063756796240557" name="org.eddieprogramming.core.EddieFunctions.structure.FunctionDefinition" flags="ng" index="3dtAtn" />
+      <concept id="3776063756797050848" name="org.eddieprogramming.core.EddieFunctions.structure.ReturnCommand" flags="ng" index="3duzCq">
+        <child id="3776063756797050849" name="value" index="3duzCr" />
       </concept>
     </language>
     <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects">
@@ -831,6 +859,91 @@
     </node>
     <node concept="2JdVq9" id="7W1TakB$JVl" role="2JdPrE">
       <ref role="2JdVqH" node="7W1TakB$IWf" resolve="TestVariablesScene" />
+    </node>
+  </node>
+  <node concept="3cDPre" id="4y6FdzElyvA">
+    <property role="TrG5h" value="TestLib" />
+    <node concept="29J987" id="4y6FdzEly$m" role="sZtrN">
+      <property role="TrG5h" value="doLibAction" />
+      <node concept="3dtAsP" id="4y6FdzEly$n" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4y6FdzEly$q" role="hRHZh">
+        <node concept="17J3f2" id="4y6FdzEly$r" role="3jGSnO" />
+      </node>
+    </node>
+    <node concept="3dtAtn" id="4y6FdzEly$G" role="sZtrN">
+      <property role="TrG5h" value="doLibFunction" />
+      <node concept="36MCER" id="4y6FdzEly_7" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4y6FdzEly$K" role="hRHZh">
+        <node concept="3duzCq" id="4y6FdzEly_a" role="3jGSnO">
+          <node concept="AE91N" id="4y6FdzEly_h" role="3duzCr">
+            <ref role="AE91K" node="4y6FdzEly$V" resolve="num" />
+          </node>
+        </node>
+      </node>
+      <node concept="FiAUU" id="4y6FdzEly$V" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="num" />
+        <node concept="36MCER" id="4y6FdzEly$U" role="36MCEW" />
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="4y6FdzElyJv">
+    <property role="TrG5h" value="FunctionTest" />
+    <node concept="3jGSmg" id="4y6FdzElyJw" role="3jGSko">
+      <node concept="3cDPMK" id="4y6FdzElyJy" role="3jGSnO">
+        <ref role="3cDPMs" node="4y6FdzElyvA" resolve="TestLib" />
+      </node>
+      <node concept="3dudH9" id="4y6FdzElyJG" role="3jGSnO">
+        <node concept="3dtAta" id="4y6FdzElyJJ" role="3dudC3">
+          <ref role="hRIc0" node="4y6FdzEly$G" resolve="doLibFunction" />
+          <node concept="FiVY1" id="4y6FdzElyJK" role="3WjpkI">
+            <ref role="3WiQSc" node="4y6FdzEly$V" resolve="num" />
+            <node concept="36Kqmr" id="4y6FdzElyJW" role="2jzNHB">
+              <property role="36Kqnr" value="6" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dudH9" id="4y6FdzElyKf" role="3jGSnO">
+        <node concept="29J8_c" id="4y6FdzElyKi" role="3dudC3">
+          <ref role="hRIc0" node="4y6FdzEly$m" resolve="doLibAction" />
+        </node>
+      </node>
+      <node concept="3dudH9" id="4y6FdzElyQR" role="3jGSnO">
+        <node concept="29J8_c" id="4y6FdzElyQU" role="3dudC3">
+          <ref role="hRIc0" node="4y6FdzElyKD" resolve="doLocalAction" />
+        </node>
+      </node>
+      <node concept="3dudH9" id="4y6FdzElyRf" role="3jGSnO">
+        <node concept="3dtAta" id="4y6FdzElyRi" role="3dudC3">
+          <ref role="hRIc0" node="4y6FdzElyQw" resolve="doLocalFunction" />
+          <node concept="FiVY1" id="4y6FdzElyRj" role="3WjpkI">
+            <ref role="3WiQSc" node="4y6FdzElyQJ" resolve="text" />
+            <node concept="16y5rI" id="4y6FdzElyRz" role="2jzNHB">
+              <property role="16xLMo" value="test" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29J987" id="4y6FdzElyKD" role="sZtrN">
+      <property role="TrG5h" value="doLocalAction" />
+      <node concept="3dtAsP" id="4y6FdzElyKE" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4y6FdzElyKF" role="hRHZh">
+        <node concept="17J3f2" id="4y6FdzElyKG" role="3jGSnO" />
+      </node>
+    </node>
+    <node concept="3dtAtn" id="4y6FdzElyQw" role="sZtrN">
+      <property role="TrG5h" value="doLocalFunction" />
+      <node concept="3dtAsP" id="4y6FdzElyQx" role="2jg$Xp" />
+      <node concept="3jGSmg" id="4y6FdzElyQ$" role="hRHZh">
+        <node concept="17J3f2" id="4y6FdzElyQ_" role="3jGSnO" />
+      </node>
+      <node concept="FiAUU" id="4y6FdzElyQJ" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="text" />
+        <node concept="36Kql8" id="4y6FdzElyQI" role="36MCEW" />
+      </node>
     </node>
   </node>
 </model>

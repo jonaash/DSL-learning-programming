@@ -540,6 +540,9 @@
     <node concept="PrWs8" id="1jWJ98Hztzz" role="PzmwI">
       <ref role="PrY4T" node="1jWJ98HyPqg" resolve="IOperation" />
     </node>
+    <node concept="PrWs8" id="4y6FdzEkaho" role="PzmwI">
+      <ref role="PrY4T" node="4y6FdzEk9G4" resolve="IReference" />
+    </node>
     <node concept="1TJgyj" id="6pJoTiq8JqU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="parameters" />
@@ -643,6 +646,9 @@
     </node>
     <node concept="PrWs8" id="2xfsEoBVM8f" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4y6FdzEka62" role="PzmwI">
+      <ref role="PrY4T" node="4y6FdzEk9G4" resolve="IReference" />
     </node>
     <node concept="1TJgyj" id="6pJoTiq90Qo" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -1109,6 +1115,10 @@
     <node concept="PrWs8" id="4y6FdzEdREt" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4y6FdzEk9G4">
+    <property role="3GE5qa" value="helper" />
+    <property role="TrG5h" value="IReference" />
   </node>
 </model>
 

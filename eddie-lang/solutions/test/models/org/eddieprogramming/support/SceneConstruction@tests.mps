@@ -22,6 +22,9 @@
         <reference id="7428636491485899619" name="tutorial" index="2J$FF$" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
@@ -40,21 +43,20 @@
     <property role="TrG5h" value="TestResetButton" />
     <node concept="1$vsWe" id="5Teiyof3hRQ" role="LiRBU">
       <property role="TrG5h" value="TestReset" />
-      <node concept="3jGSmg" id="5Teiyof3hRS" role="3jGSko">
-        <node concept="17J3f2" id="5Teiyof3hRT" role="3jGSnO" />
-      </node>
       <node concept="2J$FF_" id="5Teiyof3hS0" role="2J$FC6">
         <ref role="2J$FF$" to="r3nt:5Teiyof2ZD$" resolve="TestTutorialWithInitProgram" />
       </node>
+      <node concept="3jGSmg" id="4y6FdzEpdL4" role="3jGSko">
+        <node concept="17J3f2" id="4y6FdzEpdLz" role="3jGSnO" />
+      </node>
     </node>
   </node>
-  <node concept="1$vsWe" id="5Teiyof6yeX">
-    <property role="TrG5h" value="ManualTestReset" />
-    <node concept="3jGSmg" id="5Teiyof6yeY" role="3jGSko">
-      <node concept="17J3f2" id="5Teiyof6yeZ" role="3jGSnO" />
-    </node>
-    <node concept="2J$FF_" id="5Teiyof6yfr" role="2J$FC6">
-      <ref role="2J$FF$" to="r3nt:5Teiyof2ZD$" resolve="TestTutorialWithInitProgram" />
+  <node concept="1$vsWe" id="4y6FdzEpdJ_">
+    <property role="TrG5h" value="ResetButtonManualTest" />
+    <node concept="3jGSmg" id="4y6FdzEpdJA" role="3jGSko">
+      <node concept="17J3Kp" id="4y6FdzEpdJB" role="3jGSnO">
+        <property role="17J3Nn" value="something" />
+      </node>
     </node>
   </node>
 </model>

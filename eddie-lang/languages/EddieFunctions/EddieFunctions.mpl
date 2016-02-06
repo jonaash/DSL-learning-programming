@@ -17,6 +17,7 @@
       <dependencies>
         <dependency reexport="false">d223546c-3e13-4afc-be4a-36273604a4c6(org.eddieprogramming.core.EddieVariables#3394217739153893707)</dependency>
         <dependency reexport="false">aef79034-b65a-4990-a1ad-bac27333a76b(org.eddieprogramming.core.EddieBasic#3640435696255147963)</dependency>
+        <dependency reexport="false">5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
