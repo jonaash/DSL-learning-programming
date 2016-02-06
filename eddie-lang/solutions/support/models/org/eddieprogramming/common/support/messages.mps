@@ -1141,7 +1141,37 @@
           </node>
         </node>
         <node concept="3clFbH" id="6pJoTiqe4hk" role="3cqZAp" />
-        <node concept="3clFbH" id="jBG8nbHNuW" role="3cqZAp" />
+        <node concept="3clFbF" id="4y6FdzEptFx" role="3cqZAp">
+          <node concept="37vLTI" id="4y6FdzEpuBq" role="3clFbG">
+            <node concept="Xl_RD" id="4y6FdzEpuCk" role="37vLTx">
+              <property role="Xl_RC" value="Reset" />
+            </node>
+            <node concept="3EllGN" id="4y6FdzEpu2m" role="37vLTJ">
+              <node concept="Xl_RD" id="4y6FdzEpu6J" role="3ElVtu">
+                <property role="Xl_RC" value="editor.control.script.reset.button.label" />
+              </node>
+              <node concept="37vLTw" id="4y6FdzEptFv" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4y6FdzEpGy7" role="3cqZAp">
+          <node concept="37vLTI" id="4y6FdzEpGy8" role="3clFbG">
+            <node concept="Xl_RD" id="4y6FdzEpGy9" role="37vLTx">
+              <property role="Xl_RC" value="Reset Program and required Libraries to initial state. Your code will be deleted." />
+            </node>
+            <node concept="3EllGN" id="4y6FdzEpGya" role="37vLTJ">
+              <node concept="37vLTw" id="4y6FdzEpGyg" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4y6FdzEpE69" role="3ElVtu">
+                <property role="Xl_RC" value="editor.control.script.reset.button.tooltip" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4y6FdzEpGqP" role="3cqZAp" />
         <node concept="3clFbF" id="1ZF81FZUjdg" role="3cqZAp">
           <node concept="37vLTI" id="1ZF81FZUjT_" role="3clFbG">
             <node concept="3EllGN" id="1ZF81FZUjnS" role="37vLTJ">

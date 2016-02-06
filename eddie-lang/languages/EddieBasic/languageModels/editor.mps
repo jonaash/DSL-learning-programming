@@ -23,8 +23,8 @@
     <import index="8q6x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.event(JDK/java.awt.event@java_stub)" />
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
-    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpck" ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c/r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -532,14 +532,34 @@
                   <node concept="2ShNRf" id="50Oz1ODis2T" role="33vP2m">
                     <node concept="1pGfFk" id="50Oz1ODis2U" role="2ShVmc">
                       <ref role="37wK5l" to="dbrf:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
-                      <node concept="Xl_RD" id="50Oz1ODis2V" role="37wK5m">
-                        <property role="Xl_RC" value="Reset" />
+                      <node concept="2YIFZM" id="4y6FdzEpvB4" role="37wK5m">
+                        <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                        <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                        <node concept="Xl_RD" id="4y6FdzEpu6J" role="37wK5m">
+                          <property role="Xl_RC" value="editor.control.script.reset.button.label" />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="50Oz1ODis2W" role="3cqZAp" />
+              <node concept="3clFbF" id="4y6FdzEpB3v" role="3cqZAp">
+                <node concept="2OqwBi" id="4y6FdzEpBnm" role="3clFbG">
+                  <node concept="37vLTw" id="4y6FdzEpB3t" role="2Oq$k0">
+                    <ref role="3cqZAo" node="50Oz1ODis2R" resolve="resetButton" />
+                  </node>
+                  <node concept="liA8E" id="4y6FdzEpD7z" role="2OqNvi">
+                    <ref role="37wK5l" to="dbrf:~JComponent.setToolTipText(java.lang.String):void" resolve="setToolTipText" />
+                    <node concept="2YIFZM" id="4y6FdzEpDQo" role="37wK5m">
+                      <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                      <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                      <node concept="Xl_RD" id="4y6FdzEpE69" role="37wK5m">
+                        <property role="Xl_RC" value="editor.control.script.reset.button.tooltip" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="50Oz1ODis2X" role="3cqZAp">
                 <node concept="2OqwBi" id="50Oz1ODis2Y" role="3clFbG">
                   <node concept="37vLTw" id="50Oz1ODis2Z" role="2Oq$k0">
