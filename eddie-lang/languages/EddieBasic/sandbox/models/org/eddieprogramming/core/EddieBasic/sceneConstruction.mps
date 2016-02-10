@@ -12,6 +12,7 @@
     <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="0" />
     <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="0" />
     <use id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
@@ -88,6 +89,9 @@
         <property id="6349814108916864868" name="row" index="1nRWkI" />
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
+        <child id="31172425217292863" name="body" index="3jGSko" />
+      </concept>
     </language>
     <language id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables">
       <concept id="3163049152356415489" name="org.eddieprogramming.core.EddieVariables.structure.VariableReference" flags="ng" index="AE91N">
@@ -112,7 +116,9 @@
       <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
       <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
-      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Tutorial" flags="ng" index="1nSc2J" />
+      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Tutorial" flags="ng" index="1nSc2J">
+        <reference id="5779398278698083275" name="initStateProgram" index="1TuiZm" />
+      </concept>
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
       <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
@@ -137,6 +143,9 @@
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
+    </language>
+    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel">
+      <concept id="7118929354272559105" name="org.eddieprogramming.dsl.RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
     </language>
   </registry>
   <node concept="1nE9df" id="5wv4$CfPqlc">
@@ -453,6 +462,7 @@
   </node>
   <node concept="1nSc2J" id="6snOov8U0IP">
     <property role="TrG5h" value="TestTutorial" />
+    <ref role="1TuiZm" node="5Auh49UDG4S" resolve="TestInitProgram" />
     <node concept="2Ien9S" id="6snOov9bJzc" role="2IerQC">
       <property role="2S4QxW" value="All marks were put in the right place" />
       <node concept="2xoUYp" id="6snOov9bJ_d" role="187L57">
@@ -610,6 +620,13 @@
       <node concept="186dhI" id="1mpZf2HAMhS" role="186d48">
         <property role="186dgp" value="Task: Put five marks in front of the house." />
       </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="5Auh49UDG4S">
+    <property role="TrG5h" value="TestInitProgram" />
+    <node concept="3jGSmg" id="5Auh49UDG4T" role="3jGSko">
+      <node concept="3cjXi6" id="5Auh49UDG4Z" role="3jGSnO" />
+      <node concept="3cjXi6" id="5Auh49UDG55" role="3jGSnO" />
     </node>
   </node>
 </model>
