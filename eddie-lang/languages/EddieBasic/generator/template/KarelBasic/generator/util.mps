@@ -2,11 +2,11 @@
 <model ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(org.eddieprogramming.core.EddieBasic.generator.util)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -213,7 +213,7 @@
                 <ref role="3cqZAo" node="3uaXG0jstWz" resolve="originalName" />
               </node>
               <node concept="liA8E" id="3uaXG0jv2og" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
                 <node concept="Xl_RD" id="3uaXG0jv2pB" role="37wK5m">
                   <property role="Xl_RC" value=" " />
                 </node>
@@ -245,7 +245,7 @@
               <ref role="3cqZAo" node="3hBhvFSMR5M" resolve="name" />
             </node>
             <node concept="liA8E" id="3hBhvFSMR6l" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+              <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
               <node concept="Xl_RD" id="3hBhvFSMR6m" role="37wK5m">
                 <property role="Xl_RC" value=" " />
               </node>

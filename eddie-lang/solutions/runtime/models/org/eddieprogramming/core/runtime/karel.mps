@@ -2,16 +2,16 @@
 <model ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.runtime.karel)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="tmow" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#javax.inject(org.eddieprogramming.common.lib/javax.inject@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="i6ll" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:javax.inject(org.eddieprogramming.common.lib/)" />
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
-    <import index="dr63" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.eddieprogramming.gui.api.message(org.eddieprogramming.common.lib/org.eddieprogramming.gui.api.message@java_stub)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="deok" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:org.eddieprogramming.gui.api.message(org.eddieprogramming.common.lib/)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -545,7 +545,7 @@
           <node concept="3cpWsn" id="442XwrAYNW4" role="3cpWs9">
             <property role="TrG5h" value="step" />
             <node concept="3uibUv" id="442XwrAYNW5" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="442XwrAYNW6" role="33vP2m">
               <ref role="37wK5l" to="4ujd:1qfn$GmqVGV" resolve="createGoToPositionStep" />
@@ -566,7 +566,7 @@
           <node concept="3cpWsn" id="442XwrAYNWb" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="442XwrAYNWc" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Result" resolve="Result" />
+              <ref role="3uigEE" to="deok:~Result" resolve="Result" />
             </node>
             <node concept="1rXfSq" id="442XwrAYNWd" role="33vP2m">
               <ref role="37wK5l" to="4ujd:5wv4$CfiKxZ" resolve="doStep" />
@@ -587,7 +587,7 @@
         <node concept="3clFbH" id="442XwrAYNWi" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="442XwrAYNWj" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNWk" role="jymVt" />
@@ -612,7 +612,7 @@
           <node concept="3cpWsn" id="442XwrAYNWu" role="3cpWs9">
             <property role="TrG5h" value="step" />
             <node concept="3uibUv" id="442XwrAYNWv" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="442XwrAYNWw" role="33vP2m">
               <ref role="37wK5l" to="4ujd:1qfn$GmqVV4" resolve="createTurnToStep" />
@@ -630,7 +630,7 @@
           <node concept="3cpWsn" id="442XwrAYNW$" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="442XwrAYNW_" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Result" resolve="Result" />
+              <ref role="3uigEE" to="deok:~Result" resolve="Result" />
             </node>
             <node concept="1rXfSq" id="442XwrAYNWA" role="33vP2m">
               <ref role="37wK5l" to="4ujd:5wv4$CfiKxZ" resolve="doStep" />
@@ -650,7 +650,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYNWF" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNWG" role="jymVt" />
@@ -677,7 +677,7 @@
           <node concept="3cpWsn" id="442XwrAYNWS" role="3cpWs9">
             <property role="TrG5h" value="step" />
             <node concept="3uibUv" id="442XwrAYNWT" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="442XwrAYNWU" role="33vP2m">
               <ref role="37wK5l" to="4ujd:5wv4$Cfx$GQ" resolve="createSetMarksStep" />
@@ -699,7 +699,7 @@
           <node concept="3cpWsn" id="442XwrAYNX0" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="442XwrAYNX1" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Result" resolve="Result" />
+              <ref role="3uigEE" to="deok:~Result" resolve="Result" />
             </node>
             <node concept="1rXfSq" id="442XwrAYNX2" role="33vP2m">
               <ref role="37wK5l" to="4ujd:5wv4$CfiKxZ" resolve="doStep" />
@@ -719,7 +719,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYNX7" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNX8" role="jymVt" />
@@ -744,7 +744,7 @@
           <node concept="3cpWsn" id="3LwScSdambc" role="3cpWs9">
             <property role="TrG5h" value="showRead" />
             <node concept="3uibUv" id="3LwScSdambd" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="3LwScSdamdS" role="33vP2m">
               <ref role="37wK5l" to="4ujd:3LwScSd8Uj3" resolve="createReadVariableAppearanceStep" />
@@ -767,7 +767,7 @@
           <node concept="3cpWsn" id="3LwScSdaom6" role="3cpWs9">
             <property role="TrG5h" value="showRobot" />
             <node concept="3uibUv" id="3LwScSdaom7" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="3LwScSdaouU" role="33vP2m">
               <ref role="37wK5l" to="4ujd:1qfn$GmqVV4" resolve="createTurnToStep" />
@@ -791,7 +791,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3LwScSdap7Q" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3LwScSdapkd" role="jymVt" />
@@ -816,7 +816,7 @@
           <node concept="3cpWsn" id="3LwScSdaHxU" role="3cpWs9">
             <property role="TrG5h" value="showRead" />
             <node concept="3uibUv" id="3LwScSdaHxV" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="3LwScSdaIeD" role="33vP2m">
               <ref role="37wK5l" to="4ujd:3LwScSdajC6" resolve="createWriteVariableAppearanceStep" />
@@ -839,7 +839,7 @@
           <node concept="3cpWsn" id="3LwScSdaHy2" role="3cpWs9">
             <property role="TrG5h" value="showRobot" />
             <node concept="3uibUv" id="3LwScSdaHy3" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="3LwScSdaHy4" role="33vP2m">
               <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
@@ -863,17 +863,17 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="3LwScSdapes" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="3uibUv" id="442XwrAYNXb" role="1zkMxy">
       <ref role="3uigEE" to="4ujd:5wv4$CfiJxN" resolve="AbstractGuiController" />
     </node>
     <node concept="2AHcQZ" id="442XwrAYNXc" role="2AJF6D">
-      <ref role="2AI5Lk" to="tmow:~Named" resolve="Named" />
+      <ref role="2AI5Lk" to="i6ll:~Named" resolve="Named" />
     </node>
     <node concept="2AHcQZ" id="442XwrAYNXd" role="2AJF6D">
-      <ref role="2AI5Lk" to="tmow:~Singleton" resolve="Singleton" />
+      <ref role="2AI5Lk" to="i6ll:~Singleton" resolve="Singleton" />
     </node>
   </node>
   <node concept="3HP615" id="442XwrAYNXe">
@@ -1210,7 +1210,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="442XwrAYNYQ" role="1B3o_S" />
       <node concept="3uibUv" id="442XwrAYNYR" role="1tU5fm">
-        <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+        <ref role="3uigEE" to="deok:~Step" resolve="Step" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNYS" role="jymVt" />
@@ -1238,7 +1238,7 @@
             <node concept="YS8fn" id="442XwrAYNZ5" role="3cqZAp">
               <node concept="2ShNRf" id="442XwrAYNZ6" role="YScLw">
                 <node concept="1pGfFk" id="442XwrAYNZ7" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="Xl_RD" id="442XwrAYNZ8" role="37wK5m">
                     <property role="Xl_RC" value="Operation was not started" />
                   </node>
@@ -1262,7 +1262,7 @@
                   <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
                 </node>
                 <node concept="liA8E" id="442XwrAYNZi" role="2OqNvi">
-                  <ref role="37wK5l" to="dr63:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                  <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                   <node concept="2YIFZM" id="442XwrAYNZj" role="37wK5m">
                     <ref role="37wK5l" to="4ujd:5wv4$CfiUU7" resolve="createWall" />
                     <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
@@ -1288,7 +1288,7 @@
                     <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
                   </node>
                   <node concept="liA8E" id="442XwrAYNZs" role="2OqNvi">
-                    <ref role="37wK5l" to="dr63:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                    <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                     <node concept="2YIFZM" id="442XwrAYNZt" role="37wK5m">
                       <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
                       <ref role="37wK5l" to="4ujd:5wv4$Cfj3g0" resolve="createEmpty" />
@@ -1307,7 +1307,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYNZw" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNZx" role="jymVt" />
@@ -1342,7 +1342,7 @@
             <node concept="YS8fn" id="442XwrAYNZL" role="3cqZAp">
               <node concept="2ShNRf" id="442XwrAYNZM" role="YScLw">
                 <node concept="1pGfFk" id="442XwrAYNZN" role="2ShVmc">
-                  <ref role="37wK5l" to="e2lb:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="Xl_RD" id="442XwrAYNZO" role="37wK5m">
                     <property role="Xl_RC" value="Operation was not started" />
                   </node>
@@ -1364,7 +1364,7 @@
               <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
             </node>
             <node concept="liA8E" id="442XwrAYNZW" role="2OqNvi">
-              <ref role="37wK5l" to="dr63:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+              <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
               <node concept="2YIFZM" id="442XwrAYNZX" role="37wK5m">
                 <ref role="37wK5l" to="4ujd:5wv4$Cfj67g" resolve="createMarks" />
                 <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
@@ -1383,7 +1383,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYO01" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYO02" role="jymVt" />
@@ -1399,10 +1399,10 @@
           <node concept="37vLTI" id="442XwrAYO09" role="3clFbG">
             <node concept="2ShNRf" id="442XwrAYO0a" role="37vLTx">
               <node concept="1pGfFk" id="442XwrAYO0b" role="2ShVmc">
-                <ref role="37wK5l" to="dr63:~Step.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="Step" />
+                <ref role="37wK5l" to="deok:~Step.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="Step" />
                 <node concept="Rm8GO" id="442XwrAYO0c" role="37wK5m">
-                  <ref role="Rm8GQ" to="dr63:~Speed.INSTANT" resolve="INSTANT" />
-                  <ref role="1Px2BO" to="dr63:~Speed" resolve="Speed" />
+                  <ref role="Rm8GQ" to="deok:~Speed.INSTANT" resolve="INSTANT" />
+                  <ref role="1Px2BO" to="deok:~Speed" resolve="Speed" />
                 </node>
               </node>
             </node>
@@ -1413,7 +1413,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYO0e" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYO0f" role="jymVt" />
@@ -1428,7 +1428,7 @@
           <node concept="3cpWsn" id="442XwrAYO0l" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="442XwrAYO0m" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Result" resolve="Result" />
+              <ref role="3uigEE" to="deok:~Result" resolve="Result" />
             </node>
             <node concept="1rXfSq" id="442XwrAYO0n" role="33vP2m">
               <ref role="37wK5l" to="4ujd:5wv4$CfiKxZ" resolve="doStep" />
@@ -1456,7 +1456,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="442XwrAYO0w" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYO0x" role="jymVt" />
@@ -1490,7 +1490,7 @@
           <node concept="3cpWsn" id="6xs90l3vGG1" role="3cpWs9">
             <property role="TrG5h" value="step" />
             <node concept="3uibUv" id="6xs90l3vGG2" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="6xs90l3vGIC" role="33vP2m">
               <ref role="37wK5l" to="4ujd:6xs90l3vm5Q" resolve="createVariableStep" />
@@ -1520,7 +1520,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6xs90l3$xlP" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="6xs90l3$xtW" role="jymVt" />
@@ -1549,7 +1549,7 @@
           <node concept="3cpWsn" id="6xs90l3$$nN" role="3cpWs9">
             <property role="TrG5h" value="writeAnimation" />
             <node concept="3uibUv" id="6xs90l3$$nO" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="3LwScSd9I6O" role="33vP2m">
               <ref role="37wK5l" to="4ujd:3LwScSd9xeh" resolve="createChangeVariableStep" />
@@ -1576,7 +1576,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6xs90l3$y13" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="3LwScSd8xHP" role="jymVt" />
@@ -1603,7 +1603,7 @@
           <node concept="3cpWsn" id="6xs90l3$Je8" role="3cpWs9">
             <property role="TrG5h" value="createInitHomeStep" />
             <node concept="3uibUv" id="6xs90l3$Je4" role="1tU5fm">
-              <ref role="3uigEE" to="dr63:~Step" resolve="Step" />
+              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
             </node>
             <node concept="2YIFZM" id="6xs90l3$Je9" role="33vP2m">
               <ref role="37wK5l" to="4ujd:6xs90l3$EAU" resolve="createSetHomeStep" />
@@ -1631,14 +1631,14 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6xs90l3$xdE" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2AHcQZ" id="442XwrAYO0y" role="2AJF6D">
-      <ref role="2AI5Lk" to="tmow:~Named" resolve="Named" />
+      <ref role="2AI5Lk" to="i6ll:~Named" resolve="Named" />
     </node>
     <node concept="2AHcQZ" id="442XwrAYO0z" role="2AJF6D">
-      <ref role="2AI5Lk" to="tmow:~Singleton" resolve="Singleton" />
+      <ref role="2AI5Lk" to="i6ll:~Singleton" resolve="Singleton" />
     </node>
   </node>
   <node concept="312cEu" id="442XwrAYO0$">

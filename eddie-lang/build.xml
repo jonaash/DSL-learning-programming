@@ -19,6 +19,8 @@
   <property name="artifacts.mpsPlugins" location="${mps_home}/plugins" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
+  <property name="env.JAVA_HOME" value="${java.home}/.." />
+  <property name="jdk.home" value="${env.JAVA_HOME}" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mpsStandalone}/lib/ant/lib/ant-mps.jar" />
@@ -64,21 +66,23 @@
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
         <version codename="EddieStudio" major="1" minor="0" eap="false" />
-        <build date="${date}" number="${build.number}" />
+        <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
         <names product="EddieStudio" fullname="Eddie-Studio" />
-        <welcome-screen caption-url="/caption.png" slogan-url="/slogan.png" logo-url="/logo.png" />
+        
+        <welcome-screen logo-url="/logo.png" />
+        
+        
+        
       </component>
     </echoxml>
-    <jar destfile="${build.layout}/lib/branding.jar">
+    <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
       <fileset file="${basedir}/icons/MPS16.png" />
       <fileset file="${basedir}/icons/MPS32.png" />
-      <fileset file="${basedir}/icons/caption.png" />
-      <fileset file="${basedir}/icons/slogan.png" />
       <fileset file="${basedir}/icons/logo.png" />
       <fileset file="${basedir}/icons/splash.png" />
       <fileset file="${basedir}/icons/about.png" />
@@ -165,17 +169,19 @@
         <sources jar="org.eddieprogramming.core.runtime-src.jar" descriptor="runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.runtime.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.runtime.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
       <fileset dir="${basedir}/solutions/runtime" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/runtime/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.runtime.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-runtime-models">
       <fileset dir="${basedir}/solutions/runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.runtime-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.runtime-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/runtime/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/runtime/runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-runtime-models" prefix="module/models" />
@@ -197,17 +203,19 @@
         <sources jar="org.eddieprogramming.common.lib-src.jar" descriptor="lib.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.lib.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.lib.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
       <fileset dir="${basedir}/solutions/lib" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/lib/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.common.lib.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-lib-models">
       <fileset dir="${basedir}/solutions/lib/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.lib-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.lib-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/lib/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/lib/lib.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-lib-models" prefix="module/models" />
@@ -225,9 +233,10 @@
         <sources jar="org.eddieprogramming.common.support-src.jar" descriptor="support.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.support.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.support.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.common.support" />
       <fileset dir="${basedir}/solutions/support" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/support/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.common.support.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-support-models">
@@ -236,9 +245,10 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-support-resources-labels.properties">
       <fileset dir="${basedir}/solutions/support/resources/labels.properties" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.support-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.common.support-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/support/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/support/support.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-support-models" prefix="module/models" />
@@ -258,23 +268,27 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.ide.viewPlugin-src.jar" descriptor="viewPlugin.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.ide.viewPlugin.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.ide.viewPlugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.ide.viewPlugin" />
       <fileset dir="${basedir}/solutions/viewPlugin" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/viewPlugin/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.ide.viewPlugin.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-viewPlugin-models">
       <fileset dir="${basedir}/solutions/viewPlugin/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.ide.viewPlugin-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.ide.viewPlugin-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/viewPlugin/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/solutions/viewPlugin/viewPlugin.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-viewPlugin-models" prefix="module/models" />
@@ -294,6 +308,9 @@
           <module ref="23949432-aaff-4c03-b7da-26e4e956ccea(jetbrains.mps.baseLanguage.regexp.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -301,12 +318,13 @@
         <sources jar="org.eddieprogramming.core.EddieBasic-src.jar" descriptor="EddieBasic.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
       <fileset dir="${basedir}/languages/EddieBasic" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieBasic/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.EddieBasic.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieBasic-generator-template">
@@ -315,12 +333,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieBasic-languageModels">
       <fileset dir="${basedir}/languages/EddieBasic/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieBasic-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieBasic/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieBasic/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieBasic/EddieBasic.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieBasic-generator-template" prefix="module/generator/template" />
@@ -340,18 +360,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.core.EddieConditions-src.jar" descriptor="EddieConditions.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
       <fileset dir="${basedir}/languages/EddieConditions" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieConditions/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.EddieConditions.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions#3267332360034136804" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieConditions-generator-template">
@@ -360,12 +384,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieConditions-languageModels">
       <fileset dir="${basedir}/languages/EddieConditions/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieConditions-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieConditions/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieConditions/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieConditions/EddieConditions.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieConditions-generator-template" prefix="module/generator/template" />
@@ -385,6 +411,9 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -392,12 +421,13 @@
         <sources jar="org.eddieprogramming.core.EddieVariables-src.jar" descriptor="EddieVariables.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieVariables" />
       <fileset dir="${basedir}/languages/EddieVariables" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieVariables/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.EddieVariables.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieVariables#3394217739153893707" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieVariables-generator-template">
@@ -406,12 +436,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieVariables-languageModels">
       <fileset dir="${basedir}/languages/EddieVariables/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieVariables-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieVariables/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieVariables/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieVariables/EddieVariables.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieVariables-generator-template" prefix="module/generator/template" />
@@ -431,18 +463,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.core.EddieFunctions-src.jar" descriptor="EddieFunctions.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieFunctions" />
       <fileset dir="${basedir}/languages/EddieFunctions" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieFunctions/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.EddieFunctions.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieFunctions#3776063756796239897" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieFunctions-generator-template">
@@ -451,12 +487,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieFunctions-languageModels">
       <fileset dir="${basedir}/languages/EddieFunctions/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieFunctions-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieFunctions/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieFunctions/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieFunctions/EddieFunctions.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieFunctions-generator-template" prefix="module/generator/template" />
@@ -476,18 +514,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.core.EddieObjects-src.jar" descriptor="EddieObjects.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieObjects" />
       <fileset dir="${basedir}/languages/EddieObjects" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieObjects/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.core.EddieObjects.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.core.EddieObjects#148719074581285505" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieObjects-generator-template">
@@ -496,12 +538,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieObjects-languageModels">
       <fileset dir="${basedir}/languages/EddieObjects/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.core.EddieObjects-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieObjects/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieObjects/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieObjects/EddieObjects.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieObjects-generator-template" prefix="module/generator/template" />
@@ -521,18 +565,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.support.EddieBaseLanguageObjects-src.jar" descriptor="EddieBaseLanguageObjects.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.support.EddieBaseLanguageObjects" />
       <fileset dir="${basedir}/languages/EddieBaseLanguageObjects" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieBaseLanguageObjects/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.support.EddieBaseLanguageObjects.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.support.EddieBaseLanguageObjects#2507101727818895526" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieBaseLanguageObjects-generator-template">
@@ -541,12 +589,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieBaseLanguageObjects-languageModels">
       <fileset dir="${basedir}/languages/EddieBaseLanguageObjects/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieBaseLanguageObjects-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieBaseLanguageObjects/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieBaseLanguageObjects/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieBaseLanguageObjects-generator-template" prefix="module/generator/template" />
@@ -566,18 +616,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.world.EddieSceneConstruction-src.jar" descriptor="EddieSceneConstruction.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.world.EddieSceneConstruction" />
       <fileset dir="${basedir}/languages/EddieSceneConstruction" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieSceneConstruction/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.world.EddieSceneConstruction.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.world.EddieSceneConstruction#6349814108916251914" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieSceneConstruction-generator-template">
@@ -586,12 +640,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieSceneConstruction-languageModels">
       <fileset dir="${basedir}/languages/EddieSceneConstruction/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.world.EddieSceneConstruction-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieSceneConstruction/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieSceneConstruction/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieSceneConstruction-generator-template" prefix="module/generator/template" />
@@ -611,18 +667,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.support.EddieComparisonOperators-src.jar" descriptor="EddieComparisonOperators.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.support.EddieComparisonOperators" />
       <fileset dir="${basedir}/languages/EddieComparisonOperators" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieComparisonOperators/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.support.EddieComparisonOperators.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.support.EddieComparisonOperators#5508951763380556598" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieComparisonOperators-generator-template">
@@ -631,12 +691,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieComparisonOperators-languageModels">
       <fileset dir="${basedir}/languages/EddieComparisonOperators/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.support.EddieComparisonOperators-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieComparisonOperators/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieComparisonOperators/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieComparisonOperators/EddieComparisonOperators.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieComparisonOperators-generator-template" prefix="module/generator/template" />
@@ -656,18 +718,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.dsl.RobotKarel-src.jar" descriptor="RobotKarel.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.dsl.RobotKarel" />
       <fileset dir="${basedir}/languages/RobotKarel" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/RobotKarel/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.dsl.RobotKarel.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.dsl.RobotKarel#7118929354272558643" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-RobotKarel-generator-template">
@@ -676,12 +742,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-RobotKarel-languageModels">
       <fileset dir="${basedir}/languages/RobotKarel/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.RobotKarel-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/RobotKarel/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/RobotKarel/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/RobotKarel/RobotKarel.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-RobotKarel-generator-template" prefix="module/generator/template" />
@@ -701,18 +769,22 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.eddieprogramming.dsl.EddieVariableTerminals-src.jar" descriptor="EddieVariableTerminals.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.dsl.EddieVariableTerminals" />
       <fileset dir="${basedir}/languages/EddieVariableTerminals" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/languages/EddieVariableTerminals/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/org.eddieprogramming.dsl.EddieVariableTerminals.jar" />
     </jar>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals-generator.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.eddieprogramming.dsl.EddieVariableTerminals#4327882853829659938" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieVariableTerminals-generator-template">
@@ -721,12 +793,14 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-EddieVariableTerminals-languageModels">
       <fileset dir="${basedir}/languages/EddieVariableTerminals/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals-src.jar">
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.dsl.EddieVariableTerminals-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/EddieVariableTerminals/generator/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <fileset dir="${basedir}/languages/EddieVariableTerminals/source_gen">
         <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
       </fileset>
       <zipfileset file="${basedir}/languages/EddieVariableTerminals/EddieVariableTerminals.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-EddieVariableTerminals-generator-template" prefix="module/generator/template" />
@@ -797,17 +871,18 @@
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jetbrains.mps.baseLanguage.unitTest.libs.jar" />
       <library file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.bootstrap-languages.devkit" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
       <library file="${artifacts.mpsStandalone}/languages/devkits/jetbrains.mps.devkit.language-design.devkit" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.aspect.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.classLike.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
@@ -828,45 +903,41 @@
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.script.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.smodel.query.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.facet.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.make.script.jar" />
-      <library file="${artifacts.mpsStandalone}/languages/make/jetbrains.mps.tool.gentest.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
       <library file="${artifacts.mpsStandalone}/languages/workbench/jetbrains.mps.lang.plugin.standalone.jar" />
       <library file="${artifacts.mpsStandalone}/languages/xml/jetbrains.mps.core.xml.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+      <library file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-test.jar" />
-      <library file="${artifacts.mpsStandalone}/lib/mps-tool.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
       <library file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
+      <library file="${artifacts.mpsStandalone}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <chunk>
+        <module file="${basedir}/devkits/Eddie/Eddie.devkit" />
+        <module file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
         <module file="${basedir}/solutions/lib/lib.msd" />
         <module file="${basedir}/solutions/support/support.msd" />
         <module file="${basedir}/languages/EddieBasic/EddieBasic.mpl" />
         <module file="${basedir}/languages/EddieConditions/EddieConditions.mpl" />
-        <module file="${basedir}/solutions/runtime/runtime.msd" />
-        <module file="${basedir}/solutions/viewPlugin/viewPlugin.msd" />
-      </chunk>
-      <chunk>
-        <module file="${basedir}/devkits/Eddie/Eddie.devkit" />
         <module file="${basedir}/languages/EddieFunctions/EddieFunctions.mpl" />
         <module file="${basedir}/languages/EddieObjects/EddieObjects.mpl" />
         <module file="${basedir}/languages/EddieVariables/EddieVariables.mpl" />
+        <module file="${basedir}/solutions/runtime/runtime.msd" />
         <module file="${basedir}/languages/EddieVariableTerminals/EddieVariableTerminals.mpl" />
         <module file="${basedir}/languages/RobotKarel/RobotKarel.mpl" />
-      </chunk>
-      <chunk>
-        <module file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
+        <module file="${basedir}/solutions/viewPlugin/viewPlugin.msd" />
         <module file="${basedir}/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" />
         <module file="${basedir}/languages/EddieComparisonOperators/EddieComparisonOperators.mpl" />
         <module file="${basedir}/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" />
@@ -959,12 +1030,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-workbench.jar" />
@@ -1003,12 +1077,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${basedir}/solutions/lib/lib/slf4j-api.jar" />
         <fileset file="${basedir}/solutions/lib/lib/api.jar" />
@@ -1053,12 +1130,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
@@ -1083,6 +1163,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1102,12 +1183,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
@@ -1129,6 +1213,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1145,14 +1230,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1176,6 +1264,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1193,12 +1282,15 @@
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <fileset file="${basedir}/solutions/lib/lib/slf4j-api.jar" />
         <fileset file="${basedir}/solutions/lib/lib/api.jar" />
@@ -1246,12 +1338,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1295,14 +1390,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1331,6 +1429,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1350,12 +1449,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1379,6 +1481,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1395,14 +1498,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1429,6 +1535,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1448,12 +1555,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1481,6 +1591,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1497,14 +1608,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1534,6 +1648,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1553,12 +1668,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1587,6 +1705,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1603,14 +1722,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1638,6 +1760,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1657,12 +1780,15 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.support" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1692,6 +1818,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1708,14 +1835,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1747,6 +1877,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1763,14 +1894,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1794,6 +1928,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1810,14 +1945,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1842,6 +1980,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1858,14 +1997,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
@@ -1890,6 +2032,7 @@
         <fileset file="${artifacts.mpsStandalone}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1906,14 +2049,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic#3640435696255147963" />
@@ -1937,6 +2083,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -1953,14 +2100,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -1983,6 +2133,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
@@ -2000,14 +2151,17 @@
       </src>
       <classpath>
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-tuples.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieBasic" />
         <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.EddieConditions" />
@@ -2033,6 +2187,7 @@
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.execution.util.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
@@ -2043,24 +2198,24 @@
     <delete dir="${basedir}/solutions/lib/source_gen" />
     <delete dir="${basedir}/solutions/support/source_gen" />
     <delete dir="${basedir}/languages/EddieBasic/source_gen" />
-    <delete dir="${basedir}/languages/EddieBasic/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieConditions/source_gen" />
-    <delete dir="${basedir}/solutions/runtime/source_gen" />
-    <delete dir="${basedir}/solutions/viewPlugin/source_gen" />
-    <delete dir="${basedir}/languages/EddieConditions/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieFunctions/source_gen" />
     <delete dir="${basedir}/languages/EddieObjects/source_gen" />
     <delete dir="${basedir}/languages/EddieVariables/source_gen" />
+    <delete dir="${basedir}/solutions/runtime/source_gen" />
     <delete dir="${basedir}/languages/EddieVariableTerminals/source_gen" />
     <delete dir="${basedir}/languages/RobotKarel/source_gen" />
-    <delete dir="${basedir}/languages/RobotKarel/generator/source_gen" />
+    <delete dir="${basedir}/solutions/viewPlugin/source_gen" />
+    <delete dir="${basedir}/languages/EddieBaseLanguageObjects/source_gen" />
+    <delete dir="${basedir}/languages/EddieComparisonOperators/source_gen" />
+    <delete dir="${basedir}/languages/EddieSceneConstruction/source_gen" />
+    <delete dir="${basedir}/languages/EddieBasic/generator/source_gen" />
+    <delete dir="${basedir}/languages/EddieConditions/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieFunctions/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieObjects/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieVariables/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieVariableTerminals/generator/source_gen" />
-    <delete dir="${basedir}/languages/EddieBaseLanguageObjects/source_gen" />
-    <delete dir="${basedir}/languages/EddieComparisonOperators/source_gen" />
-    <delete dir="${basedir}/languages/EddieSceneConstruction/source_gen" />
+    <delete dir="${basedir}/languages/RobotKarel/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieBaseLanguageObjects/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieComparisonOperators/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieSceneConstruction/generator/source_gen" />

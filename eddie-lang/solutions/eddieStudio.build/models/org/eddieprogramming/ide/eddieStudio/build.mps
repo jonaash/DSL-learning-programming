@@ -2,8 +2,8 @@
 <model ref="r:1a054c87-83d2-4988-8389-8885b43b2150(org.eddieprogramming.ide.eddieStudio.build)">
   <persistence version="9" />
   <languages>
-    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -165,14 +165,12 @@
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
         <child id="6108265972537229340" name="icon32opaque" index="2EteIl" />
-        <child id="6108265972537335222" name="welcomeSlogan" index="2EtnoZ" />
         <child id="6108265972537372847" name="shortName" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
-        <child id="7753544965996489990" name="welcomeCaption" index="1zDKOn" />
       </concept>
       <concept id="4278635856200826393" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyJar" flags="ng" index="1BurEX">
         <child id="4278635856200826394" name="path" index="1BurEY" />
@@ -293,22 +291,6 @@
           <property role="2Ry0Am" value="icons" />
           <node concept="2Ry0Ak" id="1JtUjhLyCzb" role="2Ry0An">
             <property role="2Ry0Am" value="about.png" />
-          </node>
-        </node>
-      </node>
-      <node concept="55IIr" id="1JtUjhLyCzc" role="1zDKOn">
-        <node concept="2Ry0Ak" id="1JtUjhLyCzd" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1JtUjhLyCze" role="2Ry0An">
-            <property role="2Ry0Am" value="caption.png" />
-          </node>
-        </node>
-      </node>
-      <node concept="55IIr" id="1JtUjhLyCzf" role="2EtnoZ">
-        <node concept="2Ry0Ak" id="1JtUjhLyCzg" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="1JtUjhLyCzh" role="2Ry0An">
-            <property role="2Ry0Am" value="slogan.png" />
           </node>
         </node>
       </node>
@@ -591,7 +573,7 @@
           <property role="28hIV_" value="optional plugins" />
         </node>
         <node concept="3_I8Xc" id="4hrQwlim9l6" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:6EN03E8p5Ic" resolve="mps-make" />
+          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
         </node>
         <node concept="3_J27D" id="1JtUjhLyC$_" role="Nbhlr">
           <node concept="3Mxwew" id="1JtUjhLyC$A" role="3MwsjC">
@@ -1336,6 +1318,12 @@
             <node concept="3bR9La" id="1CDPOOIkoyU" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="1CDPOOIknXx" resolve="org.eddieprogramming.core.EddieVariables#3394217739153893707" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4bZBGVFEpJl" role="3bR37C">
+            <node concept="3bR9La" id="4bZBGVFEpJm" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" node="1JtUjhLyCzN" resolve="org.eddieprogramming.core.EddieBasic" />
             </node>
           </node>
         </node>

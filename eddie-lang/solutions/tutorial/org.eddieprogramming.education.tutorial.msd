@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.eddieprogramming.education.tutorial" uuid="eb091912-de92-4a16-9a15-144489d44fc6" compileInMPS="true">
+<solution name="org.eddieprogramming.education.tutorial" uuid="eb091912-de92-4a16-9a15-144489d44fc6" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -9,16 +9,6 @@
   <dependencies>
     <dependency reexport="false">645c5093-3842-40e7-938b-f9d0f9cd529b(org.eddieprogramming.core.runtime)</dependency>
   </dependencies>
-  <usedLanguages>
-    <usedLanguage>862fe5da-6916-4d19-b869-dbe8a02b6bb1(org.eddieprogramming.dsl.RobotKarel)</usedLanguage>
-    <usedLanguage>5540ad23-650b-4fa5-b8b5-236a8e7e1c34(org.eddieprogramming.core.EddieBasic)</usedLanguage>
-    <usedLanguage>4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5(org.eddieprogramming.core.EddieConditions)</usedLanguage>
-    <usedLanguage>a9e656c0-d096-4475-bb36-823817b9bb6d(org.eddieprogramming.dsl.EddieVariableTerminals)</usedLanguage>
-    <usedLanguage>53b38693-ceee-4191-9779-c7bca6c13739(org.eddieprogramming.core.EddieVariables)</usedLanguage>
-    <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
-    <usedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</usedLanguage>
-    <usedLanguage>992263ba-1125-4e06-bbaa-a3def7e8a353(org.eddieprogramming.core.EddieFunctions)</usedLanguage>
-  </usedLanguages>
   <usedDevKits>
     <usedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</usedDevKit>
     <usedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</usedDevKit>
@@ -38,5 +28,12 @@
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" fqName="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" fqName="org.eddieprogramming.world.EddieSceneConstruction" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" version="0" />
+    <module reference="9e2adce0-3032-497b-bf7e-e4b747a76a49(org.eddieprogramming.common.lib)" version="0" />
+    <module reference="645c5093-3842-40e7-938b-f9d0f9cd529b(org.eddieprogramming.core.runtime)" version="0" />
+    <module reference="eb091912-de92-4a16-9a15-144489d44fc6(org.eddieprogramming.education.tutorial)" version="0" />
+  </dependencyVersions>
 </solution>
 

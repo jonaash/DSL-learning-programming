@@ -2,13 +2,12 @@
 <model ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(org.eddieprogramming.core.EddieObjects.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
-    <import index="prg8" ref="f3061a53-9226-4cc5-a443-f952ceaf5816/f:java_stub#f3061a53-9226-4cc5-a443-f952ceaf5816#jetbrains.mps.baseLanguage(jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(org.eddieprogramming.core.EddieVariables.structure)" implicit="true" />
   </imports>
@@ -19,6 +18,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -59,6 +59,7 @@
     <property role="3GE5qa" value="class" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="573654525" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7KcPMNJ6uoN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -103,6 +104,7 @@
   <node concept="1TIwiD" id="8gmNnrJKBi">
     <property role="TrG5h" value="FieldVariableDeclaration" />
     <property role="3GE5qa" value="class.member.definition" />
+    <property role="1pbfSe" value="573610745" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="7KcPMNJ6unz" role="PzmwI">
       <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
@@ -114,6 +116,7 @@
   <node concept="PlHQZ" id="8gmNnrJKNw">
     <property role="TrG5h" value="IClassMember" />
     <property role="3GE5qa" value="class.member" />
+    <property role="1pbfSe" value="573609963" />
     <node concept="1TJgyj" id="7KcPMNJ6un5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="visibility" />
@@ -129,6 +132,7 @@
     <property role="3GE5qa" value="class.visibility" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="573609955" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9R9">
@@ -136,6 +140,7 @@
     <property role="TrG5h" value="Public" />
     <property role="34LRSv" value="public" />
     <property role="R4oN_" value="It can be accessed from anywhere." />
+    <property role="1pbfSe" value="573507330" />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9Ra">
@@ -143,12 +148,14 @@
     <property role="TrG5h" value="Private" />
     <property role="34LRSv" value="private" />
     <property role="R4oN_" value="It can be accessed only from its own class." />
+    <property role="1pbfSe" value="573507329" />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9Rj">
     <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="MethodDefinition" />
     <property role="34LRSv" value="method" />
+    <property role="1pbfSe" value="573507320" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="PrWs8" id="8gmNnrK9Rk" role="PzmwI">
       <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
@@ -167,6 +174,7 @@
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="ThisExpression" />
     <property role="34LRSv" value="this" />
+    <property role="1pbfSe" value="1800023449" />
     <ref role="1TJDcQ" node="1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
   </node>
   <node concept="1TIwiD" id="7KcPMNJfsB9">
@@ -174,6 +182,7 @@
     <property role="3GE5qa" value="type" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1800052981" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
     <node concept="1TJgyj" id="7KcPMNJfsBa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -186,6 +195,7 @@
     <property role="TrG5h" value="DotOperator" />
     <property role="3GE5qa" value="expression" />
     <property role="34LRSv" value="." />
+    <property role="1pbfSe" value="1800053141" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="7KcPMNJAnay" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -213,6 +223,7 @@
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="MethodCall" />
     <property role="MwhBj" value="${module}/icons/method.png" />
+    <property role="1pbfSe" value="1800053144" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="7KcPMNJfsDH" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -226,6 +237,7 @@
     <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="ConstructorDefinition" />
     <property role="34LRSv" value="constructor" />
+    <property role="1pbfSe" value="1800775377" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="PrWs8" id="7KcPMNJwoRf" role="PzmwI">
       <ref role="PrY4T" node="8gmNnrJKNw" resolve="IClassMember" />
@@ -236,6 +248,7 @@
     <property role="TrG5h" value="ConstructorCall" />
     <property role="34LRSv" value="create" />
     <property role="R4oN_" value="create an object" />
+    <property role="1pbfSe" value="1804483241" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdDnzd" resolve="AbstractCall" />
     <node concept="1TJgyj" id="6bbx8uINSyt" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -248,6 +261,7 @@
   <node concept="1TIwiD" id="7KcPMNJAnaA">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="FieldReference" />
+    <property role="1pbfSe" value="1806059986" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7KcPMNJAnaB" role="PzmwI">
       <ref role="PrY4T" to="dyrx:1jWJ98HyPqg" resolve="IOperation" />
@@ -267,6 +281,7 @@
     <property role="TrG5h" value="AbstractClassPointerExpression" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1120648551" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="1jWJ98H$8kD">
@@ -276,6 +291,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="R4oN_" value="it is bastrcat because not used" />
+    <property role="1pbfSe" value="1116553659" />
     <ref role="1TJDcQ" node="8gmNnrJKNC" resolve="Visibility" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIDo0I">
@@ -285,6 +301,7 @@
     <property role="34LRSv" value="singleton" />
     <property role="R4oN_" value="definition of object that can have only single instance" />
     <property role="MwhBj" value="${module}/icons/static.png" />
+    <property role="1pbfSe" value="292619445" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     <node concept="1TJgyj" id="6bbx8uIEHkQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -303,6 +320,7 @@
   <node concept="1TIwiD" id="6bbx8uIEAM6">
     <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="SingletonConstructor" />
+    <property role="1pbfSe" value="292942093" />
     <ref role="1TJDcQ" node="7KcPMNJicY_" resolve="ConstructorDefinition" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIHCEi">
@@ -314,11 +332,13 @@
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="definition of object" />
     <property role="MwhBj" value="${module}/icons/class.png" />
+    <property role="1pbfSe" value="293736217" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
   </node>
   <node concept="1TIwiD" id="6bbx8uIJiUv">
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="SingletonReference" />
+    <property role="1pbfSe" value="294171430" />
     <ref role="1TJDcQ" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
     <node concept="1TJgyj" id="6bbx8uIJiUw" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -332,11 +352,13 @@
     <property role="3GE5qa" value="class.member.definition" />
     <property role="TrG5h" value="SingletonInstance" />
     <property role="R4oN_" value="reference to instance of singleton object" />
+    <property role="1pbfSe" value="1729166070" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="4LNIB3Hh0jD">
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="SingletonType" />
+    <property role="1pbfSe" value="968343385" />
     <ref role="1TJDcQ" node="7KcPMNJfsB9" resolve="AbstractClassType" />
     <node concept="1TJgyj" id="4LNIB3HhUN5" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -352,6 +374,7 @@
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="ClassType" />
     <property role="R4oN_" value="class type" />
+    <property role="1pbfSe" value="968493972" />
     <ref role="1TJDcQ" node="7KcPMNJfsB9" resolve="AbstractClassType" />
     <node concept="1TJgyj" id="4LNIB3HhUMc" role="1TKVEi">
       <property role="20lmBu" value="reference" />

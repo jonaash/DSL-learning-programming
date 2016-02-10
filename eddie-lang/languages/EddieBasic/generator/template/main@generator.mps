@@ -2,11 +2,11 @@
 <model ref="aef79034-b65a-4990-a1ad-bac27333a76b/r:225318c2-0f2f-4b73-8699-e4da32a713a8(KarelBasic#3640435696255147963/org.eddieprogramming.core.EddieBasic.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
+    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,14 +14,14 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="vuk8" ref="r:4bbffd5a-9450-492b-a09c-e29bacd02692(org.eddieprogramming.core.EddieBasic.generator.util)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="758v" ref="r:491f3992-c1ea-43a0-9484-780e8244a773(org.eddieprogramming.dsl.RobotKarel.structure)" />
-    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
     <import index="wa2b" ref="r:7ddd28a9-6fec-4412-83f2-6de74295daaf(org.eddieprogramming.dsl.RobotKarel.generator.template.main@generator)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.runtime.scene)" />
   </imports>
   <registry>
@@ -677,7 +677,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2xfsEoC6581" role="2AJF6D">
-        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="5wv4$Cfmh$9" role="jymVt" />
@@ -729,8 +729,8 @@
       <node concept="3clFbS" id="6bh18$pfjaI" role="3clF47">
         <node concept="3clFbF" id="4$34Uk8_DsM" role="3cqZAp">
           <node concept="2YIFZM" id="4$34Uk8_D$V" role="3clFbG">
-            <ref role="37wK5l" to="e2lb:~System.setProperty(java.lang.String,java.lang.String):java.lang.String" resolve="setProperty" />
-            <ref role="1Pybhc" to="e2lb:~System" resolve="System" />
+            <ref role="37wK5l" to="wyt6:~System.setProperty(java.lang.String,java.lang.String):java.lang.String" resolve="setProperty" />
+            <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
             <node concept="Xl_RD" id="4$34Uk8_D$W" role="37wK5m">
               <property role="Xl_RC" value="apple.awt.UIElement" />
             </node>
@@ -1157,8 +1157,8 @@
               <node concept="liA8E" id="3eme_YBWQBY" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:3eme_YBWTIT" resolve="printMessage" />
                 <node concept="2YIFZM" id="4LNIB3H3E9p" role="37wK5m">
-                  <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                  <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="Xl_RD" id="6kvBWKzBPqV" role="37wK5m">
                     <property role="Xl_RC" value="Message" />
                     <node concept="29HgVG" id="6kvBWKzBPuC" role="lGtFl">
@@ -1211,8 +1211,8 @@
               <node concept="liA8E" id="3eme_YBWQAm" role="2OqNvi">
                 <ref role="37wK5l" to="4ujd:3eme_YBWTKu" resolve="showAlert" />
                 <node concept="2YIFZM" id="4LNIB3H3Due" role="37wK5m">
-                  <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                  <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+                  <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                   <node concept="Xl_RD" id="6kvBWKzCi3j" role="37wK5m">
                     <property role="Xl_RC" value="Message" />
                     <node concept="29HgVG" id="6kvBWKzCi5Q" role="lGtFl">
@@ -1544,11 +1544,11 @@
         <node concept="3clFbF" id="6kvBWKzAch2" role="3cqZAp">
           <node concept="2OqwBi" id="6kvBWKzAdpm" role="3clFbG">
             <node concept="10M0yZ" id="6kvBWKzAc_v" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="6kvBWKzAeh$" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.print(java.lang.String):void" resolve="print" />
+              <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String):void" resolve="print" />
               <node concept="Xl_RD" id="6kvBWKzAei8" role="37wK5m">
                 <property role="Xl_RC" value="Text" />
                 <node concept="raruj" id="6kvBWKzAemH" role="lGtFl" />
@@ -1695,7 +1695,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3uaXG0jDFT4" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~Object.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                 <node concept="1ZhdrF" id="3uaXG0jDMuW" role="lGtFl">
                   <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1204053956946/1068499141037" />
                   <property role="2qtEX8" value="baseMethodDeclaration" />

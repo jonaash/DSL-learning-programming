@@ -2,8 +2,8 @@
 <model ref="r:89073456-0f7c-4674-9238-8eee791debad(org.eddieprogramming.support.EddieBaseLanguageObjects.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -79,14 +79,21 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
+        <reference id="1204851882689" name="link" index="26LbJp" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="7835263205327057228" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenAndChildAttributesOperation" flags="ng" index="Bykcj" />
+      <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
+        <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -143,14 +150,18 @@
           <node concept="pkWqt" id="6bbx8uISgbx" role="pqm2j">
             <node concept="3clFbS" id="6bbx8uISgby" role="2VODD2">
               <node concept="3clFbF" id="1LkA4kR7eIS" role="3cqZAp">
-                <node concept="2OqwBi" id="1LkA4kR7hvJ" role="3clFbG">
+                <node concept="2OqwBi" id="4bZBGVFEOqe" role="3clFbG">
                   <node concept="2OqwBi" id="1LkA4kR7f8U" role="2Oq$k0">
                     <node concept="pncrf" id="1LkA4kR7eIR" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="2xfsEoBYGfl" role="2OqNvi">
-                      <ref role="3TtcxE" to="gkvc:2xfsEoBYC99" />
+                    <node concept="Bykcj" id="4bZBGVFEOqb" role="2OqNvi">
+                      <node concept="1aIX9F" id="4bZBGVFEOqc" role="1xVPHs">
+                        <node concept="26LbJo" id="4bZBGVFEOqd" role="1aIX9E">
+                          <ref role="26LbJp" to="gkvc:2xfsEoBYC99" />
+                        </node>
+                      </node>
                     </node>
                   </node>
-                  <node concept="3GX2aA" id="1LkA4kR7kSk" role="2OqNvi" />
+                  <node concept="3GX2aA" id="4bZBGVFEOqf" role="2OqNvi" />
                 </node>
               </node>
             </node>

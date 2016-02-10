@@ -2,13 +2,13 @@
 <model ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
   </languages>
   <imports>
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1354,8 +1354,8 @@
               <node concept="3cpWs6" id="3hBhvFSipAT" role="3cqZAp">
                 <node concept="3cpWs3" id="3hBhvFSirka" role="3cqZAk">
                   <node concept="2YIFZM" id="3hBhvFSj2ou" role="3uHU7w">
-                    <ref role="37wK5l" to="k7g3:~Arrays.toString(java.lang.Object[]):java.lang.String" resolve="toString" />
-                    <ref role="1Pybhc" to="k7g3:~Arrays" resolve="Arrays" />
+                    <ref role="37wK5l" to="33ny:~Arrays.toString(java.lang.Object[]):java.lang.String" resolve="toString" />
+                    <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
                     <node concept="37vLTw" id="3hBhvFSj2u5" role="37wK5m">
                       <ref role="3cqZAo" node="3hBhvFSinPO" resolve="params" />
                     </node>
@@ -1380,8 +1380,8 @@
           <node concept="3clFbS" id="3hBhvFSipAZ" role="3clFbx">
             <node concept="3cpWs6" id="3hBhvFSiq7b" role="3cqZAp">
               <node concept="2YIFZM" id="3hBhvFSipzw" role="3cqZAk">
-                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                 <node concept="37vLTw" id="3hBhvFSipGc" role="37wK5m">
                   <ref role="3cqZAo" node="3hBhvFSipA_" resolve="label" />
                 </node>
@@ -1389,7 +1389,7 @@
                   <node concept="10QFUN" id="3hBhvFSl6Rc" role="1eOMHV">
                     <node concept="10Q1$e" id="3hBhvFSl71H" role="10QFUM">
                       <node concept="3uibUv" id="3hBhvFSl6WA" role="10Q1$1">
-                        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="3hBhvFSl6LQ" role="10QFUP">
@@ -1413,7 +1413,7 @@
         <property role="TrG5h" value="params" />
         <node concept="8X2XB" id="3hBhvFSinQv" role="1tU5fm">
           <node concept="3uibUv" id="3hBhvFSinQ5" role="8Xvag">
-            <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
         </node>
       </node>

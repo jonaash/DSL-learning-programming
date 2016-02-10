@@ -2,20 +2,21 @@
 <model ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:20735401-fb24-4465-a75a-8b2c03408182(KarelBasic/org.eddieprogramming.core.EddieBasic.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(org.eddieprogramming.core.EddieObjects.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -139,9 +140,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
@@ -195,11 +193,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -245,7 +241,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
@@ -282,6 +278,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -311,21 +314,21 @@
     <ref role="1M2myG" to="dyrx:2PnTnxEUkye" resolve="Repeat" />
     <node concept="osYL8" id="aB0Z16NPau" role="1MLXOK">
       <node concept="3clFbS" id="aB0Z16NPav" role="2VODD2">
-        <node concept="3SKdUt" id="6pJoTiq7fAL" role="3cqZAp">
-          <node concept="3SKWN0" id="6pJoTiq7fAT" role="3SKWNk">
-            <node concept="34ab3g" id="3uMihSQAOyr" role="3SKWNf">
-              <property role="35gtTG" value="debug" />
-              <node concept="2YIFZM" id="3uMihSQAOys" role="34bqiv">
-                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                <node concept="Xl_RD" id="3uMihSQAOyt" role="37wK5m">
-                  <property role="Xl_RC" value="Repeat constraint start - childConcept: {0}, node: {1}, childNode: {2}, link: {3}" />
-                </node>
-                <node concept="otxO1" id="3uMihSQAWmL" role="37wK5m" />
-                <node concept="EsrRn" id="3uMihSQAOyu" role="37wK5m" />
-                <node concept="2H4GUG" id="3uMihSQAOyv" role="37wK5m" />
-                <node concept="oXsJc" id="3uMihSQAXQK" role="37wK5m" />
+        <node concept="1X3_iC" id="4bZBGVFEOrH" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="3uMihSQAOyr" role="8Wnug">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="3uMihSQAOys" role="34bqiv">
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+              <node concept="Xl_RD" id="3uMihSQAOyt" role="37wK5m">
+                <property role="Xl_RC" value="Repeat constraint start - childConcept: {0}, node: {1}, childNode: {2}, link: {3}" />
               </node>
+              <node concept="otxO1" id="3uMihSQAWmL" role="37wK5m" />
+              <node concept="EsrRn" id="3uMihSQAOyu" role="37wK5m" />
+              <node concept="2H4GUG" id="3uMihSQAOyv" role="37wK5m" />
+              <node concept="oXsJc" id="3uMihSQAXQK" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -546,8 +549,8 @@
           <node concept="34ab3g" id="3uaXG0jxpx3" role="3cqZAp">
             <property role="35gtTG" value="info" />
             <node concept="2YIFZM" id="3uaXG0jxpAX" role="34bqiv">
-              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
               <node concept="Xl_RD" id="3uaXG0jxpDa" role="37wK5m">
                 <property role="Xl_RC" value="Scope: {0}" />
               </node>
@@ -650,8 +653,8 @@
         <node concept="34ab3g" id="6pJoTiq7u9E" role="3cqZAp">
           <property role="35gtTG" value="debug" />
           <node concept="2YIFZM" id="6pJoTiq7uj8" role="34bqiv">
-            <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+            <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
             <node concept="Xl_RD" id="6pJoTiq7umc" role="37wK5m">
               <property role="Xl_RC" value="Checking static type - childConcept: {0}, expected type: {1}, role {2}, expectedRole: {3}" />
             </node>
@@ -774,31 +777,31 @@
             <property role="1dT_AB" value="Checks wheather childConcept is in given role and does not have defined static type that is different than expected type." />
           </node>
         </node>
-        <node concept="TUZQ0" id="6pJoTiq79kB" role="TUOzN">
+        <node concept="TUZQ0" id="6pJoTiq79kB" role="3nqlJM">
           <property role="TUZQ4" value="concept to check" />
           <node concept="zr_55" id="6pJoTiq79kD" role="zr_5Q">
             <ref role="zr_51" node="6pJoTiq72OF" resolve="childConcept" />
           </node>
         </node>
-        <node concept="TUZQ0" id="6pJoTiq79kE" role="TUOzN">
+        <node concept="TUZQ0" id="6pJoTiq79kE" role="3nqlJM">
           <property role="TUZQ4" value="expected type" />
           <node concept="zr_55" id="6pJoTiq79kG" role="zr_5Q">
             <ref role="zr_51" node="6pJoTiq78uF" resolve="expectedType" />
           </node>
         </node>
-        <node concept="TUZQ0" id="6pJoTiq79kH" role="TUOzN">
+        <node concept="TUZQ0" id="6pJoTiq79kH" role="3nqlJM">
           <property role="TUZQ4" value="link parameter from constarint function" />
           <node concept="zr_55" id="6pJoTiq79kJ" role="zr_5Q">
             <ref role="zr_51" node="6pJoTiq72ID" resolve="role" />
           </node>
         </node>
-        <node concept="TUZQ0" id="6pJoTiq79kK" role="TUOzN">
+        <node concept="TUZQ0" id="6pJoTiq79kK" role="3nqlJM">
           <property role="TUZQ4" value="role of node to check" />
           <node concept="zr_55" id="6pJoTiq79kM" role="zr_5Q">
             <ref role="zr_51" node="6pJoTiq73gr" resolve="expectedRole" />
           </node>
         </node>
-        <node concept="x79VA" id="6pJoTiq79kN" role="x79VK">
+        <node concept="x79VA" id="6pJoTiq79kN" role="3nqlJM">
           <property role="x79VB" value="false if type is different, true if type is same as expected or cannot be determined" />
         </node>
       </node>
@@ -828,8 +831,8 @@
           <node concept="34ab3g" id="3eViXf8tFd3" role="3cqZAp">
             <property role="35gtTG" value="debug" />
             <node concept="2YIFZM" id="3eViXf8tKkg" role="34bqiv">
-              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
               <node concept="Xl_RD" id="3eViXf8tKsy" role="37wK5m">
                 <property role="Xl_RC" value="AbstractParameterFill Scope - contextNode: {0}, contextNode.parent: {1}, contextRole: {2}, position: {3} " />
               </node>
@@ -874,8 +877,8 @@
                   <node concept="34ab3g" id="1jWJ98Hvdnb" role="3cqZAp">
                     <property role="35gtTG" value="debug" />
                     <node concept="2YIFZM" id="1jWJ98HvdG7" role="34bqiv">
-                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                      <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                       <node concept="Xl_RD" id="1jWJ98HvdMM" role="37wK5m">
                         <property role="Xl_RC" value="Looking for declaration: index: {0}, parameters: {1}" />
                       </node>

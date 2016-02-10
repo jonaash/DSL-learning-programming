@@ -2,16 +2,17 @@
 <model ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -22,15 +23,15 @@
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="if8w" ref="r:95397225-9080-48bc-b1aa-0ce7c4f3d2ce(jetbrains.mps.lang.traceable.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)" />
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(org.eddieprogramming.common.support.configuration)" />
     <import index="5ijk" ref="r:f77c2bf1-6f5c-4cb2-b314-a84dd502542e(jetbrains.mps.resolve)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="pz2c" ref="r:2a308ea0-c7e3-4fa5-a624-ad74ee5cfab5(jetbrains.mps.baseLanguage.util)" />
-    <import index="rkgw" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.apache.commons.lang3(org.eddieprogramming.common.lib/org.apache.commons.lang3@java_stub)" />
+    <import index="btm1" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:org.apache.commons.lang3(org.eddieprogramming.common.lib/)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
   </imports>
   <registry>
@@ -216,9 +217,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -249,11 +247,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -339,7 +335,7 @@
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
-      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz" />
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -374,7 +370,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -383,6 +379,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp">
@@ -524,8 +527,8 @@
       <node concept="3clFbS" id="1llnCx2y0TN" role="3clF47">
         <node concept="3cpWs6" id="1llnCx2y0Vk" role="3cqZAp">
           <node concept="2YIFZM" id="1llnCx2y2lI" role="3cqZAk">
-            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-            <ref role="37wK5l" to="e2lb:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
             <node concept="2OqwBi" id="1llnCx2y0Yg" role="37wK5m">
               <node concept="13iPFW" id="1llnCx2y0Vx" role="2Oq$k0" />
               <node concept="3TrcHB" id="1llnCx2y1aV" role="2OqNvi">
@@ -611,7 +614,7 @@
             <property role="1dT_AB" value="Gets node containing default value that is used to initialize variable of this type if it does not have initializer." />
           </node>
         </node>
-        <node concept="x79VA" id="2WqFKNE1H9S" role="x79VK">
+        <node concept="x79VA" id="2WqFKNE1H9S" role="3nqlJM">
           <property role="x79VB" value="node of typed literal with default value" />
         </node>
       </node>
@@ -667,13 +670,13 @@
             <property role="1dT_AB" value="Checks if given type is same as this type." />
           </node>
         </node>
-        <node concept="TUZQ0" id="1BMnhOnqBus" role="TUOzN">
+        <node concept="TUZQ0" id="1BMnhOnqBus" role="3nqlJM">
           <property role="TUZQ4" value="other type" />
           <node concept="zr_55" id="1BMnhOnqBuu" role="zr_5Q">
             <ref role="zr_51" node="1BMnhOnqmiX" resolve="type" />
           </node>
         </node>
-        <node concept="x79VA" id="1BMnhOnqBuv" role="x79VK">
+        <node concept="x79VA" id="1BMnhOnqBuv" role="3nqlJM">
           <property role="x79VB" value="true id types are the same" />
         </node>
       </node>
@@ -1093,23 +1096,23 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="1jWJ98HBsJu" role="3cqZAp">
-          <node concept="3SKWN0" id="1jWJ98HBsN$" role="3SKWNk">
-            <node concept="34ab3g" id="8gmNnrP32A" role="3SKWNf">
-              <property role="35gtTG" value="debug" />
-              <node concept="2YIFZM" id="8gmNnrP450" role="34bqiv">
-                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                <node concept="Xl_RD" id="8gmNnrP4df" role="37wK5m">
-                  <property role="Xl_RC" value="Getting scope variables for command list in {0}.\nVariables:{1}" />
-                </node>
-                <node concept="2OqwBi" id="8gmNnrP4ZM" role="37wK5m">
-                  <node concept="13iPFW" id="8gmNnrP4AQ" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="8gmNnrP5eG" role="2OqNvi" />
-                </node>
-                <node concept="37vLTw" id="8gmNnrP5hg" role="37wK5m">
-                  <ref role="3cqZAo" node="6H9YPQxMmc6" resolve="result" />
-                </node>
+        <node concept="1X3_iC" id="4bZBGVFEOrz" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="8gmNnrP32A" role="8Wnug">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="8gmNnrP450" role="34bqiv">
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+              <node concept="Xl_RD" id="8gmNnrP4df" role="37wK5m">
+                <property role="Xl_RC" value="Getting scope variables for command list in {0}.\nVariables:{1}" />
+              </node>
+              <node concept="2OqwBi" id="8gmNnrP4ZM" role="37wK5m">
+                <node concept="13iPFW" id="8gmNnrP4AQ" role="2Oq$k0" />
+                <node concept="1mfA1w" id="8gmNnrP5eG" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="8gmNnrP5hg" role="37wK5m">
+                <ref role="3cqZAo" node="6H9YPQxMmc6" resolve="result" />
               </node>
             </node>
           </node>
@@ -1149,19 +1152,19 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="aB0Z16MSVA" role="3cqZAp">
-          <node concept="3SKWN0" id="aB0Z16MSVF" role="3SKWNk">
-            <node concept="34ab3g" id="1GufzGWdHPK" role="3SKWNf">
-              <property role="35gtTG" value="debug" />
-              <node concept="2YIFZM" id="1GufzGWdKs9" role="34bqiv">
-                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                <node concept="Xl_RD" id="1GufzGWdKA6" role="37wK5m">
-                  <property role="Xl_RC" value="Getting local variable declaration. child: %s" />
-                </node>
-                <node concept="37vLTw" id="1GufzGWdKQG" role="37wK5m">
-                  <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
-                </node>
+        <node concept="1X3_iC" id="4bZBGVFEOr$" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1GufzGWdHPK" role="8Wnug">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="1GufzGWdKs9" role="34bqiv">
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <node concept="Xl_RD" id="1GufzGWdKA6" role="37wK5m">
+                <property role="Xl_RC" value="Getting local variable declaration. child: %s" />
+              </node>
+              <node concept="37vLTw" id="1GufzGWdKQG" role="37wK5m">
+                <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
               </node>
             </node>
           </node>
@@ -1232,31 +1235,31 @@
             </node>
             <node concept="3clFbJ" id="6FJbaIqgOWg" role="3cqZAp">
               <node concept="3clFbS" id="6FJbaIqgOWh" role="3clFbx">
-                <node concept="3SKdUt" id="aB0Z16MSK9" role="3cqZAp">
-                  <node concept="3SKWN0" id="aB0Z16MSKj" role="3SKWNk">
-                    <node concept="34ab3g" id="1GufzGWdGjH" role="3SKWNf">
-                      <property role="35gtTG" value="debug" />
-                      <node concept="2YIFZM" id="1GufzGWdGD5" role="34bqiv">
-                        <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                        <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                        <node concept="Xl_RD" id="1GufzGWdGDx" role="37wK5m">
-                          <property role="Xl_RC" value="Getting Local variables with child Adding: %s" />
+                <node concept="1X3_iC" id="4bZBGVFEOr_" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="34ab3g" id="1GufzGWdGjH" role="8Wnug">
+                    <property role="35gtTG" value="debug" />
+                    <node concept="2YIFZM" id="1GufzGWdGD5" role="34bqiv">
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <node concept="Xl_RD" id="1GufzGWdGDx" role="37wK5m">
+                        <property role="Xl_RC" value="Getting Local variables with child Adding: %s" />
+                      </node>
+                      <node concept="2OqwBi" id="1GufzGWdHv9" role="37wK5m">
+                        <node concept="2OqwBi" id="1GufzGWdH9w" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1GufzGWdH4n" role="2Oq$k0">
+                            <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
+                            <node concept="37vLTw" id="1GufzGWdGXi" role="1PxMeX">
+                              <ref role="3cqZAo" node="6H9YPQxNr4M" resolve="command" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="1GufzGWdHr_" role="2OqNvi">
+                            <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
+                          </node>
                         </node>
-                        <node concept="2OqwBi" id="1GufzGWdHv9" role="37wK5m">
-                          <node concept="2OqwBi" id="1GufzGWdH9w" role="2Oq$k0">
-                            <node concept="1PxgMI" id="1GufzGWdH4n" role="2Oq$k0">
-                              <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
-                              <node concept="37vLTw" id="1GufzGWdGXi" role="1PxMeX">
-                                <ref role="3cqZAo" node="6H9YPQxNr4M" resolve="command" />
-                              </node>
-                            </node>
-                            <node concept="2qgKlT" id="1GufzGWdHr_" role="2OqNvi">
-                              <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
-                            </node>
-                          </node>
-                          <node concept="3TrcHB" id="1GufzGWdHEY" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
+                        <node concept="3TrcHB" id="1GufzGWdHEY" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
                     </node>
@@ -1308,26 +1311,26 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="1jWJ98HBtC9" role="3cqZAp">
-          <node concept="3SKWN0" id="1jWJ98HBtCi" role="3SKWNk">
-            <node concept="34ab3g" id="8gmNnrP8Zv" role="3SKWNf">
-              <property role="35gtTG" value="debug" />
-              <node concept="2YIFZM" id="8gmNnrP8Zw" role="34bqiv">
-                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <node concept="Xl_RD" id="8gmNnrP8Zx" role="37wK5m">
-                  <property role="Xl_RC" value="Getting scope variables for command list in {0}, child: {1}.\nVariables:{2}" />
-                </node>
-                <node concept="2OqwBi" id="8gmNnrP8Zy" role="37wK5m">
-                  <node concept="13iPFW" id="8gmNnrP8Zz" role="2Oq$k0" />
-                  <node concept="1mfA1w" id="8gmNnrP8Z$" role="2OqNvi" />
-                </node>
-                <node concept="37vLTw" id="8gmNnrPbde" role="37wK5m">
-                  <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
-                </node>
-                <node concept="37vLTw" id="8gmNnrP8Z_" role="37wK5m">
-                  <ref role="3cqZAo" node="6H9YPQxNcNP" resolve="result" />
-                </node>
+        <node concept="1X3_iC" id="4bZBGVFEOrA" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="8gmNnrP8Zv" role="8Wnug">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="8gmNnrP8Zw" role="34bqiv">
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <node concept="Xl_RD" id="8gmNnrP8Zx" role="37wK5m">
+                <property role="Xl_RC" value="Getting scope variables for command list in {0}, child: {1}.\nVariables:{2}" />
+              </node>
+              <node concept="2OqwBi" id="8gmNnrP8Zy" role="37wK5m">
+                <node concept="13iPFW" id="8gmNnrP8Zz" role="2Oq$k0" />
+                <node concept="1mfA1w" id="8gmNnrP8Z$" role="2OqNvi" />
+              </node>
+              <node concept="37vLTw" id="8gmNnrPbde" role="37wK5m">
+                <ref role="3cqZAo" node="6H9YPQxNcNx" resolve="child" />
+              </node>
+              <node concept="37vLTw" id="8gmNnrP8Z_" role="37wK5m">
+                <ref role="3cqZAo" node="6H9YPQxNcNP" resolve="result" />
               </node>
             </node>
           </node>
@@ -1435,13 +1438,13 @@
             <property role="1dT_AB" value=" " />
           </node>
         </node>
-        <node concept="TUZQ0" id="6H9YPQxNcYB" role="TUOzN">
+        <node concept="TUZQ0" id="6H9YPQxNcYB" role="3nqlJM">
           <property role="TUZQ4" value="child node" />
           <node concept="zr_55" id="6H9YPQxNcYD" role="zr_5Q">
             <ref role="zr_51" node="6H9YPQxNcNx" resolve="child" />
           </node>
         </node>
-        <node concept="x79VA" id="6H9YPQxNcYE" role="x79VK">
+        <node concept="x79VA" id="6H9YPQxNcYE" role="3nqlJM">
           <property role="x79VB" value="list of LocalVariableDeclaration that are visible from node child" />
         </node>
       </node>
@@ -1471,22 +1474,22 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="aB0Z16MSkX" role="3cqZAp">
-          <node concept="3SKWN0" id="aB0Z16MSl3" role="3SKWNk">
-            <node concept="34ab3g" id="1GufzGWeFot" role="3SKWNf">
-              <property role="35gtTG" value="debug" />
-              <node concept="2YIFZM" id="1GufzGWeFou" role="34bqiv">
-                <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <node concept="Xl_RD" id="1GufzGWeFov" role="37wK5m">
-                  <property role="Xl_RC" value="Getting local variable declaration - role: %s, index: %s" />
-                </node>
-                <node concept="37vLTw" id="1GufzGWeFow" role="37wK5m">
-                  <ref role="3cqZAo" node="1GufzGWeFpx" resolve="role" />
-                </node>
-                <node concept="37vLTw" id="1GufzGWeK8P" role="37wK5m">
-                  <ref role="3cqZAo" node="1GufzGWeI0C" resolve="index" />
-                </node>
+        <node concept="1X3_iC" id="4bZBGVFEOrB" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1GufzGWeFot" role="8Wnug">
+            <property role="35gtTG" value="debug" />
+            <node concept="2YIFZM" id="1GufzGWeFou" role="34bqiv">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <node concept="Xl_RD" id="1GufzGWeFov" role="37wK5m">
+                <property role="Xl_RC" value="Getting local variable declaration - role: %s, index: %s" />
+              </node>
+              <node concept="37vLTw" id="1GufzGWeFow" role="37wK5m">
+                <ref role="3cqZAo" node="1GufzGWeFpx" resolve="role" />
+              </node>
+              <node concept="37vLTw" id="1GufzGWeK8P" role="37wK5m">
+                <ref role="3cqZAo" node="1GufzGWeI0C" resolve="index" />
               </node>
             </node>
           </node>
@@ -1515,31 +1518,31 @@
             </node>
             <node concept="3clFbJ" id="1GufzGWeFp3" role="3cqZAp">
               <node concept="3clFbS" id="1GufzGWeFp4" role="3clFbx">
-                <node concept="3SKdUt" id="aB0Z16MS$I" role="3cqZAp">
-                  <node concept="3SKWN0" id="aB0Z16MS$S" role="3SKWNk">
-                    <node concept="34ab3g" id="1GufzGWeFp5" role="3SKWNf">
-                      <property role="35gtTG" value="debug" />
-                      <node concept="2YIFZM" id="1GufzGWeFp6" role="34bqiv">
-                        <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
-                        <ref role="37wK5l" to="e2lb:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                        <node concept="Xl_RD" id="1GufzGWeFp7" role="37wK5m">
-                          <property role="Xl_RC" value="Getting Local variables with index. Adding: %s" />
+                <node concept="1X3_iC" id="4bZBGVFEOrC" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="34ab3g" id="1GufzGWeFp5" role="8Wnug">
+                    <property role="35gtTG" value="debug" />
+                    <node concept="2YIFZM" id="1GufzGWeFp6" role="34bqiv">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <node concept="Xl_RD" id="1GufzGWeFp7" role="37wK5m">
+                        <property role="Xl_RC" value="Getting Local variables with index. Adding: %s" />
+                      </node>
+                      <node concept="2OqwBi" id="1GufzGWeFp8" role="37wK5m">
+                        <node concept="2OqwBi" id="1GufzGWeFp9" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1GufzGWeFpa" role="2Oq$k0">
+                            <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
+                            <node concept="37vLTw" id="1GufzGWeTtn" role="1PxMeX">
+                              <ref role="3cqZAo" node="1GufzGWeS8g" resolve="command" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="1GufzGWeFpc" role="2OqNvi">
+                            <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
+                          </node>
                         </node>
-                        <node concept="2OqwBi" id="1GufzGWeFp8" role="37wK5m">
-                          <node concept="2OqwBi" id="1GufzGWeFp9" role="2Oq$k0">
-                            <node concept="1PxgMI" id="1GufzGWeFpa" role="2Oq$k0">
-                              <ref role="1PxNhF" to="dyrx:6FJbaIqgGvS" resolve="ILocalVariableDeclarationCommand" />
-                              <node concept="37vLTw" id="1GufzGWeTtn" role="1PxMeX">
-                                <ref role="3cqZAo" node="1GufzGWeS8g" resolve="command" />
-                              </node>
-                            </node>
-                            <node concept="2qgKlT" id="1GufzGWeFpc" role="2OqNvi">
-                              <ref role="37wK5l" node="6FJbaIqgGER" resolve="getDeclaration" />
-                            </node>
-                          </node>
-                          <node concept="3TrcHB" id="1GufzGWeFpd" role="2OqNvi">
-                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                          </node>
+                        <node concept="3TrcHB" id="1GufzGWeFpd" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                         </node>
                       </node>
                     </node>
@@ -1705,13 +1708,13 @@
             <property role="1dT_AB" value=" " />
           </node>
         </node>
-        <node concept="TUZQ0" id="1GufzGWeFq9" role="TUOzN">
+        <node concept="TUZQ0" id="1GufzGWeFq9" role="3nqlJM">
           <property role="TUZQ4" value="child node" />
           <node concept="zr_55" id="1GufzGWeFqa" role="zr_5Q">
             <ref role="zr_51" node="1GufzGWeFpx" resolve="role" />
           </node>
         </node>
-        <node concept="x79VA" id="1GufzGWeFqb" role="x79VK">
+        <node concept="x79VA" id="1GufzGWeFqb" role="3nqlJM">
           <property role="x79VB" value="list of LocalVariableDeclaration that are visible from node child" />
         </node>
       </node>
@@ -1770,25 +1773,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="1jWJ98HBuE3" role="3cqZAp">
-              <node concept="3SKWN0" id="1jWJ98HBuEa" role="3SKWNk">
-                <node concept="34ab3g" id="8gmNnrPdzl" role="3SKWNf">
-                  <property role="35gtTG" value="debug" />
-                  <node concept="2YIFZM" id="8gmNnrPdzm" role="34bqiv">
-                    <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                    <node concept="Xl_RD" id="8gmNnrPdzn" role="37wK5m">
-                      <property role="Xl_RC" value="Getting scope for kind: {0}, child: {1}. Result in recursive scope: {2}" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPdzo" role="37wK5m">
-                      <ref role="3cqZAo" node="6H9YPQxN0NP" resolve="kind" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPdzp" role="37wK5m">
-                      <ref role="3cqZAo" node="6H9YPQxN0NR" resolve="child" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPdzq" role="37wK5m">
-                      <ref role="3cqZAo" node="8gmNnrPb_K" resolve="resulScope" />
-                    </node>
+            <node concept="1X3_iC" id="4bZBGVFEOrD" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="8gmNnrPdzl" role="8Wnug">
+                <property role="35gtTG" value="debug" />
+                <node concept="2YIFZM" id="8gmNnrPdzm" role="34bqiv">
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                  <node concept="Xl_RD" id="8gmNnrPdzn" role="37wK5m">
+                    <property role="Xl_RC" value="Getting scope for kind: {0}, child: {1}. Result in recursive scope: {2}" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPdzo" role="37wK5m">
+                    <ref role="3cqZAo" node="6H9YPQxN0NP" resolve="kind" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPdzp" role="37wK5m">
+                    <ref role="3cqZAo" node="6H9YPQxN0NR" resolve="child" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPdzq" role="37wK5m">
+                    <ref role="3cqZAo" node="8gmNnrPb_K" resolve="resulScope" />
                   </node>
                 </node>
               </node>
@@ -1805,25 +1808,25 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="1jWJ98HBuBQ" role="3cqZAp">
-                <node concept="3SKWN0" id="1jWJ98HBuBX" role="3SKWNk">
-                  <node concept="34ab3g" id="8gmNnrPcTg" role="3SKWNf">
-                    <property role="35gtTG" value="debug" />
-                    <node concept="2YIFZM" id="8gmNnrPcXi" role="34bqiv">
-                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                      <node concept="Xl_RD" id="8gmNnrPcXG" role="37wK5m">
-                        <property role="Xl_RC" value="Getting scope for kind: {0}, child: {1}. Result in parent scope: {2}" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPdgZ" role="37wK5m">
-                        <ref role="3cqZAo" node="6H9YPQxN0NP" resolve="kind" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPdkt" role="37wK5m">
-                        <ref role="3cqZAo" node="6H9YPQxN0NR" resolve="child" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPdns" role="37wK5m">
-                        <ref role="3cqZAo" node="8gmNnrPb_K" resolve="resulScope" />
-                      </node>
+              <node concept="1X3_iC" id="4bZBGVFEOrE" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="34ab3g" id="8gmNnrPcTg" role="8Wnug">
+                  <property role="35gtTG" value="debug" />
+                  <node concept="2YIFZM" id="8gmNnrPcXi" role="34bqiv">
+                    <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                    <node concept="Xl_RD" id="8gmNnrPcXG" role="37wK5m">
+                      <property role="Xl_RC" value="Getting scope for kind: {0}, child: {1}. Result in parent scope: {2}" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPdgZ" role="37wK5m">
+                      <ref role="3cqZAo" node="6H9YPQxN0NP" resolve="kind" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPdkt" role="37wK5m">
+                      <ref role="3cqZAo" node="6H9YPQxN0NR" resolve="child" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPdns" role="37wK5m">
+                      <ref role="3cqZAo" node="8gmNnrPb_K" resolve="resulScope" />
                     </node>
                   </node>
                 </node>
@@ -1918,28 +1921,28 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="1jWJ98HBuz6" role="3cqZAp">
-              <node concept="3SKWN0" id="1jWJ98HBuze" role="3SKWNk">
-                <node concept="34ab3g" id="8gmNnrPecX" role="3SKWNf">
-                  <property role="35gtTG" value="debug" />
-                  <node concept="2YIFZM" id="8gmNnrPecY" role="34bqiv">
-                    <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                    <node concept="Xl_RD" id="8gmNnrPecZ" role="37wK5m">
-                      <property role="Xl_RC" value="Getting scope for kind: {0}, role: {1}, index: {2}. Result in parent scope: {3}" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPed0" role="37wK5m">
-                      <ref role="3cqZAo" node="1GufzGWf66m" resolve="kind" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPfms" role="37wK5m">
-                      <ref role="3cqZAo" node="1GufzGWf66o" resolve="role" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPfpG" role="37wK5m">
-                      <ref role="3cqZAo" node="1GufzGWf66q" resolve="index" />
-                    </node>
-                    <node concept="37vLTw" id="8gmNnrPeVA" role="37wK5m">
-                      <ref role="3cqZAo" node="8gmNnrPei5" resolve="resulScope" />
-                    </node>
+            <node concept="1X3_iC" id="4bZBGVFEOrF" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="8gmNnrPecX" role="8Wnug">
+                <property role="35gtTG" value="debug" />
+                <node concept="2YIFZM" id="8gmNnrPecY" role="34bqiv">
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                  <node concept="Xl_RD" id="8gmNnrPecZ" role="37wK5m">
+                    <property role="Xl_RC" value="Getting scope for kind: {0}, role: {1}, index: {2}. Result in parent scope: {3}" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPed0" role="37wK5m">
+                    <ref role="3cqZAo" node="1GufzGWf66m" resolve="kind" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPfms" role="37wK5m">
+                    <ref role="3cqZAo" node="1GufzGWf66o" resolve="role" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPfpG" role="37wK5m">
+                    <ref role="3cqZAo" node="1GufzGWf66q" resolve="index" />
+                  </node>
+                  <node concept="37vLTw" id="8gmNnrPeVA" role="37wK5m">
+                    <ref role="3cqZAo" node="8gmNnrPei5" resolve="resulScope" />
                   </node>
                 </node>
               </node>
@@ -1966,28 +1969,28 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="1jWJ98HBuvV" role="3cqZAp">
-                <node concept="3SKWN0" id="1jWJ98HBuw3" role="3SKWNk">
-                  <node concept="34ab3g" id="8gmNnrPfL0" role="3SKWNf">
-                    <property role="35gtTG" value="debug" />
-                    <node concept="2YIFZM" id="8gmNnrPfL1" role="34bqiv">
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <node concept="Xl_RD" id="8gmNnrPfL2" role="37wK5m">
-                        <property role="Xl_RC" value="Getting scope for kind: {0}, role: {1}, index: {2}. Result in recursive scope: {3}" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPfL3" role="37wK5m">
-                        <ref role="3cqZAo" node="1GufzGWf66m" resolve="kind" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPfL4" role="37wK5m">
-                        <ref role="3cqZAo" node="1GufzGWf66o" resolve="role" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPfL5" role="37wK5m">
-                        <ref role="3cqZAo" node="1GufzGWf66q" resolve="index" />
-                      </node>
-                      <node concept="37vLTw" id="8gmNnrPfL6" role="37wK5m">
-                        <ref role="3cqZAo" node="8gmNnrPei5" resolve="resulScope" />
-                      </node>
+              <node concept="1X3_iC" id="4bZBGVFEOrG" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="34ab3g" id="8gmNnrPfL0" role="8Wnug">
+                  <property role="35gtTG" value="debug" />
+                  <node concept="2YIFZM" id="8gmNnrPfL1" role="34bqiv">
+                    <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                    <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <node concept="Xl_RD" id="8gmNnrPfL2" role="37wK5m">
+                      <property role="Xl_RC" value="Getting scope for kind: {0}, role: {1}, index: {2}. Result in recursive scope: {3}" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPfL3" role="37wK5m">
+                      <ref role="3cqZAo" node="1GufzGWf66m" resolve="kind" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPfL4" role="37wK5m">
+                      <ref role="3cqZAo" node="1GufzGWf66o" resolve="role" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPfL5" role="37wK5m">
+                      <ref role="3cqZAo" node="1GufzGWf66q" resolve="index" />
+                    </node>
+                    <node concept="37vLTw" id="8gmNnrPfL6" role="37wK5m">
+                      <ref role="3cqZAo" node="8gmNnrPei5" resolve="resulScope" />
                     </node>
                   </node>
                 </node>
@@ -2949,8 +2952,8 @@
         <node concept="34ab3g" id="3uaXG0jx731" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="2YIFZM" id="3uaXG0jx77s" role="34bqiv">
-            <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+            <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
             <node concept="Xl_RD" id="3uaXG0jx780" role="37wK5m">
               <property role="Xl_RC" value="All definitions: {0}" />
             </node>
@@ -3096,8 +3099,8 @@
       <node concept="3clFbS" id="1llnCx2yHD$" role="3clF47">
         <node concept="3cpWs6" id="1llnCx2yHF5" role="3cqZAp">
           <node concept="2YIFZM" id="1llnCx2yHFy" role="3cqZAk">
-            <ref role="37wK5l" to="e2lb:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-            <ref role="1Pybhc" to="e2lb:~String" resolve="String" />
+            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
             <node concept="2OqwBi" id="1llnCx2yHPB" role="37wK5m">
               <node concept="13iPFW" id="1llnCx2yHFV" role="2Oq$k0" />
               <node concept="3TrcHB" id="1llnCx2yIfn" role="2OqNvi">
@@ -3335,7 +3338,7 @@
             <property role="1dT_AB" value="Gets node containing default value that is used to initialize variable of this type if it does not heva initializer." />
           </node>
         </node>
-        <node concept="x79VA" id="3hBhvFT4Fq9" role="x79VK">
+        <node concept="x79VA" id="3hBhvFT4Fq9" role="3nqlJM">
           <property role="x79VB" value="node of typed literal with default value" />
         </node>
       </node>
@@ -3531,11 +3534,11 @@
           <node concept="3cpWsn" id="6pJoTiqehlU" role="3cpWs9">
             <property role="TrG5h" value="sb" />
             <node concept="3uibUv" id="6pJoTiqehlV" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~StringBuilder" resolve="StringBuilder" />
+              <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
             </node>
             <node concept="2ShNRf" id="6pJoTiqehmh" role="33vP2m">
               <node concept="1pGfFk" id="6pJoTiqehqC" role="2ShVmc">
-                <ref role="37wK5l" to="e2lb:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
+                <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
               </node>
             </node>
           </node>
@@ -3546,7 +3549,7 @@
               <ref role="3cqZAo" node="6pJoTiqehlU" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqeivy" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="2OqwBi" id="6pJoTiqeiWc" role="37wK5m">
                 <node concept="13iPFW" id="6pJoTiqeiwf" role="2Oq$k0" />
                 <node concept="3TrcHB" id="6pJoTiqejpX" role="2OqNvi">
@@ -3562,7 +3565,7 @@
               <ref role="3cqZAo" node="6pJoTiqehlU" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqek6$" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="BsUDl" id="6pJoTiqfEtb" role="37wK5m">
                 <ref role="37wK5l" node="6pJoTiqf$7w" resolve="formatMethodParameters" />
                 <node concept="2OqwBi" id="6pJoTiqfE$M" role="37wK5m">
@@ -3581,7 +3584,7 @@
               <ref role="3cqZAo" node="6pJoTiqehlU" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqelr2" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="BsUDl" id="6pJoTiqfF84" role="37wK5m">
                 <ref role="37wK5l" node="6pJoTiqfkJr" resolve="formatMethodReturn" />
                 <node concept="2OqwBi" id="6pJoTiqfFfp" role="37wK5m">
@@ -3600,7 +3603,7 @@
               <ref role="3cqZAo" node="6pJoTiqehlU" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqehXi" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>
@@ -3701,19 +3704,19 @@
             <property role="1dT_AB" value="Adds Parameters into the scope." />
           </node>
         </node>
-        <node concept="TUZQ0" id="7KcPMNJ3HMV" role="TUOzN">
+        <node concept="TUZQ0" id="7KcPMNJ3HMV" role="3nqlJM">
           <property role="TUZQ4" value="kind" />
           <node concept="zr_55" id="7KcPMNJ3HMX" role="zr_5Q">
             <ref role="zr_51" node="7KcPMNJ2d5U" resolve="kind" />
           </node>
         </node>
-        <node concept="TUZQ0" id="7KcPMNJ3HMY" role="TUOzN">
+        <node concept="TUZQ0" id="7KcPMNJ3HMY" role="3nqlJM">
           <property role="TUZQ4" value="child" />
           <node concept="zr_55" id="7KcPMNJ3HN0" role="zr_5Q">
             <ref role="zr_51" node="7KcPMNJ2d5W" resolve="child" />
           </node>
         </node>
-        <node concept="x79VA" id="7KcPMNJ3HN1" role="x79VK">
+        <node concept="x79VA" id="7KcPMNJ3HN1" role="3nqlJM">
           <property role="x79VB" value="scope with added for cycle variable" />
         </node>
       </node>
@@ -3820,11 +3823,11 @@
           <node concept="3cpWsn" id="6pJoTiqdnV$" role="3cpWs9">
             <property role="TrG5h" value="sb" />
             <node concept="3uibUv" id="6pJoTiqdnV_" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~StringBuilder" resolve="StringBuilder" />
+              <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
             </node>
             <node concept="2ShNRf" id="6pJoTiqdnVT" role="33vP2m">
               <node concept="1pGfFk" id="6pJoTiqdnVS" role="2ShVmc">
-                <ref role="37wK5l" to="e2lb:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
+                <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;()" resolve="StringBuilder" />
               </node>
             </node>
           </node>
@@ -3835,7 +3838,7 @@
               <ref role="3cqZAo" node="6pJoTiqdnV$" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqdvpo" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="Xl_RD" id="6pJoTiqdvpP" role="37wK5m">
                 <property role="Xl_RC" value="(" />
               </node>
@@ -3850,7 +3853,7 @@
                   <ref role="3cqZAo" node="6pJoTiqdnV$" resolve="sb" />
                 </node>
                 <node concept="liA8E" id="6pJoTiqdU3_" role="2OqNvi">
-                  <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
                   <node concept="2OqwBi" id="6pJoTiqdRpU" role="37wK5m">
                     <node concept="2OqwBi" id="6pJoTiqdzL2" role="2Oq$k0">
                       <node concept="3$u5V9" id="6pJoTiqd_uM" role="2OqNvi">
@@ -3912,7 +3915,7 @@
               <ref role="3cqZAo" node="6pJoTiqdnV$" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqdw1t" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String):java.lang.StringBuilder" resolve="append" />
               <node concept="Xl_RD" id="6pJoTiqdw1U" role="37wK5m">
                 <property role="Xl_RC" value=")" />
               </node>
@@ -3925,7 +3928,7 @@
               <ref role="3cqZAo" node="6pJoTiqdnV$" resolve="sb" />
             </node>
             <node concept="liA8E" id="6pJoTiqe0LO" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~StringBuilder.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~StringBuilder.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>
@@ -4088,7 +4091,7 @@
             <property role="1dT_AB" value="Result of this method should be ignored when the variable is mutable." />
           </node>
         </node>
-        <node concept="x79VA" id="2FICFVq5Kad" role="x79VK">
+        <node concept="x79VA" id="2FICFVq5Kad" role="3nqlJM">
           <property role="x79VB" value="true if it is in place where immutable can still be assigned" />
         </node>
       </node>
@@ -4333,13 +4336,13 @@
         <node concept="TZ5HA" id="1BMnhOns6KO" role="TZ5H$">
           <node concept="1dT_AC" id="1BMnhOns6KP" role="1dT_Ay" />
         </node>
-        <node concept="TUZQ0" id="1BMnhOns6Or" role="TUOzN">
+        <node concept="TUZQ0" id="1BMnhOns6Or" role="3nqlJM">
           <property role="TUZQ4" value="other type" />
           <node concept="zr_55" id="1BMnhOns6Os" role="zr_5Q">
             <ref role="zr_51" node="1BMnhOns6Fo" resolve="other" />
           </node>
         </node>
-        <node concept="x79VA" id="1BMnhOns6KT" role="x79VK">
+        <node concept="x79VA" id="1BMnhOns6KT" role="3nqlJM">
           <property role="x79VB" value="wheather types are the same" />
         </node>
       </node>
@@ -4427,7 +4430,7 @@
             <property role="1dT_AB" value="Gets node instance representing this type." />
           </node>
         </node>
-        <node concept="x79VA" id="1BMnhOnqBvs" role="x79VK">
+        <node concept="x79VA" id="1BMnhOnqBvs" role="3nqlJM">
           <property role="x79VB" value="type node instace" />
         </node>
       </node>
@@ -4630,7 +4633,7 @@
             <property role="1dT_AB" value="Otherwise returns null." />
           </node>
         </node>
-        <node concept="x79VA" id="5xGSFEu9T9z" role="x79VK">
+        <node concept="x79VA" id="5xGSFEu9T9z" role="3nqlJM">
           <property role="x79VB" value="its declaration if it is variable reference" />
         </node>
       </node>
@@ -4666,7 +4669,7 @@
             <property role="1dT_AB" value="Otherwise returns null." />
           </node>
         </node>
-        <node concept="x79VA" id="442XwrATvlQ" role="x79VK">
+        <node concept="x79VA" id="442XwrATvlQ" role="3nqlJM">
           <property role="x79VB" value="its reference if it is variable reference" />
         </node>
       </node>
@@ -5028,8 +5031,8 @@
         <node concept="34ab3g" id="42iL3VZXYeP" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="2YIFZM" id="42iL3VZXYte" role="34bqiv">
-            <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-            <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+            <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
             <node concept="Xl_RD" id="42iL3VZXYtf" role="37wK5m">
               <property role="Xl_RC" value="Resolving reference: {0} of node: {1}" />
             </node>
@@ -5064,11 +5067,11 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="42iL3VZUNnW" role="2OqNvi">
-                            <ref role="37wK5l" to="ec5l:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                            <ref role="37wK5l" to="mhbf:~SNode.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
                           </node>
                         </node>
                         <node concept="liA8E" id="42iL3VZUNDW" role="2OqNvi">
-                          <ref role="37wK5l" to="ec5l:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+                          <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                         </node>
                       </node>
                     </node>
@@ -5081,8 +5084,8 @@
                     <property role="35gtTG" value="error" />
                     <property role="34fQS0" value="true" />
                     <node concept="2YIFZM" id="42iL3VZW9hg" role="34bqiv">
-                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                      <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                       <node concept="Xl_RD" id="42iL3VZW9hh" role="37wK5m">
                         <property role="Xl_RC" value="Error during resolving reference: {0} of node: {1}" />
                       </node>
@@ -5101,7 +5104,7 @@
                 <node concept="3cpWsn" id="42iL3VZW58M" role="TDEfY">
                   <property role="TrG5h" value="npe" />
                   <node concept="3uibUv" id="42iL3VZW5jh" role="1tU5fm">
-                    <ref role="3uigEE" to="e2lb:~NullPointerException" resolve="NullPointerException" />
+                    <ref role="3uigEE" to="wyt6:~NullPointerException" resolve="NullPointerException" />
                   </node>
                 </node>
               </node>
@@ -5272,8 +5275,8 @@
                 <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="2YIFZM" id="42iL3VZW5Ys" role="34bqiv">
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
                   <node concept="Xl_RD" id="42iL3VZW5Yt" role="37wK5m">
                     <property role="Xl_RC" value="Error during resolving descendant references of node: {0}" />
                   </node>
@@ -5289,7 +5292,7 @@
             <node concept="3cpWsn" id="42iL3VZW5Yv" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="42iL3VZW5Yw" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
           </node>
@@ -5381,8 +5384,8 @@
         <node concept="34ab3g" id="4y6FdzEoegc" role="3cqZAp">
           <property role="35gtTG" value="debug" />
           <node concept="2YIFZM" id="4y6FdzEoelG" role="34bqiv">
-            <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-            <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+            <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+            <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
             <node concept="Xl_RD" id="4y6FdzEoenm" role="37wK5m">
               <property role="Xl_RC" value="Copying root node: {0}" />
             </node>

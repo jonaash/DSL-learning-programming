@@ -2,7 +2,7 @@
 <model ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:84a0b655-9786-4f49-b0c7-be5e4af22b79(KarelBasic/org.eddieprogramming.core.EddieBasic.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -12,7 +12,7 @@
     <import index="758v" ref="r:491f3992-c1ea-43a0-9484-780e8244a773(org.eddieprogramming.dsl.RobotKarel.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -280,7 +280,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="7_uVVPcJluI" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                         <node concept="2OqwBi" id="7_uVVPcJlQV" role="37wK5m">
                           <node concept="37vLTw" id="7_uVVPcJlM_" role="2Oq$k0">
                             <ref role="3cqZAo" node="5eWJqD2thQS" resolve="it" />
@@ -400,7 +400,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="5eWJqD2tpDU" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~String.matches(java.lang.String):boolean" resolve="matches" />
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String):boolean" resolve="matches" />
                 <node concept="Xl_RD" id="5eWJqD2tpDV" role="37wK5m">
                   <property role="Xl_RC" value="[a-zA-Z0-9_ ]+" />
                 </node>
@@ -975,7 +975,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="4rigtwtl6q9" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                        <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                         <node concept="2OqwBi" id="4rigtwtl6IC" role="37wK5m">
                           <node concept="37vLTw" id="4rigtwtl6zL" role="2Oq$k0">
                             <ref role="3cqZAo" node="4rigtwtl4q5" resolve="it" />

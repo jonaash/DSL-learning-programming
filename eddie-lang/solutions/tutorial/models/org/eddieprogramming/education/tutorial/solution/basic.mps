@@ -2,9 +2,9 @@
 <model ref="r:d64793bc-0b3a-4cfa-b701-0477fd0960e6(org.eddieprogramming.education.tutorial.solution.basic)">
   <persistence version="9" />
   <languages>
-    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="-1" />
-    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="-1" />
-    <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="-1" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
+    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="0" />
+    <use id="53b38693-ceee-4191-9779-c7bca6c13739" name="org.eddieprogramming.core.EddieVariables" version="0" />
   </languages>
   <imports>
     <import index="er23" ref="r:57011dfa-a184-485a-bdfa-fe8ae8298951(org.eddieprogramming.education.tutorial.definition.basic)" />

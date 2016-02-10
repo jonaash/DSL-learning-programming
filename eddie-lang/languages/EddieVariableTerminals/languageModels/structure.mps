@@ -2,7 +2,7 @@
 <model ref="r:020038ea-347c-4e40-ac91-9abd91dd243a(org.eddieprogramming.dsl.EddieVariableTerminals.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +15,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
@@ -41,6 +42,7 @@
     <property role="TrG5h" value="IsTerminal" />
     <property role="34LRSv" value="available" />
     <property role="R4oN_" value="checks if there is terminal of given type" />
+    <property role="1pbfSe" value="1072362943" />
     <ref role="1TJDcQ" node="3KfICq41kYX" resolve="TerminalExpression" />
   </node>
   <node concept="1TIwiD" id="3KfICq41kYW">
@@ -48,6 +50,7 @@
     <property role="TrG5h" value="ReadTerminal" />
     <property role="34LRSv" value="read" />
     <property role="R4oN_" value="read a value from the terminal" />
+    <property role="1pbfSe" value="1072362942" />
     <ref role="1TJDcQ" node="3KfICq41kYX" resolve="TerminalExpression" />
   </node>
   <node concept="1TIwiD" id="3KfICq41kYX">
@@ -55,6 +58,7 @@
     <property role="3GE5qa" value="" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="1072362941" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="3KfICq41kYY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -68,6 +72,7 @@
     <property role="TrG5h" value="WriteTerminal" />
     <property role="34LRSv" value="write" />
     <property role="R4oN_" value="write a value to the terminal" />
+    <property role="1pbfSe" value="1072362939" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3KfICq41kZ0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

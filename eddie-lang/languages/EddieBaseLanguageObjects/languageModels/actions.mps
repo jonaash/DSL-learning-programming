@@ -2,18 +2,18 @@
 <model ref="r:2272391c-0423-4927-955a-567b7aa11603(org.eddieprogramming.support.EddieBaseLanguageObjects.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(org.eddieprogramming.core.EddieObjects.structure)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(org.eddieprogramming.core.EddieObjects.behavior)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
-    <import index="3lwp" ref="r:6256a5fa-b0ff-4ddf-b639-59eb49668d67(org.eddieprogramming.support.EddieBaseLanguageObjects.behavior)" implicit="true" />
     <import index="gkvc" ref="r:d2196699-c903-48ce-9a8d-33b0b821104f(org.eddieprogramming.support.EddieBaseLanguageObjects.structure)" implicit="true" />
+    <import index="3lwp" ref="r:6256a5fa-b0ff-4ddf-b639-59eb49668d67(org.eddieprogramming.support.EddieBaseLanguageObjects.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -173,8 +173,8 @@
               <node concept="34ab3g" id="3eViXf8syoY" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="2YIFZM" id="3eViXf8sB_S" role="34bqiv">
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
                   <node concept="Xl_RD" id="3eViXf8sBDC" role="37wK5m">
                     <property role="Xl_RC" value="Creating child node parameterObject: {0}, currentTargetNode: {1}, parentNode: [2}, pattern: {3}" />
                   </node>
@@ -313,8 +313,8 @@
               <node concept="34ab3g" id="2xfsEoBTYGN" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="2YIFZM" id="2xfsEoBTZkV" role="34bqiv">
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="2xfsEoBTZyp" role="37wK5m">
                     <property role="Xl_RC" value="Parent: {0}" />
                   </node>
@@ -346,8 +346,8 @@
                   <node concept="34ab3g" id="2xfsEoBU1ce" role="3cqZAp">
                     <property role="35gtTG" value="info" />
                     <node concept="2YIFZM" id="2xfsEoBU1cf" role="34bqiv">
-                      <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                      <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                      <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                      <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                       <node concept="Xl_RD" id="2xfsEoBU1cg" role="37wK5m">
                         <property role="Xl_RC" value="blSingleton {0}" />
                       </node>

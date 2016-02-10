@@ -2,10 +2,10 @@
 <model ref="r:49337efa-af10-470b-b029-65c5304d35be(org.eddieprogramming.core.EddieFunctions.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="-1" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,9 +14,9 @@
     <import index="4646" ref="r:0be7748d-86d2-4400-b919-9ab5a29df1ce(org.eddieprogramming.core.EddieVariables.generator.template.main@generator)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="a5m" ref="r:b674d8d8-0345-47dd-9b30-8c66bd462609(org.eddieprogramming.core.EddieFunctions.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -557,7 +557,7 @@
           <node concept="3cpWsn" id="6pJoTiq9Eya" role="3cpWs9">
             <property role="TrG5h" value="s" />
             <node concept="3uibUv" id="6pJoTiq9Eyb" role="1tU5fm">
-              <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
           </node>
         </node>
@@ -567,7 +567,7 @@
               <ref role="3cqZAo" node="6pJoTiq9Eya" resolve="s" />
             </node>
             <node concept="liA8E" id="6pJoTiq9EXa" role="2OqNvi">
-              <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+              <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
               <node concept="3cmrfG" id="6pJoTiq9EXH" role="37wK5m">
                 <property role="3cmrfH" value="5" />
                 <node concept="raruj" id="6pJoTiq9F4J" role="lGtFl" />
@@ -636,7 +636,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="4y6FdzElK$J" role="2OqNvi">
-                <ref role="37wK5l" to="e2lb:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="3cmrfG" id="4y6FdzElKLW" role="37wK5m">
                   <property role="3cmrfH" value="1" />
                   <node concept="1WS0z7" id="4y6FdzElKLX" role="lGtFl">

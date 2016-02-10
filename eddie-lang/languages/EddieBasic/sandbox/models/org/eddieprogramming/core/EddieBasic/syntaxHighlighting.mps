@@ -2,7 +2,7 @@
 <model ref="r:b28248e3-387e-43cb-9525-1e427905990c(org.eddieprogramming.core.EddieBasic.syntaxHighlighting)">
   <persistence version="9" />
   <languages>
-    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="-1" />
+    <use id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel" version="0" />
     <use id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
     <use id="4caf0310-491e-41f5-8a9b-2006b3a94898" name="jetbrains.mps.execution.util" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -261,14 +261,14 @@
               <property role="36Kqnr" value="2" />
             </node>
             <node concept="3dtAta" id="2FICFVq5svO" role="3527ZY">
-              <ref role="hRIc0" node="2FICFVq5eoD" resolve="count marks" />
+              <ref role="hRIc0" node="2FICFVq5eoD" resolve="countMarks" />
             </node>
           </node>
         </node>
       </node>
       <node concept="3dudH9" id="2FICFVq5szZ" role="3jGSnO">
         <node concept="3dtAta" id="2FICFVq5s$2" role="3dudC3">
-          <ref role="hRIc0" node="2FICFVq5sxc" resolve="put marks" />
+          <ref role="hRIc0" node="2FICFVq5sxc" resolve="putMarks" />
           <node concept="FiVY1" id="2FICFVq5s$3" role="3WjpkI">
             <ref role="3WiQSc" node="2FICFVq5sxZ" resolve="count" />
             <node concept="AE91N" id="2FICFVq5s$T" role="2jzNHB">
@@ -342,7 +342,7 @@
       </node>
     </node>
     <node concept="3dtAtn" id="2FICFVq5eoD" role="sZtrN">
-      <property role="TrG5h" value="count marks" />
+      <property role="TrG5h" value="countMarks" />
       <node concept="36MCER" id="2FICFVq5eoX" role="2jg$Xp" />
       <node concept="3jGSmg" id="2FICFVq5eoJ" role="hRHZh">
         <node concept="36Mw20" id="2FICFVq5eJK" role="3jGSnO">
@@ -408,7 +408,7 @@
       </node>
     </node>
     <node concept="3dtAtn" id="2FICFVq5sxc" role="sZtrN">
-      <property role="TrG5h" value="put marks" />
+      <property role="TrG5h" value="putMarks" />
       <node concept="3dtAsP" id="2FICFVq5sxd" role="2jg$Xp" />
       <node concept="3jGSmg" id="2FICFVq5sxi" role="hRHZh">
         <node concept="17JERQ" id="2FICFVq5syd" role="3jGSnO">

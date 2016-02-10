@@ -2,22 +2,22 @@
 <model ref="1a535062-6f15-43ba-ab54-1c6e88a58a51/r:46109187-354b-46d6-a86f-290a695b2a37(ViewPlugin/org.eddieprogramming.ide.viewPlugin.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(org.eddieprogramming.common.support.configuration)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <import index="dbrf" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" />
-    <import index="gj7t" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#com.googlecode.tinydi(GuiLib/com.googlecode.tinydi@java_stub)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="mwtc" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:com.googlecode.tinydi(GuiLib/)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)" />
-    <import index="fi19" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.eddieprogramming.gui.view(org.eddieprogramming.common.lib/org.eddieprogramming.gui.view@java_stub)" />
-    <import index="9bba" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/f:java_stub#9e2adce0-3032-497b-bf7e-e4b747a76a49#org.eddieprogramming.gui(org.eddieprogramming.common.lib/org.eddieprogramming.gui@java_stub)" />
-    <import index="jwd7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.tools(MPS.Platform/jetbrains.mps.ide.tools@java_stub)" implicit="true" />
+    <import index="upus" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:org.eddieprogramming.gui.view(org.eddieprogramming.common.lib/)" />
+    <import index="tkgf" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:org.eddieprogramming.gui(org.eddieprogramming.common.lib/)" />
+    <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -193,10 +193,10 @@
                     <ref role="3cqZAo" to="5htl:pLBRfXAk9d" resolve="RMI_ADDRESS" />
                   </node>
                   <node concept="3VsKOn" id="pLBRfXAUFS" role="37wK5m">
-                    <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+                    <ref role="3VsUkX" to="wyt6:~String" resolve="String" />
                   </node>
                   <node concept="3uibUv" id="1LkA4kRgE3T" role="3PaCim">
-                    <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                    <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                   </node>
                 </node>
               </node>
@@ -213,10 +213,10 @@
                     <ref role="1PxDUh" to="5htl:pLBRfXAk8U" resolve="ParameterKeys" />
                   </node>
                   <node concept="3VsKOn" id="pLBRfXAUvM" role="37wK5m">
-                    <ref role="3VsUkX" to="e2lb:~Integer" resolve="Integer" />
+                    <ref role="3VsUkX" to="wyt6:~Integer" resolve="Integer" />
                   </node>
                   <node concept="3uibUv" id="1LkA4kRgEhX" role="3PaCim">
-                    <ref role="3uigEE" to="e2lb:~Integer" resolve="Integer" />
+                    <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
                   </node>
                 </node>
               </node>
@@ -233,10 +233,10 @@
                     <ref role="3cqZAo" to="5htl:pLBRfXAoc$" resolve="RMI_SERVICE_NAME" />
                   </node>
                   <node concept="3VsKOn" id="pLBRfXAVnZ" role="37wK5m">
-                    <ref role="3VsUkX" to="e2lb:~String" resolve="String" />
+                    <ref role="3VsUkX" to="wyt6:~String" resolve="String" />
                   </node>
                   <node concept="3uibUv" id="1LkA4kRgEwi" role="3PaCim">
-                    <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+                    <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                   </node>
                 </node>
               </node>
@@ -246,8 +246,8 @@
             <node concept="34ab3g" id="3H_tUICS7Tj" role="3cqZAp">
               <property role="35gtTG" value="info" />
               <node concept="2YIFZM" id="3H_tUICV3vS" role="34bqiv">
-                <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                 <node concept="Xl_RD" id="3H_tUICV3vT" role="37wK5m">
                   <property role="Xl_RC" value="Initializing GUI panel server on address {0}:{1}/{2}" />
                 </node>
@@ -265,8 +265,8 @@
             <node concept="3clFbH" id="3H_tUICS9tz" role="3cqZAp" />
             <node concept="3clFbF" id="3H_tUICS7Tx" role="3cqZAp">
               <node concept="2YIFZM" id="6D1m6GTkJ2M" role="3clFbG">
-                <ref role="37wK5l" to="9bba:~GuiInitializer.init(java.lang.String,int,java.lang.String):void" resolve="init" />
-                <ref role="1Pybhc" to="9bba:~GuiInitializer" resolve="GuiInitializer" />
+                <ref role="37wK5l" to="tkgf:~GuiInitializer.init(java.lang.String,int,java.lang.String):void" resolve="init" />
+                <ref role="1Pybhc" to="tkgf:~GuiInitializer" resolve="GuiInitializer" />
                 <node concept="37vLTw" id="6D1m6GTkJ2N" role="37wK5m">
                   <ref role="3cqZAo" node="pLBRfXAUFO" resolve="address" />
                 </node>
@@ -288,13 +288,13 @@
                 </node>
                 <node concept="2OqwBi" id="3H_tUICS7TF" role="37vLTx">
                   <node concept="2YIFZM" id="3H_tUICS7TG" role="2Oq$k0">
-                    <ref role="1Pybhc" to="gj7t:~DependencyRepository" resolve="DependencyRepository" />
-                    <ref role="37wK5l" to="gj7t:~DependencyRepository.getInstance():com.googlecode.tinydi.DependencyRepository" resolve="getInstance" />
+                    <ref role="1Pybhc" to="mwtc:~DependencyRepository" resolve="DependencyRepository" />
+                    <ref role="37wK5l" to="mwtc:~DependencyRepository.getInstance():com.googlecode.tinydi.DependencyRepository" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="3H_tUICS7TH" role="2OqNvi">
-                    <ref role="37wK5l" to="gj7t:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
+                    <ref role="37wK5l" to="mwtc:~DependencyRepository.getBean(java.lang.Class):java.lang.Object" resolve="getBean" />
                     <node concept="3VsKOn" id="3H_tUICS7TI" role="37wK5m">
-                      <ref role="3VsUkX" to="fi19:~MainView" resolve="MainView" />
+                      <ref role="3VsUkX" to="upus:~MainView" resolve="MainView" />
                     </node>
                   </node>
                 </node>
@@ -318,7 +318,7 @@
             <node concept="3cpWsn" id="3H_tUICS7TP" role="TDEfY">
               <property role="TrG5h" value="e" />
               <node concept="3uibUv" id="3H_tUICS7TQ" role="1tU5fm">
-                <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
           </node>
@@ -334,7 +334,7 @@
           <node concept="37vLTI" id="1ZF81FZUvYw" role="3clFbG">
             <node concept="2ShNRf" id="1ZF81FZUw3p" role="37vLTx">
               <node concept="1pGfFk" id="1ZF81FZUI3O" role="2ShVmc">
-                <ref role="37wK5l" to="dbrf:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                 <node concept="37vLTw" id="1ZF81FZUQ6f" role="37wK5m">
                   <ref role="3cqZAo" node="1ZF81FZUP_o" resolve="message" />
                 </node>
@@ -359,14 +359,14 @@
       <property role="TrG5h" value="mainView" />
       <node concept="3Tm6S6" id="6q44gEQYroY" role="1B3o_S" />
       <node concept="3uibUv" id="6D1m6GTkKv0" role="1tU5fm">
-        <ref role="3uigEE" to="fi19:~MainView" resolve="MainView" />
+        <ref role="3uigEE" to="upus:~MainView" resolve="MainView" />
       </node>
     </node>
     <node concept="2BZ0e9" id="1ZF81FZUku_" role="2XNbBz">
       <property role="TrG5h" value="component" />
       <node concept="3Tm6S6" id="1ZF81FZUkuA" role="1B3o_S" />
       <node concept="3uibUv" id="1ZF81FZUmjb" role="1tU5fm">
-        <ref role="3uigEE" to="dbrf:~JComponent" resolve="JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
     </node>
     <node concept="2UmK3q" id="6bh18$pfQ5q" role="2Um5zG">
@@ -402,10 +402,10 @@
                 <ref role="3cqZAo" to="5htl:1ZF81FZUmNs" resolve="GUI_PANEL_TURN_OFF" />
               </node>
               <node concept="3VsKOn" id="1ZF81FZUsGn" role="37wK5m">
-                <ref role="3VsUkX" to="e2lb:~Boolean" resolve="Boolean" />
+                <ref role="3VsUkX" to="wyt6:~Boolean" resolve="Boolean" />
               </node>
               <node concept="3uibUv" id="1LkA4kRgCEO" role="3PaCim">
-                <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+                <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
               </node>
             </node>
           </node>
@@ -494,7 +494,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1CHCs7qK_pl" role="2OqNvi">
-                          <ref role="37wK5l" to="fi19:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
+                          <ref role="37wK5l" to="upus:~MainView.getPanel():javax.swing.JPanel" resolve="getPanel" />
                         </node>
                       </node>
                     </node>
@@ -542,7 +542,7 @@
           <node concept="2OqwBi" id="6bh18$pgqF7" role="3clFbG">
             <node concept="2WthIp" id="6bh18$pgqEq" role="2Oq$k0" />
             <node concept="liA8E" id="6bh18$pgqZO" role="2OqNvi">
-              <ref role="37wK5l" to="jwd7:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
+              <ref role="37wK5l" to="71xd:~BaseTool.makeAvailable():void" resolve="makeAvailable" />
             </node>
           </node>
         </node>

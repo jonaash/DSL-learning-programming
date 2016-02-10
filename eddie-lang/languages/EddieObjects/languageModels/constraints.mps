@@ -2,8 +2,8 @@
 <model ref="r:c8fef07a-3254-4f44-9a7f-5040a0ccb23c(org.eddieprogramming.core.EddieObjects.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,7 +11,7 @@
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="azf3" ref="r:4f2ab649-2691-4f32-8246-1aa214c72a16(org.eddieprogramming.core.EddieObjects.behavior)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="539g" ref="r:51c64945-466c-4fa8-a893-fe8509ed1cac(org.eddieprogramming.common.support.messages)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -287,8 +287,8 @@
               <node concept="34ab3g" id="5KhqV1J$m14" role="3cqZAp">
                 <property role="35gtTG" value="warn" />
                 <node concept="2YIFZM" id="5KhqV1J$m15" role="34bqiv">
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="5KhqV1J$m16" role="37wK5m">
                     <property role="Xl_RC" value="Unexpected MethodCall contextNode. Expected MethodCall or DotOperator but found: {}" />
                   </node>
@@ -351,8 +351,8 @@
           <node concept="34ab3g" id="5KhqV1J$m1t" role="3cqZAp">
             <property role="35gtTG" value="debug" />
             <node concept="2YIFZM" id="5KhqV1J$m1u" role="34bqiv">
-              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
               <node concept="Xl_RD" id="5KhqV1J$m1v" role="37wK5m">
                 <property role="Xl_RC" value="Creating scope for {0}, targetClass: {1}, model:{2}" />
               </node>
@@ -468,8 +468,8 @@
               <node concept="34ab3g" id="1jWJ98HC6MG" role="3cqZAp">
                 <property role="35gtTG" value="warn" />
                 <node concept="2YIFZM" id="1jWJ98HC7dN" role="34bqiv">
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="1jWJ98HC7mM" role="37wK5m">
                     <property role="Xl_RC" value="Unexpected FieldReference contextNode. Expected FieldReference or DotOperator but found: {0}" />
                   </node>
@@ -532,8 +532,8 @@
           <node concept="34ab3g" id="1jWJ98HBkpf" role="3cqZAp">
             <property role="35gtTG" value="debug" />
             <node concept="2YIFZM" id="1jWJ98HBkpg" role="34bqiv">
-              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
               <node concept="Xl_RD" id="1jWJ98HBkph" role="37wK5m">
                 <property role="Xl_RC" value="Creating scope for {0}, targetClass: {1}, model:{2}" />
               </node>

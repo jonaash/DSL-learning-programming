@@ -2,21 +2,21 @@
 <model ref="r:d548db08-144c-4db2-a30b-3d3e68fbb218(org.eddieprogramming.support.EddieBaseLanguageObjects.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="gkvc" ref="r:d2196699-c903-48ce-9a8d-33b0b821104f(org.eddieprogramming.support.EddieBaseLanguageObjects.structure)" />
     <import index="3lwp" ref="r:6256a5fa-b0ff-4ddf-b639-59eb49668d67(org.eddieprogramming.support.EddieBaseLanguageObjects.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="t2e5" ref="r:685a4fe3-1f5a-47d8-8934-7688dad85fee(org.eddieprogramming.core.EddieObjects.structure)" implicit="true" />
   </imports>
   <registry>
@@ -280,7 +280,7 @@
                                           <ref role="3VsUkX" to="4ujd:2bb0VNYqtjy" resolve="EddieSingleton" />
                                         </node>
                                         <node concept="liA8E" id="2xfsEoBSGXG" role="2OqNvi">
-                                          <ref role="37wK5l" to="e2lb:~Class.getName():java.lang.String" resolve="getName" />
+                                          <ref role="37wK5l" to="wyt6:~Class.getName():java.lang.String" resolve="getName" />
                                         </node>
                                       </node>
                                     </node>
@@ -309,8 +309,8 @@
           <node concept="34ab3g" id="2bb0VNYsZJJ" role="3cqZAp">
             <property role="35gtTG" value="info" />
             <node concept="2YIFZM" id="2bb0VNYt077" role="34bqiv">
-              <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
               <node concept="Xl_RD" id="2bb0VNYt0ao" role="37wK5m">
                 <property role="Xl_RC" value="BL singletons: {0}" />
               </node>
@@ -661,8 +661,8 @@
                 <node concept="34ab3g" id="6R5ctBWp_7O" role="3cqZAp">
                   <property role="35gtTG" value="warn" />
                   <node concept="2YIFZM" id="6R5ctBWp_JD" role="34bqiv">
-                    <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                    <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                    <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                    <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                     <node concept="Xl_RD" id="6R5ctBWp_ON" role="37wK5m">
                       <property role="Xl_RC" value="Could not obtain BLSingletonReference from contextNode: {0}. Empty scope returned." />
                     </node>

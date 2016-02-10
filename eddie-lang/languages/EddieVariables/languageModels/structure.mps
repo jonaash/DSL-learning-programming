@@ -2,7 +2,7 @@
 <model ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(org.eddieprogramming.core.EddieVariables.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,6 +17,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -49,6 +50,7 @@
   <node concept="1TIwiD" id="2WqFKNDOaYc">
     <property role="TrG5h" value="LocalVariableDeclarationCommand" />
     <property role="3GE5qa" value="variable" />
+    <property role="1pbfSe" value="418078360" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="2WqFKNDOaYr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -68,6 +70,7 @@
     <property role="TrG5h" value="PlusOperator" />
     <property role="34LRSv" value="+" />
     <property role="R4oN_" value="adds two variables" />
+    <property role="1pbfSe" value="422412699" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNE4Haw">
@@ -75,6 +78,7 @@
     <property role="TrG5h" value="MinusOperator" />
     <property role="34LRSv" value="-" />
     <property role="R4oN_" value="subtracts two numbers" />
+    <property role="1pbfSe" value="422412716" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeySp">
@@ -82,6 +86,7 @@
     <property role="TrG5h" value="MultOperator" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="multiplies two numbers" />
+    <property role="1pbfSe" value="424992037" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="2WqFKNEeyTn">
@@ -89,6 +94,7 @@
     <property role="TrG5h" value="DivideOperator" />
     <property role="34LRSv" value="/" />
     <property role="R4oN_" value="divide two numbers" />
+    <property role="1pbfSe" value="424992099" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="1GufzGWfyAd">
@@ -96,6 +102,7 @@
     <property role="TrG5h" value="AssignmentExpression" />
     <property role="34LRSv" value="=" />
     <property role="R4oN_" value="saves some value into variable" />
+    <property role="1pbfSe" value="1465673672" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="1GufzGWfyPi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -118,6 +125,7 @@
     <property role="3GE5qa" value="command.control" />
     <property role="34LRSv" value="for" />
     <property role="R4oN_" value="for sequence of numbers repeats set of commands" />
+    <property role="1pbfSe" value="1232612479" />
     <ref role="1TJDcQ" to="dyrx:6H9YPQxL47v" resolve="AbstractLoopCommand" />
     <node concept="PrWs8" id="aB0Z16Oiyz" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -151,6 +159,7 @@
     <property role="3GE5qa" value="variable" />
     <property role="R4oN_" value="declares a local variable" />
     <property role="34LRSv" value="&lt;type&gt; &lt;name&gt;" />
+    <property role="1pbfSe" value="959477874" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
   </node>
   <node concept="1TIwiD" id="2J_q78djvw1">
@@ -158,6 +167,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="variable" />
+    <property role="1pbfSe" value="959668339" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="2J_q78djvw2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -177,12 +187,14 @@
     <property role="TrG5h" value="AbstractComparisonOperator" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="964896054" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="1llnCx2xHml">
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="DefaultInitializer" />
     <property role="34LRSv" value="default initializer" />
+    <property role="1pbfSe" value="1474049053" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="PrWs8" id="1llnCx2xHnm" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />

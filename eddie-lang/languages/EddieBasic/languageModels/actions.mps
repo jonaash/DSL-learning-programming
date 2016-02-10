@@ -2,19 +2,19 @@
 <model ref="r:53149266-854c-4c58-9af3-f51a32da65ae(org.eddieprogramming.core.EddieBasic.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
-    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="daafa647-f1f7-4b0b-b096-69cd7c8408c0" name="jetbrains.mps.baseLanguage.regexp" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
     <import index="dyrx" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:3272e1f1-cc6f-4a7f-b5a3-b32561dce0e6(KarelBasic/org.eddieprogramming.core.EddieBasic.structure)" />
-    <import index="j9pa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -336,8 +336,8 @@
                           </node>
                           <node concept="tyxLq" id="2WqFKNE9EzL" role="2OqNvi">
                             <node concept="2YIFZM" id="2WqFKNE9EUw" role="tz02z">
-                              <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-                              <ref role="37wK5l" to="e2lb:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                              <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
                               <node concept="ub8z3" id="2WqFKNE9FfG" role="37wK5m" />
                             </node>
                           </node>
@@ -349,7 +349,7 @@
                         <node concept="YS8fn" id="4y6FdzEfZoj" role="3cqZAp">
                           <node concept="2ShNRf" id="4y6FdzEfZqj" role="YScLw">
                             <node concept="1pGfFk" id="4y6FdzEfZz5" role="2ShVmc">
-                              <ref role="37wK5l" to="e2lb:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
                               <node concept="3cpWs3" id="4y6FdzEg0LQ" role="37wK5m">
                                 <node concept="ub8z3" id="4y6FdzEg0OA" role="3uHU7w" />
                                 <node concept="Xl_RD" id="4y6FdzEfZCJ" role="3uHU7B">
@@ -366,7 +366,7 @@
                       <node concept="3cpWsn" id="2WqFKNE9EAl" role="TDEfY">
                         <property role="TrG5h" value="e" />
                         <node concept="3uibUv" id="2WqFKNE9Fi9" role="1tU5fm">
-                          <ref role="3uigEE" to="e2lb:~NumberFormatException" resolve="NumberFormatException" />
+                          <ref role="3uigEE" to="wyt6:~NumberFormatException" resolve="NumberFormatException" />
                         </node>
                       </node>
                     </node>
@@ -542,7 +542,7 @@
             </node>
           </node>
           <node concept="3uibUv" id="14XUkkdCEOk" role="uMOYW">
-            <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+            <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
           </node>
           <node concept="uNCsQ" id="14XUkkdCEIf" role="uO7ob">
             <node concept="3clFbS" id="14XUkkdCEIg" role="2VODD2">
@@ -550,15 +550,15 @@
                 <node concept="2ShNRf" id="14XUkkdCEUp" role="3clFbG">
                   <node concept="Tc6Ow" id="14XUkkdCF4N" role="2ShVmc">
                     <node concept="3uibUv" id="14XUkkdCFpS" role="HW$YZ">
-                      <ref role="3uigEE" to="e2lb:~Boolean" resolve="Boolean" />
+                      <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
                     </node>
                     <node concept="10M0yZ" id="14XUkkdCF_Q" role="HW$Y0">
-                      <ref role="1PxDUh" to="e2lb:~Boolean" resolve="Boolean" />
-                      <ref role="3cqZAo" to="e2lb:~Boolean.TRUE" resolve="TRUE" />
+                      <ref role="1PxDUh" to="wyt6:~Boolean" resolve="Boolean" />
+                      <ref role="3cqZAo" to="wyt6:~Boolean.TRUE" resolve="TRUE" />
                     </node>
                     <node concept="10M0yZ" id="14XUkkdCFLS" role="HW$Y0">
-                      <ref role="1PxDUh" to="e2lb:~Boolean" resolve="Boolean" />
-                      <ref role="3cqZAo" to="e2lb:~Boolean.FALSE" resolve="FALSE" />
+                      <ref role="1PxDUh" to="wyt6:~Boolean" resolve="Boolean" />
+                      <ref role="3cqZAo" to="wyt6:~Boolean.FALSE" resolve="FALSE" />
                     </node>
                   </node>
                 </node>
@@ -571,7 +571,7 @@
                 <node concept="2OqwBi" id="14XUkkdCGt5" role="3clFbG">
                   <node concept="uNquD" id="14XUkkdCGgm" role="2Oq$k0" />
                   <node concept="liA8E" id="14XUkkdCGS3" role="2OqNvi">
-                    <ref role="37wK5l" to="e2lb:~Boolean.toString():java.lang.String" resolve="toString" />
+                    <ref role="37wK5l" to="wyt6:~Boolean.toString():java.lang.String" resolve="toString" />
                   </node>
                 </node>
               </node>
@@ -1007,8 +1007,8 @@
               <node concept="34ab3g" id="2PpeCt3j2sZ" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="2YIFZM" id="2PpeCt3j2Pd" role="34bqiv">
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="2PpeCt3j2SY" role="37wK5m">
                     <property role="Xl_RC" value="Creating child node for {0}, parent node: {1}, targetNode: {2}" />
                   </node>
@@ -1150,8 +1150,8 @@
               <node concept="34ab3g" id="3eViXf8syoY" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="2YIFZM" id="3eViXf8sB_S" role="34bqiv">
-                  <ref role="37wK5l" to="j9pa:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                  <ref role="1Pybhc" to="j9pa:~MessageFormat" resolve="MessageFormat" />
+                  <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
+                  <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
                   <node concept="Xl_RD" id="3eViXf8sBDC" role="37wK5m">
                     <property role="Xl_RC" value="AbstractCall_Expression - parameterObject: {0}, currentTargetNode: {1}, parentNode: [2}, pattern: {3}" />
                   </node>

@@ -2,21 +2,21 @@
 <model ref="r:336ef540-81b6-4813-a081-f0b3deea4950(org.eddieprogramming.support.EddieBaseLanguageObjects@tests)">
   <persistence version="9" />
   <languages>
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="-1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="-1" />
-    <use id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects" version="-1" />
-    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects" version="-1" />
-    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="-1" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="abbb403e-0a41-4661-9279-eb17d3806875" name="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
+    <use id="1049e1e4-e198-4fe2-af4a-15791afe439a" name="org.eddieprogramming.core.EddieObjects" version="0" />
+    <use id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
     <import index="4ujd" ref="r:cb1df4b5-37cb-4ba3-aaac-1801d383778e(org.eddieprogramming.core.runtime)" />
-    <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="uoo5" ref="r:1f0a4e74-5be6-468f-be35-acaaf241e934(org.eddieprogramming.core.runtime.karel)" />
     <import index="b3e7" ref="r:cd41274e-8a79-4838-9ba3-33691009fff0(org.eddieprogramming.core.runtime.scene)" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -272,7 +272,7 @@
       <node concept="37vLTG" id="2xfsEoC0jHD" role="3clF46">
         <property role="TrG5h" value="bigDecimal" />
         <node concept="3uibUv" id="2xfsEoC0jHC" role="1tU5fm">
-          <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+          <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
         </node>
       </node>
     </node>
@@ -290,7 +290,7 @@
       </node>
       <node concept="3Tm1VV" id="2xfsEoC0jJh" role="1B3o_S" />
       <node concept="3uibUv" id="2xfsEoC0jK4" role="3clF45">
-        <ref role="3uigEE" to="epq1:~BigDecimal" resolve="BigDecimal" />
+        <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
       </node>
     </node>
     <node concept="2tJIrI" id="2xfsEoC0jLt" role="jymVt" />
@@ -322,7 +322,7 @@
       </node>
       <node concept="3Tm1VV" id="2xfsEoC0Tuo" role="1B3o_S" />
       <node concept="3uibUv" id="2xfsEoC0TwF" role="3clF45">
-        <ref role="3uigEE" to="e2lb:~String" resolve="String" />
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
     </node>
     <node concept="2tJIrI" id="2xfsEoC0jIz" role="jymVt" />

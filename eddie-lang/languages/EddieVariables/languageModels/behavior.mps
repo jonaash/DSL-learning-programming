@@ -2,9 +2,9 @@
 <model ref="r:2175c34b-c9d8-4a50-8663-8f43f29ccd9c(org.eddieprogramming.core.EddieVariables.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
@@ -143,11 +143,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -206,7 +204,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug" />
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -502,19 +500,19 @@
             <property role="1dT_AB" value="Implemented according to ForStatement_Behaviour#getScope in baseLanguage." />
           </node>
         </node>
-        <node concept="TUZQ0" id="7KcPMNJ3HMV" role="TUOzN">
+        <node concept="TUZQ0" id="7KcPMNJ3HMV" role="3nqlJM">
           <property role="TUZQ4" value="kind" />
           <node concept="zr_55" id="7KcPMNJ3HMX" role="zr_5Q">
             <ref role="zr_51" node="7KcPMNJ2d5U" resolve="kind" />
           </node>
         </node>
-        <node concept="TUZQ0" id="7KcPMNJ3HMY" role="TUOzN">
+        <node concept="TUZQ0" id="7KcPMNJ3HMY" role="3nqlJM">
           <property role="TUZQ4" value="child" />
           <node concept="zr_55" id="7KcPMNJ3HN0" role="zr_5Q">
             <ref role="zr_51" node="7KcPMNJ2d5W" resolve="child" />
           </node>
         </node>
-        <node concept="x79VA" id="7KcPMNJ3HN1" role="x79VK">
+        <node concept="x79VA" id="7KcPMNJ3HN1" role="3nqlJM">
           <property role="x79VB" value="scope with added for cycle variable" />
         </node>
       </node>
