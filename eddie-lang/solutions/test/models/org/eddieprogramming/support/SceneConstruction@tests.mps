@@ -53,9 +53,12 @@
   </node>
   <node concept="1$vsWe" id="4y6FdzEpdJ_">
     <property role="TrG5h" value="ResetButtonManualTest" />
-    <node concept="3jGSmg" id="4y6FdzEpdJA" role="3jGSko">
-      <node concept="17J3Kp" id="4y6FdzEpdJB" role="3jGSnO">
-        <property role="17J3Nn" value="something" />
+    <node concept="2J$FF_" id="1ribDBS5T3l" role="2J$FC6">
+      <ref role="2J$FF$" to="r3nt:5Teiyof2ZD$" resolve="TestTutorialWithInitProgram" />
+    </node>
+    <node concept="3jGSmg" id="1ribDBS5TaU" role="3jGSko">
+      <node concept="17J3Kp" id="6ijM_gfgmTb" role="3jGSnO">
+        <property role="17J3Nn" value="somtehing" />
       </node>
     </node>
   </node>
