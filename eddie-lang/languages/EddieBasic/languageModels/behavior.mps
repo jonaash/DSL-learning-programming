@@ -403,6 +403,9 @@
       <concept id="1174485235885" name="jetbrains.mps.baseLanguage.regexp.structure.UnaryRegexp" flags="ng" index="1OLBAW">
         <child id="1174485243418" name="regexp" index="1OLDsb" />
       </concept>
+      <concept id="1174491169200" name="jetbrains.mps.baseLanguage.regexp.structure.ParensRegexp" flags="ng" index="1P8g2x">
+        <child id="1174491174779" name="expr" index="1P8hpE" />
+      </concept>
       <concept id="1174510540317" name="jetbrains.mps.baseLanguage.regexp.structure.InlineRegexpExpression" flags="nn" index="1Qi9sc">
         <property id="1175159132192" name="caseInsensitive" index="2sWl4L" />
         <child id="1174510571016" name="regexp" index="1QigWp" />
@@ -5652,22 +5655,50 @@
               <node concept="1Qi9sc" id="4y6FdzEgwMl" role="1YN4dH">
                 <node concept="1OCdqh" id="4y6FdzEgwMm" role="1QigWp">
                   <node concept="1OJ37Q" id="4y6FdzEgwMn" role="1OLpdg">
-                    <node concept="1OCmVF" id="4y6FdzEhZDA" role="1OLqdY">
-                      <node concept="1SSJmt" id="4y6FdzEgwMs" role="1OLDsb">
-                        <node concept="1T8lYq" id="4y6FdzEgwMt" role="1T5LoC">
+                    <node concept="1SLe3L" id="6ijM_gffsuA" role="1OLqdY">
+                      <node concept="1P8g2x" id="6ijM_gffslX" role="1OLDsb">
+                        <node concept="1OJ37Q" id="6ijM_gffsoj" role="1P8hpE">
+                          <node concept="1OCmVF" id="6ijM_gffsrg" role="1OLqdY">
+                            <node concept="1SSJmt" id="6ijM_gffsoS" role="1OLDsb">
+                              <node concept="1T8lYq" id="6ijM_gffspR" role="1T5LoC">
+                                <property role="1T8p8b" value="0" />
+                                <property role="1T8pRJ" value="9" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1SSJmt" id="4y6FdzEgwMs" role="1OLpdg">
+                            <node concept="1T8lYq" id="4y6FdzEgwMt" role="1T5LoC">
+                              <property role="1T8p8b" value="1" />
+                              <property role="1T8pRJ" value="9" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1OC9wW" id="4y6FdzEgwMv" role="1OLpdg">
+                      <property role="1OCb_u" value="-" />
+                    </node>
+                  </node>
+                  <node concept="1OCdqh" id="6ijM_gffsdn" role="1OLqdY">
+                    <node concept="1OC9wW" id="6ijM_gffsdU" role="1OLpdg">
+                      <property role="1OCb_u" value="0" />
+                    </node>
+                    <node concept="1OJ37Q" id="6ijM_gffsx7" role="1OLqdY">
+                      <node concept="1OCmVF" id="6ijM_gffsx8" role="1OLqdY">
+                        <node concept="1SSJmt" id="6ijM_gffsx9" role="1OLDsb">
+                          <node concept="1T8lYq" id="6ijM_gffsxa" role="1T5LoC">
+                            <property role="1T8p8b" value="0" />
+                            <property role="1T8pRJ" value="9" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1SSJmt" id="6ijM_gffsxb" role="1OLpdg">
+                        <node concept="1T8lYq" id="6ijM_gffsxc" role="1T5LoC">
                           <property role="1T8p8b" value="1" />
                           <property role="1T8pRJ" value="9" />
                         </node>
                       </node>
                     </node>
-                    <node concept="1SLe3L" id="4y6FdzEgwMu" role="1OLpdg">
-                      <node concept="1OC9wW" id="4y6FdzEgwMv" role="1OLDsb">
-                        <property role="1OCb_u" value="-" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1OC9wW" id="4y6FdzEgwMw" role="1OLqdY">
-                    <property role="1OCb_u" value="0" />
                   </node>
                 </node>
               </node>
