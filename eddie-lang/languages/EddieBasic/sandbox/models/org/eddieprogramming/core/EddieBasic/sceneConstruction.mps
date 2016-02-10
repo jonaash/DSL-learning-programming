@@ -22,12 +22,24 @@
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
+      <concept id="4942585347623820899" name="org.eddieprogramming.core.EddieBasic.structure.RoutineCall" flags="ng" index="29J8_c" />
+      <concept id="4942585347623814440" name="org.eddieprogramming.core.EddieBasic.structure.RoutineDefinition" flags="ng" index="29J987" />
       <concept id="8938755948420525033" name="org.eddieprogramming.core.EddieBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
         <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
       <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
+      <concept id="1242405555016616841" name="org.eddieprogramming.core.EddieBasic.structure.IMethodsDefinition" flags="ng" index="swibc">
+        <child id="1242405555016843190" name="methods" index="sZtrN" />
+      </concept>
+      <concept id="1242405555015381639" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
+        <child id="6033906139725455995" name="body" index="hRHZh" />
+        <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
+      </concept>
+      <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
+        <reference id="6033906139725455018" name="definition" index="hRIc0" />
+      </concept>
       <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="scene" index="2JdVqH" />
       </concept>
@@ -61,6 +73,11 @@
         <child id="6349814108921004815" name="action" index="187L55" />
         <child id="6349814108921004813" name="condition" index="187L57" />
       </concept>
+      <concept id="3776063756790928180" name="org.eddieprogramming.core.EddieBasic.structure.Library" flags="ng" index="3cDPre" />
+      <concept id="3776063756790929738" name="org.eddieprogramming.core.EddieBasic.structure.Require" flags="ng" index="3cDPMK">
+        <reference id="3776063756790929766" name="library" index="3cDPMs" />
+      </concept>
+      <concept id="3776063756796240591" name="org.eddieprogramming.core.EddieBasic.structure.VoidType" flags="ng" index="3dtAsP" />
       <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
         <property id="3776063756796243785" name="value" index="3dtAEN" />
       </concept>
@@ -627,6 +644,37 @@
     <node concept="3jGSmg" id="5Auh49UDG4T" role="3jGSko">
       <node concept="3cjXi6" id="5Auh49UDG4Z" role="3jGSnO" />
       <node concept="3cjXi6" id="5Auh49UDG55" role="3jGSnO" />
+    </node>
+  </node>
+  <node concept="3cDPre" id="6ijM_gfg4hU">
+    <property role="TrG5h" value="TestLib" />
+    <node concept="29J987" id="6ijM_gfg4kR" role="sZtrN">
+      <property role="TrG5h" value="doSomething" />
+      <node concept="3dtAsP" id="6ijM_gfg4kS" role="2jg$Xp" />
+      <node concept="3jGSmg" id="6ijM_gfg4kT" role="hRHZh">
+        <node concept="17J3f2" id="6ijM_gfg4kU" role="3jGSnO" />
+      </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6ijM_gfg4im">
+    <property role="TrG5h" value="TestInitProgramLib" />
+    <node concept="3jGSmg" id="6ijM_gfg4in" role="3jGSko">
+      <node concept="3cDPMK" id="6ijM_gfg4jk" role="3jGSnO">
+        <ref role="3cDPMs" node="6ijM_gfg4hU" resolve="TestLib" />
+      </node>
+      <node concept="17J3f2" id="6ijM_gfg4jn" role="3jGSnO" />
+      <node concept="3dudH9" id="6ijM_gfg4l4" role="3jGSnO">
+        <node concept="29J8_c" id="6ijM_gfg4l7" role="3dudC3">
+          <ref role="hRIc0" node="6ijM_gfg4kR" resolve="doSomething" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1nSc2J" id="6ijM_gfg4iO">
+    <property role="TrG5h" value="TestTutorialLib" />
+    <ref role="1TuiZm" node="6ijM_gfg4im" resolve="TestInitProgramLib" />
+    <node concept="2JdVq9" id="6ijM_gfg4jh" role="2JAF2z">
+      <ref role="2JdVqH" node="5wv4$CfPqlc" resolve="TestScene" />
     </node>
   </node>
 </model>

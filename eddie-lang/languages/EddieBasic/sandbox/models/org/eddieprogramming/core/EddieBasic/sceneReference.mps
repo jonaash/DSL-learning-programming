@@ -134,12 +134,19 @@
   </node>
   <node concept="1$vsWe" id="5Teiyof2ZbC">
     <property role="TrG5h" value="TestReset" />
-    <node concept="2J$FF_" id="5Auh49UDFWt" role="2J$FC6">
-      <ref role="2J$FF$" to="cc2e:6snOov8U0IP" resolve="TestTutorial" />
-    </node>
     <node concept="3jGSmg" id="5Auh49UDFWv" role="3jGSko">
       <node concept="17J3f2" id="5Auh49UDFWw" role="3jGSnO" />
     </node>
+    <node concept="2J$FF_" id="5Auh49UDFWt" role="2J$FC6">
+      <ref role="2J$FF$" to="cc2e:6snOov8U0IP" resolve="TestTutorial" />
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6ijM_gfg4jz">
+    <property role="TrG5h" value="TestResetWithLibrary" />
+    <node concept="2J$FF_" id="6ijM_gfg4kH" role="2J$FC6">
+      <ref role="2J$FF$" to="cc2e:6ijM_gfg4iO" resolve="TestTutorialLib" />
+    </node>
+    <node concept="3jGSmg" id="6ijM_gfg4C0" role="3jGSko" />
   </node>
 </model>
 
