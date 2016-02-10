@@ -105,6 +105,9 @@
         <tokenfilter>
           <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="1\.6\*" replace="1.8*" flags="" />
+        </tokenfilter>
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip/EddieStudio-${version}.app/Contents/bin" />
