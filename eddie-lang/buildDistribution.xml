@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/EddieStudioDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/EddieStudioDistribution" />
-  <property name="mps_home" location="${basedir}/../../MPS 3.2" />
+  <property name="mps_home" location="${basedir}/../../MPS 3.3" />
   <property name="version" value="0.1" />
   <property name="artifacts.EddieStudio" location="${build.dir}/artifacts/EddieStudio" />
   <property file="${artifacts.EddieStudio}/build.properties" prefix="import.EddieStudio" />
@@ -23,7 +23,7 @@
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
       </filterchain>
     </copy>
@@ -32,13 +32,13 @@
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-linux.tar.gz_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps_home}/bin/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -63,7 +63,7 @@
       <fileset file="${mps_home}/bin/mac/Contents/Info.plist" />
       <filterchain>
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="g" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="g" />
         </tokenfilter>
       </filterchain>
     </copy>
@@ -92,7 +92,7 @@
       <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="EddieStudio-${version}/bin/mac" filemode="755" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="EddieStudio-${version}/bin/mac/Contents/Resources" />
       <zipfileset file="${mps_home}/bin/mac/Contents/MacOS/mps" prefix="EddieStudio-${version}/bin/mac/Contents/MacOS" filemode="755" />
-      <zipfileset file="${mps_home}/mps.sh" prefix="EddieStudio-${version}" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mps.sh" prefix="EddieStudio-${version}" filemode="755" />
       <zipfileset file="${mps_home}/mps.bat" prefix="EddieStudio-${version}" filemode="755" />
       <fileset dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip" />
     </zip>
@@ -103,7 +103,7 @@
       <fileset file="${mps_home}/bin/mac/Contents/Info.plist" />
       <filterchain>
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
       </filterchain>
     </copy>
@@ -113,7 +113,7 @@
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
       </filterchain>
     </copy>
@@ -121,14 +121,14 @@
       <fileset file="${mps_home}/bin/mps64.vmoptions" />
       <filterchain>
         <tokenfilter>
-          <replaceregex pattern="MPS32" replace="${EddieStudio.eddie.path.selector}" flags="" />
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
         </tokenfilter>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_-macos.zip_f755">
-      <fileset file="${mps_home}/mps.sh" />
+      <fileset file="${mps_home}/bin/mps.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
