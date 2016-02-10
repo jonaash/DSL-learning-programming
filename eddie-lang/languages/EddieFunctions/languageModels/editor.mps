@@ -78,6 +78,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="280151408461567367" name="jetbrains.mps.lang.editor.structure.AppendTextOperation" flags="nn" index="33jxAZ" />
       <concept id="1165253627126" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup" flags="ng" index="1exORT">
         <property id="1165254125954" name="presentation" index="1ezIyd" />
@@ -1125,11 +1126,20 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <ref role="1k5W1q" to="y2uj:2FICFVpZtnO" resolve="IdentifierReference" />
+            <node concept="VPM3Z" id="1ribDBS6nO1" role="3F10Kt">
+              <property role="VOm3f" value="false" />
+            </node>
           </node>
+        </node>
+        <node concept="VPM3Z" id="1ribDBS6zR8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="3F0ifn" id="2xfsEoBWHBG" role="3EZMnx">
         <property role="3F0ifm" value="=" />
+        <node concept="VPM3Z" id="6ijM_gfeXcz" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F1sOY" id="2xfsEoBWHBH" role="3EZMnx">
         <property role="1$x2rV" value="enter:" />
