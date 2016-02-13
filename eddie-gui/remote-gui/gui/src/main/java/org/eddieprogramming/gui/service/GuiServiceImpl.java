@@ -12,7 +12,8 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 /**
- * Implementation of {@link GuiService } using Swing.
+ * Implementation of {@link GuiService } using Swing. Serves as RMI proxy around {@link WorldService} that is
+ * independent on RMI.
  *
  * @author jonasklimes
  */

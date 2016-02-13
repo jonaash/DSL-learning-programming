@@ -15,22 +15,38 @@
 		<module>client</module>
 	</modules>
 
+	<repositories>
+		<repository>
+			<id>artenum-public</id>
+			<url>http://maven.artenum.com/content/groups/public</url>
+		</repository>
+
+	</repositories>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<skip.distribution>true</skip.distribution>
 		<project.distribution.directory>../../../eddie-lang/solutions/lib/lib</project.distribution.directory>
 
 		<!-- versions-->
-		<junit.version>4.11</junit.version>
+		<junit.version>4.12</junit.version>
 		<slf4j.version>1.7.12</slf4j.version>
 		<logback.version>1.0.13</logback.version>
 		<commons.lang.version>3.1</commons.lang.version>
 		<tinydi.version>1.2.custom-SNAPSHOT</tinydi.version>
-		<easymock.version>3.3.1</easymock.version>
+		<easymock.version>3.4</easymock.version>
+		<powermock.version>1.6.4</powermock.version>
+		<easymockrule.version>0.2</easymockrule.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- project modules -->
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 
 			<!-- logging -->
 			<dependency>
@@ -71,7 +87,11 @@
 				<version>${easymock.version}</version>
 				<scope>test</scope>
 			</dependency>
-
+			<dependency>
+				<groupId>com.googlecode.easymockrule</groupId>
+				<artifactId>EasyMockRule</artifactId>
+				<version>${easymockrule.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -82,8 +102,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 

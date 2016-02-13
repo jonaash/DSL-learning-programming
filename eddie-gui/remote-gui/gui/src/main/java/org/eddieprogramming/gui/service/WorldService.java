@@ -34,10 +34,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 @Singleton
 public class WorldService {
 
+    static final int TIMER_DELAY = 40;
     private static final Logger logger = LoggerFactory.getLogger(WorldService.class);
     private static final String TIMER_NAME = "WorldServiceProcess";
-    private static final int TIMER_DELAY = 40;
-
     /**
      * Blocking queue that ansures client client script waits with next steps unitil previous step is animated.
      * Queue size is one, which means client script is one step ahead to GUI server.
@@ -61,22 +60,17 @@ public class WorldService {
     @Inject
     private StateHolder stateHolder;
 
-    private void cancelOthers(){
-        // set state to STOPPED to cancel previously runned script
-        setState(GuiState.STOPPED);
-        // clear queue to all old script to enqueue step and return Result.CANCELLED because GuiState is STOPPED.
-        stepsToDo.clear();
-        // create a new queue, because the old thread is about tu add there its step. We cannot remove that step now,
-        // because we do not know whether it is already there or not yet.
-        stepsToDo = new LinkedBlockingQueue<Step>(1);
-    }
-
     public void createWorld(String name, int width, int height) {
         validator.validateNewWorld(name, width, height);
 
         logger.debug("Creating world with name: '{}', width: {}, height {}", name, width, height);
 
+        // if there was any running script before, cancel it
         cancelOthers();
+
+        // create a new queue, because if there is an old thread it could add there its step.
+        // Clearing queue is not enought, because the thread could insert it later.
+        stepsToDo = new LinkedBlockingQueue<Step>(1);
 
         World world = new World(name, width, height);
         worldHolder.setWorld(world);
@@ -105,13 +99,18 @@ public class WorldService {
 
     public void stop() {
         logger.debug("Stop script.");
+        cancelOthers();
+    }
+
+    private void cancelOthers() {
+        // set state to STOPPED to cancel previously runned script
         setState(GuiState.STOPPED);
+        // clear queue to all old script to enqueue step and return Result.CANCELLED because GuiState is STOPPED.
+        stepsToDo.clear();
     }
 
     public Result doStep(Step step) {
-        // TODO: check proper state
         validator.validateStep(step);
-        // TODO: do validation
 
         if (!getState().canDoStep()) {
             throw new GuiOperationException("Method step cannot be called in this situation. " +
@@ -134,7 +133,11 @@ public class WorldService {
 
 
     public Thing createThing(String name) {
-        // TODO: chack proper state
+        // TODO: this might be unnecessary restriction defined in API
+        if (GuiState.SCENE_CONSTRUCTION != getState()) {
+            throw new GuiOperationException("Unexpected GuiService#createThing() method called. It schould be called " +
+                    "only between createWorld and run methods.");
+        }
         validator.validateThingName(name);
 
         return worldHolder.getWorld().createThing(name);
@@ -145,8 +148,9 @@ public class WorldService {
         if (GuiState.SCENE_CONSTRUCTION != getState()) {
             throw new GuiOperationException("Unexpected GuiService#run() method called");
         }
-        // TODO is this ok?
-        // situation when run is called again (after creating anew World)
+
+        // timer is created and started only at first program execution.
+        // After the first it keeps running until server process is killed
         if (timer == null) {
             timer = new Timer(TIMER_NAME);
             logger.debug("Creating timer with delay: {}", TIMER_DELAY);
@@ -165,7 +169,7 @@ public class WorldService {
     }
 
     public synchronized Result getResult() {
-        if (getState() == GuiState.STOPPED){
+        if (getState() == GuiState.STOPPED) {
             return Result.CANCELLED;
         }
         return Result.SUCCESS;
@@ -226,7 +230,7 @@ public class WorldService {
         Thing thing = world.getThing(command.getThingName());
 
 
-        logger.debug("Changing thing with name '{}' to position: {}, appearance: {}", command.getThingName(), command
+        logger.debug("Changeing thing with name '{}' to position: {}, appearance: {}", command.getThingName(), command
                 .getNewPosition(), command.getNewAppearance());
 
         if (command.getNewAppearance() != null) {
@@ -263,7 +267,13 @@ public class WorldService {
 
     public void setController(GuiController controller) {
         this.controller = controller;
-        ((GuiControllerImpl) controller).setWorldService(this);
+
+        // workaround for cyclic dependency between GuiController and WorldService
+        // FIXME find better solution
+
+        if (controller instanceof GuiControllerImpl) {
+            ((GuiControllerImpl) controller).setWorldService(this);
+        }
     }
 
     public void setWaitingUtil(WaitingUtil waitingUtil) {
@@ -277,11 +287,12 @@ public class WorldService {
     private class ExecutionTask extends TimerTask {
         @Override
         public void run() {
+            logger.debug("In timer. State: {}, Thread: {}", getState(), Thread.currentThread());
 
-            GuiState state = getState();
-
-            while (state.equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
+            while (getState().equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
+                GuiState state = getState();
                 boolean onlyOneStep = stateHolder.isOnlyOneStep();
+
                 logger.debug("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", state,
                         stepsToDo.size(), onlyOneStep);
                 if (onlyOneStep) {
