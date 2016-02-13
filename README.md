@@ -11,6 +11,8 @@ Requirements:
 
 
 ## Building remote-gui with Maven
+This section describe how to build GUI libraries from sources. It is possible to use built JARs from repository. In
+that case skip this section and continue at section Running project in MPS.
 
 1\) Add non Maven libs
 In a directory eddie-gui/non-maven-libs run command to install custom library to Maven Repository:
@@ -64,9 +66,8 @@ If a new script is started from MPS, previous script is discarded in EddieView a
 
 0. Download MPS generic distribution
 MPS 3.3 generic distribution is necessary to build Eddie Studio.
-Download it from https://www.jetbrains.com/mps/download/ and unpack it to the same directory where is this repository
-root.
-(MPS 3.3 and Eddie-programming are in the same level)
+Unpack it to the same directory where is this repository root.
+(MPS 3.3 and Eddie-programming are at the same level)
 
 0. Open eddie-lang project in MPS
 0. If necessary Build all languages and solutions (order is described above)
@@ -84,8 +85,9 @@ root.
 0. Create a new project with solution
 0. Right click on the project solution and open Module Properties
 0. On tab Dependencies add org.eddieprogramming.core.runtime
-0. On tab Used Languages add org.eddieprogramming.dsl.RobotKarel and devkit Eddie (contains all Eddie core languages)
 0. Right click on solution and choose New -> Model, name the model.
+0. Right click on the created model and open Module Properties
+0. On tab Used Languages add org.eddieprogramming.dsl.RobotKarel and devkit Eddie (contains all Eddie core languages)
 0. Right click on new model and choose New -> Script
 0. Write the script name 'HelloWorld'.
 0. Write `alert "Hello world!"`
