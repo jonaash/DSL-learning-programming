@@ -40,11 +40,6 @@ public class GuiControllerImpl implements GuiController {
     @Inject
     private ControlsModel controlsModel;
 
-    private StartActionListener startListener;
-    private PauseActionListener pauseListener;
-    private StepActionListener stepListener;
-    private StopActionListener stopListener;
-
     @Override
     public void init(){
 
@@ -53,6 +48,7 @@ public class GuiControllerImpl implements GuiController {
         controlsModel.getStep().addActionListener(new StepActionListener());
         controlsModel.getStop().addActionListener(new StopActionListener());
     }
+
 
     @Override
     public double getSpeedCoeficient() {
@@ -84,6 +80,7 @@ public class GuiControllerImpl implements GuiController {
             @Override
             protected void operation() {
                 controlsModel.getStart().setEnabled(true);
+                controlsModel.getPause().setEnabled(false);
                 controlsModel.getStep().setEnabled(true);
                 controlsModel.getStop().setEnabled(true);
             }
@@ -91,35 +88,13 @@ public class GuiControllerImpl implements GuiController {
     }
 
     @Override
-    public ActionListener getStartListener() {
-        if (startListener == null) {
-            startListener = new StartActionListener();
-        }
-        return startListener;
-    }
-
-    @Override
-    public ActionListener getPauseListener() {
-        if (pauseListener == null) {
-            pauseListener = new PauseActionListener();
-        }
-        return pauseListener;
-    }
-
-    @Override
-    public ActionListener getStepListener() {
-        if (stepListener == null) {
-            stepListener = new StepActionListener();
-        }
-        return stepListener;
-    }
-
-    @Override
-    public ActionListener getStopListener() {
-        if (stopListener == null) {
-            stopListener = new StopActionListener();
-        }
-        return stopListener;
+    public void stop() {
+        new SwingInvoker(){
+            @Override
+            protected void operation() {
+                controlsModel.disableControlButtons();
+            }
+        }.invokeLater();
     }
 
     public void setWorldHolder(WorldHolder worldHolder) {
@@ -146,6 +121,7 @@ public class GuiControllerImpl implements GuiController {
         @Override
         public void actionPerformed(ActionEvent e) {
             worldService.resume();
+            controlsModel.getStart().setEnabled(false);
             controlsModel.getPause().setEnabled(true);
             controlsModel.getStep().setEnabled(false);
         }
@@ -155,8 +131,8 @@ public class GuiControllerImpl implements GuiController {
         @Override
         public void actionPerformed(ActionEvent e) {
             worldService.pause();
-            controlsModel.getPause().setEnabled(false);
             controlsModel.getStart().setEnabled(true);
+            controlsModel.getPause().setEnabled(false);
             controlsModel.getStep().setEnabled(true);
         }
     }
@@ -165,11 +141,10 @@ public class GuiControllerImpl implements GuiController {
         @Override
         public void actionPerformed(ActionEvent e) {
             logger.trace("Step button pressed. Thread: {}", Thread.currentThread());
-            controlsModel.getPause().setEnabled(false);
-            controlsModel.getStart().setEnabled(false);
-            worldService.resumeForOneStep();
-            controlsModel.getPause().setEnabled(true);
+
             controlsModel.getStart().setEnabled(true);
+            controlsModel.getPause().setEnabled(false);
+            worldService.resumeForOneStep();
         }
     }
 
@@ -177,7 +152,6 @@ public class GuiControllerImpl implements GuiController {
         @Override
         public void actionPerformed(ActionEvent e) {
             worldService.stop();
-            controlsModel.disableControlButtons();
         }
     }
 }

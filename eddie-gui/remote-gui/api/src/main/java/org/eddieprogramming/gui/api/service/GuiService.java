@@ -90,4 +90,12 @@ public interface GuiService extends Remote {
      * @throws GuiException gui exception
      */
     void run() throws RemoteException;
+
+    /**
+     * Tells Remote Gui that script execution has ended.
+     * <br><br>
+     *
+     * @throws RemoteException
+     */
+    void finish() throws RemoteException;
 }

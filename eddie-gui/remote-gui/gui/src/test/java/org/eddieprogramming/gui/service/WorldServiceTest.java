@@ -203,7 +203,8 @@ public class WorldServiceTest extends AbstractTest {
     public void testStop(){
         initWorkflow();
 
-        // replay mus be called befor tested method, otherwise calling in tested method would be considered as recording
+        // mock behaviour
+        guiControllerMock.stop();
         mocks.replayAll();
 
         // call tested method

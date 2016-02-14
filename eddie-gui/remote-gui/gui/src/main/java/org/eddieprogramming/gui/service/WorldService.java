@@ -100,6 +100,7 @@ public class WorldService {
     public void stop() {
         logger.debug("Stop script.");
         cancelOthers();
+        controller.stop();
     }
 
     private void cancelOthers() {
@@ -287,14 +288,18 @@ public class WorldService {
     private class ExecutionTask extends TimerTask {
         @Override
         public void run() {
-            logger.debug("In timer. State: {}, Thread: {}", getState(), Thread.currentThread());
+            if (logger.isTraceEnabled()) {
+                logger.trace("In timer. State: {}, Thread: {}", getState(), Thread.currentThread());
+            }
 
             while (getState().equals(GuiState.RUNNING) && !stepsToDo.isEmpty()) {
                 GuiState state = getState();
                 boolean onlyOneStep = stateHolder.isOnlyOneStep();
 
-                logger.debug("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", state,
-                        stepsToDo.size(), onlyOneStep);
+                if (logger.isTraceEnabled()) {
+                    logger.trace("In timer execution loop. State: {}, Steps in queue: {}, Only one step: {}", state,
+                            stepsToDo.size(), onlyOneStep);
+                }
                 if (onlyOneStep) {
                     setState(GuiState.PAUSED);
                 }

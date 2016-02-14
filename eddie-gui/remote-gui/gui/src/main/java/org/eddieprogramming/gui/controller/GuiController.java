@@ -1,7 +1,5 @@
 package org.eddieprogramming.gui.controller;
 
-import java.awt.event.ActionListener;
-
 /**
  * @author Jonas Klimes
  */
@@ -18,10 +16,6 @@ public interface GuiController {
 
     void createVisualWorld();
 
-    ActionListener getStartListener();
-    ActionListener getPauseListener();
-    ActionListener getStepListener();
-    ActionListener getStopListener();
-
+    void stop();
 
 }
