@@ -1100,34 +1100,94 @@
                 <ref role="37wK5l" node="1UBpzRreYjP" resolve="runScript" />
               </node>
             </node>
+            <node concept="3SKdUt" id="5DNjL23qsu_" role="3cqZAp">
+              <node concept="3SKdUq" id="5DNjL23qsuB" role="3SKWNk">
+                <property role="3SKdUp" value="tell server that script execution has finished" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="5DNjL23qsht" role="3cqZAp">
+              <node concept="2OqwBi" id="5DNjL23qspT" role="3clFbG">
+                <node concept="37vLTw" id="5DNjL23qsnK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5wv4$CfmZNH" resolve="controlGui" />
+                </node>
+                <node concept="liA8E" id="5DNjL23qsr$" role="2OqNvi">
+                  <ref role="37wK5l" node="5DNjL23qkoC" resolve="stop" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="1ribDBS5RHx" role="TEbGg">
+            <node concept="3cpWsn" id="1ribDBS5RHy" role="TDEfY">
+              <property role="TrG5h" value="exit" />
+              <node concept="3uibUv" id="1ribDBS5SR$" role="1tU5fm">
+                <ref role="3uigEE" node="1ribDBS5RLq" resolve="ExitRequest" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="1ribDBS5RH$" role="TDEfX">
+              <node concept="34ab3g" id="1ribDBS5SWQ" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="Xl_RD" id="1ribDBS5SWS" role="34bqiv">
+                  <property role="Xl_RC" value="Exit called." />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="TDmWw" id="4LNIB3H0oxc" role="TEbGg">
             <node concept="3clFbS" id="4LNIB3H0oxe" role="TDEfX">
-              <node concept="3clFbF" id="4LNIB3H0wU9" role="3cqZAp">
-                <node concept="2OqwBi" id="4LNIB3H0wUG" role="3clFbG">
-                  <node concept="37vLTw" id="4LNIB3H0wU8" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6snOov9cfga" resolve="control" />
+              <node concept="SfApY" id="2uC6tIqLuiU" role="3cqZAp">
+                <node concept="3clFbS" id="2uC6tIqLuiW" role="SfCbr">
+                  <node concept="3SKdUt" id="2uC6tIqLuww" role="3cqZAp">
+                    <node concept="3SKdUq" id="2uC6tIqLuwy" role="3SKWNk">
+                      <property role="3SKdUp" value="Display error to the user" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="4LNIB3H0wWX" role="2OqNvi">
-                    <ref role="37wK5l" node="4LNIB3H0sNs" resolve="showError" />
-                    <node concept="2YIFZM" id="4LNIB3H0_Dn" role="37wK5m">
-                      <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-                      <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
-                      <node concept="2OqwBi" id="4LNIB3H0_FL" role="37wK5m">
-                        <node concept="37vLTw" id="4LNIB3H0_EK" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4LNIB3H0oxg" resolve="e" />
-                        </node>
-                        <node concept="liA8E" id="4LNIB3H0_Kg" role="2OqNvi">
-                          <ref role="37wK5l" node="4LNIB3H0zOc" resolve="getUserMessageKey" />
+                  <node concept="3clFbF" id="4LNIB3H0wU9" role="3cqZAp">
+                    <node concept="2OqwBi" id="4LNIB3H0wUG" role="3clFbG">
+                      <node concept="37vLTw" id="4LNIB3H0wU8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6snOov9cfga" resolve="control" />
+                      </node>
+                      <node concept="liA8E" id="4LNIB3H0wWX" role="2OqNvi">
+                        <ref role="37wK5l" node="4LNIB3H0sNs" resolve="showError" />
+                        <node concept="2YIFZM" id="4LNIB3H0_Dn" role="37wK5m">
+                          <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                          <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+                          <node concept="2OqwBi" id="4LNIB3H0_FL" role="37wK5m">
+                            <node concept="37vLTw" id="4LNIB3H0_EK" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4LNIB3H0oxg" resolve="e" />
+                            </node>
+                            <node concept="liA8E" id="4LNIB3H0_Kg" role="2OqNvi">
+                              <ref role="37wK5l" node="4LNIB3H0zOc" resolve="getUserMessageKey" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="7W1TakB$ZX2" role="37wK5m">
+                            <node concept="37vLTw" id="7W1TakB$ZUS" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4LNIB3H0oxg" resolve="e" />
+                            </node>
+                            <node concept="liA8E" id="7W1TakB_00f" role="2OqNvi">
+                              <ref role="37wK5l" node="7W1TakB$XDz" resolve="getObjectArgs" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="7W1TakB$ZX2" role="37wK5m">
-                        <node concept="37vLTw" id="7W1TakB$ZUS" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4LNIB3H0oxg" resolve="e" />
-                        </node>
-                        <node concept="liA8E" id="7W1TakB_00f" role="2OqNvi">
-                          <ref role="37wK5l" node="7W1TakB$XDz" resolve="getObjectArgs" />
-                        </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="TDmWw" id="2uC6tIqLuiX" role="TEbGg">
+                  <node concept="3cpWsn" id="2uC6tIqLuiZ" role="TDEfY">
+                    <property role="TrG5h" value="errorException" />
+                    <node concept="3uibUv" id="2uC6tIqLuzw" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="2uC6tIqLuj3" role="TDEfX">
+                    <node concept="3SKdUt" id="2uC6tIqLuI7" role="3cqZAp">
+                      <node concept="3SKdUq" id="2uC6tIqLuI8" role="3SKWNk">
+                        <property role="3SKdUp" value="swallow exception thrown when previous error is displayed" />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="2uC6tIqLuKk" role="3cqZAp">
+                      <node concept="3SKdUq" id="2uC6tIqLuKm" role="3SKWNk">
+                        <property role="3SKdUp" value="Previous error could be caused some state of GUI that does not allow to display error message" />
                       </node>
                     </node>
                   </node>
@@ -3887,21 +3947,30 @@
           </node>
           <node concept="TDmWw" id="5wv4$CfjjV5" role="TEbGg">
             <node concept="3clFbS" id="5wv4$CfjjV6" role="TDEfX">
-              <node concept="34ab3g" id="5wv4$CfjleH" role="3cqZAp">
+              <node concept="34ab3g" id="2uC6tIqLc7z" role="3cqZAp">
                 <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="5wv4$CfjleI" role="34bqiv">
-                  <property role="Xl_RC" value="Could not create a new world." />
+                <node concept="Xl_RD" id="2uC6tIqLc7$" role="34bqiv">
+                  <property role="Xl_RC" value="Comunication with GUI panel failed" />
                 </node>
-                <node concept="37vLTw" id="5wv4$CfjleJ" role="34bMjA">
+                <node concept="37vLTw" id="2uC6tIqLcbU" role="34bMjA">
                   <ref role="3cqZAo" node="5wv4$CfjjV7" resolve="e" />
                 </node>
               </node>
-              <node concept="3SKdUt" id="5wv4$CfjleK" role="3cqZAp">
-                <node concept="3SKdUq" id="5wv4$CfjleL" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: do something with exceptions" />
+              <node concept="YS8fn" id="2uC6tIqLc7A" role="3cqZAp">
+                <node concept="2ShNRf" id="2uC6tIqLc7B" role="YScLw">
+                  <node concept="1pGfFk" id="2uC6tIqLc7C" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="2uC6tIqLc7D" role="37wK5m">
+                      <property role="Xl_RC" value="Communication with GUI panel failed" />
+                    </node>
+                    <node concept="37vLTw" id="2uC6tIqLce_" role="37wK5m">
+                      <ref role="3cqZAo" node="5wv4$CfjjV7" resolve="e" />
+                    </node>
+                  </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="2uC6tIqLc7u" role="3cqZAp" />
             </node>
             <node concept="3cpWsn" id="5wv4$CfjjV7" role="TDEfY">
               <property role="TrG5h" value="e" />
@@ -3946,21 +4015,30 @@
           </node>
           <node concept="TDmWw" id="5wv4$CfjfM4" role="TEbGg">
             <node concept="3clFbS" id="5wv4$CfjfM6" role="TDEfX">
-              <node concept="34ab3g" id="5wv4$CfjgDZ" role="3cqZAp">
+              <node concept="34ab3g" id="2uC6tIqLcg8" role="3cqZAp">
                 <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="5wv4$CfjgE1" role="34bqiv">
-                  <property role="Xl_RC" value="Could not create a new robot." />
+                <node concept="Xl_RD" id="2uC6tIqLcg9" role="34bqiv">
+                  <property role="Xl_RC" value="Comunication with GUI panel failed" />
                 </node>
-                <node concept="37vLTw" id="5wv4$CfjgE3" role="34bMjA">
+                <node concept="37vLTw" id="2uC6tIqLcvv" role="34bMjA">
                   <ref role="3cqZAo" node="5wv4$CfjfM8" resolve="e" />
                 </node>
               </node>
-              <node concept="3SKdUt" id="5wv4$CfjgCL" role="3cqZAp">
-                <node concept="3SKdUq" id="5wv4$CfjgD3" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: do something with exceptions" />
+              <node concept="YS8fn" id="2uC6tIqLcgb" role="3cqZAp">
+                <node concept="2ShNRf" id="2uC6tIqLcgc" role="YScLw">
+                  <node concept="1pGfFk" id="2uC6tIqLcgd" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="2uC6tIqLcge" role="37wK5m">
+                      <property role="Xl_RC" value="Communication with GUI panel failed" />
+                    </node>
+                    <node concept="37vLTw" id="2uC6tIqLcxT" role="37wK5m">
+                      <ref role="3cqZAo" node="5wv4$CfjfM8" resolve="e" />
+                    </node>
+                  </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="2uC6tIqLcg3" role="3cqZAp" />
             </node>
             <node concept="3cpWsn" id="5wv4$CfjfM8" role="TDEfY">
               <property role="TrG5h" value="e" />
@@ -3998,19 +4076,27 @@
           </node>
           <node concept="TDmWw" id="5wv4$Cfjq$8" role="TEbGg">
             <node concept="3clFbS" id="5wv4$Cfjq$9" role="TDEfX">
-              <node concept="34ab3g" id="5wv4$Cfjq$a" role="3cqZAp">
+              <node concept="34ab3g" id="2uC6tIqLczH" role="3cqZAp">
                 <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="5wv4$Cfjq$b" role="34bqiv">
-                  <property role="Xl_RC" value="Could not run script." />
+                <node concept="Xl_RD" id="2uC6tIqLczI" role="34bqiv">
+                  <property role="Xl_RC" value="Comunication with GUI panel failed" />
                 </node>
-                <node concept="37vLTw" id="5wv4$Cfjq$c" role="34bMjA">
+                <node concept="37vLTw" id="2uC6tIqLcB7" role="34bMjA">
                   <ref role="3cqZAo" node="5wv4$Cfjq$f" resolve="e" />
                 </node>
               </node>
-              <node concept="3SKdUt" id="5wv4$Cfjq$d" role="3cqZAp">
-                <node concept="3SKdUq" id="5wv4$Cfjq$e" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: do something with exceptions" />
+              <node concept="YS8fn" id="2uC6tIqLczK" role="3cqZAp">
+                <node concept="2ShNRf" id="2uC6tIqLczL" role="YScLw">
+                  <node concept="1pGfFk" id="2uC6tIqLczM" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="2uC6tIqLczN" role="37wK5m">
+                      <property role="Xl_RC" value="Communication with GUI panel failed" />
+                    </node>
+                    <node concept="37vLTw" id="2uC6tIqLcDU" role="37wK5m">
+                      <ref role="3cqZAo" node="5wv4$Cfjq$f" resolve="e" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -4136,7 +4222,6 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="5wv4$CfiHk5" role="jymVt" />
     <node concept="2tJIrI" id="5wv4$CfiGW8" role="jymVt" />
     <node concept="3Tm1VV" id="5wv4$CfiFSG" role="1B3o_S" />
     <node concept="3uibUv" id="5wv4$CfiMc5" role="1zkMxy">
@@ -4150,6 +4235,65 @@
     </node>
     <node concept="2AHcQZ" id="5wv4$Cfl5Sp" role="2AJF6D">
       <ref role="2AI5Lk" to="i6ll:~Singleton" resolve="Singleton" />
+    </node>
+    <node concept="3clFb_" id="5DNjL23qkMX" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="stop" />
+      <node concept="3Tm1VV" id="5DNjL23qkMZ" role="1B3o_S" />
+      <node concept="3cqZAl" id="5DNjL23qkN0" role="3clF45" />
+      <node concept="3clFbS" id="5DNjL23qkN1" role="3clF47">
+        <node concept="SfApY" id="5DNjL23qlw8" role="3cqZAp">
+          <node concept="3clFbS" id="5DNjL23qlw9" role="SfCbr">
+            <node concept="3clFbF" id="5DNjL23qlwa" role="3cqZAp">
+              <node concept="2OqwBi" id="5DNjL23qlwb" role="3clFbG">
+                <node concept="1rXfSq" id="5DNjL23qlwg" role="2Oq$k0">
+                  <ref role="37wK5l" node="5wv4$CflW0k" resolve="getGuiService" />
+                </node>
+                <node concept="liA8E" id="5DNjL23qlPi" role="2OqNvi">
+                  <ref role="37wK5l" to="5c8y:~GuiService.finish():void" resolve="finish" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="5DNjL23qlwh" role="TEbGg">
+            <node concept="3clFbS" id="5DNjL23qlwi" role="TDEfX">
+              <node concept="34ab3g" id="5DNjL23qlwj" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <property role="34fQS0" value="true" />
+                <node concept="Xl_RD" id="5DNjL23qlwk" role="34bqiv">
+                  <property role="Xl_RC" value="Comunication with GUI panel failed" />
+                </node>
+                <node concept="37vLTw" id="5DNjL23qlwl" role="34bMjA">
+                  <ref role="3cqZAo" node="5DNjL23qlws" resolve="e" />
+                </node>
+              </node>
+              <node concept="YS8fn" id="5DNjL23qlwm" role="3cqZAp">
+                <node concept="2ShNRf" id="5DNjL23qlwn" role="YScLw">
+                  <node concept="1pGfFk" id="5DNjL23qlwo" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="5DNjL23qlwp" role="37wK5m">
+                      <property role="Xl_RC" value="Communication with GUI panel failed" />
+                    </node>
+                    <node concept="37vLTw" id="5DNjL23qlwq" role="37wK5m">
+                      <ref role="3cqZAo" node="5DNjL23qlws" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="5DNjL23qlws" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="5DNjL23qlwt" role="1tU5fm">
+                <ref role="3uigEE" to="zide:~RemoteException" resolve="RemoteException" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5DNjL23qlhh" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="5wv4$CfiFTv">
@@ -4195,6 +4339,14 @@
       <node concept="3clFbS" id="5wv4$Cfjm78" role="3clF47" />
       <node concept="3Tm1VV" id="5wv4$Cfjm79" role="1B3o_S" />
       <node concept="3cqZAl" id="5wv4$Cfjm5T" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="5DNjL23qkoC" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="stop" />
+      <node concept="3clFbS" id="5DNjL23qkoF" role="3clF47" />
+      <node concept="3Tm1VV" id="5DNjL23qkoG" role="1B3o_S" />
+      <node concept="3cqZAl" id="5DNjL23qknh" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5wv4$Cfjm2T" role="jymVt" />
     <node concept="3clFb_" id="1wz1usTw0md" role="jymVt">
@@ -4277,7 +4429,7 @@
           <node concept="TDmWw" id="5wv4$CfiKy2" role="TEbGg">
             <node concept="3clFbS" id="5wv4$CfiKy3" role="TDEfX">
               <node concept="34ab3g" id="5wv4$CfiKy4" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
+                <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="Xl_RD" id="5wv4$CfiKy5" role="34bqiv">
                   <property role="Xl_RC" value="Comunication with GUI panel failed" />
@@ -4286,13 +4438,18 @@
                   <ref role="3cqZAo" node="5wv4$CfiKyb" resolve="re" />
                 </node>
               </node>
-              <node concept="3SKdUt" id="5wv4$CfiKy7" role="3cqZAp">
-                <node concept="3SKdUq" id="5wv4$CfiKy8" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO handle properly RemoteException" />
+              <node concept="YS8fn" id="2uC6tIqL9k0" role="3cqZAp">
+                <node concept="2ShNRf" id="2uC6tIqL9mR" role="YScLw">
+                  <node concept="1pGfFk" id="2uC6tIqL9zH" role="2ShVmc">
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
+                    <node concept="Xl_RD" id="2uC6tIqL9_w" role="37wK5m">
+                      <property role="Xl_RC" value="Communication with GUI panel failed" />
+                    </node>
+                    <node concept="37vLTw" id="2uC6tIqL9Fa" role="37wK5m">
+                      <ref role="3cqZAo" node="5wv4$CfiKyb" resolve="re" />
+                    </node>
+                  </node>
                 </node>
-              </node>
-              <node concept="3cpWs6" id="5wv4$CfiKy9" role="3cqZAp">
-                <node concept="10Nm6u" id="5wv4$CfiKya" role="3cqZAk" />
               </node>
             </node>
             <node concept="3cpWsn" id="5wv4$CfiKyb" role="TDEfY">
@@ -4338,11 +4495,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5wv4$CfiKyp" role="3clF47">
-        <node concept="3SKdUt" id="5wv4$CfiKyq" role="3cqZAp">
-          <node concept="3SKdUq" id="5wv4$CfiKyr" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: handle properly result processing" />
-          </node>
-        </node>
         <node concept="3KaCP$" id="5wv4$CfiKys" role="3cqZAp">
           <node concept="3KbdKl" id="5wv4$CfiKyt" role="3KbHQx">
             <node concept="Rm8GO" id="6D1m6GTgJNF" role="3Kbmr1">
@@ -4359,6 +4511,11 @@
               <ref role="1Px2BO" to="deok:~Status" resolve="Status" />
             </node>
             <node concept="3clFbS" id="5wv4$CfiKyz" role="3Kbo56">
+              <node concept="3SKdUt" id="2uC6tIqLaoT" role="3cqZAp">
+                <node concept="3SKdUq" id="2uC6tIqLaoV" role="3SKWNk">
+                  <property role="3SKdUp" value="status is not supported in current version of Eddie Panel" />
+                </node>
+              </node>
               <node concept="34ab3g" id="5wv4$CfiKy$" role="3cqZAp">
                 <property role="35gtTG" value="info" />
                 <node concept="Xl_RD" id="5wv4$CfiKy_" role="34bqiv">
@@ -4374,6 +4531,11 @@
               <ref role="1Px2BO" to="deok:~Status" resolve="Status" />
             </node>
             <node concept="3clFbS" id="5wv4$CfiKyD" role="3Kbo56">
+              <node concept="3SKdUt" id="2uC6tIqLap6" role="3cqZAp">
+                <node concept="3SKdUq" id="2uC6tIqLap7" role="3SKWNk">
+                  <property role="3SKdUp" value="status is not supported in current version of Eddie Panel" />
+                </node>
+              </node>
               <node concept="34ab3g" id="5wv4$CfiKyE" role="3cqZAp">
                 <property role="35gtTG" value="error" />
                 <node concept="Xl_RD" id="5wv4$CfiKyF" role="34bqiv">
@@ -4395,16 +4557,13 @@
                   <property role="Xl_RC" value="Status cancelled. Script exits." />
                 </node>
               </node>
-              <node concept="3clFbF" id="1UlhK23WcbS" role="3cqZAp">
-                <node concept="2YIFZM" id="1UlhK23Wcwc" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~System.exit(int):void" resolve="exit" />
-                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  <node concept="3cmrfG" id="1UlhK23WcwF" role="37wK5m">
-                    <property role="3cmrfH" value="0" />
+              <node concept="YS8fn" id="2uC6tIqL9UB" role="3cqZAp">
+                <node concept="2ShNRf" id="2uC6tIqL9VW" role="YScLw">
+                  <node concept="HV5vD" id="2uC6tIqLal0" role="2ShVmc">
+                    <ref role="HV5vE" node="1ribDBS5RLq" resolve="ExitRequest" />
                   </node>
                 </node>
               </node>
-              <node concept="3zACq4" id="1UlhK23WaVy" role="3cqZAp" />
             </node>
           </node>
           <node concept="3clFbS" id="5wv4$CfiKyG" role="3Kb1Dw">
@@ -4424,12 +4583,6 @@
                     <ref role="37wK5l" to="deok:~Result.getStatus():org.eddieprogramming.gui.api.message.Status" resolve="getStatus" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="5wv4$CfiKyN" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="5wv4$CfiKyO" role="34bqiv">
-                <property role="Xl_RC" value="Unknown result status " />
               </node>
             </node>
           </node>
@@ -6810,6 +6963,22 @@
             </node>
             <node concept="liA8E" id="2rxW3eqg0qM" role="2OqNvi">
               <ref role="37wK5l" node="1mpZf2HQTqG" resolve="isHome" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="6ijM_gfgpuw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="exit" />
+      <node concept="3Tm1VV" id="6ijM_gfgpuy" role="1B3o_S" />
+      <node concept="3cqZAl" id="6ijM_gfgpuz" role="3clF45" />
+      <node concept="3clFbS" id="6ijM_gfgpu$" role="3clF47">
+        <node concept="YS8fn" id="6ijM_gfgqdG" role="3cqZAp">
+          <node concept="2ShNRf" id="6ijM_gfgqf_" role="YScLw">
+            <node concept="HV5vD" id="6ijM_gfgsRm" role="2ShVmc">
+              <ref role="HV5vE" node="1ribDBS5RLq" resolve="ExitRequest" />
             </node>
           </node>
         </node>
@@ -9405,6 +9574,32 @@
     <node concept="3Tm1VV" id="6R5ctBWrtIx" role="1B3o_S" />
     <node concept="3uibUv" id="6R5ctBWrtIy" role="EKbjA">
       <ref role="3uigEE" node="6R5ctBWrtI3" resolve="IProgramStatistics" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1ribDBS5RLq">
+    <property role="3GE5qa" value="common" />
+    <property role="TrG5h" value="ExitRequest" />
+    <node concept="2tJIrI" id="1ribDBS5SM$" role="jymVt" />
+    <node concept="3Tm1VV" id="1ribDBS5RLr" role="1B3o_S" />
+    <node concept="3uibUv" id="1ribDBS5SMv" role="1zkMxy">
+      <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+    </node>
+    <node concept="3UR2Jj" id="1ribDBS5SMC" role="lGtFl">
+      <node concept="TZ5HA" id="1ribDBS5SMD" role="TZ5H$">
+        <node concept="1dT_AC" id="1ribDBS5SME" role="1dT_Ay">
+          <property role="1dT_AB" value="Exception used to signal to terminate program." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1ribDBS5SMN" role="TZ5H$">
+        <node concept="1dT_AC" id="1ribDBS5SMO" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="1ribDBS5SMT" role="TZ5H$">
+        <node concept="1dT_AC" id="1ribDBS5SMU" role="1dT_Ay">
+          <property role="1dT_AB" value="NOTE: It is used in regular situations." />
+        </node>
+      </node>
     </node>
   </node>
 </model>
