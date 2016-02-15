@@ -463,6 +463,36 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5DNjL23qEmm" role="3cqZAp">
+          <node concept="37vLTI" id="5DNjL23qEmn" role="3clFbG">
+            <node concept="Xl_RD" id="5DNjL23qEmo" role="37vLTx">
+              <property role="Xl_RC" value="ERROR: Cannot read {0}. There is either not a terminal or it does not contain any value of selected type." />
+            </node>
+            <node concept="3EllGN" id="5DNjL23qEmp" role="37vLTJ">
+              <node concept="Xl_RD" id="5DNjL23qEmq" role="3ElVtu">
+                <property role="Xl_RC" value="error.runtime.terminal.read.error" />
+              </node>
+              <node concept="37vLTw" id="5DNjL23qEmv" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5DNjL23qFZ7" role="3cqZAp">
+          <node concept="37vLTI" id="5DNjL23qFZ9" role="3clFbG">
+            <node concept="Xl_RD" id="5DNjL23qFZa" role="37vLTx">
+              <property role="Xl_RC" value="ERROR: Cannot write {0}. There is either not a terminal or it does not accept selected value type." />
+            </node>
+            <node concept="3EllGN" id="5DNjL23qFZb" role="37vLTJ">
+              <node concept="Xl_RD" id="5DNjL23qFZc" role="3ElVtu">
+                <property role="Xl_RC" value="error.runtime.terminal.write.error" />
+              </node>
+              <node concept="37vLTw" id="5DNjL23qFZh" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="4LNIB3H0HIa" role="3cqZAp" />
         <node concept="3clFbH" id="4LNIB3H0Hxk" role="3cqZAp" />
         <node concept="3clFbH" id="4LNIB3H0Bm0" role="3cqZAp" />

@@ -6769,7 +6769,7 @@
                       <property role="Xl_RC" value="Attempt to read a {0} from terminal that does not contain {0}" />
                     </node>
                     <node concept="Xl_RD" id="6xs90l3sJQo" role="37wK5m">
-                      <property role="Xl_RC" value="error.runtime.variable.read.wrong.type" />
+                      <property role="Xl_RC" value="error.runtime.terminal.read.error" />
                     </node>
                     <node concept="37vLTw" id="7W1TakB_fUg" role="37wK5m">
                       <ref role="3cqZAo" node="6xs90l3yVmw" resolve="type" />
@@ -6909,7 +6909,7 @@
                       <property role="Xl_RC" value="Attempt to write a {0}  to terminal that does not accept {0}" />
                     </node>
                     <node concept="Xl_RD" id="6xs90l3sMJq" role="37wK5m">
-                      <property role="Xl_RC" value="error.runtime.variable.write.wrong.type" />
+                      <property role="Xl_RC" value="error.runtime.terminal.write.error" />
                     </node>
                     <node concept="37vLTw" id="7W1TakB_2Ms" role="37wK5m">
                       <ref role="3cqZAo" node="6xs90l3z6tK" resolve="type" />

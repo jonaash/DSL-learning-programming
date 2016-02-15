@@ -322,7 +322,7 @@
         </node>
         <node concept="17J3f2" id="7W1TakB$JuZ" role="3jGSnO" />
         <node concept="17J3Kp" id="7W1TakB$JuF" role="3jGSnO">
-          <property role="17J3Nn" value="number terminal with default variable" />
+          <property role="17J3Nn" value="number terminal without any variable - does not behave like a terminal!!!" />
         </node>
         <node concept="3dudH9" id="7W1TakB$JnD" role="3jGSnO">
           <node concept="2jchP5" id="7W1TakB$JnA" role="3dudC3">
@@ -688,6 +688,9 @@
     <property role="TrG5h" value="TestTerminal" />
     <node concept="3jGSmg" id="7W1TakB$JVj" role="3jGSko">
       <node concept="3cjXi6" id="7W1TakB$JVr" role="3jGSnO" />
+      <node concept="17J3Kp" id="5DNjL23qCKJ" role="3jGSnO">
+        <property role="17J3Nn" value="Terminal 1 is not properly initialized" />
+      </node>
       <node concept="17CkzI" id="7W1TakB$JVJ" role="3jGSnO">
         <node concept="3jGSmg" id="7W1TakB$JVN" role="17CkHq">
           <node concept="2kp8ke" id="7W1TakB$JWo" role="3jGSnO">
