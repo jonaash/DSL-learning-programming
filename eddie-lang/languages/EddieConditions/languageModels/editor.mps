@@ -34,6 +34,9 @@
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
       </concept>
+      <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
+        <property id="1214320119174" name="tag" index="2V7CMs" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -203,6 +206,9 @@
         <node concept="ljvvj" id="6H9YPQxBV7j" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="2V7CMv" id="2jCIbIQ_B$_" role="3F10Kt">
+          <property role="2V7CMs" value="ext_1_RTransform" />
+        </node>
       </node>
       <node concept="3F1sOY" id="2PnTnxEXEVg" role="3EZMnx">
         <property role="1cu_pB" value="0" />
@@ -255,8 +261,14 @@
         <property role="3F0ifm" value="if" />
         <ref role="1k5W1q" to="y2uj:6H9YPQx_WVi" resolve="EndBlockMatcher" />
         <ref role="1ERwB7" node="jBG8nbMfUQ" resolve="DeleteElseBranch" />
+        <node concept="2V7CMv" id="2jCIbIQ_ADK" role="3F10Kt">
+          <property role="2V7CMs" value="ext_1_RTransform" />
+        </node>
       </node>
       <node concept="l2Vlx" id="2PnTnxF1QBo" role="2iSdaV" />
+      <node concept="2V7CMv" id="2jCIbIQ_AAF" role="3F10Kt">
+        <property role="2V7CMs" value="ext_1_RTransform" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6OirKjsJslm">

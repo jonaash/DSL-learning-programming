@@ -76,6 +76,7 @@
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
       <concept id="5584396657084920413" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_SampleNode" flags="nn" index="1r4N5L" />
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
+        <property id="1140829165817" name="transformTag" index="2uHTBK" />
         <property id="1158952484319" name="description" index="3mWRNi" />
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
         <child id="1177442283389" name="part" index="_1QTJ" />
@@ -130,7 +131,8 @@
   <node concept="3UOs0u" id="2PnTnxF0Hlh">
     <property role="TrG5h" value="IfElse" />
     <node concept="3UNGvq" id="2PnTnxF0Hli" role="3UOs0v">
-      <property role="3mWRNi" value="end of then part of if statement" />
+      <property role="3mWRNi" value="end of then part or after end of if statement" />
+      <property role="2uHTBK" value="ext_1_RTransform" />
       <ref role="3UNGvu" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
       <node concept="3kRJcU" id="2PnTnxF0Hu3" role="3kShCk">
         <node concept="3clFbS" id="2PnTnxF0Hu4" role="2VODD2">
