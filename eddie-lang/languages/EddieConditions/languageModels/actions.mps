@@ -131,7 +131,7 @@
   <node concept="3UOs0u" id="2PnTnxF0Hlh">
     <property role="TrG5h" value="IfElse" />
     <node concept="3UNGvq" id="2PnTnxF0Hli" role="3UOs0v">
-      <property role="3mWRNi" value="end of then part or after end of if statement" />
+      <property role="3mWRNi" value=" tag - after then or after the end" />
       <property role="2uHTBK" value="ext_1_RTransform" />
       <ref role="3UNGvu" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
       <node concept="3kRJcU" id="2PnTnxF0Hu3" role="3kShCk">
