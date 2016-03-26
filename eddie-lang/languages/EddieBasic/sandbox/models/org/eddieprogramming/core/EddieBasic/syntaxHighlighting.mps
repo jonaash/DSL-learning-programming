@@ -117,11 +117,16 @@
         <child id="8938755948421935778" name="expression" index="2j_qme" />
         <child id="8938755948422071435" name="operation" index="2j_PeB" />
       </concept>
+      <concept id="8938755948415928777" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassType" flags="ng" index="2jchV_">
+        <reference id="8938755948415928778" name="definition" index="2jchVA" />
+      </concept>
       <concept id="8938755948415899245" name="org.eddieprogramming.core.EddieObjects.structure.ThisExpression" flags="ng" index="2jco51" />
       <concept id="8938755948416651173" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorDefinition" flags="ng" index="2jh1y9" />
+      <concept id="8938755948420359037" name="org.eddieprogramming.core.EddieObjects.structure.ConstructorCall" flags="ng" index="2jzrhh" />
       <concept id="8938755948421935782" name="org.eddieprogramming.core.EddieObjects.structure.FieldReference" flags="ng" index="2j_qma">
         <reference id="8938755948422938242" name="declaration" index="2jD6AI" />
       </concept>
+      <concept id="5508951763384160548" name="org.eddieprogramming.core.EddieObjects.structure.ClassType" flags="ng" index="2xduHk" />
       <concept id="7118929354275850898" name="org.eddieprogramming.core.EddieObjects.structure.Class" flags="ng" index="3cvgSl" />
       <concept id="148719074581307086" name="org.eddieprogramming.core.EddieObjects.structure.AbstractClassDefinition" flags="ng" index="3pFwnV">
         <child id="8938755948413576755" name="fields" index="2j5j4v" />
@@ -539,7 +544,24 @@
             </node>
           </node>
         </node>
-        <node concept="17J3f2" id="442XwrAUQNm" role="3jGSnO" />
+        <node concept="36Mw20" id="3TqhmjIru95" role="3jGSnO">
+          <node concept="AFBxM" id="3TqhmjIru99" role="36Mw2n">
+            <property role="36jPZJ" value="false" />
+            <property role="TrG5h" value="f" />
+            <node concept="2jzrhh" id="3TqhmjIrA$n" role="36MIYJ">
+              <ref role="hRIc0" node="2FICFVq5t6C" />
+              <node concept="FiVY1" id="3TqhmjIrA$o" role="3WjpkI">
+                <ref role="3WiQSc" node="442XwrAUPVm" resolve="name" />
+                <node concept="16y5rI" id="3TqhmjIrA_M" role="2jzNHB">
+                  <property role="16xLMo" value="Karel" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xduHk" id="3TqhmjIru93" role="36MCEW">
+              <ref role="2jchVA" node="2FICFVq5t6B" resolve="TracingRobot" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3pOcrA" id="442XwrAVlLC" role="2j5j5A">

@@ -857,14 +857,17 @@
     <node concept="14StLt" id="2FICFVpPjOS" role="V601i">
       <property role="TrG5h" value="Modifier" />
       <node concept="VechU" id="2FICFVpPjR5" role="3F10Kt">
-        <property role="Vb096" value="black" />
+        <property role="Vb096" value="gray" />
+        <node concept="1iSF2X" id="3TqhmjIqTk9" role="VblUZ">
+          <property role="1iTho6" value="595959" />
+        </node>
       </node>
       <node concept="Vb9p2" id="2FICFVpPjRe" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="2FICFVpNJzx" role="V601i">
       <property role="TrG5h" value="Identifier" />
       <node concept="VechU" id="2FICFVpNJJe" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="black" />
       </node>
     </node>
     <node concept="14StLt" id="2FICFVpZtxW" role="V601i">
@@ -883,11 +886,17 @@
         </node>
       </node>
       <node concept="Vb9p2" id="2FICFVpZtHJ" role="3F10Kt">
-        <property role="Vbekb" value="BOLD_ITALIC" />
+        <property role="Vbekb" value="ITALIC" />
       </node>
     </node>
     <node concept="14StLt" id="1UlhK23WIih" role="V601i">
-      <property role="TrG5h" value="Expression" />
+      <property role="TrG5h" value="PredefinedExpression" />
+      <node concept="VechU" id="3TqhmjIraHO" role="3F10Kt">
+        <property role="Vb096" value="black" />
+      </node>
+      <node concept="Vb9p2" id="3TqhmjIraHT" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
     </node>
     <node concept="14StLt" id="2PnTnxETv6J" role="V601i">
       <property role="TrG5h" value="String" />
@@ -915,9 +924,9 @@
     </node>
     <node concept="14StLt" id="2FICFVq3$lq" role="V601i">
       <property role="TrG5h" value="Literal" />
-      <node concept="3Xmtl4" id="2FICFVq3$_V" role="3F10Kt">
-        <node concept="1wgc9g" id="2FICFVq3$_Z" role="3XvnJa">
-          <ref role="1wgcnl" to="tpen:hshT4rC" resolve="NumericLiteral" />
+      <node concept="VechU" id="3TqhmjIqgUe" role="3F10Kt">
+        <node concept="1iSF2X" id="3TqhmjIqnWy" role="VblUZ">
+          <property role="1iTho6" value="108BCF" />
         </node>
       </node>
     </node>
@@ -1004,6 +1013,9 @@
       <property role="TrG5h" value="AdditionalInfo" />
       <node concept="VechU" id="6H9YPQxA0y4" role="3F10Kt">
         <property role="Vb096" value="gray" />
+        <node concept="1iSF2X" id="3TqhmjIqTk7" role="VblUZ">
+          <property role="1iTho6" value="A6A6A6" />
+        </node>
       </node>
       <node concept="Vb9p2" id="6H9YPQxBB57" role="3F10Kt">
         <property role="Vbekb" value="PLAIN" />
@@ -1014,12 +1026,21 @@
       <node concept="VechU" id="2FICFVpPjXZ" role="3F10Kt">
         <property role="Vb096" value="orange" />
         <node concept="1iSF2X" id="1UlhK23YDfZ" role="VblUZ">
-          <property role="1iTho6" value="660033" />
+          <property role="1iTho6" value="D32158" />
         </node>
       </node>
       <node concept="Vb9p2" id="2FICFVpPjY7" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
+    </node>
+    <node concept="14StLt" id="3TqhmjIruci" role="V601i">
+      <property role="TrG5h" value="ClassType" />
+      <node concept="3Xmtl4" id="3TqhmjIrueV" role="3F10Kt">
+        <node concept="1wgc9g" id="3TqhmjIruf1" role="3XvnJa">
+          <ref role="1wgcnl" node="2WqFKNDQhAh" resolve="Type" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="3TqhmjIruf8" role="3F10Kt" />
     </node>
     <node concept="14StLt" id="7FfY7DNutCX" role="V601i">
       <property role="TrG5h" value="Operator" />
@@ -1216,6 +1237,14 @@
       </node>
       <node concept="ljvvj" id="2FICFVq296U" role="3F10Kt">
         <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="3TqhmjIrJ22" role="V601i">
+      <property role="TrG5h" value="ClassExpression" />
+      <node concept="3Xmtl4" id="3TqhmjIrJ4J" role="3F10Kt">
+        <node concept="1wgc9g" id="3TqhmjIrJ4P" role="3XvnJa">
+          <ref role="1wgcnl" node="1UlhK23WIih" resolve="PredefinedExpression" />
+        </node>
       </node>
     </node>
     <node concept="14StLt" id="2FICFVq1cXg" role="V601i">

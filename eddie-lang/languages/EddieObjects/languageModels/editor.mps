@@ -246,7 +246,7 @@
         <node concept="3F0A7n" id="7KcPMNJfsHy" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          <ref role="1k5W1q" to="y2uj:2WqFKNDQhAh" resolve="Type" />
+          <ref role="1k5W1q" to="y2uj:3TqhmjIruci" resolve="ClassType" />
         </node>
       </node>
     </node>
@@ -278,6 +278,7 @@
       <node concept="l2Vlx" id="7KcPMNJwmeo" role="2iSdaV" />
       <node concept="3F0ifn" id="6hZLPS17n_" role="3EZMnx">
         <property role="3F0ifm" value="create" />
+        <ref role="1k5W1q" to="y2uj:3TqhmjIrJ22" resolve="ClassExpression" />
       </node>
       <node concept="PMmxH" id="6bbx8uIODNt" role="3EZMnx">
         <ref role="PMmxG" to="59lc:1LkA4kR75mq" resolve="CallParameters_Component" />
@@ -428,6 +429,7 @@
     <ref role="1XX52x" to="t2e5:1jWJ98HNK3l" resolve="AbstractClassPointerExpression" />
     <node concept="PMmxH" id="1jWJ98HNK7g" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="y2uj:3TqhmjIrJ22" resolve="ClassExpression" />
     </node>
   </node>
   <node concept="24kQdi" id="5xGSFEu1oyj">
