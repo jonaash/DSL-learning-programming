@@ -1679,15 +1679,41 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="a7r0C" id="2RjUFdDsl$n" role="3cqZAp">
-                    <node concept="37vLTw" id="2RjUFdDsl$o" role="2OEOjV">
-                      <ref role="3cqZAo" node="2RjUFdDsl$h" resolve="variableDecl" />
+                  <node concept="3clFbJ" id="3flGG5TItsH" role="3cqZAp">
+                    <node concept="3clFbS" id="3flGG5TItsJ" role="3clFbx">
+                      <node concept="3SKdUt" id="3flGG5TIwnU" role="3cqZAp">
+                        <node concept="3SKdUq" id="3flGG5TIwnW" role="3SKWNk">
+                          <property role="3SKdUp" value="when variable is initialized with default initializer, it does not have to be read" />
+                        </node>
+                      </node>
+                      <node concept="a7r0C" id="2RjUFdDsl$n" role="3cqZAp">
+                        <node concept="37vLTw" id="2RjUFdDsl$o" role="2OEOjV">
+                          <ref role="3cqZAo" node="2RjUFdDsl$h" resolve="variableDecl" />
+                        </node>
+                        <node concept="2YIFZM" id="2RjUFdDsl$p" role="a7wSD">
+                          <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                          <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+                          <node concept="Xl_RD" id="2RjUFdDsl$q" role="37wK5m">
+                            <property role="Xl_RC" value="warning.variable.unused.assignment" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2YIFZM" id="2RjUFdDsl$p" role="a7wSD">
-                      <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
-                      <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-                      <node concept="Xl_RD" id="2RjUFdDsl$q" role="37wK5m">
-                        <property role="Xl_RC" value="warning.variable.unused.assignment" />
+                    <node concept="3fqX7Q" id="3flGG5TIwik" role="3clFbw">
+                      <node concept="2OqwBi" id="3flGG5TIwim" role="3fr31v">
+                        <node concept="2OqwBi" id="3flGG5TIwin" role="2Oq$k0">
+                          <node concept="37vLTw" id="3flGG5TIwio" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2RjUFdDsl$h" resolve="variableDecl" />
+                          </node>
+                          <node concept="3TrEf2" id="3flGG5TIwip" role="2OqNvi">
+                            <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="3flGG5TIwiq" role="2OqNvi">
+                          <node concept="chp4Y" id="3flGG5TIwir" role="cj9EA">
+                            <ref role="cht4Q" to="3y9h:1llnCx2xHml" resolve="DefaultInitializer" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
