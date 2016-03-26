@@ -26,6 +26,12 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="7fa12e9c-b949-4976-b4fa-19accbc320b4" name="jetbrains.mps.lang.dataFlow">
       <concept id="1207062474157" name="jetbrains.mps.lang.dataFlow.structure.EmitLabelStatement" flags="ng" index="axUMO" />
@@ -75,6 +81,11 @@
     <ref role="3_znuS" to="9xx6:2PnTnxEXEQm" resolve="IfStatement" />
     <node concept="3__wT9" id="5beVc_rbrFf" role="3_A6iZ">
       <node concept="3clFbS" id="5beVc_rbrFg" role="2VODD2">
+        <node concept="3SKdUt" id="3flGG5TJ3aF" role="3cqZAp">
+          <node concept="3SKdUq" id="3flGG5TJ3aH" role="3SKWNk">
+            <property role="3SKdUp" value="condition" />
+          </node>
+        </node>
         <node concept="3AgYrR" id="5beVc_rbrFP" role="3cqZAp">
           <node concept="2OqwBi" id="5beVc_rbrHK" role="3Ah4Yx">
             <node concept="3__QtB" id="5beVc_rbrG5" role="2Oq$k0" />
@@ -89,6 +100,11 @@
           </node>
         </node>
         <node concept="3clFbH" id="5B0fQ1kPbFD" role="3cqZAp" />
+        <node concept="3SKdUt" id="3flGG5TJ31j" role="3cqZAp">
+          <node concept="3SKdUq" id="3flGG5TJ31l" role="3SKWNk">
+            <property role="3SKdUp" value="true branch" />
+          </node>
+        </node>
         <node concept="3AgYrR" id="5beVc_rbrYT" role="3cqZAp">
           <node concept="2OqwBi" id="5beVc_rbs1x" role="3Ah4Yx">
             <node concept="3__QtB" id="5beVc_rbrZV" role="2Oq$k0" />
@@ -108,6 +124,11 @@
           <property role="TrG5h" value="endOfTrue" />
         </node>
         <node concept="3clFbH" id="2RjUFdDn6y6" role="3cqZAp" />
+        <node concept="3SKdUt" id="3flGG5TJ2Wb" role="3cqZAp">
+          <node concept="3SKdUq" id="3flGG5TJ2Wd" role="3SKWNk">
+            <property role="3SKdUp" value="false branch" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="2RjUFdDn6EL" role="3cqZAp">
           <node concept="3clFbS" id="2RjUFdDn6EN" role="3clFbx">
             <node concept="3AgYrR" id="5beVc_rbsqj" role="3cqZAp">
