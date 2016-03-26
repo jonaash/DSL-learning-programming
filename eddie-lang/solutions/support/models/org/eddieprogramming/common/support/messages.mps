@@ -836,7 +836,7 @@
         <node concept="3clFbF" id="jBG8nbI0Q_" role="3cqZAp">
           <node concept="37vLTI" id="jBG8nbI0QA" role="3clFbG">
             <node concept="Xl_RD" id="jBG8nbI0QB" role="37vLTx">
-              <property role="Xl_RC" value="Change to While Statement" />
+              <property role="Xl_RC" value="Change to While Loop" />
             </node>
             <node concept="3EllGN" id="jBG8nbI0QC" role="37vLTJ">
               <node concept="37vLTw" id="jBG8nbI0QI" role="3ElQJh">
