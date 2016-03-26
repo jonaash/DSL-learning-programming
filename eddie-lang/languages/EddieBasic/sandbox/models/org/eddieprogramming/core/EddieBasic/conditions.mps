@@ -72,6 +72,7 @@
         <property id="7118929354273869887" name="direction" index="3ckXiS" />
       </concept>
       <concept id="7118929354273869885" name="org.eddieprogramming.dsl.RobotKarel.structure.IsFull" flags="ng" index="3ckXiU" />
+      <concept id="7118929354273869889" name="org.eddieprogramming.dsl.RobotKarel.structure.IsWallAhead" flags="ng" index="3ckXj6" />
       <concept id="7118929354273869888" name="org.eddieprogramming.dsl.RobotKarel.structure.IsMark" flags="ng" index="3ckXj7" />
     </language>
   </registry>
@@ -158,7 +159,7 @@
       <node concept="17J3f2" id="jBG8nbSq12" role="3jGSnO" />
       <node concept="17CkzI" id="2fiU1DVANXB" role="3jGSnO">
         <node concept="3ckXiT" id="6bbx8uIAlUB" role="17CkHB">
-          <property role="3ckXiS" value="north" />
+          <property role="3ckXiS" value="EAST" />
         </node>
         <node concept="3jGSmg" id="2fiU1DVANXn" role="17CkHq">
           <node concept="17J3f2" id="2fiU1DVANXo" role="3jGSnO" />
@@ -172,40 +173,17 @@
   <node concept="1$vsWe" id="4kfw1ThrmoQ">
     <property role="TrG5h" value="IfStatement" />
     <node concept="3jGSmg" id="4kfw1ThrmoR" role="3jGSko">
+      <node concept="17J3f2" id="3flGG5TJ3zw" role="3jGSnO" />
       <node concept="17CkzI" id="4kfw1Thrmuy" role="3jGSnO">
-        <node concept="3ckXiU" id="4kfw1ThrmuE" role="17CkHB" />
+        <node concept="3ckXj6" id="3flGG5TJ3zk" role="17CkHB" />
         <node concept="3jGSmg" id="4kfw1Thrmu$" role="17CkHq">
-          <node concept="3cjXi6" id="4kfw1ThrmuH" role="3jGSnO" />
+          <node concept="3cjWHT" id="3flGG5TJ3zr" role="3jGSnO" />
         </node>
         <node concept="3jGSmg" id="4kfw1Thrmu_" role="17CkHv">
-          <node concept="17J3Kp" id="4kfw1Thz4cT" role="3jGSnO">
-            <property role="17J3Nn" value="test" />
-          </node>
+          <node concept="3cjXi6" id="3flGG5TJ3zu" role="3jGSnO" />
         </node>
-      </node>
-      <node concept="17CkzI" id="4kfw1ThAV6d" role="3jGSnO">
-        <node concept="3jGSmg" id="4kfw1ThAV6h" role="17CkHq" />
-        <node concept="3jGSmg" id="4kfw1ThAV6j" role="17CkHv" />
-        <node concept="3ckXiU" id="5eWJqD2o3B4" role="17CkHB" />
       </node>
       <node concept="17J3f2" id="4kfw1ThF8A7" role="3jGSnO" />
-      <node concept="17CkzI" id="jBG8nbJivC" role="3jGSnO">
-        <node concept="3ckXiT" id="6bbx8uIAlST" role="17CkHB">
-          <property role="3ckXiS" value="north" />
-        </node>
-        <node concept="3jGSmg" id="3hBhvFSH$fO" role="17CkHq">
-          <node concept="17J3f2" id="146X79eYJnj" role="3jGSnO" />
-          <node concept="3cjXi6" id="3hBhvFSHCo3" role="3jGSnO" />
-          <node concept="17J3f2" id="146X79eYJnm" role="3jGSnO" />
-          <node concept="17J3f2" id="146X79eYJnv" role="3jGSnO" />
-        </node>
-        <node concept="3jGSmg" id="jBG8nbMQxR" role="17CkHv">
-          <node concept="3cjWHT" id="jBG8nbMQxZ" role="3jGSnO" />
-        </node>
-      </node>
-      <node concept="17J3f2" id="3hBhvFSHCn7" role="3jGSnO" />
-      <node concept="17J3f2" id="3hBhvFSHCno" role="3jGSnO" />
-      <node concept="17J3f2" id="3hBhvFSHCnE" role="3jGSnO" />
     </node>
   </node>
   <node concept="1$vsWe" id="6kvBWKzBdGa">
