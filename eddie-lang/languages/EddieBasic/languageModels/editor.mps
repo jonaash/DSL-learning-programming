@@ -449,7 +449,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="1IJMvjStmF">
-    <ref role="1XX52x" to="dyrx:3a5rfDmYafO" resolve="Script" />
+    <ref role="1XX52x" to="dyrx:3a5rfDmYafO" resolve="Program" />
     <node concept="3EZMnI" id="1IJMvjStn8" role="2wV5jI">
       <node concept="3EZMnI" id="50Oz1ODipdB" role="3EZMnx">
         <node concept="VPM3Z" id="50Oz1ODipdD" role="3F10Kt">
@@ -546,7 +546,7 @@
                         <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
                         <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
                         <node concept="Xl_RD" id="4y6FdzEpu6J" role="37wK5m">
-                          <property role="Xl_RC" value="editor.control.script.reset.button.label" />
+                          <property role="Xl_RC" value="editor.control.program.reset.button.label" />
                         </node>
                       </node>
                     </node>
@@ -564,7 +564,7 @@
                       <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
                       <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
                       <node concept="Xl_RD" id="4y6FdzEpE69" role="37wK5m">
-                        <property role="Xl_RC" value="editor.control.script.reset.button.tooltip" />
+                        <property role="Xl_RC" value="editor.control.program.reset.button.tooltip" />
                       </node>
                     </node>
                   </node>
@@ -623,7 +623,7 @@
                                               <node concept="3clFbF" id="50Oz1ODis3b" role="3cqZAp">
                                                 <node concept="2OqwBi" id="50Oz1ODis3c" role="3clFbG">
                                                   <node concept="1PxgMI" id="50Oz1ODis3d" role="2Oq$k0">
-                                                    <ref role="1PxNhF" to="dyrx:3a5rfDmYafO" resolve="Script" />
+                                                    <ref role="1PxNhF" to="dyrx:3a5rfDmYafO" resolve="Program" />
                                                     <node concept="pncrf" id="50Oz1ODis3e" role="1PxMeX" />
                                                   </node>
                                                   <node concept="2qgKlT" id="50Oz1ODis3f" role="2OqNvi">
@@ -679,7 +679,7 @@
         <node concept="2iRfu4" id="50Oz1ODiHZV" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="1IJMvjStnf" role="3EZMnx">
-        <property role="3F0ifm" value="script" />
+        <property role="3F0ifm" value="program" />
         <ref role="1k5W1q" node="6H9YPQxCHbT" resolve="ControlAlias" />
         <node concept="VPxyj" id="6N2I4lciIfs" role="3F10Kt">
           <property role="VOm3f" value="false" />

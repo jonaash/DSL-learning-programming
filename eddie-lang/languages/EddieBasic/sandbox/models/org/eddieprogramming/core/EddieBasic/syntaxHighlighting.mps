@@ -217,6 +217,7 @@
           <property role="36Kqnr" value="3" />
         </node>
       </node>
+      <node concept="17J3f2" id="3TqhmjItYiF" role="3jGSnO" />
       <node concept="17J3Kp" id="2FICFVq5eBa" role="3jGSnO">
         <property role="17J3Nn" value="variable declaration and reference" />
       </node>
@@ -233,6 +234,28 @@
       <node concept="2kp8ke" id="2FICFVq5eCi" role="3jGSnO">
         <node concept="AE91N" id="2FICFVq5eCY" role="16wSqL">
           <ref role="AE91K" node="2FICFVq5epH" resolve="name" />
+        </node>
+      </node>
+      <node concept="17J3f2" id="3TqhmjItYjL" role="3jGSnO" />
+      <node concept="17J3Kp" id="3TqhmjItYm0" role="3jGSnO">
+        <property role="17J3Nn" value="object variable and constructor call" />
+      </node>
+      <node concept="36Mw20" id="3TqhmjItYok" role="3jGSnO">
+        <node concept="AFBxM" id="3TqhmjItYoo" role="36Mw2n">
+          <property role="36jPZJ" value="false" />
+          <property role="TrG5h" value="robot" />
+          <node concept="2jzrhh" id="3TqhmjItYvF" role="36MIYJ">
+            <ref role="hRIc0" node="2FICFVq5t6C" />
+            <node concept="FiVY1" id="3TqhmjItYvG" role="3WjpkI">
+              <ref role="3WiQSc" node="442XwrAUPVm" resolve="name" />
+              <node concept="AE91N" id="3TqhmjIu3yv" role="2jzNHB">
+                <ref role="AE91K" node="2FICFVq5epH" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2xduHk" id="3TqhmjItYoi" role="36MCEW">
+            <ref role="2jchVA" node="2FICFVq5t6B" resolve="TracingRobot" />
+          </node>
         </node>
       </node>
       <node concept="17J3f2" id="2FICFVq5e_e" role="3jGSnO" />
@@ -541,24 +564,6 @@
             </node>
             <node concept="3sCHcl" id="442XwrAVh3Q" role="2j_qme">
               <ref role="3sDJ1y" to="uoo5:442XwrAYO0$" resolve="Karel" />
-            </node>
-          </node>
-        </node>
-        <node concept="36Mw20" id="3TqhmjIru95" role="3jGSnO">
-          <node concept="AFBxM" id="3TqhmjIru99" role="36Mw2n">
-            <property role="36jPZJ" value="false" />
-            <property role="TrG5h" value="f" />
-            <node concept="2jzrhh" id="3TqhmjIrA$n" role="36MIYJ">
-              <ref role="hRIc0" node="2FICFVq5t6C" />
-              <node concept="FiVY1" id="3TqhmjIrA$o" role="3WjpkI">
-                <ref role="3WiQSc" node="442XwrAUPVm" resolve="name" />
-                <node concept="16y5rI" id="3TqhmjIrA_M" role="2jzNHB">
-                  <property role="16xLMo" value="Karel" />
-                </node>
-              </node>
-            </node>
-            <node concept="2xduHk" id="3TqhmjIru93" role="36MCEW">
-              <ref role="2jchVA" node="2FICFVq5t6B" resolve="TracingRobot" />
             </node>
           </node>
         </node>

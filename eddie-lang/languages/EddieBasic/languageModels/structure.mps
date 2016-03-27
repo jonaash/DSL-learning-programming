@@ -166,9 +166,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmYafO">
-    <property role="TrG5h" value="Script" />
+    <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="program" />
     <property role="MwhBj" value="${module}/icons/property.png" />
     <property role="1pbfSe" value="1988226834" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -484,7 +483,6 @@
   <node concept="1TIwiD" id="3hBhvFSK1cO">
     <property role="TrG5h" value="Library" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="library" />
     <property role="MwhBj" value="${module}/icons/ppLib.png" />
     <property role="1pbfSe" value="757553454" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

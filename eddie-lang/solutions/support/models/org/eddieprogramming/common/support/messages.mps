@@ -1036,14 +1036,14 @@
         <node concept="3clFbF" id="6pJoTiqkGcD" role="3cqZAp">
           <node concept="37vLTI" id="6pJoTiqkGcE" role="3clFbG">
             <node concept="Xl_RD" id="6pJoTiqkGcF" role="37vLTx">
-              <property role="Xl_RC" value="script {0}" />
+              <property role="Xl_RC" value="program {0}" />
             </node>
             <node concept="3EllGN" id="6pJoTiqkGcG" role="37vLTJ">
               <node concept="37vLTw" id="6pJoTiqkGcM" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="6pJoTiqkGcH" role="3ElVtu">
-                <property role="Xl_RC" value="presentation.concept.script.call" />
+                <property role="Xl_RC" value="presentation.concept.program.call" />
               </node>
             </node>
           </node>
@@ -1178,7 +1178,7 @@
             </node>
             <node concept="3EllGN" id="4y6FdzEpu2m" role="37vLTJ">
               <node concept="Xl_RD" id="4y6FdzEpu6J" role="3ElVtu">
-                <property role="Xl_RC" value="editor.control.script.reset.button.label" />
+                <property role="Xl_RC" value="editor.control.program.reset.button.label" />
               </node>
               <node concept="37vLTw" id="4y6FdzEptFv" role="3ElQJh">
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
@@ -1196,7 +1196,7 @@
                 <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
               </node>
               <node concept="Xl_RD" id="4y6FdzEpE69" role="3ElVtu">
-                <property role="Xl_RC" value="editor.control.script.reset.button.tooltip" />
+                <property role="Xl_RC" value="editor.control.program.reset.button.tooltip" />
               </node>
             </node>
           </node>
