@@ -171,7 +171,7 @@
   <node concept="2DaZZR" id="6bh18$pfPtM" />
   <node concept="sEfby" id="6bh18$pfQ5p">
     <property role="TrG5h" value="EddieView" />
-    <property role="2XNbzY" value="Eddie World" />
+    <property role="2XNbzY" value="Eddie Panel" />
     <property role="2bmUCM" value="RIGHT" />
     <property role="2XNb$f" value="4" />
     <node concept="2XrIbr" id="3H_tUICS7wA" role="2XNbBy">
@@ -318,7 +318,7 @@
                 <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="Xl_RD" id="3H_tUICS7TN" role="34bqiv">
-                  <property role="Xl_RC" value="Initializing EddieView panel expecption:" />
+                  <property role="Xl_RC" value="Initializing Eddie Panel expecption:" />
                 </node>
                 <node concept="37vLTw" id="3H_tUICS7TO" role="34bMjA">
                   <ref role="3cqZAo" node="3H_tUICS7TP" resolve="e" />
