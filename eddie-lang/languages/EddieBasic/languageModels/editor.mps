@@ -103,6 +103,7 @@
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1240253180846" name="jetbrains.mps.lang.editor.structure.IndentLayoutNoWrapClassItem" flags="ln" index="34QqEe" />
@@ -709,7 +710,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6H9YPQxBTzX" role="3EZMnx">
-        <property role="3F0ifm" value="script" />
+        <property role="3F0ifm" value="program" />
         <ref role="1k5W1q" node="6H9YPQx_WVi" resolve="EndBlockMatcher" />
       </node>
       <node concept="l2Vlx" id="1IJMvjStnb" role="2iSdaV" />
@@ -818,7 +819,7 @@
         </node>
       </node>
       <node concept="Vb9p2" id="2FICFVq4D2S" role="3F10Kt">
-        <property role="Vbekb" value="BOLD_ITALIC" />
+        <property role="Vbekb" value="ITALIC" />
       </node>
     </node>
     <node concept="14StLt" id="2PnTnxEVbOt" role="V601i">
@@ -1090,6 +1091,17 @@
       <property role="TrG5h" value="TypeHelper" />
       <node concept="VechU" id="5xGSFEu54JY" role="3F10Kt">
         <property role="Vb096" value="red" />
+      </node>
+      <node concept="30gYXW" id="xD7etxRt6e" role="3F10Kt">
+        <node concept="1iSF2X" id="xD7etxRt6m" role="VblUZ">
+          <property role="1iTho6" value="FFDCDC" />
+        </node>
+      </node>
+      <node concept="Veino" id="xD7etxR0i$" role="3F10Kt">
+        <property role="Vb096" value="red" />
+        <node concept="1iSF2X" id="xD7etxR0mS" role="VblUZ">
+          <property role="1iTho6" value="FFDCDC" />
+        </node>
       </node>
       <node concept="VPM3Z" id="5xGSFEu3J8S" role="3F10Kt">
         <property role="VOm3f" value="false" />
