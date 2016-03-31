@@ -62,6 +62,9 @@
       <concept id="3267332360033093774" name="org.eddieprogramming.core.EddieBasic.structure.Repeat" flags="ng" index="17JERQ">
         <child id="3394217739175032606" name="iteration" index="36Ktwi" />
       </concept>
+      <concept id="6349814108922044266" name="org.eddieprogramming.core.EddieBasic.structure.CommentAnnotation" flags="ng" index="184cOw">
+        <child id="6349814108922044689" name="documentation" index="184fdr" />
+      </concept>
       <concept id="6349814108921509948" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationBlock" flags="ng" index="186aDQ">
         <child id="6349814108921512770" name="content" index="186d48" />
       </concept>
@@ -100,7 +103,7 @@
         <property id="6349814108916864868" name="row" index="1nRWkI" />
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
         <child id="7428636491485899649" name="tutorialRef" index="2J$FC6" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
@@ -165,6 +168,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -905,9 +911,6 @@
       <property role="TrG5h" value="countMarks" />
       <node concept="36MCER" id="5Teiyof2U68" role="2jg$Xp" />
       <node concept="3jGSmg" id="5Teiyof2U69" role="hRHZh">
-        <node concept="17J3Kp" id="5Teiyof2U6a" role="3jGSnO">
-          <property role="17J3Nn" value="TODO: implement function body" />
-        </node>
         <node concept="36Mw20" id="5Teiyof2U6b" role="3jGSnO">
           <node concept="AFBxM" id="5Teiyof2U6c" role="36Mw2n">
             <property role="36jPZJ" value="true" />
@@ -942,6 +945,9 @@
           <node concept="3ckXj7" id="5Teiyof2U6q" role="2LFUC5" />
         </node>
         <node concept="17J3f2" id="5Teiyof2U6r" role="3jGSnO" />
+        <node concept="17J3Kp" id="5Teiyof2U6x" role="3jGSnO">
+          <property role="17J3Nn" value="put the same amount back" />
+        </node>
         <node concept="17JERQ" id="5Teiyof2U6s" role="3jGSnO">
           <node concept="3jGSmg" id="5Teiyof2U6t" role="3azrUc">
             <node concept="3cjXi7" id="5Teiyof2U6u" role="3jGSnO" />
@@ -951,12 +957,16 @@
           </node>
         </node>
         <node concept="17J3f2" id="5Teiyof2U6w" role="3jGSnO" />
-        <node concept="17J3Kp" id="5Teiyof2U6x" role="3jGSnO">
-          <property role="17J3Nn" value="put the same amount back" />
-        </node>
         <node concept="3duzCq" id="5Teiyof2U6y" role="3jGSnO">
           <node concept="AE91N" id="5Teiyof2U6z" role="3duzCr">
             <ref role="AE91K" node="5Teiyof2U6c" resolve="count" />
+          </node>
+        </node>
+      </node>
+      <node concept="184cOw" id="xD7etxSX6T" role="lGtFl">
+        <node concept="186aDQ" id="xD7etxSX6U" role="184fdr">
+          <node concept="186dhI" id="xD7etxSX6V" role="186d48">
+            <property role="186dgp" value="Counts all marks by picking them and putting them back." />
           </node>
         </node>
       </node>
@@ -971,14 +981,13 @@
           <node concept="36MCER" id="5Teiyof2U6D" role="36MCEW" />
         </node>
       </node>
-      <node concept="17J3f2" id="5Teiyof2U6E" role="3jGSnO" />
       <node concept="17JERQ" id="5Teiyof2U6F" role="3jGSnO">
         <node concept="3jGSmg" id="5Teiyof2U6G" role="3azrUc">
           <node concept="3cjXi6" id="5Teiyof2U6H" role="3jGSnO" />
           <node concept="3cjXi6" id="5Teiyof2U6I" role="3jGSnO" />
           <node concept="17J3f2" id="5Teiyof2U6J" role="3jGSnO" />
           <node concept="17J3Kp" id="5Teiyof2U6K" role="3jGSnO">
-            <property role="17J3Nn" value="add makrs from this cell" />
+            <property role="17J3Nn" value="add marks from this cell" />
           </node>
           <node concept="3dudH9" id="5Teiyof2U6L" role="3jGSnO">
             <node concept="B81uQ" id="5Teiyof2U6M" role="3dudC3">
@@ -986,7 +995,7 @@
                 <ref role="AE91K" node="5Teiyof2U6B" resolve="sum" />
               </node>
               <node concept="3527Q3" id="5Teiyof2U6O" role="B81dI">
-                <node concept="AE91N" id="5Teiyof2U6P" role="3527ZY">
+                <node concept="AE91N" id="xD7etxSXFO" role="3527ZY">
                   <ref role="AE91K" node="5Teiyof2U6B" resolve="sum" />
                 </node>
                 <node concept="3dtAta" id="5Teiyof2U6Q" role="3527S9">
