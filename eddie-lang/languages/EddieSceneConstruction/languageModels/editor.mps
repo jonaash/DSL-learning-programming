@@ -60,10 +60,10 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5wv4$CfHS84">
-    <ref role="1XX52x" to="vlyv:5wv4$CfHS45" resolve="Scene" />
+    <ref role="1XX52x" to="vlyv:5wv4$CfHS45" resolve="Map" />
     <node concept="3EZMnI" id="5wv4$CfHS8b" role="2wV5jI">
       <node concept="3F0ifn" id="5wv4$CfHS8i" role="3EZMnx">
-        <property role="3F0ifm" value="Scene" />
+        <property role="3F0ifm" value="Map" />
       </node>
       <node concept="l2Vlx" id="5wv4$CfHS8e" role="2iSdaV" />
       <node concept="3F0A7n" id="5wv4$CfHS8s" role="3EZMnx">
@@ -151,10 +151,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="5wv4$CfHSf7">
-    <ref role="1XX52x" to="vlyv:5wv4$CfHS4$" resolve="SceneConstruction" />
+    <ref role="1XX52x" to="vlyv:5wv4$CfHS4$" resolve="MapConstruction" />
     <node concept="3EZMnI" id="5wv4$CfHSf9" role="2wV5jI">
       <node concept="3F0ifn" id="5wv4$CfHSfg" role="3EZMnx">
-        <property role="3F0ifm" value="createScene" />
+        <property role="3F0ifm" value="createMap" />
       </node>
       <node concept="3F0ifn" id="5wv4$CfHSnv" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -220,10 +220,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="6snOov8TMnK">
-    <ref role="1XX52x" to="vlyv:5wv4$CfZXb_" resolve="Tutorial" />
+    <ref role="1XX52x" to="vlyv:5wv4$CfZXb_" resolve="Scenario" />
     <node concept="3EZMnI" id="6snOov8TMp7" role="2wV5jI">
       <node concept="3F0ifn" id="6snOov8TMpy" role="3EZMnx">
-        <property role="3F0ifm" value="Tutorial" />
+        <property role="3F0ifm" value="Scenario" />
       </node>
       <node concept="3F0A7n" id="6snOov8TMpL" role="3EZMnx">
         <property role="1O74Pk" value="true" />
@@ -233,7 +233,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6snOov8TMqM" role="3EZMnx">
-        <property role="3F0ifm" value="scene:" />
+        <property role="3F0ifm" value="map" />
         <node concept="lj46D" id="6snOov8TMqY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -313,7 +313,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6snOov9bEgi">
-    <ref role="1XX52x" to="vlyv:6snOov9bEfZ" resolve="SceneEvent" />
+    <ref role="1XX52x" to="vlyv:6snOov9bEfZ" resolve="ScenarioEvent" />
     <node concept="3EZMnI" id="6snOov9bEhn" role="2wV5jI">
       <node concept="3F0ifn" id="1mpZf2HyCZF" role="3EZMnx">
         <property role="3F0ifm" value="Event" />

@@ -301,7 +301,7 @@
     <property role="TrG5h" value="main" />
     <node concept="1J8HWv" id="6snOov7ZwXf" role="24Zfi7">
       <property role="TrG5h" value="exportedSceneDescription" />
-      <ref role="vkxhZ" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+      <ref role="vkxhZ" to="dyrx:5wv4$CfyOGH" resolve="AbstractMap" />
       <ref role="vkxhW" to="tpee:fz12cDA" resolve="ClassConcept" />
       <ref role="1J8bob" to="dyrx:6snOov7ZlQ$" resolve="Keeper" />
       <node concept="3dkZVN" id="6snOov7ZwXg" role="1J8b7s">
@@ -347,7 +347,7 @@
     </node>
     <node concept="1J8HWv" id="6snOov8s38i" role="24Zfi7">
       <property role="TrG5h" value="exportedFactoryMethod" />
-      <ref role="vkxhZ" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+      <ref role="vkxhZ" to="dyrx:5wv4$CfyOGH" resolve="AbstractMap" />
       <ref role="vkxhW" to="tpee:fIYIFWa" resolve="StaticMethodDeclaration" />
       <ref role="1J8bob" to="dyrx:6snOov7ZlQ$" resolve="Keeper" />
       <node concept="3dkZVN" id="6snOov8s38j" role="1J8b7s">
@@ -393,7 +393,7 @@
     </node>
     <node concept="1J8HWv" id="6snOov8znqP" role="24Zfi7">
       <property role="TrG5h" value="exportedTutorialDescription" />
-      <ref role="vkxhZ" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
+      <ref role="vkxhZ" to="dyrx:5wv4$CfHFDB" resolve="AbstractScenario" />
       <ref role="vkxhW" to="tpee:fz12cDA" resolve="ClassConcept" />
       <ref role="1J8bob" to="dyrx:6snOov7ZlQ$" resolve="Keeper" />
       <node concept="3dkZVN" id="6snOov8znqQ" role="1J8b7s">
@@ -455,11 +455,11 @@
     <node concept="2rT7sh" id="61GUnTJ9ZU7" role="2rTMjI">
       <property role="TrG5h" value="SceneDescripti" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
-      <ref role="2rTdP9" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+      <ref role="2rTdP9" to="dyrx:5wv4$CfyOGH" resolve="AbstractMap" />
     </node>
     <node concept="2rT7sh" id="61GUnTJbnVf" role="2rTMjI">
       <property role="TrG5h" value="Tutorial" />
-      <ref role="2rTdP9" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
+      <ref role="2rTdP9" to="dyrx:5wv4$CfHFDB" resolve="AbstractScenario" />
       <ref role="2rZz_L" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
     <node concept="2rT7sh" id="61GUnTJejcj" role="2rTMjI">
@@ -582,7 +582,7 @@
       <ref role="3lhOvi" node="3hBhvFSKjpZ" resolve="map_Library" />
     </node>
     <node concept="3lhOvk" id="6bh18$peL3V" role="3lj3bC">
-      <ref role="30HIoZ" to="dyrx:3a5rfDmYafO" resolve="Script" />
+      <ref role="30HIoZ" to="dyrx:3a5rfDmYafO" resolve="Program" />
       <ref role="3lhOvi" node="6bh18$peL3X" resolve="map_Script" />
     </node>
   </node>
@@ -786,9 +786,9 @@
         <node concept="3clFbH" id="6snOov8hlq6" role="3cqZAp" />
         <node concept="3cpWs8" id="6snOov8Kr5u" role="3cqZAp">
           <node concept="3cpWsn" id="6snOov8Kr5v" role="3cpWs9">
-            <property role="TrG5h" value="tutorial" />
+            <property role="TrG5h" value="scenario" />
             <node concept="3uibUv" id="6snOov8Kr5w" role="1tU5fm">
-              <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
+              <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="ScenarioDescription" />
             </node>
             <node concept="10Nm6u" id="6snOov8Kron" role="33vP2m" />
           </node>
@@ -796,10 +796,10 @@
         <node concept="3clFbF" id="6snOov8KrRP" role="3cqZAp">
           <node concept="37vLTI" id="6snOov8Ksnx" role="3clFbG">
             <node concept="37vLTw" id="6snOov8KrRN" role="37vLTJ">
-              <ref role="3cqZAo" node="6snOov8Kr5v" resolve="tutorial" />
+              <ref role="3cqZAo" node="6snOov8Kr5v" resolve="scenario" />
             </node>
             <node concept="2YIFZM" id="6snOov8KsGd" role="37vLTx">
-              <ref role="1Pybhc" node="6snOov8Kv6h" resolve="TutorialDescriptionGeneratorPlaceholder" />
+              <ref role="1Pybhc" node="6snOov8Kv6h" resolve="ScenarioDescriptionGeneratorPlaceholder" />
               <ref role="37wK5l" node="6snOov8KvBE" resolve="createInstance" />
               <node concept="1ZhdrF" id="6snOov8KsGe" role="lGtFl">
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />
@@ -878,9 +878,9 @@
         <node concept="3clFbH" id="6snOov8Kq57" role="3cqZAp" />
         <node concept="3cpWs8" id="6snOov8hmLt" role="3cqZAp">
           <node concept="3cpWsn" id="6snOov8hmLu" role="3cpWs9">
-            <property role="TrG5h" value="scene" />
+            <property role="TrG5h" value="map" />
             <node concept="3uibUv" id="6snOov8hmLv" role="1tU5fm">
-              <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+              <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="MapDescription" />
             </node>
             <node concept="10Nm6u" id="6snOov8hnag" role="33vP2m" />
           </node>
@@ -888,10 +888,10 @@
         <node concept="3clFbF" id="6snOov8x4lU" role="3cqZAp">
           <node concept="37vLTI" id="6snOov8x4Hj" role="3clFbG">
             <node concept="37vLTw" id="6snOov8x4lS" role="37vLTJ">
-              <ref role="3cqZAo" node="6snOov8hmLu" resolve="scene" />
+              <ref role="3cqZAo" node="6snOov8hmLu" resolve="map" />
             </node>
             <node concept="2YIFZM" id="6snOov8rOgh" role="37vLTx">
-              <ref role="1Pybhc" node="61GUnTJeEVH" resolve="SceneDescriptionGeneratorPlaceholder" />
+              <ref role="1Pybhc" node="61GUnTJeEVH" resolve="MapDescriptionGeneratorPlaceholder" />
               <ref role="37wK5l" node="6snOov8rNHN" resolve="createInstance" />
               <node concept="1ZhdrF" id="6snOov8rOny" role="lGtFl">
                 <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937/1144433194310" />
@@ -978,7 +978,7 @@
                 <node concept="liA8E" id="6snOov8Kz2T" role="2OqNvi">
                   <ref role="37wK5l" to="4ujd:6snOov8yRar" resolve="initWorld" />
                   <node concept="37vLTw" id="6snOov8Kz4w" role="37wK5m">
-                    <ref role="3cqZAo" node="6snOov8Kr5v" resolve="tutorial" />
+                    <ref role="3cqZAo" node="6snOov8Kr5v" resolve="scenario" />
                   </node>
                 </node>
               </node>
@@ -987,7 +987,7 @@
           <node concept="3y3z36" id="6snOov8Kyuy" role="3clFbw">
             <node concept="10Nm6u" id="6snOov8KyLK" role="3uHU7w" />
             <node concept="37vLTw" id="6snOov8Kyb5" role="3uHU7B">
-              <ref role="3cqZAo" node="6snOov8Kr5v" resolve="tutorial" />
+              <ref role="3cqZAo" node="6snOov8Kr5v" resolve="scenario" />
             </node>
           </node>
           <node concept="9aQIb" id="6snOov8KzGb" role="9aQIa">
@@ -1005,7 +1005,7 @@
                   <node concept="liA8E" id="6snOov8K$go" role="2OqNvi">
                     <ref role="37wK5l" to="4ujd:6snOov8gBMu" resolve="initWorld" />
                     <node concept="37vLTw" id="6snOov8K$iq" role="37wK5m">
-                      <ref role="3cqZAo" node="6snOov8hmLu" resolve="scene" />
+                      <ref role="3cqZAo" node="6snOov8hmLu" resolve="map" />
                     </node>
                   </node>
                 </node>
@@ -1069,7 +1069,7 @@
     </node>
     <node concept="3Tm1VV" id="6bh18$peL3Y" role="1B3o_S" />
     <node concept="n94m4" id="6bh18$peL3Z" role="lGtFl">
-      <ref role="n9lRv" to="dyrx:3a5rfDmYafO" resolve="Script" />
+      <ref role="n9lRv" to="dyrx:3a5rfDmYafO" resolve="Program" />
     </node>
     <node concept="3uibUv" id="6bh18$peLiQ" role="1zkMxy">
       <ref role="3uigEE" to="4ujd:1UBpzRreYi3" resolve="Script" />
@@ -1803,7 +1803,7 @@
   </node>
   <node concept="312cEu" id="61GUnTJeEVH">
     <property role="3GE5qa" value="helper" />
-    <property role="TrG5h" value="SceneDescriptionGeneratorPlaceholder" />
+    <property role="TrG5h" value="MapDescriptionGeneratorPlaceholder" />
     <node concept="2tJIrI" id="61GUnTJeEWy" role="jymVt" />
     <node concept="2YIFZL" id="6snOov8rNHN" role="jymVt">
       <property role="TrG5h" value="createInstance" />
@@ -1816,7 +1816,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="6snOov8rNHT" role="3clF45">
-        <ref role="3uigEE" node="61GUnTJeEVH" resolve="SceneDescriptionGeneratorPlaceholder" />
+        <ref role="3uigEE" node="61GUnTJeEVH" resolve="MapDescriptionGeneratorPlaceholder" />
       </node>
       <node concept="3Tm1VV" id="6snOov8rNHV" role="1B3o_S" />
     </node>
@@ -1825,7 +1825,7 @@
       <node concept="3cqZAl" id="61GUnTJeEYM" role="3clF45" />
       <node concept="3clFbS" id="61GUnTJeEYO" role="3clF47">
         <node concept="XkiVB" id="61GUnTJeEZG" role="3cqZAp">
-          <ref role="37wK5l" to="b3e7:442XwrAYKLU" resolve="SceneDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKLU" resolve="MapDescription" />
           <node concept="3cmrfG" id="61GUnTJeF0g" role="37wK5m">
             <property role="3cmrfH" value="1" />
           </node>
@@ -1850,17 +1850,17 @@
     <node concept="3Tm1VV" id="61GUnTJeEVI" role="1B3o_S" />
     <node concept="n94m4" id="61GUnTJeEVJ" role="lGtFl" />
     <node concept="3uibUv" id="61GUnTJeEWL" role="1zkMxy">
-      <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="MapDescription" />
     </node>
   </node>
   <node concept="312cEu" id="6snOov8Kv6h">
     <property role="3GE5qa" value="helper" />
-    <property role="TrG5h" value="TutorialDescriptionGeneratorPlaceholder" />
+    <property role="TrG5h" value="ScenarioDescriptionGeneratorPlaceholder" />
     <node concept="2tJIrI" id="6snOov8KvA3" role="jymVt" />
     <node concept="2YIFZL" id="6snOov8KvBE" role="jymVt">
       <property role="TrG5h" value="createInstance" />
       <node concept="3uibUv" id="6snOov8KvD8" role="3clF45">
-        <ref role="3uigEE" node="6snOov8Kv6h" resolve="TutorialDescriptionGeneratorPlaceholder" />
+        <ref role="3uigEE" node="6snOov8Kv6h" resolve="ScenarioDescriptionGeneratorPlaceholder" />
       </node>
       <node concept="3Tm1VV" id="6snOov8KvBH" role="1B3o_S" />
       <node concept="3clFbS" id="6snOov8KvBI" role="3clF47">
@@ -1875,10 +1875,10 @@
       <node concept="3Tm1VV" id="6snOov8Kvf5" role="1B3o_S" />
       <node concept="3clFbS" id="6snOov8Kvf6" role="3clF47">
         <node concept="XkiVB" id="6snOov8KvfB" role="3cqZAp">
-          <ref role="37wK5l" to="b3e7:442XwrAYKKS" resolve="TutorialDescription" />
+          <ref role="37wK5l" to="b3e7:442XwrAYKKS" resolve="ScenarioDescription" />
           <node concept="2ShNRf" id="6snOov8KvfW" role="37wK5m">
             <node concept="1pGfFk" id="6snOov8Kvnr" role="2ShVmc">
-              <ref role="37wK5l" node="61GUnTJeEYL" resolve="SceneDescriptionGeneratorPlaceholder" />
+              <ref role="37wK5l" node="61GUnTJeEYL" resolve="MapDescriptionGeneratorPlaceholder" />
             </node>
           </node>
         </node>
@@ -1888,7 +1888,7 @@
     <node concept="3Tm1VV" id="6snOov8Kv6i" role="1B3o_S" />
     <node concept="n94m4" id="6snOov8Kv6j" role="lGtFl" />
     <node concept="3uibUv" id="6snOov8Kven" role="1zkMxy">
-      <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
+      <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="ScenarioDescription" />
     </node>
     <node concept="3clFb_" id="6snOov9bSlg" role="jymVt">
       <property role="1EzhhJ" value="false" />

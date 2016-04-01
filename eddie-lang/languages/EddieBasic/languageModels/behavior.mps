@@ -2500,7 +2500,7 @@
       <property role="TrG5h" value="getScene" />
       <node concept="3Tm1VV" id="2xfsEoC3p2C" role="1B3o_S" />
       <node concept="3Tqbb2" id="2xfsEoC3pak" role="3clF45">
-        <ref role="ehGHo" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+        <ref role="ehGHo" to="dyrx:5wv4$CfyOGH" resolve="AbstractMap" />
       </node>
       <node concept="3clFbS" id="2xfsEoC3p2E" role="3clF47">
         <node concept="3cpWs6" id="2xfsEoC3qUh" role="3cqZAp">
@@ -2528,7 +2528,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="50Oz1ODhEjF" role="13h7CS">
-      <property role="TrG5h" value="resetTutorial" />
+      <property role="TrG5h" value="resetScenario" />
       <node concept="3Tm1VV" id="50Oz1ODhEjG" role="1B3o_S" />
       <node concept="3cqZAl" id="50Oz1ODhEse" role="3clF45" />
       <node concept="3clFbS" id="50Oz1ODhEjI" role="3clF47">
@@ -2548,7 +2548,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="50Oz1ODj2zI" role="2OqNvi">
-                  <ref role="37wK5l" node="50Oz1ODdHdy" resolve="resetTutorial" />
+                  <ref role="37wK5l" node="50Oz1ODdHdy" resolve="resetScenario" />
                   <node concept="13iPFW" id="50Oz1ODj2As" role="37wK5m" />
                 </node>
               </node>
@@ -4869,9 +4869,9 @@
   </node>
   <node concept="13h7C7" id="50Oz1ODdGkP">
     <property role="3GE5qa" value="scene" />
-    <ref role="13h7C2" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
+    <ref role="13h7C2" to="dyrx:5wv4$CfHFDB" resolve="AbstractScenario" />
     <node concept="13i0hz" id="50Oz1ODdHdy" role="13h7CS">
-      <property role="TrG5h" value="resetTutorial" />
+      <property role="TrG5h" value="resetScenario" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="37vLTG" id="50Oz1ODe2Q$" role="3clF46">

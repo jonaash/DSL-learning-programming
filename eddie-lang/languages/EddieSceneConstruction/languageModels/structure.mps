@@ -36,15 +36,15 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="5wv4$CfHS45">
-    <property role="TrG5h" value="Scene" />
+    <property role="TrG5h" value="Map" />
     <property role="19KtqR" value="true" />
     <property role="1pbfSe" value="1742115663" />
-    <ref role="1TJDcQ" to="dyrx:5wv4$CfyOGH" resolve="AbstractScene" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$CfyOGH" resolve="AbstractMap" />
   </node>
   <node concept="1TIwiD" id="5wv4$CfHS4$">
-    <property role="TrG5h" value="SceneConstruction" />
+    <property role="TrG5h" value="MapConstruction" />
     <property role="1pbfSe" value="1742115694" />
-    <ref role="1TJDcQ" to="dyrx:5wv4$CfFDiU" resolve="AbstractSceneConstruction" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$CfFDiU" resolve="AbstractMapConstruction" />
   </node>
   <node concept="1TIwiD" id="5wv4$CfOhnt">
     <property role="TrG5h" value="Position" />
@@ -52,20 +52,20 @@
     <ref role="1TJDcQ" to="dyrx:5wv4$CfKdx_" resolve="AbstractPosition" />
   </node>
   <node concept="1TIwiD" id="5wv4$CfZXb_">
-    <property role="TrG5h" value="Tutorial" />
+    <property role="TrG5h" value="Scenario" />
     <property role="19KtqR" value="true" />
     <property role="1pbfSe" value="1746855215" />
-    <ref role="1TJDcQ" to="dyrx:5wv4$CfHFDB" resolve="AbstractTutorial" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$CfHFDB" resolve="AbstractScenario" />
     <node concept="1TJgyj" id="50Oz1ODjqfb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="initStateProgram" />
-      <ref role="20lvS9" to="dyrx:3a5rfDmYafO" resolve="Script" />
+      <ref role="20lvS9" to="dyrx:3a5rfDmYafO" resolve="Program" />
     </node>
   </node>
   <node concept="1TIwiD" id="6snOov9bEfZ">
-    <property role="TrG5h" value="SceneEvent" />
+    <property role="TrG5h" value="ScenarioEvent" />
     <property role="1pbfSe" value="809923974" />
-    <ref role="1TJDcQ" to="dyrx:5wv4$Cg00cc" resolve="AbstractSceneEvent" />
+    <ref role="1TJDcQ" to="dyrx:5wv4$Cg00cc" resolve="AbstractScenarioEvent" />
     <node concept="1TJgyi" id="1mpZf2HyDic" role="1TKVEl">
       <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />

@@ -122,7 +122,7 @@
   </registry>
   <node concept="312cEu" id="442XwrAYKKN">
     <property role="3GE5qa" value="template" />
-    <property role="TrG5h" value="TutorialDescription" />
+    <property role="TrG5h" value="ScenarioDescription" />
     <property role="1sVAO0" value="true" />
     <node concept="312cEg" id="442XwrAYKKO" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -131,7 +131,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="442XwrAYKKP" role="1B3o_S" />
       <node concept="3uibUv" id="442XwrAYKKQ" role="1tU5fm">
-        <ref role="3uigEE" node="442XwrAYKLj" resolve="SceneDescription" />
+        <ref role="3uigEE" node="442XwrAYKLj" resolve="MapDescription" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYKKR" role="jymVt" />
@@ -156,7 +156,7 @@
       <node concept="37vLTG" id="442XwrAYKL2" role="3clF46">
         <property role="TrG5h" value="scene" />
         <node concept="3uibUv" id="442XwrAYKL3" role="1tU5fm">
-          <ref role="3uigEE" node="442XwrAYKLj" resolve="SceneDescription" />
+          <ref role="3uigEE" node="442XwrAYKLj" resolve="MapDescription" />
         </node>
       </node>
     </node>
@@ -179,7 +179,7 @@
       </node>
       <node concept="3Tm1VV" id="442XwrAYKLb" role="1B3o_S" />
       <node concept="3uibUv" id="442XwrAYKLc" role="3clF45">
-        <ref role="3uigEE" node="442XwrAYKLj" resolve="SceneDescription" />
+        <ref role="3uigEE" node="442XwrAYKLj" resolve="MapDescription" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYKLd" role="jymVt" />
@@ -197,7 +197,7 @@
   </node>
   <node concept="312cEu" id="442XwrAYKLj">
     <property role="3GE5qa" value="template" />
-    <property role="TrG5h" value="SceneDescription" />
+    <property role="TrG5h" value="MapDescription" />
     <property role="1sVAO0" value="false" />
     <node concept="Wx3nA" id="442XwrAYKLk" role="jymVt">
       <property role="2dlcS1" value="false" />
@@ -206,7 +206,7 @@
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="442XwrAYKLl" role="1B3o_S" />
       <node concept="3uibUv" id="442XwrAYKLm" role="1tU5fm">
-        <ref role="3uigEE" node="442XwrAYKLj" resolve="SceneDescription" />
+        <ref role="3uigEE" node="442XwrAYKLj" resolve="MapDescription" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYKLn" role="jymVt" />
@@ -216,7 +216,7 @@
           <node concept="37vLTI" id="442XwrAYKLr" role="3clFbG">
             <node concept="2ShNRf" id="442XwrAYKLs" role="37vLTx">
               <node concept="1pGfFk" id="442XwrAYKLt" role="2ShVmc">
-                <ref role="37wK5l" node="442XwrAYKLU" resolve="SceneDescription" />
+                <ref role="37wK5l" node="442XwrAYKLU" resolve="MapDescription" />
                 <node concept="3cmrfG" id="442XwrAYKLu" role="37wK5m">
                   <property role="3cmrfH" value="10" />
                 </node>

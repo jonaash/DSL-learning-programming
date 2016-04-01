@@ -194,14 +194,14 @@
     </node>
     <node concept="1TJgyj" id="6snOov888tH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sceneRef" />
+      <property role="20kJfa" value="mapRef" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6snOov886se" resolve="SceneReference" />
+      <ref role="20lvS9" node="6snOov886se" resolve="MapReference" />
     </node>
     <node concept="1TJgyj" id="6snOov8xmI1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tutorialRef" />
-      <ref role="20lvS9" node="6snOov8xmHy" resolve="TutorialReference" />
+      <property role="20kJfa" value="scenarioRef" />
+      <ref role="20lvS9" node="6snOov8xmHy" resolve="ScenarioReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1IJMvjRjER">
@@ -902,7 +902,7 @@
     <property role="1pbfSe" value="158046827" />
   </node>
   <node concept="1TIwiD" id="5wv4$CfyOGH">
-    <property role="TrG5h" value="AbstractScene" />
+    <property role="TrG5h" value="AbstractMap" />
     <property role="3GE5qa" value="scene" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -929,12 +929,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sceneConstruction" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5wv4$CfFDiU" resolve="AbstractSceneConstruction" />
+      <ref role="20lvS9" node="5wv4$CfFDiU" resolve="AbstractMapConstruction" />
     </node>
   </node>
   <node concept="1TIwiD" id="5wv4$CfFDiU">
     <property role="3GE5qa" value="scene" />
-    <property role="TrG5h" value="AbstractSceneConstruction" />
+    <property role="TrG5h" value="AbstractMapConstruction" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1741530884" />
@@ -948,7 +948,7 @@
   </node>
   <node concept="1TIwiD" id="5wv4$CfHFDB">
     <property role="3GE5qa" value="scene" />
-    <property role="TrG5h" value="AbstractTutorial" />
+    <property role="TrG5h" value="AbstractScenario" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1742064817" />
@@ -958,15 +958,15 @@
     </node>
     <node concept="1TJgyj" id="6snOov8zm4$" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sceneRef" />
+      <property role="20kJfa" value="mapRef" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6snOov886se" resolve="SceneReference" />
+      <ref role="20lvS9" node="6snOov886se" resolve="MapReference" />
     </node>
     <node concept="1TJgyj" id="6snOov9bAKJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="events" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5wv4$Cg00cc" resolve="AbstractSceneEvent" />
+      <ref role="20lvS9" node="5wv4$Cg00cc" resolve="AbstractScenarioEvent" />
     </node>
     <node concept="1TJgyj" id="1mpZf2H$mY7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1024,7 +1024,7 @@
   </node>
   <node concept="1TIwiD" id="5wv4$Cg00cc">
     <property role="3GE5qa" value="scene" />
-    <property role="TrG5h" value="AbstractSceneEvent" />
+    <property role="TrG5h" value="AbstractScenarioEvent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1746867542" />
@@ -1129,26 +1129,26 @@
   </node>
   <node concept="1TIwiD" id="6snOov886se">
     <property role="3GE5qa" value="scene" />
-    <property role="TrG5h" value="SceneReference" />
+    <property role="TrG5h" value="MapReference" />
     <property role="1pbfSe" value="792213653" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6snOov886sE" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="scene" />
+      <property role="20kJfa" value="map" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5wv4$CfyOGH" resolve="AbstractScene" />
+      <ref role="20lvS9" node="5wv4$CfyOGH" resolve="AbstractMap" />
     </node>
   </node>
   <node concept="1TIwiD" id="6snOov8xmHy">
     <property role="3GE5qa" value="scene" />
-    <property role="TrG5h" value="TutorialReference" />
+    <property role="TrG5h" value="ScenarioReference" />
     <property role="1pbfSe" value="798833897" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6snOov8xmHz" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="tutorial" />
+      <property role="20kJfa" value="scenario" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5wv4$CfHFDB" resolve="AbstractTutorial" />
+      <ref role="20lvS9" node="5wv4$CfHFDB" resolve="AbstractScenario" />
     </node>
   </node>
   <node concept="1TIwiD" id="2FICFVpQpMa">
