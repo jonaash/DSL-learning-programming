@@ -24,6 +24,7 @@
     <import index="3y9h" ref="r:59d92c5d-e99b-4fff-bb5c-ed6ab771c3fd(org.eddieprogramming.core.EddieVariables.structure)" />
     <import index="s20d" ref="r:020038ea-347c-4e40-ac91-9abd91dd243a(org.eddieprogramming.dsl.EddieVariableTerminals.structure)" />
     <import index="ljn0" ref="5540ad23-650b-4fa5-b8b5-236a8e7e1c34/r:81eed1ae-ffa7-4a69-8e37-43b3ff1e57d8(KarelBasic/org.eddieprogramming.core.EddieBasic.behavior)" />
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -842,7 +843,7 @@
     </node>
     <node concept="1YaCAy" id="7jmg6noCZoh" role="1YuTPh">
       <property role="TrG5h" value="scriptMain" />
-      <ref role="1YaFvo" to="dyrx:3a5rfDmYafO" resolve="Script" />
+      <ref role="1YaFvo" to="dyrx:3a5rfDmYafO" resolve="Program" />
     </node>
   </node>
   <node concept="312cEu" id="18k56XDvoZx">
@@ -1824,7 +1825,7 @@
           </node>
         </node>
         <node concept="Jncv_" id="2RjUFdDmwyB" role="3cqZAp">
-          <ref role="JncvD" to="dyrx:3a5rfDmYafO" resolve="Script" />
+          <ref role="JncvD" to="dyrx:3a5rfDmYafO" resolve="Program" />
           <node concept="37vLTw" id="2RjUFdDmwJo" role="JncvB">
             <ref role="3cqZAo" node="18k56XDxDfA" resolve="node" />
           </node>
