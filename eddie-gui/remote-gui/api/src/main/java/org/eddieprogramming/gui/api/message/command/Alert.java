@@ -12,7 +12,7 @@ public class Alert extends Command {
 
     private static final long serialVersionUID = -1569324950703820178L;
 
-    private String message;
+    private final String message;
 
     public Alert(String message) {
         this.message = message;

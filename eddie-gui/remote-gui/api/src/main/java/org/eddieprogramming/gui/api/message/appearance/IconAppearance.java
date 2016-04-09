@@ -9,6 +9,8 @@ import java.awt.Color;
  */
 public class IconAppearance implements Appearance {
 
+    private static final long serialVersionUID = -5994583520080289151L;
+
     private Color background;
     private Color color;
     private Flaticon icon;

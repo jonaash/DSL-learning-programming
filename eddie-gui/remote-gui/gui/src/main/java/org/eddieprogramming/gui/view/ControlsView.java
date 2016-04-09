@@ -1,6 +1,5 @@
 package org.eddieprogramming.gui.view;
 
-import org.eddieprogramming.gui.controller.GuiController;
 import org.eddieprogramming.gui.model.controls.ControlsModel;
 import org.eddieprogramming.gui.util.Labels;
 import org.eddieprogramming.gui.view.icons.ControlIcon;
@@ -28,15 +27,13 @@ public class ControlsView {
 
     private static final int BUTTON_SIZE = 40;
 
-    private JPanel panel = new JPanel();
+    private final JPanel panel = new JPanel();
 
     @Inject
     private ControlsModel model;
 
     @Inject
     private IconProvider iconProvider;
-
-    private GuiController userControl;
 
     private JButton start;
     private JButton pause;
@@ -165,9 +162,6 @@ public class ControlsView {
         return button;
     }
 
-    public void setUserControl(GuiController userControl) {
-        this.userControl = userControl;
-    }
 
     public JPanel getPanel() {
         return panel;

@@ -14,7 +14,7 @@ public class ChangeThing extends Command {
     /**
      * Unique name of Thing that should be changed.
      */
-    private String thingName;
+    private final String thingName;
 
     /**
      * Position to where Thing should be moved. If it is null, Thing won't be moved.

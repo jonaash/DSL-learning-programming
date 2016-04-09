@@ -27,7 +27,7 @@ public class WaitingUtil {
     @Inject
     private GuiController controller;
 
-    private static final Map<Speed, Integer> WAITING_TIMES = new EnumMap<Speed, Integer>(Speed.class);
+    private static final Map<Speed, Integer> WAITING_TIMES = new EnumMap<>(Speed.class);
 
     static {
         WAITING_TIMES.put(Speed.INSTANT, 0);

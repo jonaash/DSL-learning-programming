@@ -13,7 +13,7 @@ public enum Flaticon {
     BINARY('\ue002'),
     COMPUTER('\ue005');
 
-    private char code;
+    private final char code;
 
     Flaticon(char code){
         this.code= code;

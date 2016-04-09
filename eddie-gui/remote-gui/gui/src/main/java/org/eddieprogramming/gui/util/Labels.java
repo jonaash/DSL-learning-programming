@@ -15,13 +15,11 @@ public class Labels {
 
     private static final String LABELS_FILE = "labels.properties";
 
-    private static Properties prop = new Properties();
+    private static final Properties prop = new Properties();
 
     static {
 
-        InputStream input = null;
-        try {
-            input = Labels.class.getClassLoader().getResourceAsStream(LABELS_FILE);
+        try (InputStream input = Labels.class.getClassLoader().getResourceAsStream(LABELS_FILE))  {
             if (input == null) {
                 throw new GuiInternalException("Cannot open file with labels: %s", LABELS_FILE);
             }
@@ -31,14 +29,6 @@ public class Labels {
 
         } catch (IOException re) {
             throw new GuiInternalException(re);
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException ce) {
-                    throw new GuiInternalException(ce);
-                }
-            }
         }
     }
 

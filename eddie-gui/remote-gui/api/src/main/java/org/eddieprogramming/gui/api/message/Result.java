@@ -12,7 +12,7 @@ public class Result implements Serializable {
     public static final Result RESET = new Result(Status.RESET);
     public static final Result CANCELLED = new Result(Status.CANCELLED);
     private static final long serialVersionUID = 2357372665561360380L;
-    private Status status;
+    private final Status status;
 
     public Result(Status status) {
         this.status = status;

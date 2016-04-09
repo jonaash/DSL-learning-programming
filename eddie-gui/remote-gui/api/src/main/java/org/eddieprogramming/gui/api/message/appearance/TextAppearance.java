@@ -62,7 +62,7 @@ public class TextAppearance implements Appearance {
 
     public static class Builder {
 
-        private TextAppearance instance;
+        private final TextAppearance instance;
 
         public Builder() {
             instance = new TextAppearance();

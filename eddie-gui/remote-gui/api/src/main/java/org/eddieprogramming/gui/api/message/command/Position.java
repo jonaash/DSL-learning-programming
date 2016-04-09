@@ -14,8 +14,8 @@ public class Position implements Serializable {
 
     private static final long serialVersionUID = 34276955753510308L;
 
-    private int row;
-    private int col;
+    private final int row;
+    private final int col;
 
     public Position(int row, int col) {
         this.row = row;

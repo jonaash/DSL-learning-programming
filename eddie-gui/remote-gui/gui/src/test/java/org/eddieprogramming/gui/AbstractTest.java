@@ -12,7 +12,7 @@ import org.junit.Rule;
 public class AbstractTest {
 
     @Rule
-    public EasyMockRule mocks = new EasyMockRule(this);
+    public final EasyMockRule mocks = new EasyMockRule(this);
 
 
 }

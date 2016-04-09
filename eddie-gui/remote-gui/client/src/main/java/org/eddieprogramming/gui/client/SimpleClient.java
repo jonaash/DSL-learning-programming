@@ -24,6 +24,7 @@ public class SimpleClient {
 
     public static void main(String[] args) {
         Client client = new Client();
+        //noinspection TryWithIdenticalCatches,TryWithIdenticalCatches
         try {
             logger.info("Simple client initialization starting");
             client.init();
@@ -33,11 +34,7 @@ public class SimpleClient {
             changeCells(gui);
 
 
-        } catch (MalformedURLException e) {
-            logger.error("Client initialization failed", e);
-        } catch (RemoteException e) {
-            logger.error("Client initialization failed", e);
-        } catch (NotBoundException e) {
+        } catch (MalformedURLException | NotBoundException | RemoteException e) {
             logger.error("Client initialization failed", e);
         }
 

@@ -11,7 +11,7 @@ public enum Orientation {
     UPSIDE_DOWN(180),
     TURNED_RIGHT(270);
 
-    private int rorationInDegrees;
+    private final int rorationInDegrees;
 
     Orientation(int rotationInDegrees){
         this.rorationInDegrees=rotationInDegrees;

@@ -24,7 +24,7 @@ public class WorldView {
     private final int width;
     private final int height;
 
-    private JPanel panel;
+    private final JPanel panel;
 
     private static Logger logger = LoggerFactory.getLogger(WorldView.class);
 

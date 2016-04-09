@@ -10,7 +10,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  */
 public class PrintMessage extends Command {
     private static final long serialVersionUID = 5572966573840940017L;
-    private String message;
+    private final String message;
 
     public PrintMessage(String message) {
         this.message = message;

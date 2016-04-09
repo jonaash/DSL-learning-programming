@@ -7,10 +7,7 @@ import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
 import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
-import org.eddieprogramming.gui.api.message.command.Command;
-import org.eddieprogramming.gui.model.WorldHolder;
 
-import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
@@ -22,9 +19,6 @@ import javax.inject.Singleton;
 @Named
 @Singleton
 public class WorldValidator {
-
-    @Inject
-    private WorldHolder worldHolder;
 
     public void validateNewWorld(String name, int width, int height){
         Validate.notBlank(name, "Name cannot be null or empty. Passed value: %s", name);
@@ -46,10 +40,6 @@ public class WorldValidator {
         Validate.notNull(step.getSpeed(), "Speed cannot be null");
     }
 
-    public void validateCommand(Command command, Step context){
-
-    }
-
     public void validateThingName(String name) {
         Validate.notBlank(name, "Name must not be null or empty. Passed name: %s", name);
     }
@@ -61,7 +51,4 @@ public class WorldValidator {
 
     }
 
-    public void setWorldHolder(WorldHolder worldHolder) {
-        this.worldHolder = worldHolder;
-    }
 }

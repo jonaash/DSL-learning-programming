@@ -29,7 +29,7 @@ public class MainView {
     private static final long serialVersionUID = 523844209009765503L;
     private static final Logger logger = LoggerFactory.getLogger(MainView.class);
 
-    private JPanel panel = new JPanel(new BorderLayout());
+    private final JPanel panel = new JPanel(new BorderLayout());
 
     @Inject
     private ControlsView controlsView;

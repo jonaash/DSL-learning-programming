@@ -12,6 +12,8 @@ import java.awt.Graphics2D;
  * @author Jonas Klimes
  */
 public class OrientedJLabel extends JLabel {
+    private static final long serialVersionUID = 7989516961917246674L;
+
     private Orientation orientation = Orientation.NORMAL;
 
     @Override

@@ -5,7 +5,6 @@ import org.eddieprogramming.gui.model.controls.ControlsModel;
 import org.eddieprogramming.gui.model.world.World;
 import org.eddieprogramming.gui.service.WorldService;
 import org.eddieprogramming.gui.util.SwingInvoker;
-import org.eddieprogramming.gui.view.ControlsView;
 import org.eddieprogramming.gui.view.MainView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,9 +35,6 @@ public class GuiControllerImpl implements GuiController {
 
     @Inject
     private MainView mainView;
-
-    @Inject
-    private ControlsView controlsView;
 
     @Inject
     private ControlsModel controlsModel;
@@ -106,10 +102,6 @@ public class GuiControllerImpl implements GuiController {
 
     public void setMainView(MainView mainView) {
         this.mainView = mainView;
-    }
-
-    public void setControlsView(ControlsView controlsView) {
-        this.controlsView = controlsView;
     }
 
     public void setControlsModel(ControlsModel controlsModel) {

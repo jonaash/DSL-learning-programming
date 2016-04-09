@@ -4,8 +4,6 @@ import org.eddieprogramming.gui.api.message.Result;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.service.GuiService;
 import org.eddieprogramming.gui.model.world.Thing;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.rmi.RemoteException;
@@ -20,10 +18,8 @@ import java.rmi.server.UnicastRemoteObject;
 public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     private static final long serialVersionUID = 5992469827185093956L;
 
-    private static final Logger logger = LoggerFactory.getLogger(GuiServiceImpl.class);
-
     @Inject
-    private WorldService worldService;
+    transient private WorldService worldService;
 
     public GuiServiceImpl() throws RemoteException {
     }

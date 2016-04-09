@@ -18,7 +18,7 @@ public class World {
     private final int width;
     private final int height;
     private final String name;
-    private final Map<String, Thing> things = new HashMap<String, Thing>();
+    private final Map<String, Thing> things = new HashMap<>();
     private Cell[][] matrix;
 
     public World(String name, int width, int height) {

@@ -36,21 +36,23 @@ public class ControlsModel {
 
     private static final String DOCUMENT_END_OF_LINE = "\r\n";
 
-    private ButtonModel start = new DefaultButtonModel();
-    private ButtonModel pause = new DefaultButtonModel();
-    private ButtonModel step = new DefaultButtonModel();
-    private ButtonModel stop = new DefaultButtonModel();
+    private final ButtonModel start = new DefaultButtonModel();
+    private final ButtonModel pause = new DefaultButtonModel();
+    private final ButtonModel step = new DefaultButtonModel();
+    private final ButtonModel stop = new DefaultButtonModel();
 
-    private BoundedRangeModel speed = new DefaultBoundedRangeModel(SPEED_SLIDER_DEFAULT, SPEED_SLIDER_EXTENT, 0,
+    private final BoundedRangeModel speed = new DefaultBoundedRangeModel(SPEED_SLIDER_DEFAULT, SPEED_SLIDER_EXTENT, 0,
             SLIDER_TO_SPEED_COEFICIENT_MAPPING.length - 1);
 
-    private StyledDocument messages = new DefaultStyledDocument();
-    private ButtonModel clearMessages = new DefaultButtonModel();
+    private final StyledDocument messages = new DefaultStyledDocument();
+    private final ButtonModel clearMessages = new DefaultButtonModel();
 
     public ControlsModel(){
         disableControlButtons();
 
         clearMessages.addActionListener(new AbstractAction() {
+            private static final long serialVersionUID = 823560911667283133L;
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 clearMessages();

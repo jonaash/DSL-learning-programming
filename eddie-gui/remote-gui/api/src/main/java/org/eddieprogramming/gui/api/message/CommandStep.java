@@ -20,7 +20,7 @@ public class CommandStep extends Step {
      * Speed of command from user point of View.
      */
     private Speed speed;
-    private List<Command> commands = new ArrayList<Command>();
+    private final List<Command> commands = new ArrayList<>();
 
     public CommandStep() {
         this.speed = Speed.MEDIUM;

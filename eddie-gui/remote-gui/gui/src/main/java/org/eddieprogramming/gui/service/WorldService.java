@@ -45,7 +45,7 @@ public class WorldService {
      * Blocking queue that ansures client client script waits with next steps unitil previous step is animated.
      * Queue size is one, which means client script is one step ahead to GUI server.
      */
-    private BlockingQueue<Step> stepsToDo = new LinkedBlockingQueue<Step>(1);
+    private BlockingQueue<Step> stepsToDo = new LinkedBlockingQueue<>(1);
 
     private Timer timer;
 
@@ -74,7 +74,7 @@ public class WorldService {
 
         // create a new queue, because if there is an old thread it could add there its step.
         // Clearing queue is not enought, because the thread could insert it later.
-        stepsToDo = new LinkedBlockingQueue<Step>(1);
+        stepsToDo = new LinkedBlockingQueue<>(1);
 
         World world = new World(name, width, height);
         worldHolder.setWorld(world);

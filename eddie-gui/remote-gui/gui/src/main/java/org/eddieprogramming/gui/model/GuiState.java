@@ -42,9 +42,9 @@ public enum GuiState {
         this.readyForRun = readyForRun;
     }
 
-    private boolean canDoStep;
+    private final boolean canDoStep;
 
-    private boolean readyForRun;
+    private final boolean readyForRun;
 
     public boolean canDoStep() {
         return canDoStep;

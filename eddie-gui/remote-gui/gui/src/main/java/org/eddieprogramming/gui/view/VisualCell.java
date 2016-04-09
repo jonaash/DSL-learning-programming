@@ -33,9 +33,9 @@ class VisualCell extends JPanel {
 
 
 
-    private JLayeredPane layeredPane;
-    private OrientedJLabel base = new OrientedJLabel();
-    private OrientedJLabel top = new OrientedJLabel();
+    private final JLayeredPane layeredPane;
+    private final OrientedJLabel base = new OrientedJLabel();
+    private final OrientedJLabel top = new OrientedJLabel();
 
     VisualCell() {
 

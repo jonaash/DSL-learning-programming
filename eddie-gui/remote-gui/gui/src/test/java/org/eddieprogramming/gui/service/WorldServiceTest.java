@@ -9,9 +9,9 @@ import org.eddieprogramming.gui.AbstractTest;
 import org.eddieprogramming.gui.MultithreadCallAssertion;
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
 import org.eddieprogramming.gui.api.message.CommandStep;
-import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.Speed;
 import org.eddieprogramming.gui.api.message.Step;
+import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
 import org.eddieprogramming.gui.controller.GuiController;
 import org.eddieprogramming.gui.model.GuiState;
@@ -277,16 +277,13 @@ public class WorldServiceTest extends AbstractTest {
     }
 
     private void executeStepsInSeparateThread(final List<Step> steps) {
-        Thread clientThread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    for (Step step: steps) {
-                        testSubject.doStep(step);
-                    }
-                } catch (AssertionError e) {
-                    Assert.fail(e.getMessage());
+        Thread clientThread = new Thread(() -> {
+            try {
+                for (Step step: steps) {
+                    testSubject.doStep(step);
                 }
+            } catch (AssertionError e) {
+                Assert.fail(e.getMessage());
             }
         });
 

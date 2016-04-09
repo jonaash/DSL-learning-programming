@@ -25,7 +25,7 @@ public class MultithreadCallAssertion {
     /**
      * Create  of MultithreadCallAssertion and
      *
-     * @return
+     * @return object used to assertion
      */
     public static MultithreadCallAssertion createCallCountingMock() {
         MultithreadCallAssertion instance = new MultithreadCallAssertion();

@@ -20,6 +20,7 @@ public abstract class SwingInvoker {
 
     private static final Logger logger = LoggerFactory.getLogger(SwingInvoker.class);
 
+    // TODO: replace SwingInvoker implementation using Lambda expression instead of anonymous inner class
 
     public SwingInvoker(){
 
@@ -31,7 +32,7 @@ public abstract class SwingInvoker {
      * Usage:
      * <code>
      *     new SwingInvoker() {
-     *           @Override
+     *           {@literal @}Override
      *           protected void operation() {
      *               // operation which should be execute in EDT
      *           }
@@ -45,12 +46,9 @@ public abstract class SwingInvoker {
             logger.trace("Running operation. It is event dispatch thread.");
             operation();
         }else {
-            SwingUtilities.invokeLater(new Runnable() {
-                @Override
-                public void run() {
-                    logger.trace("Running operation using invokeLater.");
-                    operation();
-                }
+            SwingUtilities.invokeLater(() -> {
+                logger.trace("Running operation using invokeLater.");
+                operation();
             });
         }
     }
@@ -61,7 +59,7 @@ public abstract class SwingInvoker {
      * Usage:
      * <code>
      *     new SwingInvoker() {
-     *           @Override
+     *           {@literal @}Override
      *           protected void operation() {
      *               // operation which should be execute in EDT
      *           }
@@ -76,12 +74,9 @@ public abstract class SwingInvoker {
             operation();
         }else {
             try {
-                SwingUtilities.invokeAndWait(new Runnable() {
-                    @Override
-                    public void run() {
-                        logger.trace("Running operation using invokeAndWait.");
-                        operation();
-                    }
+                SwingUtilities.invokeAndWait(() -> {
+                    logger.trace("Running operation using invokeAndWait.");
+                    operation();
                 });
             } catch (InterruptedException | InvocationTargetException e) {
                 throw new GuiInternalException(e);

@@ -8,4 +8,5 @@ import java.io.Serializable;
  * @author Jonas Klimes
  */
 public abstract class Step implements Serializable {
+    private static final long serialVersionUID = -6720076405301672052L;
 }

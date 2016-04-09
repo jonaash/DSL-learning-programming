@@ -11,7 +11,7 @@ public class Thing {
     /**
      * Name. Must be unique.
      */
-    private String name;
+    private final String name;
     private Cell position;
     private Appearance appearance;
     private String label;
@@ -29,7 +29,7 @@ public class Thing {
         setPosition(newPosition);
     }
 
-    void setPosition(Cell cell) {
+    private void setPosition(Cell cell) {
         if (position != null) {
             position.removeThink(this);
         }

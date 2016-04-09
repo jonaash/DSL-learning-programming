@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.awt.Font;
+import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,11 +22,9 @@ public class FontIconProvider {
     private static final String FLATICON_FILE = "icons/flaticon.ttf";
     private static Font flaticonFont;
 
-    public static void initialize(){
-        InputStream input = null;
+    public static void initialize() {
 
-        try {
-            input = FontIconProvider.class.getClassLoader().getResourceAsStream(FLATICON_FILE);
+        try (InputStream input = FontIconProvider.class.getClassLoader().getResourceAsStream(FLATICON_FILE)) {
 
             //create the font to use. Specify the size!
             flaticonFont = Font.createFont(Font.TRUETYPE_FONT, input);
@@ -33,17 +32,9 @@ public class FontIconProvider {
 
             //register the font
             ge.registerFont(flaticonFont);
-        } catch (Exception e) {
+        } catch (IOException | FontFormatException e) {
             throw new GuiInternalException(MessageFormat.format("Could not load icon font. Path: {0}.",
                     FLATICON_FILE), e);
-        } finally {
-            if (input != null){
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    log.warn("Could not close font icon input stream.", e);
-                }
-            }
         }
     }
 

@@ -11,7 +11,7 @@ import java.util.List;
  * @author Jonas Klimes
  */
 public class Cell {
-    protected List<Thing> things = new ArrayList<Thing>();
+    protected final List<Thing> things = new ArrayList<>();
     protected Appearance appearance;
 
     void addThink(Thing thing) {
