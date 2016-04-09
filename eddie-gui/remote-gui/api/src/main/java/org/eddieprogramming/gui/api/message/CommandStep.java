@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Class that defines series of {@link Command } that are from the user point of view done at once with defined speed.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class CommandStep extends Step {
 

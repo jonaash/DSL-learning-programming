@@ -2,30 +2,24 @@ package org.eddieprogramming.gui.standalone;
 
 import com.googlecode.tinydi.DependencyRepository;
 import org.eddieprogramming.gui.GuiInitializer;
-import org.eddieprogramming.gui.api.message.appearance.TextAppearance;
-import org.eddieprogramming.gui.model.world.Cell;
-import org.eddieprogramming.gui.model.world.Thing;
-import org.eddieprogramming.gui.model.world.World;
 import org.eddieprogramming.gui.view.MainView;
 
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 
 /**
+ * Class which allows to run Eddie Panel as a standalone application outside of Eddie Studio.
  *
- *
- * @author jonasklimes
- * @since 28/03/15
+ * @author Jonas Klimes
  */
 public class GuiRunner {
-
+    public static final int SERVER_PORT = 12347;
 
     public static void main(String[] args) throws Exception {
-        GuiInitializer.init("rmi://localhost", 12347, "GuiService");
+        GuiInitializer.init("rmi://localhost", SERVER_PORT, "GuiService");
 
         MainView panel = DependencyRepository.getInstance().getBean(MainView.class);
 
@@ -43,48 +37,5 @@ public class GuiRunner {
 
         // initialize RMI server and service
 
-    }
-
-    public static World createWorldSample() {
-        World world = new World("World sample", 10, 10);
-
-        // set walls
-        setBorderCellsColor(world, Color.RED);
-
-        // set marks
-        addMarks(world, 3, 4, 5);
-        addMarks(world, 2, 3, 3);
-
-        // set robot
-        Thing robot = world.createThing("Karel");
-        TextAppearance a = new TextAppearance(Color.BLUE, Color.black, ">");
-        robot.setAppearance(a);
-        robot.setPosition(3, 3);
-
-        return world;
-    }
-
-
-    private static void addMarks(World world, int row, int col, int count) {
-        Cell markCell = world.getCell(row, col);
-        TextAppearance a = new TextAppearance();
-        a.setText(String.valueOf(count));
-        markCell.setAppearance(a);
-    }
-
-
-    private static void setBorderCellsColor(World world, Color color) {
-        for (int row = 0; row < world.getHeight(); row++) {
-            for (int col = 0; col < world.getWidth(); col++) {
-                if (row == 0 || row == world.getHeight() - 1 || col == 0 || col == world.getWidth() - 1) {
-                    Cell cell = world.getCell(row, col);
-                    TextAppearance a = new TextAppearance();
-
-                    a.setBackground(color);
-                    cell.setAppearance(a);
-
-                }
-            }
-        }
     }
 }

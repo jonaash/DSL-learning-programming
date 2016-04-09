@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author jonasklimes
- * @since 04/04/15
+ * Model of single cell of <em>Eddie map</em> (represented as {@link World }).
+ *
+ * @author Jonas Klimes
  */
 public class Cell {
     protected List<Thing> things = new ArrayList<Thing>();

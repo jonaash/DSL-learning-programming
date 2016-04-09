@@ -3,7 +3,7 @@ package org.eddieprogramming.gui.api.message;
 /**
  * Speed definition of Step. Defines how long is GUI waiting after {@link CommandStep } execution.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public enum Speed {
     /**

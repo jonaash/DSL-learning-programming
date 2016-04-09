@@ -15,6 +15,8 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 
 /**
+ * Validator of Transfer Objects of {@link org.eddieprogramming.gui.api.service.GuiService }.
+ *
  * @author Jonas Klimes
  */
 @Named

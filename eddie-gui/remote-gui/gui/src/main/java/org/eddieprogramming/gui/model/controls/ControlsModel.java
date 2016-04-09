@@ -18,6 +18,8 @@ import javax.swing.text.StyledDocument;
 import java.awt.event.ActionEvent;
 
 /**
+ * Model for Control GUI elements which holds their state.
+ *
  * @author Jonas Klimes
  */
 @Named

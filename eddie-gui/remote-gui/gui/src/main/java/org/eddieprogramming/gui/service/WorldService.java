@@ -2,9 +2,9 @@ package org.eddieprogramming.gui.service;
 
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
 import org.eddieprogramming.gui.api.message.CommandStep;
-import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.Result;
 import org.eddieprogramming.gui.api.message.Step;
+import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.command.Alert;
 import org.eddieprogramming.gui.api.message.command.ChangeCell;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
@@ -321,7 +321,7 @@ public class WorldService {
         this.controller = controller;
 
         // workaround for cyclic dependency between GuiController and WorldService
-        // FIXME find better solution
+        // FIXME find better solution to solve this cyclic dependency
 
         if (controller instanceof GuiControllerImpl) {
             ((GuiControllerImpl) controller).setWorldService(this);

@@ -8,6 +8,12 @@ import javax.swing.SwingUtilities;
 import java.lang.reflect.InvocationTargetException;
 
 /**
+ * Helper class to manipulate with GUI only from Event Dispatch Thread.
+ * It provides facade over {@link SwingUtilities }. It uses Swing utilities only from other threads and transforms its
+ * Exceptions into unchecked {@link GuiInternalException }.
+ * <br>
+ * It is abstract class which should be implemented as anonymous inner class.
+ *
  * @author Jonas Klimes
  */
 public abstract class SwingInvoker {
@@ -19,6 +25,21 @@ public abstract class SwingInvoker {
 
     }
 
+    /**
+     * Executes code using {@link SwingUtilities#invokeLater(Runnable)}  } if it is necesary.
+     * <br>
+     * Usage:
+     * <code>
+     *     new SwingInvoker() {
+     *           @Override
+     *           protected void operation() {
+     *               // operation which should be execute in EDT
+     *           }
+     *
+     *     }.invokeLater();
+     *
+     * </code>
+     */
     public void invokeLater(){
         if(isEventDispatchThread()){
             logger.trace("Running operation. It is event dispatch thread.");
@@ -34,6 +55,21 @@ public abstract class SwingInvoker {
         }
     }
 
+    /**
+     * Executes code using {@link SwingUtilities#invokeAndWait(Runnable)} if it is necesary.
+     * <br>
+     * Usage:
+     * <code>
+     *     new SwingInvoker() {
+     *           @Override
+     *           protected void operation() {
+     *               // operation which should be execute in EDT
+     *           }
+     *
+     *     }.invokeLater();
+     *
+     * </code>
+     */
     public void invokeAndWait(){
         if(isEventDispatchThread()){
             logger.trace("Running operation. It is event dispatch thread.");
@@ -47,9 +83,7 @@ public abstract class SwingInvoker {
                         operation();
                     }
                 });
-            } catch (InterruptedException e) {
-                throw new GuiInternalException(e);
-            } catch (InvocationTargetException e) {
+            } catch (InterruptedException | InvocationTargetException e) {
                 throw new GuiInternalException(e);
             }
         }

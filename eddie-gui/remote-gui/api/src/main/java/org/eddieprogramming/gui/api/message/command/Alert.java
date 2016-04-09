@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 /**
  * Command to show popup message in remote GUI.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class Alert extends Command {
 

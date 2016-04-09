@@ -2,6 +2,9 @@ package org.eddieprogramming.gui.api.message;
 
 import java.io.Serializable;
 
+/**
+ * Transfer Object for server call result.
+ */
 public class Result implements Serializable {
 
     public static final Result SUCCESS = new Result(Status.SUCCESS);

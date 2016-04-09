@@ -7,7 +7,7 @@ import org.eddieprogramming.gui.api.message.appearance.Appearance;
 /**
  * Command to change Cell in remote GUI. It changes an appearance of Cell identified by its position.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class ChangeCell extends Command {
 

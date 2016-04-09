@@ -8,7 +8,7 @@ import java.awt.Color;
 /**
  * Class that defines object visual appearance with background color and some color text.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class TextAppearance implements Appearance {
 

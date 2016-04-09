@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * Class that conians method to initialize remote GUI.
+ * Class that conians a method to initialize remote GUI which ensures that initialization is executed only once.
  *
  * @author Jonas Klimes
  */

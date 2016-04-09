@@ -15,6 +15,9 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+/**
+ * RMI Server for Eddie Panel.
+ */
 @Named
 @Singleton
 public class GuiServer {

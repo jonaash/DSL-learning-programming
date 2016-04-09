@@ -7,6 +7,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
+ * Class to provied localized labels from property files.
+ *
  * @author Jonas Klimes
  */
 public class Labels {
@@ -47,7 +49,7 @@ public class Labels {
             return label;
         }
         else{
-            // FIXME: remove before release
+            // FIXME: remove before final release
             // return key for debugging purposes
             return "!" + key + "!";
         }

@@ -13,8 +13,10 @@ import java.util.EnumMap;
 import java.util.Map;
 
 /**
- * @author jonasklimes
- * @since 12/04/15
+ * Utility class to perform waitings required for proper animation of {@link org.eddieprogramming.gui.api.message.Step }.
+ * Waiting time depends on given {@link Speed } and a coeficient set by user in GUI.
+ *
+ * @author Jonas Klimes
  */
 @Named
 @Singleton

@@ -7,7 +7,7 @@ import org.eddieprogramming.gui.api.message.appearance.Appearance;
 /**
  * Command to change Thing in remote GUI. It can change position and appearance of a Thing identified by its name.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class ChangeThing extends Command {
     private static final long serialVersionUID = 8725841466839100802L;

@@ -18,8 +18,9 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 /**
- * @author jonasklimes
- * @since 03/04/15
+ * Main View for Eddie Panel. Forms layout and contains {@link WorldView } and {@link ControlsView }.
+ *
+ * @author Jonas Klimes
  */
 @Named
 @Singleton

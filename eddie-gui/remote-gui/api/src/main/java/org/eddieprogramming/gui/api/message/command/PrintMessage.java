@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 /**
  * Command to print text in remote console.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class PrintMessage extends Command {
     private static final long serialVersionUID = 5572966573840940017L;

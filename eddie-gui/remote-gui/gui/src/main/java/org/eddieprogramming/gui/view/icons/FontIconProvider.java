@@ -11,6 +11,8 @@ import java.io.InputStream;
 import java.text.MessageFormat;
 
 /**
+ * Class to create an instance of Icon Font which is used to visualise objects in Eddie Map.
+ *
  * @author Jonas Klimes
  */
 public class FontIconProvider {
@@ -24,9 +26,11 @@ public class FontIconProvider {
 
         try {
             input = FontIconProvider.class.getClassLoader().getResourceAsStream(FLATICON_FILE);
+
             //create the font to use. Specify the size!
             flaticonFont = Font.createFont(Font.TRUETYPE_FONT, input);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+
             //register the font
             ge.registerFont(flaticonFont);
         } catch (Exception e) {

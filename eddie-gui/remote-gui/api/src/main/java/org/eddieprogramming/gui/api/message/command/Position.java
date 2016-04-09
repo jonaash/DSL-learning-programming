@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * Definition of position in a two dimensional grid.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class Position implements Serializable {
 

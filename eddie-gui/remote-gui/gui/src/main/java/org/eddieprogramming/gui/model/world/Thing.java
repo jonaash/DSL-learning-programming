@@ -3,8 +3,9 @@ package org.eddieprogramming.gui.model.world;
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
 
 /**
- * @author jonasklimes
- * @since 03/04/15
+ * Model of an object of <em>Eddie map</em> (represented as {@link World }).
+ *
+ * @author Jonas Klimes
  */
 public class Thing {
     /**

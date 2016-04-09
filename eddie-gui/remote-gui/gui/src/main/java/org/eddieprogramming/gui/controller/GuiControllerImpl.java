@@ -17,6 +17,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
+ * Implementation of {@link GuiControllerImpl }. Adds some public method that are used only for GUI and not for the
+ * server.
+ *
  * @author Jonas Klimes
  */
 @Named

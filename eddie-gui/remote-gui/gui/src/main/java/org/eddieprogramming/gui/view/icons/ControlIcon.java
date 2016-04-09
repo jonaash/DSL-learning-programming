@@ -1,6 +1,8 @@
 package org.eddieprogramming.gui.view.icons;
 
 /**
+ * List of image icons for Control Panel in Eddie Panel. Icons are packed in JAR archive as images.
+ *
  * @author Jonas Klimes
  */
 public enum ControlIcon {

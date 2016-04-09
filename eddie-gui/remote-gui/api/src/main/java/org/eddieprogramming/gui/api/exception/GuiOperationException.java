@@ -3,8 +3,7 @@ package org.eddieprogramming.gui.api.exception;
 /**
  * Exception that is caused by wrong usage of API.
  *
- * @author jonasklimes
- * @since 19/04/15
+ * @author Jonas Klimes
  */
 public class GuiOperationException extends GuiException {
 

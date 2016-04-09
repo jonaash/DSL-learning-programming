@@ -15,7 +15,7 @@ import java.rmi.server.UnicastRemoteObject;
  * Implementation of {@link GuiService } using Swing. Serves as RMI proxy around {@link WorldService} that is
  * independent on RMI.
  *
- * @author jonasklimes
+ * @author Jonas Klimes
  */
 public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     private static final long serialVersionUID = 5992469827185093956L;

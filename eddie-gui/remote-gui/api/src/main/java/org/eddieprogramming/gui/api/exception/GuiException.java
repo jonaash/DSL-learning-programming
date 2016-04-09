@@ -3,8 +3,7 @@ package org.eddieprogramming.gui.api.exception;
 /**
  * Abstract parent of exceptions in GUI.
  *
- * @author jonasklimes
- * @since 05/04/15
+ * @author Jonas Klimes
  */
 public abstract class GuiException extends RuntimeException {
 

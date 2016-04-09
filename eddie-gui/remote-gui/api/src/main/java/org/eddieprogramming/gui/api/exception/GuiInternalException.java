@@ -3,8 +3,7 @@ package org.eddieprogramming.gui.api.exception;
 /**
  * Exception that not caused by user of API but some other conditions.
  *
- * @author jonasklimes
- * @since 19/04/15
+ * @author Jonas Klimes
  */
 public class GuiInternalException extends GuiException {
 

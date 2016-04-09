@@ -1,6 +1,8 @@
 package org.eddieprogramming.gui.api.message.appearance;
 
 /**
+ * List of supported icons in Flaticon icon font.
+ *
  * @author Jonas Klimes
  */
 public enum Flaticon {

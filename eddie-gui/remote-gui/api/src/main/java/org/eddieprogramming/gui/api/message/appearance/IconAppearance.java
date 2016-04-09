@@ -3,6 +3,8 @@ package org.eddieprogramming.gui.api.message.appearance;
 import java.awt.Color;
 
 /**
+ * Implementation of Appearance which uses Icons as visual appearance.
+ *
  * @author Jonas Klimes
  */
 public class IconAppearance implements Appearance {

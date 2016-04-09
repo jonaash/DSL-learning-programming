@@ -5,8 +5,6 @@ import org.eddieprogramming.gui.model.controls.ControlsModel;
 import org.eddieprogramming.gui.util.Labels;
 import org.eddieprogramming.gui.view.icons.ControlIcon;
 import org.eddieprogramming.gui.view.icons.IconProvider;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -18,8 +16,9 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
 /**
- * @author jonasklimes
- * @since 03/04/15
+ * View for Control Panel which allows users to control program executions.
+ *
+ * @author Jonas Klimes
  */
 @Named
 @Singleton
@@ -27,10 +26,7 @@ public class ControlsView {
 
     private static final long serialVersionUID = -8751016031258019018L;
 
-    private static final Logger logger = LoggerFactory.getLogger(ControlsView.class);
-
     private static final int BUTTON_SIZE = 40;
-    private static final int BUTTON_FONT_SIZE = 18;
 
     private JPanel panel = new JPanel();
 
@@ -60,7 +56,6 @@ public class ControlsView {
     }
 
     private void initComponents() {
-        // TODO: add actions
         start = createButton(ControlIcon.PLAY, Labels.getLabel("controls.button.start.tooltip"));
         start.setModel(model.getStart());
 

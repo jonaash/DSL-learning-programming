@@ -19,8 +19,7 @@ import java.rmi.RemoteException;
  *
  *
  *
- * @author jonasklimes
- * @since 05/04/15
+ * @author Jonas Klimes
  */
 public interface GuiService extends Remote {
 

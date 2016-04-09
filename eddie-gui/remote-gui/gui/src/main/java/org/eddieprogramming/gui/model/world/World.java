@@ -7,8 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author jonasklimes
- * @since 03/04/15
+ * Model of <em>Eddie map</em> displayed in Eddie Panel.
+ *
+ * @author Jonas Klimes
  */
 public class World {
 

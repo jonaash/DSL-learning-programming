@@ -11,8 +11,9 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 
 /**
- * @author jonasklimes
- * @since 04/04/15
+ * View implementation of Eddie Map which visualise program executions.
+ *
+ * @author Jonas Klimes
  */
 public class WorldView {
     private static final long serialVersionUID = -3111896967024406471L;

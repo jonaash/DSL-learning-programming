@@ -18,8 +18,9 @@ import java.awt.Font;
 import java.util.List;
 
 /**
- * @author jonasklimes
- * @since 04/04/15
+ * Class to represnt visual appearance of {@link Cell }.
+ *
+ * @author Jonas Klimes
  */
 class VisualCell extends JPanel {
 
@@ -88,12 +89,12 @@ class VisualCell extends JPanel {
                 this.setBackground(textAppearance.getBackground());
                 label.setForeground(textAppearance.getColor());
                 label.setText(textAppearance.getText());
-                label.setOriantation(Orientation.NORMAL);
+                label.setOrientation(Orientation.NORMAL);
             } else {
                 if (appearance instanceof IconAppearance){
                     IconAppearance iconAppearance = (IconAppearance)appearance;
                     label.setFont(ICON_LARGE_FONT);
-                    label.setOriantation(iconAppearance.getOrientation());
+                    label.setOrientation(iconAppearance.getOrientation());
                     this.setBackground(iconAppearance.getBackground());
                     label.setForeground(iconAppearance.getColor());
                     label.setText(String.valueOf(iconAppearance.getIcon().getCode()));

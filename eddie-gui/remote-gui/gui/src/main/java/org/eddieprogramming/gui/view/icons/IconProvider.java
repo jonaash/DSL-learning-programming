@@ -12,6 +12,8 @@ import java.net.URL;
 import java.text.MessageFormat;
 
 /**
+ * Class to load icons from classpath resources.
+ *
  * @author Jonas Klimes
  */
 @Named
