@@ -39,8 +39,8 @@
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
         <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
-      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
-        <reference id="7428636491479279402" name="scene" index="2JdVqH" />
+      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.MapReference" flags="ng" index="2JdVq9">
+        <reference id="7428636491479279402" name="map" index="2JdVqH" />
       </concept>
       <concept id="3394217739178654343" name="org.eddieprogramming.core.EddieBasic.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
@@ -87,13 +87,13 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScene" flags="ng" index="1n_5_B">
+      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMap" flags="ng" index="1n_5_B">
         <property id="6349814108913355890" name="width" index="1n_5SS" />
         <property id="6349814108913355892" name="heigth" index="1n_5SY" />
         <child id="6349814108915674177" name="sceneConstruction" index="1nGrSb" />
         <child id="6349814108917427210" name="startPosition" index="1nPBT0" />
       </concept>
-      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
+      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMapConstruction" flags="ng" index="1nGorK">
         <child id="6349814108915673812" name="body" index="1nGryu" />
       </concept>
       <concept id="6349814108916865125" name="org.eddieprogramming.core.EddieBasic.structure.AbstractPosition" flags="ng" index="1nRWCJ">
@@ -101,8 +101,8 @@
         <property id="6349814108916864868" name="row" index="1nRWkI" />
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
-        <child id="7428636491479287661" name="sceneRef" index="2JdPrE" />
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
+        <child id="7428636491479287661" name="mapRef" index="2JdPrE" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -132,8 +132,8 @@
       </concept>
     </language>
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction">
-      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
-      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
+      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Map" flags="ng" index="1nE9df" />
+      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.MapConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
     </language>
     <language id="a9e656c0-d096-4475-bb36-823817b9bb6d" name="org.eddieprogramming.dsl.EddieVariableTerminals">

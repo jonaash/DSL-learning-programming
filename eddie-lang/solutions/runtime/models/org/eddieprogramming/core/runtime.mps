@@ -568,7 +568,7 @@
             <node concept="3clFbS" id="5wv4$Cfy59V" role="TDEfX">
               <node concept="3SKdUt" id="5wv4$Cfy5D5" role="3cqZAp">
                 <node concept="3SKdUq" id="5wv4$Cfy5FZ" role="3SKWNk">
-                  <property role="3SKdUp" value="rethrow runtime exceptions" />
+                  <property role="3SKdUp" value="rethrow runtime exceptions without wrapping" />
                 </node>
               </node>
               <node concept="YS8fn" id="5wv4$Cfy5uS" role="3cqZAp">
@@ -655,7 +655,7 @@
       <node concept="37vLTG" id="6snOov8$75P" role="3clF46">
         <property role="TrG5h" value="tutorial" />
         <node concept="3uibUv" id="6snOov8$75O" role="1tU5fm">
-          <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
+          <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="ScenarioDescription" />
         </node>
       </node>
     </node>
@@ -682,7 +682,7 @@
       <node concept="37vLTG" id="6snOov8gC8m" role="3clF46">
         <property role="TrG5h" value="sceneDescription" />
         <node concept="3uibUv" id="6snOov8gC8l" role="1tU5fm">
-          <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+          <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="MapDescription" />
         </node>
       </node>
     </node>
@@ -699,7 +699,7 @@
             <node concept="3clFbF" id="6snOov8S2P6" role="3cqZAp">
               <node concept="37vLTI" id="6snOov8S2QL" role="3clFbG">
                 <node concept="10M0yZ" id="6snOov8SeEy" role="37vLTx">
-                  <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+                  <ref role="1PxDUh" to="b3e7:442XwrAYKLj" resolve="MapDescription" />
                   <ref role="3cqZAo" to="b3e7:442XwrAYKLk" resolve="DEFAULT" />
                 </node>
                 <node concept="37vLTw" id="6snOov8S2P4" role="37vLTJ">
@@ -773,6 +773,7 @@
                         <node concept="3Tmbuc" id="3zxup4fGhcR" role="1B3o_S" />
                         <node concept="3cqZAl" id="3zxup4fGhcS" role="3clF45" />
                         <node concept="3clFbS" id="3zxup4fGhcU" role="3clF47">
+                          <node concept="3clFbH" id="16gJYXViunX" role="3cqZAp" />
                           <node concept="3clFbF" id="3zxup4fGhk6" role="3cqZAp">
                             <node concept="2OqwBi" id="3zxup4fGhkX" role="3clFbG">
                               <node concept="37vLTw" id="3zxup4fGhk5" role="2Oq$k0">
@@ -1042,14 +1043,14 @@
       <node concept="37vLTG" id="6snOov8$8fC" role="3clF46">
         <property role="TrG5h" value="sceneDescription" />
         <node concept="3uibUv" id="6snOov8$8fB" role="1tU5fm">
-          <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="SceneDescription" />
+          <ref role="3uigEE" to="b3e7:442XwrAYKLj" resolve="MapDescription" />
         </node>
       </node>
       <node concept="37vLTG" id="3zxup4fFFdW" role="3clF46">
         <property role="TrG5h" value="tutorial" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="3zxup4fFTHQ" role="1tU5fm">
-          <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="TutorialDescription" />
+          <ref role="3uigEE" to="b3e7:442XwrAYKKN" resolve="ScenarioDescription" />
         </node>
       </node>
     </node>
@@ -1095,9 +1096,39 @@
         </node>
         <node concept="SfApY" id="4LNIB3H0ox9" role="3cqZAp">
           <node concept="3clFbS" id="4LNIB3H0oxb" role="SfCbr">
-            <node concept="3clFbF" id="5wv4$Cfm$2H" role="3cqZAp">
-              <node concept="1rXfSq" id="5wv4$Cfm$2F" role="3clFbG">
-                <ref role="37wK5l" node="1UBpzRreYjP" resolve="runScript" />
+            <node concept="SfApY" id="16gJYXViFxk" role="3cqZAp">
+              <node concept="3clFbS" id="16gJYXViFxm" role="SfCbr">
+                <node concept="3clFbF" id="5wv4$Cfm$2H" role="3cqZAp">
+                  <node concept="1rXfSq" id="5wv4$Cfm$2F" role="3clFbG">
+                    <ref role="37wK5l" node="1UBpzRreYjP" resolve="runScript" />
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="16gJYXViFxn" role="TEbGg">
+                <node concept="3cpWsn" id="16gJYXViFxp" role="TDEfY">
+                  <property role="TrG5h" value="npe" />
+                  <node concept="3uibUv" id="16gJYXViFI_" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~NullPointerException" resolve="NullPointerException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="16gJYXViFxt" role="TDEfX">
+                  <node concept="YS8fn" id="16gJYXViuBA" role="3cqZAp">
+                    <node concept="2ShNRf" id="16gJYXViuDq" role="YScLw">
+                      <node concept="1pGfFk" id="16gJYXVixFB" role="2ShVmc">
+                        <ref role="37wK5l" node="16gJYXVixe0" resolve="UninitializedVariableException" />
+                        <node concept="Xl_RD" id="16gJYXVixJS" role="37wK5m">
+                          <property role="Xl_RC" value="Variable was not initialized - NullPointerException" />
+                        </node>
+                        <node concept="Xl_RD" id="16gJYXVizOr" role="37wK5m">
+                          <property role="Xl_RC" value="error.runtime.not.initialized.variable" />
+                        </node>
+                        <node concept="37vLTw" id="16gJYXViQR$" role="37wK5m">
+                          <ref role="3cqZAo" node="16gJYXViFxp" resolve="npe" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3SKdUt" id="5DNjL23qsu_" role="3cqZAp">
@@ -9600,6 +9631,69 @@
           <property role="1dT_AB" value="NOTE: It is used in regular situations." />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="16gJYXVix72">
+    <property role="3GE5qa" value="common" />
+    <property role="TrG5h" value="UninitializedVariableException" />
+    <node concept="3clFbW" id="16gJYXVixe0" role="jymVt">
+      <node concept="3cqZAl" id="16gJYXVixe1" role="3clF45" />
+      <node concept="3clFbS" id="16gJYXVixe3" role="3clF47">
+        <node concept="XkiVB" id="16gJYXVixmo" role="3cqZAp">
+          <ref role="37wK5l" node="4LNIB3H0lz0" resolve="EddieException" />
+          <node concept="37vLTw" id="16gJYXVixnC" role="37wK5m">
+            <ref role="3cqZAo" node="16gJYXVixg3" resolve="message" />
+          </node>
+          <node concept="37vLTw" id="16gJYXVixpt" role="37wK5m">
+            <ref role="3cqZAo" node="16gJYXVixgk" resolve="userMessageKey" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="16gJYXViLHt" role="3cqZAp">
+          <node concept="3clFbS" id="16gJYXViLHv" role="3clFbx">
+            <node concept="3clFbF" id="16gJYXViLMd" role="3cqZAp">
+              <node concept="2OqwBi" id="16gJYXViLMC" role="3clFbG">
+                <node concept="Xjq3P" id="16gJYXViLMb" role="2Oq$k0" />
+                <node concept="liA8E" id="16gJYXViLNv" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.setStackTrace(java.lang.StackTraceElement[]):void" resolve="setStackTrace" />
+                  <node concept="2OqwBi" id="16gJYXViLQz" role="37wK5m">
+                    <node concept="37vLTw" id="16gJYXViLOY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="16gJYXViLz3" resolve="cause" />
+                    </node>
+                    <node concept="liA8E" id="16gJYXViLRG" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Throwable.getStackTrace():java.lang.StackTraceElement[]" resolve="getStackTrace" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="16gJYXViLK5" role="3clFbw">
+            <node concept="10Nm6u" id="16gJYXViLKU" role="3uHU7w" />
+            <node concept="37vLTw" id="16gJYXViLJ3" role="3uHU7B">
+              <ref role="3cqZAo" node="16gJYXViLz3" resolve="cause" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="16gJYXVixcr" role="1B3o_S" />
+      <node concept="37vLTG" id="16gJYXVixg3" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="16gJYXVixjb" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="16gJYXVixgk" role="3clF46">
+        <property role="TrG5h" value="userMessageKey" />
+        <node concept="17QB3L" id="16gJYXVixj5" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="16gJYXViLz3" role="3clF46">
+        <property role="TrG5h" value="cause" />
+        <node concept="3uibUv" id="16gJYXViL$l" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="16gJYXVix73" role="1B3o_S" />
+    <node concept="3uibUv" id="16gJYXVixbA" role="1zkMxy">
+      <ref role="3uigEE" node="4LNIB3H06sE" resolve="EddieException" />
     </node>
   </node>
 </model>
