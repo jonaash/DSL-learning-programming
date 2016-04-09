@@ -1,6 +1,8 @@
 package org.eddieprogramming.gui.service;
 
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
+import org.eddieprogramming.gui.api.message.CommandStep;
+import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.Result;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.command.Alert;
@@ -28,6 +30,8 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
+ * Service to process client requests to manipulate with World in GUI.
+ *
  * @author Jonas Klimes
  */
 @Named
@@ -80,23 +84,36 @@ public class WorldService {
         setState(GuiState.SCENE_CONSTRUCTION);
     }
 
+    /**
+     * Resumes script execution.
+     */
     public void resume() {
         logger.debug("Resume script.");
         stateHolder.setOnlyOneStep(false);
         setState(GuiState.RUNNING);
     }
 
+
+    /**
+     * Resumes execution for one step and then pause the execution.
+     */
     public void resumeForOneStep() {
         logger.debug("Resume script for one step.");
         stateHolder.setOnlyOneStep(true);
         setState(GuiState.RUNNING);
     }
 
+    /**
+     * Pause execution. Paused execution can be resumed.
+     */
     public void pause() {
         logger.debug("Pause script.");
         setState(GuiState.PAUSED);
     }
 
+    /**
+     * Stops execution for this script permanenttly.
+     */
     public void stop() {
         logger.debug("Stop script.");
         cancelOthers();
@@ -110,12 +127,25 @@ public class WorldService {
         stepsToDo.clear();
     }
 
+    /**
+     * Executes one step.
+     *
+     * Steps execution depends on current {@link GuiState}:
+     * <ul>
+     *     <li>SCENE_CONSTRUCTION - Steps are executed immediately</li>
+     *     <li>READY_FOR_RUN, RUNNING, PAUSE - Steps are added to queue.</li>
+     *     <li>This method should be called in other states.</li>
+     * </ul>
+     *
+     * @param step step to do
+     * @return result based on current execution state
+     */
     public Result doStep(Step step) {
         validator.validateStep(step);
 
         if (!getState().canDoStep()) {
             throw new GuiOperationException("Method step cannot be called in this situation. " +
-                    "(Possible cause: World haven't been created yet)");
+                    "(Possible cause: World haven't been created yet or execution has been stopped)");
         }
 
 
@@ -132,22 +162,35 @@ public class WorldService {
         return getResult();
     }
 
-
+    /**
+     * Create a {@link Thing } in the {@link World }.
+     * <br>
+     * <em>Can be called only in {@link GuiState#SCENE_CONSTRUCTION }.</em>
+     * @param name name of the thing
+     * @return created thing
+     */
     public Thing createThing(String name) {
         // TODO: this might be unnecessary restriction defined in API
         if (GuiState.SCENE_CONSTRUCTION != getState()) {
             throw new GuiOperationException("Unexpected GuiService#createThing() method called. It schould be called " +
-                    "only between createWorld and run methods.");
+                    "only in between createWorld and run methods.");
         }
+
         validator.validateThingName(name);
 
         return worldHolder.getWorld().createThing(name);
     }
 
 
+    /**
+     * Starts program execution.
+     * <br>
+     * <em>Can be called only in {@link GuiState#SCENE_CONSTRUCTION }.</em>
+     */
     public void run() {
         if (GuiState.SCENE_CONSTRUCTION != getState()) {
-            throw new GuiOperationException("Unexpected GuiService#run() method called");
+            throw new GuiOperationException("Unexpected GuiService#run() method called. Can be called only in " +
+                    "GuiState.SCENE_CONSTRUCTION ");
         }
 
         // timer is created and started only at first program execution.
@@ -169,7 +212,7 @@ public class WorldService {
         stateHolder.setState(state);
     }
 
-    public synchronized Result getResult() {
+    private synchronized Result getResult() {
         if (getState() == GuiState.STOPPED) {
             return Result.CANCELLED;
         }
@@ -177,7 +220,7 @@ public class WorldService {
     }
 
 
-    public void enqueueStep(Step step) {
+    private void enqueueStep(Step step) {
         try {
             stepsToDo.put(step);
         } catch (InterruptedException e) {
@@ -188,14 +231,22 @@ public class WorldService {
 
     private synchronized void doStepNow(Step step) {
         logger.trace("Starting doStepNow with step: {}, Thread: {}", step, Thread.currentThread());
-        for (Command command : step.getCommands()) {
-            processCommand(command);
+
+        if (step instanceof CommandStep) {
+            CommandStep commandStep = (CommandStep)step;
+            for (Command command : commandStep.getCommands()) {
+                processCommand(command);
+            }
+
+            controller.updateWorld();
+
+            waitingUtil.pause(commandStep.getSpeed());
+            logger.trace("Finishing doStepNow with step: {}, Thread: {}", step, Thread.currentThread());
+        } else if (step instanceof TerminationStep){
+            stop();
+        } else {
+            throw new UnsupportedOperationException("Unknown Step: " + step.toString());
         }
-
-        controller.updateWorld();
-
-        waitingUtil.pause(step.getSpeed());
-        logger.trace("Finishing doStepNow with step: {}, Thread: {}", step, Thread.currentThread());
     }
 
 
@@ -285,6 +336,9 @@ public class WorldService {
         this.stateHolder = stateHolder;
     }
 
+    /**
+     * Class to encapsulate execution loop for one program.
+     */
     private class ExecutionTask extends TimerTask {
         @Override
         public void run() {

@@ -7,6 +7,8 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 
 /**
+ * Bean to hold current {@link GuiState }.
+ *
  * @author Jonas Klimes
  */
 @Named

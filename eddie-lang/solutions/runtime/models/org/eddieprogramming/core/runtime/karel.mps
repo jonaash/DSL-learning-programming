@@ -1219,8 +1219,8 @@
       <property role="TrG5h" value="operation" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="442XwrAYNYQ" role="1B3o_S" />
-      <node concept="3uibUv" id="442XwrAYNYR" role="1tU5fm">
-        <ref role="3uigEE" to="deok:~Step" resolve="Step" />
+      <node concept="3uibUv" id="5hp$JvkrTtw" role="1tU5fm">
+        <ref role="3uigEE" to="deok:~CommandStep" resolve="CommandStep" />
       </node>
     </node>
     <node concept="2tJIrI" id="442XwrAYNYS" role="jymVt" />
@@ -1272,7 +1272,7 @@
                   <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
                 </node>
                 <node concept="liA8E" id="442XwrAYNZi" role="2OqNvi">
-                  <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                  <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                   <node concept="2YIFZM" id="442XwrAYNZj" role="37wK5m">
                     <ref role="37wK5l" to="4ujd:5wv4$CfiUU7" resolve="createWall" />
                     <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
@@ -1298,7 +1298,7 @@
                     <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
                   </node>
                   <node concept="liA8E" id="442XwrAYNZs" role="2OqNvi">
-                    <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                    <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                     <node concept="2YIFZM" id="442XwrAYNZt" role="37wK5m">
                       <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
                       <ref role="37wK5l" to="4ujd:5wv4$Cfj3g0" resolve="createEmpty" />
@@ -1374,7 +1374,7 @@
               <ref role="3cqZAo" node="442XwrAYNYP" resolve="operation" />
             </node>
             <node concept="liA8E" id="442XwrAYNZW" role="2OqNvi">
-              <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+              <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
               <node concept="2YIFZM" id="442XwrAYNZX" role="37wK5m">
                 <ref role="37wK5l" to="4ujd:5wv4$Cfj67g" resolve="createMarks" />
                 <ref role="1Pybhc" to="4ujd:4xkKHFKaFG7" resolve="ViewFactory" />
@@ -1409,7 +1409,7 @@
           <node concept="37vLTI" id="442XwrAYO09" role="3clFbG">
             <node concept="2ShNRf" id="442XwrAYO0a" role="37vLTx">
               <node concept="1pGfFk" id="442XwrAYO0b" role="2ShVmc">
-                <ref role="37wK5l" to="deok:~Step.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="Step" />
+                <ref role="37wK5l" to="deok:~CommandStep.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="CommandStep" />
                 <node concept="Rm8GO" id="442XwrAYO0c" role="37wK5m">
                   <ref role="Rm8GQ" to="deok:~Speed.INSTANT" resolve="INSTANT" />
                   <ref role="1Px2BO" to="deok:~Speed" resolve="Speed" />

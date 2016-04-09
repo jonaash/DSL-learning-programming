@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.text.MessageFormat;
 
 /**
+ * Helper class to count assertion calls that are executed in another thread.
  * @author Jonas Klimes
  */
 public class MultithreadCallAssertion {
@@ -20,7 +21,13 @@ public class MultithreadCallAssertion {
         // prevent instantiation
     }
 
-    public static MultithreadCallAssertion expectLastCall() {
+
+    /**
+     * Create  of MultithreadCallAssertion and
+     *
+     * @return
+     */
+    public static MultithreadCallAssertion createCallCountingMock() {
         MultithreadCallAssertion instance = new MultithreadCallAssertion();
         // allow to call it any times
         EasyMock.expectLastCall().andAnswer(instance.new AssertionAnswer()).anyTimes();

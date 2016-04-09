@@ -1,7 +1,7 @@
 package org.eddieprogramming.gui.client;
 
+import org.eddieprogramming.gui.api.message.CommandStep;
 import org.eddieprogramming.gui.api.message.Speed;
-import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.appearance.Flaticon;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
 import org.eddieprogramming.gui.api.message.appearance.Orientation;
@@ -45,7 +45,7 @@ public class SimpleClient {
     }
 
     private static void changeCells(GuiService gui) throws RemoteException {
-        Step step = new Step();
+        CommandStep step = new CommandStep();
         step.setSpeed(Speed.INSTANT);
 
         ChangeCell c = new ChangeCell();

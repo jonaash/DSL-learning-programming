@@ -1,7 +1,7 @@
 package org.eddieprogramming.gui.api.message;
 
 /**
- * Speed definition of Step. Defines how long is GUI waiting after {@link Step } execution.
+ * Speed definition of Step. Defines how long is GUI waiting after {@link CommandStep } execution.
  *
  * @author jonasklimes
  */

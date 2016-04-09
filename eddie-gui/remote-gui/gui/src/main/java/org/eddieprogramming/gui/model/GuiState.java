@@ -1,8 +1,9 @@
 package org.eddieprogramming.gui.model;
 
 /**
+ * Enum to represents states of GUI panel.
+ *
  * @author jonasklimes
- * @since 19/04/15
  */
 public enum GuiState {
     /**

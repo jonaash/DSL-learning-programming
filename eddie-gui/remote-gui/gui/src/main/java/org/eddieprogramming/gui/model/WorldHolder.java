@@ -6,6 +6,8 @@ import javax.inject.Named;
 import javax.inject.Singleton;
 
 /**
+ * Bean to hold current {@link World } instance.
+ *
  * @author Jonas Klimes
  */
 @Named

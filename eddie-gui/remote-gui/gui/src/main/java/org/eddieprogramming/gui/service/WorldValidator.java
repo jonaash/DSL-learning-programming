@@ -2,6 +2,7 @@ package org.eddieprogramming.gui.service;
 
 import org.apache.commons.lang3.Validate;
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
+import org.eddieprogramming.gui.api.message.CommandStep;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.appearance.Appearance;
 import org.eddieprogramming.gui.api.message.appearance.IconAppearance;
@@ -33,6 +34,12 @@ public class WorldValidator {
 
     public void validateStep(Step step) {
         Validate.notNull(step, "Step cannot be null");
+        if (step instanceof CommandStep){
+            validateCommandStep((CommandStep)step);
+        }
+    }
+
+    public void validateCommandStep(CommandStep step){
         Validate.notNull(step.getCommands(), "Commands cannot be null");
         Validate.notNull(step.getSpeed(), "Speed cannot be null");
     }

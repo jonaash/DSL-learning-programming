@@ -1858,12 +1858,12 @@
         <node concept="3cpWs8" id="7UYscSj1jvy" role="3cqZAp">
           <node concept="3cpWsn" id="7UYscSj1jvz" role="3cpWs9">
             <property role="TrG5h" value="step" />
-            <node concept="3uibUv" id="6D1m6GTgPdD" role="1tU5fm">
-              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
+            <node concept="3uibUv" id="5hp$JvkrDwR" role="1tU5fm">
+              <ref role="3uigEE" to="deok:~CommandStep" resolve="CommandStep" />
             </node>
             <node concept="2ShNRf" id="7UYscSj1jw_" role="33vP2m">
               <node concept="1pGfFk" id="7UYscSj1lKt" role="2ShVmc">
-                <ref role="37wK5l" to="deok:~Step.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="Step" />
+                <ref role="37wK5l" to="deok:~CommandStep.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="CommandStep" />
                 <node concept="Rm8GO" id="6D1m6GTgWfC" role="37wK5m">
                   <ref role="Rm8GQ" to="deok:~Speed.INSTANT" resolve="INSTANT" />
                   <ref role="1Px2BO" to="deok:~Speed" resolve="Speed" />
@@ -1994,7 +1994,7 @@
                       <ref role="3cqZAo" node="7UYscSj1jvz" resolve="step" />
                     </node>
                     <node concept="liA8E" id="7UYscSj1ude" role="2OqNvi">
-                      <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                      <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                       <node concept="2ShNRf" id="7UYscSj1ufu" role="37wK5m">
                         <node concept="1pGfFk" id="7UYscSj1uxx" role="2ShVmc">
                           <ref role="37wK5l" to="v181:~ChangeCell.&lt;init&gt;(org.eddieprogramming.gui.api.message.command.Position,org.eddieprogramming.gui.api.message.appearance.Appearance)" resolve="ChangeCell" />
@@ -2018,7 +2018,7 @@
                           <ref role="3cqZAo" node="7UYscSj1jvz" resolve="step" />
                         </node>
                         <node concept="liA8E" id="7UYscSj2dEE" role="2OqNvi">
-                          <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+                          <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
                           <node concept="2ShNRf" id="7UYscSj2dFn" role="37wK5m">
                             <node concept="1pGfFk" id="7UYscSj2dXq" role="2ShVmc">
                               <ref role="37wK5l" to="v181:~ChangeThing.&lt;init&gt;(java.lang.String,org.eddieprogramming.gui.api.message.command.Position,org.eddieprogramming.gui.api.message.appearance.Appearance)" resolve="ChangeThing" />
@@ -2990,12 +2990,12 @@
         <node concept="3cpWs8" id="1qfn$GmrfZN" role="3cqZAp">
           <node concept="3cpWsn" id="1qfn$GmrfZO" role="3cpWs9">
             <property role="TrG5h" value="step" />
-            <node concept="3uibUv" id="6D1m6GTgQmU" role="1tU5fm">
-              <ref role="3uigEE" to="deok:~Step" resolve="Step" />
+            <node concept="3uibUv" id="5hp$JvkrG96" role="1tU5fm">
+              <ref role="3uigEE" to="deok:~CommandStep" resolve="CommandStep" />
             </node>
             <node concept="2ShNRf" id="1qfn$GmrfZQ" role="33vP2m">
               <node concept="1pGfFk" id="1qfn$GmrfZR" role="2ShVmc">
-                <ref role="37wK5l" to="deok:~Step.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="Step" />
+                <ref role="37wK5l" to="deok:~CommandStep.&lt;init&gt;(org.eddieprogramming.gui.api.message.Speed)" resolve="CommandStep" />
                 <node concept="37vLTw" id="1qfn$GmrjFv" role="37wK5m">
                   <ref role="3cqZAo" node="1qfn$Gmriqb" resolve="speed" />
                 </node>
@@ -3009,7 +3009,7 @@
               <ref role="3cqZAo" node="1qfn$GmrfZO" resolve="step" />
             </node>
             <node concept="liA8E" id="1qfn$GmrfZW" role="2OqNvi">
-              <ref role="37wK5l" to="deok:~Step.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
+              <ref role="37wK5l" to="deok:~CommandStep.add(org.eddieprogramming.gui.api.message.command.Command):void" resolve="add" />
               <node concept="37vLTw" id="1qfn$Gmrg02" role="37wK5m">
                 <ref role="3cqZAo" node="1qfn$Gmrg00" resolve="cmd" />
               </node>
@@ -4274,49 +4274,12 @@
       <node concept="3Tm1VV" id="5DNjL23qkMZ" role="1B3o_S" />
       <node concept="3cqZAl" id="5DNjL23qkN0" role="3clF45" />
       <node concept="3clFbS" id="5DNjL23qkN1" role="3clF47">
-        <node concept="SfApY" id="5DNjL23qlw8" role="3cqZAp">
-          <node concept="3clFbS" id="5DNjL23qlw9" role="SfCbr">
-            <node concept="3clFbF" id="5DNjL23qlwa" role="3cqZAp">
-              <node concept="2OqwBi" id="5DNjL23qlwb" role="3clFbG">
-                <node concept="1rXfSq" id="5DNjL23qlwg" role="2Oq$k0">
-                  <ref role="37wK5l" node="5wv4$CflW0k" resolve="getGuiService" />
-                </node>
-                <node concept="liA8E" id="5DNjL23qlPi" role="2OqNvi">
-                  <ref role="37wK5l" to="5c8y:~GuiService.finish():void" resolve="finish" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="5DNjL23qlwh" role="TEbGg">
-            <node concept="3clFbS" id="5DNjL23qlwi" role="TDEfX">
-              <node concept="34ab3g" id="5DNjL23qlwj" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="5DNjL23qlwk" role="34bqiv">
-                  <property role="Xl_RC" value="Comunication with GUI panel failed" />
-                </node>
-                <node concept="37vLTw" id="5DNjL23qlwl" role="34bMjA">
-                  <ref role="3cqZAo" node="5DNjL23qlws" resolve="e" />
-                </node>
-              </node>
-              <node concept="YS8fn" id="5DNjL23qlwm" role="3cqZAp">
-                <node concept="2ShNRf" id="5DNjL23qlwn" role="YScLw">
-                  <node concept="1pGfFk" id="5DNjL23qlwo" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="Xl_RD" id="5DNjL23qlwp" role="37wK5m">
-                      <property role="Xl_RC" value="Communication with GUI panel failed" />
-                    </node>
-                    <node concept="37vLTw" id="5DNjL23qlwq" role="37wK5m">
-                      <ref role="3cqZAo" node="5DNjL23qlws" resolve="e" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="5DNjL23qlws" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="5DNjL23qlwt" role="1tU5fm">
-                <ref role="3uigEE" to="zide:~RemoteException" resolve="RemoteException" />
+        <node concept="3clFbF" id="5hp$JvkrMtz" role="3cqZAp">
+          <node concept="1rXfSq" id="5hp$JvkrMty" role="3clFbG">
+            <ref role="37wK5l" node="5wv4$CfiKxZ" resolve="doStep" />
+            <node concept="2ShNRf" id="5hp$JvkrMy8" role="37wK5m">
+              <node concept="1pGfFk" id="5hp$JvkrML0" role="2ShVmc">
+                <ref role="37wK5l" to="deok:~TerminationStep.&lt;init&gt;()" resolve="TerminationStep" />
               </node>
             </node>
           </node>

@@ -25,8 +25,8 @@
       <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
       </concept>
-      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
-        <reference id="7428636491479279402" name="scene" index="2JdVqH" />
+      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.MapReference" flags="ng" index="2JdVq9">
+        <reference id="7428636491479279402" name="map" index="2JdVqH" />
       </concept>
       <concept id="7286718421228329340" name="org.eddieprogramming.core.EddieBasic.structure.MessageCommand" flags="ng" index="16wSqK">
         <child id="7286718421228329341" name="message" index="16wSqL" />
@@ -54,8 +54,8 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
-        <child id="7428636491479287661" name="sceneRef" index="2JdPrE" />
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
+        <child id="7428636491479287661" name="mapRef" index="2JdPrE" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -135,6 +135,7 @@
     <property role="TrG5h" value="TestPutMark" />
     <node concept="3jGSmg" id="2PnTnxEU4GY" role="3jGSko">
       <node concept="3cjXi7" id="2PnTnxEU4GZ" role="3jGSnO" />
+      <node concept="3cjXi6" id="1Sdd6oUD04X" role="3jGSnO" />
       <node concept="3cjXi6" id="2PnTnxEU4H4" role="3jGSnO" />
     </node>
   </node>

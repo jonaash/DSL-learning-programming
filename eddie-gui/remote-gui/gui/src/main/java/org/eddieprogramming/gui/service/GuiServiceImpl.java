@@ -62,11 +62,7 @@ public class GuiServiceImpl extends UnicastRemoteObject implements GuiService {
     public void run() throws RemoteException {
         worldService.run();
     }
-
-    @Override
-    public void finish() throws RemoteException {
-        worldService.stop();
-    }
+    
 
     public void setWorldService(WorldService worldService) {
         this.worldService = worldService;

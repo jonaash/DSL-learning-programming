@@ -8,6 +8,8 @@ import org.easymock.EasyMockRunner;
 import org.eddieprogramming.gui.AbstractTest;
 import org.eddieprogramming.gui.MultithreadCallAssertion;
 import org.eddieprogramming.gui.api.exception.GuiOperationException;
+import org.eddieprogramming.gui.api.message.CommandStep;
+import org.eddieprogramming.gui.api.message.TerminationStep;
 import org.eddieprogramming.gui.api.message.Speed;
 import org.eddieprogramming.gui.api.message.Step;
 import org.eddieprogramming.gui.api.message.command.ChangeThing;
@@ -22,6 +24,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 
 import static org.easymock.EasyMock.*;
@@ -101,7 +105,7 @@ public class WorldServiceTest extends AbstractTest {
         initWorkflow();
 
         guiControllerMock.updateWorld();
-        MultithreadCallAssertion assertion = MultithreadCallAssertion.expectLastCall();
+        MultithreadCallAssertion assertion = MultithreadCallAssertion.createCallCountingMock();
 
         replay(worldValidatorMock, guiControllerMock, waitingUtilMock);
 
@@ -115,7 +119,7 @@ public class WorldServiceTest extends AbstractTest {
         initWorkflow();
 
         guiControllerMock.updateWorld();
-        MultithreadCallAssertion assertion = MultithreadCallAssertion.expectLastCall();
+        MultithreadCallAssertion assertion = MultithreadCallAssertion.createCallCountingMock();
 
         replay(worldValidatorMock, guiControllerMock, waitingUtilMock);
 
@@ -132,7 +136,7 @@ public class WorldServiceTest extends AbstractTest {
 
         // mock behaviour
         guiControllerMock.updateWorld();
-        MultithreadCallAssertion assertion = MultithreadCallAssertion.expectLastCall();
+        MultithreadCallAssertion assertion = MultithreadCallAssertion.createCallCountingMock();
 
         replay(worldValidatorMock, guiControllerMock, waitingUtilMock);
 
@@ -160,7 +164,7 @@ public class WorldServiceTest extends AbstractTest {
 
         // mock behaviour
         guiControllerMock.updateWorld();
-        MultithreadCallAssertion assertion = MultithreadCallAssertion.expectLastCall();
+        MultithreadCallAssertion assertion = MultithreadCallAssertion.createCallCountingMock();
 
         replay(worldValidatorMock, guiControllerMock, waitingUtilMock);
 
@@ -170,16 +174,49 @@ public class WorldServiceTest extends AbstractTest {
         // call tested method
         testSubject.resume();
 
+        // must wait for two steps execution
         sleep(2);
 
         // check results
         assertion.assertCalls(2);
     }
 
+    // test that program execution stops when TerminationStep is sent
+    @Test(timeout = 5000)
+    public void testDoStepLastStep() {
+        // prepare data
+        List<Step> steps = new ArrayList<>();
+        steps.add(new TerminationStep());
+        steps.add(prepareStep(1));
+
+        initWorkflow();
+
+        // mock behaviour
+        guiControllerMock.stop();
+        guiControllerMock.updateWorld();
+        MultithreadCallAssertion assertion = MultithreadCallAssertion.createCallCountingMock();
+
+        replay(worldValidatorMock, guiControllerMock, waitingUtilMock);
+
+        // enqueue steps
+        executeStepsInSeparateThread(steps);
+
+        // call tested method
+        testSubject.resume();
+
+        // must wait up to 2 steps executions
+        sleep(2);
+
+        // check result
+        assertEquals(GuiState.STOPPED,stateHolder.getState());
+        assertion.assertCalls(0); // update World was not call - must be explicitely mocked and check, otherwise
+        // AssertionError is thrown in another thread and it is not reported
+    }
+
 
     // test step in Discronnected state
     @Test(expected = GuiOperationException.class)
-    public void testDoStep(){
+    public void testDoStepInDisconnected(){
         // replay mus be called befor tested method, otherwise calling in tested method would be considered as recording
         mocks.replayAll();
 
@@ -187,9 +224,9 @@ public class WorldServiceTest extends AbstractTest {
         testSubject.doStep(prepareStep(1));
     }
 
-    // test step in Discronnected state
+    // test step in Stopped state
     @Test(expected = GuiOperationException.class)
-    public void testDoStep2(){
+    public void testDoStepInStopped(){
         // replay mus be called befor tested method, otherwise calling in tested method would be considered as recording
         mocks.replayAll();
 
@@ -198,6 +235,7 @@ public class WorldServiceTest extends AbstractTest {
         // call tested method
         testSubject.doStep(prepareStep(1));
     }
+
 
     @Test
     public void testStop(){
@@ -238,13 +276,13 @@ public class WorldServiceTest extends AbstractTest {
         }
     }
 
-    private void executeStepsInSeparateThread(final int stepCount) {
+    private void executeStepsInSeparateThread(final List<Step> steps) {
         Thread clientThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    for (int i = 1; i <= stepCount; i++) {
-                        testSubject.doStep(prepareStep(i));
+                    for (Step step: steps) {
+                        testSubject.doStep(step);
                     }
                 } catch (AssertionError e) {
                     Assert.fail(e.getMessage());
@@ -253,6 +291,15 @@ public class WorldServiceTest extends AbstractTest {
         });
 
         clientThread.start();
+    }
+
+    private void executeStepsInSeparateThread(final int stepCount) {
+        List<Step> steps = new ArrayList<>();
+        for (int i = 1; i <= stepCount; i++) {
+            steps.add(prepareStep(i));
+        }
+
+        executeStepsInSeparateThread(steps);
     }
 
     private void initWorkflow() {
@@ -266,8 +313,8 @@ public class WorldServiceTest extends AbstractTest {
         testSubject.run();
     }
 
-    private Step prepareStep(int id) {
-        Step step = new Step(Speed.MEDIUM);
+    private CommandStep prepareStep(int id) {
+        CommandStep step = new CommandStep(Speed.MEDIUM);
         step.add(new ChangeThing(ROBOT_NAME, String.valueOf(id)));
 
         return step;
