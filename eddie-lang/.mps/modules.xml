@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/Eddie/Eddie.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/EddieAll/EddieAll.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/SceneDefinition/SceneDefinition.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieBaseLanguageObjects/EddieBaseLanguageObjects.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/EddieBasic/EddieBasic.mpl" folder="" />

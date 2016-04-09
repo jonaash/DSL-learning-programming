@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.eddieprogramming.EddieAll" uuid="19cd8ab1-8c83-4376-b8e4-18e501332cc9">
+  <exported-language name="862fe5da-6916-4d19-b869-dbe8a02b6bb1(org.eddieprogramming.dsl.RobotKarel)" />
+  <exported-language name="a9e656c0-d096-4475-bb36-823817b9bb6d(org.eddieprogramming.dsl.EddieVariableTerminals)" />
+  <extendedDevKits>
+    <extendedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</extendedDevKit>
+    <extendedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
