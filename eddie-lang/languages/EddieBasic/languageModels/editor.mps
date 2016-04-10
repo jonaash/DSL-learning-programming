@@ -628,7 +628,7 @@
                                                     <node concept="pncrf" id="50Oz1ODis3e" role="1PxMeX" />
                                                   </node>
                                                   <node concept="2qgKlT" id="50Oz1ODis3f" role="2OqNvi">
-                                                    <ref role="37wK5l" to="ljn0:50Oz1ODhEjF" resolve="resetTutorial" />
+                                                    <ref role="37wK5l" to="ljn0:50Oz1ODhEjF" resolve="resetScenario" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -1272,6 +1272,17 @@
       <property role="TrG5h" value="PaddingHorizontal" />
       <node concept="VPM3Z" id="2FICFVq1WKb" role="3F10Kt">
         <property role="VOm3f" value="false" />
+      </node>
+    </node>
+    <node concept="14StLt" id="6Uea8kSYrVX" role="V601i">
+      <property role="TrG5h" value="ConstructorCallClass" />
+      <node concept="3Xmtl4" id="6Uea8kSYrYJ" role="3F10Kt">
+        <node concept="1wgc9g" id="6Uea8kSYrYQ" role="3XvnJa">
+          <ref role="1wgcnl" node="3TqhmjIruci" resolve="ClassType" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="6Uea8kSYrYX" role="3F10Kt">
+        <property role="Vbekb" value="ITALIC" />
       </node>
     </node>
   </node>
@@ -2404,7 +2415,7 @@
   </node>
   <node concept="24kQdi" id="6snOov886wb">
     <property role="3GE5qa" value="scene" />
-    <ref role="1XX52x" to="dyrx:6snOov886se" resolve="SceneReference" />
+    <ref role="1XX52x" to="dyrx:6snOov886se" resolve="MapReference" />
     <node concept="1iCGBv" id="6snOov888ka" role="2wV5jI">
       <ref role="1NtTu8" to="dyrx:6snOov886sE" />
       <node concept="1sVBvm" id="6snOov888kc" role="1sWHZn">
@@ -2417,7 +2428,7 @@
   </node>
   <node concept="24kQdi" id="6snOov8UomM">
     <property role="3GE5qa" value="scene" />
-    <ref role="1XX52x" to="dyrx:6snOov8xmHy" resolve="TutorialReference" />
+    <ref role="1XX52x" to="dyrx:6snOov8xmHy" resolve="ScenarioReference" />
     <node concept="1iCGBv" id="6snOov8Uonf" role="2wV5jI">
       <ref role="1NtTu8" to="dyrx:6snOov8xmHz" />
       <node concept="1sVBvm" id="6snOov8Uonh" role="1sWHZn">

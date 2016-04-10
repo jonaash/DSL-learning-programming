@@ -299,7 +299,7 @@
         <ref role="1k5W1q" to="y2uj:3TqhmjIrJ22" resolve="ClassExpression" />
       </node>
       <node concept="1HlG4h" id="3tXh9WpqJII" role="3EZMnx">
-        <ref role="1k5W1q" to="y2uj:2FICFVpZtnO" resolve="IdentifierReference" />
+        <ref role="1k5W1q" to="y2uj:6Uea8kSYrVX" resolve="ConstructorCallClass" />
         <node concept="1HfYo3" id="3tXh9WpqJIK" role="1HlULh">
           <node concept="3TQlhw" id="3tXh9WpqJIM" role="1Hhtcw">
             <node concept="3clFbS" id="3tXh9WpqJIO" role="2VODD2">
