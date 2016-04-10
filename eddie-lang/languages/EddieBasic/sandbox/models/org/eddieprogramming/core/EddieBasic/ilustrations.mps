@@ -108,7 +108,6 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
-      <concept id="1537238787141588373" name="org.eddieprogramming.core.EddieVariables.structure.DefaultInitializer" flags="ng" index="1nOSGt" />
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions">
       <concept id="2041423954150618879" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
@@ -480,8 +479,10 @@
         <node concept="AFBxM" id="xD7etxQZap" role="36Mw2n">
           <property role="36jPZJ" value="true" />
           <property role="TrG5h" value="count" />
-          <node concept="1nOSGt" id="xD7etxQZaq" role="36MIYJ" />
           <node concept="36MCER" id="xD7etxQZwe" role="36MCEW" />
+          <node concept="36Kqmr" id="6Uea8kSZG9I" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
         </node>
       </node>
       <node concept="36Mw20" id="xD7etxQZwW" role="3jGSnO">
@@ -710,8 +711,10 @@
           <node concept="AFBxM" id="yVxzEPziTN" role="36Mw2n">
             <property role="36jPZJ" value="false" />
             <property role="TrG5h" value="f" />
-            <node concept="1nOSGt" id="yVxzEPziTO" role="36MIYJ" />
             <node concept="36MCER" id="yVxzEPziTH" role="36MCEW" />
+            <node concept="36Kqmr" id="6Uea8kSZ_uf" role="36MIYJ">
+              <property role="36Kqnr" value="0" />
+            </node>
           </node>
         </node>
         <node concept="17J3f2" id="yVxzEPziUd" role="3jGSnO" />

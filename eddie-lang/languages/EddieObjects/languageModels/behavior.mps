@@ -2831,5 +2831,54 @@
       <node concept="3clFbS" id="2FICFVq60$M" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6Uea8kSWznK">
+    <property role="3GE5qa" value="type" />
+    <ref role="13h7C2" to="t2e5:4LNIB3Hh_4$" resolve="ClassType" />
+    <node concept="13hLZK" id="6Uea8kSWznL" role="13h7CW">
+      <node concept="3clFbS" id="6Uea8kSWznM" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6Uea8kSWznN" role="13h7CS">
+      <property role="TrG5h" value="createInitializationNode" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" to="ljn0:6Uea8kSUDgX" resolve="createInitializationNode" />
+      <node concept="3Tm1VV" id="6Uea8kSWznO" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSWznT" role="3clF47">
+        <node concept="34ab3g" id="6Uea8kSWLCj" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="6Uea8kSWLCl" role="34bqiv">
+            <property role="Xl_RC" value="Creating constructor" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6Uea8kSYKI_" role="3cqZAp">
+          <node concept="3SKdUq" id="6Uea8kSYKIB" role="3SKWNk">
+            <property role="3SKdUp" value="FIXME: This does not work, it returns null. Initializaion node should be created without contextNode" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6Uea8kSW_1Z" role="3cqZAp">
+          <node concept="2OqwBi" id="6Uea8kSW__N" role="3clFbG">
+            <node concept="2OqwBi" id="6Uea8kSW_h8" role="2Oq$k0">
+              <node concept="2OqwBi" id="6Uea8kSW_4p" role="2Oq$k0">
+                <node concept="13iPFW" id="6Uea8kSW_1Y" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6Uea8kSW_91" role="2OqNvi">
+                  <ref role="3Tt5mk" to="t2e5:4LNIB3HhUMc" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6Uea8kSW_p_" role="2OqNvi">
+                <ref role="3Tt5mk" to="t2e5:7KcPMNJvgrF" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6Uea8kSW_Lq" role="2OqNvi">
+              <ref role="37wK5l" to="ljn0:6pJoTiqkWq9" resolve="createCallNode" />
+              <node concept="13iPFW" id="6Uea8kSWAHa" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6Uea8kSWznU" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      </node>
+    </node>
+  </node>
 </model>
 

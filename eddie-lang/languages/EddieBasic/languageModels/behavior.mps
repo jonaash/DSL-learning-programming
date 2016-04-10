@@ -211,6 +211,9 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -249,7 +252,10 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -313,6 +319,14 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -622,6 +636,86 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6Uea8kSUDgX" role="13h7CS">
+      <property role="TrG5h" value="createInitializationNode" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6Uea8kSUDgY" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSUDgZ" role="3clF47">
+        <node concept="3cpWs6" id="6Uea8kSV5sW" role="3cqZAp">
+          <node concept="BsUDl" id="6Uea8kSV5te" role="3cqZAk">
+            <ref role="37wK5l" node="2WqFKNE1H27" resolve="getDefaultInitTypeValue" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6Uea8kSUEUX" role="3clF45">
+        <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+      </node>
+      <node concept="P$JXv" id="6Uea8kSZ1lN" role="lGtFl">
+        <node concept="TZ5HA" id="6Uea8kSZ1lO" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1lP" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates default initialization value that is used when a variable is declared." />
+          </node>
+        </node>
+        <node concept="x79VA" id="6Uea8kSZ1lQ" role="x79VK">
+          <property role="x79VB" value="expression that initialize variable of this type" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6Uea8kSVvAt" role="13h7CS">
+      <property role="TrG5h" value="isDefaultInitializer" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6Uea8kSVvAu" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSVvAv" role="3clF47">
+        <node concept="3clFbF" id="6Uea8kSVvCL" role="3cqZAp">
+          <node concept="3clFbT" id="6Uea8kSVvCA" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6Uea8kSVvC7" role="3clF45" />
+      <node concept="37vLTG" id="6Uea8kSVvCb" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6Uea8kSVvCa" role="1tU5fm">
+          <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="6Uea8kSZ1md" role="lGtFl">
+        <node concept="TZ5HA" id="6Uea8kSZ1me" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1mf" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks whether given expression is a value which is used to initialize " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6Uea8kSZ1mY" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1mZ" role="1dT_Ay">
+            <property role="1dT_AB" value="variables of this type." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6Uea8kSZ1m_" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1mA" role="1dT_Ay">
+            <property role="1dT_AB" value="When an initializwer contains this initial value, it is safe to replace " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6Uea8kSZ1n8" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1n9" role="1dT_Ay">
+            <property role="1dT_AB" value="it when a type of variable is changed. Otherwise initializer can contain " />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6Uea8kSZ1nH" role="TZ5H$">
+          <node concept="1dT_AC" id="6Uea8kSZ1nI" role="1dT_Ay">
+            <property role="1dT_AB" value="some specific user code which could be lost when it is replaced." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6Uea8kSZ1mg" role="TUOzN">
+          <property role="TUZQ4" value="expression to compare" />
+          <node concept="zr_55" id="6Uea8kSZ1mi" role="zr_5Q">
+            <ref role="zr_51" node="6Uea8kSVvCb" resolve="expression" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6Uea8kSZ1mj" role="x79VK">
+          <property role="x79VB" value="true if given expression is used as default initializer" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1BMnhOnqmiD" role="13h7CS">
       <property role="TrG5h" value="isExactly" />
       <property role="13i0it" value="true" />
@@ -792,6 +886,54 @@
         <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="6Uea8kSWclG" role="13h7CS">
+      <property role="TrG5h" value="isDefaultInitializer" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6Uea8kSVvAt" resolve="isDefaultInitializer" />
+      <node concept="3Tm1VV" id="6Uea8kSWclH" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSWclO" role="3clF47">
+        <node concept="Jncv_" id="6Uea8kSWcoR" role="3cqZAp">
+          <ref role="JncvD" to="dyrx:2WqFKNDQKEn" resolve="IntegerLiteral" />
+          <node concept="37vLTw" id="6Uea8kSWcoS" role="JncvB">
+            <ref role="3cqZAo" node="6Uea8kSWclP" resolve="expression" />
+          </node>
+          <node concept="JncvC" id="6Uea8kSWcoT" role="JncvA">
+            <property role="TrG5h" value="literal" />
+            <node concept="2jxLKc" id="6Uea8kSWcoU" role="1tU5fm" />
+          </node>
+          <node concept="3clFbS" id="6Uea8kSWcoV" role="Jncv$">
+            <node concept="3cpWs6" id="6Uea8kSWcoW" role="3cqZAp">
+              <node concept="17R0WA" id="6Uea8kSWcoX" role="3cqZAk">
+                <node concept="3cmrfG" id="6Uea8kSWcsy" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="6Uea8kSWcoZ" role="3uHU7B">
+                  <node concept="Jnkvi" id="6Uea8kSWcv9" role="2Oq$k0">
+                    <ref role="1M0zk5" node="6Uea8kSWcoT" resolve="literal" />
+                  </node>
+                  <node concept="3TrcHB" id="6Uea8kSWcBm" role="2OqNvi">
+                    <ref role="3TsBF5" to="dyrx:2WqFKNDQKFn" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6Uea8kSWcp2" role="3cqZAp">
+          <node concept="3clFbT" id="6Uea8kSWcp3" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6Uea8kSWclP" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6Uea8kSWclQ" role="1tU5fm">
+          <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6Uea8kSWclR" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="2WqFKNE1Hht">
     <property role="3GE5qa" value="type.concrete" />
@@ -865,6 +1007,54 @@
       <node concept="3Tqbb2" id="1BMnhOnqXNz" role="3clF45">
         <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
+    </node>
+    <node concept="13i0hz" id="6Uea8kSWbwC" role="13h7CS">
+      <property role="TrG5h" value="isDefaultInitializer" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6Uea8kSVvAt" resolve="isDefaultInitializer" />
+      <node concept="3Tm1VV" id="6Uea8kSWbwD" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSWbwK" role="3clF47">
+        <node concept="Jncv_" id="6Uea8kSWbHE" role="3cqZAp">
+          <ref role="JncvD" to="dyrx:3hBhvFT4iX8" resolve="BooleanLiteral" />
+          <node concept="37vLTw" id="6Uea8kSWbHZ" role="JncvB">
+            <ref role="3cqZAo" node="6Uea8kSWbwL" resolve="expression" />
+          </node>
+          <node concept="JncvC" id="6Uea8kSWbHG" role="JncvA">
+            <property role="TrG5h" value="literal" />
+            <node concept="2jxLKc" id="6Uea8kSWbHH" role="1tU5fm" />
+          </node>
+          <node concept="3clFbS" id="6Uea8kSWbHI" role="Jncv$">
+            <node concept="3cpWs6" id="6Uea8kSWbKy" role="3cqZAp">
+              <node concept="17R0WA" id="6Uea8kSWcex" role="3cqZAk">
+                <node concept="3clFbT" id="6Uea8kSWcfP" role="3uHU7w">
+                  <property role="3clFbU" value="false" />
+                </node>
+                <node concept="2OqwBi" id="6Uea8kSWbNF" role="3uHU7B">
+                  <node concept="Jnkvi" id="6Uea8kSWbKK" role="2Oq$k0">
+                    <ref role="1M0zk5" node="6Uea8kSWbHG" resolve="literal" />
+                  </node>
+                  <node concept="3TrcHB" id="6Uea8kSWbT$" role="2OqNvi">
+                    <ref role="3TsBF5" to="dyrx:3hBhvFT4iX9" resolve="value" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6Uea8kSWcim" role="3cqZAp">
+          <node concept="3clFbT" id="6Uea8kSWckm" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6Uea8kSWbwL" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6Uea8kSWbwM" role="1tU5fm">
+          <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6Uea8kSWbwN" role="3clF45" />
     </node>
     <node concept="13hLZK" id="2WqFKNE1Hhu" role="13h7CW">
       <node concept="3clFbS" id="2WqFKNE1Hhv" role="2VODD2" />
@@ -945,6 +1135,54 @@
       <node concept="3Tqbb2" id="1BMnhOnqXaq" role="3clF45">
         <ref role="ehGHo" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
       </node>
+    </node>
+    <node concept="13i0hz" id="6Uea8kSWcG_" role="13h7CS">
+      <property role="TrG5h" value="isDefaultInitializer" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="6Uea8kSVvAt" resolve="isDefaultInitializer" />
+      <node concept="3Tm1VV" id="6Uea8kSWcGA" role="1B3o_S" />
+      <node concept="3clFbS" id="6Uea8kSWcGB" role="3clF47">
+        <node concept="Jncv_" id="6Uea8kSWcGC" role="3cqZAp">
+          <ref role="JncvD" to="dyrx:6kvBWKz_W$y" resolve="StringLiteral" />
+          <node concept="37vLTw" id="6Uea8kSWcGD" role="JncvB">
+            <ref role="3cqZAo" node="6Uea8kSWcGP" resolve="expression" />
+          </node>
+          <node concept="JncvC" id="6Uea8kSWcGE" role="JncvA">
+            <property role="TrG5h" value="literal" />
+            <node concept="2jxLKc" id="6Uea8kSWcGF" role="1tU5fm" />
+          </node>
+          <node concept="3clFbS" id="6Uea8kSWcGG" role="Jncv$">
+            <node concept="3cpWs6" id="6Uea8kSWcGH" role="3cqZAp">
+              <node concept="17R0WA" id="6Uea8kSWcGI" role="3cqZAk">
+                <node concept="2OqwBi" id="6Uea8kSWcGK" role="3uHU7B">
+                  <node concept="Jnkvi" id="6Uea8kSWcLF" role="2Oq$k0">
+                    <ref role="1M0zk5" node="6Uea8kSWcGE" resolve="literal" />
+                  </node>
+                  <node concept="3TrcHB" id="6Uea8kSWcSh" role="2OqNvi">
+                    <ref role="3TsBF5" to="dyrx:6kvBWKzA8dk" resolve="value" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="6Uea8kSWcVk" role="3uHU7w">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6Uea8kSWcGN" role="3cqZAp">
+          <node concept="3clFbT" id="6Uea8kSWcGO" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6Uea8kSWcGP" role="3clF46">
+        <property role="TrG5h" value="expression" />
+        <node concept="3Tqbb2" id="6Uea8kSWcGQ" role="1tU5fm">
+          <ref role="ehGHo" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6Uea8kSWcGR" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="6H9YPQxLd9l">
@@ -3102,8 +3340,8 @@
       <node concept="3clFbS" id="1llnCx2yHD$" role="3clF47">
         <node concept="3cpWs6" id="1llnCx2yHF5" role="3cqZAp">
           <node concept="2YIFZM" id="1llnCx2yHFy" role="3cqZAk">
-            <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
             <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <ref role="37wK5l" to="wyt6:~String.valueOf(boolean):java.lang.String" resolve="valueOf" />
             <node concept="2OqwBi" id="1llnCx2yHPB" role="37wK5m">
               <node concept="13iPFW" id="1llnCx2yHFV" role="2Oq$k0" />
               <node concept="3TrcHB" id="1llnCx2yIfn" role="2OqNvi">

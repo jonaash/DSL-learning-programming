@@ -75,7 +75,6 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
-      <concept id="1537238787141588373" name="org.eddieprogramming.core.EddieVariables.structure.DefaultInitializer" flags="ng" index="1nOSGt" />
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
       <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
@@ -185,7 +184,9 @@
         <node concept="AFBxM" id="6pJoTiq6iQt" role="36Mw2n">
           <property role="TrG5h" value="t" />
           <node concept="36Kql8" id="6pJoTiq6iQo" role="36MCEW" />
-          <node concept="1nOSGt" id="1llnCx2_sBU" role="36MIYJ" />
+          <node concept="16y5rI" id="6Uea8kSZGax" role="36MIYJ">
+            <property role="16xLMo" value="" />
+          </node>
         </node>
       </node>
       <node concept="3dudH9" id="7KcPMNJhtvI" role="3jGSnO">
@@ -506,16 +507,20 @@
         <node concept="AFBxM" id="xD7etxXOGJ" role="36Mw2n">
           <property role="36jPZJ" value="true" />
           <property role="TrG5h" value="count" />
-          <node concept="1nOSGt" id="xD7etxXOGK" role="36MIYJ" />
           <node concept="36MCER" id="xD7etxXOGD" role="36MCEW" />
+          <node concept="36Kqmr" id="6Uea8kSZGbw" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
         </node>
       </node>
       <node concept="36Mw20" id="yVxzEPz80U" role="3jGSnO">
         <node concept="AFBxM" id="yVxzEPz80Y" role="36Mw2n">
           <property role="36jPZJ" value="true" />
           <property role="TrG5h" value="logicalAvailable" />
-          <node concept="1nOSGt" id="yVxzEPz80Z" role="36MIYJ" />
           <node concept="36MBwV" id="yVxzEPz80S" role="36MCEW" />
+          <node concept="3dtAEM" id="6Uea8kSZGc6" role="36MIYJ">
+            <property role="3dtAEN" value="false" />
+          </node>
         </node>
       </node>
       <node concept="17J3f2" id="yVxzEPz7Y6" role="3jGSnO" />
@@ -567,8 +572,10 @@
         <node concept="AFBxM" id="3flGG5TInsC" role="36Mw2n">
           <property role="36jPZJ" value="true" />
           <property role="TrG5h" value="count" />
-          <node concept="1nOSGt" id="3flGG5TInsD" role="36MIYJ" />
           <node concept="36MCER" id="3flGG5TInsy" role="36MCEW" />
+          <node concept="36Kqmr" id="6Uea8kSZGcY" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
         </node>
       </node>
       <node concept="3dudH9" id="3flGG5TIHQI" role="3jGSnO">
@@ -587,6 +594,22 @@
           <ref role="AE91K" node="3flGG5TInsC" resolve="count" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1$vsWe" id="6Uea8kSVu$c">
+    <property role="TrG5h" value="Initializers" />
+    <node concept="3jGSmg" id="6Uea8kSVu$d" role="3jGSko">
+      <node concept="36Mw20" id="6Uea8kSVZEm" role="3jGSnO">
+        <node concept="AFBxM" id="6Uea8kSVZEp" role="36Mw2n">
+          <property role="36jPZJ" value="false" />
+          <property role="TrG5h" value="count" />
+          <node concept="36MBwV" id="6Uea8kSWzlE" role="36MCEW" />
+          <node concept="3dtAEM" id="6Uea8kSWzlG" role="36MIYJ">
+            <property role="3dtAEN" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="17J3f2" id="6Uea8kSW5YD" role="3jGSnO" />
     </node>
   </node>
 </model>

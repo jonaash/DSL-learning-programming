@@ -83,7 +83,6 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
-      <concept id="767145758118872830" name="jetbrains.mps.lang.actions.structure.NF_Link_SetNewChildOperation" flags="nn" index="2DeJnY" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -93,9 +92,6 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
-        <reference id="1139880128956" name="concept" index="1A9B2P" />
-      </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -266,8 +262,18 @@
                 <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
               </node>
             </node>
-            <node concept="2DeJnY" id="1llnCx2_qfB" role="2OqNvi">
-              <ref role="1A9B2P" to="3y9h:1llnCx2xHml" resolve="DefaultInitializer" />
+            <node concept="2oxUTD" id="6Uea8kSYCqd" role="2OqNvi">
+              <node concept="2OqwBi" id="6Uea8kSYCIi" role="2oxUTC">
+                <node concept="2OqwBi" id="6Uea8kSYCva" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="6Uea8kSYCrV" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6Uea8kSYCA_" role="2OqNvi">
+                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO2mK" />
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6Uea8kSYCMV" role="2OqNvi">
+                  <ref role="37wK5l" to="ljn0:6Uea8kSUDgX" resolve="createInitializationNode" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
