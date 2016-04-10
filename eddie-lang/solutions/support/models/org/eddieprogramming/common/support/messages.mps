@@ -232,6 +232,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4t$LHPbhLUS" role="3cqZAp">
+          <node concept="37vLTI" id="4t$LHPbhLUT" role="3clFbG">
+            <node concept="3EllGN" id="4t$LHPbhLUU" role="37vLTJ">
+              <node concept="37vLTw" id="4t$LHPbhLV1" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="4t$LHPbhLUV" role="3ElVtu">
+                <property role="Xl_RC" value="error.field.reference.standalone" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4t$LHPbhLUW" role="37vLTx">
+              <property role="Xl_RC" value="Field reference cannot be used alone." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4t$LHPbhLNz" role="3cqZAp" />
         <node concept="3clFbF" id="5xGSFEuhY7b" role="3cqZAp">
           <node concept="37vLTI" id="5xGSFEuhY7c" role="3clFbG">
             <node concept="3EllGN" id="5xGSFEuhY7d" role="37vLTJ">

@@ -63,12 +63,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
@@ -393,67 +387,6 @@
       </node>
     </node>
   </node>
-  <node concept="3FK_9_" id="1GufzGWgkIk">
-    <property role="3GE5qa" value="wrapper" />
-    <property role="TrG5h" value="variableReferenceAssignment" />
-    <node concept="3FOIzC" id="1GufzGWgkLw" role="3FOPby">
-      <property role="3mWAmy" value="allows to insert variable assignment by writing variable name" />
-      <ref role="3FOWKa" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
-      <node concept="tYCnQ" id="1GufzGWgl4e" role="tZc4B">
-        <ref role="uz4UX" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-        <node concept="yEb5T" id="1GufzGWgl4k" role="uz6Si">
-          <ref role="yEYPM" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
-          <node concept="yEnE0" id="1GufzGWgl4l" role="yEVE$">
-            <node concept="3clFbS" id="1GufzGWgl4m" role="2VODD2">
-              <node concept="3cpWs8" id="1GufzGWglh0" role="3cqZAp">
-                <node concept="3cpWsn" id="1GufzGWglh3" role="3cpWs9">
-                  <property role="TrG5h" value="wrapper" />
-                  <node concept="3Tqbb2" id="1GufzGWglgZ" role="1tU5fm">
-                    <ref role="ehGHo" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-                  </node>
-                  <node concept="2OqwBi" id="1GufzGWgnRm" role="33vP2m">
-                    <node concept="2OqwBi" id="1GufzGWgniR" role="2Oq$k0">
-                      <node concept="yECNy" id="1GufzGWgnfw" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="1GufzGWgnEc" role="2OqNvi" />
-                    </node>
-                    <node concept="15TzpJ" id="1GufzGWgo0H" role="2OqNvi">
-                      <ref role="I8UWU" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="1GufzGWgrsW" role="3cqZAp">
-                <node concept="2OqwBi" id="1GufzGWgs2k" role="3clFbG">
-                  <node concept="2OqwBi" id="1GufzGWgrxp" role="2Oq$k0">
-                    <node concept="37vLTw" id="1GufzGWgrsU" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1GufzGWglh3" resolve="wrapper" />
-                    </node>
-                    <node concept="3TrEf2" id="1GufzGWgAPh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
-                    </node>
-                  </node>
-                  <node concept="2oxUTD" id="1GufzGWgsk8" role="2OqNvi">
-                    <node concept="yECNy" id="1GufzGWgASU" role="2oxUTC" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="1GufzGWgrof" role="3cqZAp" />
-              <node concept="3SKdUt" id="4$34Uk8mzFC" role="3cqZAp">
-                <node concept="3SKdUq" id="4$34Uk8mzIB" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: predelat na side transformaci, aby tam nezustavalo =" />
-                </node>
-              </node>
-              <node concept="3cpWs6" id="1GufzGWgo8x" role="3cqZAp">
-                <node concept="37vLTw" id="1GufzGWgoc$" role="3cqZAk">
-                  <ref role="3cqZAo" node="1GufzGWglh3" resolve="wrapper" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="3UOs0u" id="aB0Z16Q3Me">
     <property role="3GE5qa" value="command.control" />
     <property role="TrG5h" value="forCycle_changeDirection" />
@@ -496,67 +429,6 @@
     <property role="TrG5h" value="VariableReferenceAssignment" />
     <node concept="3UNGvq" id="7KcPMNJfIiH" role="3UOs0v">
       <ref role="3UNGvu" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
-    </node>
-  </node>
-  <node concept="3FK_9_" id="7KcPMNJfIkR">
-    <property role="3GE5qa" value="wrapper" />
-    <property role="TrG5h" value="variableReferenceAssignment" />
-    <node concept="3FOIzC" id="7KcPMNJfIkS" role="3FOPby">
-      <property role="3mWAmy" value="allows to insert variable assignment by writing variable name" />
-      <ref role="3FOWKa" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
-      <node concept="tYCnQ" id="7KcPMNJfIkT" role="tZc4B">
-        <ref role="uz4UX" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-        <node concept="yEb5T" id="7KcPMNJfIkU" role="uz6Si">
-          <ref role="yEYPM" to="3y9h:2J_q78djvw1" resolve="VariableReference" />
-          <node concept="yEnE0" id="7KcPMNJfIkV" role="yEVE$">
-            <node concept="3clFbS" id="7KcPMNJfIkW" role="2VODD2">
-              <node concept="3cpWs8" id="7KcPMNJfIkX" role="3cqZAp">
-                <node concept="3cpWsn" id="7KcPMNJfIkY" role="3cpWs9">
-                  <property role="TrG5h" value="wrapper" />
-                  <node concept="3Tqbb2" id="7KcPMNJfIkZ" role="1tU5fm">
-                    <ref role="ehGHo" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-                  </node>
-                  <node concept="2OqwBi" id="7KcPMNJfIl0" role="33vP2m">
-                    <node concept="2OqwBi" id="7KcPMNJfIl1" role="2Oq$k0">
-                      <node concept="yECNy" id="7KcPMNJfIl2" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="7KcPMNJfIl3" role="2OqNvi" />
-                    </node>
-                    <node concept="15TzpJ" id="7KcPMNJfIl4" role="2OqNvi">
-                      <ref role="I8UWU" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="7KcPMNJfIl5" role="3cqZAp">
-                <node concept="2OqwBi" id="7KcPMNJfIl6" role="3clFbG">
-                  <node concept="2OqwBi" id="7KcPMNJfIl7" role="2Oq$k0">
-                    <node concept="37vLTw" id="7KcPMNJfIl8" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7KcPMNJfIkY" resolve="wrapper" />
-                    </node>
-                    <node concept="3TrEf2" id="7KcPMNJfIl9" role="2OqNvi">
-                      <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
-                    </node>
-                  </node>
-                  <node concept="2oxUTD" id="7KcPMNJfIla" role="2OqNvi">
-                    <node concept="yECNy" id="7KcPMNJfIlb" role="2oxUTC" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="7KcPMNJfIlc" role="3cqZAp" />
-              <node concept="3SKdUt" id="7KcPMNJfIld" role="3cqZAp">
-                <node concept="3SKdUq" id="7KcPMNJfIle" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: predelat na side transformaci, aby tam nezustavalo =" />
-                </node>
-              </node>
-              <node concept="3cpWs6" id="7KcPMNJfIlf" role="3cqZAp">
-                <node concept="37vLTw" id="7KcPMNJfIlg" role="3cqZAk">
-                  <ref role="3cqZAo" node="7KcPMNJfIkY" resolve="wrapper" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3UOs0u" id="2WqFKNEcJjW">

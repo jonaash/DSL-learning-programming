@@ -10,15 +10,23 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="f13g" ref="r:16c58170-32b0-4254-a761-3c50ce40c838(org.eddieprogramming.core.EddieVariables.typesystem)" implicit="true" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -61,7 +69,7 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -88,12 +96,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
-      <concept id="3267332360033971606" name="org.eddieprogramming.core.EddieConditions.structure.IfStatement" flags="ng" index="17CkzI">
-        <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
-        <child id="3267332360033971743" name="condition" index="17CkHB" />
-      </concept>
-    </language>
   </registry>
   <node concept="1lH9Xt" id="4OhcFiDj1VX">
     <property role="TrG5h" value="StandaloneVariableReference" />
@@ -113,15 +115,16 @@
           <node concept="3dudH9" id="4OhcFiDj2OQ" role="3jGSnO">
             <node concept="AE91N" id="4OhcFiDj2OO" role="3dudC3">
               <ref role="AE91K" node="4OhcFiDj2OA" resolve="test" />
-              <node concept="7CXmI" id="4OhcFiDjFFW" role="lGtFl">
-                <node concept="1TM$A" id="4OhcFiDjFFX" role="7EUXB" />
+              <node concept="7CXmI" id="4t$LHPbhPJY" role="lGtFl">
+                <node concept="1TM$A" id="4t$LHPbhPJZ" role="7EUXB">
+                  <node concept="2PYRI3" id="4t$LHPbhQ4E" role="3lydEf">
+                    <ref role="39XzEq" to="f13g:2J_q78dih9Z" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
-      </node>
-      <node concept="7CXmI" id="4OhcFiDjFOC" role="lGtFl">
-        <node concept="7OXhh" id="4OhcFiDjFOE" role="7EUXB" />
       </node>
     </node>
   </node>
@@ -135,8 +138,8 @@
       <node concept="1$vsWe" id="6bbx8uJ1_1p" role="1qenE9">
         <property role="TrG5h" value="Test" />
         <node concept="3jGSmg" id="6bbx8uJ1_1q" role="3jGSko">
-          <node concept="17J3Kp" id="5wv4$CeWoDv" role="3jGSnO">
-            <property role="17J3Nn" value="FIXME: THIS TEST DOES NOT WORK" />
+          <node concept="17J3Kp" id="4t$LHPbhRM0" role="3jGSnO">
+            <property role="17J3Nn" value="FIXME: Check that there are no other errors does not work" />
           </node>
           <node concept="17J3Kp" id="6bbx8uJ1_2O" role="3jGSnO">
             <property role="17J3Nn" value="muttable var" />
@@ -159,14 +162,6 @@
               </node>
             </node>
           </node>
-          <node concept="17CkzI" id="5wv4$CeOtVx" role="3jGSnO">
-            <node concept="AE91N" id="5wv4$CeOtWA" role="17CkHB">
-              <ref role="AE91K" node="6bbx8uJ1_1$" resolve="logVar" />
-            </node>
-            <node concept="3jGSmg" id="5wv4$CeOtV_" role="17CkHq">
-              <node concept="17J3f2" id="5wv4$CeOtVA" role="3jGSnO" />
-            </node>
-          </node>
           <node concept="17J3f2" id="5wv4$CeOtSv" role="3jGSnO" />
           <node concept="17J3Kp" id="6bbx8uJ1FTR" role="3jGSnO">
             <property role="17J3Nn" value="immutable val must be initialized" />
@@ -176,12 +171,13 @@
               <property role="36jPZJ" value="false" />
               <property role="TrG5h" value="textVal" />
               <node concept="36Kql8" id="5wv4$CeOtPQ" role="36MCEW" />
-              <node concept="16y5rI" id="5wv4$CeO$3i" role="36MIYJ">
-                <property role="16xLMo" value="" />
+              <node concept="7CXmI" id="4t$LHPbhRbL" role="lGtFl">
+                <node concept="1TM$A" id="4t$LHPbhRbM" role="7EUXB">
+                  <node concept="2PYRI3" id="4t$LHPbhRgy" role="3lydEf">
+                    <ref role="39XzEq" to="f13g:5xGSFEui0gd" />
+                  </node>
+                </node>
               </node>
-            </node>
-            <node concept="7CXmI" id="6bbx8uJ1JPy" role="lGtFl">
-              <node concept="2DdRWr" id="5wv4$CeOu0K" role="7EUXB" />
             </node>
           </node>
           <node concept="2kp8ke" id="5wv4$CeOtOS" role="3jGSnO">
@@ -212,18 +208,18 @@
               <property role="36jPZJ" value="false" />
               <property role="TrG5h" value="num2" />
               <node concept="36MCER" id="6bbx8uJ1FUh" role="36MCEW" />
-              <node concept="36Kqmr" id="5wv4$CeNVMi" role="36MIYJ">
-                <property role="36Kqnr" value="0" />
+              <node concept="16y5rI" id="4t$LHPbhQXv" role="36MIYJ">
+                <property role="16xLMo" value="" />
               </node>
-            </node>
-            <node concept="7CXmI" id="6bbx8uJ1JPc" role="lGtFl">
-              <node concept="2DdRWr" id="6bbx8uJ1JPn" role="7EUXB" />
+              <node concept="7CXmI" id="4t$LHPbhRlU" role="lGtFl">
+                <node concept="2DdRWr" id="4t$LHPbhRmm" role="7EUXB" />
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="7CXmI" id="6bbx8uJ1_2z" role="lGtFl">
-        <node concept="7OXhh" id="6bbx8uJ1_2_" role="7EUXB" />
+      <node concept="7CXmI" id="4t$LHPbhRNE" role="lGtFl">
+        <node concept="7OXhh" id="4t$LHPbhRNG" role="7EUXB" />
       </node>
     </node>
   </node>

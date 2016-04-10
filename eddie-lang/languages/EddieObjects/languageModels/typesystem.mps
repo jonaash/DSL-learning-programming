@@ -24,15 +24,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
-        <child id="1076505808688" name="condition" index="2$JKZa" />
-      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -41,9 +35,6 @@
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
-      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
-        <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -77,7 +68,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -95,6 +85,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -130,6 +121,9 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -183,6 +177,14 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -540,72 +542,62 @@
     <property role="3GE5qa" value="class.member.reference" />
     <property role="TrG5h" value="check_StandaloneFieldReference" />
     <node concept="3clFbS" id="2J_q78difF1" role="18ibNy">
-      <node concept="3cpWs8" id="6N2I4lcdl_x" role="3cqZAp">
-        <node concept="3cpWsn" id="6N2I4lcdl_$" role="3cpWs9">
-          <property role="TrG5h" value="parent" />
-          <node concept="3Tqbb2" id="6N2I4lcdl_v" role="1tU5fm" />
-          <node concept="2OqwBi" id="6N2I4lcdmsM" role="33vP2m">
-            <node concept="1YBJjd" id="6N2I4lcdlAY" role="2Oq$k0">
-              <ref role="1YBMHb" node="2J_q78dig3T" resolve="fieldReference" />
-            </node>
-            <node concept="1mfA1w" id="6N2I4lcdmUV" role="2OqNvi" />
-          </node>
+      <node concept="3SKdUt" id="4t$LHPbhaCs" role="3cqZAp">
+        <node concept="3SKdUq" id="4t$LHPbhaCu" role="3SKWNk">
+          <property role="3SKdUp" value="Looking for where the last operation in a sequence of DotOperators is FieldReference " />
         </node>
       </node>
-      <node concept="2$JKZl" id="6N2I4lcdlzl" role="3cqZAp">
-        <node concept="3clFbS" id="6N2I4lcdlzn" role="2LFqv$">
-          <node concept="3clFbF" id="6N2I4lcdn9q" role="3cqZAp">
-            <node concept="37vLTI" id="6N2I4lcdnbb" role="3clFbG">
-              <node concept="2OqwBi" id="6N2I4lcdncz" role="37vLTx">
-                <node concept="37vLTw" id="6N2I4lcdnbG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6N2I4lcdl_$" resolve="parent" />
+      <node concept="3SKdUt" id="4t$LHPbhaDy" role="3cqZAp">
+        <node concept="3SKdUq" id="4t$LHPbhaDz" role="3SKWNk">
+          <property role="3SKdUp" value="and it is not part of any other operatoration (e.g. AssignmentExpression)" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="4t$LHPbha$h" role="3cqZAp" />
+      <node concept="Jncv_" id="4t$LHPbh98c" role="3cqZAp">
+        <ref role="JncvD" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
+        <node concept="2OqwBi" id="4t$LHPbh9cU" role="JncvB">
+          <node concept="1YBJjd" id="4t$LHPbh99I" role="2Oq$k0">
+            <ref role="1YBMHb" node="2J_q78dig3T" resolve="fieldReference" />
+          </node>
+          <node concept="1mfA1w" id="4t$LHPbh9tI" role="2OqNvi" />
+        </node>
+        <node concept="JncvC" id="4t$LHPbh98g" role="JncvA">
+          <property role="TrG5h" value="dotOperator" />
+          <node concept="2jxLKc" id="4t$LHPbh98h" role="1tU5fm" />
+        </node>
+        <node concept="3clFbS" id="4t$LHPbh98j" role="Jncv$">
+          <node concept="3clFbJ" id="2J_q78digc8" role="3cqZAp">
+            <node concept="3clFbS" id="2J_q78digc9" role="3clFbx">
+              <node concept="3SKdUt" id="6N2I4lcdoEg" role="3cqZAp">
+                <node concept="3SKdUq" id="6N2I4lcdoF1" role="3SKWNk">
+                  <property role="3SKdUp" value="ther is no opertion to do with field reference" />
                 </node>
-                <node concept="1mfA1w" id="6N2I4lcdnnF" role="2OqNvi" />
               </node>
-              <node concept="37vLTw" id="6N2I4lcdn9p" role="37vLTJ">
-                <ref role="3cqZAo" node="6N2I4lcdl_$" resolve="parent" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="6N2I4lcdmWo" role="2$JKZa">
-          <node concept="37vLTw" id="6N2I4lcdmVq" role="2Oq$k0">
-            <ref role="3cqZAo" node="6N2I4lcdl_$" resolve="parent" />
-          </node>
-          <node concept="1mIQ4w" id="6N2I4lcdn7u" role="2OqNvi">
-            <node concept="chp4Y" id="6N2I4lcdn7Z" role="cj9EA">
-              <ref role="cht4Q" to="t2e5:7KcPMNJfsDD" resolve="DotOperator" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbJ" id="2J_q78digc8" role="3cqZAp">
-        <node concept="3clFbS" id="2J_q78digc9" role="3clFbx">
-          <node concept="3SKdUt" id="6N2I4lcdoEg" role="3cqZAp">
-            <node concept="3SKdUq" id="6N2I4lcdoF1" role="3SKWNk">
-              <property role="3SKdUp" value="ther is no opertion to do with field reference" />
-            </node>
-          </node>
-          <node concept="2MkqsV" id="2J_q78dih9Z" role="3cqZAp">
-            <node concept="1YBJjd" id="2J_q78dikZF" role="2OEOjV">
-              <ref role="1YBMHb" node="2J_q78dig3T" resolve="fieldReference" />
-            </node>
-            <node concept="2YIFZM" id="2J_q78dikYU" role="2MkJ7o">
-              <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
-              <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-              <node concept="Xl_RD" id="2J_q78dihKe" role="37wK5m">
-                <property role="Xl_RC" value="error.variable.standalone" />
+              <node concept="2MkqsV" id="2J_q78dih9Z" role="3cqZAp">
+                <node concept="1YBJjd" id="2J_q78dikZF" role="2OEOjV">
+                  <ref role="1YBMHb" node="2J_q78dig3T" resolve="fieldReference" />
+                </node>
+                <node concept="2YIFZM" id="2J_q78dikYU" role="2MkJ7o">
+                  <ref role="37wK5l" to="539g:7_uVVPcCT7O" resolve="get" />
+                  <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                  <node concept="Xl_RD" id="4t$LHPbhLUV" role="37wK5m">
+                    <property role="Xl_RC" value="error.field.reference.standalone" />
+                  </node>
+                </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="2J_q78digz9" role="3clFbw">
-          <node concept="37vLTw" id="6N2I4lcdo9l" role="2Oq$k0">
-            <ref role="3cqZAo" node="6N2I4lcdl_$" resolve="parent" />
-          </node>
-          <node concept="1mIQ4w" id="6N2I4lcdomL" role="2OqNvi">
-            <node concept="chp4Y" id="6N2I4lcdoni" role="cj9EA">
-              <ref role="cht4Q" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
+            <node concept="2OqwBi" id="2J_q78digz9" role="3clFbw">
+              <node concept="2OqwBi" id="4t$LHPbha8D" role="2Oq$k0">
+                <node concept="Jnkvi" id="4t$LHPbh9Zx" role="2Oq$k0">
+                  <ref role="1M0zk5" node="4t$LHPbh98g" resolve="dotOperator" />
+                </node>
+                <node concept="1mfA1w" id="4t$LHPbhaqE" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="6N2I4lcdomL" role="2OqNvi">
+                <node concept="chp4Y" id="6N2I4lcdoni" role="cj9EA">
+                  <ref role="cht4Q" to="dyrx:3hBhvFT7TUN" resolve="StandaloneExpressionCommand" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

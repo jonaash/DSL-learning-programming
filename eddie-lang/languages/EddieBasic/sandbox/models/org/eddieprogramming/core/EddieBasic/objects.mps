@@ -52,6 +52,10 @@
         <reference id="3163049152356415490" name="declaration" index="AE91K" />
       </concept>
       <concept id="3163049152356225024" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclaration" flags="ng" index="AFBxM" />
+      <concept id="1954067712460073357" name="org.eddieprogramming.core.EddieVariables.structure.AssignmentExpression" flags="ng" index="B81uQ">
+        <child id="1954067712460074322" name="variable" index="B81dD" />
+        <child id="1954067712460074325" name="value" index="B81dI" />
+      </concept>
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
@@ -181,7 +185,7 @@
       <node concept="3jGSmg" id="2FICFVpQanX" role="hRHZh">
         <node concept="36Mw20" id="2FICFVpQm9w" role="3jGSnO">
           <node concept="AFBxM" id="2FICFVpQm9z" role="36Mw2n">
-            <property role="36jPZJ" value="false" />
+            <property role="36jPZJ" value="true" />
             <property role="TrG5h" value="d" />
             <node concept="2xduHk" id="2FICFVpQm9u" role="36MCEW">
               <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
@@ -206,6 +210,42 @@
                   <property role="36Kqnr" value="6" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="4t$LHPbh8kG" role="3jGSnO" />
+        <node concept="3dudH9" id="4t$LHPbh8ma" role="3jGSnO">
+          <node concept="B81uQ" id="4t$LHPbhbxq" role="3dudC3">
+            <node concept="2jzrhh" id="4t$LHPbhbyX" role="B81dI">
+              <ref role="hRIc0" node="6bbx8uIYtjV" />
+              <node concept="FiVY1" id="4t$LHPbhbyY" role="3WjpkI">
+                <ref role="3WiQSc" node="1mpZf2HsfcY" resolve="count" />
+                <node concept="36Kqmr" id="4t$LHPbhbze" role="2jzNHB">
+                  <property role="36Kqnr" value="5" />
+                </node>
+              </node>
+            </node>
+            <node concept="2jchP5" id="4t$LHPbh8mN" role="B81dD">
+              <node concept="2j_qma" id="4t$LHPbh8AC" role="2j_PeB">
+                <ref role="2jD6AI" node="4t$LHPbh8_U" resolve="test2" />
+              </node>
+              <node concept="2jchP5" id="4t$LHPbh8m7" role="2j_qme">
+                <node concept="2j_qma" id="4t$LHPbh8m$" role="2j_PeB">
+                  <ref role="2jD6AI" node="4t$LHPbh8l_" resolve="test" />
+                </node>
+                <node concept="2jco51" id="4t$LHPbh8m5" role="2j_qme" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="4t$LHPbi0R6" role="3jGSnO" />
+        <node concept="2kp8ke" id="4t$LHPbi0SJ" role="3jGSnO">
+          <node concept="B81uQ" id="4t$LHPbi0To" role="16wSqL">
+            <node concept="2jzrhh" id="4t$LHPbi0UC" role="B81dI">
+              <ref role="hRIc0" node="6bbx8uIIwJD" />
+            </node>
+            <node concept="AE91N" id="4t$LHPbi0Ti" role="B81dD">
+              <ref role="AE91K" node="2FICFVpQm9z" resolve="d" />
             </node>
           </node>
         </node>
@@ -237,6 +277,22 @@
       <node concept="3pOcrZ" id="3uaXG0jw_pC" role="2j5jbD" />
       <node concept="2xduHk" id="3uaXG0jw_pA" role="36MCEW">
         <ref role="2jchVA" node="6bbx8uIIwJC" resolve="Basic" />
+      </node>
+    </node>
+    <node concept="3pFPbB" id="4t$LHPbh8l_" role="2j5j4v">
+      <property role="36jPZJ" value="true" />
+      <property role="TrG5h" value="test" />
+      <node concept="3pOcrW" id="4t$LHPbh8lY" role="2j5jbD" />
+      <node concept="2xduHk" id="4t$LHPbh8lT" role="36MCEW">
+        <ref role="2jchVA" node="6bbx8uIYtjU" resolve="Test" />
+      </node>
+    </node>
+    <node concept="3pFPbB" id="4t$LHPbh8_U" role="2j5j4v">
+      <property role="36jPZJ" value="true" />
+      <property role="TrG5h" value="test2" />
+      <node concept="3pOcrZ" id="4t$LHPbh8_V" role="2j5jbD" />
+      <node concept="2xduHk" id="4t$LHPbh8Au" role="36MCEW">
+        <ref role="2jchVA" node="6bbx8uIYtjU" resolve="Test" />
       </node>
     </node>
   </node>
