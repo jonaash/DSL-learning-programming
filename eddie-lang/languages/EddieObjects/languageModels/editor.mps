@@ -124,6 +124,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -131,6 +132,12 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -557,6 +564,7 @@
       <node concept="3F0ifn" id="6bbx8uIEANs" role="3EZMnx">
         <property role="3F0ifm" value="constructor:" />
         <ref role="1k5W1q" to="y2uj:2FICFVpXXxn" resolve="ClassOrganizer" />
+        <ref role="1ERwB7" node="7lOC3fuB8g5" resolve="SingletonConstructor_PreventDelete" />
       </node>
       <node concept="PMmxH" id="2FICFVq28Yx" role="3EZMnx">
         <ref role="PMmxG" node="2FICFVq28OC" resolve="SingletonConstructor_Component" />
@@ -857,6 +865,7 @@
     <property role="TrG5h" value="SingletonConstructor_Component" />
     <ref role="1XX52x" to="t2e5:6bbx8uIEAM6" resolve="SingletonConstructor" />
     <node concept="3EZMnI" id="2FICFVq28Pa" role="2wV5jI">
+      <ref role="1ERwB7" node="7lOC3fuB8g5" resolve="SingletonConstructor_PreventDelete" />
       <node concept="3F0ifn" id="2FICFVq28TQ" role="3EZMnx">
         <property role="3F0ifm" value="constructor" />
         <ref role="1k5W1q" to="y2uj:2PnTnxEVbOt" resolve="Control" />
@@ -867,6 +876,7 @@
       </node>
       <node concept="3F1sOY" id="2FICFVq28Pc" role="3EZMnx">
         <ref role="1NtTu8" to="dyrx:5eWJqD2oA9V" />
+        <ref role="1ERwB7" node="7lOC3fuB8g5" resolve="SingletonConstructor_PreventDelete" />
         <node concept="pVoyu" id="2FICFVq28Pd" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -910,6 +920,36 @@
     </node>
     <node concept="2aJ2om" id="2FICFVq37op" role="CpUAK">
       <ref role="2$4xQ3" to="y2uj:2FICFVpNpP4" resolve="ColorBackground" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7lOC3fuB8g5">
+    <property role="3GE5qa" value="constructor" />
+    <property role="TrG5h" value="SingletonConstructor_PreventDelete" />
+    <ref role="1h_SK9" to="t2e5:6bbx8uIEAM6" resolve="SingletonConstructor" />
+    <node concept="1hA7zw" id="7lOC3fuB8g6" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <property role="1hHO97" value="Prevents constructor from deletion" />
+      <node concept="1hAIg9" id="7lOC3fuB8g7" role="1hA7z_">
+        <node concept="3clFbS" id="7lOC3fuB8g8" role="2VODD2">
+          <node concept="3SKdUt" id="7lOC3fuBc09" role="3cqZAp">
+            <node concept="3SKdUq" id="7lOC3fuBc0a" role="3SKWNk">
+              <property role="3SKdUp" value="Do nothing -&gt; Delete nothing" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="7lOC3fuBFpQ" role="3cqZAp" />
+          <node concept="3SKdUt" id="7lOC3fuBFq0" role="3cqZAp">
+            <node concept="3SKdUq" id="7lOC3fuBFq2" role="3SKWNk">
+              <property role="3SKdUp" value=" From some reason it was posible to delete Singleton constructor. " />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7lOC3fuBFqf" role="3cqZAp">
+            <node concept="3SKdUq" id="7lOC3fuBFqg" role="3SKWNk">
+              <property role="3SKdUp" value="After delete, it was replace with class constructor with parameters which results into error." />
+            </node>
+          </node>
+          <node concept="3clFbH" id="7lOC3fuBFq8" role="3cqZAp" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
