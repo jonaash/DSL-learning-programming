@@ -823,29 +823,6 @@
       <ref role="1YaFvo" to="dyrx:2WqFKNE4FE7" resolve="BinaryOperator" />
     </node>
   </node>
-  <node concept="18kY7G" id="30eT$TCvUn1">
-    <property role="TrG5h" value="check_ScriptMainDataFlow" />
-    <node concept="3clFbS" id="30eT$TCvUn2" role="18ibNy">
-      <node concept="3clFbF" id="18k56XDwtG1" role="3cqZAp">
-        <node concept="2OqwBi" id="18k56XDwtGS" role="3clFbG">
-          <node concept="2YIFZM" id="18k56XDwtGn" role="2Oq$k0">
-            <ref role="37wK5l" node="18k56XDvs8c" resolve="getInstance" />
-            <ref role="1Pybhc" node="18k56XDvoZx" resolve="VariablesDataFlow" />
-          </node>
-          <node concept="liA8E" id="18k56XDwtMn" role="2OqNvi">
-            <ref role="37wK5l" node="18k56XDw5Q3" resolve="checkDataFlow" />
-            <node concept="1YBJjd" id="18k56XDwtMZ" role="37wK5m">
-              <ref role="1YBMHb" node="7jmg6noCZoh" resolve="scriptMain" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="7jmg6noCZoh" role="1YuTPh">
-      <property role="TrG5h" value="scriptMain" />
-      <ref role="1YaFvo" to="dyrx:3a5rfDmYafO" resolve="Program" />
-    </node>
-  </node>
   <node concept="312cEu" id="18k56XDvoZx">
     <property role="TrG5h" value="VariablesDataFlow" />
     <node concept="Wx3nA" id="18k56XDw63z" role="jymVt">
@@ -1616,7 +1593,9 @@
                 <node concept="3cpWs8" id="18k56XDwrjA" role="3cqZAp">
                   <node concept="3cpWsn" id="18k56XDwrjB" role="3cpWs9">
                     <property role="TrG5h" value="variableRef" />
-                    <node concept="3Tqbb2" id="18k56XDwrjC" role="1tU5fm" />
+                    <node concept="3Tqbb2" id="18k56XDwrjC" role="1tU5fm">
+                      <ref role="ehGHo" to="dyrx:5xGSFEu9Sbr" resolve="IPotentialVariableReference" />
+                    </node>
                     <node concept="2OqwBi" id="18k56XDwrjP" role="33vP2m">
                       <node concept="1PxgMI" id="2RjUFdDn$XS" role="2Oq$k0">
                         <ref role="1PxNhF" to="3y9h:1GufzGWfyAd" resolve="AssignmentExpression" />
@@ -1630,19 +1609,34 @@
                     </node>
                   </node>
                 </node>
-                <node concept="a7r0C" id="18k56XDwrk8" role="3cqZAp">
-                  <node concept="37vLTw" id="18k56XDwrk9" role="2OEOjV">
-                    <ref role="3cqZAo" node="18k56XDwrjB" resolve="variableRef" />
+                <node concept="3clFbJ" id="7lOC3fuCVmZ" role="3cqZAp">
+                  <node concept="3clFbS" id="7lOC3fuCVn1" role="3clFbx">
+                    <node concept="a7r0C" id="18k56XDwrk8" role="3cqZAp">
+                      <node concept="37vLTw" id="18k56XDwrk9" role="2OEOjV">
+                        <ref role="3cqZAo" node="18k56XDwrjB" resolve="variableRef" />
+                      </node>
+                      <node concept="2YIFZM" id="18k56XDwrka" role="a7wSD">
+                        <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
+                        <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
+                        <node concept="Xl_RD" id="18k56XDwrkb" role="37wK5m">
+                          <property role="Xl_RC" value="warning.variable.unused.assignment" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
-                  <node concept="2YIFZM" id="18k56XDwrka" role="a7wSD">
-                    <ref role="37wK5l" to="539g:3hBhvFSinNY" resolve="get" />
-                    <ref role="1Pybhc" to="539g:7_uVVPcCT6v" resolve="Labels" />
-                    <node concept="Xl_RD" id="18k56XDwrkb" role="37wK5m">
-                      <property role="Xl_RC" value="warning.variable.unused.assignment" />
+                  <node concept="2OqwBi" id="7lOC3fuCVwr" role="3clFbw">
+                    <node concept="2OqwBi" id="7lOC3fuCVqg" role="2Oq$k0">
+                      <node concept="37vLTw" id="7lOC3fuCVoy" role="2Oq$k0">
+                        <ref role="3cqZAo" node="18k56XDwrjB" resolve="variableRef" />
+                      </node>
+                      <node concept="2yIwOk" id="7lOC3fuCVsQ" role="2OqNvi" />
+                    </node>
+                    <node concept="2qgKlT" id="7lOC3fuCVz$" role="2OqNvi">
+                      <ref role="37wK5l" to="ljn0:7lOC3fuC5hQ" resolve="checkAssignmentDataflow" />
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="2RjUFdDsmzY" role="3cqZAp" />
+                <node concept="3clFbH" id="7lOC3fuCVBB" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="2RjUFdDnzG9" role="3clFbw">
                 <node concept="37vLTw" id="2RjUFdDnzEL" role="2Oq$k0">
@@ -1841,16 +1835,16 @@
             </node>
             <node concept="3clFbF" id="2RjUFdDmxWo" role="3cqZAp">
               <node concept="37vLTI" id="2RjUFdDmxXk" role="3clFbG">
+                <node concept="37vLTw" id="2RjUFdDmxWm" role="37vLTJ">
+                  <ref role="3cqZAo" node="18k56XDxDfA" resolve="node" />
+                </node>
                 <node concept="2OqwBi" id="2RjUFdDmy1u" role="37vLTx">
-                  <node concept="Jnkvi" id="2RjUFdDmxYx" role="2Oq$k0">
-                    <ref role="1M0zk5" node="2RjUFdDmwyF" resolve="script" />
-                  </node>
                   <node concept="3TrEf2" id="2RjUFdDmyfW" role="2OqNvi">
                     <ref role="3Tt5mk" to="dyrx:1IJMvjRjCZ" />
                   </node>
-                </node>
-                <node concept="37vLTw" id="2RjUFdDmxWm" role="37vLTJ">
-                  <ref role="3cqZAo" node="18k56XDxDfA" resolve="node" />
+                  <node concept="Jnkvi" id="2RjUFdDmxYx" role="2Oq$k0">
+                    <ref role="1M0zk5" node="2RjUFdDmwyF" resolve="script" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2555,6 +2549,29 @@
     <node concept="1YaCAy" id="5xGSFEuhVyy" role="1YuTPh">
       <property role="TrG5h" value="declaration" />
       <ref role="1YaFvo" to="dyrx:2WqFKNCAeGz" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="30eT$TCvUn1">
+    <property role="TrG5h" value="check_ScriptMainDataFlow" />
+    <node concept="3clFbS" id="30eT$TCvUn2" role="18ibNy">
+      <node concept="3clFbF" id="18k56XDwtG1" role="3cqZAp">
+        <node concept="2OqwBi" id="18k56XDwtGS" role="3clFbG">
+          <node concept="2YIFZM" id="18k56XDwtGn" role="2Oq$k0">
+            <ref role="37wK5l" node="18k56XDvs8c" resolve="getInstance" />
+            <ref role="1Pybhc" node="18k56XDvoZx" resolve="VariablesDataFlow" />
+          </node>
+          <node concept="liA8E" id="18k56XDwtMn" role="2OqNvi">
+            <ref role="37wK5l" node="18k56XDw5Q3" resolve="checkDataFlow" />
+            <node concept="1YBJjd" id="18k56XDwtMZ" role="37wK5m">
+              <ref role="1YBMHb" node="7jmg6noCZoh" resolve="scriptMain" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7jmg6noCZoh" role="1YuTPh">
+      <property role="TrG5h" value="scriptMain" />
+      <ref role="1YaFvo" to="dyrx:3a5rfDmYafO" resolve="Program" />
     </node>
   </node>
 </model>
