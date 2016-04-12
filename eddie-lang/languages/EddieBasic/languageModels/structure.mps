@@ -163,12 +163,13 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="command" />
     <property role="1pbfSe" value="1988474550" />
+    <property role="MwhBj" value="${module}/icons/control_statement.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="3a5rfDmYafO">
     <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/property.png" />
+    <property role="MwhBj" value="${module}/icons/program.png" />
     <property role="1pbfSe" value="1988226834" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3a5rfDmYagg" role="PzmwI">
@@ -261,6 +262,7 @@
     <property role="34LRSv" value="&lt;empty&gt;" />
     <property role="R4oN_" value="empty line" />
     <property role="1pbfSe" value="1740391374" />
+    <property role="MwhBj" value="${module}/icons/comment.png" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="PrWs8" id="18k56XD$bne" role="PzmwI">
       <ref role="PrY4T" node="18k56XD$bnd" resolve="IDocumentation" />
@@ -272,6 +274,7 @@
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="enters a comment that is just for user" />
     <property role="1pbfSe" value="1740390695" />
+    <property role="MwhBj" value="${module}/icons/comment.png" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyi" id="2PnTnxEUXAJ" role="1TKVEl">
       <property role="TrG5h" value="text" />
@@ -299,6 +302,7 @@
     <property role="34LRSv" value="action" />
     <property role="R4oN_" value="defines custom action" />
     <property role="1pbfSe" value="297966679" />
+    <property role="MwhBj" value="${module}/icons/custom_action.png" />
     <ref role="1TJDcQ" node="14XUkkdEva7" resolve="AbstractMethodDefinition" />
   </node>
   <node concept="1TIwiD" id="2WqFKNDO2n2">
@@ -307,6 +311,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="expression" />
     <property role="1pbfSe" value="418043086" />
+    <property role="MwhBj" value="${module}/icons/expression.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2WqFKNDRNsw" role="PzmwI">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
@@ -317,6 +322,7 @@
     <property role="TrG5h" value="IntegerLiteral" />
     <property role="R4oN_" value="some integral number" />
     <property role="1pbfSe" value="418757027" />
+    <property role="MwhBj" value="${module}/icons/expression_literal.png" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="2WqFKNDQKFn" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -361,6 +367,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="418043067" />
+    <property role="MwhBj" value="${module}/icons/type.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6H9YPQxL47v">
@@ -369,6 +376,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="219036988" />
+    <property role="MwhBj" value="${module}/icons/control_statement.png" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="PrWs8" id="6H9YPQxL47w" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -391,6 +399,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="variable" />
     <property role="1pbfSe" value="397646383" />
+    <property role="MwhBj" value="${module}/icons/expression_variable.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2WqFKNDRTcZ" role="PzmwI">
       <ref role="PrY4T" node="2WqFKNDRDv2" resolve="ITypeAnnotable" />
@@ -420,6 +429,7 @@
     <property role="34LRSv" value="&quot;" />
     <property role="R4oN_" value="some text" />
     <property role="1pbfSe" value="2001245970" />
+    <property role="MwhBj" value="${module}/icons/expression_literal.png" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="6kvBWKzA8dk" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -435,6 +445,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="2000963256" />
+    <property role="MwhBj" value="${module}/icons/predifined_action.png" />
     <ref role="1TJDcQ" node="3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="6kvBWKzB1_X" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -483,7 +494,7 @@
   <node concept="1TIwiD" id="3hBhvFSK1cO">
     <property role="TrG5h" value="Library" />
     <property role="19KtqR" value="true" />
-    <property role="MwhBj" value="${module}/icons/ppLib.png" />
+    <property role="MwhBj" value="${module}/icons/library.png" />
     <property role="1pbfSe" value="757553454" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3hBhvFSK1ee" role="PzmwI">
@@ -518,6 +529,7 @@
     <property role="TrG5h" value="BooleanLiteral" />
     <property role="R4oN_" value="logical value - true or false" />
     <property role="1pbfSe" value="762869058" />
+    <property role="MwhBj" value="${module}/icons/expression_literal.png" />
     <ref role="1TJDcQ" node="2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyi" id="3hBhvFT4iX9" role="1TKVEl">
       <property role="TrG5h" value="value" />

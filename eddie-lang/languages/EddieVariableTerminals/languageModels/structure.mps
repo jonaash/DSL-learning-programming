@@ -19,6 +19,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -73,6 +74,7 @@
     <property role="34LRSv" value="write" />
     <property role="R4oN_" value="write a value to the terminal" />
     <property role="1pbfSe" value="1072362939" />
+    <property role="MwhBj" value="${module}/icons/expression.png" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3KfICq41kZ0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

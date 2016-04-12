@@ -17,6 +17,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
@@ -42,6 +43,7 @@
     <property role="34LRSv" value="function" />
     <property role="R4oN_" value="defines command sequence as a function" />
     <property role="1pbfSe" value="762865831" />
+    <property role="MwhBj" value="${module}/icons/expression_function.png" />
     <ref role="1TJDcQ" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
     <node concept="1TJgyj" id="3eViXf8nNpS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -69,6 +71,7 @@
     <property role="34LRSv" value="return" />
     <property role="R4oN_" value="defines a result of the function and ends function execution" />
     <property role="1pbfSe" value="763676122" />
+    <property role="MwhBj" value="${module}/icons/control_statement.png" />
     <ref role="1TJDcQ" to="dyrx:3a5rfDmXdLg" resolve="AbstractCommand" />
     <node concept="1TJgyj" id="3hBhvFT7nZx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

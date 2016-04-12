@@ -25,6 +25,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -168,6 +169,7 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="variable" />
     <property role="1pbfSe" value="959668339" />
+    <property role="MwhBj" value="${module}/icons/expression_variable.png" />
     <ref role="1TJDcQ" to="dyrx:2WqFKNDO2n2" resolve="Expression" />
     <node concept="1TJgyj" id="2J_q78djvw2" role="1TKVEi">
       <property role="20lmBu" value="reference" />

@@ -133,6 +133,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="573609955" />
+    <property role="MwhBj" value="${module}/icons/modifiers.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="8gmNnrK9R9">
@@ -183,7 +184,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1800052981" />
-    <ref role="1TJDcQ" to="dyrx:2WqFKNDO2mJ" resolve="Type" />
+    <ref role="1TJDcQ" to="dyrx:2FICFVpQpMa" resolve="VariableType" />
     <node concept="1TJgyj" id="7KcPMNJfsBa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="definition" />
@@ -300,7 +301,7 @@
     <property role="3GE5qa" value="class" />
     <property role="34LRSv" value="singleton" />
     <property role="R4oN_" value="definition of object that can have only single instance" />
-    <property role="MwhBj" value="${module}/icons/static.png" />
+    <property role="MwhBj" value="${module}/icons/singleton.png" />
     <property role="1pbfSe" value="292619445" />
     <ref role="1TJDcQ" node="8gmNnrJ_Ve" resolve="AbstractClassDefinition" />
     <node concept="1TJgyj" id="6bbx8uIEHkQ" role="1TKVEi">
