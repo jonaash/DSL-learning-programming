@@ -24,7 +24,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -237,29 +236,14 @@
             </node>
           </node>
           <node concept="3clFbF" id="2WqFKNE3Ara" role="3cqZAp">
-            <node concept="22lmx$" id="1llnCx2_vq$" role="3clFbG">
-              <node concept="2OqwBi" id="1llnCx2_wMp" role="3uHU7w">
-                <node concept="2OqwBi" id="1llnCx2_vBx" role="2Oq$k0">
-                  <node concept="30H73N" id="1llnCx2_vxz" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="1llnCx2_wbg" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="1llnCx2_x2e" role="2OqNvi">
-                  <node concept="chp4Y" id="1llnCx2_x9a" role="cj9EA">
-                    <ref role="cht4Q" to="3y9h:1llnCx2xHml" resolve="DefaultInitializer" />
-                  </node>
+            <node concept="2OqwBi" id="2WqFKNE3Bfh" role="3clFbG">
+              <node concept="2OqwBi" id="2WqFKNE3Awn" role="2Oq$k0">
+                <node concept="30H73N" id="2WqFKNE3Ar9" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6FJbaIqkPSf" role="2OqNvi">
+                  <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="2WqFKNE3Bfh" role="3uHU7B">
-                <node concept="2OqwBi" id="2WqFKNE3Awn" role="2Oq$k0">
-                  <node concept="30H73N" id="2WqFKNE3Ar9" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="6FJbaIqkPSf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
-                  </node>
-                </node>
-                <node concept="3w_OXm" id="2WqFKNE3BYw" role="2OqNvi" />
-              </node>
+              <node concept="3w_OXm" id="2WqFKNE3BYw" role="2OqNvi" />
             </node>
           </node>
         </node>

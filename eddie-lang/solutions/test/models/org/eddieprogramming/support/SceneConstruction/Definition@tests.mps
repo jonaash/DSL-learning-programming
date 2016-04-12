@@ -29,11 +29,14 @@
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
         <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
-      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
-        <reference id="7428636491479279402" name="scene" index="2JdVqH" />
+      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.MapReference" flags="ng" index="2JdVq9">
+        <reference id="7428636491479279402" name="map" index="2JdVqH" />
       </concept>
       <concept id="7286718421228329340" name="org.eddieprogramming.core.EddieBasic.structure.MessageCommand" flags="ng" index="16wSqK">
         <child id="7286718421228329341" name="message" index="16wSqL" />
+      </concept>
+      <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
       </concept>
       <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
@@ -64,16 +67,16 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScene" flags="ng" index="1n_5_B">
+      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMap" flags="ng" index="1n_5_B">
         <property id="6349814108913355890" name="width" index="1n_5SS" />
         <property id="6349814108913355892" name="heigth" index="1n_5SY" />
         <child id="6349814108915674177" name="sceneConstruction" index="1nGrSb" />
         <child id="6349814108917427210" name="startPosition" index="1nPBT0" />
       </concept>
-      <concept id="6349814108916202087" name="org.eddieprogramming.core.EddieBasic.structure.AbstractTutorial" flags="ng" index="1nEqwH">
-        <child id="7428636491486421284" name="sceneRef" index="2JAF2z" />
+      <concept id="6349814108916202087" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScenario" flags="ng" index="1nEqwH">
+        <child id="7428636491486421284" name="mapRef" index="2JAF2z" />
       </concept>
-      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
+      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMapConstruction" flags="ng" index="1nGorK">
         <child id="6349814108915673812" name="body" index="1nGryu" />
       </concept>
       <concept id="6349814108916865125" name="org.eddieprogramming.core.EddieBasic.structure.AbstractPosition" flags="ng" index="1nRWCJ">
@@ -81,7 +84,7 @@
         <property id="6349814108916864868" name="row" index="1nRWkI" />
         <property id="6349814108916865107" name="direction" index="1nRWCp" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -93,7 +96,6 @@
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
-      <concept id="1537238787141588373" name="org.eddieprogramming.core.EddieVariables.structure.DefaultInitializer" flags="ng" index="1nOSGt" />
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions">
       <concept id="2041423954150618879" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
@@ -105,10 +107,10 @@
       </concept>
     </language>
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction">
-      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
-      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
+      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Map" flags="ng" index="1nE9df" />
+      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.MapConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
-      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Tutorial" flags="ng" index="1nSc2J">
+      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scenario" flags="ng" index="1nSc2J">
         <reference id="5779398278698083275" name="initStateProgram" index="1TuiZm" />
       </concept>
     </language>
@@ -187,16 +189,20 @@
         <node concept="AFBxM" id="5Teiyof2ZTK" role="36Mw2n">
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="testText" />
-          <node concept="1nOSGt" id="5Teiyof2ZTL" role="36MIYJ" />
           <node concept="36Kql8" id="5Teiyof2ZTE" role="36MCEW" />
+          <node concept="16y5rI" id="6Uea8kT1qk2" role="36MIYJ">
+            <property role="16xLMo" value="" />
+          </node>
         </node>
       </node>
       <node concept="36Mw20" id="4y6FdzEjBcd" role="3jGSnO">
         <node concept="AFBxM" id="4y6FdzEjBch" role="36Mw2n">
           <property role="36jPZJ" value="false" />
           <property role="TrG5h" value="num" />
-          <node concept="1nOSGt" id="4y6FdzEjBci" role="36MIYJ" />
           <node concept="36MCER" id="4y6FdzEjBcb" role="36MCEW" />
+          <node concept="36Kqmr" id="6Uea8kT1qlo" role="36MIYJ">
+            <property role="36Kqnr" value="0" />
+          </node>
         </node>
       </node>
       <node concept="2kp8ke" id="5Teiyof2ZUw" role="3jGSnO">
