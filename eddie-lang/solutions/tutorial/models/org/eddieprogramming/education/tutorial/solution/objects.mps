@@ -11,6 +11,12 @@
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
+      <concept id="8938755948420525033" name="org.eddieprogramming.core.EddieBasic.structure.AbstractParameterFill" flags="ng" index="2jzNN5">
+        <reference id="7381227804175895960" name="declaration" index="3WiQSc" />
+        <child id="8938755948420525131" name="value" index="2jzNHB" />
+      </concept>
+      <concept id="3717222724954931025" name="org.eddieprogramming.core.EddieBasic.structure.Print" flags="ng" index="2kp8ke" />
+      <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
       <concept id="1242405555015381639" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMethodDefinition" flags="ng" index="s_1J2">
         <child id="6033906139725455995" name="body" index="hRHZh" />
         <child id="8938755948417030261" name="returnType" index="2jg$Xp" />
@@ -18,10 +24,14 @@
       </concept>
       <concept id="1242405555015088333" name="org.eddieprogramming.core.EddieBasic.structure.AbstractCall" flags="ng" index="sA968">
         <reference id="6033906139725455018" name="definition" index="hRIc0" />
+        <child id="7381227804175824570" name="parameters" index="3WjpkI" />
       </concept>
       <concept id="3394217739178654343" name="org.eddieprogramming.core.EddieBasic.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
         <child id="3394217739178660082" name="leftExpression" index="3527ZY" />
+      </concept>
+      <concept id="7286718421228329340" name="org.eddieprogramming.core.EddieBasic.structure.MessageCommand" flags="ng" index="16wSqK">
+        <child id="7286718421228329341" name="message" index="16wSqL" />
       </concept>
       <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
         <property id="7286718421228094292" name="value" index="16xLMo" />
@@ -76,12 +86,14 @@
         <child id="1954067712460074325" name="value" index="B81dI" />
       </concept>
       <concept id="3394217739178660495" name="org.eddieprogramming.core.EddieVariables.structure.PlusOperator" flags="ng" index="3527Q3" />
+      <concept id="3394217739178660512" name="org.eddieprogramming.core.EddieVariables.structure.MinusOperator" flags="ng" index="3527QG" />
       <concept id="3394217739174326156" name="org.eddieprogramming.core.EddieVariables.structure.LocalVariableDeclarationCommand" flags="ng" index="36Mw20">
         <child id="3394217739174326171" name="declaration" index="36Mw2n" />
       </concept>
     </language>
     <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" name="org.eddieprogramming.core.EddieFunctions">
       <concept id="2041423954150618879" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterDeclaration" flags="ng" index="FiAUU" />
+      <concept id="2041423954150631364" name="org.eddieprogramming.core.EddieFunctions.structure.ParameterFill" flags="ng" index="FiVY1" />
       <concept id="3776063756797050848" name="org.eddieprogramming.core.EddieFunctions.structure.ReturnCommand" flags="ng" index="3duzCq">
         <child id="3776063756797050849" name="value" index="3duzCr" />
       </concept>
@@ -145,8 +157,10 @@
         <child id="7859466366388913409" name="condition" index="2LFUC5" />
       </concept>
       <concept id="7859466366387767992" name="org.eddieprogramming.core.EddieConditions.structure.NotOperator" flags="ng" index="2LJymW" />
+      <concept id="7859466366387838624" name="org.eddieprogramming.core.EddieConditions.structure.OrOperator" flags="ng" index="2LJN6$" />
       <concept id="3267332360033971606" name="org.eddieprogramming.core.EddieConditions.structure.IfStatement" flags="ng" index="17CkzI">
         <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
+        <child id="3267332360033971751" name="falseBranch" index="17CkHv" />
         <child id="3267332360033971743" name="condition" index="17CkHB" />
       </concept>
     </language>
@@ -155,6 +169,9 @@
       <concept id="7118929354272559102" name="org.eddieprogramming.dsl.RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
       <concept id="7118929354272559105" name="org.eddieprogramming.dsl.RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
       <concept id="7118929354272559104" name="org.eddieprogramming.dsl.RobotKarel.structure.PutMark" flags="ng" index="3cjXi7" />
+      <concept id="7118929354273869886" name="org.eddieprogramming.dsl.RobotKarel.structure.IsLooking" flags="ng" index="3ckXiT">
+        <property id="7118929354273869887" name="direction" index="3ckXiS" />
+      </concept>
       <concept id="7118929354273869885" name="org.eddieprogramming.dsl.RobotKarel.structure.IsFull" flags="ng" index="3ckXiU" />
       <concept id="7118929354273869888" name="org.eddieprogramming.dsl.RobotKarel.structure.IsMark" flags="ng" index="3ckXj7" />
     </language>
@@ -635,21 +652,291 @@
         </node>
       </node>
     </node>
-    <node concept="3pOcrA" id="xD7etxQBUD" role="2j5j5A">
-      <property role="TrG5h" value="getStatistics" />
-      <node concept="2xduHk" id="3U99uzk1mPE" role="2jg$Xp">
-        <ref role="2jchVA" node="xD7etxQBLa" resolve="RobotStatistics" />
+    <node concept="3pOcrA" id="3U99uzk1uVL" role="2j5j5A">
+      <property role="TrG5h" value="collectMarksInRectangle" />
+      <node concept="FiAUU" id="3U99uzk1uZM" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="width" />
+        <node concept="36MCER" id="3U99uzk1uZP" role="36MCEW" />
       </node>
-      <node concept="3pOcrW" id="xD7etxQBVw" role="2j5jbD" />
-      <node concept="3jGSmg" id="xD7etxQBUH" role="hRHZh">
-        <node concept="3duzCq" id="xD7etxQBVA" role="3jGSnO">
-          <node concept="2jchP5" id="xD7etxQBVO" role="3duzCr">
-            <node concept="2j_qma" id="xD7etxQBWc" role="2j_PeB">
-              <ref role="2jD6AI" node="xD7etxQBNH" resolve="stats" />
+      <node concept="FiAUU" id="3U99uzk1v01" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="height" />
+        <node concept="36MCER" id="3U99uzk1v06" role="36MCEW" />
+      </node>
+      <node concept="3dtAsP" id="3U99uzk1uVN" role="2jg$Xp" />
+      <node concept="3pOcrW" id="3U99uzk1uZD" role="2j5jbD" />
+      <node concept="3jGSmg" id="3U99uzk1uVP" role="hRHZh">
+        <node concept="17J3Kp" id="3U99uzk1vCU" role="3jGSnO">
+          <property role="17J3Nn" value="check robot position" />
+        </node>
+        <node concept="17CkzI" id="3U99uzk1vxU" role="3jGSnO">
+          <node concept="3jGSmg" id="3U99uzk1vxW" role="17CkHq">
+            <node concept="2kpimK" id="3U99uzk1v$X" role="3jGSnO">
+              <node concept="16y5rI" id="3U99uzk1v$Y" role="16wSqL">
+                <property role="16xLMo" value="Illegal state error: Robot must look east or west!" />
+              </node>
             </node>
-            <node concept="2jco51" id="xD7etxQBVE" role="2j_qme" />
+          </node>
+          <node concept="2LJymW" id="3U99uzk1vyR" role="17CkHB">
+            <node concept="2LJN6$" id="3U99uzk1vz8" role="3cXj02">
+              <node concept="3ckXiT" id="3U99uzk1vzv" role="3527ZY">
+                <property role="3ckXiS" value="EAST" />
+              </node>
+              <node concept="3ckXiT" id="3U99uzk1vzW" role="3527S9">
+                <property role="3ckXiS" value="WEST" />
+              </node>
+            </node>
           </node>
         </node>
+        <node concept="17J3f2" id="3U99uzk1vB9" role="3jGSnO" />
+        <node concept="17J3Kp" id="3U99uzk1v94" role="3jGSnO">
+          <property role="17J3Nn" value="for all rows in rectangle except last one" />
+        </node>
+        <node concept="17JERQ" id="3U99uzk1v0G" role="3jGSnO">
+          <node concept="3jGSmg" id="3U99uzk1v0I" role="3azrUc">
+            <node concept="3dudH9" id="3U99uzk1vqg" role="3jGSnO">
+              <node concept="2jchP5" id="3U99uzk1vqd" role="3dudC3">
+                <node concept="2jchP0" id="3U99uzk1vqE" role="2j_PeB">
+                  <ref role="hRIc0" node="3U99uzk1vgx" resolve="pickAllMarksInRow" />
+                  <node concept="FiVY1" id="3U99uzk1vqF" role="3WjpkI">
+                    <ref role="3WiQSc" node="3U99uzk1vlp" resolve="rowLength" />
+                    <node concept="AE91N" id="3U99uzk1vPk" role="2jzNHB">
+                      <ref role="AE91K" node="3U99uzk1uZM" resolve="width" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2jco51" id="3U99uzk1vqb" role="2j_qme" />
+              </node>
+            </node>
+            <node concept="17J3f2" id="3U99uzk1v8P" role="3jGSnO" />
+            <node concept="17J3Kp" id="3U99uzk1vaQ" role="3jGSnO">
+              <property role="17J3Nn" value="go to next row" />
+            </node>
+            <node concept="17CkzI" id="3U99uzk1vrf" role="3jGSnO">
+              <node concept="3jGSmg" id="3U99uzk1vrh" role="17CkHq">
+                <node concept="3dudH9" id="3U99uzk1vrZ" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vrW" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vu0" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk16XR" resolve="turnRight" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vrU" role="2j_qme" />
+                  </node>
+                </node>
+                <node concept="3dudH9" id="3U99uzk1vup" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vum" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vvd" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk174w" resolve="doStep" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vuk" role="2j_qme" />
+                  </node>
+                </node>
+                <node concept="3dudH9" id="3U99uzk1vvG" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vvD" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vwZ" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk16XR" resolve="turnRight" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vvB" role="2j_qme" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3ckXiT" id="3U99uzk1vrJ" role="17CkHB">
+                <property role="3ckXiS" value="EAST" />
+              </node>
+              <node concept="3jGSmg" id="3U99uzk1vDQ" role="17CkHv">
+                <node concept="3dudH9" id="3U99uzk1vEc" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vE9" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vGz" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk16XM" resolve="turnLeft" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vE7" role="2j_qme" />
+                  </node>
+                </node>
+                <node concept="3dudH9" id="3U99uzk1vGV" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vGS" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vHn" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk174w" resolve="doStep" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vGQ" role="2j_qme" />
+                  </node>
+                </node>
+                <node concept="3dudH9" id="3U99uzk1vHQ" role="3jGSnO">
+                  <node concept="2jchP5" id="3U99uzk1vHN" role="3dudC3">
+                    <node concept="2jchP0" id="3U99uzk1vIn" role="2j_PeB">
+                      <ref role="hRIc0" node="3U99uzk16XM" resolve="turnLeft" />
+                    </node>
+                    <node concept="2jco51" id="3U99uzk1vHL" role="2j_qme" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17J3f2" id="3U99uzk1v8S" role="3jGSnO" />
+          </node>
+          <node concept="3527QG" id="3U99uzk1vbm" role="36Ktwi">
+            <node concept="36Kqmr" id="3U99uzk1vbt" role="3527S9">
+              <property role="36Kqnr" value="1" />
+            </node>
+            <node concept="AE91N" id="3U99uzk1v8H" role="3527ZY">
+              <ref role="AE91K" node="3U99uzk1v01" resolve="height" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3Kp" id="3U99uzk1vRr" role="3jGSnO">
+          <property role="17J3Nn" value="pick the last row" />
+        </node>
+        <node concept="3dudH9" id="3U99uzk1vL8" role="3jGSnO">
+          <node concept="2jchP5" id="3U99uzk1vL5" role="3dudC3">
+            <node concept="2jchP0" id="3U99uzk1vMN" role="2j_PeB">
+              <ref role="hRIc0" node="3U99uzk1vgx" resolve="pickAllMarksInRow" />
+              <node concept="FiVY1" id="3U99uzk1vMO" role="3WjpkI">
+                <ref role="3WiQSc" node="3U99uzk1vlp" resolve="rowLength" />
+                <node concept="AE91N" id="3U99uzk1vN0" role="2jzNHB">
+                  <ref role="AE91K" node="3U99uzk1uZM" resolve="width" />
+                </node>
+              </node>
+            </node>
+            <node concept="2jco51" id="3U99uzk1vL3" role="2j_qme" />
+          </node>
+        </node>
+      </node>
+      <node concept="184cOw" id="3U99uzk1uZG" role="lGtFl">
+        <node concept="186aDQ" id="3U99uzk1uZH" role="184fdr">
+          <node concept="186dhI" id="3U99uzk1uZI" role="186d48">
+            <property role="186dgp" value="Picks all marks in rectangular area. " />
+          </node>
+          <node concept="186dhI" id="3U99uzk1v0q" role="186d48">
+            <property role="186dgp" value="At the beginning, robot must stand in the upper left corner of the rectangle and look est or west. " />
+          </node>
+          <node concept="186dhI" id="3U99uzk1v0t" role="186d48">
+            <property role="186dgp" value="Rectangle size is defined by width and height parameters." />
+          </node>
+          <node concept="186dhI" id="3U99uzk1v0x" role="186d48">
+            <property role="186dgp" value="Rectangle are cannpt contrain any wall. " />
+          </node>
+          <node concept="186dhI" id="3U99uzk1v0A" role="186d48">
+            <property role="186dgp" value="Robot will end in one of the bottom corners." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3pOcrA" id="3U99uzk1vgx" role="2j5j5A">
+      <property role="TrG5h" value="pickAllMarksInRow" />
+      <node concept="3dtAsP" id="3U99uzk1vgz" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="3U99uzk1vg$" role="2j5jbD" />
+      <node concept="3jGSmg" id="3U99uzk1vg_" role="hRHZh">
+        <node concept="3dudH9" id="3U99uzk1vnl" role="3jGSnO">
+          <node concept="2jchP5" id="3U99uzk1vni" role="3dudC3">
+            <node concept="2jchP0" id="3U99uzk1vnS" role="2j_PeB">
+              <ref role="hRIc0" node="3U99uzk1v0V" resolve="pickAllMarks" />
+            </node>
+            <node concept="2jco51" id="3U99uzk1vng" role="2j_qme" />
+          </node>
+        </node>
+        <node concept="17JERQ" id="3U99uzk1vff" role="3jGSnO">
+          <node concept="3jGSmg" id="3U99uzk1vfh" role="3azrUc">
+            <node concept="3dudH9" id="3U99uzk1vsj" role="3jGSnO">
+              <node concept="2jchP5" id="3U99uzk1vsg" role="3dudC3">
+                <node concept="2jchP0" id="3U99uzk1vtd" role="2j_PeB">
+                  <ref role="hRIc0" node="3U99uzk174w" resolve="doStep" />
+                </node>
+                <node concept="2jco51" id="3U99uzk1vse" role="2j_qme" />
+              </node>
+            </node>
+            <node concept="3dudH9" id="3U99uzk1vok" role="3jGSnO">
+              <node concept="2jchP5" id="3U99uzk1voh" role="3dudC3">
+                <node concept="2jchP0" id="3U99uzk1vpj" role="2j_PeB">
+                  <ref role="hRIc0" node="3U99uzk1v0V" resolve="pickAllMarks" />
+                </node>
+                <node concept="2jco51" id="3U99uzk1vof" role="2j_qme" />
+              </node>
+            </node>
+          </node>
+          <node concept="3527QG" id="3U99uzk1vpw" role="36Ktwi">
+            <node concept="36Kqmr" id="3U99uzk1vpB" role="3527S9">
+              <property role="36Kqnr" value="1" />
+            </node>
+            <node concept="AE91N" id="3U99uzk1vmN" role="3527ZY">
+              <ref role="AE91K" node="3U99uzk1vlp" resolve="rowLength" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="3U99uzk1vgA" role="3jGSnO" />
+      </node>
+      <node concept="FiAUU" id="3U99uzk1vlp" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="rowLength" />
+        <node concept="36MCER" id="3U99uzk1vlo" role="36MCEW" />
+      </node>
+      <node concept="184cOw" id="3U99uzk1vSZ" role="lGtFl">
+        <node concept="186aDQ" id="3U99uzk1vT0" role="184fdr">
+          <node concept="186dhI" id="3U99uzk1vT1" role="186d48">
+            <property role="186dgp" value="Pickes all markd in cells in front of the robot. " />
+          </node>
+          <node concept="186dhI" id="3U99uzk1vTq" role="186d48">
+            <property role="186dgp" value="Count of cells is given in 'rowLength' parameter." />
+          </node>
+          <node concept="186dhI" id="3U99uzk1vTt" role="186d48">
+            <property role="186dgp" value="There cannot be any wall in the way." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3pOcrA" id="3U99uzk1v0V" role="2j5j5A">
+      <property role="TrG5h" value="pickAllMarks" />
+      <node concept="3dtAsP" id="3U99uzk1v0X" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="3U99uzk1v0Y" role="2j5jbD" />
+      <node concept="3jGSmg" id="3U99uzk1v0Z" role="hRHZh">
+        <node concept="17J3Kp" id="3U99uzk1v89" role="3jGSnO">
+          <property role="17J3Nn" value="pick only existing marks" />
+        </node>
+        <node concept="2LFUJI" id="3U99uzk1v56" role="3jGSnO">
+          <node concept="3jGSmg" id="3U99uzk1v58" role="3azrUc">
+            <node concept="3dudH9" id="3U99uzk1v5v" role="3jGSnO">
+              <node concept="2jchP5" id="3U99uzk1v5s" role="3dudC3">
+                <node concept="2jchP0" id="3U99uzk1v6V" role="2j_PeB">
+                  <ref role="hRIc0" node="3U99uzk1nje" resolve="pickMarks" />
+                  <node concept="FiVY1" id="3U99uzk1v6W" role="3WjpkI">
+                    <ref role="3WiQSc" node="3U99uzk1njC" resolve="count" />
+                    <node concept="36Kqmr" id="3U99uzk1v78" role="2jzNHB">
+                      <property role="36Kqnr" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2jco51" id="3U99uzk1v5q" role="2j_qme" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ckXj7" id="3U99uzk1v5h" role="2LFUC5" />
+        </node>
+      </node>
+      <node concept="184cOw" id="3U99uzk1vSN" role="lGtFl">
+        <node concept="186aDQ" id="3U99uzk1vSO" role="184fdr">
+          <node concept="186dhI" id="3U99uzk1vSP" role="186d48">
+            <property role="186dgp" value="Picks all marks in current position." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3pOcrA" id="3U99uzk1vTx" role="2j5j5A">
+      <property role="TrG5h" value="printWarning" />
+      <node concept="3dtAsP" id="3U99uzk1vTz" role="2jg$Xp" />
+      <node concept="3pOcrZ" id="3U99uzk1vT$" role="2j5jbD" />
+      <node concept="3jGSmg" id="3U99uzk1vT_" role="hRHZh">
+        <node concept="2kp8ke" id="3U99uzk1w06" role="3jGSnO">
+          <node concept="3527Q3" id="3U99uzk1w0N" role="16wSqL">
+            <node concept="AE91N" id="3U99uzk1w0Z" role="3527S9">
+              <ref role="AE91K" node="3U99uzk1vZU" resolve="message" />
+            </node>
+            <node concept="16y5rI" id="3U99uzk1w07" role="3527ZY">
+              <property role="16xLMo" value="WARNING: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="FiAUU" id="3U99uzk1vZU" role="3dtAt9">
+        <property role="36jPZJ" value="false" />
+        <property role="TrG5h" value="message" />
+        <node concept="36Kql8" id="3U99uzk1vZT" role="36MCEW" />
       </node>
     </node>
     <node concept="3couw1" id="3U99uzk16XW" role="2jst77">
