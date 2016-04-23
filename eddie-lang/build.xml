@@ -65,14 +65,14 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version codename="EddieStudio" major="1" minor="0" eap="false" />
+        <version codename="EddieStudio" major="0" minor="1" eap="false" />
         <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
         <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
         <dialogs-image url="/dialogImage.png" />
         <package code="code" />
-        <names product="EddieStudio" fullname="Eddie-Studio" />
+        <names product="EddieStudio" fullname="Eddie Studio" />
         
         <welcome-screen logo-url="/logo.png" />
         
@@ -141,7 +141,7 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>Eddie</id>
         <name>Eddie</name>
-        <version>1.0</version>
+        <version>${build.version}</version>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.debugger.api</depends>
         <depends>jetbrains.mps.debugger.java</depends>
@@ -820,7 +820,7 @@
     <copy todir="${build.layout}/plugins/mps-make">
       <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
-    <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
+    <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=${build.version}</echo>
     <echo file="${build.layout}/build.properties">EddieStudio.date=${date}${line.separator}EddieStudio.build.number=${build.number}${line.separator}EddieStudio.build.version=${build.version}${line.separator}EddieStudio.eddie.path.selector=${eddie.path.selector}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
