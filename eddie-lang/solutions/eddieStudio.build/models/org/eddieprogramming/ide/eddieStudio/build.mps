@@ -213,9 +213,9 @@
     <node concept="10PD9b" id="1JtUjhLyCyw" role="10PD9s" />
     <node concept="3b7kt6" id="1JtUjhLyCyx" role="10PD9s" />
     <node concept="1zClus" id="1JtUjhLyCyH" role="3989C9">
-      <property role="2OjLBK" value="0" />
+      <property role="2OjLBK" value="1" />
       <property role="TrG5h" value="MPS" />
-      <property role="2OjLBL" value="1" />
+      <property role="2OjLBL" value="0" />
       <node concept="55IIr" id="1JtUjhLyCyI" role="3vi$VU">
         <node concept="2Ry0Ak" id="1JtUjhLyCyJ" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
@@ -244,7 +244,7 @@
       </node>
       <node concept="3_J27D" id="1JtUjhLyCyS" role="2EtHGT">
         <node concept="3Mxwew" id="1JtUjhLyCyT" role="3MwsjC">
-          <property role="3MwjfP" value="Eddie-Studio" />
+          <property role="3MwjfP" value="Eddie Studio" />
         </node>
       </node>
       <node concept="NbPM2" id="1JtUjhLyCyU" role="2OjNyQ">
@@ -606,8 +606,8 @@
         <node concept="1TblLo" id="1JtUjhLyC$K" role="1TblLl">
           <property role="1TblLn" value="version" />
           <node concept="NbPM2" id="1JtUjhLyC$L" role="1TblLm">
-            <node concept="3Mxwew" id="1JtUjhLyC$M" role="3MwsjC">
-              <property role="3MwjfP" value="1.0" />
+            <node concept="3Mxwey" id="1cmqDSQQkUX" role="3MwsjC">
+              <ref role="3Mxwex" node="1JtUjhLyP_n" resolve="build.version" />
             </node>
           </node>
         </node>
@@ -621,8 +621,8 @@
         </node>
       </node>
       <node concept="3_J27D" id="1JtUjhLyCzS" role="m$_w8">
-        <node concept="3Mxwew" id="1JtUjhLyCzT" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+        <node concept="3Mxwey" id="1cmqDSQQkZz" role="3MwsjC">
+          <ref role="3Mxwex" node="1JtUjhLyP_n" resolve="build.version" />
         </node>
       </node>
       <node concept="m$f5U" id="1JtUjhLyCzU" role="m$_yh">
