@@ -29,10 +29,9 @@ public class ControlsModel {
     private static final Logger logger = LoggerFactory.getLogger(ControlsModel.class);
 
 
-    private static final int SPEED_SLIDER_DEFAULT = 2;
+    private static final int SPEED_SLIDER_DEFAULT = 1;
     private static final int SPEED_SLIDER_EXTENT = 0;
-    private static final double[] SLIDER_TO_SPEED_COEFICIENT_MAPPING = new double[]{0.25, 0.5, 1,
-        .5, 2};
+    private static final double[] SLIDER_TO_SPEED_COEFICIENT_MAPPING = new double[]{0.25, 1, 4, 16, 64};
 
     private static final String DOCUMENT_END_OF_LINE = "\r\n";
 
