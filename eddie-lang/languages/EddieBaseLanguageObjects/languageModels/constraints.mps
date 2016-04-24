@@ -222,12 +222,6 @@
       <ref role="1N5Vy1" to="gkvc:2bb0VNYrvfu" />
       <node concept="13QW63" id="2bb0VNYrvVj" role="1N6uqs">
         <node concept="3clFbS" id="2bb0VNYrvVl" role="2VODD2">
-          <node concept="34ab3g" id="2bb0VNYt82Z" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="Xl_RD" id="2bb0VNYt831" role="34bqiv">
-              <property role="Xl_RC" value="BL Singleton reference" />
-            </node>
-          </node>
           <node concept="3cpWs8" id="2bb0VNYsRzf" role="3cqZAp">
             <node concept="3cpWsn" id="2bb0VNYsRzi" role="3cpWs9">
               <property role="TrG5h" value="blSingletons" />
@@ -303,19 +297,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="34ab3g" id="2bb0VNYsZJJ" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="2YIFZM" id="2bb0VNYt077" role="34bqiv">
-              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
-              <node concept="Xl_RD" id="2bb0VNYt0ao" role="37wK5m">
-                <property role="Xl_RC" value="BL singletons: {0}" />
-              </node>
-              <node concept="37vLTw" id="2bb0VNYt0M5" role="37wK5m">
-                <ref role="3cqZAo" node="2bb0VNYsRzi" resolve="blSingletons" />
               </node>
             </node>
           </node>

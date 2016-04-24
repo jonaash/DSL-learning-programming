@@ -2310,24 +2310,6 @@
           <property role="3SKdUp" value="TODO: fix calling abstract method getVariableDeclarationIfExists on instance of abstract class" />
         </node>
       </node>
-      <node concept="34ab3g" id="5wv4$Cf78r8" role="3cqZAp">
-        <property role="35gtTG" value="info" />
-        <node concept="2YIFZM" id="5wv4$Cf78vr" role="34bqiv">
-          <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-          <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
-          <node concept="Xl_RD" id="5wv4$Cf78vN" role="37wK5m">
-            <property role="Xl_RC" value="Variable reference: {0}" />
-          </node>
-          <node concept="2OqwBi" id="5wv4$Cf78Bp" role="37wK5m">
-            <node concept="1YBJjd" id="5wv4$Cf78zs" role="2Oq$k0">
-              <ref role="1YBMHb" node="5xGSFEu98La" resolve="assignment" />
-            </node>
-            <node concept="3TrEf2" id="5wv4$Cf78Sq" role="2OqNvi">
-              <ref role="3Tt5mk" to="3y9h:1GufzGWfyPi" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3cpWs8" id="5xGSFEudt3e" role="3cqZAp">
         <node concept="3cpWsn" id="5xGSFEudt3h" role="3cpWs9">
           <property role="TrG5h" value="declaration" />
@@ -2370,19 +2352,6 @@
                 <node concept="2qgKlT" id="442XwrATA$1" role="2OqNvi">
                   <ref role="37wK5l" to="ljn0:442XwrATvlC" resolve="getVariableReferenceIfExists" />
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="34ab3g" id="442XwrAQMw9" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="2YIFZM" id="442XwrAQMwa" role="34bqiv">
-              <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
-              <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-              <node concept="Xl_RD" id="442XwrAQMwb" role="37wK5m">
-                <property role="Xl_RC" value="Variable declaration {0}" />
-              </node>
-              <node concept="37vLTw" id="442XwrAQOZp" role="37wK5m">
-                <ref role="3cqZAo" node="5xGSFEudt3h" resolve="declaration" />
               </node>
             </node>
           </node>

@@ -95,6 +95,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -139,6 +140,12 @@
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5480835971642155304" name="jetbrains.mps.lang.actions.structure.NF_Model_CreateNewNodeOperation" flags="nn" index="15TzpJ" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -393,6 +400,18 @@
           </node>
         </node>
         <node concept="3clFbH" id="3eViXf8sZtl" role="3cqZAp" />
+        <node concept="34ab3g" id="7V3IN_clVmZ" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="7V3IN_clVte" role="34bqiv">
+            <node concept="37vLTw" id="7V3IN_clVwg" role="3uHU7w">
+              <ref role="3cqZAo" node="3eViXf8sYpb" resolve="definition" />
+            </node>
+            <node concept="Xl_RD" id="7V3IN_clVn1" role="3uHU7B">
+              <property role="Xl_RC" value="initializing parameters: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7V3IN_clVkT" role="3cqZAp" />
         <node concept="2Gpval" id="3eViXf8sZXD" role="3cqZAp">
           <node concept="2GrKxI" id="3eViXf8sZXE" role="2Gsz3X">
             <property role="TrG5h" value="p" />

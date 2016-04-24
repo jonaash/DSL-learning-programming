@@ -1450,12 +1450,6 @@
       <ref role="13i0hy" to="ljn0:2FICFVq5JJV" resolve="isInAssignmentZone" />
       <node concept="3Tm1VV" id="6N2I4lcfa8a" role="1B3o_S" />
       <node concept="3clFbS" id="6N2I4lcfa8p" role="3clF47">
-        <node concept="34ab3g" id="442XwrAT1X2" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="442XwrAT1X4" role="34bqiv">
-            <property role="Xl_RC" value="isInAssignmentZone called" />
-          </node>
-        </node>
         <node concept="3clFbJ" id="442XwrASVK7" role="3cqZAp">
           <node concept="3clFbS" id="442XwrASVK9" role="3clFbx">
             <node concept="3cpWs8" id="442XwrASTyf" role="3cqZAp">
@@ -1496,22 +1490,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="6N2I4lchRBM" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="2YIFZM" id="6N2I4lchREn" role="34bqiv">
-                <ref role="1Pybhc" to="25x5:~MessageFormat" resolve="MessageFormat" />
-                <ref role="37wK5l" to="25x5:~MessageFormat.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
-                <node concept="Xl_RD" id="6N2I4lchRES" role="37wK5m">
-                  <property role="Xl_RC" value="This class {1}, Declaration class" />
-                </node>
-                <node concept="37vLTw" id="442XwrAT15T" role="37wK5m">
-                  <ref role="3cqZAo" node="442XwrASTyi" resolve="thisClass" />
-                </node>
-                <node concept="37vLTw" id="442XwrAT19u" role="37wK5m">
-                  <ref role="3cqZAo" node="442XwrASX7E" resolve="declarationClass" />
                 </node>
               </node>
             </node>
