@@ -742,13 +742,13 @@
     <node concept="3EZMnI" id="2xfsEoCaFxX" role="6VMZX">
       <node concept="l2Vlx" id="2xfsEoCaFxY" role="2iSdaV" />
       <node concept="3F0ifn" id="2xfsEoCaFy1" role="3EZMnx">
-        <property role="3F0ifm" value="tutorial:" />
+        <property role="3F0ifm" value="scenario:" />
       </node>
       <node concept="3F1sOY" id="6snOov8xZw9" role="3EZMnx">
         <ref role="1NtTu8" to="dyrx:6snOov8xmI1" />
       </node>
       <node concept="3F0ifn" id="6snOov888x_" role="3EZMnx">
-        <property role="3F0ifm" value="scene:" />
+        <property role="3F0ifm" value="map:" />
         <node concept="pVoyu" id="6snOov888z2" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
