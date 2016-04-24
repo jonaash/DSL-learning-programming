@@ -1375,6 +1375,22 @@
       </node>
       <node concept="10P_77" id="5xGSFEua7Mi" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="3JiiJXkuvbc" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="checkAssignmentDataflow" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="ljn0:7lOC3fuC5hQ" resolve="checkAssignmentDataflow" />
+      <node concept="3Tm1VV" id="3JiiJXkuvbd" role="1B3o_S" />
+      <node concept="3clFbS" id="3JiiJXkuvbi" role="3clF47">
+        <node concept="3clFbF" id="3JiiJXkuvkC" role="3cqZAp">
+          <node concept="3clFbT" id="3JiiJXkuvkB" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="3JiiJXkuvbj" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7KcPMNJNqyr">
     <property role="3GE5qa" value="class.member.reference" />

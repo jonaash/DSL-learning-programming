@@ -663,5 +663,29 @@
       <ref role="1YaFvo" to="t2e5:8gmNnrK9Rj" resolve="MethodDefinition" />
     </node>
   </node>
+  <node concept="18kY7G" id="3JiiJXkuINg">
+    <property role="TrG5h" value="check_ConstructorDataFlow" />
+    <property role="3GE5qa" value="definition" />
+    <node concept="3clFbS" id="3JiiJXkuINh" role="18ibNy">
+      <node concept="3clFbF" id="3JiiJXkuINi" role="3cqZAp">
+        <node concept="2OqwBi" id="3JiiJXkuINj" role="3clFbG">
+          <node concept="2YIFZM" id="3JiiJXkuINk" role="2Oq$k0">
+            <ref role="37wK5l" node="18k56XDycX2" resolve="getInstance" />
+            <ref role="1Pybhc" node="18k56XDy9qO" resolve="ObjectDataFlow" />
+          </node>
+          <node concept="liA8E" id="3JiiJXkuINl" role="2OqNvi">
+            <ref role="37wK5l" to="f13g:18k56XDw5Q3" resolve="checkDataFlow" />
+            <node concept="1YBJjd" id="3JiiJXkuINm" role="37wK5m">
+              <ref role="1YBMHb" node="3JiiJXkuINn" resolve="constructorDefinition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3JiiJXkuINn" role="1YuTPh">
+      <property role="TrG5h" value="constructorDefinition" />
+      <ref role="1YaFvo" to="t2e5:7KcPMNJicY_" resolve="ConstructorDefinition" />
+    </node>
+  </node>
 </model>
 
