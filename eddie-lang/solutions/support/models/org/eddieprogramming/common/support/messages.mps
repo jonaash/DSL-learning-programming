@@ -909,6 +909,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="444EgVVxCKG" role="3cqZAp">
+          <node concept="37vLTI" id="444EgVVxCKH" role="3clFbG">
+            <node concept="Xl_RD" id="444EgVVxCKI" role="37vLTx">
+              <property role="Xl_RC" value="Fix Parameters Reference" />
+            </node>
+            <node concept="3EllGN" id="444EgVVxCKJ" role="37vLTJ">
+              <node concept="Xl_RD" id="444EgVVxCKK" role="3ElVtu">
+                <property role="Xl_RC" value="intention.menu.abstract.call.fix.parameters.reference" />
+              </node>
+              <node concept="37vLTw" id="444EgVVxCKP" role="3ElQJh">
+                <ref role="3cqZAo" node="7_uVVPcCUwK" resolve="m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1llnCx2_imK" role="3cqZAp">
           <node concept="37vLTI" id="1llnCx2_imL" role="3clFbG">
             <node concept="Xl_RD" id="1llnCx2_imM" role="37vLTx">
