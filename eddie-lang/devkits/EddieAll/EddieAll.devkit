@@ -6,5 +6,8 @@
     <extendedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</extendedDevKit>
     <extendedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</extendedDevKit>
   </extendedDevKits>
+  <exported-solutions>
+    <exported-solution>645c5093-3842-40e7-938b-f9d0f9cd529b(org.eddieprogramming.core.runtime)</exported-solution>
+  </exported-solutions>
 </dev-kit>
 
