@@ -677,7 +677,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="18k56XDydcB" role="1B3o_S" />
+      <node concept="3Tmbuc" id="6_SyuDvo3wr" role="1B3o_S" />
       <node concept="3cqZAl" id="18k56XDydfV" role="3clF45" />
       <node concept="37vLTG" id="18k56XDydkY" role="3clF46">
         <property role="TrG5h" value="program" />
@@ -688,7 +688,7 @@
       <node concept="37vLTG" id="18k56XDydob" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="18k56XDydrm" role="1tU5fm">
-          <ref role="ehGHo" to="a5m:3hBhvFT4iaH" resolve="FunctionDefinition" />
+          <ref role="ehGHo" to="dyrx:14XUkkdEva7" resolve="AbstractMethodDefinition" />
         </node>
       </node>
       <node concept="2AHcQZ" id="2RjUFdDhYyV" role="2AJF6D">
