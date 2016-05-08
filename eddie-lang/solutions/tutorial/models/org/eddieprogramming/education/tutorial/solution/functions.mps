@@ -101,9 +101,17 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
+      <concept id="7859466366388913386" name="org.eddieprogramming.core.EddieConditions.structure.While" flags="ng" index="2LFUJI">
+        <child id="7859466366388913409" name="condition" index="2LFUC5" />
+      </concept>
+    </language>
     <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" name="org.eddieprogramming.dsl.RobotKarel">
+      <concept id="7118929354272559103" name="org.eddieprogramming.dsl.RobotKarel.structure.PickMark" flags="ng" index="3cjWHS" />
       <concept id="7118929354272559102" name="org.eddieprogramming.dsl.RobotKarel.structure.LeftTurn" flags="ng" index="3cjWHT" />
       <concept id="7118929354272559105" name="org.eddieprogramming.dsl.RobotKarel.structure.Step" flags="ng" index="3cjXi6" />
+      <concept id="7118929354272559104" name="org.eddieprogramming.dsl.RobotKarel.structure.PutMark" flags="ng" index="3cjXi7" />
+      <concept id="7118929354273869888" name="org.eddieprogramming.dsl.RobotKarel.structure.IsMark" flags="ng" index="3ckXj7" />
     </language>
   </registry>
   <node concept="1$vsWe" id="5Teiyof2uVd">
@@ -115,13 +123,57 @@
       <property role="TrG5h" value="countMarks" />
       <node concept="36MCER" id="5Teiyof2Z4o" role="2jg$Xp" />
       <node concept="3jGSmg" id="5Teiyof2Z4p" role="hRHZh">
-        <node concept="17J3Kp" id="5Teiyof2Z4q" role="3jGSnO">
-          <property role="17J3Nn" value="TODO: implement function body" />
+        <node concept="36Mw20" id="5Teiyof2U6b" role="3jGSnO">
+          <node concept="AFBxM" id="5Teiyof2U6c" role="36Mw2n">
+            <property role="36jPZJ" value="true" />
+            <property role="TrG5h" value="count" />
+            <node concept="36MCER" id="5Teiyof2U6e" role="36MCEW" />
+            <node concept="36Kqmr" id="6Uea8kT26hm" role="36MIYJ">
+              <property role="36Kqnr" value="0" />
+            </node>
+          </node>
         </node>
-        <node concept="17J3f2" id="5Teiyof2Z4r" role="3jGSnO" />
-        <node concept="3duzCq" id="5Teiyof2Z4s" role="3jGSnO">
-          <node concept="36Kqmr" id="5Teiyof2Z4t" role="3duzCr">
-            <property role="36Kqnr" value="0" />
+        <node concept="17J3f2" id="5Teiyof2U6f" role="3jGSnO" />
+        <node concept="17J3Kp" id="5Teiyof2U6g" role="3jGSnO">
+          <property role="17J3Nn" value="pick all marks and count them" />
+        </node>
+        <node concept="2LFUJI" id="5Teiyof2U6h" role="3jGSnO">
+          <node concept="3jGSmg" id="5Teiyof2U6i" role="3azrUc">
+            <node concept="3cjWHS" id="5Teiyof2U6j" role="3jGSnO" />
+            <node concept="3dudH9" id="5Teiyof2U6k" role="3jGSnO">
+              <node concept="B81uQ" id="5Teiyof2U6l" role="3dudC3">
+                <node concept="3527Q3" id="5Teiyof2U6m" role="B81dI">
+                  <node concept="36Kqmr" id="5Teiyof2U6n" role="3527S9">
+                    <property role="36Kqnr" value="1" />
+                  </node>
+                  <node concept="AE91N" id="5Teiyof2U6o" role="3527ZY">
+                    <ref role="AE91K" node="5Teiyof2U6c" resolve="count" />
+                  </node>
+                </node>
+                <node concept="AE91N" id="5Teiyof2U6p" role="B81dD">
+                  <ref role="AE91K" node="5Teiyof2U6c" resolve="count" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ckXj7" id="5Teiyof2U6q" role="2LFUC5" />
+        </node>
+        <node concept="17J3f2" id="5Teiyof2U6r" role="3jGSnO" />
+        <node concept="17J3Kp" id="5Teiyof2U6x" role="3jGSnO">
+          <property role="17J3Nn" value="put the same amount back" />
+        </node>
+        <node concept="17JERQ" id="5Teiyof2U6s" role="3jGSnO">
+          <node concept="3jGSmg" id="5Teiyof2U6t" role="3azrUc">
+            <node concept="3cjXi7" id="5Teiyof2U6u" role="3jGSnO" />
+          </node>
+          <node concept="AE91N" id="5Teiyof2U6v" role="36Ktwi">
+            <ref role="AE91K" node="5Teiyof2U6c" resolve="count" />
+          </node>
+        </node>
+        <node concept="17J3f2" id="5Teiyof2U6w" role="3jGSnO" />
+        <node concept="3duzCq" id="5Teiyof2U6y" role="3jGSnO">
+          <node concept="AE91N" id="5Teiyof2U6z" role="3duzCr">
+            <ref role="AE91K" node="5Teiyof2U6c" resolve="count" />
           </node>
         </node>
       </node>

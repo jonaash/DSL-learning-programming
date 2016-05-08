@@ -11,9 +11,10 @@
   </imports>
   <registry>
     <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" name="org.eddieprogramming.core.EddieBasic">
-      <concept id="7428636491485899618" name="org.eddieprogramming.core.EddieBasic.structure.TutorialReference" flags="ng" index="2J$FF_">
-        <reference id="7428636491485899619" name="tutorial" index="2J$FF$" />
+      <concept id="7428636491485899618" name="org.eddieprogramming.core.EddieBasic.structure.ScenarioReference" flags="ng" index="2J$FF_">
+        <reference id="7428636491485899619" name="scenario" index="2J$FF$" />
       </concept>
+      <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
       <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
         <property id="3267332360033261999" name="text" index="17J3Nn" />
       </concept>
@@ -26,8 +27,8 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Script" flags="ng" index="1$vsWe">
-        <child id="7428636491485899649" name="tutorialRef" index="2J$FC6" />
+      <concept id="3640435696255673332" name="org.eddieprogramming.core.EddieBasic.structure.Program" flags="ng" index="1$vsWe">
+        <child id="7428636491485899649" name="scenarioRef" index="2J$FC6" />
         <child id="31172425217292863" name="body" index="3jGSko" />
       </concept>
     </language>
@@ -69,6 +70,7 @@
               <node concept="3ckXj6" id="2rxW3eqgdu_" role="3cXj02" />
             </node>
           </node>
+          <node concept="17J3f2" id="2_k$tdUu7xk" role="3jGSnO" />
           <node concept="17J3Kp" id="2rxW3eqi_qf" role="3jGSnO">
             <property role="17J3Nn" value="turn left to check whether there is a free way" />
           </node>
@@ -86,11 +88,15 @@
               <node concept="3cjWHT" id="2rxW3eqgx5P" role="3jGSnO" />
             </node>
           </node>
+          <node concept="17J3f2" id="2_k$tdUu7xU" role="3jGSnO" />
         </node>
         <node concept="2LJymW" id="2rxW3eqfXSR" role="2LFUC5">
           <node concept="2WRyTx" id="2rxW3eqgdtT" role="3cXj02" />
         </node>
       </node>
+      <node concept="3cjWHT" id="2_k$tdUuaoG" role="3jGSnO" />
+      <node concept="3cjWHT" id="2_k$tdUuaps" role="3jGSnO" />
+      <node concept="3cjWHT" id="2_k$tdUuaqe" role="3jGSnO" />
     </node>
     <node concept="2J$FF_" id="2rxW3eqfTCa" role="2J$FC6">
       <ref role="2J$FF$" to="d8xy:2rxW3eqfTBE" resolve="Tut01Maze" />

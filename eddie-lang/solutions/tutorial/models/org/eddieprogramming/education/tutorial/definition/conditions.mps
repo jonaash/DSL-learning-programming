@@ -18,8 +18,8 @@
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
-      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.SceneReference" flags="ng" index="2JdVq9">
-        <reference id="7428636491479279402" name="scene" index="2JdVqH" />
+      <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.MapReference" flags="ng" index="2JdVq9">
+        <reference id="7428636491479279402" name="map" index="2JdVqH" />
       </concept>
       <concept id="3394217739178654343" name="org.eddieprogramming.core.EddieBasic.structure.BinaryOperator" flags="ng" index="3521mb">
         <child id="3394217739178660101" name="rightExpression" index="3527S9" />
@@ -35,15 +35,21 @@
         <property id="3394217739175004887" name="value" index="36Kqnr" />
       </concept>
       <concept id="3267332360033261242" name="org.eddieprogramming.core.EddieBasic.structure.EmptyLine" flags="ng" index="17J3f2" />
+      <concept id="3267332360033261921" name="org.eddieprogramming.core.EddieBasic.structure.CommentLine" flags="ng" index="17J3Kp">
+        <property id="3267332360033261999" name="text" index="17J3Nn" />
+      </concept>
       <concept id="6349814108921509948" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationBlock" flags="ng" index="186aDQ">
         <child id="6349814108921512770" name="content" index="186d48" />
       </concept>
       <concept id="6349814108921513508" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationLine" flags="ng" index="186dhI">
         <property id="6349814108921513555" name="text" index="186dgp" />
       </concept>
-      <concept id="6349814108921004812" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneEvent" flags="ng" index="187L56">
+      <concept id="6349814108921004812" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScenarioEvent" flags="ng" index="187L56">
         <child id="6349814108921004815" name="action" index="187L55" />
         <child id="6349814108921004813" name="condition" index="187L57" />
+      </concept>
+      <concept id="3776063756796243784" name="org.eddieprogramming.core.EddieBasic.structure.BooleanLiteral" flags="ng" index="3dtAEM">
+        <property id="3776063756796243785" name="value" index="3dtAEN" />
       </concept>
       <concept id="3776063756797189811" name="org.eddieprogramming.core.EddieBasic.structure.StandaloneExpressionCommand" flags="ng" index="3dudH9">
         <child id="3776063756797190137" name="expression" index="3dudC3" />
@@ -51,18 +57,18 @@
       <concept id="31172425217292983" name="org.eddieprogramming.core.EddieBasic.structure.CommandList" flags="ng" index="3jGSmg">
         <child id="31172425217293011" name="commands" index="3jGSnO" />
       </concept>
-      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScene" flags="ng" index="1n_5_B">
+      <concept id="6349814108913355565" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMap" flags="ng" index="1n_5_B">
         <property id="6349814108913355890" name="width" index="1n_5SS" />
         <property id="6349814108913355892" name="heigth" index="1n_5SY" />
         <child id="6349814108915674177" name="sceneConstruction" index="1nGrSb" />
         <child id="6349814108917427210" name="startPosition" index="1nPBT0" />
       </concept>
-      <concept id="6349814108916202087" name="org.eddieprogramming.core.EddieBasic.structure.AbstractTutorial" flags="ng" index="1nEqwH">
+      <concept id="6349814108916202087" name="org.eddieprogramming.core.EddieBasic.structure.AbstractScenario" flags="ng" index="1nEqwH">
         <child id="7428636491496975407" name="events" index="2IerQC" />
-        <child id="7428636491486421284" name="sceneRef" index="2JAF2z" />
+        <child id="7428636491486421284" name="mapRef" index="2JAF2z" />
         <child id="1556553256867557255" name="description" index="2S29dR" />
       </concept>
-      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractSceneConstruction" flags="ng" index="1nGorK">
+      <concept id="6349814108915668154" name="org.eddieprogramming.core.EddieBasic.structure.AbstractMapConstruction" flags="ng" index="1nGorK">
         <child id="6349814108915673812" name="body" index="1nGryu" />
       </concept>
       <concept id="6349814108916865125" name="org.eddieprogramming.core.EddieBasic.structure.AbstractPosition" flags="ng" index="1nRWCJ">
@@ -81,13 +87,13 @@
       </concept>
     </language>
     <language id="22533a47-d9a8-4eae-8829-e07835315c1f" name="org.eddieprogramming.world.EddieSceneConstruction">
-      <concept id="7428636491496989695" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneEvent" flags="ng" index="2Ien9S">
+      <concept id="7428636491496989695" name="org.eddieprogramming.world.EddieSceneConstruction.structure.ScenarioEvent" flags="ng" index="2Ien9S">
         <property id="1556553256867107980" name="description" index="2S4QxW" />
       </concept>
-      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scene" flags="ng" index="1nE9df" />
-      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.SceneConstruction" flags="ng" index="1nE9dI" />
+      <concept id="6349814108916252933" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Map" flags="ng" index="1nE9df" />
+      <concept id="6349814108916252964" name="org.eddieprogramming.world.EddieSceneConstruction.structure.MapConstruction" flags="ng" index="1nE9dI" />
       <concept id="6349814108917929437" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Position" flags="ng" index="1nNwun" />
-      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Tutorial" flags="ng" index="1nSc2J" />
+      <concept id="6349814108920992485" name="org.eddieprogramming.world.EddieSceneConstruction.structure.Scenario" flags="ng" index="1nSc2J" />
     </language>
     <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" name="org.eddieprogramming.support.EddieComparisonOperators">
       <concept id="5508951763380606441" name="org.eddieprogramming.support.EddieComparisonOperators.structure.EqualityOperator" flags="ng" index="2xoUYp" />
@@ -110,6 +116,10 @@
     </language>
     <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" name="org.eddieprogramming.core.EddieConditions">
       <concept id="7859466366387838253" name="org.eddieprogramming.core.EddieConditions.structure.AndOperator" flags="ng" index="2LJN8D" />
+      <concept id="3267332360033971606" name="org.eddieprogramming.core.EddieConditions.structure.IfStatement" flags="ng" index="17CkzI">
+        <child id="3267332360033971746" name="trueBranch" index="17CkHq" />
+        <child id="3267332360033971743" name="condition" index="17CkHB" />
+      </concept>
     </language>
   </registry>
   <node concept="1nE9df" id="2rxW3eqfTrl">
@@ -724,6 +734,55 @@
             </node>
           </node>
         </node>
+        <node concept="17J3f2" id="2_k$tdUu9B2" role="3jGSnO" />
+        <node concept="17J3Kp" id="2_k$tdUu9UH" role="3jGSnO">
+          <property role="17J3Nn" value="initialize variables that to prevent in scenario show more messeages when robot is turning around at home position" />
+        </node>
+        <node concept="3dudH9" id="2_k$tdUu9I7" role="3jGSnO">
+          <node concept="2jchP5" id="2_k$tdUu9I8" role="3dudC3">
+            <node concept="fF5TM" id="2_k$tdUu9I9" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFwS" resolve="putLogical" />
+              <node concept="fHUgU" id="2_k$tdUu9Ia" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyf" resolve="key" />
+                <node concept="16y5rI" id="2_k$tdUu9Ib" role="2jzNHB">
+                  <property role="16xLMo" value="FIRST_HOME_VISIT" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="2_k$tdUu9Ic" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyR" resolve="value" />
+                <node concept="3dtAEM" id="2_k$tdUu9Id" role="2jzNHB">
+                  <property role="3dtAEN" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="2_k$tdUu9Ie" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3dudH9" id="2_k$tdUu9Mj" role="3jGSnO">
+          <node concept="2jchP5" id="2_k$tdUu9Mk" role="3dudC3">
+            <node concept="fF5TM" id="2_k$tdUu9Ml" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFwS" resolve="putLogical" />
+              <node concept="fHUgU" id="2_k$tdUu9Mm" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyf" resolve="key" />
+                <node concept="16y5rI" id="2_k$tdUu9Mn" role="2jzNHB">
+                  <property role="16xLMo" value="FIRST_HOME_VISIT_CMD" />
+                </node>
+              </node>
+              <node concept="fHUgU" id="2_k$tdUu9Mo" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFyR" resolve="value" />
+                <node concept="3dtAEM" id="2_k$tdUu9Mp" role="2jzNHB">
+                  <property role="3dtAEN" value="true" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="2_k$tdUu9Mq" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
+          </node>
+        </node>
+        <node concept="17J3f2" id="2_k$tdUu9E$" role="3jGSnO" />
         <node concept="17J3f2" id="2rxW3eqfU07" role="3jGSnO" />
       </node>
     </node>
@@ -733,9 +792,53 @@
     <node concept="2Ien9S" id="2rxW3eqdpK7" role="2IerQC">
       <property role="2S4QxW" value="Robot is at home" />
       <node concept="3jGSmg" id="2rxW3eqdpKh" role="187L55">
-        <node concept="2kpimK" id="2rxW3eqd__o" role="3jGSnO">
-          <node concept="16y5rI" id="2rxW3eqd__p" role="16wSqL">
-            <property role="16xLMo" value="Hurray! You are at home." />
+        <node concept="17J3Kp" id="2_k$tdUu8CZ" role="3jGSnO">
+          <property role="17J3Nn" value="we do not want to show message more times, when robot is turning around at home position" />
+        </node>
+        <node concept="17J3f2" id="2_k$tdUu8og" role="3jGSnO" />
+        <node concept="17CkzI" id="2_k$tdUu8ns" role="3jGSnO">
+          <node concept="3jGSmg" id="2_k$tdUu8nu" role="17CkHq">
+            <node concept="2kpimK" id="2rxW3eqd__o" role="3jGSnO">
+              <node concept="16y5rI" id="2rxW3eqd__p" role="16wSqL">
+                <property role="16xLMo" value="Congratulation! You are at home." />
+              </node>
+            </node>
+            <node concept="3dudH9" id="2_k$tdUu8ux" role="3jGSnO">
+              <node concept="2jchP5" id="2_k$tdUu8uu" role="3dudC3">
+                <node concept="fF5TM" id="2_k$tdUu8vk" role="2j_PeB">
+                  <ref role="fCCSt" to="caon:6R5ctBWnFwS" resolve="putLogical" />
+                  <node concept="fHUgU" id="2_k$tdUu8vl" role="fHv3J">
+                    <ref role="3WiQSc" to="caon:6R5ctBWnFyf" resolve="key" />
+                    <node concept="16y5rI" id="2_k$tdUu8vF" role="2jzNHB">
+                      <property role="16xLMo" value="FIRST_HOME_VISIT" />
+                    </node>
+                  </node>
+                  <node concept="fHUgU" id="2_k$tdUu8vm" role="fHv3J">
+                    <ref role="3WiQSc" to="caon:6R5ctBWnFyR" resolve="value" />
+                    <node concept="3dtAEM" id="2_k$tdUu8vQ" role="2jzNHB">
+                      <property role="3dtAEN" value="false" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sCHcl" id="2_k$tdUu8us" role="2j_qme">
+                  <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2jchP5" id="2_k$tdUu8oL" role="17CkHB">
+            <node concept="fF5TM" id="2_k$tdUu8pe" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFqB" resolve="getLogical" />
+              <node concept="fHUgU" id="2_k$tdUu8pf" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFqR" resolve="key" />
+                <node concept="16y5rI" id="2_k$tdUu8pu" role="2jzNHB">
+                  <property role="16xLMo" value="FIRST_HOME_VISIT" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="2_k$tdUu8oA" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+            </node>
           </node>
         </node>
       </node>
@@ -834,26 +937,70 @@
         </node>
       </node>
       <node concept="3jGSmg" id="2rxW3eqhA63" role="187L55">
-        <node concept="2kpimK" id="2rxW3eqhAyw" role="3jGSnO">
-          <node concept="3527Q3" id="2rxW3eqhAyV" role="16wSqL">
-            <node concept="3527Q3" id="2rxW3eqhA$2" role="3527S9">
-              <node concept="16y5rI" id="2rxW3eqhA$s" role="3527S9">
-                <property role="16xLMo" value=" commands to do this. It can be done with fewer." />
-              </node>
-              <node concept="2jchP5" id="2rxW3eqhAzo" role="3527ZY">
-                <node concept="fF5TM" id="2rxW3eqhAzG" role="2j_PeB">
-                  <ref role="fCCSt" to="4ujd:6R5ctBWrtI4" resolve="getProgramBodyCommands" />
+        <node concept="17J3Kp" id="2_k$tdUu8C0" role="3jGSnO">
+          <property role="17J3Nn" value="we do not want to show message more times, when robot is turning around at home position" />
+        </node>
+        <node concept="17CkzI" id="2_k$tdUu8zb" role="3jGSnO">
+          <node concept="3jGSmg" id="2_k$tdUu8zc" role="17CkHq">
+            <node concept="2kpimK" id="2rxW3eqhAyw" role="3jGSnO">
+              <node concept="3527Q3" id="2rxW3eqhAyV" role="16wSqL">
+                <node concept="3527Q3" id="2rxW3eqhA$2" role="3527S9">
+                  <node concept="16y5rI" id="2rxW3eqhA$s" role="3527S9">
+                    <property role="16xLMo" value=" commands to do this. It can be done with fewer." />
+                  </node>
+                  <node concept="2jchP5" id="2rxW3eqhAzo" role="3527ZY">
+                    <node concept="fF5TM" id="2rxW3eqhAzG" role="2j_PeB">
+                      <ref role="fCCSt" to="4ujd:6R5ctBWrtI4" resolve="getProgramBodyCommands" />
+                    </node>
+                    <node concept="3sCHcl" id="2rxW3eqhAz7" role="2j_qme">
+                      <ref role="3sDJ1y" to="caon:6R5ctBWrmvS" resolve="Statistics" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="3sCHcl" id="2rxW3eqhAz7" role="2j_qme">
-                  <ref role="3sDJ1y" to="caon:6R5ctBWrmvS" resolve="Statistics" />
+                <node concept="16y5rI" id="2rxW3eqhAyx" role="3527ZY">
+                  <property role="16xLMo" value="You used " />
                 </node>
               </node>
             </node>
-            <node concept="16y5rI" id="2rxW3eqhAyx" role="3527ZY">
-              <property role="16xLMo" value="You used " />
+            <node concept="3dudH9" id="2_k$tdUu8zf" role="3jGSnO">
+              <node concept="2jchP5" id="2_k$tdUu8zg" role="3dudC3">
+                <node concept="fF5TM" id="2_k$tdUu8zh" role="2j_PeB">
+                  <ref role="fCCSt" to="caon:6R5ctBWnFwS" resolve="putLogical" />
+                  <node concept="fHUgU" id="2_k$tdUu8zi" role="fHv3J">
+                    <ref role="3WiQSc" to="caon:6R5ctBWnFyf" resolve="key" />
+                    <node concept="16y5rI" id="2_k$tdUu8zj" role="2jzNHB">
+                      <property role="16xLMo" value="FIRST_HOME_VISIT_CMD" />
+                    </node>
+                  </node>
+                  <node concept="fHUgU" id="2_k$tdUu8zk" role="fHv3J">
+                    <ref role="3WiQSc" to="caon:6R5ctBWnFyR" resolve="value" />
+                    <node concept="3dtAEM" id="2_k$tdUu8zl" role="2jzNHB">
+                      <property role="3dtAEN" value="false" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3sCHcl" id="2_k$tdUu8zm" role="2j_qme">
+                  <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2jchP5" id="2_k$tdUu8zn" role="17CkHB">
+            <node concept="fF5TM" id="2_k$tdUu8zo" role="2j_PeB">
+              <ref role="fCCSt" to="caon:6R5ctBWnFqB" resolve="getLogical" />
+              <node concept="fHUgU" id="2_k$tdUu8zp" role="fHv3J">
+                <ref role="3WiQSc" to="caon:6R5ctBWnFqR" resolve="key" />
+                <node concept="16y5rI" id="2_k$tdUu8zq" role="2jzNHB">
+                  <property role="16xLMo" value="FIRST_HOME_VISIT_CMD" />
+                </node>
+              </node>
+            </node>
+            <node concept="3sCHcl" id="2_k$tdUu8zr" role="2j_qme">
+              <ref role="3sDJ1y" to="caon:6R5ctBWnBiu" resolve="Storage" />
             </node>
           </node>
         </node>
+        <node concept="17J3f2" id="2_k$tdUu8x6" role="3jGSnO" />
       </node>
     </node>
     <node concept="2JdVq9" id="2rxW3eqfTC7" role="2JAF2z">
