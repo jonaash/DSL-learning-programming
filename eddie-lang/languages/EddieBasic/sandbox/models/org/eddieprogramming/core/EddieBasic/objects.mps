@@ -28,6 +28,9 @@
       <concept id="7286718421228329340" name="org.eddieprogramming.core.EddieBasic.structure.MessageCommand" flags="ng" index="16wSqK">
         <child id="7286718421228329341" name="message" index="16wSqL" />
       </concept>
+      <concept id="7286718421228046626" name="org.eddieprogramming.core.EddieBasic.structure.StringLiteral" flags="ng" index="16y5rI">
+        <property id="7286718421228094292" name="value" index="16xLMo" />
+      </concept>
       <concept id="3394217739175004740" name="org.eddieprogramming.core.EddieBasic.structure.StringType" flags="ng" index="36Kql8" />
       <concept id="3394217739175004823" name="org.eddieprogramming.core.EddieBasic.structure.IntegerLiteral" flags="ng" index="36Kqmr">
         <property id="3394217739175004887" name="value" index="36Kqnr" />
@@ -174,6 +177,9 @@
       <property role="TrG5h" value="text" />
       <node concept="36Kql8" id="6bbx8uIJVFo" role="36MCEW" />
       <node concept="3pOcrW" id="6bbx8uIKPEd" role="2j5jbD" />
+      <node concept="16y5rI" id="2_k$tdUumlb" role="36MIYJ">
+        <property role="16xLMo" value="name" />
+      </node>
     </node>
   </node>
   <node concept="3cvgSl" id="6bbx8uIYtjU">
