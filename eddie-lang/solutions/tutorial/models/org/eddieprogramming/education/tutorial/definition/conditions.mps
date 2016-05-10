@@ -800,7 +800,7 @@
           <node concept="3jGSmg" id="2_k$tdUu8nu" role="17CkHq">
             <node concept="2kpimK" id="2rxW3eqd__o" role="3jGSnO">
               <node concept="16y5rI" id="2rxW3eqd__p" role="16wSqL">
-                <property role="16xLMo" value="Congratulation! You are at home." />
+                <property role="16xLMo" value="Congratulations! You are at home." />
               </node>
             </node>
             <node concept="3dudH9" id="2_k$tdUu8ux" role="3jGSnO">
