@@ -1,4 +1,4 @@
-# How to build and run appliacation
+# How to Build and Run the Application
 
 There is an external GUI and a MPS project with languages.
 
@@ -29,7 +29,7 @@ In a directory eddie-gui/remote-gui run Maven command:
 mvn -Pmps clean install -DskipTests=true
 ```
 
-## Running project in MPS
+## Running Project in MPS
 1\) Open project eddie-lang in MPS and rebuild the whole project.
 
 NOTE: If multiple modules are selected to build, MPS do not respect their dependencies and build them in alphabetic
@@ -63,7 +63,7 @@ In solution EddieBasic.sandbox you can run scripts or create a new one.
 It is possible to run whole script or do it step by step.
 If a new script is started from MPS, previous script is discarded in EddieView and replaced with the new one.
 
-## Build and run standalone Eddie Studio
+## Build and Run Standalone Eddie Studio
 
 0. Download MPS generic distribution
 MPS 3.3 generic distribution is necessary to build Eddie Studio.
