@@ -17,7 +17,6 @@
         <child id="8938755948420525131" name="value" index="2jzNHB" />
       </concept>
       <concept id="3717222724954955759" name="org.eddieprogramming.core.EddieBasic.structure.Alert" flags="ng" index="2kpimK" />
-      <concept id="4002282523693989139" name="org.eddieprogramming.core.EddieBasic.structure.DocumentationEmptyLine" flags="ng" index="$0$Jj" />
       <concept id="7428636491479279374" name="org.eddieprogramming.core.EddieBasic.structure.MapReference" flags="ng" index="2JdVq9">
         <reference id="7428636491479279402" name="map" index="2JdVqH" />
       </concept>
@@ -543,10 +542,10 @@
     </node>
     <node concept="186aDQ" id="2rxW3eqiC5M" role="2S29dR">
       <node concept="186dhI" id="2rxW3eqiC5N" role="186d48">
-        <property role="186dgp" value="There are two computer terminals. The first in the upper lef corner  " />
+        <property role="186dgp" value="There are two computer terminals. The first one, in the upper left corner,  " />
       </node>
       <node concept="186dhI" id="62f2dLTKYcF" role="186d48">
-        <property role="186dgp" value="contains a secret password. Use Karel and terminal operation to read" />
+        <property role="186dgp" value="contains a secret password. Use Karel and terminal operations to read" />
       </node>
       <node concept="186dhI" id="2rxW3eqiSfr" role="186d48">
         <property role="186dgp" value="the password from the first terminal and write it to the second" />
@@ -554,7 +553,6 @@
       <node concept="186dhI" id="2rxW3eqiSfv" role="186d48">
         <property role="186dgp" value="terminal in the lower right corner." />
       </node>
-      <node concept="$0$Jj" id="2rxW3eqiC6X" role="186d48" />
     </node>
   </node>
 </model>

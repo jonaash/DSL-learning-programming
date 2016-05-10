@@ -724,7 +724,7 @@
                 <node concept="2kpimK" id="7$glgICLVbv" role="3jGSnO">
                   <node concept="3527Q3" id="7$glgICLVde" role="16wSqL">
                     <node concept="16y5rI" id="7$glgICLVbw" role="3527ZY">
-                      <property role="16xLMo" value="Congratulation! You counted all the marks correctly. Marks count: " />
+                      <property role="16xLMo" value="Congratulations! You counted all the marks correctly. Marks count: " />
                     </node>
                     <node concept="AE91N" id="7$glgICM0U_" role="3527S9">
                       <ref role="AE91K" node="7$glgICM0R$" resolve="actualMarks" />
@@ -795,22 +795,22 @@
     </node>
     <node concept="186aDQ" id="7$glgICKvGy" role="2S29dR">
       <node concept="186dhI" id="7$glgICKvGz" role="186d48">
-        <property role="186dgp" value="In this tutorial we need to sum of all marks and write it into terminal." />
+        <property role="186dgp" value="In this tutorial we need to count all of the marks and write their count into the computer terminal." />
       </node>
       <node concept="186dhI" id="7$glgICKvGA" role="186d48">
-        <property role="186dgp" value="In the end there marks must be in at same places as in the beginning." />
+        <property role="186dgp" value="In the end, all the marks must be in at same place as in the beginning." />
       </node>
       <node concept="186dhI" id="7$glgICKvGH" role="186d48">
         <property role="186dgp" value="" />
       </node>
       <node concept="186dhI" id="7$glgICKvGD" role="186d48">
-        <property role="186dgp" value="There is a programm that visit all cells with marks and call function callMakrs. " />
+        <property role="186dgp" value="There is a programm that visits all the cells with marks and calls a function callMakrs. " />
       </node>
       <node concept="186dhI" id="7$glgICKvGM" role="186d48">
-        <property role="186dgp" value="Your task is to implement this function. Have in mind, that after the function finishes," />
+        <property role="186dgp" value="Your task is to implement the body of the function callMarks. " />
       </node>
-      <node concept="186dhI" id="7$glgICKvGS" role="186d48">
-        <property role="186dgp" value="there should remain the same count of marks." />
+      <node concept="186dhI" id="4BbYEEY3mBA" role="186d48">
+        <property role="186dgp" value="Have in mind that after the function finishes, there should remain the same count of marks." />
       </node>
     </node>
   </node>

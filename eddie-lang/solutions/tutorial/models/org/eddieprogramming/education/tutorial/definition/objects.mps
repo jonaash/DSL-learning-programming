@@ -2832,6 +2832,13 @@
           <property role="17J3Nn" value="TODO: implement method" />
         </node>
       </node>
+      <node concept="184cOw" id="4BbYEEY3mPh" role="lGtFl">
+        <node concept="186aDQ" id="4BbYEEY3mPi" role="184fdr">
+          <node concept="186dhI" id="4BbYEEY3mPj" role="186d48">
+            <property role="186dgp" value="Turns left." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3pOcrA" id="3U99uzk16XR" role="2j5j5A">
       <property role="TrG5h" value="turnRight" />
@@ -2842,6 +2849,16 @@
           <property role="17J3Nn" value="TODO: implement method" />
         </node>
       </node>
+      <node concept="184cOw" id="4BbYEEY3mP8" role="lGtFl">
+        <node concept="186aDQ" id="4BbYEEY3mP9" role="184fdr">
+          <node concept="186dhI" id="4BbYEEY3mPa" role="186d48">
+            <property role="186dgp" value="Turns robot to the right. " />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mPe" role="186d48">
+            <property role="186dgp" value="This method is counted for statistics as only one turn." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3pOcrA" id="3U99uzk1mUj" role="2j5j5A">
       <property role="TrG5h" value="turnAround" />
@@ -2850,6 +2867,16 @@
       <node concept="3jGSmg" id="3U99uzk1mUn" role="hRHZh">
         <node concept="17J3Kp" id="6_SyuDvnYEi" role="3jGSnO">
           <property role="17J3Nn" value="TODO: implement method" />
+        </node>
+      </node>
+      <node concept="184cOw" id="4BbYEEY3mPn" role="lGtFl">
+        <node concept="186aDQ" id="4BbYEEY3mPo" role="184fdr">
+          <node concept="186dhI" id="4BbYEEY3mPp" role="186d48">
+            <property role="186dgp" value="Turns robot around." />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mPt" role="186d48">
+            <property role="186dgp" value="This robot is counted for statistics as two turns." />
+          </node>
         </node>
       </node>
     </node>
@@ -2873,9 +2900,8 @@
             <property role="186dgp" value="Puts marks at the place where robot is standing. " />
           </node>
           <node concept="186dhI" id="3U99uzk1nfH" role="186d48">
-            <property role="186dgp" value="It only the count which can fits in current place." />
+            <property role="186dgp" value="It puts only as much marks that can fit in current place." />
           </node>
-          <node concept="186dhI" id="3U99uzk1nfN" role="186d48" />
         </node>
       </node>
     </node>
@@ -2899,9 +2925,8 @@
             <property role="186dgp" value="Picks given count of marks from the place where robot is standing. " />
           </node>
           <node concept="186dhI" id="3U99uzk1njI" role="186d48">
-            <property role="186dgp" value="It only the count which can fits in current place." />
+            <property role="186dgp" value="It picks only as much marks that are in the currenct place." />
           </node>
-          <node concept="186dhI" id="3U99uzk1njJ" role="186d48" />
         </node>
       </node>
     </node>
@@ -2916,6 +2941,16 @@
         <node concept="3duzCq" id="6_SyuDvod6z" role="3jGSnO">
           <node concept="36Kqmr" id="6_SyuDvod6F" role="3duzCr">
             <property role="36Kqnr" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="184cOw" id="4BbYEEY3mP$" role="lGtFl">
+        <node concept="186aDQ" id="4BbYEEY3mP_" role="184fdr">
+          <node concept="186dhI" id="4BbYEEY3mPA" role="186d48">
+            <property role="186dgp" value="Counts makrs at currenct position." />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mPI" role="186d48">
+            <property role="186dgp" value="After the method finish, there are same amount of marks as was before the method was called." />
           </node>
         </node>
       </node>
@@ -2937,6 +2972,9 @@
           <node concept="186dhI" id="wvUexKnj6G" role="186d48">
             <property role="186dgp" value="The format of statistic is:" />
           </node>
+          <node concept="186dhI" id="4BbYEEY3mXq" role="186d48">
+            <property role="186dgp" value="steps: 11, turns: 2, picked marks: 5, put marks: 8" />
+          </node>
           <node concept="186dhI" id="wvUexKnj6J" role="186d48">
             <property role="186dgp" value="" />
           </node>
@@ -2956,6 +2994,15 @@
         <node concept="186aDQ" id="wvUexKnkGt" role="184fdr">
           <node concept="186dhI" id="wvUexKnkGu" role="186d48">
             <property role="186dgp" value="Prints statistics into Eddie Panel messages." />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mXv" role="186d48">
+            <property role="186dgp" value="" />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mXy" role="186d48">
+            <property role="186dgp" value="The format of statistic is:" />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mXz" role="186d48">
+            <property role="186dgp" value="steps: 11, turns: 2, picked marks: 5, put marks: 8" />
           </node>
         </node>
       </node>
@@ -2982,7 +3029,10 @@
       <node concept="184cOw" id="3U99uzk1uZG" role="lGtFl">
         <node concept="186aDQ" id="3U99uzk1uZH" role="184fdr">
           <node concept="186dhI" id="3U99uzk1uZI" role="186d48">
-            <property role="186dgp" value="Picks all marks in rectangular area. " />
+            <property role="186dgp" value="Picks all the marks in a rectangular area. " />
+          </node>
+          <node concept="186dhI" id="4BbYEEY3mXC" role="186d48">
+            <property role="186dgp" value="" />
           </node>
           <node concept="186dhI" id="3U99uzk1v0q" role="186d48">
             <property role="186dgp" value="At the beginning, robot must stand in the upper left corner of the rectangle and look est or west. " />
@@ -2991,10 +3041,10 @@
             <property role="186dgp" value="Rectangle size is defined by width and height parameters." />
           </node>
           <node concept="186dhI" id="3U99uzk1v0x" role="186d48">
-            <property role="186dgp" value="Rectangle are cannpt contrain any wall. " />
+            <property role="186dgp" value="Rectangle cannot contain any wall inside. " />
           </node>
           <node concept="186dhI" id="3U99uzk1v0A" role="186d48">
-            <property role="186dgp" value="Robot will end in one of the bottom corners." />
+            <property role="186dgp" value="Robot will end at one of the bottom corners." />
           </node>
         </node>
       </node>
