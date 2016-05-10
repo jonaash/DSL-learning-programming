@@ -293,6 +293,31 @@
       <zipfileset file="${basedir}/solutions/viewPlugin/viewPlugin.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-viewPlugin-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/org.eddieprogramming.education.tutorial.jar" />
+    <mkdir dir="${build.tmp}/default/org.eddieprogramming.education.tutorial.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.eddieprogramming.education.tutorial.jar/META-INF/module.xml">
+      <module namespace="org.eddieprogramming.education.tutorial" type="solution" uuid="eb091912-de92-4a16-9a15-144489d44fc6">
+        <dependencies />
+        <sources jar="org.eddieprogramming.education.tutorial-src.jar" descriptor="org.eddieprogramming.education.tutorial.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.education.tutorial.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.eddieprogramming.education.tutorial" />
+      <fileset dir="${basedir}/solutions/tutorial" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/solutions/tutorial/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.eddieprogramming.education.tutorial.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-tutorial-models">
+      <fileset dir="${basedir}/solutions/tutorial/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/Eddie/languages/Eddie/org.eddieprogramming.education.tutorial-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/solutions/tutorial/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${basedir}/solutions/tutorial/org.eddieprogramming.education.tutorial.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-tutorial-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/org.eddieprogramming.core.EddieBasic.jar" />
     <mkdir dir="${build.tmp}/default/org.eddieprogramming.core.EddieBasic.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.eddieprogramming.core.EddieBasic.jar/META-INF/module.xml">
@@ -812,6 +837,9 @@
     <copy todir="${build.layout}/plugins/Eddie/languages/Eddie">
       <fileset file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
     </copy>
+    <copy todir="${build.layout}/plugins/Eddie/languages/Eddie">
+      <fileset file="${basedir}/devkits/EddieAll/EddieAll.devkit" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/Eddie/runtime-libraries" />
     <copy todir="${build.layout}/plugins/Eddie/runtime-libraries">
       <fileset dir="${basedir}/solutions/lib/lib" />
@@ -835,7 +863,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.eddieprogramming.core.runtime, java.compile.org.eddieprogramming.common.lib, java.compile.org.eddieprogramming.common.support, java.compile.org.eddieprogramming.ide.viewPlugin, java.compile.org.eddieprogramming.core.EddieBasic, java.compile.org.eddieprogramming.core.EddieBasic#3640435696255147963, java.compile.org.eddieprogramming.core.EddieConditions, java.compile.org.eddieprogramming.core.EddieConditions#3267332360034136804, java.compile.java.modules.cycle.1, java.compile.org.eddieprogramming.core.EddieVariables, java.compile.org.eddieprogramming.core.EddieVariables#3394217739153893707, java.compile.org.eddieprogramming.core.EddieFunctions, java.compile.org.eddieprogramming.core.EddieFunctions#3776063756796239897, java.compile.org.eddieprogramming.core.EddieObjects, java.compile.org.eddieprogramming.core.EddieObjects#148719074581285505, java.compile.org.eddieprogramming.support.EddieBaseLanguageObjects, java.compile.org.eddieprogramming.support.EddieBaseLanguageObjects#2507101727818895526, java.compile.org.eddieprogramming.world.EddieSceneConstruction, java.compile.org.eddieprogramming.world.EddieSceneConstruction#6349814108916251914, java.compile.org.eddieprogramming.support.EddieComparisonOperators, java.compile.org.eddieprogramming.support.EddieComparisonOperators#5508951763380556598, java.compile.org.eddieprogramming.dsl.RobotKarel, java.compile.org.eddieprogramming.dsl.RobotKarel#7118929354272558643, java.compile.org.eddieprogramming.dsl.EddieVariableTerminals, java.compile.org.eddieprogramming.dsl.EddieVariableTerminals#4327882853829659938" />
+  <target name="compileJava" depends="java.compile.org.eddieprogramming.core.runtime, java.compile.org.eddieprogramming.common.lib, java.compile.org.eddieprogramming.common.support, java.compile.org.eddieprogramming.ide.viewPlugin, java.compile.org.eddieprogramming.education.tutorial, java.compile.org.eddieprogramming.core.EddieBasic, java.compile.org.eddieprogramming.core.EddieBasic#3640435696255147963, java.compile.org.eddieprogramming.core.EddieConditions, java.compile.org.eddieprogramming.core.EddieConditions#3267332360034136804, java.compile.java.modules.cycle.1, java.compile.org.eddieprogramming.core.EddieVariables, java.compile.org.eddieprogramming.core.EddieVariables#3394217739153893707, java.compile.org.eddieprogramming.core.EddieFunctions, java.compile.org.eddieprogramming.core.EddieFunctions#3776063756796239897, java.compile.org.eddieprogramming.core.EddieObjects, java.compile.org.eddieprogramming.core.EddieObjects#148719074581285505, java.compile.org.eddieprogramming.support.EddieBaseLanguageObjects, java.compile.org.eddieprogramming.support.EddieBaseLanguageObjects#2507101727818895526, java.compile.org.eddieprogramming.world.EddieSceneConstruction, java.compile.org.eddieprogramming.world.EddieSceneConstruction#6349814108916251914, java.compile.org.eddieprogramming.support.EddieComparisonOperators, java.compile.org.eddieprogramming.support.EddieComparisonOperators#5508951763380556598, java.compile.org.eddieprogramming.dsl.RobotKarel, java.compile.org.eddieprogramming.dsl.RobotKarel#7118929354272558643, java.compile.org.eddieprogramming.dsl.EddieVariableTerminals, java.compile.org.eddieprogramming.dsl.EddieVariableTerminals#4327882853829659938" />
   
   <target name="processResources" />
   
@@ -927,6 +955,7 @@
       <chunk>
         <module file="${basedir}/devkits/Eddie/Eddie.devkit" />
         <module file="${basedir}/devkits/SceneDefinition/SceneDefinition.devkit" />
+        <module file="${basedir}/devkits/EddieAll/EddieAll.devkit" />
         <module file="${basedir}/solutions/lib/lib.msd" />
         <module file="${basedir}/solutions/support/support.msd" />
         <module file="${basedir}/languages/EddieBasic/EddieBasic.mpl" />
@@ -942,7 +971,9 @@
         <module file="${basedir}/languages/EddieComparisonOperators/EddieComparisonOperators.mpl" />
         <module file="${basedir}/languages/EddieSceneConstruction/EddieSceneConstruction.mpl" />
       </chunk>
-      <chunk />
+      <chunk>
+        <module file="${basedir}/solutions/tutorial/org.eddieprogramming.education.tutorial.msd" />
+      </chunk>
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -1059,6 +1090,31 @@
         <fileset file="${artifacts.mpsStandalone}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mpsStandalone}/lib" includes="*.jar" />
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.org.eddieprogramming.education.tutorial" depends="java.compile.org.eddieprogramming.common.lib, java.compile.org.eddieprogramming.core.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/solutions/tutorial/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.eddieprogramming.education.tutorial" />
+    <javac destdir="${build.tmp}/java/out/org.eddieprogramming.education.tutorial" fork="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/solutions/tutorial/source_gen" />
+      </src>
+      <classpath>
+        <pathelement path="${build.tmp}/java/out/org.eddieprogramming.common.lib" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/mps-collections.jar" />
+        <pathelement path="${build.tmp}/java/out/org.eddieprogramming.core.runtime" />
+        <fileset file="${basedir}/solutions/lib/lib/slf4j-api.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/api.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/slf4j-log4j12.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/commons-lang3.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/gui.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/javax.inject.jar" />
+        <fileset file="${basedir}/solutions/lib/lib/tinydi.jar" />
+        <fileset file="${artifacts.mpsStandalone}/lib/log4j.jar" />
       </classpath>
     </javac>
   </target>
@@ -2216,6 +2272,7 @@
     <delete dir="${basedir}/languages/EddieVariables/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieVariableTerminals/generator/source_gen" />
     <delete dir="${basedir}/languages/RobotKarel/generator/source_gen" />
+    <delete dir="${basedir}/solutions/tutorial/source_gen" />
     <delete dir="${basedir}/languages/EddieBaseLanguageObjects/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieComparisonOperators/generator/source_gen" />
     <delete dir="${basedir}/languages/EddieSceneConstruction/generator/source_gen" />

@@ -915,6 +915,29 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="2_k$tdUxlGR" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.education.tutorial" />
+        <property role="3LESm3" value="eb091912-de92-4a16-9a15-144489d44fc6" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="2_k$tdUxlGU" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2_k$tdUxm0Y" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="2_k$tdUxm5B" role="2Ry0An">
+              <property role="2Ry0Am" value="tutorial" />
+              <node concept="2Ry0Ak" id="2_k$tdUxmag" role="2Ry0An">
+                <property role="2Ry0Am" value="org.eddieprogramming.education.tutorial.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2_k$tdUxmc$" role="3bR37C">
+          <node concept="3bR9La" id="2_k$tdUxmc_" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="1JtUjhLyCzN" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.eddieprogramming.core.EddieBasic" />
@@ -1869,6 +1892,37 @@
           <ref role="3LEDTV" node="4LNIB3H6Sjf" resolve="org.eddieprogramming.world.EddieSceneConstruction" />
         </node>
         <node concept="3LEDTM" id="4y6FdzEj3kt" role="3LEDUa">
+          <ref role="3LEDTN" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
+        </node>
+      </node>
+      <node concept="3LEwk6" id="2_k$tdUxrs2" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.eddieprogramming.EddieAll" />
+        <property role="3LESm3" value="19cd8ab1-8c83-4376-b8e4-18e501332cc9" />
+        <node concept="55IIr" id="2_k$tdUxrs5" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2_k$tdUxrBg" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="2_k$tdUxrBl" role="2Ry0An">
+              <property role="2Ry0Am" value="EddieAll" />
+              <node concept="2Ry0Ak" id="2_k$tdUxrBq" role="2Ry0An">
+                <property role="2Ry0Am" value="EddieAll.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="2_k$tdUxrBs" role="3LEz9a">
+          <ref role="3LEz8N" node="4y6FdzEj1R$" resolve="Eddie" />
+        </node>
+        <node concept="3LEz8M" id="2_k$tdUxrBt" role="3LEz9a">
+          <ref role="3LEz8N" node="4y6FdzEj2Y0" resolve="SceneDefinition" />
+        </node>
+        <node concept="3LEDTy" id="2_k$tdUxrBu" role="3LEDUa">
+          <ref role="3LEDTV" node="6bbx8uIz$Ze" resolve="org.eddieprogramming.dsl.RobotKarel" />
+        </node>
+        <node concept="3LEDTy" id="2_k$tdUxrBv" role="3LEDUa">
+          <ref role="3LEDTV" node="3KfICq429kE" resolve="org.eddieprogramming.dsl.EddieVariableTerminals" />
+        </node>
+        <node concept="3LEDTM" id="2_k$tdUxrBw" role="3LEDUa">
           <ref role="3LEDTN" node="1JtUjhLyCzx" resolve="org.eddieprogramming.core.runtime" />
         </node>
       </node>
