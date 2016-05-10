@@ -12,7 +12,6 @@
 	<modules>
 		<module>api</module>
 		<module>gui</module>
-		<module>client</module>
 	</modules>
 
 	<repositories>
