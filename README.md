@@ -3,7 +3,8 @@
 There is an external GUI and a MPS project with languages.
 
 Requirements:
-* Java SE 8 32-bit jdk Can be downloaded from [Oracle] (www.oracle.com/technetwork/java/javase/downloads/)
+
+* Java SE 8 32-bit jdk Can be downloaded from [Oracle](www.oracle.com/technetwork/java/javase/downloads/)
 * Apache Maven https://maven.apache.org
 * MPS 3.3 https://www.jetbrains.com/mps
 * Path to Java 8 jdk in JAVA_HOME system property
