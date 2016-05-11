@@ -57,6 +57,38 @@
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin" />
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin">
+      <fileset file="${mps_home}/bin/mps.vmoptions" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin">
+      <fileset file="${mps_home}/bin/mps64.vmoptions" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin">
+      <fileset file="${mps_home}/bin/mps.exe.vmoptions" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
+    <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin">
+      <fileset file="${mps_home}/bin/mps64.exe.vmoptions" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="MPS33" replace="${EddieStudio.eddie.path.selector}" flags="" />
+        </tokenfilter>
+      </filterchain>
+    </copy>
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin/mac" />
     <mkdir dir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin/mac/Contents" />
     <copy todir="${build.tmp}/default/_dl__lbrace_build.number_rbrace_.zip/EddieStudio-${version}/bin/mac/Contents">
@@ -69,10 +101,6 @@
     </copy>
     <zip destfile="${build.layout}/${EddieStudio.build.number}.zip">
       <zipfileset dir="${artifacts.EddieStudio}" prefix="EddieStudio-${version}" />
-      <zipfileset file="${mps_home}/bin/mps.vmoptions" prefix="EddieStudio-${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps64.vmoptions" prefix="EddieStudio-${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps.exe.vmoptions" prefix="EddieStudio-${version}/bin" />
-      <zipfileset file="${mps_home}/bin/mps64.exe.vmoptions" prefix="EddieStudio-${version}/bin" />
       <zipfileset dir="${mps_home}/bin/win" prefix="EddieStudio-${version}/bin/win">
         <exclude name="**/*.exe" />
       </zipfileset>
