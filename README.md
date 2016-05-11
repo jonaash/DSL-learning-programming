@@ -98,17 +98,3 @@ Unpack it to the same directory where is this repository root.
 
 
 
-## Alternative: Standalone GUI
-Alternatively it is possible to create Eddie Panel as standalone Java appliaction:
-
-In a directory eddie-gui/remote-gui run maven command:
-
-```
-mvn -Pstandalone clean package
-```
-
-It creates runnable JAR archive Eddie-gui.jar in directory GUI/remote-gui/gui/target/
-
-Then just open Eddie-gui.jar
-
-If Eddie-gui.jar is running, the scripts from MPS will be shown there.
