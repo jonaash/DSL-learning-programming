@@ -9,3 +9,4 @@ Author: Jonas Klimes
 Supervisors:
 Pavel Parizek and Vaclav Pech
 
+Thesis in PDF: [Domain-Specific Language for Learning Programming](https://github.com/jonaash/Eddie-programming/blob/0.1/Domain-Specific_Language_for_Learning_Programming.pdf)
