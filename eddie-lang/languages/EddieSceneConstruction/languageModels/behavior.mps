@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -132,7 +132,7 @@
             <node concept="2OqwBi" id="5wv4$CfOW9b" role="2Oq$k0">
               <node concept="13iPFW" id="5wv4$CfOW7H" role="2Oq$k0" />
               <node concept="3TrEf2" id="5wv4$CfOWik" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:5wv4$CfFEFk" />
+                <ref role="3Tt5mk" to="dyrx:5wv4$CfFEFk" resolve="body" />
               </node>
             </node>
             <node concept="zfrQC" id="5wv4$CfOXiU" role="2OqNvi">
@@ -190,7 +190,7 @@
             <node concept="2OqwBi" id="5wv4$CfOAT7" role="2Oq$k0">
               <node concept="13iPFW" id="5wv4$CfOAQA" role="2Oq$k0" />
               <node concept="3TrEf2" id="5wv4$CfOB3Z" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:5wv4$CfMmKa" />
+                <ref role="3Tt5mk" to="dyrx:5wv4$CfMmKa" resolve="startPosition" />
               </node>
             </node>
             <node concept="zfrQC" id="5wv4$CfOBvt" role="2OqNvi">
@@ -203,7 +203,7 @@
             <node concept="2OqwBi" id="5wv4$CfOU7l" role="2Oq$k0">
               <node concept="13iPFW" id="5wv4$CfOU4b" role="2Oq$k0" />
               <node concept="3TrEf2" id="5wv4$CfOUid" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:5wv4$CfFEL1" />
+                <ref role="3Tt5mk" to="dyrx:5wv4$CfFEL1" resolve="sceneConstruction" />
               </node>
             </node>
             <node concept="zfrQC" id="5wv4$CfOUGj" role="2OqNvi">
@@ -306,7 +306,7 @@
                     <ref role="3cqZAo" node="50Oz1ODjnxu" resolve="script" />
                   </node>
                   <node concept="3TrEf2" id="50Oz1ODlcwb" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:1IJMvjRjCZ" />
+                    <ref role="3Tt5mk" to="dyrx:1IJMvjRjCZ" resolve="body" />
                   </node>
                 </node>
                 <node concept="2DeJnY" id="50Oz1ODlcYf" role="2OqNvi" />
@@ -319,7 +319,7 @@
                     <ref role="3cqZAo" node="50Oz1ODjnxu" resolve="script" />
                   </node>
                   <node concept="3Tsc0h" id="50Oz1ODldw8" role="2OqNvi">
-                    <ref role="3TtcxE" to="dyrx:14XUkkdK3YQ" />
+                    <ref role="3TtcxE" to="dyrx:14XUkkdK3YQ" resolve="methods" />
                   </node>
                 </node>
                 <node concept="2Kehj3" id="50Oz1ODliON" role="2OqNvi" />
@@ -330,7 +330,7 @@
             <node concept="2OqwBi" id="50Oz1ODjqq9" role="2Oq$k0">
               <node concept="13iPFW" id="50Oz1ODjqnT" role="2Oq$k0" />
               <node concept="3TrEf2" id="50Oz1ODjqJE" role="2OqNvi">
-                <ref role="3Tt5mk" to="vlyv:50Oz1ODjqfb" />
+                <ref role="3Tt5mk" to="vlyv:50Oz1ODjqfb" resolve="initStateProgram" />
               </node>
             </node>
             <node concept="3w_OXm" id="50Oz1ODjrdj" role="2OqNvi" />
@@ -347,7 +347,7 @@
                   <node concept="2OqwBi" id="42iL3VZWg1P" role="37wK5m">
                     <node concept="13iPFW" id="42iL3VZWfZd" role="2Oq$k0" />
                     <node concept="3TrEf2" id="42iL3VZWgnG" role="2OqNvi">
-                      <ref role="3Tt5mk" to="vlyv:50Oz1ODjqfb" />
+                      <ref role="3Tt5mk" to="vlyv:50Oz1ODjqfb" resolve="initStateProgram" />
                     </node>
                   </node>
                 </node>

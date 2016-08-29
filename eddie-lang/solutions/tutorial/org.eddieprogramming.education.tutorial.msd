@@ -12,21 +12,22 @@
   <usedDevKits>
     <usedDevKit>b771c644-c438-46a8-aa4c-9cc65f7982b8(Eddie)</usedDevKit>
     <usedDevKit>114ed756-029f-4e38-b9de-d8e88dac495b(SceneDefinition)</usedDevKit>
+    <usedDevKit>19cd8ab1-8c83-4376-b8e4-18e501332cc9(org.eddieprogramming.EddieAll)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="4caf0310-491e-41f5-8a9b-2006b3a94898" fqName="jetbrains.mps.execution.util" version="0" />
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
-    <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-    <language id="5540ad23-650b-4fa5-b8b5-236a8e7e1c34" fqName="org.eddieprogramming.core.EddieBasic" version="0" />
-    <language id="4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5" fqName="org.eddieprogramming.core.EddieConditions" version="0" />
-    <language id="992263ba-1125-4e06-bbaa-a3def7e8a353" fqName="org.eddieprogramming.core.EddieFunctions" version="0" />
-    <language id="1049e1e4-e198-4fe2-af4a-15791afe439a" fqName="org.eddieprogramming.core.EddieObjects" version="0" />
-    <language id="53b38693-ceee-4191-9779-c7bca6c13739" fqName="org.eddieprogramming.core.EddieVariables" version="0" />
-    <language id="a9e656c0-d096-4475-bb36-823817b9bb6d" fqName="org.eddieprogramming.dsl.EddieVariableTerminals" version="0" />
-    <language id="862fe5da-6916-4d19-b869-dbe8a02b6bb1" fqName="org.eddieprogramming.dsl.RobotKarel" version="0" />
-    <language id="abbb403e-0a41-4661-9279-eb17d3806875" fqName="org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
-    <language id="ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe" fqName="org.eddieprogramming.support.EddieComparisonOperators" version="0" />
-    <language id="22533a47-d9a8-4eae-8829-e07835315c1f" fqName="org.eddieprogramming.world.EddieSceneConstruction" version="0" />
+    <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:5540ad23-650b-4fa5-b8b5-236a8e7e1c34:org.eddieprogramming.core.EddieBasic" version="0" />
+    <language slang="l:4d6fbb2c-9a32-4c0d-9b9d-f89c2468ddd5:org.eddieprogramming.core.EddieConditions" version="0" />
+    <language slang="l:992263ba-1125-4e06-bbaa-a3def7e8a353:org.eddieprogramming.core.EddieFunctions" version="0" />
+    <language slang="l:1049e1e4-e198-4fe2-af4a-15791afe439a:org.eddieprogramming.core.EddieObjects" version="0" />
+    <language slang="l:53b38693-ceee-4191-9779-c7bca6c13739:org.eddieprogramming.core.EddieVariables" version="0" />
+    <language slang="l:a9e656c0-d096-4475-bb36-823817b9bb6d:org.eddieprogramming.dsl.EddieVariableTerminals" version="0" />
+    <language slang="l:862fe5da-6916-4d19-b869-dbe8a02b6bb1:org.eddieprogramming.dsl.RobotKarel" version="0" />
+    <language slang="l:abbb403e-0a41-4661-9279-eb17d3806875:org.eddieprogramming.support.EddieBaseLanguageObjects" version="0" />
+    <language slang="l:ac1a99fd-c6f0-4f3f-a148-7ea703ba0fbe:org.eddieprogramming.support.EddieComparisonOperators" version="0" />
+    <language slang="l:22533a47-d9a8-4eae-8829-e07835315c1f:org.eddieprogramming.world.EddieSceneConstruction" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />

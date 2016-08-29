@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -109,7 +109,7 @@
             <node concept="2OqwBi" id="2FICFVpUQ2Q" role="33vP2m">
               <node concept="2Sf5sV" id="2FICFVpUPYK" role="2Oq$k0" />
               <node concept="3TrEf2" id="2FICFVpUQlg" role="2OqNvi">
-                <ref role="3Tt5mk" to="t2e5:6bbx8uINSyt" />
+                <ref role="3Tt5mk" to="t2e5:6bbx8uINSyt" resolve="definition" />
               </node>
             </node>
           </node>
@@ -164,7 +164,7 @@
               <node concept="2OqwBi" id="2FICFVpVJ$3" role="2Oq$k0">
                 <node concept="2Sf5sV" id="2FICFVpVJo5" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="2FICFVpVJXH" role="2OqNvi">
-                  <ref role="3TtcxE" to="dyrx:6pJoTiq8JqU" />
+                  <ref role="3TtcxE" to="dyrx:6pJoTiq8JqU" resolve="parameters" />
                 </node>
               </node>
               <node concept="34oBXx" id="2FICFVpVNK7" role="2OqNvi" />
@@ -174,11 +174,11 @@
                 <node concept="2OqwBi" id="2FICFVpVBr6" role="2Oq$k0">
                   <node concept="2Sf5sV" id="2FICFVpVBkx" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2FICFVpVBMk" role="2OqNvi">
-                    <ref role="3Tt5mk" to="t2e5:6bbx8uINSyt" />
+                    <ref role="3Tt5mk" to="t2e5:6bbx8uINSyt" resolve="definition" />
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="2FICFVpVC_x" role="2OqNvi">
-                  <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" />
+                  <ref role="3TtcxE" to="dyrx:3hBhvFT4iaN" resolve="parameters" />
                 </node>
               </node>
               <node concept="34oBXx" id="2FICFVpVINi" role="2OqNvi" />

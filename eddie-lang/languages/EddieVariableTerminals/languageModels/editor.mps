@@ -2,7 +2,7 @@
 <model ref="r:e52189dd-98c4-43f3-b795-b9d12d9a96d1(org.eddieprogramming.dsl.EddieVariableTerminals.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -64,7 +64,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3KfICq41kZL" role="3EZMnx">
-        <ref role="1NtTu8" to="s20d:3KfICq41kYY" />
+        <ref role="1NtTu8" to="s20d:3KfICq41kYY" resolve="type" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZM" role="2iSdaV" />
       <node concept="3F0ifn" id="G14Alte36n" role="3EZMnx">
@@ -85,7 +85,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3KfICq41kZQ" role="3EZMnx">
-        <ref role="1NtTu8" to="s20d:3KfICq41kYY" />
+        <ref role="1NtTu8" to="s20d:3KfICq41kYY" resolve="type" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZR" role="2iSdaV" />
       <node concept="3F0ifn" id="G14Alte253" role="3EZMnx">
@@ -107,11 +107,11 @@
       </node>
       <node concept="3F1sOY" id="3KfICq41kZV" role="3EZMnx">
         <property role="1cu_pB" value="2" />
-        <ref role="1NtTu8" to="s20d:3KfICq41kZ0" />
+        <ref role="1NtTu8" to="s20d:3KfICq41kZ0" resolve="type" />
       </node>
       <node concept="3F1sOY" id="3KfICq41kZW" role="3EZMnx">
         <property role="1cu_pB" value="2" />
-        <ref role="1NtTu8" to="s20d:3KfICq41kZ1" />
+        <ref role="1NtTu8" to="s20d:3KfICq41kZ1" resolve="value" />
       </node>
       <node concept="l2Vlx" id="3KfICq41kZX" role="2iSdaV" />
       <node concept="3F0ifn" id="G14Alte35L" role="3EZMnx">

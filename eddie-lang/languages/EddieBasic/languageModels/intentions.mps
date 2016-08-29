@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -151,14 +151,14 @@
                 <ref role="3cqZAo" node="jBG8nbHRSa" resolve="repeat" />
               </node>
               <node concept="3TrEf2" id="jBG8nbHVM2" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
+                <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" resolve="body" />
               </node>
             </node>
             <node concept="2oxUTD" id="jBG8nbHWv1" role="2OqNvi">
               <node concept="2OqwBi" id="jBG8nbHWz1" role="2oxUTC">
                 <node concept="2Sf5sV" id="jBG8nbHWwf" role="2Oq$k0" />
                 <node concept="3TrEf2" id="jBG8nbHWSY" role="2OqNvi">
-                  <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
+                  <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" resolve="body" />
                 </node>
               </node>
             </node>

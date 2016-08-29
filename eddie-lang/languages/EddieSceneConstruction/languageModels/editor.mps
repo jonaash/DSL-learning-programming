@@ -2,7 +2,7 @@
 <model ref="r:4d217a57-944f-4d5f-ad01-9128ebf2cd84(org.eddieprogramming.world.EddieSceneConstruction.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -114,7 +114,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5wv4$CfOhnO" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:5wv4$CfMmKa" />
+        <ref role="1NtTu8" to="dyrx:5wv4$CfMmKa" resolve="startPosition" />
         <node concept="lj46D" id="5wv4$CfP6Np" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -131,7 +131,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5wv4$CfHSel" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:5wv4$CfFEL1" />
+        <ref role="1NtTu8" to="dyrx:5wv4$CfFEL1" resolve="sceneConstruction" />
         <node concept="pVoyu" id="5wv4$CfHSeA" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -163,7 +163,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="5wv4$CfHSnH" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:5wv4$CfFEFk" />
+        <ref role="1NtTu8" to="dyrx:5wv4$CfFEFk" resolve="body" />
         <node concept="lj46D" id="5wv4$CfHSoG" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -239,7 +239,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6snOov8TMqt" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:6snOov8zm4$" />
+        <ref role="1NtTu8" to="dyrx:6snOov8zm4$" resolve="mapRef" />
         <node concept="ljvvj" id="6snOov9bGRF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -251,7 +251,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="50Oz1ODm4PL" role="3EZMnx">
-        <ref role="1NtTu8" to="vlyv:50Oz1ODjqfb" />
+        <ref role="1NtTu8" to="vlyv:50Oz1ODjqfb" resolve="initStateProgram" />
         <node concept="1sVBvm" id="50Oz1ODm4PN" role="1sWHZn">
           <node concept="3F0A7n" id="50Oz1ODm4QL" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -272,7 +272,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="1mpZf2H$qUB" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:1mpZf2H$mY7" />
+        <ref role="1NtTu8" to="dyrx:1mpZf2H$mY7" resolve="description" />
         <ref role="1k5W1q" to="y2uj:1mpZf2H$n4g" resolve="TutorialDescription" />
         <node concept="ljvvj" id="1mpZf2H$qUV" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -293,7 +293,7 @@
       <node concept="3EZMnI" id="1mpZf2HAMms" role="3EZMnx">
         <node concept="l2Vlx" id="1mpZf2HAMmt" role="2iSdaV" />
         <node concept="3F2HdR" id="6snOov9bGW3" role="3EZMnx">
-          <ref role="1NtTu8" to="dyrx:6snOov9bAKJ" />
+          <ref role="1NtTu8" to="dyrx:6snOov9bAKJ" resolve="events" />
           <node concept="l2Vlx" id="6snOov9bGW5" role="2czzBx" />
           <node concept="pj6Ft" id="6snOov9bGWv" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -342,7 +342,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6snOov9bEhE" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:5wv4$Cg00cd" />
+        <ref role="1NtTu8" to="dyrx:5wv4$Cg00cd" resolve="condition" />
         <node concept="ljvvj" id="6snOov9bEim" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -354,7 +354,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="6snOov9bEi8" role="3EZMnx">
-        <ref role="1NtTu8" to="dyrx:5wv4$Cg00cf" />
+        <ref role="1NtTu8" to="dyrx:5wv4$Cg00cf" resolve="action" />
         <node concept="ljvvj" id="6snOov9bEnp" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

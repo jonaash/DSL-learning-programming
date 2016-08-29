@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="2" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -346,8 +346,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3SokQcDNQup" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5zAkk8MRB4p" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 3.3" />
+            <node concept="2Ry0Ak" id="TL9rRn6f7H" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 3.4" />
             </node>
           </node>
         </node>
@@ -2725,8 +2725,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="4ccDGGISwX_" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4ccDGGISwXE" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 3.3" />
+            <node concept="2Ry0Ak" id="TL9rRn6fa5" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 3.4" />
             </node>
           </node>
         </node>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -155,14 +155,14 @@
                 <ref role="3cqZAo" node="jBG8nbJ9TU" resolve="forCmd" />
               </node>
               <node concept="3TrEf2" id="3uaXG0jxOiy" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
+                <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" resolve="body" />
               </node>
             </node>
             <node concept="2oxUTD" id="jBG8nbJ9U4" role="2OqNvi">
               <node concept="2OqwBi" id="jBG8nbJ9U5" role="2oxUTC">
                 <node concept="2Sf5sV" id="jBG8nbJ9U6" role="2Oq$k0" />
                 <node concept="3TrEf2" id="jBG8nbJ9U7" role="2OqNvi">
-                  <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" />
+                  <ref role="3Tt5mk" to="dyrx:6H9YPQxL4nh" resolve="body" />
                 </node>
               </node>
             </node>
@@ -183,7 +183,7 @@
                     <ref role="3cqZAo" node="jBG8nbJ9TU" resolve="forCmd" />
                   </node>
                   <node concept="3TrEf2" id="3uaXG0jxP0a" role="2OqNvi">
-                    <ref role="3Tt5mk" to="3y9h:aB0Z16Ok4Y" />
+                    <ref role="3Tt5mk" to="3y9h:aB0Z16Ok4Y" resolve="limit" />
                   </node>
                 </node>
                 <node concept="2oxUTD" id="3uaXG0jxPr3" role="2OqNvi">
@@ -192,7 +192,7 @@
                       <ref role="1M0zk5" node="3uaXG0jxO$n" resolve="repeat" />
                     </node>
                     <node concept="3TrEf2" id="3uaXG0jxQ7h" role="2OqNvi">
-                      <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" />
+                      <ref role="3Tt5mk" to="dyrx:2WqFKNDQRsu" resolve="iteration" />
                     </node>
                   </node>
                 </node>
@@ -259,7 +259,7 @@
             <node concept="2OqwBi" id="1llnCx2_pd5" role="2Oq$k0">
               <node concept="2Sf5sV" id="1llnCx2_paO" role="2Oq$k0" />
               <node concept="3TrEf2" id="1llnCx2_pqk" role="2OqNvi">
-                <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
+                <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" resolve="initializer" />
               </node>
             </node>
             <node concept="2oxUTD" id="6Uea8kSYCqd" role="2OqNvi">
@@ -267,7 +267,7 @@
                 <node concept="2OqwBi" id="6Uea8kSYCva" role="2Oq$k0">
                   <node concept="2Sf5sV" id="6Uea8kSYCrV" role="2Oq$k0" />
                   <node concept="3TrEf2" id="6Uea8kSYCA_" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO2mK" />
+                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO2mK" resolve="type" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="6Uea8kSYCMV" role="2OqNvi">
@@ -314,7 +314,7 @@
                 <node concept="2OqwBi" id="1llnCx2_r4B" role="2Oq$k0">
                   <node concept="2Sf5sV" id="1llnCx2_qZ3" role="2Oq$k0" />
                   <node concept="3TrEf2" id="1llnCx2_r_q" role="2OqNvi">
-                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" />
+                    <ref role="3Tt5mk" to="dyrx:2WqFKNDO42z" resolve="initializer" />
                   </node>
                 </node>
               </node>

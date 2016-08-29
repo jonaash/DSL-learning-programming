@@ -2,7 +2,7 @@
 <model ref="r:bf39e16d-a5e7-4711-b2e4-cb88900e29dd(org.eddieprogramming.dsl.EddieVariableTerminals.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -86,7 +86,7 @@
                   <node concept="2OqwBi" id="7W1TakBv4cZ" role="2Oq$k0">
                     <node concept="1r4Lsj" id="7W1TakBv3Qt" role="2Oq$k0" />
                     <node concept="3TrEf2" id="7W1TakBve8A" role="2OqNvi">
-                      <ref role="3Tt5mk" to="s20d:3KfICq41kYY" />
+                      <ref role="3Tt5mk" to="s20d:3KfICq41kYY" resolve="type" />
                     </node>
                   </node>
                   <node concept="2oxUTD" id="7W1TakBvexW" role="2OqNvi">
@@ -95,7 +95,7 @@
                         <ref role="1M0zk5" node="7W1TakBv3OU" resolve="terminalExpression" />
                       </node>
                       <node concept="3TrEf2" id="7W1TakBveMz" role="2OqNvi">
-                        <ref role="3Tt5mk" to="s20d:3KfICq41kYY" />
+                        <ref role="3Tt5mk" to="s20d:3KfICq41kYY" resolve="type" />
                       </node>
                     </node>
                   </node>

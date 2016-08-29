@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/EddieStudioDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/EddieStudioDistribution" />
-  <property name="mps_home" location="${basedir}/../../MPS 3.3" />
+  <property name="mps_home" location="${basedir}/../../MPS 3.4" />
   <property name="version" value="0.1" />
   <property name="artifacts.EddieStudio" location="${build.dir}/artifacts/EddieStudio" />
   <property file="${artifacts.EddieStudio}/build.properties" prefix="import.EddieStudio" />

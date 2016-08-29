@@ -15,8 +15,8 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5htl" ref="r:59e34992-4457-40a3-b79e-bae359aaffab(org.eddieprogramming.common.support.configuration)" />
-    <import index="i6ll" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:javax.inject(GuiLib/)" />
-    <import index="mwtc" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:com.googlecode.tinydi(GuiLib/)" />
+    <import index="i6ll" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:javax.inject(org.eddieprogramming.common.lib/)" />
+    <import index="mwtc" ref="9e2adce0-3032-497b-bf7e-e4b747a76a49/java:com.googlecode.tinydi(org.eddieprogramming.common.lib/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="3qfb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.annotation(JDK/)" />
     <import index="ouhv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.annotation(JDK/)" />

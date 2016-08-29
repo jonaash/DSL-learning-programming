@@ -2,7 +2,8 @@
 <model ref="r:611bd8d5-6556-465d-bd29-513f7bbeb61d(org.eddieprogramming.support.EddieComparisonOperators.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,9 +12,9 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -33,7 +34,7 @@
     <property role="TrG5h" value="EqualityOperator" />
     <property role="34LRSv" value="==" />
     <property role="R4oN_" value="equals" />
-    <property role="1pbfSe" value="964939865" />
+    <property role="EcuMT" value="5508951763380606441" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nE">
@@ -41,7 +42,7 @@
     <property role="TrG5h" value="GreaterOrEqual" />
     <property role="34LRSv" value="&gt;=" />
     <property role="R4oN_" value="greater or equals" />
-    <property role="1pbfSe" value="964939866" />
+    <property role="EcuMT" value="5508951763380606442" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nF">
@@ -49,7 +50,7 @@
     <property role="TrG5h" value="GreaterThan" />
     <property role="34LRSv" value="&gt;" />
     <property role="R4oN_" value="greater than" />
-    <property role="1pbfSe" value="964939867" />
+    <property role="EcuMT" value="5508951763380606443" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nG">
@@ -57,7 +58,7 @@
     <property role="TrG5h" value="InequalityOperator" />
     <property role="34LRSv" value="!=" />
     <property role="R4oN_" value="not equals" />
-    <property role="1pbfSe" value="964939868" />
+    <property role="EcuMT" value="5508951763380606444" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nH">
@@ -65,7 +66,7 @@
     <property role="TrG5h" value="LessOrEqual" />
     <property role="34LRSv" value="&lt;=" />
     <property role="R4oN_" value="less or equals" />
-    <property role="1pbfSe" value="964939869" />
+    <property role="EcuMT" value="5508951763380606445" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
   <node concept="1TIwiD" id="4LNIB3H41nI">
@@ -73,7 +74,7 @@
     <property role="TrG5h" value="LessThan" />
     <property role="34LRSv" value="&lt;" />
     <property role="R4oN_" value="less than" />
-    <property role="1pbfSe" value="964939870" />
+    <property role="EcuMT" value="5508951763380606446" />
     <ref role="1TJDcQ" to="3y9h:4LNIB3H3QF6" resolve="AbstractComparisonOperator" />
   </node>
 </model>
