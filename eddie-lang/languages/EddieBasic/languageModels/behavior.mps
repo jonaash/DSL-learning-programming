@@ -7,7 +7,7 @@
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="2" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -252,10 +252,7 @@
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -658,7 +655,7 @@
             <property role="1dT_AB" value="Creates default initialization value that is used when a variable is declared." />
           </node>
         </node>
-        <node concept="x79VA" id="6Uea8kSZ1lQ" role="x79VK">
+        <node concept="x79VA" id="7GIVeBOljal" role="3nqlJM">
           <property role="x79VB" value="expression that initialize variable of this type" />
         </node>
       </node>
@@ -707,13 +704,18 @@
             <property role="1dT_AB" value="some specific user code which could be lost when it is replaced." />
           </node>
         </node>
-        <node concept="TUZQ0" id="6Uea8kSZ1mg" role="TUOzN">
+        <node concept="TZ5HA" id="7GIVeBOlj8y" role="TZ5H$">
+          <node concept="1dT_AC" id="7GIVeBOlj8z" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="7GIVeBOlj8U" role="3nqlJM">
           <property role="TUZQ4" value="expression to compare" />
-          <node concept="zr_55" id="6Uea8kSZ1mi" role="zr_5Q">
+          <node concept="zr_55" id="7GIVeBOlj98" role="zr_5Q">
             <ref role="zr_51" node="6Uea8kSVvCb" resolve="expression" />
           </node>
         </node>
-        <node concept="x79VA" id="6Uea8kSZ1mj" role="x79VK">
+        <node concept="x79VA" id="7GIVeBOlj9_" role="3nqlJM">
           <property role="x79VB" value="true if given expression is used as default initializer" />
         </node>
       </node>
